@@ -2,7 +2,7 @@
 
 Policy weights are not stored in Git. Use the Hugging Face model repo:
 
-    voicepeak/rmua2026-platform-policies
+    Vociepeak/rmua2026-platform-policies
 
 Naming convention:
 
@@ -21,4 +21,5 @@ Every model manifest must record:
 
 Upload:
 
-    python scripts/hf_backup.py --repo-id voicepeak/rmua2026-platform-policies --repo-type model --folder models --path-in-repo models
+    python scripts/hf_backup.py --repo-id Vociepeak/rmua2026-platform-policies --repo-type model --folder models --path-in-repo models
+

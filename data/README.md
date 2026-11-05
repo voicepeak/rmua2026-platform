@@ -18,12 +18,12 @@ simulator hash and the source docs before using it for competition decisions.
 The simulator zip, raw UAssetAPI JSON, extracted pak assets and full sensor logs
 are **not** stored in Git. Use the Hugging Face dataset repo:
 
-    voicepeak/rmua2026-platform-data
+    Vociepeak/rmua2026-platform-data
 
 Upload/restore:
 
-    python scripts/hf_backup.py --repo-id voicepeak/rmua2026-platform-data --repo-type dataset --folder data --path-in-repo data
-    python scripts/hf_restore.py --repo-id voicepeak/rmua2026-platform-data --repo-type dataset --local-dir D:\RMUA2026-Platform\data
+    python scripts/hf_backup.py --repo-id Vociepeak/rmua2026-platform-data --repo-type dataset --folder data --path-in-repo data
+    python scripts/hf_restore.py --repo-id Vociepeak/rmua2026-platform-data --repo-type dataset --local-dir D:\RMUA2026-Platform\data
 
 ## Known limitations
 
@@ -32,3 +32,4 @@ Upload/restore:
 - Building/road mesh collision is approximated by a 10 m wide / 5 m high corridor.
 - Segment-to-route-spline/gate mapping has `confidence: approx` in
   `configs/rules_2026.yaml`; runtime calibration is required.
+

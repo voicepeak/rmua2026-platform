@@ -70,8 +70,8 @@ the inner loop to C++/JAX/MJX; `scripts/benchmark.py` records the local baseline
 
 - Small data (`data/`) is in Git.
 - Large data and policy weights go to Hugging Face:
-  - `voicepeak/rmua2026-platform-data` (dataset, private)
-  - `voicepeak/rmua2026-platform-policies` (model, private)
+  - `Vociepeak/rmua2026-platform-data` (dataset, private)
+  - `Vociepeak/rmua2026-platform-policies` (model, private)
 - Backup/restore scripts: `scripts/hf_backup.py`, `scripts/hf_restore.py`.
 - Set `HF_TOKEN` in the environment; never commit it.
 - Use the Clash HTTP proxy on the local machine if Hugging Face is unreachable:
@@ -98,3 +98,4 @@ the inner loop to C++/JAX/MJX; `scripts/benchmark.py` records the local baseline
     src/rmua/       core, rules, scene, envs, policies, eval
     tests/          G0 rules, map, physics, gate, env and policy tests
     vendor/         reference reverse-engineering models (read-only)
+
