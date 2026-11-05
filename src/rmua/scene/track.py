@@ -29,6 +29,7 @@ class GateCrossing:
     up: np.ndarray
     width_m: float
     height_m: float
+    trigger_depth_m: float = 3.0
 
     @classmethod
     def from_gate(cls, gate: GateData, normal: np.ndarray | None = None):
@@ -71,6 +72,24 @@ class GateCrossing:
             np.abs(v) <= self.height_m * 0.5 + margin
         )
         return crossed & inside
+
+    def contains_trigger(self, pos):
+        """Box trigger volume around the gate center.
+
+        The exact official detection volume is not decoded; a 10 x 5 x 3 m box
+        is the node-1 proxy. It avoids the plane-orientation failure when the
+        route approaches a gate from below/above.
+        """
+        pos = np.atleast_2d(np.asarray(pos, dtype=np.float64))
+        delta = pos - self.center
+        u = np.sum(delta * self.right, axis=-1)
+        v = np.sum(delta * self.up, axis=-1)
+        w = np.sum(delta * self.normal, axis=-1)
+        return (
+            (np.abs(u) <= self.width_m * 0.5)
+            & (np.abs(v) <= self.height_m * 0.5)
+            & (np.abs(w) <= self.trigger_depth_m * 0.5)
+        )
 
 
 @dataclass
@@ -147,6 +166,19 @@ class SegmentTrack:
             return a.copy()
         alpha = (distance_m - self.cumulative_s[index]) / segment_length
         return a + (b - a) * alpha
+
+    def points_at_distances(self, distances) -> np.ndarray:
+        """Vectorized point lookup for a batch of arc-length values."""
+        distances = np.clip(
+            np.asarray(distances, dtype=np.float64), 0.0, self.total_length_m
+        )
+        index = np.searchsorted(self.cumulative_s, distances, side="right") - 1
+        index = np.clip(index, 0, len(self.path) - 2)
+        a = self.path[index]
+        b = self.path[index + 1]
+        segment_length = self.cumulative_s[index + 1] - self.cumulative_s[index]
+        alpha = (distances - self.cumulative_s[index]) / np.maximum(segment_length, 1e-12)
+        return a + (b - a) * alpha[..., None]
 
     def tangent_at_distance(self, distance_m: float) -> np.ndarray:
         index = int(np.searchsorted(self.cumulative_s, distance_m, side="right") - 1)

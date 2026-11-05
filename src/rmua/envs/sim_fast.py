@@ -47,6 +47,9 @@ OBS_NAMES = (
     "gate_normal_x_body",
     "gate_normal_y_body",
     "gate_normal_z_body",
+    "path_ahead_x_body",
+    "path_ahead_y_body",
+    "path_ahead_z_body",
     "progress",
     "time_left",
     "seg_1",
@@ -76,6 +79,7 @@ class SimFastConfig:
     control_hz: float = DEFAULT_CONTROL_HZ
     physics_hz: float = DEFAULT_PHYSICS_HZ
     action_mode: str = "vel"  # vel | pwm
+    action_frame: str = "body"  # body | world (kinematic only)
     dynamics: str = "kinematic"  # kinematic | quad
     max_steps: int | None = None
     corridor_half_width_m: float = 5.0
@@ -96,6 +100,7 @@ class SimFastConfig:
     penalty_timeout: float = 20.0
     penalty_force_fail: float = 20.0
     penalty_wrong_report: float = 50.0
+    penalty_missed_gate: float = 20.0
     noisy_obs: bool = False
     gps_noise_m: float = 0.1
     obs_noise_m: float = 0.02
@@ -126,6 +131,10 @@ class SimFastVecEnv:
             raise ValueError("dynamics must be 'kinematic' or 'quad'")
         if self.config.action_mode not in ("vel", "pwm"):
             raise ValueError("action_mode must be 'vel' or 'pwm'")
+        if self.config.action_frame not in ("body", "world"):
+            raise ValueError("action_frame must be 'body' or 'world'")
+        if self.config.action_frame == "world" and self.config.dynamics != "kinematic":
+            raise ValueError("world-frame velocity action requires kinematic dynamics")
         if self.config.action_mode == "pwm" and self.config.dynamics != "quad":
             raise ValueError("pwm action requires dynamics='quad'")
 
@@ -145,6 +154,8 @@ class SimFastVecEnv:
         self.start_time = np.zeros(self.n, dtype=np.float64)
         self.phase = np.zeros(self.n, dtype=np.int32)
         self.gate_index = np.zeros(self.n, dtype=np.int32)
+        self.start_inside = np.zeros(self.n, dtype=bool)
+        self.end_inside = np.zeros(self.n, dtype=bool)
         self.gates_passed = np.zeros(self.n, dtype=np.int32)
         self.total_gates = np.zeros(self.n, dtype=np.int32)
         self.factory_reports = np.zeros(self.n, dtype=np.int32)
@@ -158,6 +169,7 @@ class SimFastVecEnv:
         self.wind: WindField | None = None
         self.rngs: list[np.random.Generator] = []
         self.base_seed = int(self.config.seed)
+        self.episode_count = np.zeros(self.n, dtype=np.int64)
         self.reset()
 
     # ------------------------------------------------------------------
@@ -179,6 +191,7 @@ class SimFastVecEnv:
 
     def reset(self, seed: int | None = None):
         self._seed_rngs(seed)
+        self.episode_count.fill(0)
         start = self.track.start_position
         normal = self.track.start_gate.normal
         yaw = float(np.arctan2(normal[1], normal[0]))
@@ -200,6 +213,8 @@ class SimFastVecEnv:
         self.start_time.fill(0.0)
         self.phase.fill(PHASE_WAIT_START)
         self.gate_index.fill(0)
+        self.start_inside.fill(False)
+        self.end_inside.fill(False)
         self.gates_passed.fill(0)
         self.total_gates.fill(0)
         self.factory_reports.fill(0)
@@ -211,6 +226,65 @@ class SimFastVecEnv:
         self.lines = generate_lines(self.track, self.rngs, max_count=self.config.line_max)
         self.vehicles = generate_vehicles(self.track, self.rngs, max_count=self.config.vehicle_max)
         self.wind = WindField.create(self.rngs, self.spec.id, self.spec.wind)
+        return self._obs()
+
+    def reset_indices(self, indices):
+        """Reset only the selected environments after a terminal transition."""
+        indices = np.asarray(indices, dtype=np.int64)
+        if indices.size == 0:
+            return self._obs()
+        start = self.track.start_position
+        normal = self.track.start_gate.normal
+        yaw = float(np.arctan2(normal[1], normal[0]))
+        rngs = []
+        for env_index in indices:
+            seed = int(self.base_seed) + int(env_index) * 1000003 + int(self.episode_count[env_index])
+            self.episode_count[env_index] += 1
+            rng = np.random.default_rng(np.random.SeedSequence([seed, int(env_index)]))
+            rngs.append(rng)
+            jitter = rng.normal(0.0, 0.16, size=3)
+            jitter[2] *= 0.25
+            self.pos[env_index] = start + jitter
+            self.vel[env_index] = 0.0
+            self.yaw[env_index] = yaw + float(rng.normal(0.0, 0.01))
+            self.omega[env_index] = 0.0
+            self.quat[env_index] = quat_utils.from_euler(np.array([self.yaw[env_index]]))[0]
+            self.prev_pos[env_index] = self.pos[env_index]
+            self.gate_prev_pos[env_index] = self.pos[env_index]
+            self.time[env_index] = 0.0
+            self.segment_time[env_index] = 0.0
+            self.start_time[env_index] = 0.0
+            self.phase[env_index] = PHASE_WAIT_START
+            self.gate_index[env_index] = 0
+            self.start_inside[env_index] = False
+            self.end_inside[env_index] = False
+            self.gates_passed[env_index] = 0
+            self.total_gates[env_index] = 0
+            self.factory_reports[env_index] = 0
+            self.factory_hold[env_index] = 0.0
+            self.force_time[env_index] = 0.0
+            self.steps[env_index] = 0
+            self.episode_return[env_index] = 0.0
+            self.failure_reason[env_index] = ""
+        new_lines = generate_lines(self.track, rngs, max_count=self.config.line_max)
+        self.lines.start[indices] = new_lines.start
+        self.lines.end[indices] = new_lines.end
+        self.lines.radius[indices] = new_lines.radius
+        self.lines.active[indices] = new_lines.active
+        new_vehicles = generate_vehicles(self.track, rngs, max_count=self.config.vehicle_max)
+        self.vehicles.center[indices] = new_vehicles.center
+        self.vehicles.yaw[indices] = new_vehicles.yaw
+        self.vehicles.velocity[indices] = new_vehicles.velocity
+        self.vehicles.active[indices] = new_vehicles.active
+        new_wind = WindField.create(rngs, self.spec.id, self.spec.wind)
+        self.wind.speed[indices] = new_wind.speed
+        self.wind.direction[indices] = new_wind.direction
+        self.wind.amplitude[indices] = new_wind.amplitude
+        self.wind.period[indices] = new_wind.period
+        self.wind.phase[indices] = new_wind.phase
+        if self.quad is not None:
+            rpm = np.full((self.n, 4), self.quad.params.max_rpm * self.quad.params.hover_pwm)
+            self.quad.reset(self.pos, self.vel, self.quat, self.omega, rpm)
         return self._obs()
 
     # ------------------------------------------------------------------
@@ -232,7 +306,20 @@ class SimFastVecEnv:
         prev_vel = self.vel.copy()
 
         if self.config.dynamics == "kinematic":
-            v_world_des = self._body_to_world(actions[:, :3])
+            if self.config.action_frame == "world":
+                v_world_des = actions[:, :3].copy()
+                speed = np.linalg.norm(v_world_des[:, :2], axis=1)
+                target_yaw = np.where(
+                    speed > 0.3, np.arctan2(v_world_des[:, 1], v_world_des[:, 0]), self.yaw
+                )
+                delta_yaw = wrap_pi(target_yaw - self.yaw)
+                max_turn = 3.0 * self.dt
+                self.yaw = wrap_pi(self.yaw + np.clip(delta_yaw, -max_turn, max_turn))
+                self.omega[:, 2] = np.clip(delta_yaw / self.dt, -3.0, 3.0)
+            else:
+                v_world_des = self._body_to_world(actions[:, :3])
+                self.yaw = wrap_pi(self.yaw + actions[:, 3] * self.dt)
+                self.omega[:, 2] = actions[:, 3]
             alpha = 1.0 - np.exp(-self.dt / 0.12)
             desired_vel = self.vel + (v_world_des - self.vel) * alpha
             # Acceleration limit 8 m/s^2, applied as a velocity delta cap.
@@ -242,9 +329,7 @@ class SimFastVecEnv:
             scale = np.minimum(1.0, max_delta / np.maximum(norm, 1e-9))
             self.vel = prev_vel + delta_v * scale
             self.pos += self.vel * self.dt
-            self.yaw = wrap_pi(self.yaw + actions[:, 3] * self.dt)
             self.quat = quat_utils.from_euler(self.yaw)
-            self.omega[:, 2] = actions[:, 3]
         else:
             if self.config.action_mode == "vel":
                 pwm = self.controller.pwm(self.quad, actions[:, :3], actions[:, 3], self.dt)
@@ -280,9 +365,13 @@ class SimFastVecEnv:
         self.start_time = np.where(self.phase == PHASE_WAIT_START, self.start_time + self.dt, self.start_time)
         self.segment_time = np.where(self.phase == PHASE_FLYING, self.segment_time + self.dt, self.segment_time)
 
-        # Gate crossings, in order. The start gate is gate 0; the end gate is gate 1.
-        start_cross = self.track.start_gate.contains_crossing(prev_pos, self.pos)
-        end_cross = self.track.end_gate.contains_crossing(prev_pos, self.pos)
+        # Gate trigger volumes (node-1 proxy for the undecoded official trigger).
+        start_inside = self.track.start_gate.contains_trigger(self.pos)
+        end_inside = self.track.end_gate.contains_trigger(self.pos)
+        start_cross = start_inside & (~self.start_inside)
+        end_cross = end_inside & (~self.end_inside)
+        self.start_inside = start_inside
+        self.end_inside = end_inside
         start_pass = (self.phase == PHASE_FLYING) & (self.gate_index == 0) & start_cross
         end_ready = (self.phase == PHASE_FLYING) & (self.gate_index == 1) & end_cross
         factory_required = self.spec.factory_reports
@@ -292,6 +381,26 @@ class SimFastVecEnv:
         self.gates_passed += start_pass.astype(np.int32) + end_pass.astype(np.int32)
         self.total_gates += start_pass.astype(np.int32) + end_pass.astype(np.int32)
         segment_done = end_pass
+        progress_now = self.track.project(self.pos)[0]
+        start_gate_s = float(
+            self.track.project(self.track.start_gate.center[None, :])[0][0]
+        )
+        end_gate_s = float(
+            self.track.project(self.track.end_gate.center[None, :])[0][0]
+        )
+        missed_start = (
+            (self.phase == PHASE_FLYING)
+            & (self.gate_index == 0)
+            & (progress_now > start_gate_s + 10.0)
+            & (~start_pass)
+        )
+        missed_end = (
+            (self.phase == PHASE_FLYING)
+            & (self.gate_index == 1)
+            & (progress_now > end_gate_s + 5.0)
+            & (~end_pass)
+        )
+        missed_gate = missed_start | missed_end
 
         # Factory inspection placeholder: hold near a factory target for 1 s.
         # Perception/report correctness is a node-2 concern.
@@ -323,15 +432,23 @@ class SimFastVecEnv:
             self.segment_time > self.spec.time_limit_s
         )
         force_fail = self.force_time > self.config.force_field_limit_s
-        failed = collision | timeout | force_fail
+        failed = collision | timeout | force_fail | missed_gate
         done = segment_done | failed
 
-        # Reward.
-        progress = np.clip(
-            self.track.project(self.pos)[0] - self.track.project(prev_pos)[0],
+        # Reward. Before the start gate, reward approach to the gate; path
+        # progress is unlocked only after the start gate so the policy cannot
+        # farm progress by climbing parallel to the path.
+        path_progress = np.clip(
+            progress_now - self.track.project(prev_pos)[0],
             -10.0,
             10.0,
         )
+        start_distance = np.linalg.norm(self.pos - self.track.start_gate.center, axis=1)
+        start_distance_prev = np.linalg.norm(
+            prev_pos - self.track.start_gate.center, axis=1
+        )
+        gate_approach = np.clip(start_distance_prev - start_distance, -10.0, 10.0)
+        progress = np.where(self.gate_index >= 1, path_progress, gate_approach)
         reward = self.config.reward_progress * progress
         reward += self.config.reward_gate * (
             start_pass.astype(np.float64) + end_pass.astype(np.float64)
@@ -342,6 +459,7 @@ class SimFastVecEnv:
         reward -= self.config.penalty_collision * collision.astype(np.float64)
         reward -= self.config.penalty_timeout * timeout.astype(np.float64)
         reward -= self.config.penalty_force_fail * force_fail.astype(np.float64)
+        reward -= self.config.penalty_missed_gate * missed_gate.astype(np.float64)
         self.episode_return += reward
 
         # Terminal bookkeeping.
@@ -357,6 +475,8 @@ class SimFastVecEnv:
                 self.failure_reason[env_index] = "timeout"
             elif force_fail[env_index]:
                 self.failure_reason[env_index] = "force_field"
+            elif missed_gate[env_index]:
+                self.failure_reason[env_index] = "missed_gate"
 
         truncated = self.steps >= self.max_steps
         return self._obs(), reward.astype(np.float32), done, truncated, self._info()
@@ -400,6 +520,15 @@ class SimFastVecEnv:
         rel_world = centers - self.pos
         rel_body = quat_utils.rotate_inverse(self.quat, rel_world)
         normal_body = quat_utils.rotate_inverse(self.quat, normals)
+        ahead = self.track.points_at_distances(
+            np.minimum(progress + 10.0, self.track.total_length_m)
+        )
+        ahead = np.where(
+            (self.gate_index == 0)[:, None],
+            self.track.start_gate.center[None, :],
+            ahead,
+        )
+        ahead_body = quat_utils.rotate_inverse(self.quat, ahead - self.pos)
         seg_onehot = np.zeros((self.n, 6), dtype=np.float64)
         seg_onehot[np.arange(self.n), self.spec.id - 1] = 1.0
         force_flag = (~self.track.in_corridor(self.pos)).astype(np.float64)
@@ -412,6 +541,7 @@ class SimFastVecEnv:
                 self.omega,
                 rel_body,
                 normal_body,
+                ahead_body,
                 progress_norm[:, None],
                 np.maximum(self.spec.time_limit_s - self.segment_time, 0.0)[:, None],
                 seg_onehot,
