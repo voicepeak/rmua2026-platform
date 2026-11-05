@@ -66,6 +66,15 @@ Run a smoke test:
 The Python reference is intentionally simple. The server version should move
 the inner loop to C++/JAX/MJX; `scripts/benchmark.py` records the local baseline.
 
+## Server handoff
+
+The local node 0/1 build is complete. On a fresh server, run:
+
+    bash scripts/server_smoke.sh
+
+It validates data, runs all tests, records the throughput baseline and prints the
+hardware lines. See `docs/server_handoff.md` for the checklist and stop lines.
+
 ## Data and weights
 
 - Small data (`data/`) is in Git.
