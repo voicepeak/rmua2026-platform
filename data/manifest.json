@@ -1,0 +1,35 @@
+{
+  "git_commit": null,
+  "files": [
+    {
+      "path": "data/maps/maps_summary_all.json",
+      "bytes": 702208,
+      "sha256": "d4617e33888d721ff1b8647140be157fbb1fcfe30749bbc12386e910d14f4a03"
+    },
+    {
+      "path": "data/tables/check_ports.csv",
+      "bytes": 1034,
+      "sha256": "ad771d3a98ddfd456a3d719a16e559a1b51146bbe38dda20b52625c5565d2c80"
+    },
+    {
+      "path": "data/tables/factories.csv",
+      "bytes": 13124,
+      "sha256": "7ee622b6e0b090be4509f556734f356cd641cf2910ee8787bae2e18828d3a00b"
+    },
+    {
+      "path": "data/tables/gates.csv",
+      "bytes": 20384,
+      "sha256": "b9882f25f3a9a60fafc459e0350b6429bb679cd6dcce3e85c7b4b9cd33d7a94a"
+    },
+    {
+      "path": "data/tables/ports.csv",
+      "bytes": 12406,
+      "sha256": "b4719e5ca6fea1d682250703b25c1cc14b1acf8a813e6a1771f3165d9ff57513"
+    },
+    {
+      "path": "data/tables/routes.csv",
+      "bytes": 91384,
+      "sha256": "62065786e20e479cacd9b9404607c9a28414e629d80d62f30e2764b1fde1c505"
+    }
+  ]
+}

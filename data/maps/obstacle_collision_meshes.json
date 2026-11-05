@@ -1,0 +1,1228 @@
+{
+  "HoverTruck": {
+    "source_json": "artifacts/blueprints/mesh_HoverTruck.json",
+    "source_json_sha256": "72d1d161f43ba43dac77da555cf180fd470aef002cc47574499da1af35817a65",
+    "coordinate_scope": "local mesh; element/component/actor transforms not applied",
+    "convex_elements": [
+      {
+        "vertices_local": [
+          [
+            14.509881019592285,
+            436.3533935546875,
+            148.1336212158203
+          ],
+          [
+            -175.48562622070312,
+            -439.67413330078125,
+            98.39443969726562
+          ],
+          [
+            -173.66920471191406,
+            -432.9454040527344,
+            134.75160217285156
+          ],
+          [
+            175.95159912109375,
+            -428.55682373046875,
+            48.37855529785156
+          ],
+          [
+            118.09419250488281,
+            -24.59804344177246,
+            289.7396240234375
+          ],
+          [
+            159.1869354248047,
+            403.9423828125,
+            6.837477684020996
+          ],
+          [
+            -157.32110595703125,
+            410.7556457519531,
+            1.3678535223007202
+          ],
+          [
+            -120.26754760742188,
+            19.894866943359375,
+            295.11529541015625
+          ],
+          [
+            -155.12664794921875,
+            -430.9439392089844,
+            0.025015385821461678
+          ],
+          [
+            136.8430633544922,
+            -426.042724609375,
+            226.34942626953125
+          ],
+          [
+            160.853759765625,
+            409.0440979003906,
+            159.76856994628906
+          ],
+          [
+            -158.89297485351562,
+            416.7108459472656,
+            147.0847625732422
+          ],
+          [
+            158.27972412109375,
+            -429.80291748046875,
+            3.6136062145233154
+          ],
+          [
+            -128.564453125,
+            -415.7592468261719,
+            232.0667724609375
+          ],
+          [
+            163.64991760253906,
+            -427.1210021972656,
+            191.17137145996094
+          ],
+          [
+            126.39442443847656,
+            432.67022705078125,
+            2.195791006088257
+          ],
+          [
+            127.02995300292969,
+            54.58671569824219,
+            286.7967224121094
+          ],
+          [
+            -173.3209991455078,
+            406.1875915527344,
+            48.271400451660156
+          ],
+          [
+            -164.6092071533203,
+            319.1596374511719,
+            177.24928283691406
+          ],
+          [
+            175.52220153808594,
+            182.15545654296875,
+            96.57164764404297
+          ],
+          [
+            -165.44903564453125,
+            -431.3589782714844,
+            188.33555603027344
+          ],
+          [
+            171.6821746826172,
+            -449.0731201171875,
+            110.02618408203125
+          ],
+          [
+            -154.35174560546875,
+            396.0606689453125,
+            165.1641845703125
+          ],
+          [
+            22.552780151367188,
+            -442.734619140625,
+            228.30133056640625
+          ],
+          [
+            118.14901733398438,
+            -201.59774780273438,
+            270.05145263671875
+          ],
+          [
+            148.43612670898438,
+            389.6182861328125,
+            0.02505125291645527
+          ],
+          [
+            -131.05348205566406,
+            432.6955871582031,
+            8.980795860290527
+          ],
+          [
+            165.04486083984375,
+            291.5068359375,
+            181.4418182373047
+          ],
+          [
+            -174.30625915527344,
+            -431.1354064941406,
+            44.2107048034668
+          ],
+          [
+            24.50868034362793,
+            -436.2281799316406,
+            0.025015152990818024
+          ],
+          [
+            -119.9510726928711,
+            -210.9580078125,
+            268.43084716796875
+          ],
+          [
+            168.30084228515625,
+            405.9745178222656,
+            33.554832458496094
+          ]
+        ],
+        "triangle_indices": [
+          10,
+          19,
+          31,
+          5,
+          3,
+          12,
+          0,
+          10,
+          15,
+          7,
+          4,
+          16,
+          4,
+          9,
+          16,
+          9,
+          14,
+          16,
+          1,
+          2,
+          17,
+          11,
+          17,
+          18,
+          17,
+          2,
+          18,
+          2,
+          1,
+          20,
+          18,
+          2,
+          20,
+          7,
+          18,
+          20,
+          12,
+          3,
+          21,
+          14,
+          9,
+          21,
+          3,
+          19,
+          21,
+          19,
+          14,
+          21,
+          10,
+          0,
+          22,
+          0,
+          11,
+          22,
+          7,
+          16,
+          22,
+          16,
+          10,
+          22,
+          11,
+          18,
+          22,
+          18,
+          7,
+          22,
+          20,
+          1,
+          23,
+          13,
+          20,
+          23,
+          1,
+          21,
+          23,
+          21,
+          9,
+          23,
+          4,
+          7,
+          24,
+          9,
+          4,
+          24,
+          23,
+          9,
+          24,
+          8,
+          6,
+          25,
+          5,
+          12,
+          25,
+          6,
+          15,
+          25,
+          15,
+          5,
+          25,
+          11,
+          0,
+          26,
+          0,
+          15,
+          26,
+          15,
+          6,
+          26,
+          6,
+          17,
+          26,
+          17,
+          11,
+          26,
+          10,
+          16,
+          27,
+          16,
+          14,
+          27,
+          19,
+          10,
+          27,
+          14,
+          19,
+          27,
+          8,
+          1,
+          28,
+          6,
+          8,
+          28,
+          1,
+          17,
+          28,
+          17,
+          6,
+          28,
+          1,
+          8,
+          29,
+          21,
+          1,
+          29,
+          12,
+          21,
+          29,
+          8,
+          25,
+          29,
+          25,
+          12,
+          29,
+          7,
+          20,
+          30,
+          20,
+          13,
+          30,
+          13,
+          23,
+          30,
+          24,
+          7,
+          30,
+          23,
+          24,
+          30,
+          3,
+          5,
+          31,
+          15,
+          10,
+          31,
+          5,
+          15,
+          31,
+          19,
+          3,
+          31
+        ],
+        "bounds_min_local": [
+          -175.48562622070312,
+          -449.0731201171875,
+          0.025015152990818024
+        ],
+        "bounds_max_local": [
+          175.95159912109375,
+          436.3533935546875,
+          295.11529541015625
+        ],
+        "edge_incidence_counts": {
+          "2": 90
+        },
+        "element_transform_raw": {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Transform",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "Transform",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Quat",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Rotation",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.QuatPropertyData, UAssetAPI",
+                  "Name": "Rotation",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FQuat, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0",
+                    "W": 1.0
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Translation",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Translation",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Scale3D",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Scale3D",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "element_box_raw": {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Box",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "ElemBox",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.BoxPropertyData, UAssetAPI",
+              "Name": "ElemBox",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": {
+                "$type": "UAssetAPI.UnrealTypes.TBox`1[[UAssetAPI.UnrealTypes.FVector, UAssetAPI]], UAssetAPI",
+                "Min": {
+                  "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                  "X": -175.48562622070312,
+                  "Y": -449.0731201171875,
+                  "Z": 0.025015152990818024
+                },
+                "Max": {
+                  "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                  "X": 175.95159912109375,
+                  "Y": 436.3533935546875,
+                  "Z": 295.11529541015625
+                },
+                "IsValid": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "thickline": {
+    "source_json": "artifacts/blueprints/mesh_thickline.json",
+    "source_json_sha256": "561b3bc9bf4e615cd483928c2508657030123411d933ac0a843902ad590cfd6c",
+    "coordinate_scope": "local mesh; element/component/actor transforms not applied",
+    "convex_elements": [
+      {
+        "vertices_local": [
+          [
+            5.099999904632568,
+            2.1500003337860107,
+            -350.10723876953125
+          ],
+          [
+            5.099999904632568,
+            -2.1500003337860107,
+            -350.1177673339844
+          ],
+          [
+            5.099999904632568,
+            -2.1499993801116943,
+            350.125
+          ],
+          [
+            5.099999904632568,
+            2.1500000953674316,
+            350.125
+          ],
+          [
+            -5.099999904632568,
+            -2.1499991416931152,
+            -350.1072082519531
+          ],
+          [
+            -5.099999904632568,
+            2.1499996185302734,
+            -350.11773681640625
+          ],
+          [
+            -5.099999904632568,
+            2.1500000953674316,
+            350.125
+          ],
+          [
+            -5.099999904632568,
+            -2.1499996185302734,
+            350.125
+          ],
+          [
+            -2.1499438285827637,
+            5.100056171417236,
+            -350.10723876953125
+          ],
+          [
+            2.1499438285827637,
+            5.100056171417236,
+            -350.1177673339844
+          ],
+          [
+            2.1499428749084473,
+            5.100057125091553,
+            350.125
+          ],
+          [
+            -2.149942636489868,
+            5.100057125091553,
+            350.125
+          ],
+          [
+            2.1499431133270264,
+            -5.100057125091553,
+            -350.10723876953125
+          ],
+          [
+            -2.149942398071289,
+            -5.100057125091553,
+            -350.1177673339844
+          ],
+          [
+            -2.149942636489868,
+            -5.100057601928711,
+            350.125
+          ],
+          [
+            2.1499428749084473,
+            -5.100057125091553,
+            350.125
+          ]
+        ],
+        "triangle_indices": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          12,
+          14,
+          15,
+          11,
+          10,
+          3,
+          11,
+          3,
+          2,
+          11,
+          2,
+          15,
+          11,
+          15,
+          14,
+          11,
+          14,
+          7,
+          11,
+          7,
+          6,
+          13,
+          12,
+          1,
+          13,
+          1,
+          0,
+          13,
+          0,
+          9,
+          13,
+          9,
+          8,
+          13,
+          8,
+          5,
+          13,
+          5,
+          4,
+          0,
+          3,
+          10,
+          0,
+          10,
+          9,
+          4,
+          7,
+          14,
+          4,
+          14,
+          13,
+          12,
+          15,
+          2,
+          12,
+          2,
+          1,
+          8,
+          11,
+          6,
+          8,
+          6,
+          5
+        ],
+        "bounds_min_local": [
+          -5.099999904632568,
+          -5.100057601928711,
+          -350.1177673339844
+        ],
+        "bounds_max_local": [
+          5.099999904632568,
+          5.100057125091553,
+          350.125
+        ],
+        "edge_incidence_counts": {
+          "2": 42
+        },
+        "element_transform_raw": {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Transform",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "Transform",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Quat",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Rotation",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.QuatPropertyData, UAssetAPI",
+                  "Name": "Rotation",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FQuat, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0",
+                    "W": 1.0
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Translation",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Translation",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Scale3D",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Scale3D",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "element_box_raw": {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Box",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "ElemBox",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.BoxPropertyData, UAssetAPI",
+              "Name": "ElemBox",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": {
+                "$type": "UAssetAPI.UnrealTypes.TBox`1[[UAssetAPI.UnrealTypes.FVector, UAssetAPI]], UAssetAPI",
+                "Min": {
+                  "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                  "X": -5.099999904632568,
+                  "Y": -5.100057601928711,
+                  "Z": -350.1177673339844
+                },
+                "Max": {
+                  "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                  "X": 5.099999904632568,
+                  "Y": 5.100057125091553,
+                  "Z": 350.125
+                },
+                "IsValid": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "thinline": {
+    "source_json": "artifacts/blueprints/mesh_thinline.json",
+    "source_json_sha256": "10c0f0f07aaa2202f8fe796e3ff82a0ccc2cda0d53b65f09a59971dd95154f23",
+    "coordinate_scope": "local mesh; element/component/actor transforms not applied",
+    "convex_elements": [
+      {
+        "vertices_local": [
+          [
+            2.59999942779541,
+            1.0250004529953003,
+            -350.1075744628906
+          ],
+          [
+            2.59999942779541,
+            -1.0250004529953003,
+            -350.11749267578125
+          ],
+          [
+            2.59999942779541,
+            -1.0250004529953003,
+            350.125
+          ],
+          [
+            2.59999942779541,
+            1.0250003337860107,
+            350.125
+          ],
+          [
+            -2.59999942779541,
+            -1.0250002145767212,
+            -350.1075134277344
+          ],
+          [
+            -2.59999942779541,
+            1.0250004529953003,
+            -350.117431640625
+          ],
+          [
+            -2.59999942779541,
+            1.0250004529953003,
+            350.125
+          ],
+          [
+            -2.59999942779541,
+            -1.0250003337860107,
+            350.125
+          ],
+          [
+            -1.024943470954895,
+            2.6000564098358154,
+            -350.10748291015625
+          ],
+          [
+            1.0249435901641846,
+            2.6000564098358154,
+            -350.1174011230469
+          ],
+          [
+            1.0249431133270264,
+            2.6000568866729736,
+            350.125
+          ],
+          [
+            -1.0249431133270264,
+            2.6000568866729736,
+            350.125
+          ],
+          [
+            1.024943470954895,
+            -2.6000564098358154,
+            -350.1075439453125
+          ],
+          [
+            -1.0249433517456055,
+            -2.6000564098358154,
+            -350.1174621582031
+          ],
+          [
+            -1.0249431133270264,
+            -2.6000568866729736,
+            350.125
+          ],
+          [
+            1.0249431133270264,
+            -2.6000568866729736,
+            350.125
+          ]
+        ],
+        "triangle_indices": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          12,
+          14,
+          15,
+          11,
+          10,
+          3,
+          11,
+          3,
+          2,
+          11,
+          2,
+          15,
+          11,
+          15,
+          14,
+          11,
+          14,
+          7,
+          11,
+          7,
+          6,
+          13,
+          12,
+          1,
+          13,
+          1,
+          0,
+          13,
+          0,
+          9,
+          13,
+          9,
+          8,
+          13,
+          8,
+          5,
+          13,
+          5,
+          4,
+          0,
+          3,
+          10,
+          0,
+          10,
+          9,
+          4,
+          7,
+          14,
+          4,
+          14,
+          13,
+          12,
+          15,
+          2,
+          12,
+          2,
+          1,
+          8,
+          11,
+          6,
+          8,
+          6,
+          5
+        ],
+        "bounds_min_local": [
+          -2.59999942779541,
+          -2.6000568866729736,
+          -350.11749267578125
+        ],
+        "bounds_max_local": [
+          2.59999942779541,
+          2.6000568866729736,
+          350.125
+        ],
+        "edge_incidence_counts": {
+          "2": 42
+        },
+        "element_transform_raw": {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Transform",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "Transform",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Quat",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Rotation",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.QuatPropertyData, UAssetAPI",
+                  "Name": "Rotation",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FQuat, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0",
+                    "W": 1.0
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Translation",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Translation",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": "+0"
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Scale3D",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Scale3D",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "element_box_raw": {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "Box",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "ElemBox",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.BoxPropertyData, UAssetAPI",
+              "Name": "ElemBox",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": {
+                "$type": "UAssetAPI.UnrealTypes.TBox`1[[UAssetAPI.UnrealTypes.FVector, UAssetAPI]], UAssetAPI",
+                "Min": {
+                  "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                  "X": -2.59999942779541,
+                  "Y": -2.6000568866729736,
+                  "Z": -350.11749267578125
+                },
+                "Max": {
+                  "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                  "X": 2.59999942779541,
+                  "Y": 2.6000568866729736,
+                  "Z": 350.125
+                },
+                "IsValid": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
