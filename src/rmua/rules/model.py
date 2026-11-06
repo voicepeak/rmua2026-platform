@@ -23,6 +23,7 @@ class SegmentSpec:
     factory_before: int
     factory_after: int
     gates: tuple[str, ...]
+    route_names: tuple[str, ...] = ()
     confidence: str = "approx"
     route_hints: tuple[str, ...] = ()
     notes: str = ""
@@ -111,6 +112,7 @@ def load_rules(path: str | Path | None = None) -> Rules:
             factory_before=int(item.get("factory_before", 0)),
             factory_after=int(item.get("factory_after", 0)),
             gates=_tuple(item.get("gates")),
+            route_names=_tuple(item.get("route_names")),
             confidence=str(item.get("confidence", "approx")),
             route_hints=_tuple(item.get("route_hints")),
             notes=str(item.get("notes", "")),

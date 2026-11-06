@@ -34,8 +34,7 @@ def test_track_build_for_every_segment():
     for spec in rules.segments:
         track = build_track(data, spec)
         assert len(track.path) >= 4
-        assert track.total_length_m > 50.0
+        assert track.total_length_m > 300.0
         assert np.all(np.isfinite(track.path))
-        # start position is on the outside of the start gate; end is beyond end gate.
-        assert track.start_gate.signed_distance(track.start_position) < 0.0
-        assert track.end_gate.signed_distance(track.end_position) > 0.0
+        assert np.min(np.linalg.norm(track.path - track.start_gate.center, axis=1)) < 1.0
+        assert np.min(np.linalg.norm(track.path - track.end_gate.center, axis=1)) < 1.0

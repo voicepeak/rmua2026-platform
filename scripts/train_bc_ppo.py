@@ -32,20 +32,22 @@ from rmua.training.ppo import (  # noqa: E402
 )
 
 
-def scripted_action(env, wp):
-    targets = np.stack(
-        (
-            env.track.start_gate.center,
-            env.map_data.centroid,
-            env.track.end_gate.center,
-        ),
-        axis=0,
+def scripted_action(env, wp=None):
+    """Path-following expert with a curvature speed limit."""
+    distance, _, _, _, _ = env.track.project(env.pos)
+    ahead_distance = np.minimum(distance + 8.0, env.track.total_length_m)
+    target = env.track.points_at_distances(ahead_distance)
+    tangent_now = env.track.tangents_at_distances(distance)
+    tangent_ahead = env.track.tangents_at_distances(
+        np.minimum(distance + 25.0, env.track.total_length_m)
     )
-    target = targets[np.clip(wp, 0, 2)]
+    cosine = np.clip(np.sum(tangent_now * tangent_ahead, axis=1), -1.0, 1.0)
+    turn_angle = np.arccos(cosine)
+    turn_factor = np.clip(1.0 - turn_angle / 1.6, 0.55, 1.0)
     delta = target - env.pos
-    distance = np.linalg.norm(delta, axis=1, keepdims=True)
-    speed = np.clip(distance * 1.5, 0.0, 8.0)
-    velocity = delta / np.maximum(distance, 1e-6) * speed
+    target_distance = np.linalg.norm(delta, axis=1, keepdims=True)
+    speed = np.clip(target_distance * 3.0, 0.0, 25.0) * turn_factor[:, None]
+    velocity = delta / np.maximum(target_distance, 1e-6) * speed
     return np.concatenate((velocity, np.zeros((env.n, 1))), axis=1)
 
 

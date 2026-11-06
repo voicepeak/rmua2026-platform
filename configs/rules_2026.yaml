@@ -68,7 +68,8 @@ segments:
     wind: false
     factory_before: 0
     factory_after: 0
-    gates: ["1_1_Gate", "1_2_Gate"]
+    gates: ["1_1_Gate", "2_1_Gate"]
+    route_names: ["1_1", "2_1"]
     confidence: "approx"
     notes: "Start/end marker mapping is official; gate name mapping needs runtime calibration."
   - id: 2
@@ -79,7 +80,8 @@ segments:
     wind: false
     factory_before: 0
     factory_after: 0
-    gates: ["2_1_Gate", "2_2_Gate"]
+    gates: ["3_1_Gate", "4_1_Gate"]
+    route_names: ["3_1", "4_1"]
     confidence: "approx"
   - id: 3
     name: "5-8"
@@ -89,7 +91,8 @@ segments:
     wind: false
     factory_before: 0
     factory_after: 0
-    gates: ["3_1_Gate", "3_2_Gate"]
+    gates: ["5_1_Gate", "6_1_Gate"]
+    route_names: ["5_1", "6_1"]
     confidence: "approx"
   - id: 4
     name: "8-12"
@@ -99,7 +102,8 @@ segments:
     wind: true
     factory_before: 1
     factory_after: 0
-    gates: ["4_1_Gate", "4_2_Gate"]
+    gates: ["1_2_Gate", "6_2_Gate"]
+    route_names: ["1_2", "6_2"]
     confidence: "approx"
     route_hints: ["2_2"]
     notes: "docs/17/local_models show binary stage 4 uses route 2_2; gate mapping still needs runtime calibration."
@@ -111,7 +115,8 @@ segments:
     wind: true
     factory_before: 1
     factory_after: 1
-    gates: ["5_1_Gate", "5_2_Gate"]
+    gates: ["5_2_Gate", "4_2_Gate"]
+    route_names: ["5_2", "4_2"]
     confidence: "approx"
     route_hints: ["4_2"]
   - id: 6
@@ -122,7 +127,8 @@ segments:
     wind: true
     factory_before: 1
     factory_after: 1
-    gates: ["6_1_Gate", "6_2_Gate"]
+    gates: ["3_2_Gate", "2_2_Gate"]
+    route_names: ["3_2", "2_2"]
     confidence: "approx"
     route_hints: ["1_2"]
 

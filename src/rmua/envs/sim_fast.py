@@ -81,6 +81,8 @@ class SimFastConfig:
     action_mode: str = "vel"  # vel | pwm
     action_frame: str = "body"  # body | world (kinematic only)
     dynamics: str = "kinematic"  # kinematic | quad
+    max_speed_mps: float = 25.0
+    max_accel_mps2: float = 8.0
     max_steps: int | None = None
     corridor_half_width_m: float = 5.0
     corridor_height_m: float = 5.0
@@ -94,7 +96,7 @@ class SimFastConfig:
     reward_progress: float = 1.0
     reward_gate: float = 10.0
     reward_complete: float = 50.0
-    reward_time: float = 0.05
+    reward_time: float = 0.2
     reward_force: float = 0.5
     penalty_collision: float = 20.0
     penalty_timeout: float = 20.0
@@ -294,7 +296,9 @@ class SimFastVecEnv:
             raise ValueError(f"actions must be ({self.n}, {self.action_dim}), got {actions.shape}")
         if self.config.action_mode == "vel":
             actions = actions.copy()
-            actions[:, :3] = np.clip(actions[:, :3], -12.0, 12.0)
+            actions[:, :3] = np.clip(
+                actions[:, :3], -self.config.max_speed_mps, self.config.max_speed_mps
+            )
             actions[:, 3] = np.clip(actions[:, 3], -2.5, 2.5)
 
         # Wind and force field are evaluated at the current state.
@@ -324,7 +328,7 @@ class SimFastVecEnv:
             desired_vel = self.vel + (v_world_des - self.vel) * alpha
             # Acceleration limit 8 m/s^2, applied as a velocity delta cap.
             delta_v = desired_vel - prev_vel
-            max_delta = 8.0 * self.dt
+            max_delta = self.config.max_accel_mps2 * self.dt
             norm = np.linalg.norm(delta_v, axis=1, keepdims=True)
             scale = np.minimum(1.0, max_delta / np.maximum(norm, 1e-9))
             self.vel = prev_vel + delta_v * scale
@@ -380,7 +384,14 @@ class SimFastVecEnv:
         self.gate_index = np.where(end_pass, 2, self.gate_index)
         self.gates_passed += start_pass.astype(np.int32) + end_pass.astype(np.int32)
         self.total_gates += start_pass.astype(np.int32) + end_pass.astype(np.int32)
-        segment_done = end_pass
+        end_trigger = (
+            np.linalg.norm(self.pos - self.track.end_position, axis=1) < 5.0
+        )
+        segment_done = (
+            (self.gate_index == 2)
+            & end_trigger
+            & (self.phase == PHASE_FLYING)
+        )
         progress_now = self.track.project(self.pos)[0]
         start_gate_s = float(
             self.track.project(self.track.start_gate.center[None, :])[0][0]
@@ -523,11 +534,12 @@ class SimFastVecEnv:
         ahead = self.track.points_at_distances(
             np.minimum(progress + 10.0, self.track.total_length_m)
         )
-        ahead = np.where(
-            (self.gate_index == 0)[:, None],
-            self.track.start_gate.center[None, :],
-            ahead,
-        )
+        if not self.track.route_mode:
+            ahead = np.where(
+                (self.gate_index == 0)[:, None],
+                self.track.start_gate.center[None, :],
+                ahead,
+            )
         ahead_body = quat_utils.rotate_inverse(self.quat, ahead - self.pos)
         seg_onehot = np.zeros((self.n, 6), dtype=np.float64)
         seg_onehot[np.arange(self.n), self.spec.id - 1] = 1.0

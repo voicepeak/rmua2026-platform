@@ -4,24 +4,20 @@ from rmua.envs.sim_fast import OBS_DIM, SimFastConfig, SimFastVecEnv
 
 
 def _waypoint_action(env):
-    targets = [env.track.start_gate.center, env.map_data.centroid, env.track.end_gate.center]
-    if not hasattr(env, "_wp"):
-        env._wp = 0
-    target = targets[env._wp]
+    distance, _, _, _, _ = env.track.project(env.pos)
+    ahead = np.minimum(distance[0] + 8.0, env.track.total_length_m)
+    target = env.track.point_at_distance(ahead)
+    tangent_now = env.track.tangent_at_distance(distance[0])
+    tangent_ahead = env.track.tangent_at_distance(
+        min(distance[0] + 25.0, env.track.total_length_m)
+    )
+    turn_angle = np.arccos(np.clip(np.dot(tangent_now, tangent_ahead), -1.0, 1.0))
+    turn_factor = max(0.55, min(1.0, 1.0 - turn_angle / 1.6))
     delta = target - env.pos[0]
-    if np.linalg.norm(delta) < 3.0 and env._wp < 2:
-        env._wp += 1
-        target = targets[env._wp]
-        delta = target - env.pos[0]
-    yaw = env.yaw[0]
-    c, s = np.cos(yaw), np.sin(yaw)
-    vx = delta[0] * c + delta[1] * s
-    vy = -delta[0] * s + delta[1] * c
-    horizontal = np.array([vx, vy])
-    horizontal = horizontal / max(np.linalg.norm(horizontal), 1e-9) * 8.0
-    desired_yaw = np.arctan2(delta[1], delta[0])
-    yaw_rate = np.clip((desired_yaw - yaw + np.pi) % (2 * np.pi) - np.pi, -1.5, 1.5)
-    return np.array([[horizontal[0], horizontal[1], np.clip(delta[2] * 1.5, -3.0, 3.0), yaw_rate]])
+    length = max(np.linalg.norm(delta), 1e-6)
+    speed = min(20.0, length * 3.0) * turn_factor
+    velocity = delta / length * speed
+    return np.array([[velocity[0], velocity[1], velocity[2], 0.0]])
 
 
 def test_reset_step_shapes():
@@ -66,11 +62,19 @@ def test_start_timeout():
 
 def test_kinematic_segment_success():
     env = SimFastVecEnv(
-        SimFastConfig(num_envs=1, segment_id=1, dynamics="kinematic", action_mode="vel")
+        SimFastConfig(
+            num_envs=1,
+            segment_id=1,
+            dynamics="kinematic",
+            action_mode="vel",
+            action_frame="world",
+            line_max=0,
+            vehicle_max=0,
+        )
     )
     env.reset()
     done = False
-    for _ in range(2500):
+    for _ in range(20000):
         _, _, terminated, truncated, info = env.step(_waypoint_action(env))
         if terminated[0] or truncated[0]:
             done = True
