@@ -12,6 +12,26 @@ Source of truth: `configs/rules_2026.yaml`. Tests: `tests/test_rules.py`.
 - The drone must leave the trigger zone within 30 s of deployment/segment start.
 - Ranking: detection gates first, total time second.
 
+### Shuttle route logic (corrected 2026-11-06)
+
+Each stage is not a single route. It is:
+
+- Stage 1: marker 1 -> hub -> end of route 3; triggers stage 2.
+- Stage 2: return along route 3 to the hub -> route 5; triggers stage 3.
+- Stage 3: route 5 return -> route 8.
+- Stage 4: route 8 return -> route 12.
+- Stage 5: route 12 return -> route 10.
+- Stage 6: route 10 return -> route 7.
+
+Official stage 1 is generated as `spline0 + reverse(spline2)` in
+`route_1_3.yaml`. Do not model a stage as `1_1 + 1_2` or `1_1 + 2_1`.
+
+The official detection-gate count is still under audit. The 12 `*_Gate`
+actors in the map look like hub/route gates; the remote 10-gate
+`gates_vision_1_3.yaml` is a vision-derived partial list. A course-wide count
+of 60-70 gates is plausible but not yet verified. Do not use 2, 10 or 12 as the
+official gate count until the runtime gate audit is complete.
+
 ## Gates and factories
 
 - Detection gates trigger in path order; a later gate cannot score before the

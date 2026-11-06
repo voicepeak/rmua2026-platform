@@ -1,5 +1,13 @@
 # Training results: route-spline 1-3, 3-5, 5-8
 
+> **2026-11-06 correction:** These results use a **proxy** route pair
+> (`1_1 + 2_1`, etc.) and only two gates per segment. The official stage logic is
+> a shuttle (`stage 1 = route 1 + reverse(route 3)`, then route 3 return ->
+> route 5, etc.). The official 1→3 route is `route_1_3.yaml`
+> (`spline0 + reverse(spline2)`), and the official gate sequence is still under
+> audit. **The checkpoints below are invalid for official stage 1**; keep them
+> only as pipeline smoke tests. See `docs/official_stage_logic.md`.
+
 Date: 2026-11-06. Machine: local CPU-only (20 logical cores, 32 GB RAM).
 
 Policy: ActorCritic MLP 33 -> 128 -> 128 -> 4, world-frame velocity.

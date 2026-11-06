@@ -32,8 +32,10 @@ to the hub to the end gate.
 - Gate normal is the UE yaw forward vector, oriented by the track.
 - Crossing is from negative to positive along the normal.
 - Aperture is 10 m wide x 5 m high (`confidence: approx`).
-- The segment start and end each have one gate in node 1; the official 12
-  detection gates are represented by two per segment.
+- **2026-11-06 correction:** the "two gates per segment" representation is a
+  proxy and is invalid for official stages. Official stage 1 is the shuttle
+  `route 1 + reverse(route 3)` with the official gate sequence still under
+  audit. Do not use the two-gate model for official claims.
 
 ## Observation (30 floats)
 

@@ -11,15 +11,19 @@ static data into a trainable, testable system.
 |---|---|---|
 | 0 | Rules, segments, sensors, coordinate/data contracts, G0 tests | Done |
 | 1 | State-only vectorized `sim-fast` core | Done (Python reference) |
-| 2 | Route-spline 1-3/3-5/5-8 BC+DAgger; obstacles/wind/system ID pending | Partial (100%, ~20.6 m/s) |
+| 2 | Official stage route/gate rebuild; 1-3/3-5/5-8 retraining pending | **Blocked on route/gate audit** |
 | 3 | Factory + perception + `sim-render` | Not started |
 | 4 | Six-segment curriculum + scale + official calibration | Not started |
 | 5 | Docker/ROS/EKF/ONNX deployment | Not started |
 
-Node 2 first results on the route-spline proxy (1.47/1.41/1.30 km): 1-3, 3-5,
-5-8 each 100% on 5 held-out seeds x 64 envs, average 20.55-20.90 m/s, 63-71 s
-per segment. See `docs/training_results.md`. Weights are backed up on Hugging
-Face. This is not official-sim equivalence; route/gate pairing is approximate.
+**2026-11-06 correction:** the earlier `1_1 + 2_1` / two-gates-per-segment
+results are a proxy and are **invalid for official stage 1**. Official stages
+are shuttle legs: stage 1 = route 1 + reverse(route 3), stage 2 = route 3
+return -> route 5, etc. Official stage 1 is `route_1_3.yaml`
+(`spline0 + reverse(spline2)`); the gate count/sequence is still under audit
+(possibly 60-70 course-wide, not 2 or 10). See
+`docs/official_stage_logic.md`. The old checkpoints remain only as pipeline
+smoke tests.
 
 Node 1 is deliberately **state-only**: no cameras, no LiDAR, no ROS, no render.
 That is what makes local iteration and later high-concurrency training cheap.
