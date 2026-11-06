@@ -5,6 +5,10 @@ This repository is the **workspace**, not a copy of the reverse-engineering
 dossier. The dossier stays at `voicepeak/RMUA2026-re`; this repo turns its
 static data into a trainable, testable system.
 
+**Handoff:** read `HANDOFF.md` first. It records the official shuttle route
+correction, the invalid proxy checkpoints, the remote runtime state and the next
+steps. Sensitive SSH credentials are in local `HANDOFF.local.md` (gitignored).
+
 ## Status
 
 | Node | Scope | Status |
