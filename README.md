@@ -11,14 +11,15 @@ static data into a trainable, testable system.
 |---|---|---|
 | 0 | Rules, segments, sensors, coordinate/data contracts, G0 tests | Done |
 | 1 | State-only vectorized `sim-fast` core | Done (Python reference) |
-| 2 | 1-3/3-5/5-8 state-only BC+DAgger+PPO; obstacles/wind/system ID pending | Partial (100% in sim-fast) |
+| 2 | Route-spline 1-3/3-5/5-8 BC+DAgger; obstacles/wind/system ID pending | Partial (100%, ~20.6 m/s) |
 | 3 | Factory + perception + `sim-render` | Not started |
 | 4 | Six-segment curriculum + scale + official calibration | Not started |
 | 5 | Docker/ROS/EKF/ONNX deployment | Not started |
 
-Node 2 first results: 1-3, 3-5, 5-8 each 100% on 5 held-out seeds x 64 envs in
-the state-only sim-fast. See `docs/training_results.md`. Weights are backed up on
-Hugging Face. This is not official-sim equivalence.
+Node 2 first results on the route-spline proxy (1.47/1.41/1.30 km): 1-3, 3-5,
+5-8 each 100% on 5 held-out seeds x 64 envs, average 20.55-20.90 m/s, 63-71 s
+per segment. See `docs/training_results.md`. Weights are backed up on Hugging
+Face. This is not official-sim equivalence; route/gate pairing is approximate.
 
 Node 1 is deliberately **state-only**: no cameras, no LiDAR, no ROS, no render.
 That is what makes local iteration and later high-concurrency training cheap.

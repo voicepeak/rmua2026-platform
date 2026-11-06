@@ -402,13 +402,13 @@ class SimFastVecEnv:
         missed_start = (
             (self.phase == PHASE_FLYING)
             & (self.gate_index == 0)
-            & (progress_now > start_gate_s + 10.0)
+            & (progress_now > start_gate_s + 20.0)
             & (~start_pass)
         )
         missed_end = (
             (self.phase == PHASE_FLYING)
             & (self.gate_index == 1)
-            & (progress_now > end_gate_s + 5.0)
+            & (progress_now > end_gate_s + 20.0)
             & (~end_pass)
         )
         missed_gate = missed_start | missed_end

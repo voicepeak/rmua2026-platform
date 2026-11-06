@@ -30,7 +30,7 @@ class GateCrossing:
     up: np.ndarray
     width_m: float
     height_m: float
-    trigger_depth_m: float = 3.0
+    trigger_depth_m: float = 7.0
 
     @classmethod
     def from_gate(cls, gate: GateData, normal: np.ndarray | None = None):

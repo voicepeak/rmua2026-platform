@@ -31,6 +31,8 @@ def evaluate(checkpoint: Path, segment: int | None, seeds, envs: int, max_steps:
     scale = torch.tensor(ckpt["obs_scale"], dtype=torch.float32)
     segment_id = segment or cfg.segment_id
     rates = []
+    times = []
+    lengths = []
     for seed in seeds:
         env = SimFastVecEnv(
             SimFastConfig(
@@ -55,7 +57,13 @@ def evaluate(checkpoint: Path, segment: int | None, seeds, envs: int, max_steps:
             done |= terminated | truncated
             if np.all(done):
                 break
-        rates.append(float(np.mean(info["success"])) if info is not None else 0.0)
+        success = float(np.mean(info["success"])) if info is not None else 0.0
+        rates.append(success)
+        lengths.append(env.track.total_length_m)
+        if info is not None:
+            times.extend(info["segment_time"][info["success"]].tolist())
+    mean_time = float(np.mean(times)) if times else 0.0
+    mean_length = float(np.mean(lengths)) if lengths else 0.0
     return {
         "checkpoint": str(checkpoint),
         "segment": segment_id,
@@ -63,6 +71,8 @@ def evaluate(checkpoint: Path, segment: int | None, seeds, envs: int, max_steps:
         "envs": envs,
         "rates": rates,
         "mean": float(np.mean(rates)),
+        "mean_time_s": mean_time,
+        "mean_speed_mps": mean_length / mean_time if mean_time > 0 else 0.0,
     }
 
 
@@ -72,7 +82,7 @@ def main(argv=None) -> int:
     parser.add_argument("--segment", type=int, default=None)
     parser.add_argument("--envs", type=int, default=64)
     parser.add_argument("--seeds", default="101,202,303,404,505")
-    parser.add_argument("--max-steps", type=int, default=4000)
+    parser.add_argument("--max-steps", type=int, default=20000)
     args = parser.parse_args(argv)
     seeds = [int(value) for value in args.seeds.split(",") if value.strip()]
     result = evaluate(args.checkpoint, args.segment, seeds, args.envs, args.max_steps)

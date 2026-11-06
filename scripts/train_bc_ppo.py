@@ -14,6 +14,7 @@ import argparse
 import json
 import sys
 import time
+from dataclasses import asdict
 from pathlib import Path
 
 import numpy as np
@@ -153,7 +154,7 @@ def train_bc(model, optimizer, obs, actions, obs_scale, epochs, batch, tag):
         )
 
 
-def evaluate_actor(model, env, obs_scale, max_steps=3000):
+def evaluate_actor(model, env, obs_scale, max_steps=20000):
     env.reset()
     done = np.zeros(env.n, dtype=bool)
     info = None
@@ -171,6 +172,7 @@ def evaluate_actor(model, env, obs_scale, max_steps=3000):
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--segment", type=int, default=1)
+    parser.add_argument("--skip-ppo", action="store_true")
     parser.add_argument("--demo-envs", type=int, default=64)
     parser.add_argument("--demo-steps", type=int, default=30000)
     parser.add_argument("--dagger-rounds", type=int, default=4)
@@ -289,6 +291,18 @@ def main(argv=None) -> int:
         patience=2,
         max_wall_s=remaining,
     )
+    torch.save(
+        {
+            "model": model.state_dict(),
+            "config": asdict(config),
+            "obs_scale": obs_scale.tolist(),
+            "total_steps": 0,
+        },
+        save_dir / "best.pt",
+    )
+    if args.skip_ppo:
+        print(json.dumps({"skip_ppo": True, "saved": str(save_dir)}), flush=True)
+        return 0
     trainer = PPOTrainer(config)
     trainer.model.load_state_dict(model.state_dict())
     trainer.optimizer = torch.optim.Adam(trainer.model.parameters(), lr=config.lr)
