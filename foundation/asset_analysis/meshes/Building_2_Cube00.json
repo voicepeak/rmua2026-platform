@@ -1,0 +1,2371 @@
+{
+  "$type": "UAssetAPI.UAsset, UAssetAPI",
+  "Info": "Serialized with UAssetAPI 1.1.0 (7353081)",
+  "NameMap": [
+    "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube00",
+    "/Game/Resources/Buildings/Brutalism/Materials/Concrete040/Concrete040",
+    "/Game/Resources/Buildings/Brutalism/Materials/Glass/Glass",
+    "/Script/CoreUObject",
+    "/Script/Engine",
+    "/Script/NavigationSystem",
+    "AggGeom",
+    "ArrayProperty",
+    "bContributeToMass",
+    "bInitialized",
+    "BlockAll",
+    "BodyInstance",
+    "BodySetup",
+    "BoolProperty",
+    "bOverrideDensities",
+    "Box",
+    "BoxExtent",
+    "BoxSphereBounds",
+    "Building_2_Cube00",
+    "ByteProperty",
+    "Class",
+    "CollisionEnabled",
+    "CollisionProfileName",
+    "Concrete040",
+    "Contrete",
+    "ConvexElems",
+    "Default__BodySetup",
+    "Default__NavCollision",
+    "Default__StaticMesh",
+    "DefaultInstance",
+    "ECC_WorldStatic",
+    "ECollisionChannel",
+    "ECollisionEnabled",
+    "ECollisionEnabled::QueryAndPhysics",
+    "ElemBox",
+    "ExtendedBounds",
+    "FloatProperty",
+    "Glass",
+    "ImportedMaterialSlotName",
+    "IndexData",
+    "IntProperty",
+    "KAggregateGeom",
+    "KConvexElem",
+    "LightMapCoordinateIndex",
+    "LightMapResolution",
+    "LightmapUVDensity",
+    "LocalUVDensities",
+    "Material",
+    "MaterialInterface",
+    "MaterialSlotName",
+    "MeshUVChannelInfo",
+    "Name",
+    "NameProperty",
+    "NavCollision",
+    "NavCollision_X",
+    "None",
+    "ObjectProperty",
+    "ObjectType",
+    "Origin",
+    "Package",
+    "PhysXGeneric",
+    "Quat",
+    "RestOffset",
+    "Rotation",
+    "Scale3D",
+    "SphereRadius",
+    "StaticMaterial",
+    "StaticMaterials",
+    "StaticMesh",
+    "StructProperty",
+    "Transform",
+    "Translation",
+    "UVChannelData",
+    "Vector",
+    "VertexData"
+  ],
+  "CustomSerializationFlags": "None",
+  "UseSeparateBulkDataFiles": true,
+  "IsUnversioned": true,
+  "FileVersionLicenseeUE": 0,
+  "ObjectVersion": "VER_UE4_CORRECT_LICENSEE_FLAG",
+  "ObjectVersionUE5": "UNKNOWN",
+  "CustomVersionContainer": [
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{375EC13C-06E4-48FB-B500-84F0262A717E}",
+      "FriendlyName": "FCoreObjectVersion",
+      "Version": 4,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{E4B068ED-F494-42E9-A231-DA0B2E46BB41}",
+      "FriendlyName": "FEditorObjectVersion",
+      "Version": 40,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{CFFC743F-43B0-4480-9391-14DF171D2073}",
+      "FriendlyName": "FFrameworkObjectVersion",
+      "Version": 37,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{7B5AE74C-D270-4C10-A958-57980B212A5A}",
+      "FriendlyName": "FSequencerObjectVersion",
+      "Version": 13,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{29E575DD-E0A3-4627-9D10-D276232CDCEA}",
+      "FriendlyName": "FAnimPhysObjectVersion",
+      "Version": 17,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{601D1886-AC64-4F84-AA16-D3DE0DEAC7D6}",
+      "FriendlyName": "FFortniteMainBranchObjectVersion",
+      "Version": 47,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC}",
+      "FriendlyName": "FNiagaraObjectVersion",
+      "Version": 1,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{717F9EE7-E9B0-493A-88B3-91321B388107}",
+      "FriendlyName": "FAssetRegistryVersion",
+      "Version": 17,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{9C54D522-A826-4FBE-9421-074661B482D0}",
+      "FriendlyName": "FReleaseObjectVersion",
+      "Version": 43,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{E7086368-6B23-4C58-8439-1B7016265E91}",
+      "FriendlyName": "FFortniteReleaseBranchCustomObjectVersion",
+      "Version": 1,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{D89B5E42-24BD-4D46-8412-ACA8DF641779}",
+      "FriendlyName": "FUE5ReleaseStreamObjectVersion",
+      "Version": 0,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{FCF57AFA-5076-4283-B9A9-E658FFA02D32}",
+      "FriendlyName": "FNiagaraCustomVersion",
+      "Version": 68,
+      "IsSerialized": false
+    }
+  ],
+  "SoftObjectPathList": null,
+  "GatherableTextData": null,
+  "Exports": [
+    {
+      "$type": "UAssetAPI.ExportTypes.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "KAggregateGeom",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "AggGeom",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.ArrayPropertyData, UAssetAPI",
+              "ArrayType": "StructProperty",
+              "Name": "ConvexElems",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                  "StructType": "KConvexElem",
+                  "SerializeNone": true,
+                  "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                  "SerializationControl": "NoExtension",
+                  "Operation": "None",
+                  "Name": "ConvexElems",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": [
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.ArrayPropertyData, UAssetAPI",
+                      "ArrayType": "StructProperty",
+                      "Name": "VertexData",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": [
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 251.6279754638672,
+                                "Y": -251.6265106201172,
+                                "Z": -182.4375
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 251.6279754638672,
+                                "Y": -251.6265106201172,
+                                "Z": 272.9971008300781
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 251.6279754638672,
+                                "Y": 251.59373474121094,
+                                "Z": 272.9971008300781
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 251.6279754638672,
+                                "Y": 251.59375,
+                                "Z": -182.412109375
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": -251.6280059814453,
+                                "Y": 251.68751525878906,
+                                "Z": -182.4375
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": -251.6280059814453,
+                                "Y": 251.68748474121094,
+                                "Z": 272.9375
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": -251.6280059814453,
+                                "Y": -251.6265106201172,
+                                "Z": 272.9969482421875
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": -251.6280059814453,
+                                "Y": -251.6265106201172,
+                                "Z": -182.412109375
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": -248.56277465820312,
+                                "Y": 248.56277465820312,
+                                "Z": 276.0622253417969
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 248.5628662109375,
+                                "Y": 248.562744140625,
+                                "Z": 276.0622253417969
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 248.5628662109375,
+                                "Y": -248.56277465820312,
+                                "Z": 276.0622253417969
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": -248.562744140625,
+                                "Y": -248.562744140625,
+                                "Z": 276.0622253417969
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "VertexData",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "VertexData",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 251.68748474121094,
+                                "Y": 251.75,
+                                "Z": -182.41212463378906
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.ArrayPropertyData, UAssetAPI",
+                      "ArrayType": "IntProperty",
+                      "Name": "IndexData",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": [
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "0",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 0
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "1",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 1
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "2",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 2
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "3",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 0
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "4",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 2
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "5",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 3
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "6",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 4
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "7",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "8",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "9",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 4
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "10",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "11",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "12",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 4
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "13",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "14",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 7
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "15",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 3
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "16",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 2
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "17",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "18",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 3
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "19",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "20",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 4
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "21",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 7
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "22",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "23",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 1
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "24",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 7
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "25",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 1
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "26",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 0
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "27",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 8
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "28",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 9
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "29",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 10
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "30",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 8
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "31",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 10
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "32",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 11
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "33",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 0
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "34",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 12
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "35",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 4
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "36",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 0
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "37",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 4
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "38",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 7
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "39",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "40",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 2
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "41",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 9
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "42",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "43",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 9
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "44",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 8
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "45",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 11
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "46",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 10
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "47",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 1
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "48",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 11
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "49",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 1
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "50",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "51",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 10
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "52",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 9
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "53",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 2
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "54",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 10
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "55",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 2
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "56",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 1
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "57",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 8
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "58",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 11
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "59",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "60",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 8
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "61",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "62",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "63",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 8
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "64",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 6
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+                          "Name": "65",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                      "StructType": "Box",
+                      "SerializeNone": true,
+                      "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                      "SerializationControl": "NoExtension",
+                      "Operation": "None",
+                      "Name": "ElemBox",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": [
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.BoxPropertyData, UAssetAPI",
+                          "Name": "ElemBox",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": {
+                            "$type": "UAssetAPI.UnrealTypes.TBox`1[[UAssetAPI.UnrealTypes.FVector, UAssetAPI]], UAssetAPI",
+                            "Min": {
+                              "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                              "X": -251.6280059814453,
+                              "Y": -251.6265106201172,
+                              "Z": -182.4375
+                            },
+                            "Max": {
+                              "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                              "X": 251.68748474121094,
+                              "Y": 251.75,
+                              "Z": 276.0622253417969
+                            },
+                            "IsValid": 1
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                      "StructType": "Transform",
+                      "SerializeNone": true,
+                      "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                      "SerializationControl": "NoExtension",
+                      "Operation": "None",
+                      "Name": "Transform",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": [
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Quat",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "Rotation",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.QuatPropertyData, UAssetAPI",
+                              "Name": "Rotation",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FQuat, UAssetAPI",
+                                "X": "+0",
+                                "Y": "+0",
+                                "Z": "+0",
+                                "W": 1.0
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "Translation",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "Translation",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": "+0",
+                                "Y": "+0",
+                                "Z": "+0"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                          "StructType": "Vector",
+                          "SerializeNone": true,
+                          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                          "SerializationControl": "NoExtension",
+                          "Operation": "None",
+                          "Name": "Scale3D",
+                          "ArrayIndex": 0,
+                          "PropertyGuid": null,
+                          "IsZero": false,
+                          "PropertyTagFlags": "None",
+                          "PropertyTypeName": null,
+                          "PropertyTagExtensions": "NoExtension",
+                          "Value": [
+                            {
+                              "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                              "Name": "Scale3D",
+                              "ArrayIndex": 0,
+                              "PropertyGuid": null,
+                              "IsZero": false,
+                              "PropertyTagFlags": "None",
+                              "PropertyTypeName": null,
+                              "PropertyTagExtensions": "NoExtension",
+                              "Value": {
+                                "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                                "X": 1.0,
+                                "Y": 1.0,
+                                "Z": 1.0
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "RestOffset",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": "+0"
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                      "Name": "Name",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": "None"
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+                      "Name": "bContributeToMass",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": true
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+                      "ByteType": "FName",
+                      "EnumType": "ECollisionEnabled",
+                      "EnumValue": "ECollisionEnabled::QueryAndPhysics",
+                      "Name": "CollisionEnabled",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "BodyInstance",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "DefaultInstance",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.BytePropertyData, UAssetAPI",
+              "ByteType": "FName",
+              "EnumType": "ECollisionChannel",
+              "EnumValue": "ECC_WorldStatic",
+              "Name": "ObjectType",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension"
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+              "Name": "CollisionProfileName",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": "BlockAll"
+            }
+          ]
+        }
+      ],
+      "ObjectGuid": null,
+      "SerializationControl": "NoExtension",
+      "Operation": "None",
+      "HasLeadingFourNullBytes": false,
+      "ObjectName": "BodySetup_0",
+      "OuterIndex": 3,
+      "ClassIndex": -2,
+      "SuperIndex": 0,
+      "TemplateIndex": -1,
+      "ObjectFlags": "RF_Transactional",
+      "SerialSize": 8935,
+      "SerialOffset": 2696,
+      "ScriptSerializationStartOffset": 0,
+      "ScriptSerializationEndOffset": 0,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "{00000000-0000-0000-0000-000000000000}",
+      "IsInheritedInstance": false,
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "GeneratePublicHash": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -2,
+        -1
+      ],
+      "CreateBeforeCreateDependencies": [
+        3
+      ],
+      "Extras": "0oYzueND5dhXf5O+uC67vwEAAAABAAAAAQAAADwAAAAAAAAASAAAAKsdAACrHQAAxA8AAAAAAAABAQAAAAEAAAABAAAAAU5YUwFDVlhNDQAAAAAAAABJQ0UBQ0xITAgAAABJQ0UBQ1ZITAgAAAAMAAAAFAAAAAoAAAAoAAAA/697QwDAe0OBaTbDwqB7Q2Kge8MAcDbDxaB7w2Kge8OAaTbDxaB7wwCwe0MAcDbDxaB7w/6ve0MAeIhDwqB7Q/6Xe0Ohf4hDxaB7w2Kge8Ocf4hDEJB4ww6QeMP3B4pDEpB4wxKQeEP3B4pDwqB7Q2Kge8Ohf4hDF5B4QxCQeEP3B4pDF5B4QxCQeMP3B4pDYRqdsqtvUzgAAIC/wWw2wwAABAu4NwK5AACAP2DzMzn8r3vDBAAEAQAAgL8AAAAAAAAAAMWge8MIAAQANuQ1v9RNrjibJDQ/D2+5wwwABAEAAIA/Cv/3uCYCiThSpXvDEAAEAwAAAAAAAIC/AAAAAGKge8MUAAQAEAU1PwAAAADVBDU/onu5wxgABANcwEs4EoU1P3mEND+OdLnDHAAEAgAAAAAAAAAAAACAP/cHisMgAAQB2yZmtMoPNb8a+jQ/DHu5wyQABAAAAQIDBAUAAwQDAgYEBgcIAQAFCQkGAgEKCwkFCgUECAcLCggHBgkLAAQABQACAAEBBwEEAQICBQIDAwkDCAMHBAYEBQUJBggGCQYHBwgICQABBAAEBQACBQABAgECAwEEBgIDBQMICQMHCAQFBgYHCAYICQAAAADFoHvDYqB7wwBwNsP/r3tDAMB7Q/cHikP9fd1Mwu+JVLSj38qZAtdMtKPfyqbriVT6VDxLmQLXTPpUPEuQq45U7HlwO/KjED36LDtCAACAvwA4ZUPqVgRD3pp7Q+pWBEMBTlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCAAAAElDRQFDVkhMCAAAAAwAAAAUAAAACgAAACgAAADFoHtDALB7QwBwNsPFoHtDYqB7w4BpNsPCoHvDYqB7wwBwNsP/r3vDAMB7Q4FpNsPCoHvD/pd7Q6F/iEPFoHtD/q97QwB4iEMSkHhDEpB4Q/cHikMQkHhDDpB4w/cHikPFoHtDYqB7w5x/iEPCoHvDYqB7w6F/iEMXkHjDEJB4Q/cHikMXkHjDEJB4w/cHikNhGp0yq29TOAAAgL/BbDbDAAAEC7g3AjkAAIA/YPMzOfyve8MEAAQCPuQ1P35VO7OVJDQ/EG+5wwgABAMAAIA/AAAAAAAAAADFoHvDDAAEAwAAgL8L//e4JgKJOFKle8MQAAQAAAAAAAAAgL8AAAAAYqB7wxQABANcwEu4EoU1P3mEND+PdLnDGAAEARAFNb8AAAAA1QQ1P6J7ucMcAAQAAAAAAAAAAAAAAIA/9weKwyAABADbJmY0yg81vxr6ND8Me7nDJAAEAwABAgMAAwQFBQYHCAUIAQAJBAMCCQIBCAYFBAoKBAkLBwYKCwcLCQgAAwAFAAQAAQEEAQYBAwIGAggCCQIDAwUEBwQFBQkGBwYIBwkHCAgJAAEDAAMFAAQFAAEEAQQGAQIDAgYIAggJAgMFBAUHBgcIBwgJAAAAAP+ve8NioHvDAHA2w8Wge0MAwHtD9weKQzp93UyK7YlUeT7fSoiRpcx5Pt9Ki+yJVFN/mkyIkaXMU3+aTN6pjlRP3wy8LiK3PKwoO0IAAIC/7DZlQ0tWBEMwnntDS1YEQ05YUwFNRVNIDgAAAAAAAAALAAAAewAAAPYAAAArh3vD93ozw6itgUP0bF7DbIczw7NgR0Mrh3vDbIczw7NgR0Mrh3vDkXQ0Q7RgR0P0bF7DknQ0Q7VgR0P0bF7D+Xozw6itgUMrh3vDVbE0Q6yBiEOHdXfDhnV3Qyz7iUOHdXfDwLM0Qyz7iUMrh3vDKod7Q6yBiEMrh3tDLId7w6yBiEMrh3vDLId7w6yBiEOHdXfDiHV3wyv7iUOHdXdDiHV3wyv7iUOHdXdDhnV3Qyz7iUMrh3tDKod7Q6yBiEMrh3tDkXQ0Q7RgR0Mrh3tDbIczw7NgR0P0bF5DbIczw7NgR0P0bF5DknQ0Q7RgR0Mrh3tD93ozw6itgUP0bF5D+Xozw6itgUMrh3vDIngzw6yBiEOHdXfDiHczwyv7iUMrh3tD3aU0Q/KRgUP0bF5D3aU0Q/GRgUO8Zm5DKmJFwwclgUIrh3tDd+tHw+OsDsMrh3tDeOtHw4OhjkK8Zm5DKWJFw8X3B8O8Zm5D8y3OwsX3B8O8Zm5DRUvNwgv6fEIrh3tDjKjFwufLi0Irh3tDbZrGwuOsDsNVACBDK4d7w/QsDMMZeHDCK4d7w/nYC8M2hGbC+n5vwwtACcNChR1D+n5vwyGSCcPpO2XC+35vwyL2sEI1KG/CK4d7w3cxtkJa1x1D+35vw3hlrkJRVCBDK4d7w6SRs0LgmApBc90/QxSRgUN2fpZBCc1dQ5+HgUNFfpZBcN0/QxSRgUNEmQpBDM1dQ5+HgUP0bF5D9qE/Q/DIUUP0bF5DTN0/QxSRgUM9bZZBGqI/Q/DIUUNubZZBs5FdQwe2UUNZUN1AtZFdQwe2UUOUT91AHKI/Q/DIUUMqSFlDk3Q0Q7RgR0OUT91AuXQ0Q7RgR0MqSFlD06Q0Q+vvgEOUT91A+KQ0Q+vvgEPgmApBFGU2Q8+RgUOUT91A7ds/Qw/vgENZUN1AhstdQ5rlgEMqSFlD72Q2Q8+RgUP0bF7D82xeQyz7iUP0bF5D82xeQyz7iUP0bF5D82xeQ7qOgUP0bF7D82xeQ7mOgUP0bF5D82xeQwpLUkP0bF7D82xeQ7ZgR0P0bF5D82xeQ7RgR0P0bF7D82xeQ+dPNkP0bF5D82xeQ+dPNkMrh3vDKod7Q32MgUMrh3tDKod7Q32MgUMrh3vDKod7Q7RgR0Mrh3tDKod7Q7RgR0Mrh3vDKod7Q+dPNkMrh3tDKod7Q+dPNkMrh3tDLId7Q+VPNsMrh3vDLId7Q+VPNsP0bF7DwLM0Qyz7iUP0bF7D3aU0Q/CRgUP0bF7DeWY0Q+dPNkP0bF7D64ozw+VPNkP0bF7D9Gxew7NgR0P0bF7D9Gxew+VPNkP0bF7D9Gxew/awgUP0bF7DhHczwyv7iUP0bF7D9Wxewyv7iUMrh3vDLId7wzOzgUMrh3vDLId7w7NgR0Mrh3vD7Iozw+VPNkMrh3vDLId7w+VPNkMrh3vDhdYzw+dPNsMrh3vDKod7w+dPNsMrh3vDoDkzQ+VPNsMrh3vDemY0Q+dPNkMrh3vD3aU0Q/KRgUMrh3tDLId7wzOzgUMrh3tDLId7w7NgR0Mrh3tDLId7w+VPNkMrh3tDKod7w+dPNsP0bF5D9Wxewyv7iUP0bF5D9Gxew/awgUP0bF5D9Gxew7NgR0P0bF5D9Gxew+VPNkOUT91AGW1eQwpLUkMqSFlD9GxeQwpLUkMrh3tDgdYzw+dPNsMrh3tDnjkzQ+VPNsMrh3tDIHgzw6yBiEOHdXdDhnczwyv7iUMrh3tDU7E0Q6yBiEOHdXdDv7M0Qyz7iUP0bF5DwbM0Qyz7iUP0bF5Dhnczwyv7iUP0bF5DfGY0Q+dPNkP0bF5D7Yozw+VPNkMqSFlD9GxeQ7RgR0OUT91AGW1eQ7RgR0Mrh3tDSc4zw+KsDsO8Zm5DpIgyw8T3B8Mrh3tD/6Ezw+kPjkK8Zm5DIV8yw5ScgEIrh3tDfWY0Q+dPNkMrh3tD7oozw+VPNkNaAFsAWQBZAFgAWgBbACMAJwAnAFkAWwAmACcAIwAjACQAJgBhAFkAJwBiACMAWwBiAFsAWgBaAGkAYgBiACIAIwAnACkAYQBiACkAIgBhACkAYgAoACcAJgAiACQAIwAkACUAKAAoACYAJAAoACkAJwAiACUAJAAlACkAKAApACUAIgBiABwAYQAcAGIAGwAbAGIAaQB6AGEAHAAaABwAGwAbAB0AGgAdABsAdQBpAHUAGwB3ABwAGgAcAHcAegB1AHYAHQB4ABoAHQAaAHgAdwAhAHUAaQB1ACEAHgAeAHYAdQAgAB4AIQB2AB4AHwAdAHYAeAAfAHgAdgB3AHgAHwAfACAAdwAgAHoAdwBpAFoAXABcAGoAaQBcAFoAWABYAF0AXABLAGoAXABMAFwAXQBLAFwATABdAEkATABLAEwASQBJAEoASwAeACAAHwBLAEoAeQB5AGoASwBqAHkAIAAgACEAagB6ACAAeQBqACEAaQBYAFkAVwBXAAIAWAAAAFcAVgAAAAIAVwAAAAIAAQAAAAUAAQBQAAEAUQBRAFIAUAAFAFEAAQBRAAUAUwAWAAAAVgAWAFYACwAXAAAABQAWAAAAFwBVAFMAVAALAAwAFgAMABcAFgBVAFQAFwAMAFUAFwBXAGEAYABXAFkAYQBWAGAAXwBWAFcAYABlAFIAUQBkAFEAUwBkAGUAUQALAF8ACgALAFYAXwAKAA0ADAAKAAwACwANAFUADAANAGMAVQBjAGQAUwBjAFMAVQBlAGYAUgBSAGYAcgByAFAAUgAFAFQAUwBkABUAZQBlABIAcgAVABIAZQByAGYAZQAVABEAEgARABUAFABfAGAAFAAUAGAAEQB6ABEAYABgAGEAegAUAGsAXwAKAF8AawBwABUAZABwAGQAYwANAGsAbABrAA0ACgBsAGMADQBjAGwAcAByAHEATwBPAFAAcgBYAAIAXQABAFAATwADAF0AAgBPAAQAAQACAAEABAADAAQAAgBUABcABQByABIAcQATAHEAEgAQABIAEQASABAAEwB5ABAAEQARAHoAeQAVAHAAGQBvABkAcABuAG8AcABwAGwAbgAZABQAFQAUABkAGABtAG4AbABsAGsAbQBrABQAGAAYAG0AawBHAEkAAwBdAAMASQBeAEcAAwBFAEcAXgBOAF4AAwBOAAMABAAEAE8AQwAEAEMAQQBOAAQAQQBeAAYARQAJAEUABgBNAD8APABNAE4APwAIAF4ATgBNAAgATgAGAF4ACAAGAAgABwAGAAcACQAIAE0APAAIADwABwA/AE4AQQBxAEQAQwBxAEMATwBCAEEAQwBDAEQAQgBIAEkARwBIAEoASQBBAEIAQABGAEcARQBGAEgARwBAAD8AQQBAAD4APwAPAEYARQAPAEUACQA8AD8APgA8AD4APQAOAA8ACQAOAAkABwA9AA4ABwA9AAcAPAAzADUANwA3ADkAMwB0ADUAMwAzAGcAdAAzADkAOgAyADEAMAAwADMAMgAzADAAZwAxADIAOgA6ADIAMwAwADEAKwArADEAOgA6AC0AKwAqAC0AOgA6ADkAKgA5ADcAOAA4ACoAOQAqACwAKwArAC0AKgAsACoAOAA1AHQAcwBzADQANQBnAGgAcwBzAHQAZwAwAC4AaAA3ADUANgA0ADYANQAsAC8ALgAuADAALAArACwAMABoAGcAMAA2ADsAOAA2ADgANwA7ACwAOAAsADsALwBCAEQAEwA0AHMAQgBCABMANABCAHMAaABoAEAAQgAuAEAAaAA2ADQAEwATABkANgAvAEAALgBAAC8APgA7ADYAGQAvADsAGQA9AD4ALwAvAG8APQBvAC8AGQAQAHkASgAQAEoASABxABMARAAZABMAEAAYAEgARgAQABgAGQAYABAASABtAEYADwBtABgARgAPAA4AbQAOAG4AbQA9AG8AbgAOAD0AbgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1AAAAU1RqaBobZ2yDhG5pbWseGPHwHxkcHebo6eQUFcfnyOPG8snlxMUX9fP0ysvhhYZVV4dYiFo+PRbZ2t7g3+JSUU9QAANHSElKTk16e0wOD5ybZWZjZHNxcmFiBwaamXBvdLOyS6Sho6INDNXW293T1KWmiomYl7CxVkZZRQIBeaCfCgvY3KeolZYREIyL0c9cW11ewL9EQ0JfYD9AwcPCBAWPkEGurzU2Ozw0OTozMjg3MTAJCJKR7ezu7+smJ3W66iW5uCwtKyogIYK0tby7dykoIiMkdi8ugYCdtre9vnh+fa2sfH+rqqnX0p4SzhPQzM2OjZSTUlRSRQAAAAHDe4dMw3uHTcM2UAgAAAAAQ3uHTEN7h01Difs8AAAAAD+AAAA/gAAAP4AAAD+AAAA7+4hIO/uISTvlJCUAAAAAAAAABAAAAAEAAAAEAAAAUAAAABQAAAAAw3uHTMN7h0zDe4dMw3uHTMN7h03DM9amw3uHTUM0ZljDNlAIwzZQCEM2T8RDNk/GQ3uHTEN7h0xDe4dMQ3uHTMLFqEpDe4dNQzSz4kN7h0tDNlAGQzZQCEOJ+zxDifs8AAAAcAAAAcAAAAIwAAAFsMN7h0zDe4dMwnB4nENuZpvDe4dNw3uHTcN7h03De4dNwzZQCMM2UAjDNlAIwzZQCMJlO2ZDe4dMQ3uHTEN7h0zDM4rLwzPWYMNvftnCxahKQzZQBkM2UAZDNlAGQzZQBgAAAAkAAACpAAAA4AAAAVDCcHicQyAANMJweJxDHYUhw3uHTcN7h03De4dMw3uHTMM2UAjDNlAIwwwtFcMMLRVDe4dMQ3uHTEMgVHJDIFRyw3uHCcN7hwnDb37Zw29+2UM2UAZDNlAGQrYxuUKzkeYAAAFDAAABgwAAAcsAAAKDQ3uHCkNuZptDbmabQ25mm8N7h03DR+uZw0ViSsMzoiDDNlAIwzZQCMM2UAhCfPmIQ3uHTEN7h0xDe4dMQ3uHTMMzis3DMl8AwsWoSsLFqEpDNlAGQzZQBkKLzClDNlAGAAACxwAAA1EAAARtAAAFRcN7h0zDe4dMw3uHTENuZpvDM9amwzPWpkMzOX3DM9aiwzZQCMM2UAjDNlAGwzZQCEN7h0zDe4cKQ3uHTEN7h0xDMznBQzRmm0N7h01De4dNwzZPxEM2UAhDNlAIQzZQCAAABaMAAAXjAAAGKwAABu3De4dMw3uHTMN7h0xDXmzTw3uHTcN7h03DM4sOwzOLD0M2T8RDNk/EQzZPxEM2T8TDXmzTQ3uHTENebRVDe4dMwzN3Y8Mzd2NDNHSzQzSz4kOJ+ztDifs7Q4n7O0OJ+zwAAAKgAAADEAAABNAAAAVAw3uHTMN7h0zDXm0Vw3uHTMN7h03De4dNw15tFcN7h01DNk/EQ0dgkkM2T8RDga2Yw3uHCsNebNPDXmzTw15s08MzetbDM3rWwzN62MMzd2NDgbNDQ4GtuEOBsQZDifs7AAAHxQAACCUAAAiHAAAJEcN7h0zDe4dMw15tFUNebNPDe4dNw3uHTcNebRXDe4dNQzZPxEOBsOZDNk/EQzZPxEN7h0xDe4dMQ15tFUN7h0zDXmzTw15s08Mzd2PDM3dlQ4GzQ0OJ+ztDifs7Q4n7OwAAA4AAAAPwAAAMBwAABGDDe4dMw3uHTMNebRXDXm0Vw3uHTcN7h03DXm0Vw15tFUM2T8RDR2CSQzZPxENHYJJDe4dMQ3uHTENebRVDXm0Vw3uHC8N7hwvDXmzTw15s00NHYNRDgbNDQ0dg1EOBsQYAAAojAAAKYwAACqEAAArDw3uHTMN7h0zDd3Wow15tFcN7h03De4dNw3d1qcNebRZDgbMjQ4iBnEOJ+xtDgbDmQ3uHTEN7h0xDd3WoQ15tFcN3dWfDd3Vnw15s1MNebNNDifs7Q4n7O0OJ+ztDifs7AAALBQAAC2EAAAuDAAALw0NebNNDXmzTQ3uHCkNebNPDXm0Vw15tFcN7h03De4dNQzZPxEM2T8RDNk/EQ4GtmENebRVDe4dMQ3uHTEN7h0zDM3rYwzN61sMzetbDM3dlQ4GxBkOBrbhDgbNDQ4n7OwAADIUAAAzlAAANRwAADc/DXm0Vw15tFcN7h0zDe4dMwzOLDsMziw7DM4sNwzOHjUM2T8RDNk/EQzZPxENHYJJDXm0VQ15tFcNebNPDXmzTQzRmnUM0ZppDNHSzQzR0s0M2UAhDNlAIQ0dg1kOJ+zsAAA7BAAAO4QAADwkAAA+jQ15s00N7hwpDXmzTQ3d1ZsMziw7DM4sPwzN7GsMzexhDNk/EQzZPxEOBkeFDgZHiQ3uHTEN7h0xDe4dMQ3uHTEM0dLNDNHSyQzSz4kM0s+BDR2DVQ0dg1UOJ+zxDifs8AAAP5wAAEGMAABCrAAARZ8N7h0zDe4dMQN1Le0NZSAlDNGZYQzRmWEM0dHJDNGZbQzZPxkM2T8ZDR2CTQzZPxsNebNNDe4dMQ15tFUN7h0xDe4dLQ3uHS0NebTpDe4dLQ4n7PEOJ+zxDgZHfQ4n7PAAABiAAAAaQAAAHAAAACFDDe4dMw3uHTMNebRXDe4dMQzRmWUM0dHBDNGZYQzSlvEM2T8ZDR2CTQzZPxkOBjG3De4cKw15s08NebNPDXmzTQ3uHS0N7h0tDXm0UQ3uHS0OBkgJDgZICQ4GSAEOJ+zwAABHlAAASRQAAEqUAABMVw15tFcN7h0zDe4dMw3uHTEM0ZlhDXmzSQ15s0kNebNJDNk/GQzZPxkNHYJNDgYxtQ15tFUN7h0xDe4dMQ3uHTENebRRDe4dLQ3uHS0N7h0tDgZIAQ0dg10OBjspDifs8AAAUZQAAFMcAABVJAAAV70DdS3tA3Ut7QN1Le0DdS3tDNHSYQzR0ckM0dHJDNKSyQ0dgk0NHYJNDR2CTQ4Dv20GWf3xDXm0VQ15tFUNebRVDXm06Q15tOkNebTpDP92RQ4GR30NSSytDgZEkQ4GR3wAAB3AAABlpAAAH4AAAGsdA3Ut7QN1Le0DdS3tA3Ut7QzR0mEM/oflDP6H5QzSk10NHYJNDUbXmQ1G15kOA5YpA3VRyQZZudEGWf3xBln98Q15tOkNdkdZDXm06Q13NLUOA7/tDUckRQ4GHr0OBkd8AABbpAAAXgwAAF8kAABhvQN1Le0GWfT9Blmw3QN1Le0M0dHJDP6HVQz+h1UM/oflDR2CTQ1HIz0NRyM9DUcjPQ1lIS0NebRVDXm0VQ1lIS0M0pRlDP92RQ13NKkNebTpDgO/7Q4GRJEOBkSRDUksrAAAaAwAAGkEAABpjAAAaoUNZSAlDWUgJQ15s00NebNNDNHRxQzSkskM0ZltDNKW8QzZPxkOA79tDNk/GQ4GMbUNebRVDXm0VQ3uHTEN7h0xDXm0VQ15tFEN7h0tDe4dLQ4GSAUOJ+zxDgZICQ4n7PAAAG1MAAByJAAAdLQAAHgss+4k4K4d7wyyHe8PnTzbDK4d7QyyHe0Ms+4lD9gAAABgAEBAQAAAgGBAQCBAgACAAABAAACAgIBAAEAAQEAgIAAAACAgAIAAAAAAQIBAQCAAICDAQGBAACBAACAAgEAAQACA4AAAgAAAwECAgKBgIIBAIEAgAAAAwCBgwIBAAIAAAAAAAAAgAICAIIAAIACgAICAwICAAAAAAABAwEAAAICAgEAAgIBAQICAQEBAQCAAgCBAgAAAICCggCAAoKBgwGCAAAAAAABAIEBAIAAAIMAAgGDAQIBAICBgQGBgoGBgYCBgYCBgIEBgQGBAIGAAoIAgACAgQMCAgABAQCBgQEBAAADAQABAAABAAABAICDAAKAgIIAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "$type": "UAssetAPI.ExportTypes.NormalExport, UAssetAPI",
+      "Data": [],
+      "ObjectGuid": null,
+      "SerializationControl": "NoExtension",
+      "Operation": "None",
+      "HasLeadingFourNullBytes": false,
+      "ObjectName": "NavCollision_0",
+      "OuterIndex": 3,
+      "ClassIndex": -4,
+      "SuperIndex": 0,
+      "TemplateIndex": -7,
+      "ObjectFlags": "RF_Transactional",
+      "SerialSize": 821,
+      "SerialOffset": 11631,
+      "ScriptSerializationStartOffset": 0,
+      "ScriptSerializationEndOffset": 0,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "{00000000-0000-0000-0000-000000000000}",
+      "IsInheritedInstance": false,
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": false,
+      "GeneratePublicHash": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -4,
+        -7
+      ],
+      "CreateBeforeCreateDependencies": [
+        3
+      ],
+      "Extras": "N/I3ogQAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAA2AAAAAAAAAEgAAADpAgAA6QIAALctAAAAAAAAAQAAAAAAAAAAKAAAAP+ve0MAwHtDgWk2w8Kge0NioHvDAHA2w8Wge8NioHvDgGk2w8Wge8MAsHtDAHA2w8Wge8P+r3tDAHiIQ8Kge0P+l3tDoX+IQ/+ve0MAwHtDgWk2w8Wge8MAsHtDAHA2w8Wge8P+r3tDAHiIQ8Wge8MAsHtDAHA2w8Wge8NioHvDgGk2w8Wge8NioHvDnH+IQ8Wge8P+r3tDAHiIQ8Wge8NioHvDnH+IQxCQeMMOkHjD9weKQxKQeMMSkHhD9weKQ8Kge0NioHvDAHA2w/+ve0MAwHtDgWk2w8Kge0P+l3tDoX+IQ8Kge0NioHvDoX+IQ8Kge0NioHvDoX+IQ8Wge8NioHvDnH+IQ8Wge8NioHvDgGk2w8Kge0NioHvDAHA2wxeQeEMQkHhD9weKQxeQeEMQkHjD9weKQ8Kge0NioHvDoX+IQ8Kge0P+l3tDoX+IQxeQeEMQkHhD9weKQ8Kge0P+l3tDoX+IQ8Wge8P+r3tDAHiIQxKQeMMSkHhD9weKQxCQeMMOkHjD9weKQxeQeEMQkHjD9weKQxeQeEMQkHhD9weKQxKQeMMSkHhD9weKQxCQeMMOkHjD9weKQ8Wge8NioHvDnH+IQ8Kge0NioHvDoX+IQxeQeEMQkHjD9weKQzwAAAAAAAAAAgAAAAEAAAAAAAAAAwAAAAIAAAAEAAAABgAAAAUAAAAEAAAABwAAAAYAAAAIAAAACgAAAAkAAAAIAAAACwAAAAoAAAAMAAAADgAAAA0AAAAMAAAADwAAAA4AAAAQAAAAEgAAABEAAAAQAAAAEwAAABIAAAAUAAAAFgAAABUAAAAUAAAAFwAAABYAAAAYAAAAGgAAABkAAAAYAAAAGwAAABoAAAAcAAAAHgAAAB0AAAAcAAAAHwAAAB4AAAAgAAAAIgAAACEAAAAgAAAAIwAAACIAAAAkAAAAJgAAACUAAAAkAAAAJwAAACYAAAABAAAAAAAAAAAAAAA="
+    },
+    {
+      "$type": "UAssetAPI.ExportTypes.NormalExport, UAssetAPI",
+      "Data": [
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.ArrayPropertyData, UAssetAPI",
+          "ArrayType": "StructProperty",
+          "Name": "StaticMaterials",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "StaticMaterial",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "StaticMaterials",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+                  "Name": "MaterialInterface",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": -5
+                },
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                  "Name": "MaterialSlotName",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": "Contrete"
+                },
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                  "Name": "ImportedMaterialSlotName",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": "Contrete"
+                },
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                  "StructType": "MeshUVChannelInfo",
+                  "SerializeNone": true,
+                  "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                  "SerializationControl": "NoExtension",
+                  "Operation": "None",
+                  "Name": "UVChannelData",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": [
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+                      "Name": "bInitialized",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": true
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+                      "Name": "bOverrideDensities",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": false
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": 1480.2723388671875
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 1,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": 1576.54931640625
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 2,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": "+0"
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 3,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": "+0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "StaticMaterial",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "StaticMaterials",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Objects.ObjectPropertyData, UAssetAPI",
+                  "Name": "MaterialInterface",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": -6
+                },
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                  "Name": "MaterialSlotName",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": "Glass"
+                },
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Objects.NamePropertyData, UAssetAPI",
+                  "Name": "ImportedMaterialSlotName",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": "Glass"
+                },
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+                  "StructType": "MeshUVChannelInfo",
+                  "SerializeNone": true,
+                  "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+                  "SerializationControl": "NoExtension",
+                  "Operation": "None",
+                  "Name": "UVChannelData",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": [
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+                      "Name": "bInitialized",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": true
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.BoolPropertyData, UAssetAPI",
+                      "Name": "bOverrideDensities",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": false
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 0,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": 1397.08056640625
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 1,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": 1568.180419921875
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 2,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": "+0"
+                    },
+                    {
+                      "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+                      "Name": "LocalUVDensities",
+                      "ArrayIndex": 3,
+                      "PropertyGuid": null,
+                      "IsZero": false,
+                      "PropertyTagFlags": "None",
+                      "PropertyTypeName": null,
+                      "PropertyTagExtensions": "NoExtension",
+                      "Value": "+0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+          "Name": "LightmapUVDensity",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": 1576.021240234375
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+          "Name": "LightMapResolution",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": 64
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Objects.IntPropertyData, UAssetAPI",
+          "Name": "LightMapCoordinateIndex",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": 1
+        },
+        {
+          "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+          "StructType": "BoxSphereBounds",
+          "SerializeNone": true,
+          "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+          "SerializationControl": "NoExtension",
+          "Operation": "None",
+          "Name": "ExtendedBounds",
+          "ArrayIndex": 0,
+          "PropertyGuid": null,
+          "IsZero": false,
+          "PropertyTagFlags": "None",
+          "PropertyTypeName": null,
+          "PropertyTagExtensions": "NoExtension",
+          "Value": [
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "Origin",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "Origin",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": "+0",
+                    "Y": "+0",
+                    "Z": 46.82508850097656
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Structs.StructPropertyData, UAssetAPI",
+              "StructType": "Vector",
+              "SerializeNone": true,
+              "StructGUID": "{00000000-0000-0000-0000-000000000000}",
+              "SerializationControl": "NoExtension",
+              "Operation": "None",
+              "Name": "BoxExtent",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": [
+                {
+                  "$type": "UAssetAPI.PropertyTypes.Structs.VectorPropertyData, UAssetAPI",
+                  "Name": "BoxExtent",
+                  "ArrayIndex": 0,
+                  "PropertyGuid": null,
+                  "IsZero": false,
+                  "PropertyTagFlags": "None",
+                  "PropertyTypeName": null,
+                  "PropertyTagExtensions": "NoExtension",
+                  "Value": {
+                    "$type": "UAssetAPI.UnrealTypes.FVector, UAssetAPI",
+                    "X": 251.5279998779297,
+                    "Y": 251.52801513671875,
+                    "Z": 229.13720703125
+                  }
+                }
+              ]
+            },
+            {
+              "$type": "UAssetAPI.PropertyTypes.Objects.FloatPropertyData, UAssetAPI",
+              "Name": "SphereRadius",
+              "ArrayIndex": 0,
+              "PropertyGuid": null,
+              "IsZero": false,
+              "PropertyTagFlags": "None",
+              "PropertyTypeName": null,
+              "PropertyTagExtensions": "NoExtension",
+              "Value": 423.1270751953125
+            }
+          ]
+        }
+      ],
+      "ObjectGuid": null,
+      "SerializationControl": "NoExtension",
+      "Operation": "None",
+      "HasLeadingFourNullBytes": false,
+      "ObjectName": "Building_2_Cube00",
+      "OuterIndex": 0,
+      "ClassIndex": -3,
+      "SuperIndex": 0,
+      "TemplateIndex": -12,
+      "ObjectFlags": "RF_Public, RF_Standalone, RF_Transactional",
+      "SerialSize": 43918,
+      "SerialOffset": 12452,
+      "ScriptSerializationStartOffset": 0,
+      "ScriptSerializationEndOffset": 0,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "{00000000-0000-0000-0000-000000000000}",
+      "IsInheritedInstance": false,
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": true,
+      "bIsAsset": true,
+      "GeneratePublicHash": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [
+        -5,
+        -6,
+        1,
+        2
+      ],
+      "SerializationBeforeCreateDependencies": [
+        -3,
+        -12
+      ],
+      "CreateBeforeCreateDependencies": [],
+      "Extras": "AQABAAAAAQAAAAIAAABSHRdxCkwUnGZy5adk0NMfAAAAAAQAAAABCAIAAAAAAAAAAAAAAPAAAAAAAAAARwEAAAEAAAABAAAAAAAAAAEAAAABAAAA0AIAAAYAAABIAQAAUQEAAAEAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAABCAwAAABSAQAADAAAAFIBAAArh3vD93ozw6itgUP0bF7DbIczw7NgR0Mrh3vDbIczw7NgR0Mrh3vDkXQ0Q7RgR0Mrh3vDbIczw7NgR0P0bF7DknQ0Q7VgR0Mrh3vDbIczw7NgR0P0bF7DknQ0Q7VgR0P0bF7DbIczw7NgR0Mrh3vD93ozw6itgUP0bF7DbIczw7NgR0P0bF7D+Xozw6itgUMrh3vDVbE0Q6yBiEOHdXfDhnV3Qyz7iUOHdXfDwLM0Qyz7iUMrh3vDKod7Q6yBiEMrh3tDLId7w6yBiEMrh3vDLId7w6yBiEOHdXfDiHV3wyv7iUOHdXdDiHV3wyv7iUOHdXdDhnV3Qyz7iUOHdXfDhnV3Qyz7iUMrh3vDKod7Q6yBiEMrh3tDKod7Q6yBiEMrh3tDkXQ0Q7RgR0Mrh3tDbIczw7NgR0P0bF5DbIczw7NgR0P0bF5DknQ0Q7RgR0Mrh3tDbIczw7NgR0Mrh3tD93ozw6itgUP0bF5D+Xozw6itgUP0bF5DbIczw7NgR0Mrh3vDLId7w6yBiEMrh3vDIngzw6yBiEOHdXfDiHV3wyv7iUOHdXfDiHczwyv7iUMrh3tD93ozw6itgUMrh3tD3aU0Q/KRgUP0bF5D3aU0Q/GRgUP0bF5D+Xozw6itgUP0bF5D3aU0Q/GRgUMrh3tDkXQ0Q7RgR0P0bF5DknQ0Q7RgR0Mrh3tD3aU0Q/KRgUO8Zm5DKmJFwwclgUIrh3tDd+tHw+OsDsMrh3tDeOtHw4OhjkK8Zm5DKWJFw8X3B8O8Zm5D8y3OwsX3B8O8Zm5DRUvNwgv6fEIrh3tDjKjFwufLi0Irh3tDbZrGwuOsDsNVACBDK4d7w/QsDMMZeHDCK4d7w/nYC8M2hGbC+n5vwwtACcNChR1D+n5vwyGSCcPpO2XC+35vwyL2sEIZeHDCK4d7w/nYC8M1KG/CK4d7w3cxtkI2hGbC+n5vwwtACcNChR1D+n5vwyGSCcNa1x1D+35vw3hlrkJRVCBDK4d7w6SRs0JVACBDK4d7w/QsDMNa1x1D+35vw3hlrkLpO2XC+35vwyL2sEI1KG/CK4d7w3cxtkJRVCBDK4d7w6SRs0LgmApBc90/QxSRgUN2fpZBCc1dQ5+HgUNFfpZBcN0/QxSRgUNEmQpBDM1dQ5+HgUNFfpZBcN0/QxSRgUP0bF5D9qE/Q/DIUUP0bF5DTN0/QxSRgUM9bZZBGqI/Q/DIUUN2fpZBCc1dQ5+HgUM9bZZBGqI/Q/DIUUNFfpZBcN0/QxSRgUNubZZBs5FdQwe2UUNZUN1AtZFdQwe2UUM9bZZBGqI/Q/DIUUNubZZBs5FdQwe2UUOUT91AHKI/Q/DIUUMqSFlDk3Q0Q7RgR0OUT91AuXQ0Q7RgR0MqSFlD06Q0Q+vvgEOUT91A+KQ0Q+vvgEPgmApBFGU2Q8+RgUOUT91A7ds/Qw/vgEPgmApBc90/QxSRgUOUT91A+KQ0Q+vvgEPgmApBc90/QxSRgUNZUN1AhstdQ5rlgENEmQpBDM1dQ5+HgUOUT91A7ds/Qw/vgEMqSFlD06Q0Q+vvgEOUT91A+KQ0Q+vvgEPgmApBFGU2Q8+RgUMqSFlD72Q2Q8+RgUP0bF7D82xeQyz7iUP0bF5D82xeQyz7iUP0bF5D82xeQ7qOgUP0bF7D82xeQ7mOgUP0bF5D82xeQwpLUkP0bF7D82xeQ7ZgR0P0bF5D82xeQ7RgR0P0bF7D82xeQ+dPNkP0bF5D82xeQ+dPNkMrh3tDKod7Q6yBiEMrh3vDKod7Q6yBiEMrh3vDKod7Q32MgUMrh3tDKod7Q32MgUMrh3vDKod7Q7RgR0Mrh3tDKod7Q7RgR0Mrh3vDKod7Q+dPNkMrh3tDKod7Q+dPNkMrh3tDLId7Q+VPNsMrh3vDLId7Q+VPNsP0bF7DwLM0Qyz7iUP0bF7D82xeQyz7iUP0bF7D82xeQ7mOgUP0bF7D3aU0Q/CRgUP0bF7D82xeQ7ZgR0P0bF7DknQ0Q7VgR0P0bF7D82xeQ+dPNkP0bF7DeWY0Q+dPNkP0bF7DbIczw7NgR0P0bF7D64ozw+VPNkP0bF7D9Gxew7NgR0P0bF7D9Gxew+VPNkP0bF7D+Xozw6itgUP0bF7D9Gxew/awgUP0bF7DhHczwyv7iUP0bF7D9Wxewyv7iUMrh3vDIngzw6yBiEMrh3vDLId7w6yBiEMrh3vDLId7wzOzgUMrh3vD93ozw6itgUMrh3vDLId7w7NgR0Mrh3vDbIczw7NgR0Mrh3vD7Iozw+VPNkMrh3vDLId7w+VPNkMrh3vDhdYzw+dPNsMrh3vDKod7w+dPNsMrh3vDoDkzQ+VPNsMrh3vDemY0Q+dPNkMrh3vDLId7Q+VPNsMrh3vDkXQ0Q7RgR0Mrh3vDKod7Q+dPNkMrh3vDKod7Q7RgR0Mrh3vD3aU0Q/KRgUMrh3vDKod7Q32MgUMrh3vDVbE0Q6yBiEMrh3vDKod7Q6yBiEMrh3vDLId7w6yBiEMrh3tDLId7w6yBiEMrh3tDLId7wzOzgUMrh3vDLId7wzOzgUMrh3tDLId7w7NgR0Mrh3vDLId7w7NgR0Mrh3tDLId7w+VPNkMrh3vDLId7w+VPNkM1KG/CK4d7w3cxtkIrh3vDKod7w+dPNsNRVCBDK4d7w6SRs0IZeHDCK4d7w/nYC8Mrh3tDKod7w+dPNsNVACBDK4d7w/QsDMP0bF5D9Wxewyv7iUP0bF7D9Wxewyv7iUP0bF7D9Gxew/awgUP0bF5D9Gxew/awgUP0bF7D9Gxew7NgR0P0bF5D9Gxew7NgR0P0bF7D9Gxew+VPNkP0bF5D9Gxew+VPNkOUT91AHKI/Q/DIUUOUT91AGW1eQwpLUkM9bZZBGqI/Q/DIUUMqSFlD9GxeQwpLUkP0bF5D9qE/Q/DIUUP0bF5D82xeQwpLUkP0bF7DhHczwyv7iUP0bF7D+Xozw6itgUOHdXfDiHczwyv7iUMrh3vD93ozw6itgUMrh3vDIngzw6yBiEMqSFlD72Q2Q8+RgUP0bF5D3aU0Q/GRgUMqSFlD06Q0Q+vvgEP0bF5DknQ0Q7RgR0MqSFlDk3Q0Q7RgR0P0bF5DTN0/QxSRgUP0bF5D3aU0Q/GRgUMqSFlD72Q2Q8+RgUNFfpZBcN0/QxSRgUPgmApBFGU2Q8+RgUPgmApBc90/QxSRgUMrh3tDKod7w+dPNsMrh3vDhdYzw+dPNsMrh3vDKod7w+dPNsMrh3tDgdYzw+dPNsMrh3vDoDkzQ+VPNsMrh3tDnjkzQ+VPNsMrh3tDLId7Q+VPNsMrh3vDLId7Q+VPNsMrh3tDIHgzw6yBiEMrh3tDLId7w6yBiEOHdXdDiHV3wyv7iUOHdXdDhnczwyv7iUMrh3tDU7E0Q6yBiEOHdXdDv7M0Qyz7iUOHdXdDhnV3Qyz7iUMrh3tDKod7Q6yBiEOHdXfDwLM0Qyz7iUP0bF7D82xeQyz7iUP0bF7DwLM0Qyz7iUOHdXfDhnV3Qyz7iUP0bF5D82xeQyz7iUOHdXdDhnV3Qyz7iUOHdXdDv7M0Qyz7iUP0bF5DwbM0Qyz7iUP0bF5Dhnczwyv7iUOHdXdDhnczwyv7iUP0bF5D9Wxewyv7iUOHdXdDiHV3wyv7iUP0bF7D9Wxewyv7iUOHdXfDiHV3wyv7iUOHdXfDiHczwyv7iUP0bF7DhHczwyv7iUP0bF5D82xeQ7RgR0P0bF5DknQ0Q7RgR0P0bF5D82xeQ+dPNkP0bF5DfGY0Q+dPNkP0bF5DbIczw7NgR0P0bF5D7Yozw+VPNkP0bF5D9Gxew7NgR0P0bF5D9Gxew+VPNkP0bF5D+Xozw6itgUP0bF5D9Gxew/awgUP0bF5Dhnczwyv7iUP0bF5D9Wxewyv7iUP0bF5D3aU0Q/GRgUP0bF5DwbM0Qyz7iUP0bF5DTN0/QxSRgUP0bF5D82xeQyz7iUP0bF5D82xeQ7qOgUP0bF5D82xeQwpLUkP0bF5D9qE/Q/DIUUP0bF5DfGY0Q+dPNkP0bF7D82xeQ+dPNkP0bF5D82xeQ+dPNkP0bF7DeWY0Q+dPNkP0bF5D7Yozw+VPNkP0bF7D64ozw+VPNkP0bF7D9Gxew+VPNkP0bF5D9Gxew+VPNkOUT91AuXQ0Q7RgR0MqSFlD9GxeQ7RgR0OUT91AGW1eQ7RgR0MqSFlDk3Q0Q7RgR0P0bF5D82xeQ7RgR0P0bF5DknQ0Q7RgR0NZUN1AhstdQ5rlgEN2fpZBCc1dQ5+HgUNEmQpBDM1dQ5+HgUNubZZBs5FdQwe2UUNZUN1AtZFdQwe2UUMqSFlD9GxeQ7RgR0OUT91AGW1eQwpLUkOUT91AGW1eQ7RgR0MqSFlD9GxeQwpLUkP0bF5D82xeQ7RgR0P0bF5D82xeQwpLUkP0bF7D3aU0Q/CRgUP0bF7DknQ0Q7VgR0Mrh3vDkXQ0Q7RgR0Mrh3vD3aU0Q/KRgUOHdXfDwLM0Qyz7iUMrh3vDVbE0Q6yBiEP0bF7DwLM0Qyz7iUMrh3tDSc4zw+KsDsO8Zm5D8y3OwsX3B8Mrh3tDbZrGwuOsDsO8Zm5DpIgyw8T3B8O8Zm5DKWJFw8X3B8Mrh3tDd+tHw+Os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gQAAfwCBAH+BAAB/AIEAf4EAAH8AgQB/gQAAfwCBAH+BAAB/AIEAf4EAAH8AgQB/gQAAfwCBAH+BAAB/AIEAf4EAAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AgQB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwB/An8A/n9/AH8CfwD+f38AfwJ/AP5/fwB/An8A/n9/AH8CfwD+f38AfwJ/AP5/fwAAf38AgQB/AAB/fwCBAH8AAH9/AIEAfwAAf38AgQB/AAB/fwCBAH/9An9/AIECfwACf38AgQJ//wJ/fwCBAn8AAn9/AIECfwACf38AgQJ/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AIEAfwAAgX8AgQB/AACBfwCBAH8AAIF/AIEAfwAAgX8AgQB/AACBfwCBAH8AAIF/AIEAfwAAgX8AgQB/AACBfwB/AH9LAGd/AH8Af0sAZ38AfwB/SwBnfwB/AH9LAGd/AH8Af0sAZ38AfwB/SwBnfwB/AH9LAGd/AH8Af0sAZ38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAfwAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAfwAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAfwAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAfwAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAfwAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAfwAAf3+BAAB/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwCBAH8AAIF/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UQBQAFMAVABVAFYAVwBWAFUAWABZAFoAWQBYAFsAXABdAF4AXQBcAF8AYABhAGIAYABiAGMAZABlAGYAZABmAGcAaABnAGYAaABpAGcAaQBoAGoAagBrAGkAawBqAGwAbQBuAG8AbQBvAHAAcABvAHEAcABxAHIAcgBxAHMAcgBzAHQAcwB1AHQAdQBzAHYAdwB4AHkAdwB5AHoAeQB7AHoAegB7AHwAfAB7AH0AfAB9AH4AfgB/AHwAfwB+AIAAgACBAH8AgQCAAIIAgwB/AIEAgQCEAIMAgwCEAIUAhgCFAIQAhwCIAIkAhwCJAIoAigCJAIsAigCLAIwAiwCNAIwAjQCLAI4AjwCOAJAAjgCPAI0AkQCNAI8AjQCSAIwAjQCRAJIAkwCSAJEAlACMAJIAkgCTAJUAkgCVAJQAlgCUAJUAlwCUAJYAmACXAJYAlwCYAJkAmgCZAJgAmwCcAJ0AmwCdAJ4AngCdAJ8AngCfAKAAoACfAKEAoAChAKIAoQCjAKIAowCkAKIAowChAKUApACjAKYAoQCnAKUApwCkAKYApwCoAKUApwCmAKgAqQCqAKsAqQCrAKwArACrAK0ArACtAK4ArgCtAK8ArgCvALAAsQCyALMAtACzALIAswC0ALUAtQC0ALYAtwC4ALkAuQC4ALoAuwC5ALoAvAC9AL4AvwC+AL0AvgC/AMAAwQDCAMMAxADBAMMAwwDFAMQAxADFAMYAxwDIAMkAyADHAMoAygDLAMgAywDKAMwAzQDLAMwAzQDOAMsAzwDQANEA0QDSAM8A0gDTAM8A0wDSANQA1QDTANQA1gDTANUA1wDYANkA1wDaANgA2wDYANoA2wDaANwA3ADdANsA2wDdAN4A3QDfAN4A3wDdAOAA4QDfAOAA4ADiAOEA4gDjAOEA4gDkAOMA5ADlAOMA4wDlAOYA5wDoAOkA6gDpAOgA6ADrAOoA7ADqAOsA7QDsAOsA7ADtAO4A7wDtAOsA8ADtAO8A8QDwAO8A8QDyAPAA7wDzAPEA9ADxAPMA9ADzAPUA9QD2APQA9gD1APcA+AD3APUA9QD5APgA+gD7APwA+gD9APsA/gD9APoA/QD+AP8A/gAAAf8AAAH+AAEBAgEDAQQBAwECAQUBBQEGAQMBBgEFAQcBCAEJAQoBCQEIAQsBCwEIAQwBDQEOAQ8BDgENARABEQEQAQ0BEAERARIBEwEUARUBEwEVARYBFwETARYBGAEXARYBGQETARcBGgEbARwBGwEaAR0BGgEeAR0BHgEaAR8BIAEhASIBIQEgASMBIAEkASMBJAEgASUBJgEnASgBJgEoASkBKQEoASoBKQErASYBKQEqASwBKwEpAS0BLAEqAS4BLQEvASsBMAErAS8BLwEtATEBLQEyATEBLAEuATMBMwEyASwBNAEzAS4BMwE0ATUBNgExATIBMgEzATYBMQE2ATcBNQE4ATMBNgEzATgBOAE1ATkBOAE6ATYBNQE7ATkBPAE2AToBNgE8ATcBOQE7AT0BPgE3ATwBOwE/AT0BPAE/AT4BPwE7AT4BQAFBAUIBQQFAAUMBRAFBAUMBQQFEAUUBRgFBAUUBQQFGAUcBSAFJAUoBSQFIAUsBTAFNAU4BTQFMAU8BUAFPAUwBTwFQAVEBAAAAAAAAAAABAAAAxAUAAEcBRgFBAUUBQQFGAUUBRAFBAUMBQQFEAUMBQAFBAUIBQQFAAT4BOwE/AT4BPwE8AT0BPwE7ATwBNwE+AT0BOwE5ATcBPAE2AToBNgE8ATkBOwE1ATYBOgE4ATkBNQE4ATgBMwE2ATMBOAE1ATcBNgExATYBMwEyATIBMQE2ATUBNAEzAS4BMwE0ASwBMgEzATMBLgEsATEBMgEtATEBLQEvAS8BKwEwASsBLwEtAS4BKgEsAS0BKQErASwBKgEpASYBKwEpASoBKAEpASkBKAEmASgBJwEmASUBIAEkASMBJAEgASMBIAEhASIBIQEgAR8BGgEeAR0BHgEaAR0BGgEbARwBGwEaARcBEwEZARYBFwEYARYBEwEXARYBFQETARUBFAETARIBEQEQAQ0BEAERARABDQEOAQ8BDgENAQwBCAELAQsBCAEJAQoBCQEIAQcBBQEGAQMBBgEFAQUBAgEDAQQBAwECAQEB/gAAAf8AAAH+AP8A/gD9APoA/QD+APsA/QD6APwA+wD6APgA+QD1APUA9wD4APcA9QD2APQA9gD1APUA8wD0APMA8QD0APEA8wDvAPAA8gDxAO8A8ADxAO8A7QDwAOsA7QDvAO4A7QDsAOsA7ADtAOsA6gDsAOoA6wDoAOgA6QDqAOkA6ADnAOYA5QDjAOMA5QDkAOMA5ADiAOEA4wDiAOEA4gDgAOAA3wDhAOAA3QDfAN4A3wDdAN4A3QDbANsA3QDcANwA2gDbANoA2ADbANgA2gDXANkA2ADXANUA0wDWANQA0wDVANQA0gDTAM8A0wDSAM8A0gDRANEA0ADPAMsAzgDNAMwAywDNAMwAygDLAMgAywDKAMoAxwDIAMkAyADHAMYAxQDEAMQAxQDDAMMAwQDEAMMAwgDBAMAAvwC+AL0AvgC/AL4AvQC8ALoAuQC7ALoAuAC5ALkAuAC3ALYAtAC1ALUAtACzALIAswC0ALMAsgCxALAArwCuAK8ArQCuAK4ArQCsAK0AqwCsAKwAqwCpAKsAqgCpAKgApgCnAKUAqACnAKYApACnAKUApwChAKYAowCkAKUAoQCjAKIApACjAKIAowChAKIAoQCgAKEAnwCgAKAAnwCeAJ8AnQCeAJ4AnQCbAJ0AnACbAJgAmQCaAJkAmACXAJYAlwCYAJYAlACXAJUAlACWAJQAlQCSAJUAkwCSAJIAjACUAJEAkgCTAJIAkQCNAIwAkgCNAI8AjQCRAI0AjwCOAJAAjgCPAI4AiwCNAIwAjQCLAIwAiwCKAIsAiQCKAIoAiQCHAIkAiACHAIQAhQCGAIUAhACDAIMAhACBAIEAfwCDAIIAgACBAH8AgQCAAIAAfgB/AHwAfwB+AH4AfQB8AH0AewB8AHwAewB6AHoAewB5AHoAeQB3AHkAeAB3AHYAcwB1AHQAdQBzAHQAcwByAHMAcQByAHIAcQBwAHEAbwBwAHAAbwBtAG8AbgBtAGwAagBrAGkAawBqAGoAaABpAGcAaQBoAGYAZwBoAGcAZgBkAGYAZQBkAGMAYgBgAGIAYQBgAF8AXABdAF4AXQBcAFsAWABZAFoAWQBYAFUAVgBXAFYAVQBUAFMAUABRAFIAUQBQAE8ATABNAE4ATQBMAEsASABJAEoASQBIAEcARABFAEYARQBEAEMAQgBAAEIAQQBAADwAPwA+AD4APQA8ADsAOAA5ADoAOQA4ADcANgA0ADYANQA0ADAAMwAyADIAMQAwAC8ALAAtAC4ALQAsACsAKAApACoAKQAoACQAJwAmACYAJQAkACMAIQAiACIAIQAgABwAHwAeAB4AHQAcABgAGwAaABoAGQAYABcAFgAUABYAFQAUABMAEgAQABIAEQAQAA0ADwAMAA4ADQAMAAsACgAJAAgABwAGAAUABAADAAIAAQAAAFEBUAFPAUwBTwFQAU8BTAFNAU4BTQFMAUsBSAFJAUoBSQFIAQAAAAAAAAAAAQAAAMQFAACuAIIAsACCAOwAsADsAK4AsADsAIIAgACuAIEAggCBAIAAggCuAOwAGgB+AOwAgACsAIEArgDsAH4A6gDsAOoAGgABAH4AgACAAIEAAQDqAH4AawB+AAEABQAFAGsAfgDqAGsAbADqAGwAGwAbABoA6gBrAGoAbABqABsAbAAFAGkAawBqAGsAaQAeAK4AGgCsAK4AHgAeABoAGQDfAKwAHgAYABkAGgAaABsAGAAZAB0AHgAeACYA3wAmAB4AHQAmABgAGwDfAKkArACpAIQArACsAIQAgQCpAN8A0gCBAIQACwALAAEAgQCpAIYAhAALAIQAhQCGAIUAhACFAAsAIwCGACMAhQAAAAEACwAjAAsAAAATAIYAqQDSABMAqQASACMAhgATABIAhgASACEAIwAhACMAAAAQABIAEwARACEAEgAQABEAEgAhABEAiQAhAIkAAAARABAAnQARAJ0AiQDPABAAEwAQAM8AnQATANIAzwAdAJ0AzwCJAJ0AnwCdAB0AnwAAAIkAiwCJAJ8AiwAAAAEAAgAAAIsAAgACAAUAAQAdABkAnwADAAIABQDPACUAHQAdACUAJgAlAM8A0wDSANMAzwAYACYAJQDTANIA1ADfANQA0gDeAN8AJgDUAN8A3gDTAHAAJQBlANQA3gAUANMA1AAUANQAZQDTABcAcAAXANMAFAAlAHAAcgAlAHIAGAAXAG8AcAAUAA8AFwAXAA8AbwAUAA0ADwBlAA0AFAAPAAwAbwAMAA8ADQBwAG8AcQBwAHEAcgCXAG8ADABvAJcAcQAMAA0ADgAMAA4AlwAOAA0AZABlAGQADQCXAAMAcQBkAGUAZgAOAHoAlwB6AAMAlwAOAGQAdwB3AHoADgB3AGQAZwB3AGcAegBkAGYAZwB6AAUAAwB6AGkABQBnAGkAegBoAGkAZwBoAGcAZgBpAGgAagBlAEoAZgBoAGYASgBKAGUA3gDeACYASgBKAEkAaABKACYAYwBJALQAaAC0AGoAaABGAEkASgBGAEoAYwBLALQASQBJAEYASwBjACYAVgAbAFYAJgBjAFgARgBWAFgAYwBqAFQAGwBWABsAVABUAGoAAwFqALQAAwFUAFUAVgADAVUAVACyAAMBtAC0AEsAsgBVAAMBBAEDAbIABAFXAFYAVQBWAFcAWAAEAVMAVQBTAAQBsgBTAFcAVQBTALIASwBZAFgAVwBXAFMAWQBYAFkARABGAFgARABTAF0AWQBdAEQAWQBLAFAAUwBdAFMAUABQAEsATwBPAF0AUABFAEsARgBLAEUATwBEAEUARgBFAF0ATwBFAEQARwBdAEUARwBEAF0ARwByAHEAcwBxAAMAcwByAHMAdAAYAHIAdACSAHMAAwADAAIAkgAYAHQAMwEzARkAGABzAHUAdAB1ADMBdACSAHYAcwB1AHMAdgCNAJIAAgCLAI0AAgB2AJIAkQB1AHYAkQCNAJEAkgAzAXUAzAB1AJEAzAAZADMBNgE2AZ8AGQDMADIAMwE2ATMBMgCRAMoAzACfADYBoQCLAJ8AoQCRAI0AjwDKAJEAjwCNAIsAjgCOAI8AjQCLAKEAjgCPAI4AkAChADoAjgA6AJAAjgCnAI8AkACPAKcAygCQADoANQCnAJAANQA4ADUAOgA1ADgANgA9ADgAOgA9ADYAOAA0ADUANgCnADUANAA2AD0ANwA0ADYANwA9ADoAPgA3AD0APgA+ADQANwCnADQAPgA6AKEAPgChAKcAPgCnAKEALgA2AS4AoQAuAC0ApwAtAMoApwAuADYBIAEyACABNgEsAC0ALgAgASwALgDKAC0AGgEtACwALwAvABoBLQAsACABIwEjAS8ALAAgATEAIwExACABMgAvACMBHQExAB0BIwEaAS8AHQEdATEAMAAwABoBHQEwADEAMgAaATAAMwAyADMAMAAzAMoAGgEyAMwAMwDMAMoAMwAAAAAAAAAAAAEAAADEBQAAMwDKAMwAMwDMADIAGgHKADMAMAAzADIAMwAwABoBMgAxADAAHQEaATAAMAAxAB0BHQEvABoBIwEdATEAHQEjAS8AMgAgATEAIwExACABLAAvACMBIwEgASwALQAaAS8ALwAsAC0AGgEtAMoALgAsACABLgAtACwANgEgATIAIAE2AS4ApwDKAC0ApwAtAC4AoQAuADYBLgChAKcAPgCnAKEAPgChADoAPgA0AKcANwA0AD4APgA9ADcAPgA6AD0ANwA2ADQANwA9ADYANAA1AKcANgA1ADQAOAA2AD0AOgA4AD0ANgA4ADUAOgA1ADgANQCQAKcANQA6AJAAygCnAI8AkACPAKcAjgCQADoAjgA6AKEAkACOAI8AjgChAIsAjQCPAI4AjgCLAI0AjwCRAMoAjwCNAJEAoQCfAIsAoQA2AZ8AzADKAJEAMgAzATYBMwEyAMwAGQCfADYBNgEzARkAzACRAHUAzAB1ADMBkgCRAI0AkQB2AHUAkQCSAHYAAgCNAIsAAgCSAI0AdgBzAHUAcwB2AJIAdAAzAXUAdAB1AHMAGAAZADMBMwF0ABgAkgACAAMAAwBzAJIAdAByABgAdABzAHIAcwADAHEAcwBxAHIARwBdAEQARwBFAF0ARwBEAEUATwBdAEUARgBFAEQATwBFAEsARgBLAEUAUABdAE8ATwBLAFAAUABTAF0AUwBQAEsAWQBEAF0AWQBdAFMARABYAEYARABZAFgAWQBTAFcAVwBYAFkASwCyAFMAVQBXAFMAsgAEAVMAVQBTAAQBWABXAFYAVQBWAFcABAGyAAMBBAEDAVUAsgBLALQAtAADAbIAVABVAAMBVgBVAFQAAwG0AGoAAwFqAFQAVAAbAFYAGwBUAGoAYwBYAFYARgBYAGMAJgBWABsAVgAmAGMASwBGAEkASQC0AEsAYwBKAEYASgBJAEYAaABqALQAaAC0AEkAYwAmAEoAaABJAEoASgAmAN4A3gBlAEoASgBmAGgAZgBKAGUAagBoAGkAZgBnAGgAZwBpAGgAegBpAGcABQBpAHoAAwAFAHoAZwBmAGQAegBnAHcAZwBkAHcADgB6AHcAdwBkAA4AlwADAHoAlwB6AA4AZgBlAGQAcQADAJcADQBkAGUAZAANAA4AlwAOAAwADgANAAwAcQCXAG8ADABvAJcAcgBxAHAAcQBvAHAADQAPAAwAbwAMAA8AFAANAGUADwANABQAbwAPABcAFwAPABQAcABvABcAGAByACUAcgBwACUAFADTABcAcAAXANMAZQDUABQA1ADTABQA3gDUAGUAJQBwANMA3gDfANQAJgDfAN4A0gDUAN8A1ADSANMAJQAmABgAzwDTANIA0wDPACUAJgAlAB0AHQAlAM8ABQACAAMAnwAZAB0AAQAFAAIAAgCLAAAAAgABAAAAiwCfAIkAiwCJAAAAnwAdAJ0AnwCdAIkAzwCdAB0AzwDSABMAnQDPABAAEwAQAM8AiQCdABEAnQAQABEAAACJACEAiQARACEAEgARABAAEgAhABEAEwASABAAAAAjACEAIwAhABIAhgASABMAhgAjABIAqQATANIAqQCGABMAAAALACMACwABAAAAhQAjAIYAIwALAIUAhACFAIYAhQCEAAsAhACGAKkAgQABAAsACwCEAIEA0gDfAKkAgQCEAKwArACEAKkArACpAN8AGwAYACYAHQAeACYA3wAmAB4AHgAdABkAGAAbABoAGgAZABgAHgCsAN8AGQAaAB4AHgCuAKwAGgCuAB4AaQBrAGoAawBpAAUAbAAbAGoAbABqAGsA6gAaABsAGwBsAOoAbABrAOoAfgBrAAUABQABAH4AawB+AOoAAQCBAIAAgAB+AAEAGgDqAOwA6gB+AOwArgCBAKwAgADsAH4AGgDsAK4AggCAAIEAggCBAK4AgACCAOwAsACuAOwAsADsAIIAsACCAK4AAAAAAAAAAAABAAAAEBcAAAAAAQACAAAAAQABAAIAAgAAAIoAAQACAAMABAAFAAMABAAEAAUABQADAJQAAgAUAQYABwAIAAYABwB8AH8ACAAGAAIAFAEBAAkACgALAAkACgB/AIMACwAJAIoAAQALAAwADQAOAAwADQDaANcAFwEYAQwADQAOAAwADwANAJkAmgAWABUADQAMAAwADwANABAAEQASAJwAmwAgACIAEgAQAJwAmwAiABAAEgATABAAEgDkAOIA0QDQAJwAIgATABQAFQAWANwA2gANAA8AFgAUABQADQAPABQAFgAXABQAFgBuAG0A1gDVABQADwAXABgAGQAaACwBMgEcAB8AGgAYACkAHAAfABoAGwAYAOsA6AAqACkAGAAaAB8AKgApABwAHQAeADIBLQEkACcAHgAcABwAHQAeAB4AHwAcAO8A6wAaABkAHAAeAB4AHwAcACAAIQAiAIgAhwAhACIAEgARAJsAIQAiACIAIQAjACIAIQAhACMA5QDkACIAIQAjACQAJQAmAC0BKQErACgAJgAkAB0AKwAoACYAJwAkAPMA7wAeAB0AJAAmACgAHgAdACgAKQAqACgAKQAYABsAvwC9ACgAKQAqACkAKAArACkAKAAmACUAKQEsASkAKAArACwALQAuACwALQA/ATwBIgEhAU4BLQAuAC0ALAAvAC0ALABOAU0BHgEfAS0ATgFNATAAMQAyAFEBUAEkASUBMgAwAFEBUAEyADIAMwAwADgBOQEcARsBMAAyADIAMwBRATQANQA2AKgApgA5ADsANgA0AD8ApgA7ADQANgA3ADQANgBJAUsBPAA/AD8AOwA8ADgAOQA6ADgAOQCmAKMAQgBBADgApgCjADkAOAA7ADkAOABKAUkBNgA1AKYAOAA7ADwAPQA+AEsBSAFAAEMAPgA8ADwAPQA+AD4APwA8AKUAqAA0ADcAPAA+AD4APwA8AEAAQQBCAEgBSgE4ADoAQgBAAD0AOACjAEAAQgBDAEAAQgCjAKUAPgA9AD0AowA+AEQARQBGAEQARQBMAE4AxADGAEQARQBIAEUARABHAEUARABcAF4ACgEJAUUARABHAEgASQBKAEgASQD5APUAwQDEAEgASQBKAEkASABLAEkASABOAE0AswC1AEkASABLAEwATQBOAEwATQBLAEgARgBFAEUASwBIAE0ATABPAE0ATAAJAQsBUgBRAEsARQALAVAAUQBSAFAAUQBNAE8ACwEMAUIBSwALAVEAUABTAFEAUABCAUEBsQCzAEsAQgGxAFQAVQBWAAUBAgFVAFYAvgDAAFQAVQBWAFcAVgBVAGEAYABWAFUARQFEAVcAVgBVAFgAWQBaAFgAWQBfAFwAxgDFAGIAWQBEAFkAWABbAFkAWABiAGEARAFDAVkAYgBXAFwAXQBeAFwAXQAIAQoBRwBEAEQAXQBHAF0AXABfAF0AXABaAFkAQwFAAV0ARABZAGAAYQBiAFYAVwBbAFgAYgBgAFYAVwBiAGAAYgBjAGAAYgDFAMMAvAC+AFYAYgC8AGQAZQBmANgA2wD2APcAZgBkAHgA9gD3AGQAZgBnAGQAZgBmAGcAeQB4AHgA9wB5AGgAZwBmAGgAZwBnAGYA9wD4ALYAeQD3AGgAaQBnAGgAaQB7AHkAZwBoALYAewB5AGkAaABqAGkAaAASAREBagBpAHsAtgAGAWoAawBpAGoAawB9AHsAaQBqAAYBfQB7AGsAagBsAGsAagDnAOkA/AD7AH0ABgHpAG0AbgBvABcAFgCaAJgAbwBtABcADwCYAG0AbwBwAG0AbwBvAHAAKAEnARcAmABwAHAAbwBxAHAAbwCYAJYAcQBwAHAAmACWAHAAcQByAHAAcQBxAHIAKgEoAXAAlgByAHIAcQBzAHIAcQCWAJUAcwByAHIAlgCVAHIAcwB0AHIAcwBzAHQALgEqAXIAlQB0AHMAdQB0AHMAdQA0AS4BdABzAJUAdQB0AHUAcwB2AHUAcwCVAJMAzgDNAHUAlQCTAHcAeAB5ANkA2ABkAGcAeQB3ABkBeAB5AHcAeQB6AHcAeQB5AHoAEwEZARkBeQATAXkAewB6AGcAaQB7AHoAegB5AHkAewATAXoAewB8AHoAewB7AHwAFAETARMBewAUAXwAewB9AHwAewBpAGsAfQB8ABQBewB9AHwAfQB+AHwAfQD7AP0AfgB8ABQBfQB+AH4AfwB8AH4AfwAIAAcAfAB+AH4AAQAUAX8AfgCAAH8AfgD9AP8AgAB/AAEAfgCAAIAAgQB/AIAAgQCBAH8AfwCAAIAAgQABAIEAgACCAIEAgAD/AAABrwCtAIEAgACCAIMAfwCBAAsACgB/AIEAgQCDAAsAAQCBAIEAhACDAK0AqwCEAIMAgwCBAIEAhAALAIMAhACFAIMAhACEAIUAhQCDAAsAhACFAIYAhQCEAOMA5gCFAIQAqwCqAIYAhQCEAIcAiACJACEAIACbAJ4AiQCHACEAmwCeAIcAiQCKAIcAiQCJAIoAigCHACEAngCKAIoAiQCLAIoAiQCeAKAAiwCKAIoAngCgAIoAiwCMAIoAiwCLAIwAjACKAIoAoAACAIsAjQCMAIsAjQCNAIwAjACLAKAAjQACAI0AiwCOAI0AiwCgAKIAjgCNAI0AoACiAI8AjgCQAI8AjgCiAKQAyQDIAI8AogCkAI4AjwCNAI4AjwCPAI0AjQCOAKIAjwCNAJEAjQCPAJEAjQCNAI8AyADLAJEAjQCPAI0AkgCMAI0AkgCSAIwAjACNAI0AkgACAI0AkQCSAI0AkQCRAJIAkgCNAI0AkQCSAJMAkgCRAJMAkgCSAJEAywDOAJMAkgCRAJQAjACSAJQAjACMAJIAkgCUAJQAAgCSAJIAkwCVAJIAkwB2AHMAlQCSAJIAkwCVAJIAlQCUAJIAlQCVAJQAlACSAJIAlQCUAJYAlACVAJYAlACUAJUAcwBxAJYAlACVAJcAlACWABYBFQGUAJYAlgCXAJcAlACWAJgAlwCWAJgAlwCXAJYAcQBvAJgAlwCWAJcAmACZAJcAmACYAJkAGAEWAZcAmAAMAJoAmQCYAA8ADACZAJgAbwBuAA8ADACYAJsAnACdABEAEAAwAS8BnQCbAJsAnACdAJsAnQCeAJsAnQCdAJ4AiQCIAJsAnQCeAJ4AnQCfAJ4AnQAvATEBnwCeAJ4AnQCfAJ4AnwCgAJ4AnwCfAKAAiwCJAJ4AnwCgAKAAnwChAKAAnwAxATcBoQCgAKAAnwChAKAAoQCiAKAAoQChAKIAjgCLAKAAoQCiAKEAowCiAKEAowCjAKIAogChAKEAowCiAKMApACiAKMApACQAI4AogCjAKMApACiAKMAoQClAKMAoQChAKUAQwBCAKMAoQA+AKQAowCmAKQAowA6ADkApgCkAKQAowCmAKEApwClADcBPgGnAKUApQChAKEApwA+AKcApACmAMcAyQCkAKYApgCnAKcApACmAKcAqAClAKcAqAA/AD4ApQCnAKcAPwA+AKcApgCoAKcApgA1ADQAqACnAKcApgA/AKkAqgCrAOEA4wCGAIQAqwCpAPIAhgCEAKkAqwCsAKkAqwCrAKwA8ADyAPIAhADwAKwAqwCtAKwAqwCEAIEArQCsAPAAhACBAKwArQCuAKwArQCtAK4A7QDwAPAAgQDtAK4ArQCvAK4ArQCBAIIArwCuAO0AgQCCAK4ArwCwAK4ArwAAAQEB7gDtAO0AggDuALEAsgCzAEEBRwGyALMAUQBTALEAsgBLALQAswCyALQAswCzALIADgEQAbQASwCyALMAtAC1ALMAtAC0ALUASQBLAEsAtABJALUAtAC2ALUAtAAQARIB+AD5AEkAtAC2ALcAuAC5ALcAuAC4ALkAuQC3AIUACwAjALkAuAC6ALkAuAC4ALoAugC5ACMACwCKALsAuQC6ALsAuQC5ALoAugC7ACEAIwCKALwAvQC+AMMAwgC9AL4AYABjALwAKABWAL8AvgC9AL8AvgC+AL0AKAAqACoAVgAoAL4AvwDAAL4AvwAHAQUBVABWAFYAKgBUAMEAwgDDAPUA8wC9ALwAwwDBAEoAKAC8AMQAwQDDAEgASgDBAMMAwwDEAEgASgC8AMMAxQDEAGMAYgDFAMQAxADDALwAYgBIAMQAxQDGAMQAxQBYAFoARABGAEgAYgBEAMcAyADJAMcAyACPAJAApACnAKcAjwCkAMgAxwDKAMgAxwA+ATsBygDIAI8ApwDKAMoAywDIAMoAywCRAI8AyADKAMoAkQCPAMsAygDMAMsAygA7ATUBzADLAJEAygDMAM0AywDMAM0AywDLAMwANQE0AXUAkQDMAM0AzgDLAHUAdgCTAJEAywDNAHUAkwCRAM8A0ADRACsBMAEQABMA0QDPAM8AnAATANEA0gDPAOIA4ADSAM8AzwDRABMA0gDPANIA0wDPANIA0wAmASsBzwDSANIA0wDPANMA0gDUANMA0gDgAN0A1ADTANMA0gDUANUA0wDUANUA0wDTANQA3QDcABQA0wDUANYA0wDVACcBJgHTANUAFAAXABcA0wAUANcA2ADZANcA2AB4AHcAGQEXAQ4AeAAZAdcA2gDYAA4ADQDaANgA2ADXAA4ADQB4ANsA2ADaAGUAZADYANoA2gDbAPYAeAANANsA2gDcANsA2gAVABQA3ADbAPYADQAUANwA3QDbANUA1ADdANsA2wDcABQA1AD2ANsA3QDeANsA3QDdAN4A9AD2APYA1AD0AN0A3wDeAN0A3wDxAPQA3gDdANQA8QD0AN8A3QDgAN8A3QDUANIA4ADfAPEA1ADSAOEA3wDgAPIA8QDfAOAA4ADhAPIA8QDSAOAA4gDhANIA0QDiAOEA4QDgANIAEwDyAOIA4wDhAOIA4wCqAKkA4QDiABMAhgDyAOIA5ADjABMAEgDkAOMA4wDiABMAIgCGAOQA5QDjACIAIwDlAOMA4wDkACIAIwCGAOMA5QDmAOMA5QDlAOYAhQCGAIYAIwCFAOcA6ADpAAYBBwHoAOkAbABqAAYBKgDpAOoA6QDoAPoA/ADpAOgA6ADqAOoA6QAqAOgA6wDqABsAGgDrAOoA6gDoACoAHwDqAOwA6gDrAP4A+gDqAOsA6wDsAOwA6gAfAO0A7ADrAO0A7ADsAOsA6wDtAO0A7AAfAOwA7QDuAOwA7QCuALAAAQH+AOwA7QDuAO8A7QDrAO8A7QDtAOsAHwAeAB4A7QAfAPAA7QDvAKwArgDtAO8A7wDwAPAA7QAeAPEA8ADvAPEA8ADwAO8A7wDxAPEA8AAeAPEA8gDwAN8A4QCpAKwA8ADxAPEA8gDwAO8A8wDxACcAJgDzAPEA8QDvAB4AKADxAPQA8QDzAN4A3wDxAPMA8wD0APQA8QAoAPQA8wD1APQA8wDCAMEA9QD0APQAKABKAPUA9gD0APUA9gDbAN4A9AD1AEoA9gD0APYA9QD3APYA9QD1APcAZgBlAPYASgD3APgA9wD1AGgAZgD3APUA9QD4ALYA9wBKAPUA+QD4AEoASQC1ALYA+AD1AEoASQC2APoA+wD8APoA+wBrAGwA6QDqAOoAfQDpAPoA/QD7APoA/QB+AH0A+wD6AOoAfgB9AP4A/QD6AP4A/QD9APoA6gDsAOwAfgDqAP0A/gD/AP0A/gD+AP8AgAB+AH4A7ACAAP4AAAH/AP4AAAGCAIAA/wD+AOwAggCAAAAB/gABAQAB/gDsAO4AsACvAIIA7ADuAAIBAwEEAQIBAwENAQ8BRgFFAVUAAwEEAQMBAgEFAQMBAgFVAFQABQEDAQMBVQBUAAUBBgEDAQUBBgERAQ0BAwEFAVQABgEDAQYBBQEHAQYBBQHAAL8A6ADnAAYBVAAqAAgBCQEKAQgBCQFFAEcAXgBdAF0ARQBHAAkBCAELAQkBCAEIAQsBTwBMAEUAXQALAQsBCAEMAQsBCAFAAUIBUABSAAsBXQBCAQ0BDgEPAQ0BDgFHAUYBBAEDAQMBsgAEAQ4BDQEQAQ4BDQENARABtACyALIAAwG0ABEBEAENAREBEAEQAQ0BAwEGAQYBtAADARABEQESARABEQFqAGgAtgC0ALQABgG2ABMBFAEVAXoAfAAUARUBFQETARMBFAGUABMBFQEWARMBFQGUAJcAFgETARMBlACXABcBEwEWARcBEwETARYBFgEXAQ4AEwGXABgBFwEWAQwADgAXARYBlwCZAAwADgCXABkBEwEXAXcAegATARcB1wDZABkBEwEOABoBGwEcARoBGwEwADMAOQE9AT0BUQEzABsBGgEdARsBGgEaAR0BTwFRAVEBPQFPARoBHgEdARoBHgFNAU8BHQEaAT0BTQFPAR4BGgEfAR4BGgE9AT8BLQAvAE0BPQEtACABIQEiASABIQEsAC4APAE6AToBTgEuACEBIAEjASEBIAEgASMBTAFOAU4BOgFMASABJAEjASABJAFQAUwBIwEgAToBUAFMASQBIAElASQBIAE6ATgBMgAxAFABOgEyACYBJwEoAdMA1gBtAHAAKAEmAdMAFwBwACYBKAEpASYBKAEoASkBKQEmAdMAcAArACkBKAEqASkBKAFwAHIAKgEpASsAcAByACkBKwEmASkBKwHPANMAJgEpASsAzwDTACkBKgEsASkBKgEqASwBKQArACsAcgApACsBKQEtASsBKQElACQALQErAc8AKwAdACwBKgEuASwBKgFyAHQALgEsASkAcgB0AC0BLwErAS0BLwEvASsBKwEtAR0AnQDPADABKwEvAdAAzwArAS8BnQCcAJwAzwCdAC8BLQExAS8BLQEtATEBnwCdAJ0AHQCfAC0BMgExAR0AHAAyATEBMQEtAR0AHACfACwBLgEzASwBLgEuATMBMwEsASkAdAAzATMBMgEsATMBMgEZABgALAEzATMBHAApADQBMwEuATQBMwEzAS4BdAB1AHUAMwF0ADMBNAE1ATMBNAHNAMwANQEzATMBdQDMADYBMQEyATYBMQExATIBMgE2ATYBnwAcADIBMwE2ATIBMwEzATYBNgEyARwAMwE2ATEBNgE3ATEBNgE2ATcBoQCfAJ8ANgGhADUBOAEzATUBOAE4ATMBMwE1AcwAMgAzATYBMwE4ATYBMwEzATgBOAE2ATYBMwEyADgBNQE5ATgBNQE1ATkBMwAyADIAzAAzADgBOgE2ASUBIAE6ATYBNgE4ATIAOgE2ATUBOwE5AcwAygA7ATkBOQE1AcwAygAzADwBNgE6ATwBNgE2AToBIAEiAS4ANgE6ATYBPAE3ATYBPAE8ATcBNwE2ATYBLgChADkBOwE9ATkBOwE7AT0BGgEcATMAygA9AT4BNwE8AacAoQA3ATwBPAE+AacAoQAuADsBPwE9ATsBPwEfARoBPQE7AcoALQA9ATwBPwE+AS4ALQA/AT4BPgE8AS4ALQCnAD8BOwE+AT8BOwHKAMcAPgE/AS0AygCnAEABQQFCAUABQQFTAFAADAEIAV0AsQBCAUEBQAFDAUEBQAFdAF8AQwFBAbEAXQBZAEQBQQFDAUQBQQFBAUMBWQBbAFcAsQBZAEEBRAFFAUEBRAFXAFUARQFBAbEAVwBVAEYBQQFFAUYBQQFBAUUBAgEEAQQBsQBVAEEBRgFHAUEBRgEPAQ4BsgCxALEABAGyAEgBSQFKAUgBSQE7ADgAQQBAAD0AOwA4AEkBSAFLAUkBSAE9ADwANwA2ADsAPQA8AEwBTQFOAUwBTQEvACwAIQEjAUwBTQFOAU0BTAFPAU0BTAFMAU8BHQEeAU0BTAFPAVABTwFMAVABTwFPAUwBIwEkAVABTwFMAU8BUAFRAU8BUAExADAAGwEdAU8BUAFRAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYUwAAxAUAAIgLAAABCAIAAAAAAAAA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pgCoAKcApwCoAKkAqgCpAKgAowCqAKsAqACrAKoArACtAK4ArQCvAK4ArwCtALAArgCvALEArQCyALAAsgCuALEAsgCzALAAsgCxALMAtAC1ALYAtwC2ALUAuAC1ALQAtQC5ALcAugC4ALQAugC3ALsAuAC6ALsAuwC3ALkAvAC4ALsAvQC7ALkAvgC4ALwAuQC+AL0AvwC4AL4AvgC5AL8AwADBAMIAwQDAAMMAxADFAMYAxQDEAMcAAAAAAAAAAAABAAAA3AIAAL8AuQC+AL4AuAC/AL0AvgC5ALwAuAC+ALkAuwC9ALsAuAC8ALkAtwC7ALsAugC4ALsAtwC6ALQAuAC6ALcAuQC1ALQAtQC4ALUAtgC3ALYAtQC0ALMAsQCyALAAswCyALEArgCyALAAsgCtALEArwCuALAArQCvAK4ArwCtAK4ArQCsAKoAqwCoAKsAqgCjAKgAqQCqAKkAqACnAKcAqACmAKYApQCnAKUApgCkAKEApQCkAKMAoQCkAKMAogChAJ8AnACgAJwAnwCeAJ4AmwCcAJ0AnACbAJkAlwCaAJgAlwCZAJgAlgCXAJMAlwCWAJMAlgCVAJUAlACTAJEAjwCSAI4AjwCRAJAAjwCOAI0AjACKAIoAjACLAIoAiwCIAIkAigCIAIYAiQCIAIYAiACHAIcAhQCGAIUAgwCGAIMAhQCCAIQAgwCCAH4AgQCAAH8AfgCAAH8AfQB+AH0AfAB+AHsAfAB9AHwAewB6AHkAdwB4AHUAeAB3AHcAdgB1AHEAdABzAHMAcgBxAHAAbQBuAG8AbgBtAGwAaQBqAGsAagBpAGgAZQBmAGcAZgBlAGEAZABjAGMAYgBhAGAAXwBdAF8AXgBdAFkAXABbAFsAWgBZAFgAVQBWAFcAVgBVAFQAUwBRAFMAUgBRAFAATQBOAE8ATgBNAEwASQBKAEsASgBJAEUASABHAEcARgBFAEQAQQBCAEMAQgBBAD0AQAA/AD8APgA9ADwAOQA6ADsAOgA5ADcANQA4ADcANgA1ADEANAAzADMAMgAxAC0AMAAvAC8ALgAtACwAKwApACsAKgApACgAJwAlACcAJgAlACQAIQAiACMAIgAhACAAHgAbAB8AGwAeAB0AHAAbABoAGQAYABcAFgAVABQAEwASABEAEAAPAA4ADQAMAAsACgAJAAgABwAGAAUABAADAAIAAQAAAMcAxADFAMYAxQDEAMMAwADBAMIAwQDAAAAAAAAAAAAAAQAAANwCAAASABMAFAASACAAEwATABcAFAAXABMAIAAVABIAFAAVABQAFwAgABIAZwASABUAZwAgAD8AFwA/ACAAZwAXABkAFQBqAGcAFQAVABkAagBnAGoAawBnAGsAPwBqABkAGABrAGoAGAAXABoAGQAYABkAGgAaABcAMAAwABgAGgAwABcAPwB2AGsAGAB2AD8AawAYADAAOwB1AHYAGAA6ABgAOwAYADoAdQAsADsAMAAsADoAOwAwAC8ALAAvADAALQA/AC0AMAAzACwALwAtAC4ALwAzAC8ALgAtAD8APgApACwAMwAzAD8AKQB2ACkAPwA/ADMAMgAyAD4APwAuADIAMwApACsALAA6ACwAKwAyAC4AAAAAAD4AMgAtACQALgA+ACQALQAkAEcALgAHACQAPgA+AAAABwBHAEMALgAuAEMAAABHACQASABGAEMARwBHAEgARQBFAEYARwBCAEUASABEAEYARQBFAEIARABGAEQAQQBCAEEARABDAEYAQQBBAEIAQwBIACEAQgBDAEIAIQAkACEASAAhAAAAQwAiACEAJAAHACIAJAAAACEAWwAHACYAIgB2ACYABwAHAAIAdgACAAcAAAB2AHUAJgACACkAdgA4ACYAdQAmADgAIgACACoAKQApACoAKwA4AHUANQB1ADoANQA4ADUACQAJACIAOAA1ADoACwA1AAsACQA6AAQACwAEADoAKwAJAAUACwAFAAsABAAjACIACQAjAAkABQAhACIAIwADAAQABQADACMABQARAAQAKwADAAQAEQArACoAEQAqAAMAEQABAAMAKgACAAEAKgADAAEAIwAAAAEAAgABAAAAIwAAAFcAIwBXAAAAWwAjAFcAUgAhACMAUgAhAFEAWwAhAFIAUQBaAFcAWwBVAFIAVwBaAFUAVwBSAFUAUwBaAFMAVQBRAFIAUwBUAFoAWwBbAFEAVABTAFoAVABRAFMAVAAAAAAAAAAAAAEAAADcAgAAVABTAFEAVABaAFMAVABRAFsAWwBaAFQAUwBSAFEAVQBTAFoAUwBVAFIAVwBVAFoAVwBSAFUAWwBXAFoAUQBSACEAWwBRACEAUgAjACEAUgBXACMAWwAAAFcAIwBXAAAAIwAAAAEAAgABAAAAIwABAAMAKgABAAIAKgADAAEAEQADACoAEQAqACsAEQAEAAMAKwAEABEABQAjAAMABQAEAAMAIwAiACEABQAJACMACQAiACMABAALAAUACwAFAAkAKwA6AAQACwAEADoACQALADUACwA6ADUAOAAiAAkACQA1ADgANQA6AHUANQB1ADgAKwAqACkAKQAqAAIAIgA4ACYAdQAmADgAdgApAAIAJgB1AHYAAAAHAAIAdgACAAcABwAmAHYAIgAmAAcAWwAhAAAAJAAiAAcAJAAhACIAQwAAACEASAAhACQAIQBCAEMAQgAhAEgAQwBCAEEAQQBGAEMARABBAEIAQQBEAEYARABCAEUARQBGAEQASABFAEIARwBGAEUARQBIAEcARwBDAEYASAAkAEcAAABDAC4ALgBDAEcABwAAAD4APgAkAAcALgBHACQALQAkAD4ALgAkAC0AMgA+AAAAAAAuADIAKwAsADoALAArACkAMwAyAC4APwA+ADIAMgAzAD8APwApAHYAKQA/ADMAMwAsACkAPgA/AC0ALgAvADMALwAuAC0ALwAsADMAMAAtAD8ALQAwAC8ALAAvADAAOwA6ACwAMAA7ACwAdQA6ABgAOwAYADoAGAB2AHUAOwAwABgAawA/AHYAGABrAHYAPwAXADAAGgAYADAAMAAXABoAGgAZABgAGQAaABcAGABqAGsAGAAZAGoAPwBrAGcAawBqAGcAagAZABUAFQBnAGoAFQAZABcAZwAgAD8AFwA/ACAAZwAVABIAZwASACAAFwAUABUAFAASABUAIAATABcAFAAXABMAEwAgABIAFAATABIAAAAAAAAAAAABAAAAcAsAAAAAAQACAK0ArACLAIgABgAIAK0ArAACAAMABAAFAAMABAAEAAUABQADAIAABAAFAAYABwAIAIgAhwC/ALkAAAACAAIAJQCtAAkACgALAAkACgAKAAsACwAJAH0ABQA2AAwADQAOAAwADQCYAJYADgAMAAUANgAEAA8AEAARAA8AEACWAJUAjQCMAIAABAARABIAEwAUAGYAaAAeAB8AcABtAGYAaAAfABUAFgAXAG4AcAAfABsAkgCRAGwAHwCfABgAGQAaAJAAjwAdABwAYQBkAGQAjwBhABsAHAAdAGIAYQAaABkAjwCSAJ8AYQCPAB4AGwAfAB4AGwAXABYAFAATAGgAnwAfABsAHgAgABsAHgBoAGUAoACfAJ8AaACgACEAIgAjACEAIgB8AH4ArgCyALIAfACuACIAIQAkACIAIQC1ALgAKAAnAHwAsgAoACUAJgAnAIcAhQB6AHwAJwAlACUAegB8ACUAJwAoACUAJwAiACQAuAC/ACUAfAAoACkAKgArAIkAigCUAJMAKwApAKYAlACTACkAKwAsACkAKwA8ADkAqACmAKYAkwCoAC0ALgAvALwAuwAxADQALwAtAJsAMQA0AC8AMAAtAKkAqgCeAJsALQAvADQAngCbADEAMgAzALsAvQA9AEAAMwAxADEAMgAzADMANAAxAKcAqQAvAC4AMQAzADMANAAxADUANgA3AJkAmAA2ADcANwA1ADUANgB9ADgANQA3AIIAhAA1ADcAfQB7AHsANQB9ADkAOgA7ADkAOgB4AHkAqwCoAKgAlwCrADoAOQA8ADoAOQAsACsAkwCXAJcAqACTAD0APgA/AL0AvgCdAJwAPwA9ADIAnQCcAD8AQAA9AKUApwAzADIAPQA/AJwAMwAyAEEAQgBDAEEAQgC2ALcATgBQAMIAQgBDAEIAQQBEAEIAQQDCAMEATABJAEIAwgDBAEUARgBHAMMAwABNAE8ARwBFAMMAwABHAEcASABFALoAtABLAEoARQBHAEcASADDAEkASgBLAEkASgBFAEgAtAC2AEIAwwBIAEoASQBMAEoASQBCAEQAwQDDAMMAQgDBAE0ATgBPAE0ATgC3ALoARwBGAMAAQwBHAE4ATQBQAE4ATQDAAMIAQQBDAEMAwADCAFEAUgBTALMAsQBWAFgAUwBRAFwAsQBYAFEAUwBUAFEAUwDFAMcAWQBcAFwAWABZAFUAVgBXAFUAVgCxAK8AXwBeAFUAsQCvAFYAVQBYAFYAVQDGAMUAUwBSALEAVQBYAFkAWgBbAMcAxABdAGAAWwBZAFkAWgBbAFsAXABZALAAswBRAFQAWQBbAFsAXABZAF0AXgBfAMQAxgBVAFcAXwBdAFoAVQCvAF0AXwBgAF0AXwCvALAAWwBaAFoArwBbAGEAYgBjABwAGwCfAJ4AYwBhAGEAnwCeAGMAZABhAKoAowAYABoAYQBjAJ4AZABhAGUAZgBnAGUAZgBtAG8AcwByAKAAZgBpAGYAZQBoAGYAZQAgAB4AEwASAGYAoABoAGkAagBrAGkAagCiAKEAdABzAGkAagBrAGoAaQBsAGoAaQBvAG4AkQCOAGoAaQBsAG0AbgBvAG0AbgBsAGkAZwBmAGYAbABpAG4AbQBwAG4AbQASABQAFgAVAGwAZgAfAHEAcgBzAJwAoABlAGcAcwBxAJwAoABpAHMAdABxAGkAawChAKUAcQBzAGkAawCcAHUAdgB3AIMAhgCkAKMAdwB1AJoApABkAHcAeAB1AHcAeACXAJoAdQB3AGQAlwCaAHgAdwB5AHgAdwCjAKsAOwA6AJcAZACrAHoAewB8AIUAggB7AHwAJwAmAHoAewB8AH0AfAB7AH0AfAB8AHsAOAA3AH0AfAB7AH4AfAB9ACMAIgB8AH0AfQB+AK4AfAB9AH4AfQB/AH4AfQB9AH8AfwB+AK4AfQAFAIAAfgB/AIAAfgB+AH8AfwCAAIAArgAFAIAAgQB+AIwAiwCsAK4AfgCAAIAArACuAIIAgwCEAIIAgwCaAJkANQA4AHsAmgA1AIIAhQCDAHsAegCFAIMAgwCCAHsAegCaAIYAgwCFAHYAdQCDAIUAhQCGAKQAmgB6AIYAhQCHAIYAhQAmACUAhwCGAKQAegAlAIcAiACGAAcABgCIAIYAhgCHACUAAgCkAIgAiQCGAIgAiQCmAKQAhgCIAAIApgCkAIgAigCJAIgAigAqACkAiQCIAAIAlACmAIgAiwCKAAIAAQCLAIoAigCIAAIArACUAIsAjACKAIEAgACMAIoAigCLAKwAgACUAIoAjACNAIoAjAAPABEAlQCUAJQAgAARAI4AjwCQAI4AjwAZABgAowCiAGoAjwBkAJEAjwCOAJEAjwCPAI4AagBsAGwAjwBqAJIAjwCRABsAHQCPAJEAFQAXAJ8AjwBsAJMAlACVACsAKgCKAI0AlQCTAJMAlAARAJUAlgCTABEAEACWAJMAkwCVABEABACTAJYAlwCTAJYAlwA6ADwAkwCWAAQAlwCTAJcAlgCYAJcAlgAOAA0AmACXAJcABAA2AJkAlwCYAJkAlwCXAJgANgA1ADUAlwA2AJoAlwCZAHUAeACXAJkAhACDAJoAlwA1AJsAnACdAJsAnAA/AD4AvgC8AJsAnACdAJwAmwCeAJwAmwAtADAAngCcAJwAmwCeAJ4AnwCcAGMAYgCfAJwAnACeAJ4AnwCcAKAAnACfAHIAcQCcAJ8AGwAgAKAAnACfAKEAogCjAGsAagCOAJAAowChAGsAagBkAKQAoQCjAKQAoQChAKMAdwB2AKQAawBkAKQApQChAKQApQBxAHQAoQCkAKQAnABrAKQApgClAIYAiQCmAKUApQCkAKQApgCcAKcApQCmAEAAPwClAKYApgCnADMAnACmAKYAqACnACkALACoAKcApwCmAKYAqAAzAKcAqACpAKcAqACoAKkANAAzADMAqAA0AKoAqQCoADAALwCpAKgAqACqAJ4ANACoAKMAqgCrAGQAYwCqAKsAeQB3AGQAngCrAKgAqwCqADkAOwCrAKoAqgCoAKgAqwCeAKwArQCuAAEAAACtAK4AfgCBAKwArQCuAK0ArwCuAK0ArwCvAK4ArgCtAK0ArwCuAK8ArQCwAK8ArQCtALAAYABfAK8ArQBbAK4ArwCxAK4ArwBXAFYAsQCuAK4ArwCxAK0AsgCwALkAtQCyALAAsACtAK0AsgBbALIArgCxACEAIwCuALEAsQCyALIArgCxALIAswCwALIAswBcAFsAsACyALIAXABbALIAsQCzALIAsQBSAFEAswCyALIAsQBcALQAtQC2ALQAtQC1ALYASQBLAEgAsgBCALcAtgC1AEMAQgC2ALUAtQC3AEMAQgCyALgAtQC0ACQAIQC1ALQAtAC4ACgAsgBIALUAuQC3ALIArQC5ALcAtwC1ALIArQBDALoAuAC0ALoAuAC4ALQASABHAEcAKABIALoAtwC7AE8ATgC3ALsAuwC6AEcAQwAxALgAugC7ALgAugC6ALsAuwC4ACgARwAxALsAtwC5ALsAtwC3ALkAuQC7ADEAQwCtALwAuAC7ALwAuAC4ALsALgAtAJsAKAAxAL0AuwC5ADIAMQC7ALkAuQC9ADIAMQCtAL4AuAC8AL4AuAC4ALwAmwCdAJ0AKACbALkAvgC9ALkAvgA+AD0AvQC5AK0AnQAyAL8AuAC+ACUAKAC4AL4AvgC/ACUAKACdAL4AuQC/AL4AuQAIAAcAvwC+AJ0ArQAlAMAAwQDCAMAAwQBEAEEAUABNAMAAwQDCAMEAwADDAMEAwABGAEUASgBMAMEAwADDAMQAxQDGAMQAxQBYAFUAXgBdAFoAWABVAMUAxADHAMUAxABaAFkAVABTAFgAWgBZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADALAAA3AIAALgFAAABCAIAAAAAAAAAAAAAADoAAAAAAAAAXQAAAAEAAAABAAAAAAAAAAEAAAABAAAArgAAAAQAAABeAAAAZQAAAAEAAAABAAAAAAAAAAEAAADrE9xEAAAAAAEAAAABCAwAAABmAAAADAAAAGYAAADs7V5DHMBYw4/pNkO3VmBDNSxYQ4vFMUPowHFDZ5szQ+EpTEPowHFDZ5szQ+EpTEMrh3tDcYczw7FgR0Ps7V5DHMBYw4/pNkNyIHTDp5pQwxrOiENqil/DuXpcw/A4NkMrh3vDbIczw7NgR0PyaGhDV5pSw3xbhUPs7V5DHMBYw4/pNkMrh3tDcYczw7FgR0OksXTDe25XQ/tfhkML2FzD15dYQ9LBNUMrh3vDjHQ0Q7JgR0PyaGhDV5pSw3xbhUPowHFDZ5szQ+EpTEPePFlDmRZNQ2JehkMrh3vDjHQ0Q7JgR0Mrh3vDbIczw7NgR0ML2FzD15dYQ9LBNUMrh3vDbIczw7NgR0ML2FzD15dYQ9LBNUNqil/DuXpcw/A4NkMW2QRAVGREQ190iENOPcxA8A00Q0DhSEP4k4JBCU9TQ6Y2UkMqh3tDKId7w+hPNsMbh3vDKYd7Q/ZPNsMlh3vDJId7w+9PNsMph3tDF4d7Q/BPNsOksXTDe25XQ/tfhkPePFlDmRZNQ2JehkO3VmBDNSxYQ4vFMUML2FzD15dYQ9LBNUNpxHlDKb17QwdDiUPShHvDvIx7Q3KZiUMbh3vDKYd7Q/ZPNsMph3tDF4d7Q/BPNsPyaGhDV5pSw3xbhUNyIHTDp5pQwxrOiENqil/DuXpcw/A4NkPs7V5DHMBYw4/pNkPs7V5DHMBYw4/pNkML2FzD15dYQ9LBNUO3VmBDNSxYQ4vFMUNqil/DuXpcw/A4NkP4k4JBCU9TQ6Y2UkNOPcxA8A00Q0DhSEPowHFDZ5szQ+EpTEO3VmBDNSxYQ4vFMUMW2QRAVGREQ190iEO3VmBDNSxYQ4vFMUPePFlDmRZNQ2JehkP4k4JBCU9TQ6Y2UkPowHFDZ5szQ+EpTENOPcxA8A00Q0DhSEPePFlDmRZNQ2JehkMW2QRAVGREQ190iEPShHvDvIx7Q3KZiUOksXTDe25XQ/tfhkMbh3vDKYd7Q/ZPNsMrh3vDjHQ0Q7JgR0Mlh3vDJId7w+9PNsMrh3vDbIczw7NgR0NyIHTDp5pQwxrOiEPegXvDGId7w9eGiUPePFlDmRZNQ2JehkOksXTDe25XQ/tfhkPShHvDvIx7Q3KZiUNpxHlDKb17QwdDiUP/O3pDud97w7mLiUPyaGhDV5pSw3xbhUNyIHTDp5pQwxrOiEPegXvDGId7w9eGiUPegXvDGId7w9eGiUP/O3pDud97w7mLiUMlh3vDJId7w+9PNsNR7mvCn4x0w7R7tEK9Qh9DWaF1w0GpsEKPimvCccF0w0VUC8Mqh3tDKId7w+hPNsPiLx9DxkV0w2BOC8OYF3lDFJ3Mwj8jCsMqh3tDKId7w+hPNsOggnJDtYFHw5dtDMMn+ndDCidGw8arhUIph3tDF4d7Q/BPNsP/O3pDud97w7mLiUOV6ndDayfMwjZFgkIrh3tDcYczw7FgR0PowHFDZ5szQ+EpTEPyaGhDV5pSw3xbhUNpxHlDKb17QwdDiUOV6ndDayfMwjZFgkKggnJDtYFHw5dtDMMn+ndDCidGw8arhUKYF3lDFJ3Mwj8jCsO9Qh9DWaF1w0GpsEKPimvCccF0w0VUC8NR7mvCn4x0w7R7tELiLx9DxkV0w2BOC8MBAAIAAABmAAAAAAAAAAAAAAAIAAAAZgAAAAAAf3+BAAB/AAB/f4EAAH8AAH9/gQAAf38AAH8AAH9/fwAAfwAAf39/AAB/AAB/f3sAH38AgQB/ewAffwCBAH97AB9/AIEAf4EAAH8AfwB/gQAAfwB/AH+BAAB/AH8Af38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AAIF/fwAAfwAAgX9/AAB/AACBf3/2AH8AAIF/f/YAfwAAgX9/9gB/AACBf3/2AH8AAH9/f/YAfwAAf39/9gB/AAB/fwCBAH+BAAB/AIEAf4EAAH8AgQB/gQAAfwCBAH8AAIF/AIEAfwAAgX8AgQB/AACBfwCBAH8AAIF/AAB/fwCBAH8AAH9/AIEAfwAAf38AgQB/AAB/fwCBAH+BAAB/AH8Af4EAAH8AfwB/gQAAfwB/AH+BAAB/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AgQB/AACBfwCBAH8AAIF/AIEAfwAAgX8AgQB/AACBfwAAf38Af/9/AAB/fwB//38AAH9/AH//fwAAf38Af/9/AAB/fwCBAH8AAH9/AIEAfwAAf38AgQB/AAB/fwCBAH8AgQB/gQAAfwCBAH+BAAB/AIEAf4EAAH8AgQB/gQAAfwCBAH+BAAB/AIEAf4EAAH8AgQB/gQAAfwCBAH+BAAB/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/fwB/AH8AAH9/AH8AfwAAf38AfwB/AAB/f38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH8AfwB/fwAAfwB/AH9/AAB/AH8Af38AAH8AfwB/fwAAfwB/AH9/AAB/AH8Af38AAH8AfwB/fwAAfwB/AH9/AAB/AH8Af38AAH8AfwB/fwAAfwB/AH9/AAB/AH8Af38AAH8AfwB/fwAAfwB/AH9/AAB/AH8Af38AAH9/AAB/AIEAf38AAH8AgQB/fwAAfwCBAH9/AAB/AIEAfwQAAADMAAAANTX6KOg6+yEuNdk05TqbNHs1fjQCOzs0eDv/O+gzkjSCOz46CjQ5K187Dzp+My8oZjQVMicq+DpBNAkwWCtgOwA0PjC0LFU7NjQ4MH8s4jtHNAQtxyyPOwA04Cw5K4w7wDQiM08l5DvbNMcwFCdyO440UDEhIIw7BDU3NRwx3jsSNZMtOTHeOdQ0pSy4ML85pzs/OnszszvLOwA8CTTeOck7DzoGNOY7gjs8OnMy3jmBOxY8bDLmO6k7DToWM605SjS6M+4maDtqNM8xfigKOxo0EjKDIxc76TjpNHg5ISDqNOk4zjVDNek46Th4OUM16jTpNM41ISCrOyA15TTkNao78SjVIeY1DztiKAEfGDcUO+U0pzQNN+40/TsMNR056Tj+OxU5HjnpOOk4FTmMNek06TgINYw18Tv1OA4wizX8O0Q1MjB0KV47eDWlLCIrYDvqOK4sczXwOH4o7R+gOQ475TSnNBk3DTtiKAMfGjfsOOw0rjSkOf8wMTOqOpsznjFjM7c69TKjMZkthDnwMuYwNi6YObYzHzEiLjEzAi5hLWwzWjGPM+gwPDMIM10zBy+0Lvoxmy7qK5Ut3y3rOZArYzO9LR87mC+QLlAwDDqsL3gzWDAkO9+A/jvaOOw7oyXzO9I4vTsAAOk4CDXsO40pezt3OI876TTpOAg1Wjk1NHs7dzi4OX40+zvYOJI56TT+O9o4WjkkOz811zTCJzE74DjzNEA1XjvpOFE1UjVeO+00UjW2IOk47DQKII0gHTkaNWwoRyUfOeA4kig/Nek46TgoIFI11ADtODk5GznmNO04yTsbOQEAYTM5OYw1hi9cNzU6KjgCNFU3UjsnOIYvRTQ1Ov016TRgM8s7jDUCNEQ0Ujv8NaQ5Ojn8OXM56TjuODk5OTkqOTY5fTlwOSw5nDp/OX86XjvuOMs7OTnpOAE8OTmPO6Q5mTr9OX06QzmAO5c5LDsEO4w7bTs1Oxw59jtvOYU7XjsBPMs7jjtvK2QzZyzlOk6VaiveHtk5t49vM8Af5zpkK6krYSzcOes46DS3Ot4wtjddL5s5+B61N+80mjnnMOs4YC+4Oh8fAQAAAAAAAAAAAAAAAAABAAAAdAEAAAAAAQACAAMABAAFAAYABwAIAAkACgALAAwADQAOAA8AEAARABIAEwAUABUAFgAXABgAGQAaABsAHAAdABwAGwAeAB8AIAAhACEAIgAfACMAJAAlACMAJQAmACcAKAApACcAKQAqACsALAAtACwAKwAuAC8AMAAxADEAMgAvADMANAA1ADQAMwA2ADcAOAA5ADoAOQA4ADsAPAA9AD4APQA8AD8APQA+AD8APgBAAEEAPwBAAEEAQgA/AEMARABFAEMARQBGAEYARwBDAEcASABDAEcASQBIAEcASgBJAEsATABNAEwATgBNAE4ATABPAE0ATgBQAEwAUQBPAFEATQBQAFEAUgBPAFEAUABSAFMAVABVAFYAVQBUAFcAVABTAFQAWABWAFkAVwBTAFkAVgBaAFcAWQBaAFoAVgBYAFsAVwBaAFwAWgBYAFgAWwBcAF0AVwBbAFsAWABdAF4AXwBgAF8AXgBhAGIAYwBkAGMAYgBlAAAAAAAAAAAAAQAAAHQBAABdAFgAWwBbAFcAXQBcAFsAWABYAFoAXABaAFcAWwBYAFYAWgBaAFkAVwBaAFYAWQBTAFcAWQBWAFgAVABTAFQAVwBUAFUAVgBVAFQAUwBSAFAAUQBPAFIAUQBQAE0AUQBPAFEATABQAE4ATQBPAEwATgBNAE4ATABNAEwASwBJAEoARwBIAEkARwBDAEgARwBDAEcARgBGAEUAQwBFAEQAQwA/AEIAQQBAAD8AQQBAAD4APwA+AD0APwA8AD0APgA9ADwAOwA4ADkAOgA5ADgANwA2ADMANAA1ADQAMwAvADIAMQAxADAALwAuACsALAAtACwAKwAqACkAJwApACgAJwAmACUAIwAlACQAIwAfACIAIQAhACAAHwAeABsAHAAdABwAGwAaABkAGAAXABYAFQAUABMAEgARABAADwAOAA0ADAALAAoACQAIAAcABgAFAAQAAwACAAEAAABlAGIAYwBkAGMAYgBhAF4AXwBgAF8AXgAAAAAAAAAAAAEAAAB0AQAAGAAZABoAAQAYABoAGAARABkAGAABABEAGgAZAAIAAgABABoAAgAZABEADAARAAEAAAABAAIAAQANAAwAAAANAAEAEQAMACQADQAAAAcAJAAMABwADAANAA4ADgAcAAwADgAIAA0ACAANAAcAHQAOAAgAHQAcAA4ABgAHAAgABgAdAAgACQAHAAAACQAGAAcABgBCAB0ACQAAAAQAAgAEAAAARwBCAAYARwAGAAkAQgBHAB0ACQACABEARwAJABEARwACAAkACQAEAEcAEQAkACMAIwBHABEAIwAkABwAAgBHACMAIwAeAAIAIwAcAB4AAgAeAAQAHAAbAB4AGwAcAB0AHgBZAAQAWQAeAFMAHgAbAFMAWQBWAAQABABWAEcAVQBZAFMAWQBVAFYAUwAbAFUAVgBVABsAGwBHAFYARwBOAB0ARwAbAE8ATgBHAE8AHQBOAFAATwBQAE4AGwAdAFAAGwBSAE8AGwBQAFIAUABPAFIAAAAAAAAAAAABAAAAdAEAAFIATwBQAFIAUAAbAE8AUgAbAFAAHQAbAE4AUABPAFAATgAdAE8ARwBOAE8AGwBHAB0ATgBHAFYARwAbABsAVQBWAFUAGwBTAFYAVQBZAFMAWQBVAEcAVgAEAAQAVgBZAFMAGwAeAFMAHgBZAAQAWQAeAB0AHAAbAB4AGwAcAAQAHgACAB4AHAAjAAIAHgAjACMARwACABwAJAAjABEARwAjACMAJAARAEcABAAJAAkAAgBHABEACQBHABEAAgAJAB0ARwBCAAkABgBHAAYAQgBHAAAABAACAAQAAAAJAB0AQgAGAAcABgAJAAAABwAJAAgAHQAGAAgABwAGAA4AHAAdAAgADgAdAAcADQAIAA0ACAAOAAwAHAAOAA4ADQAMABwADAAkAAcAAAANACQADAARAAEADQAAAAwADQABAAIAAQAAAAEAEQAMABEAGQACABoAAQACAAIAGQAaABEAAQAYABkAEQAYABoAGAABABoAGQAYAAAAAAAAAAAAAQAAANAFAAAAAAEAAgArAC0AMgAxAAMABQAKADQANwADAAQABQBbAFoACwAKAAAAAgA3AAsACgAGAAcACAAGAAcABwAIAAgABgAGAAcACAAJAAoACwAnACoABQAEAFoAXAAJAAoACwAMAA0ADgAfACIADQAOAD4APAA8AA0APgAPABAAEQBcAFsANwA5AEMASAAJADcAOQASABMAFAASABMAEwAUABQAEgA+AAgADQAVABYAFwAVABYALAAuABcAFQAIAA0ABwAYABkAGgA6ADgAMAAvADYAMwA6ADgANgAbABwAHQAbABwAPQA/AE0AUQBRAD0ATQAcABsAHgAcABsAVABXACYAJQA9AFEAJgAfACAAIQBEAEMANQA0ACEAHwA8ADkANAAhACIAHwAtACwADQAMAB8AIQA0AA0APAAjACQAJQBGAEUAOwA9ACUAIwAjADsAPQAjACUAJgAjACUAHAAeAFcAXQAjAD0AJgAnACgAKQBIAEkAKAApACkAJwAJAAYABwAnACkAKgAnACkALgArAAoACQAJAAcACgArACwALQArACwAIgAhAAEAAAAKAA0ANAAsACsALgAsACsAKgApABcAFgANAAoABwAvADAAMQAaABkAOAA3ADEALwA2ADgANwAxADIALwACAAEANAA2AC8AMQA3ADQANgAzADQANQAzADQAIQAgADkAOgA6ADQAOQA0ADMANgA0ADMAGAAaAC8AMgA0ADoANgA3ADgAOQAxADAAOAA5ABEAEAA3ADgAOQA6ADkAOAAzADUAOQA4ABkAGAA6ADkAOAA7ADwAPQBFAEQAPAA9ACUAJAA7ADwAPQA+AD0APAA+AD0APQA8AAwADgA+AD0APAA/AD0APgAdABwAPQA+AD4APwBNAD0APgA/AD4AQAA/AD4APgBAAEAAPwBNAD4ACABBAD8AQABBAD8APwBAAEAAQQAGAE0ACABBAEIAPwBJAEoASwBNAD8AQQAGAEsATQBDAEQARQAgAB8APAA7AEUAQwA5ADwAOwBDAEUARgBDAEUAJAAjAEYAQwA5ADsAIwBGAEcAQwBdAFgA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GwAYABkAGgAZABgAFwAWABQAFgAVABQAEAATABIAEgARABAADwAMAA0ADgANAAwACwAKAAkACAAHAAYABQAEAAMAAgABAAAANQAyADMANAAzADIAMQAwAC8AAAAAAAAAAAABAAAAtAAAACUAJwAkAA4AJAAnACQAAAAlAAAAJAAOACcAJQAMAAAADAAlAAwADgAnAAEAAAAOAA4AEwABAAAAAQACABMAAgABAAwAAAACAA4ADQATAAwADQAOAAwAAgAuAA8ADAAuAAIADwAuAA0ADAAPAAIAEwAEAAQADwACABMADQAQAAQAEwAQAAUADQAPAAUAEAANAAUADwAEABAABQAEAAAABAAFAAQAAAAFAAYABQAEAAYABAAFAAAAAAAAAAAAAQAAALQAAAAFAAQABgAEAAUABgAFAAAABAAFAAQAAAAEAAUAEAAEAA8ABQANABAABQAPAA0ABQAQABMABAAQAA0AEwACAA8ABAAEABMAAgAPAAwADQAuAA8AAgAuAAwADwAuAAIADAAOAA0ADAATAA0ADgACAAAADAABAAIAEwACAAEAAAABABMADgAOAAAAAQAnAA4ADAAlAAwAAAAMACUAJwAOACQAAAAlAAAAJAAnACQADgAkACcAJQAAAAAAAAAAAAEAAADQAgAAAAABAAIAIgAhABsAGAAqACkAIgAhADAAAwAEAAUAKQArACsALAAsACkAIgALAAoABgAHAAgACQALACsALAAKAAkACQALAAoACQAKAAsABgAIACwAKwAHAAYACQAKAAsADAANAA4ADAANAB8AHAAjACYALwAfACMADQAMAA8ADQAMACgALQAXABYAHwAvABcAEAARABIAFQAUACwAKwASABAAIAAKAAsAEgATABAAGgAZAB0AIAAQABIACwAdACAAFAAVABYAEQAQACAAHwAWABQACgAgAB8AFAAWABcAFAAWAA0ADwAtACwACgAfABcAGAAZABoAGAAZABMAEgArACoAMAAdAAsAGQAYABsAGQAYAAIAAQAeAB0AHQAwACEAHAAdAB4AHAAdABkAGwAhACMAIwAdACEAHAAfAB0ADgANAB8AHQAdABwAIwAfAB0AHQAfACAAHQAfABYAFQAQABMAHQAfACAAIQAiACMAAQAAACIAIwAcAB4AIQAiACMAIgAkACMAIgAkACQAIwAjACIAIgAkACMAJAAiACUAJAAiACIAJQAyADQAJAAiACUAIgAmACUAKQAoADUAMgAlACIAIgAvACUAIwAkACcAIwAkADQAMwAnACMAIwAkACcAJgAjACcADAAOACMAJwAzADUALwAjACcAKAApACoAJgAiAAAAAgAwAC8ALwAiADAAKwApACwABAADAAMABQAsACsACwAiAAoALAAtACsAFAAXAC0AKwArACwACgAXAAsAKwAtACoAKwAtAC0AKgAYABoACwAXADAALQAoAC4ADwAMAC8AMQAuAC0AFwAvADEAKgAtAC4AKgAtAC0ALgAxADAAMAAXADEALwAwADEAKAAqACoALgAuACgALwAwADEAMgAzADQAMgAzACcAJAAkACUAJQAnACQAMwAyADUAMwAyACUAJgAmACcAJwAlAC8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgLAAC0AAAAaAEAAAQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAORMO0Irh3tDLId7QyAjZUNEkNNDAQAAAAEAAAAAAIA/AQAAAEA0jjwBAAAAfN5oOwEAAACApJI6AQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIAAAD7////GAAAAAAAAAABAAAAAAAAALcIuUSUEcVEAAAAAAAAAAD6////JQAAAAAAAAABAAAAAAAAAJSirkTGBcREAAAAAAAAAAA="
+    }
+  ],
+  "SearchableNames": null,
+  "ImportTypeHierarchies": null,
+  "MetaData": null,
+  "Thumbnails": null,
+  "WorldTileInfo": null,
+  "AppendedNullBytes": 0,
+  "OtherAssetsFailedToAccess": [],
+  "LegacyFileVersion": -7,
+  "DataResourceVersion": "Invalid",
+  "DataResources": null,
+  "UsesEventDrivenLoader": true,
+  "WillSerializeNameHashes": true,
+  "Imports": [
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "Default__BodySetup",
+      "OuterIndex": -10,
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "BodySetup",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "BodySetup",
+      "OuterIndex": -10,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "StaticMesh",
+      "OuterIndex": -10,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "NavCollision",
+      "OuterIndex": -11,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "Concrete040",
+      "OuterIndex": -8,
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "Material",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "Glass",
+      "OuterIndex": -9,
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "Material",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "Default__NavCollision",
+      "OuterIndex": -11,
+      "ClassPackage": "/Script/NavigationSystem",
+      "ClassName": "NavCollision",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "/Game/Resources/Buildings/Brutalism/Materials/Concrete040/Concrete040",
+      "OuterIndex": 0,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "/Game/Resources/Buildings/Brutalism/Materials/Glass/Glass",
+      "OuterIndex": 0,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "/Script/Engine",
+      "OuterIndex": 0,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "/Script/NavigationSystem",
+      "OuterIndex": 0,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "Default__StaticMesh",
+      "OuterIndex": -10,
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "StaticMesh",
+      "PackageName": null,
+      "bImportOptional": false
+    }
+  ],
+  "DependsMap": [
+    [],
+    [],
+    []
+  ],
+  "SoftPackageReferenceList": null,
+  "AssetRegistryDependencyDataOffset": -1,
+  "AssetRegistryRecords": [],
+  "ImportBits": null,
+  "SoftPackageBits": null,
+  "ExtraPackageDependencies": null,
+  "BulkData": null,
+  "AdditionalFiles": "wYMqng==",
+  "Trailer": null,
+  "ValorantGarbageData": null,
+  "SeaOfThievesGarbageData": null,
+  "Generations": [
+    {
+      "$type": "UAssetAPI.FGenerationInfo, UAssetAPI",
+      "ExportCount": 3,
+      "NameCount": 75
+    }
+  ],
+  "PackageGuid": "{806A6B19-5381-4F30-B0B3-658C969759C2}",
+  "PersistentGuid": "{00000000-0000-0000-0000-000000000000}",
+  "RecordedEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "RecordedCompatibleWithEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "ChunkIDs": [],
+  "PackageSource": 3699703844,
+  "FolderName": "None",
+  "LocalizationId": null,
+  "SoftObjectPathsCount": 0,
+  "SoftObjectPathsOffset": 0,
+  "SearchableNamesOffset": 0,
+  "ThumbnailTableOffset": 0,
+  "ImportTypeHierarchiesCount": 0,
+  "ImportTypeHierarchiesOffset": 0,
+  "SavedHash": null,
+  "CompressionFlags": 0,
+  "AdditionalPackagesToCook": [],
+  "NamesReferencedFromExportDataCount": 75,
+  "PayloadTocOffset": -1,
+  "DataResourceOffset": -1,
+  "doWeHaveAssetRegistryData": true,
+  "doWeHaveWorldTileInfo": false,
+  "PackageFlags": "PKG_FilterEditorOnly",
+  "HasUnversionedProperties": false,
+  "IsFilterEditorOnly": true,
+  "IsPreDependencyFormat": true
+}

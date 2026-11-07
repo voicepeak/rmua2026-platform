@@ -1,0 +1,377 @@
+{
+  "blueprints": {
+    "BP_Building_1_1.json": {
+      "sha256": "24d2a793598efa627c29fadc852cde82addb1d833d5cc7c6e31144616c208234",
+      "mesh_imports": [
+        {
+          "name": "Building_1_Block",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Block",
+          "import_index": -17
+        },
+        {
+          "name": "Building_1_Cap",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Cap",
+          "import_index": -18
+        }
+      ]
+    },
+    "BP_Building_1_2.json": {
+      "sha256": "cff2d91fd0a690fd85c8c1f4cada1855feb7a5e8a09b8db6208ca46528158f66",
+      "mesh_imports": [
+        {
+          "name": "Building_1_Block",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Block",
+          "import_index": -18
+        },
+        {
+          "name": "Building_1_Cap",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Cap",
+          "import_index": -19
+        },
+        {
+          "name": "Building_1_Segment",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Segment",
+          "import_index": -20
+        }
+      ]
+    },
+    "BP_Building_2_1.json": {
+      "sha256": "886967d5533150a9bba46bfac08d054650dfd801811cbc98a81b1783dfbc9aa7",
+      "mesh_imports": [
+        {
+          "name": "Building_2_Cube00",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube00",
+          "import_index": -18
+        },
+        {
+          "name": "Building_2_Cube02",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube02",
+          "import_index": -19
+        },
+        {
+          "name": "Building_2_Cube03",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube03",
+          "import_index": -20
+        }
+      ]
+    },
+    "BP_Building_3_1.json": {
+      "sha256": "8b885afdfa60a7bb4bea6cf019e3d85946b916573ea78024120459b556200af8",
+      "mesh_imports": [
+        {
+          "name": "Building_3_TCapsule",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TCapsule",
+          "import_index": -18
+        },
+        {
+          "name": "Building_3_TFrame",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TFrame",
+          "import_index": -19
+        },
+        {
+          "name": "Building_3_TTop",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TTop",
+          "import_index": -20
+        }
+      ]
+    },
+    "BP_Building_3_2.json": {
+      "sha256": "3455fc02aa922d4a741581849bfa2dc7ebd296a2983d439cf79d7565a69f2592",
+      "mesh_imports": [
+        {
+          "name": "Building_3_LCorner",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_LCorner",
+          "import_index": -20
+        },
+        {
+          "name": "Building_3_LMiddle",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_LMiddle",
+          "import_index": -21
+        },
+        {
+          "name": "Building_3_TCapsule",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TCapsule",
+          "import_index": -22
+        },
+        {
+          "name": "Building_3_TFrame",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TFrame",
+          "import_index": -23
+        },
+        {
+          "name": "Building_3_TTop",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TTop",
+          "import_index": -24
+        }
+      ]
+    },
+    "BP_Building_3_3.json": {
+      "sha256": "7c99fd5483f73b14b06368d471ad9856dfce1ca19776165317e1b98ef4ab727c",
+      "mesh_imports": [
+        {
+          "name": "Building_3_TCapsule",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TCapsule",
+          "import_index": -18
+        },
+        {
+          "name": "Building_3_TFrame",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TFrame",
+          "import_index": -19
+        },
+        {
+          "name": "Building_3_TTop",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TTop",
+          "import_index": -20
+        }
+      ]
+    },
+    "BP_Building_4_1.json": {
+      "sha256": "a706ae9303ba46332b25f698b03e25a59602574d38bca46ddcfd0371cd9cdf5f",
+      "mesh_imports": [
+        {
+          "name": "Building_4_L1",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L1",
+          "import_index": -22
+        },
+        {
+          "name": "Building_4_L2",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L2",
+          "import_index": -23
+        },
+        {
+          "name": "Building_4_L3",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L3",
+          "import_index": -24
+        },
+        {
+          "name": "Building_4_L4",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L4",
+          "import_index": -25
+        },
+        {
+          "name": "Building_4_L5",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L5",
+          "import_index": -26
+        },
+        {
+          "name": "Building_4_Pillar",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_Pillar",
+          "import_index": -27
+        },
+        {
+          "name": "Building_4_Support",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_Support",
+          "import_index": -28
+        }
+      ]
+    },
+    "BP_Building_5_1.json": {
+      "sha256": "108aaddebe5afe1977d73258d7fcb4c7908243f14a42153bc30650683d565a4e",
+      "mesh_imports": [
+        {
+          "name": "Building_5_Block",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Block",
+          "import_index": -19
+        },
+        {
+          "name": "Building_5_Pillar",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Pillar",
+          "import_index": -20
+        },
+        {
+          "name": "Building_5_Unit1",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Unit1",
+          "import_index": -21
+        },
+        {
+          "name": "Building_5_Unit2",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Unit2",
+          "import_index": -22
+        }
+      ]
+    },
+    "BP_Building_6_1.json": {
+      "sha256": "099722a1bfd2aeb716162ce7eb09cf1ef8530b68e3f0e50acd7b1cf885ad4a24",
+      "mesh_imports": [
+        {
+          "name": "Building_6_Frame",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Frame",
+          "import_index": -18
+        },
+        {
+          "name": "Building_6_Main",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Main",
+          "import_index": -19
+        },
+        {
+          "name": "Building_6_Side",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Side",
+          "import_index": -20
+        }
+      ]
+    },
+    "BP_Building_6_2.json": {
+      "sha256": "876a786f2fea5d208acffd35f9ed076d2cc67a0a05fb88bb8cd267c00c442c84",
+      "mesh_imports": [
+        {
+          "name": "Building_6_Frame",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Frame",
+          "import_index": -17
+        },
+        {
+          "name": "Building_6_Main",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Main",
+          "import_index": -18
+        }
+      ]
+    },
+    "BP_Building_Factory_1.json": {
+      "sha256": "41bdb6661d499944f5402b6ad49bb8d93cd99600360a7cd3671ea3fbb1e59c91",
+      "mesh_imports": [
+        {
+          "name": "Cube",
+          "package": "/Engine/BasicShapes/Cube",
+          "import_index": -51
+        },
+        {
+          "name": "Building_Factory_Ceiling",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_Factory/Building_Factory_Ceiling",
+          "import_index": -52
+        },
+        {
+          "name": "Building_Factory_Factory",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_Factory/Building_Factory_Factory",
+          "import_index": -53
+        },
+        {
+          "name": "Rails",
+          "package": "/Game/Resources/Rack/Rails",
+          "import_index": -54
+        }
+      ]
+    },
+    "BP_Building_Factory_Pillar.json": {
+      "sha256": "fe69e60cc47ace402ca7c02cc33d69b9026b6e484cb462610dba72a2a9857c8c",
+      "mesh_imports": [
+        {
+          "name": "Building_5_Pillar",
+          "package": "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Pillar",
+          "import_index": -18
+        }
+      ]
+    },
+    "BP_Building_Junction_2.json": {
+      "sha256": "eff6ae07864f5c15c6e4c8be410dd4c21788b80f343ffaa1987f767762564aed",
+      "mesh_imports": [
+        {
+          "name": "Building_Junction_2_Building_Junction_2",
+          "package": "/Game/Resources/Buildings/Junction/Building_Junction_2_Building_Junction_2",
+          "import_index": -23
+        },
+        {
+          "name": "Building_Junction_2_Building_Junction_2_Tree",
+          "package": "/Game/Resources/Buildings/Junction/Building_Junction_2_Building_Junction_2_Tree",
+          "import_index": -24
+        },
+        {
+          "name": "Building_Junction_2_Building_Junction_2_Wires",
+          "package": "/Game/Resources/Buildings/Junction/Building_Junction_2_Building_Junction_2_Wires",
+          "import_index": -25
+        }
+      ]
+    },
+    "BP_Building_Port.json": {
+      "sha256": "9c52dac94e57b784a02a9c9e7c8866ea4530bce1724a7682916cb86123763fb2",
+      "mesh_imports": [
+        {
+          "name": "SM_plane",
+          "package": "/AirSimROS/Calibration/Resources/SM_plane",
+          "import_index": -43
+        },
+        {
+          "name": "Cube",
+          "package": "/Engine/BasicShapes/Cube",
+          "import_index": -44
+        },
+        {
+          "name": "Cube",
+          "package": "/Engine/EngineMeshes/Cube",
+          "import_index": -45
+        },
+        {
+          "name": "Building_Port",
+          "package": "/Game/Resources/Buildings/Port/Building_Port",
+          "import_index": -46
+        }
+      ]
+    },
+    "BP_Segment_Half.json": {
+      "sha256": "50cc3dc230f479b66e477fa5e5495ba3fd18fc77fdb993e644e52de3387cae8d",
+      "mesh_imports": [
+        {
+          "name": "Segment_Half",
+          "package": "/Game/Resources/Buildings/Road/Segment_Half",
+          "import_index": -16
+        }
+      ]
+    },
+    "BP_Segment_Rot.json": {
+      "sha256": "38e428d1cbebf9aa5c7f159c6c087a865023d03045dee96c216b97c7228aa772",
+      "mesh_imports": [
+        {
+          "name": "Cube",
+          "package": "/Engine/BasicShapes/Cube",
+          "import_index": -30
+        },
+        {
+          "name": "Segment",
+          "package": "/Game/Resources/Buildings/Road/Segment",
+          "import_index": -31
+        }
+      ]
+    }
+  },
+  "packages": [
+    "/AirSimROS/Calibration/Resources/SM_plane",
+    "/Engine/BasicShapes/Cube",
+    "/Engine/EngineMeshes/Cube",
+    "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Block",
+    "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Cap",
+    "/Game/Resources/Buildings/Brutalism/Building_1/Building_1_Segment",
+    "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube00",
+    "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube02",
+    "/Game/Resources/Buildings/Brutalism/Building_2/Building_2_Cube03",
+    "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_LCorner",
+    "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_LMiddle",
+    "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TCapsule",
+    "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TFrame",
+    "/Game/Resources/Buildings/Brutalism/Building_3/Building_3_TTop",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L1",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L2",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L3",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L4",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_L5",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_Pillar",
+    "/Game/Resources/Buildings/Brutalism/Building_4/Building_4_Support",
+    "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Block",
+    "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Pillar",
+    "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Unit1",
+    "/Game/Resources/Buildings/Brutalism/Building_5/Building_5_Unit2",
+    "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Frame",
+    "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Main",
+    "/Game/Resources/Buildings/Brutalism/Building_6/Building_6_Side",
+    "/Game/Resources/Buildings/Brutalism/Building_Factory/Building_Factory_Ceiling",
+    "/Game/Resources/Buildings/Brutalism/Building_Factory/Building_Factory_Factory",
+    "/Game/Resources/Buildings/Junction/Building_Junction_2_Building_Junction_2",
+    "/Game/Resources/Buildings/Junction/Building_Junction_2_Building_Junction_2_Tree",
+    "/Game/Resources/Buildings/Junction/Building_Junction_2_Building_Junction_2_Wires",
+    "/Game/Resources/Buildings/Port/Building_Port",
+    "/Game/Resources/Buildings/Road/Segment",
+    "/Game/Resources/Buildings/Road/Segment_Half",
+    "/Game/Resources/Rack/Rails"
+  ],
+  "limitations": [
+    "import presence does not prove instance use or collision channel",
+    "transitive child Blueprint dependencies not resolved"
+  ]
+}

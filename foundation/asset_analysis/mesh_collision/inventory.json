@@ -1,0 +1,452 @@
+{
+  "assets": [
+    {
+      "asset": "AirSimROS_SM_plane",
+      "source_sha256": "2c1e51931719bff66e28e869e20760305c4229f128bc6e196bf27ff14f2a7dd6",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {},
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 100,
+      "triangle_count": 162
+    },
+    {
+      "asset": "Building_1_Block",
+      "source_sha256": "626fad7f18aa8fa54eaa5b58e64a7ca4d265e296330b55c634254cfb41486a20",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 1868,
+      "triangle_count": 3684
+    },
+    {
+      "asset": "Building_1_Cap",
+      "source_sha256": "a0b51982e83319fbea316616c2561f2a9ad889be25a7c36ca366a6476a9037d3",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 568,
+      "triangle_count": 1072
+    },
+    {
+      "asset": "Building_1_Segment",
+      "source_sha256": "4297dc8045dfc3d9a9f2a91a8be647b77a1fd5f01f920cdb745e765b17abdeed",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 1340,
+      "triangle_count": 2628
+    },
+    {
+      "asset": "Building_2_Cube00",
+      "source_sha256": "2378e3ef11ee990819605e89c99f08eede528478815a19c5f53982047d01857f",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 123,
+      "triangle_count": 246
+    },
+    {
+      "asset": "Building_2_Cube02",
+      "source_sha256": "b953340efc6be8ecc54fcf89d78b2a234e4b4c9c0d8f718d062cb5074e1e6faf",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 142,
+      "triangle_count": 284
+    },
+    {
+      "asset": "Building_2_Cube03",
+      "source_sha256": "776375cb7bad4336bc0daf98d80d0f6f7d4085322e746cba8f90c84cf3dea3ec",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 137,
+      "triangle_count": 274
+    },
+    {
+      "asset": "Building_3_LCorner",
+      "source_sha256": "685d1563d3eb179df99664888f62db03c867f3d71fcd9be09e18930063389d03",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 38,
+      "triangle_count": 72
+    },
+    {
+      "asset": "Building_3_LMiddle",
+      "source_sha256": "a7426486a8f59b2841b5f97d86b90b61e4e9e1d407c01f451026ba752e8c17da",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 28,
+      "triangle_count": 52
+    },
+    {
+      "asset": "Building_3_TCapsule",
+      "source_sha256": "4d3bb596f9c3c9ca97f0d620da5be746f12a3e5926d95e733760e997e95fb6e7",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 140,
+      "triangle_count": 270
+    },
+    {
+      "asset": "Building_3_TFrame",
+      "source_sha256": "9377102dd29e0897671990be54664bcaa7f3afea5140a8d57ac3542353e0fe21",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 16,
+      "triangle_count": 28
+    },
+    {
+      "asset": "Building_3_TTop",
+      "source_sha256": "f706cc56c35d0b2e6a5337094ea46097b819fe69ce0003676f34d3ec96b3fc03",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 40,
+      "triangle_count": 72
+    },
+    {
+      "asset": "Building_4_L1",
+      "source_sha256": "f5d163bc3607c1edc5f84fcaa05de24722a87738a7018784169fb2b6e6bb06d2",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 24,
+      "triangle_count": 44
+    },
+    {
+      "asset": "Building_4_L2",
+      "source_sha256": "427ac722e8077ea6f9e2e5c4fb9492499b7e820f8515f4e61f5cb20256381b14",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 144,
+      "triangle_count": 284
+    },
+    {
+      "asset": "Building_4_L3",
+      "source_sha256": "62302ac11e9c42529fcd0c25304cecd3d307e7dc275fbaaef6f86186ea8aca78",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 264,
+      "triangle_count": 524
+    },
+    {
+      "asset": "Building_4_L4",
+      "source_sha256": "ad24fba2bb9921e1e594586954bb19a5f1bc0b0ef08818c083db6391cd6cc71e",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 144,
+      "triangle_count": 284
+    },
+    {
+      "asset": "Building_4_L5",
+      "source_sha256": "dcdfd0796990e16a446da3a3a7671435755e0b73364bb6eddf5961d5470f5eb0",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 170,
+      "triangle_count": 336
+    },
+    {
+      "asset": "Building_4_Pillar",
+      "source_sha256": "85b5d9c0c5da87c6a804a7bd974baaa6ecd23ca1f9dcd81d37df0340176db050",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 16,
+      "triangle_count": 28
+    },
+    {
+      "asset": "Building_4_Support",
+      "source_sha256": "0faa00c70b39c8db1d01832eeb114c8541227e0d144fcfd8a35b7601f7d62eac",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 832,
+      "triangle_count": 1600
+    },
+    {
+      "asset": "Building_5_Block",
+      "source_sha256": "a3e29b868527463b670ab1f4117e3125a48000717a8d87162ba229934a10bfb5",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "asset": "Building_5_Pillar",
+      "source_sha256": "99d7043618d6bc4a6233f743b963341ab0bc64c586bc348f6bbfc3f27e876546",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 176,
+      "triangle_count": 348
+    },
+    {
+      "asset": "Building_5_Unit1",
+      "source_sha256": "9ad9916ec5e8865c539dcc291881d8e0a6dece9d51e603315f15fdfdfcb46c19",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 228,
+      "triangle_count": 452
+    },
+    {
+      "asset": "Building_5_Unit2",
+      "source_sha256": "8f83b74ee5690577bd3842f1b156c2f5c880cde8bd6cad710b776c9d3c01d8c4",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 40,
+      "triangle_count": 76
+    },
+    {
+      "asset": "Building_6_Frame",
+      "source_sha256": "12874277150a1ff8303f5afe2ed82aaf3dc094d55cb8394ec98979dd2ec1c96b",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 34,
+      "triangle_count": 64
+    },
+    {
+      "asset": "Building_6_Main",
+      "source_sha256": "0189c8d7dbd95bdf1586ee0265b92ba3277487ddd8cb85cd13592b358a9efd01",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 88,
+      "triangle_count": 172
+    },
+    {
+      "asset": "Building_6_Side",
+      "source_sha256": "8a3430f526387b21df6a30422c095e4c93dbb22bde28a2e14a396a997316f9ad",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 148,
+      "triangle_count": 296
+    },
+    {
+      "asset": "Building_Factory_Ceiling",
+      "source_sha256": "a1097420f09038e80d36fc506d4d38fe2350417e3ff952f10fb16e961c15e303",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "asset": "Building_Factory_Factory",
+      "source_sha256": "3bd67c5b4a7946c1584e535997a59325aa2bcb43e6a91da950be1b13bf030f9d",
+      "body_count": 1,
+      "collision_trace_flag": "CTF_UseComplexAsSimple",
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 253,
+      "triangle_count": 470
+    },
+    {
+      "asset": "Building_Junction_2_Building_Junction_2",
+      "source_sha256": "f8cc3b07fd1e1c30620e94a85e1fd760c7e780bd2d6bcababf819ec0086b9f52",
+      "body_count": 1,
+      "collision_trace_flag": "CTF_UseComplexAsSimple",
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 2088,
+      "triangle_count": 4092
+    },
+    {
+      "asset": "Building_Junction_2_Building_Junction_2_Tree",
+      "source_sha256": "5f456cf721be901f39eee2abedda930fde9f8719eedd0820b0d2f7d00505b9fa",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 12275,
+      "triangle_count": 10019
+    },
+    {
+      "asset": "Building_Junction_2_Building_Junction_2_Wires",
+      "source_sha256": "18616c2a2771c2be2d8096747940aa17e483afd6a16994d23cf9414ebac68cb3",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 12684,
+      "triangle_count": 24476
+    },
+    {
+      "asset": "Building_Port",
+      "source_sha256": "16f92d5e8f439d699cc1482a3cc14d6a363e114da47ffbabd02db3a1956a6a48",
+      "body_count": 1,
+      "collision_trace_flag": "CTF_UseComplexAsSimple",
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 642,
+      "triangle_count": 1210
+    },
+    {
+      "asset": "Engine_BasicShapes_Cube",
+      "source_sha256": "9d4ef23368c68d2a1bd95cbde797cea410da2e6ef00b159664631ef52083dc65",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "BoxElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 26,
+      "triangle_count": 48
+    },
+    {
+      "asset": "Engine_EngineMeshes_Cube",
+      "source_sha256": "8712f18b2e585e93cf7279c2c089725d9a970d7793af27cd9179a708517530d6",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 8,
+      "triangle_count": 12
+    },
+    {
+      "asset": "Rails",
+      "source_sha256": "1fd02d284f1c82f4ad0ba8cd5888b96f3d44bd330031af49b6b81b23725ce853",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 16,
+      "triangle_count": 24
+    },
+    {
+      "asset": "Segment",
+      "source_sha256": "a79112ead47f0f568d79e19b831a658ceb25c3c1cb7d442a4cd99b9149fc5288",
+      "body_count": 1,
+      "collision_trace_flag": "CTF_UseComplexAsSimple",
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 416,
+      "triangle_count": 800
+    },
+    {
+      "asset": "Segment_Half",
+      "source_sha256": "e3d1fb4ea94055e0b1426016b053440a3e0835ea8b5988ee9d448af5aedc2662",
+      "body_count": 1,
+      "collision_trace_flag": "CTF_UseComplexAsSimple",
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 248,
+      "triangle_count": 476
+    }
+  ],
+  "limitations": [
+    "decoded data is local mesh space, not world aligned",
+    "an omitted collision trace flag is unknown, not an assumed default",
+    "not every cooked prefix is necessarily used for runtime collision",
+    "materials, channels and actor construction remain unverified"
+  ]
+}

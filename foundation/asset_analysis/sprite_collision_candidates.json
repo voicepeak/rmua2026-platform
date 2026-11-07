@@ -1,0 +1,514 @@
+{
+  "assets": {
+    "Rlogo_Sprite": {
+      "source_sha256": "90a621f8c6ee01ac522dd678d78752b7123ad224f687738d8c564cb5ce08f616",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            1.0,
+            0.0,
+            2.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            854.0,
+            10.0,
+            846.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "Longlogo_Sprite": {
+      "source_sha256": "802b89c7a8fa7cfe739e5ac21348abc69122099995d5c5fc4b1bc3685fedc692",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            7360.0,
+            10.0,
+            501.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "a6_Sprite": {
+      "source_sha256": "688ba3e5c12df80f0e5e6b40821a393820a8062139ec3f9612eb415236d3cf50",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            630.0,
+            10.0,
+            406.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "AVATA_Sprite": {
+      "source_sha256": "cbe076e1fa624e4c9e87cb6fce53a173d25c443be07b8998a1dd6774010c41d0",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            -0.5,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            887.0,
+            10.0,
+            402.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "Mavic_Sprite": {
+      "source_sha256": "2eff3e381d303a68f0e36c367c434dfb3921feb80afcdcc509f197c8a1a73bae",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            -0.5,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            853.0,
+            10.0,
+            397.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "p3_Sprite": {
+      "source_sha256": "efb332dbf1935e8e3414f62827c00fac0bd4146e1dacf663017ad381f2b881c0",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            454.0,
+            10.0,
+            866.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "OneLeft_Sprite": {
+      "source_sha256": "d6cd651f56ba658668ab96abc3d05152aed1e195a1e6e8045ce10eab85a23c0e",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1002.0,
+            10.0,
+            178.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "OneRight_Sprite": {
+      "source_sha256": "5d748ff3f39dd7dfd51cdd023b2ff3d4f372ab5825e4709d43d27429bec29335",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1032.0,
+            10.0,
+            179.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "TwoLeft_Sprite": {
+      "source_sha256": "563eb58275c3bddf6dec543247f466d84fa0c5e93220aaf4099b263d8846839d",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1352.0,
+            10.0,
+            225.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "TwoRight_Sprite": {
+      "source_sha256": "25c64a5af3dea0d9dfea59f4d18fb7215ee0ef2d2984476fa561475f2076bd3d",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1672.0,
+            10.0,
+            225.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "ThreeLeft_Sprite": {
+      "source_sha256": "e4cffed7f6cde41494927c8c1615e1a77672fc9754dc56e19ebbef44b5acbde5",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            680.0,
+            10.0,
+            263.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "ThreeRight_Sprite": {
+      "source_sha256": "0f826e8a71439d5ce9a87f9d618f8011020ccc6430513f523abb19bfa61bed0f",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            684.0,
+            10.0,
+            262.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "FourLeft_Sprite": {
+      "source_sha256": "04ec092a0b9e11a929365e998b6099f3c09452750bba15bce33d30c30df15bc8",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1786.0,
+            10.0,
+            206.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "FourRight_Sprite": {
+      "source_sha256": "24349bac9547e93124a956dc0c1f4194d6e1c0b02aeeee1a21e360b6065dae2b",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1982.0,
+            10.0,
+            180.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "FiveLeft_Sprite": {
+      "source_sha256": "b0cd76834f4d63f2dd8976fa3e847325c641cd11a297b98ffce837e9c161b050",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            872.0,
+            10.0,
+            280.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "FiveRight_Sprite": {
+      "source_sha256": "17c8f67d7487aa82bd0bac74d04b46094372de1d5e3c0351bcfbe82a8d92bbfb",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            -0.5,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            875.0,
+            10.0,
+            280.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "SixLeft_Sprite": {
+      "source_sha256": "15cf176f1785b7e167fac00f7cf6dc78af94e7a1ef8bb4a6cc3ad9d0ff71d333",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1356.0,
+            10.0,
+            161.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    },
+    "SixRight_Sprite": {
+      "source_sha256": "b9b7acfd85aac4953e7c01016fbaa328d45aafa29daa5d6483d3e0c0abc1d31a",
+      "status": "extracted",
+      "collision_trace_flag": "CTF_UseSimpleAsComplex",
+      "convex": [],
+      "boxes": [
+        {
+          "center_local_ue_cm": [
+            -0.5,
+            0.0,
+            0.0
+          ],
+          "rotation_ue_deg": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "size_ue_cm": [
+            1057.0,
+            10.0,
+            262.0
+          ]
+        }
+      ],
+      "unsupported_shapes": []
+    }
+  },
+  "package_sha256": {
+    "Rlogo_Sprite.uasset": "6d5132743271e1c0a42a21b5ee1968e144bb713f2b740bcbee3963dc8f565fe3",
+    "Rlogo_Sprite.uexp": "e5d72d77fa21f2af8b8c46b785a928a5fb3b5e798479dddb90d779df5f48ad19",
+    "Longlogo_Sprite.uasset": "df676ac0cd65e7c7a9fbc282f394bb1d6687cae7269062f352d05c4c46d87dd9",
+    "Longlogo_Sprite.uexp": "bf56f21a119dbd937152999c98e34070b8ebfeadccc52e61c0ad0e583a6fad3b",
+    "a6_Sprite.uasset": "6c4afa570c4ae6bc7fe7538bed6a516d0c636544295a6981396c2c909ab12268",
+    "a6_Sprite.uexp": "0db0c00e8b061d86825814dc4c34e5b0996ccddda039a5f3f8576f0ea51f1047",
+    "AVATA_Sprite.uasset": "e603ff1ffc5da0715346fb18e90851267447a6825bc2cdde81426d85a00fea4e",
+    "AVATA_Sprite.uexp": "bafcbed41fe3bbfd9f6d10166de51f1fd9fc71c8c2b28d2719a97023705e4fb9",
+    "Mavic_Sprite.uasset": "5d0e13b92e021a883cd059227b841a98d4306840ef5af7dcbf0728779a1c9e7b",
+    "Mavic_Sprite.uexp": "3667e5d921a3d92ce8b6e090bd03e9ce06ddecf4c73eee23afd77f9671530544",
+    "p3_Sprite.uasset": "4f75287ab00482da10f636b9c81c4e3e18b5b6886e4fe2bae132a55ab25147c1",
+    "p3_Sprite.uexp": "3ef7b6ad0144830a5bfa4a346005bb05ec4e72ab8757a4cb2f770ba4521c5e18",
+    "OneLeft_Sprite.uasset": "c6fbfdc5776a541a15e2ab759ea9da595c8de6ccf2c61bca112329bcd5d546aa",
+    "OneLeft_Sprite.uexp": "17014118a9e1a21c6c38fdeae9eaf32bc028ad9872db5416240644041edd60f3",
+    "OneRight_Sprite.uasset": "0538994d7bdd5c9bacc8909112abdb869199365866fb22b60dd9b4d4c7d5b49a",
+    "OneRight_Sprite.uexp": "441e23eb64b1873754778e5dbe87e65cfbb804c62f501b06bc8772bae42468d3",
+    "TwoLeft_Sprite.uasset": "7d1a50ab84389dee5d9c5f3369a694dabe31dca7b241147f8bf47641a9bed6e8",
+    "TwoLeft_Sprite.uexp": "a8935e47564004ca62f28514f93cdac99e8b9d114a8836f467581281c2a41a22",
+    "TwoRight_Sprite.uasset": "87dae02d4f74e202150de9b70f84fc36c163ad2113a70ee91bc7e692f8252b07",
+    "TwoRight_Sprite.uexp": "728992e8a7bc3dbc661fc5de97e1782a5fa06f4f96db2e71373aceac6f0f3649",
+    "ThreeLeft_Sprite.uasset": "9500c19f921432a3ad1d7b1e24c4c4fc17714cc20b8af6be58ccca11b55252c1",
+    "ThreeLeft_Sprite.uexp": "4a681608b51f774dec157cee48c6e45eac0898e3253cce75e63d33207a4e6a50",
+    "ThreeRight_Sprite.uasset": "bb3db60074c5f3be054a1cd90881bcecf1dffda8808b18b65c6ae0e22a8d01c1",
+    "ThreeRight_Sprite.uexp": "452b2645042cc288297ec8b2ca07e0bfc1e66588cbc8bb4db139261131069e4b",
+    "FourLeft_Sprite.uasset": "234a45350e4d23ee6d89fdb1a638effaf9a7df9fcaed6768b3db02d85adf9c3d",
+    "FourLeft_Sprite.uexp": "501ca3f4c07f83f5b771eb37380d8d80c31ecab29791960b5440d506d67ed1e9",
+    "FourRight_Sprite.uasset": "5beeae8a19275a0c9300b11a67f82a6836645ae04a41967534aab9ee908cf2c2",
+    "FourRight_Sprite.uexp": "ecd407e8ad2c41adf5decabb198e07851a052802dfbd3f3553fac262ece90e27",
+    "FiveLeft_Sprite.uasset": "0568c84f95cb98f8d1176ad726e01aadfb917ce83eacb8252ea1ab5655f879d3",
+    "FiveLeft_Sprite.uexp": "d463ff9b247070338c6d70302f08d723049b28da9a3e2a2f3ce17ad112e2abfb",
+    "FiveRight_Sprite.uasset": "adeb5b7f891ef1104d868436a50a5206535615697bf4b2fbee375b4cbab8375a",
+    "FiveRight_Sprite.uexp": "e4e1d14ca281a7ad163d888d0c0314db830856b42f4d84240b63ffe80cd7e067",
+    "SixLeft_Sprite.uasset": "d7f6701b6027f50da341d9c7310707cc23d680122c978e4168cd84dc236afbe1",
+    "SixLeft_Sprite.uexp": "7e8572e33d4fe6a52f9a3b3964742cee14a61236b509c41b91a3e06820f7c989",
+    "SixRight_Sprite.uasset": "935083069a1ed38a4d696306557a473d0c1640ac0a36f28c2051f12dc7ed69af",
+    "SixRight_Sprite.uexp": "138f9fee940df293ce4b5885d8a0bb1829668eb2f91a91f3a63cda4a2deadab4"
+  },
+  "limitations": [
+    "packaged body setup does not prove component collision channel or effective runtime use",
+    "sprite placements and object identity are candidate matches"
+  ]
+}

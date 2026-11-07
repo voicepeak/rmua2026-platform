@@ -1,0 +1,25 @@
+{
+  "source_sha256": "8e1c14dd8d875cdea82b3dc686777796ecd130b119f6ca1578b0624d9d6b0a1e",
+  "packages": [
+    "/Game/Resources/Buildings/Brutalism/Building_1/BP_Building_1_1",
+    "/Game/Resources/Buildings/Brutalism/Building_1/BP_Building_1_2",
+    "/Game/Resources/Buildings/Brutalism/Building_2/BP_Building_2_1",
+    "/Game/Resources/Buildings/Brutalism/Building_3/BP_Building_3_1",
+    "/Game/Resources/Buildings/Brutalism/Building_3/BP_Building_3_2",
+    "/Game/Resources/Buildings/Brutalism/Building_3/BP_Building_3_3",
+    "/Game/Resources/Buildings/Brutalism/Building_4/BP_Building_4_1",
+    "/Game/Resources/Buildings/Brutalism/Building_5/BP_Building_5_1",
+    "/Game/Resources/Buildings/Brutalism/Building_6/BP_Building_6_1",
+    "/Game/Resources/Buildings/Brutalism/Building_6/BP_Building_6_2",
+    "/Game/Resources/Buildings/Brutalism/Building_Factory/BP_Building_Factory_1",
+    "/Game/Resources/Buildings/Brutalism/Building_Factory/BP_Building_Factory_Pillar",
+    "/Game/Resources/Buildings/Junction/BP_Building_Junction_2",
+    "/Game/Resources/Buildings/Port/BP_Building_Port",
+    "/Game/Resources/Buildings/Road/BP_Segment_Half",
+    "/Game/Resources/Buildings/Road/BP_Segment_Rot"
+  ],
+  "limitations": [
+    "imports indicate references, not active instances or collision geometry",
+    "does not include dependencies from external Blueprints"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "header_offset": 2447,
+  "version": 14,
+  "midphase": 0,
+  "flags": 11,
+  "vertex_count": 12684,
+  "triangle_count": 24476,
+  "index_bytes": 2,
+  "unparsed_trailing_bytes": 364444,
+  "source_json_sha256": "18616c2a2771c2be2d8096747940aa17e483afd6a16994d23cf9414ebac68cb3",
+  "body_extras_sha256": "f9470906278a09c63985dcd2225b8729a110bcf7289be4db93eee5d538e867c7",
+  "collision_trace_flag": null,
+  "coordinate_scope": "local mesh coordinates, assumed UE cm",
+  "bounds_min": [
+    -1548.637939453125,
+    -1777.2977294921875,
+    797.2969970703125
+  ],
+  "bounds_max": [
+    1955.6717529296875,
+    1727.011962890625,
+    3180.9501953125
+  ],
+  "limitations": [
+    "only MESH vertex/index prefix decoded",
+    "material data, mesh tree and instance transforms not decoded",
+    "collision channels and runtime contact not validated"
+  ]
+}
