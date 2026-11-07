@@ -9,13 +9,21 @@ static data into a trainable, testable system.
 correction, the invalid proxy checkpoints, the remote runtime state and the next
 steps. Sensitive SSH credentials are in local `HANDOFF.local.md` (gitignored).
 
+An OL1 stage 1 development environment is available with
+`SimFastConfig(track_mode="stage1_audited")`; see `docs/stage1_environment.md`
+for the audited components and the remaining geometry limitations. The training
+CLI now defaults to this mode, and checkpoints store/validate track identity so
+the invalid historical proxy cannot be mixed in silently. A local BC+DAgger
+policy completed 320/320 held-out episodes (63/63 gates, 21.99 m/s); this is a
+local development result, not official equivalence.
+
 ## Status
 
 | Node | Scope | Status |
 |---|---|---|
 | 0 | Rules, segments, sensors, coordinate/data contracts, G0 tests | Done |
 | 1 | State-only vectorized `sim-fast` core | Done (Python reference) |
-| 2 | Official stage route/gate rebuild; 1-3/3-5/5-8 retraining pending | **Blocked on route/gate audit** |
+| 2 | Stage routes/gates and 1-3/3-5/5-8 retraining | OL1 stage 1 development mode integrated and locally trained; official calibration and stage 2/3 pending |
 | 3 | Factory + perception + `sim-render` | Not started |
 | 4 | Six-segment curriculum + scale + official calibration | Not started |
 | 5 | Docker/ROS/EKF/ONNX deployment | Not started |
@@ -23,11 +31,19 @@ steps. Sensitive SSH credentials are in local `HANDOFF.local.md` (gitignored).
 **2026-11-06 correction:** the earlier `1_1 + 2_1` / two-gates-per-segment
 results are a proxy and are **invalid for official stage 1**. Official stages
 are shuttle legs: stage 1 = route 1 + reverse(route 3), stage 2 = route 3
-return -> route 5, etc. Official stage 1 is `route_1_3.yaml`
-(`spline0 + reverse(spline2)`); the gate count/sequence is still under audit
-(possibly 60-70 course-wide, not 2 or 10). See
+return -> route 5, etc. The remote `route_1_3.yaml` contains both official
+spline samples and a developer-generated hub connector. OL1 seed 123 runtime
+inspection identified 63 ordered scoring components; a valid completed run
+and stage transition remain unverified. See
 `docs/official_stage_logic.md`. The old checkpoints remain only as pipeline
 smoke tests.
+
+The new local stage 1 policy (`track_mode="stage1_audited"`, 63 ordered gates)
+was trained from scratch with BC+DAgger and accepted on five unseen seeds:
+100% success, 100% 63-gate completion, 67.06 s mean time, 21.99 m/s mean speed
+on the local sim-fast environment. It uses simulated state truth and remains
+subject to the geometry/plant limitations above; the official stage-2
+transition has not been verified.
 
 Node 1 is deliberately **state-only**: no cameras, no LiDAR, no ROS, no render.
 That is what makes local iteration and later high-concurrency training cheap.
