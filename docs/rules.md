@@ -26,11 +26,11 @@ Each stage is not a single route. It is:
 Official stage 1 is generated as `spline0 + reverse(spline2)` in
 `route_1_3.yaml`. Do not model a stage as `1_1 + 1_2` or `1_1 + 2_1`.
 
-The official detection-gate count is still under audit. The 12 `*_Gate`
-actors in the map look like hub/route gates; the remote 10-gate
-`gates_vision_1_3.yaml` is a vision-derived partial list. A course-wide count
-of 60-70 gates is plausible but not yet verified. Do not use 2, 10 or 12 as the
-official gate count until the runtime gate audit is complete.
+OL1 seed 123 runtime inspection identified 63 ordered stage-1 scoring
+components (33 + 30); a valid completed run and stage transition remain
+unverified. The 12 `*_Gate` actors are hub/route gates, and the remote
+10-gate `gates_vision_1_3.yaml` is a vision-derived partial list. Do not use
+2, 10 or 12 as the stage-1 scoring count or generalize OL1 to other maps.
 
 ## Gates and factories
 

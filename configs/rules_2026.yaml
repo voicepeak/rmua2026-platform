@@ -45,6 +45,9 @@ course:
   force_field_thrust_scale: 0.35
   ranking: ["detection_gates", "total_time"]
   detection_gates_total: 12
+  # The value above counts legacy proxy gates across six segments, not official gates.
+  stage1_ol1_detected_components: 63
+  stage1_component_source: "runtime audit seed 123; aperture and hub connector approximate"
   factories_per_map: 12
   factory_devices: 20
   factory_red_lamps: 3
@@ -62,8 +65,9 @@ deployment:
 # 2026-11-06 correction: the route_names/gates pairs below are PROXY-ONLY.
 # Official stages are shuttle legs: stage 1 = route 1 + reverse(route 3),
 # stage 2 = route 3 return -> route 5, etc. Official stage 1 is
-# route_1_3.yaml (spline0 + reverse(spline2)); the official gate sequence is
-# under audit. Do not use these pairs for official stage validation.
+# route_1_3.yaml (spline0 + reverse(spline2) and an approximate hub connector).
+# OL1 seed 123 has 63 observed ordered scoring components. These pairs are
+# still proxies and must not be used for official stage validation.
 segments:
   - id: 1
     name: "1-3"
