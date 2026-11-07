@@ -1,0 +1,13 @@
+# Values are reported by the 12.0.0.5 simulator README. Coefficient units and
+# the mapping from command PWM to rotor speed require independent verification.
+mass: {value: 0.9, unit: kg, source: simulator_README, status: published}
+motor_distance: {value: 0.18, unit: m, source: simulator_README, status: published}
+ixx: {value: 0.0046890742, unit: unspecified, source: simulator_README, status: published_unit_unverified}
+iyy: {value: 0.0069312, unit: unspecified, source: simulator_README, status: published_unit_unverified}
+izz: {value: 0.010421166, unit: unspecified, source: simulator_README, status: published_unit_unverified}
+lift_coefficient: {value: 0.000367717, unit: unspecified, source: simulator_README, status: published_unit_unverified}
+reaction_torque_coefficient: {value: 4.888486266072161e-06, unit: unspecified, source: simulator_README, status: published_unit_unverified}
+max_rpm: {value: 11079.03, unit: rpm, source: simulator_README, status: published}
+motor_order: {value: [front_right, rear_left, front_left, rear_right], unit: index, source: simulator_README, status: published_runtime_direction_not_independently_reproduced}
+pwm_range: {value: null, unit: unknown, source: none, status: unknown}
+motor_response: {value: null, unit: unknown, source: none, status: unknown}
