@@ -24,6 +24,8 @@ except ImportError as exc:  # pragma: no cover - optional dependency
     ) from exc
 
 from ..envs.sim_fast import SimFastConfig, SimFastVecEnv
+from ..eval.metrics import summarize_episodes
+from .checkpoint import track_metadata
 
 
 @dataclass
@@ -44,6 +46,11 @@ class PPOConfig:
     hidden: int = 128
     seed: int = 1
     segment_id: int = 1
+    map_name: str = "RMUA2024OL1"
+    track_mode: str = "proxy"
+    detection_gate_width_m: float = 10.0
+    detection_gate_height_m: float = 5.0
+    stage1_enable_obstacles: bool = False
     dynamics: str = "kinematic"
     action_frame: str = "world"
     line_max: int = 0
@@ -130,6 +137,11 @@ class PPOTrainer:
         cfg = SimFastConfig(
             num_envs=num_envs,
             segment_id=self.config.segment_id,
+            map_name=self.config.map_name,
+            track_mode=self.config.track_mode,
+            detection_gate_width_m=self.config.detection_gate_width_m,
+            detection_gate_height_m=self.config.detection_gate_height_m,
+            stage1_enable_obstacles=self.config.stage1_enable_obstacles,
             dynamics=self.config.dynamics,
             action_mode="vel",
             action_frame=self.config.action_frame,
@@ -261,15 +273,34 @@ class PPOTrainer:
         env = self.eval_env
         env.reset()
         done = np.zeros(env.n, dtype=bool)
-        for _ in range(2000):
+        terminal = np.zeros(env.n, dtype=bool)
+        truncated_mask = np.zeros(env.n, dtype=bool)
+        info = None
+        for _ in range(env.max_steps):
             with torch.no_grad():
                 obs = torch.as_tensor(env._obs(), dtype=torch.float32, device=self.device)
                 action = self.model.actor(self._norm(obs)).cpu().numpy()
             _, _, terminated, truncated, info = env.step(action)
+            terminal |= terminated
+            truncated_mask |= truncated
             done |= terminated | truncated
             if np.all(done):
                 break
-        return float(np.mean(info["success"]))
+        if info is None:
+            info = env._info()
+        truncated_mask |= ~done
+        required = (
+            len(env.track.scoring_gates)
+            if env.track.audited_stage1
+            else 2
+        )
+        return summarize_episodes(
+            info,
+            required_gates=required,
+            terminated=terminal,
+            truncated=truncated_mask,
+            track_length_m=env.track.total_length_m,
+        )
 
     def train(self):
         cfg = self.config
@@ -293,10 +324,12 @@ class PPOTrainer:
                     handle.write(json.dumps(record) + "\n")
                 print(json.dumps(record), flush=True)
             if cfg.eval_every and update_index % cfg.eval_every == 0:
-                success = self.evaluate()
+                eval_stats = self.evaluate()
+                success = float(eval_stats["success_rate"])
+                record = {"steps": self.total_steps, "eval_success": success, **eval_stats}
                 with self.metrics_path.open("a", encoding="utf-8") as handle:
-                    handle.write(json.dumps({"steps": self.total_steps, "eval_success": success}) + "\n")
-                print(json.dumps({"steps": self.total_steps, "eval_success": success}), flush=True)
+                    handle.write(json.dumps(record) + "\n")
+                print(json.dumps(record), flush=True)
                 if success > best_success:
                     best_success = success
                     self.save("best.pt")
@@ -316,17 +349,22 @@ class PPOTrainer:
 
     def save(self, filename: str = "model.pt"):
         path = self.save_dir / filename
+        track = track_metadata(self.env)
         torch.save(
             {
                 "model": self.model.state_dict(),
                 "config": asdict(self.config),
                 "obs_scale": self.obs_scale.cpu().tolist(),
                 "total_steps": self.total_steps,
+                "track": track,
             },
             path,
         )
         (self.save_dir / "config.json").write_text(
             json.dumps(asdict(self.config), indent=2) + "\n", encoding="utf-8"
+        )
+        (self.save_dir / "track.json").write_text(
+            json.dumps(track, indent=2) + "\n", encoding="utf-8"
         )
         return path
 
