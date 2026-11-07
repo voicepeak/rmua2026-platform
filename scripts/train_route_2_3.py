@@ -20,6 +20,8 @@ def main() -> int:
             str(ROOT / "scripts" / "train_bc_ppo.py"),
             "--segment",
             str(segment),
+            "--track-mode",
+            "proxy",
             "--skip-ppo",
             "--demo-steps",
             "50000",

@@ -25,6 +25,10 @@ def main(argv=None) -> int:
     parser.add_argument("--steps", type=int, default=2_000_000)
     parser.add_argument("--num-steps", type=int, default=256)
     parser.add_argument("--segment", type=int, default=1)
+    parser.add_argument("--map", default="RMUA2024OL1")
+    parser.add_argument(
+        "--track-mode", choices=("stage1_audited", "proxy"), default="stage1_audited"
+    )
     parser.add_argument("--dynamics", choices=("kinematic", "quad"), default="kinematic")
     parser.add_argument("--action-frame", choices=("body", "world"), default="world")
     parser.add_argument("--line-max", type=int, default=0)
@@ -47,6 +51,8 @@ def main(argv=None) -> int:
         num_envs=args.envs,
         num_steps=args.num_steps,
         segment_id=args.segment,
+        map_name=args.map,
+        track_mode=args.track_mode,
         dynamics=args.dynamics,
         action_frame=args.action_frame,
         line_max=args.line_max,
