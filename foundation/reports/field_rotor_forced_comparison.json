@@ -1,0 +1,153 @@
+{
+  "runs": {
+    "foundation\\datasets\\field_rotor1_seed456_20261107": {
+      "flag_values": [
+        1
+      ],
+      "natural_values_observed": [
+        1
+      ],
+      "injection_log_count": 5,
+      "stages": [
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "samples": 16,
+          "median": {
+            "filtered": 0.199999988,
+            "target": null,
+            "input": 0.200000003,
+            "thrust": 2.50751996,
+            "output": 0.199999988
+          }
+        },
+        {
+          "command": [
+            0.16,
+            0.16,
+            0.16,
+            0.16
+          ],
+          "samples": 12,
+          "median": {
+            "filtered": 0.160000011,
+            "target": null,
+            "input": 0.159999996,
+            "thrust": 2.00601625,
+            "output": 0.160000011
+          }
+        }
+      ],
+      "source_sha256": {
+        "rmua-re-79971292587a-0.log": "9b51db47b24f32ab672d4fd0f478b5282a1f945ebac2cfaaba1fa6695127a761",
+        "commands.jsonl": "cc7050ffb25702f97f3b9829744c3c3cbf214f6b74abf4011168cc1e5fb06164"
+      }
+    },
+    "foundation\\datasets\\field_rotor0_seed456_20261107": {
+      "flag_values": [
+        0
+      ],
+      "natural_values_observed": [
+        1
+      ],
+      "injection_log_count": 5,
+      "stages": [
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "samples": 16,
+          "median": {
+            "filtered": 0.049999997,
+            "target": null,
+            "input": 0.200000003,
+            "thrust": 0.62687999,
+            "output": 0.049999997
+          }
+        },
+        {
+          "command": [
+            0.16,
+            0.16,
+            0.16,
+            0.16
+          ],
+          "samples": 11,
+          "median": {
+            "filtered": 0.0400000028,
+            "target": null,
+            "input": 0.159999996,
+            "thrust": 0.501504064,
+            "output": 0.0400000028
+          }
+        }
+      ],
+      "source_sha256": {
+        "rmua-re-ce2dd5724368-0.log": "ea3eb2597b9b6e72dbfd131bdafa9df30a478d9eb832ce7ae03bcb8667e07262",
+        "commands.jsonl": "ae3607296d912e4f7ddb0bfe37c92d5991d2c201d2e748b80955cc210f42a64d"
+      }
+    },
+    "foundation\\datasets\\field_target0_seed2026_20261107": {
+      "flag_values": [
+        0
+      ],
+      "natural_values_observed": [
+        1
+      ],
+      "injection_log_count": 5,
+      "stages": [
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "samples": 15,
+          "median": {
+            "filtered": 0.049999997,
+            "target": 0.0500000007,
+            "input": 0.200000003,
+            "thrust": 0.62687999,
+            "output": 0.049999997
+          }
+        },
+        {
+          "command": [
+            0.16,
+            0.16,
+            0.16,
+            0.16
+          ],
+          "samples": 11,
+          "median": {
+            "filtered": 0.0400000028,
+            "target": 0.0399999991,
+            "input": 0.159999996,
+            "thrust": 0.501504064,
+            "output": 0.0400000028
+          }
+        }
+      ],
+      "source_sha256": {
+        "rmua-re-aefe05d3bd8c-0.log": "d03a0c3fd311c58acd183f6059b6061481f6016d572f79daba35b6205ef45997",
+        "commands.jsonl": "daff953c0c290face5305e56a3f32ac547ac89fdb0b50956a5bcd69d84f90e6d"
+      }
+    }
+  },
+  "limitations": [
+    "predicate result is forced every tick and overtime disabled in both conditions",
+    "GDB all-stop changes timing; no natural region boundary or transition delay measured",
+    "one rotor sampled; other rotors and varied commands require validation",
+    "time windows use host monotonic time; debug input is not proven physical actuator input",
+    "ground contact confounds IMU and trajectory"
+  ],
+  "analysis_sha256": "1cc1bc84b2b4fa563deb70829a2f05451711f8665881005a052feaaa709ffca1"
+}

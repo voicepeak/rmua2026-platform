@@ -1,0 +1,28 @@
+{
+  "files": {
+    "foundation\\raw_assets\\config_sources\\Engine\\Config\\BaseEngine.ini": {
+      "sha256": "316756addf968d7bd0a85243e456105f8d0e81a779a2e4ecde7a9e57cd5835ca",
+      "blockall_additions": [
+        "+Profiles=(Name=\"BlockAll\",CollisionEnabled=QueryAndPhysics,ObjectTypeName=\"WorldStatic\",CustomResponses=,HelpMessage=\"WorldStatic object that blocks all actors by default. All new custom channels will use its own default response. \",bCanModify=False)"
+      ],
+      "shape_complexity_lines": []
+    },
+    "foundation\\raw_assets\\config_sources\\RMUA\\Config\\DefaultEngine.ini": {
+      "sha256": "0068cafc6878f70590d05674dfda8c193660dc2ea5f328a7dacdb0c31561d713",
+      "blockall_additions": [
+        "+Profiles=(Name=\"BlockAll\",CollisionEnabled=QueryAndPhysics,bCanModify=False,ObjectTypeName=\"WorldStatic\",CustomResponses=,HelpMessage=\"WorldStatic object that blocks all actors by default. All new custom channels will use its own default response. \")"
+      ],
+      "shape_complexity_lines": []
+    },
+    "foundation\\raw_assets\\config_sources\\Engine\\Config\\Linux\\LinuxEngine.ini": {
+      "sha256": "97b2a841f118ff59363e3ced1bb76c7786c5c0c2bce5fac32dd87de118d817d9",
+      "blockall_additions": [],
+      "shape_complexity_lines": []
+    }
+  },
+  "limitations": [
+    "raw config lines are not a merged runtime configuration",
+    "absence of a config key does not establish its engine default",
+    "component or runtime code may override collision profiles"
+  ]
+}

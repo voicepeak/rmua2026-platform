@@ -1,0 +1,488 @@
+{
+  "source_sha256": "ca29a7fe11f16d627f818e6120e09c9291f8be723c41a71e9c6ca6d947da0ad1",
+  "count": 20,
+  "unique_origin_count": 7,
+  "maximum_cm": 100.0,
+  "resolution_cm": 0.25,
+  "events": [
+    {
+      "monotonic_s": 194750.494805922,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        1.45144929e-06,
+        -0.000140730102,
+        -37.9090347
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe09152070",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 2.5390625,
+        "distance_upper_bound_cm": 2.734375,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194750.542330327,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        1.45144929e-06,
+        -0.000140730102,
+        -37.9090347
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe09152070",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 2.5390625,
+        "distance_upper_bound_cm": 2.734375,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.275798016,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        0.0410981961,
+        -3.91640067,
+        435.278961
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.8671875,
+        "distance_upper_bound_cm": 14.0625,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.32826152,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        0.0410981961,
+        -3.91640067,
+        435.278961
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.8671875,
+        "distance_upper_bound_cm": 14.0625,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.576298015,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        1.21453524,
+        -4.80949163,
+        435.494019
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.671875,
+        "distance_upper_bound_cm": 13.8671875,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.625696075,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        1.21453524,
+        -4.80949163,
+        435.494019
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.671875,
+        "distance_upper_bound_cm": 13.8671875,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.675778935,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        1.45834172,
+        -4.839993,
+        435.891388
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.28125,
+        "distance_upper_bound_cm": 13.4765625,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.726797902,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.777175416,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.825770504,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.876377016,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.925555981,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194754.975998839,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194755.025875708,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194755.076063996,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        2.40794754,
+        -4.93717337,
+        436.082123
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194755.227968056,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        5.30231476,
+        -4.64141178,
+        436.044769
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194755.27677626,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        5.30231476,
+        -4.64141178,
+        436.044769
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194755.326294135,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        5.30231476,
+        -4.64141178,
+        436.044769
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 13.0859375,
+        "distance_upper_bound_cm": 13.28125,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194756.52586933,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        112.029678,
+        11.0727625,
+        -36.7759476
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 3.7109375,
+        "distance_upper_bound_cm": 3.90625,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 194756.577196051,
+      "drone": "0x7fffe57dc100",
+      "drone_component": "0x7ffdefef1640",
+      "origin_ue_cm": [
+        112.029678,
+        11.0727625,
+        -36.7759476
+      ],
+      "source_actor_ptr": "0x7fffdcfb7600",
+      "source_component_ptr": "0x7ffe08b27b30",
+      "candidate_surface": {
+        "distance_lower_bound_cm": 3.7109375,
+        "distance_upper_bound_cm": 3.90625,
+        "hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port"
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "drone component world origin is not the contact point or collision shape",
+    "source component pointer is not mapped to candidate asset identity",
+    "dynamic/fixture contact may cause the event; not necessarily a map surface",
+    "injected stage and forced vehicle path plus all-stop debugger affect behavior",
+    "candidate mesh modes, placement and channel are unverified",
+    "surface distance is not signed and does not check containment"
+  ],
+  "source_map_sha256": {
+    "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+    "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+    "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+    "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+    "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+    "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+    "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+    "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e"
+  },
+  "analysis_sha256": "005f71e9157c5fda3b94e93baf0a470fdfd03fca2e95a252301ca2566ab9c758"
+}

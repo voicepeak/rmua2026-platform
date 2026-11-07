@@ -1,0 +1,919 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "log_sha256": "7b044e53f3311a11f464dcd6bee9322abd75bca4ec0387c7aa823be680a89c19",
+  "cutoff_m_s": 0.10000000149011612,
+  "samples": [
+    {
+      "monotonic_s": 396016.302149548,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070826,
+      "normal_speed": 0.117135361,
+      "native_scalar": -0.00183013326,
+      "expected_scalar": -0.0018301332602277398,
+      "absolute_error": 2.2773991893709766e-13
+    },
+    {
+      "monotonic_s": 396016.344182085,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070957,
+      "normal_speed": 0.484119922,
+      "native_scalar": -0.0312617309,
+      "expected_scalar": -0.03126173093914986,
+      "absolute_error": 3.914985696740203e-11
+    },
+    {
+      "monotonic_s": 396016.38622186,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071255,
+      "normal_speed": 0.87620157,
+      "native_scalar": -0.102403834,
+      "expected_scalar": -0.10240383446216583,
+      "absolute_error": 4.621658333814338e-10
+    },
+    {
+      "monotonic_s": 396016.428296672,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071744,
+      "normal_speed": 1.26409805,
+      "native_scalar": -0.213143185,
+      "expected_scalar": -0.21314318478107452,
+      "absolute_error": 2.1892548884849816e-10
+    },
+    {
+      "monotonic_s": 396016.469482094,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21072423,
+      "normal_speed": 1.61896122,
+      "native_scalar": -0.349611133,
+      "expected_scalar": -0.3496111333370209,
+      "absolute_error": 3.37020855667447e-10
+    },
+    {
+      "monotonic_s": 396016.511602295,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21073282,
+      "normal_speed": 1.99378645,
+      "native_scalar": -0.530240297,
+      "expected_scalar": -0.5302402973175049,
+      "absolute_error": 3.1750491125137614e-10
+    },
+    {
+      "monotonic_s": 396016.552006524,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21074247,
+      "normal_speed": 2.33369374,
+      "native_scalar": -0.726451576,
+      "expected_scalar": -0.726451575756073,
+      "absolute_error": 2.439269897180907e-10
+    },
+    {
+      "monotonic_s": 396016.594217842,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21075547,
+      "normal_speed": 2.68965077,
+      "native_scalar": -0.964973509,
+      "expected_scalar": -0.964973509311676,
+      "absolute_error": 3.1167601832748915e-10
+    },
+    {
+      "monotonic_s": 396016.63701066,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21076894,
+      "normal_speed": 3.03393269,
+      "native_scalar": -1.22783577,
+      "expected_scalar": -1.227835774421692,
+      "absolute_error": 4.421691901512759e-09
+    },
+    {
+      "monotonic_s": 396016.679728465,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21078479,
+      "normal_speed": 3.36549425,
+      "native_scalar": -1.51088631,
+      "expected_scalar": -1.510886311531067,
+      "absolute_error": 1.5310668288748275e-09
+    },
+    {
+      "monotonic_s": 396018.902165376,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21075189,
+      "normal_speed": 0.1024637,
+      "native_scalar": -0.00140043313,
+      "expected_scalar": -0.001400433131493628,
+      "absolute_error": 1.493627920998164e-12
+    },
+    {
+      "monotonic_s": 396018.944136342,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21075118,
+      "normal_speed": 0.153111726,
+      "native_scalar": -0.00312707969,
+      "expected_scalar": -0.003127079689875245,
+      "absolute_error": 1.2475480717921705e-13
+    },
+    {
+      "monotonic_s": 396018.986986044,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.2107507,
+      "normal_speed": 0.203664184,
+      "native_scalar": -0.00553287892,
+      "expected_scalar": -0.005532878916710615,
+      "absolute_error": 3.2893852572324356e-12
+    },
+    {
+      "monotonic_s": 396019.029478374,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21074939,
+      "normal_speed": 0.254089326,
+      "native_scalar": -0.00861180574,
+      "expected_scalar": -0.008611805737018585,
+      "absolute_error": 2.981415461733583e-12
+    },
+    {
+      "monotonic_s": 396019.072383664,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21074748,
+      "normal_speed": 0.3043558,
+      "native_scalar": -0.0123561705,
+      "expected_scalar": -0.012356170453131199,
+      "absolute_error": 4.68688005073048e-11
+    },
+    {
+      "monotonic_s": 396019.112462641,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21074629,
+      "normal_speed": 0.350862741,
+      "native_scalar": -0.0164208189,
+      "expected_scalar": -0.016420818865299225,
+      "absolute_error": 3.470077350464784e-11
+    },
+    {
+      "monotonic_s": 396019.154713303,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21074438,
+      "normal_speed": 0.400736481,
+      "native_scalar": -0.021420883,
+      "expected_scalar": -0.021420883014798164,
+      "absolute_error": 1.479816269522871e-11
+    },
+    {
+      "monotonic_s": 396019.19741002,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.210742,
+      "normal_speed": 0.450362146,
+      "native_scalar": -0.0270546861,
+      "expected_scalar": -0.027054686099290848,
+      "absolute_error": 7.091514875323668e-13
+    },
+    {
+      "monotonic_s": 396019.239619454,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21074021,
+      "normal_speed": 0.499710709,
+      "native_scalar": -0.0333085284,
+      "expected_scalar": -0.03330852836370468,
+      "absolute_error": 3.629532091542487e-11
+    },
+    {
+      "monotonic_s": 396019.282236485,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21073699,
+      "normal_speed": 0.548753262,
+      "native_scalar": -0.0401671678,
+      "expected_scalar": -0.04016716778278351,
+      "absolute_error": 1.721649212083065e-11
+    },
+    {
+      "monotonic_s": 396019.325224738,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21073472,
+      "normal_speed": 0.597462118,
+      "native_scalar": -0.0476142429,
+      "expected_scalar": -0.047614242881536484,
+      "absolute_error": 1.846351543877134e-11
+    },
+    {
+      "monotonic_s": 396019.367708228,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21073163,
+      "normal_speed": 0.645809531,
+      "native_scalar": -0.0556318983,
+      "expected_scalar": -0.05563189834356308,
+      "absolute_error": 4.3563076757013874e-11
+    },
+    {
+      "monotonic_s": 396019.409723368,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21072853,
+      "normal_speed": 0.693769753,
+      "native_scalar": -0.064201422,
+      "expected_scalar": -0.06420142203569412,
+      "absolute_error": 3.569412820869644e-11
+    },
+    {
+      "monotonic_s": 396019.452574379,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21072555,
+      "normal_speed": 0.657142699,
+      "native_scalar": -0.0576012917,
+      "expected_scalar": -0.05760129168629646,
+      "absolute_error": 1.3703538304099538e-11
+    },
+    {
+      "monotonic_s": 396019.49458454,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21072173,
+      "normal_speed": 0.61283356,
+      "native_scalar": -0.050095249,
+      "expected_scalar": -0.050095248967409134,
+      "absolute_error": 3.259086750473372e-11
+    },
+    {
+      "monotonic_s": 396019.536581328,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071935,
+      "normal_speed": 0.568859518,
+      "native_scalar": -0.0431639031,
+      "expected_scalar": -0.043163903057575226,
+      "absolute_error": 4.2424772028759605e-11
+    },
+    {
+      "monotonic_s": 396019.576655763,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071625,
+      "normal_speed": 0.528305113,
+      "native_scalar": -0.0372288115,
+      "expected_scalar": -0.03722881153225899,
+      "absolute_error": 3.2258987148203744e-11
+    },
+    {
+      "monotonic_s": 396019.619063338,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071446,
+      "normal_speed": 0.484906763,
+      "native_scalar": -0.031363558,
+      "expected_scalar": -0.031363558024168015,
+      "absolute_error": 2.416801481164299e-11
+    },
+    {
+      "monotonic_s": 396019.660473972,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071196,
+      "normal_speed": 0.444842815,
+      "native_scalar": -0.026394967,
+      "expected_scalar": -0.02639496698975563,
+      "absolute_error": 1.0244367854017611e-11
+    },
+    {
+      "monotonic_s": 396019.702465852,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071017,
+      "normal_speed": 0.401926488,
+      "native_scalar": -0.0215476844,
+      "expected_scalar": -0.02154768444597721,
+      "absolute_error": 4.59772116212509e-11
+    },
+    {
+      "monotonic_s": 396019.742583375,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070826,
+      "normal_speed": 0.362268269,
+      "native_scalar": -0.017505208,
+      "expected_scalar": -0.017505208030343056,
+      "absolute_error": 3.03430544579264e-11
+    },
+    {
+      "monotonic_s": 396019.784827834,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070647,
+      "normal_speed": 0.319744378,
+      "native_scalar": -0.013636779,
+      "expected_scalar": -0.01363677904009819,
+      "absolute_error": 4.00981903930786e-11
+    },
+    {
+      "monotonic_s": 396019.824988742,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070528,
+      "normal_speed": 0.280410081,
+      "native_scalar": -0.0104880035,
+      "expected_scalar": -0.010488003492355347,
+      "absolute_error": 7.64465400704406e-12
+    },
+    {
+      "monotonic_s": 396019.867319082,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070409,
+      "normal_speed": 0.238192379,
+      "native_scalar": -0.00756764738,
+      "expected_scalar": -0.0075676473788917065,
+      "absolute_error": 1.1082931447581323e-12
+    },
+    {
+      "monotonic_s": 396019.909614419,
+      "face_ptr": "0x7304633e12c0",
+      "position": [
+        0.0,
+        0.0,
+        -0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.2107029,
+      "normal_speed": 0.196100071,
+      "native_scalar": -0.0051293252,
+      "expected_scalar": -0.005129325203597546,
+      "absolute_error": 3.5975458723136455e-12
+    },
+    {
+      "monotonic_s": 396019.95187728,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070218,
+      "normal_speed": 0.157275736,
+      "native_scalar": -0.00329934643,
+      "expected_scalar": -0.00329934642650187,
+      "absolute_error": 3.4981297372671527e-12
+    },
+    {
+      "monotonic_s": 396019.993855661,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.2107048,
+      "normal_speed": 0.568308473,
+      "native_scalar": -0.0430797972,
+      "expected_scalar": -0.04307979717850685,
+      "absolute_error": 2.1493147539519697e-11
+    },
+    {
+      "monotonic_s": 396020.033968797,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21070766,
+      "normal_speed": 0.947511017,
+      "native_scalar": -0.119749844,
+      "expected_scalar": -0.11974984407424927,
+      "absolute_error": 7.42492733962763e-11
+    },
+    {
+      "monotonic_s": 396020.076350213,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071327,
+      "normal_speed": 1.35128951,
+      "native_scalar": -0.243559614,
+      "expected_scalar": -0.24355961382389069,
+      "absolute_error": 1.7610932157019477e-10
+    },
+    {
+      "monotonic_s": 396020.116798478,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21071994,
+      "normal_speed": 1.72029936,
+      "native_scalar": -0.394747049,
+      "expected_scalar": -0.3947470486164093,
+      "absolute_error": 3.8359071474758366e-10
+    },
+    {
+      "monotonic_s": 396020.158914694,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21072912,
+      "normal_speed": 2.10959458,
+      "native_scalar": -0.593624949,
+      "expected_scalar": -0.5936249494552612,
+      "absolute_error": 4.552612731245631e-10
+    },
+    {
+      "monotonic_s": 396020.201740013,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.2107408,
+      "normal_speed": 2.48886228,
+      "native_scalar": -0.826266289,
+      "expected_scalar": -0.8262662887573242,
+      "absolute_error": 2.4267576836933813e-10
+    },
+    {
+      "monotonic_s": 396020.244134769,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21075237,
+      "normal_speed": 2.83075714,
+      "native_scalar": -1.06887686,
+      "expected_scalar": -1.06887686252594,
+      "absolute_error": 2.5259399016874795e-09
+    },
+    {
+      "monotonic_s": 396020.286262179,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.21076787,
+      "normal_speed": 3.18666267,
+      "native_scalar": -1.3545661,
+      "expected_scalar": -1.3545660972595215,
+      "absolute_error": 2.740478510787625e-09
+    },
+    {
+      "monotonic_s": 396020.329155279,
+      "face_ptr": "0x7304633e1340",
+      "position": [
+        0.0,
+        0.0,
+        0.0451500006
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "factor": 0.11017096,
+      "density_operand": 1.2107836,
+      "normal_speed": 3.52876759,
+      "native_scalar": -1.66103888,
+      "expected_scalar": -1.661038875579834,
+      "absolute_error": 4.420166010987714e-09
+    }
+  ],
+  "max_scalar_abs_error": 4.421691901512759e-09,
+  "density_operand_range": [
+    1.21070218,
+    1.21078479
+  ],
+  "limitations": [
+    "loop operands and scalar output observed, not complete net wind wrench",
+    "wind input and velocity frame were not independently captured in this probe",
+    "single process with all-stop debugger, startup and ground contact possible",
+    "density operand source and natural wind zones require separate verification"
+  ],
+  "analysis_sha256": "db35003e8b69b8016291f0c2ea58e303235ab5a05aa2c53a49d363e25aecfd87"
+}

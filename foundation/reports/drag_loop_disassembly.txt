@@ -1,0 +1,83 @@
+
+D:\RMUA2026-re\sim\simulator_12.0.0.5\Build\LinuxNoEditor\RMUA\Binaries\Linux\RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002669691 <_start@@Base+0x8cd11>:
+ 2669691:	31 ed                	xor    %ebp,%ebp
+ 2669693:	eb 1f                	jmp    26696b4 <_start@@Base+0x8cd34>
+ 2669695:	66 2e 0f 1f 84 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+ 266969c:	00 00 00 
+ 266969f:	90                   	nop
+ 26696a0:	83 c5 01             	add    $0x1,%ebp
+ 26696a3:	48 8b 03             	mov    (%rbx),%rax
+ 26696a6:	48 89 df             	mov    %rbx,%rdi
+ 26696a9:	ff 50 70             	callq  *0x70(%rax)
+ 26696ac:	39 c5                	cmp    %eax,%ebp
+ 26696ae:	0f 83 1a 01 00 00    	jae    26697ce <_start@@Base+0x8ce4e>
+ 26696b4:	48 8b 03             	mov    (%rbx),%rax
+ 26696b7:	48 89 df             	mov    %rbx,%rdi
+ 26696ba:	89 ee                	mov    %ebp,%esi
+ 26696bc:	ff 90 80 00 00 00    	callq  *0x80(%rax)
+ 26696c2:	f3 0f 10 40 3c       	movss  0x3c(%rax),%xmm0
+ 26696c7:	f2 0f 10 48 40       	movsd  0x40(%rax),%xmm1
+ 26696cc:	f2 41 0f 10 57 04    	movsd  0x4(%r15),%xmm2
+ 26696d2:	0f 28 e0             	movaps %xmm0,%xmm4
+ 26696d5:	0f c6 e1 50          	shufps $0x50,%xmm1,%xmm4
+ 26696d9:	0f c6 e1 f2          	shufps $0xf2,%xmm1,%xmm4
+ 26696dd:	0f 59 e2             	mulps  %xmm2,%xmm4
+ 26696e0:	f3 41 0f 10 37       	movss  (%r15),%xmm6
+ 26696e5:	0f 28 de             	movaps %xmm6,%xmm3
+ 26696e8:	0f c6 da 50          	shufps $0x50,%xmm2,%xmm3
+ 26696ec:	0f c6 da f2          	shufps $0xf2,%xmm2,%xmm3
+ 26696f0:	0f 59 d9             	mulps  %xmm1,%xmm3
+ 26696f3:	0f 5c e3             	subps  %xmm3,%xmm4
+ 26696f6:	0f 58 64 24 20       	addps  0x20(%rsp),%xmm4
+ 26696fb:	f3 0f 59 f1          	mulss  %xmm1,%xmm6
+ 26696ff:	f3 0f 59 d0          	mulss  %xmm0,%xmm2
+ 2669703:	f3 0f 5c f2          	subss  %xmm2,%xmm6
+ 2669707:	f3 0f 58 74 24 10    	addss  0x10(%rsp),%xmm6
+ 266970d:	f2 0f 10 50 54       	movsd  0x54(%rax),%xmm2
+ 2669712:	f3 0f 10 58 5c       	movss  0x5c(%rax),%xmm3
+ 2669717:	0f 59 e2             	mulps  %xmm2,%xmm4
+ 266971a:	f3 0f 59 f3          	mulss  %xmm3,%xmm6
+ 266971e:	f3 0f 16 ec          	movshdup %xmm4,%xmm5
+ 2669722:	f3 0f 58 ee          	addss  %xmm6,%xmm5
+ 2669726:	f3 0f 58 ec          	addss  %xmm4,%xmm5
+ 266972a:	0f 2e 2d 13 77 05 fe 	ucomiss -0x1fa88ed(%rip),%xmm5        # 6c0e44 <_IO_stdin_used@@Base-0x160>
+ 2669731:	0f 86 69 ff ff ff    	jbe    26696a0 <_start@@Base+0x8cd20>
+ 2669737:	f3 0f 16 e1          	movshdup %xmm1,%xmm4
+ 266973b:	f3 0f 10 70 78       	movss  0x78(%rax),%xmm6
+ 2669740:	0f 57 35 29 98 05 fe 	xorps  -0x1fa67d7(%rip),%xmm6        # 6c2f70 <_IO_stdin_used@@Base+0x1fcc>
+ 2669747:	f3 0f 59 74 24 0c    	mulss  0xc(%rsp),%xmm6
+ 266974d:	f3 0f 59 f5          	mulss  %xmm5,%xmm6
+ 2669751:	f3 0f 59 f5          	mulss  %xmm5,%xmm6
+ 2669755:	f3 0f 12 ee          	movsldup %xmm6,%xmm5
+ 2669759:	0f 59 d5             	mulps  %xmm5,%xmm2
+ 266975c:	f3 0f 59 de          	mulss  %xmm6,%xmm3
+ 2669760:	0f 28 e9             	movaps %xmm1,%xmm5
+ 2669763:	f3 0f 59 eb          	mulss  %xmm3,%xmm5
+ 2669767:	f3 0f 16 f2          	movshdup %xmm2,%xmm6
+ 266976b:	0f 28 fc             	movaps %xmm4,%xmm7
+ 266976e:	f3 0f 59 fe          	mulss  %xmm6,%xmm7
+ 2669772:	f3 0f 5c ef          	subss  %xmm7,%xmm5
+ 2669776:	f3 0f 59 e2          	mulss  %xmm2,%xmm4
+ 266977a:	0f 28 f8             	movaps %xmm0,%xmm7
+ 266977d:	f3 0f 59 fb          	mulss  %xmm3,%xmm7
+ 2669781:	f3 0f 5c e7          	subss  %xmm7,%xmm4
+ 2669785:	f3 0f 59 c6          	mulss  %xmm6,%xmm0
+ 2669789:	f3 0f 59 ca          	mulss  %xmm2,%xmm1
+ 266978d:	f3 0f 5c c1          	subss  %xmm1,%xmm0
+ 2669791:	41 0f 10 0c 24       	movups (%r12),%xmm1
+ 2669796:	0f 28 f2             	movaps %xmm2,%xmm6
+ 2669799:	0f c6 f3 84          	shufps $0x84,%xmm3,%xmm6
+ 266979d:	0f c6 ee 20          	shufps $0x20,%xmm6,%xmm5
+ 26697a1:	0f c6 d5 24          	shufps $0x24,%xmm5,%xmm2
+ 26697a5:	0f 58 d1             	addps  %xmm1,%xmm2
+ 26697a8:	41 0f 11 14 24       	movups %xmm2,(%r12)
+ 26697ad:	f3 41 0f 58 64 24 10 	addss  0x10(%r12),%xmm4
+ 26697b4:	f3 41 0f 11 64 24 10 	movss  %xmm4,0x10(%r12)
+ 26697bb:	f3 41 0f 58 44 24 14 	addss  0x14(%r12),%xmm0
+ 26697c2:	f3 41 0f 11 44 24 14 	movss  %xmm0,0x14(%r12)
+ 26697c9:	e9 d2 fe ff ff       	jmpq   26696a0 <_start@@Base+0x8cd20>

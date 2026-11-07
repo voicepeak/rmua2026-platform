@@ -1,0 +1,172 @@
+{
+  "scope": "injected stage fresh-seed keyframes; no prior libc rand consumers",
+  "limitations": [
+    "not natural stage random-stream validation",
+    "no wind force or zone validation",
+    "debugger injections alter execution and may affect timing"
+  ],
+  "cases": [
+    {
+      "stage": 4,
+      "seed": 123,
+      "repeat": 1,
+      "source_sha256": "89a1165a1b8b1100a6128d930ccb48810dd2ba75235d5ac67ce62156d7a1d133",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 4,
+      "seed": 123,
+      "repeat": 2,
+      "source_sha256": "b2e30391dda7a9308ec9fc85e175f1297704593c505e448bf3f331bfed3f9264",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 4,
+      "seed": 456,
+      "repeat": 1,
+      "source_sha256": "21a4aaca90c843c0f7840d4c5005e3238d1c7643246d3c59b6ee864f5a85c627",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 4,
+      "seed": 456,
+      "repeat": 2,
+      "source_sha256": "0842004b2e4c94c0b9859e6953e02baf7ceca07616b78774b04cde819f6c3e9d",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 4,
+      "seed": 2026,
+      "repeat": 1,
+      "source_sha256": "8a187fcf3fdba65eef13ff0d2e78290446a38f8a23404a2eb7356cff39896c2a",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 4,
+      "seed": 2026,
+      "repeat": 2,
+      "source_sha256": "4d6c4dbef1b07b44648be361f6ba3cc84268be4fadbd914105a37cca3a181a47",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 5,
+      "seed": 123,
+      "repeat": 1,
+      "source_sha256": "d75d16704c3ebc01df82dd2e524f2f38e17bfe6258f3b90a5397dbd9bb44dc43",
+      "observed_items": 37,
+      "generated_items": 37,
+      "exact": true
+    },
+    {
+      "stage": 5,
+      "seed": 123,
+      "repeat": 2,
+      "source_sha256": "a682d728d671fa58732a6185b1075245561c03956b1befac6662ff8b2f4712b7",
+      "observed_items": 37,
+      "generated_items": 37,
+      "exact": true
+    },
+    {
+      "stage": 5,
+      "seed": 456,
+      "repeat": 1,
+      "source_sha256": "2e1ae7230746c5543ab1049c6757ba73b1d898951387873e6deb25a0623cb42d",
+      "observed_items": 37,
+      "generated_items": 37,
+      "exact": true
+    },
+    {
+      "stage": 5,
+      "seed": 456,
+      "repeat": 2,
+      "source_sha256": "25cfa43093011c3cabc9fe1930adfb1630f163b1ab14d83cbe8f3a8f1b9a15be",
+      "observed_items": 37,
+      "generated_items": 37,
+      "exact": true
+    },
+    {
+      "stage": 5,
+      "seed": 2026,
+      "repeat": 1,
+      "source_sha256": "b2c962e7257c5a0f43622177b61ebaf35d9270c3fa4ba7742ba08991a3eef828",
+      "observed_items": 37,
+      "generated_items": 37,
+      "exact": true
+    },
+    {
+      "stage": 5,
+      "seed": 2026,
+      "repeat": 2,
+      "source_sha256": "9c792e4c050db8a9651ac4209ea86ae09c96e605b03e1c76cc652d18d9eb43da",
+      "observed_items": 37,
+      "generated_items": 37,
+      "exact": true
+    },
+    {
+      "stage": 6,
+      "seed": 123,
+      "repeat": 1,
+      "source_sha256": "e91222be9a1907cbee866af428279da7ed6650605fd3e375cef112d32f2a2b4b",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 6,
+      "seed": 123,
+      "repeat": 2,
+      "source_sha256": "2926c665b87c5c82f8eb0cc88d1a04a49e846312110381b473aff175e778c56d",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 6,
+      "seed": 456,
+      "repeat": 1,
+      "source_sha256": "ffd0076f3610578b1bf6b752f5d22de5524dec4b56f2755b8c96595eddcea686",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 6,
+      "seed": 456,
+      "repeat": 2,
+      "source_sha256": "940ab31a92b75704d2a648d9569ca602c536e56e24e581df065f856613ec92d1",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 6,
+      "seed": 2026,
+      "repeat": 1,
+      "source_sha256": "0e71613179d6bb87b38adfd65ed8f5debd1668a334cad3903ab90f174ced9374",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    },
+    {
+      "stage": 6,
+      "seed": 2026,
+      "repeat": 2,
+      "source_sha256": "eee0e7a59ab3d50c66e591f37147f5a8b490a67dba1dd9559b9148cf89370a63",
+      "observed_items": 35,
+      "generated_items": 35,
+      "exact": true
+    }
+  ]
+}

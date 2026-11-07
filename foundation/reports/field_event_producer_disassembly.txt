@@ -1,0 +1,30 @@
+
+D:\RMUA2026-re\sim\simulator_12.0.0.5\Build\LinuxNoEditor\RMUA\Binaries\Linux\RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb917c <SampleVectorField@@Base+0x26870c>:
+ 2fb917c:	4c 89 f7             	mov    %r14,%rdi
+ 2fb917f:	e8 ac 06 00 00       	callq  2fb9830 <SampleVectorField@@Base+0x268dc0>
+ 2fb9184:	41 38 86 80 01 00 00 	cmp    %al,0x180(%r14)
+ 2fb918b:	74 54                	je     2fb91e1 <SampleVectorField@@Base+0x268771>
+ 2fb918d:	e8 ee bc ff ff       	callq  2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9192:	40 b5 01             	mov    $0x1,%bpl
+ 2fb9195:	80 b8 d0 02 00 00 00 	cmpb   $0x0,0x2d0(%rax)
+ 2fb919c:	75 0c                	jne    2fb91aa <SampleVectorField@@Base+0x26873a>
+ 2fb919e:	41 80 be 80 01 00 00 	cmpb   $0x0,0x180(%r14)
+ 2fb91a5:	00 
+ 2fb91a6:	40 0f 94 c5          	sete   %bpl
+ 2fb91aa:	41 88 ae 80 01 00 00 	mov    %bpl,0x180(%r14)
+ 2fb91b1:	bf 18 00 00 00       	mov    $0x18,%edi
+ 2fb91b6:	e8 25 b4 01 00       	callq  2fd45e0 <_Znwm@@Base>
+ 2fb91bb:	48 89 c3             	mov    %rax,%rbx
+ 2fb91be:	48 c7 40 08 1e 00 00 	movq   $0x1e,0x8(%rax)
+ 2fb91c5:	00 
+ 2fb91c6:	48 c7 00 a0 58 cd 00 	movq   $0xcd58a0,(%rax)
+ 2fb91cd:	40 88 68 10          	mov    %bpl,0x10(%rax)
+ 2fb91d1:	e8 4a 30 01 00       	callq  2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb91d6:	48 89 c7             	mov    %rax,%rdi
+ 2fb91d9:	48 89 de             	mov    %rbx,%rsi
+ 2fb91dc:	e8 3f 33 01 00       	callq  2fcc520 <SampleVectorField@@Base+0x27bab0>

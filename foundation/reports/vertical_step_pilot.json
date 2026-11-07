@@ -1,0 +1,62 @@
+{
+  "model": "post-publish to IMU-arrival effective first-order step",
+  "analysis_sha256": "b660703a4ff15f8602e3eb0f2f0a7e5b5219d8676ab646e2fe8c5f6540d72901",
+  "fit_run": "foundation\\datasets\\d06_cadence50_seed123_20261107",
+  "fit_parameters": {
+    "delay_s": 0.016,
+    "tau_s": 0.002,
+    "baseline_m_s2": -10.970926533581357,
+    "change_m_s2": 2.1978700939440836,
+    "mse": 0.0014553825050150377,
+    "tau_at_search_boundary": true,
+    "delay_at_search_boundary": false
+  },
+  "fit_metrics": {
+    "samples": 48,
+    "imu_z_rmse_m_s2": 0.03814947581573091,
+    "imu_z_max_abs_error_m_s2": 0.10129095161114243,
+    "pose_z_range_m": [
+      -0.060808002948760986,
+      0.21077513694763184
+    ],
+    "source_sha256": {
+      "commands.jsonl": "7e050ccbf01d5eb4195f847ea6d9b461c1aa53666b65ddfe208cac63a44f58e5",
+      "capture.jsonl": "a8919fe65838447bdcd4a1934974879d16c83774b9d501afc6563641d3e03f4f"
+    }
+  },
+  "holdout": {
+    "foundation\\datasets\\d06_cadence20_seed123_20261107": {
+      "samples": 48,
+      "imu_z_rmse_m_s2": 0.15053108457920436,
+      "imu_z_max_abs_error_m_s2": 1.000027385158985,
+      "pose_z_range_m": [
+        -0.05900438874959946,
+        0.2093271166086197
+      ],
+      "source_sha256": {
+        "commands.jsonl": "a54dd4579f31c0a570385e7f48c53f38daf8d0b0dcada94d1f563b55089adc83",
+        "capture.jsonl": "ec2ee512878dfdd3ba4fd4569f8e2939b68cfb5aa54ca31c4f1c35af802b22f2"
+      }
+    },
+    "foundation\\datasets\\d06_cadence100_seed123_20261107": {
+      "samples": 48,
+      "imu_z_rmse_m_s2": 0.04625876631013806,
+      "imu_z_max_abs_error_m_s2": 0.19242725099659808,
+      "pose_z_range_m": [
+        -0.05650784820318222,
+        0.21223047375679016
+      ],
+      "source_sha256": {
+        "commands.jsonl": "1ffb1990b3eaab40e9038294931d51f0acc1ab77f74543bcf098ac0e7fa3a1c5",
+        "capture.jsonl": "29561a95a4229cd54d4613a30f208aa4fa8f25f40fe8118ba2a186aa5f158768"
+      }
+    }
+  },
+  "limitations": [
+    "not isolated motor response: includes publish, scheduling, bridge, actuator and IMU effects",
+    "fitted delay and time constant are correlated; boundary estimates are unresolved and have no confidence interval",
+    "one decrease at one thrust level and short window; geometry/contact unverified",
+    "holdout runs use different command rates and are not independent waveform designs",
+    "no physics-step or control-timeout inference"
+  ]
+}

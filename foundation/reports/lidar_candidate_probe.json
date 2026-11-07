@@ -1,0 +1,2760 @@
+{
+  "origin_ue_cm": [
+    0.0078,
+    0.001,
+    -7.0
+  ],
+  "source_map_sha256": {
+    "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+    "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+    "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+    "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+    "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+    "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+    "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a"
+  },
+  "excluded_building_components": 8657,
+  "scans": [
+    {
+      "scan": "scan_000.npz",
+      "scan_sha256": "6adb183531e41c77424195d157575bf356669a0002f03a0be1871ea6b7e07cff",
+      "gps_cloud_offset_s": -0.05700111389160156,
+      "imu_cloud_offset_s": -0.009000301361083984,
+      "selected": 128,
+      "partial_map_hits": 126,
+      "within_1m": 126,
+      "absolute_error_m_p50_p95": [
+        0.08960893817733506,
+        0.3106401448930223
+      ],
+      "rays": [
+        {
+          "point_index": 9,
+          "observed_range_m": 5.183759372703481,
+          "predicted_range_m": 5.12143666205176,
+          "signed_error_m": -0.06232271065172057,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 42,
+          "observed_range_m": 5.549271321871441,
+          "predicted_range_m": 5.481761001254928,
+          "signed_error_m": -0.06751032061651241,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 65,
+          "observed_range_m": 5.195122601138806,
+          "predicted_range_m": 5.133297805675833,
+          "signed_error_m": -0.06182479546297248,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 97,
+          "observed_range_m": 5.590970878888186,
+          "predicted_range_m": 5.530894625128401,
+          "signed_error_m": -0.0600762537597852,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 120,
+          "observed_range_m": 6.368556574629208,
+          "predicted_range_m": null,
+          "signed_error_m": null,
+          "candidate_actor": null
+        },
+        {
+          "point_index": 203,
+          "observed_range_m": 5.124351063426323,
+          "predicted_range_m": 5.062968773107772,
+          "signed_error_m": -0.06138229031855058,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 207,
+          "observed_range_m": 5.118511358411984,
+          "predicted_range_m": 5.057401395591055,
+          "signed_error_m": -0.06110996282092973,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 215,
+          "observed_range_m": 5.131868576617069,
+          "predicted_range_m": 5.071042122737599,
+          "signed_error_m": -0.06082645387946961,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 224,
+          "observed_range_m": 5.187515883735548,
+          "predicted_range_m": 5.1265259849575,
+          "signed_error_m": -0.06098989877804861,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 235,
+          "observed_range_m": 5.317419947402289,
+          "predicted_range_m": 5.293698066394729,
+          "signed_error_m": -0.02372188100756034,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 277,
+          "observed_range_m": 9.693410805814448,
+          "predicted_range_m": 9.515591863719857,
+          "signed_error_m": -0.17781894209459104,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 311,
+          "observed_range_m": 9.31140611570839,
+          "predicted_range_m": 9.140777668865132,
+          "signed_error_m": -0.17062844684325817,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 317,
+          "observed_range_m": 9.353559061008076,
+          "predicted_range_m": 9.182054811203477,
+          "signed_error_m": -0.17150424980459889,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 347,
+          "observed_range_m": 8.090498492002174,
+          "predicted_range_m": 7.998395690205535,
+          "signed_error_m": -0.09210280179663943,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 357,
+          "observed_range_m": 9.228422323369045,
+          "predicted_range_m": 9.059335268474046,
+          "signed_error_m": -0.16908705489499987,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 361,
+          "observed_range_m": 6.482913036334039,
+          "predicted_range_m": 6.368168654587694,
+          "signed_error_m": -0.11474438174634471,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 363,
+          "observed_range_m": 6.561996417936591,
+          "predicted_range_m": 6.462724584979679,
+          "signed_error_m": -0.09927183295691222,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 375,
+          "observed_range_m": 7.289262711552754,
+          "predicted_range_m": 7.205815718758361,
+          "signed_error_m": -0.08344699279439372,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 398,
+          "observed_range_m": 5.722534123897087,
+          "predicted_range_m": 5.6353767663224765,
+          "signed_error_m": -0.0871573575746103,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 401,
+          "observed_range_m": 5.792906100598696,
+          "predicted_range_m": 5.723382776206683,
+          "signed_error_m": -0.06952332439201303,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 407,
+          "observed_range_m": 5.994772523612472,
+          "predicted_range_m": 5.924680309276391,
+          "signed_error_m": -0.07009221433608115,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 411,
+          "observed_range_m": 6.15133524271882,
+          "predicted_range_m": 6.079696214178571,
+          "signed_error_m": -0.07163902854024862,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 431,
+          "observed_range_m": 7.271915332611013,
+          "predicted_range_m": 7.1893682775650305,
+          "signed_error_m": -0.08254705504598281,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 512,
+          "observed_range_m": 5.754347607626006,
+          "predicted_range_m": 5.687477664509441,
+          "signed_error_m": -0.06686994311656491,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 534,
+          "observed_range_m": 9.37078795862675,
+          "predicted_range_m": 9.19905796089981,
+          "signed_error_m": -0.1717299977269402,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 537,
+          "observed_range_m": 9.508014014081725,
+          "predicted_range_m": 9.333615289782749,
+          "signed_error_m": -0.1743987242989764,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 645,
+          "observed_range_m": 10.848428112920045,
+          "predicted_range_m": 10.749391557720648,
+          "signed_error_m": -0.09903655519939747,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 652,
+          "observed_range_m": 10.554077941839058,
+          "predicted_range_m": 10.458312880684437,
+          "signed_error_m": -0.09576506115462102,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 658,
+          "observed_range_m": 10.379083831232114,
+          "predicted_range_m": 10.350765895797878,
+          "signed_error_m": -0.02831793543423622,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 784,
+          "observed_range_m": 9.177919791497846,
+          "predicted_range_m": 9.064834837048512,
+          "signed_error_m": -0.11308495444933442,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 801,
+          "observed_range_m": 9.048232485846665,
+          "predicted_range_m": 8.942863494550698,
+          "signed_error_m": -0.10536899129596655,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 808,
+          "observed_range_m": 11.115283246333721,
+          "predicted_range_m": 11.012397041198545,
+          "signed_error_m": -0.10288620513517621,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 810,
+          "observed_range_m": 10.986085447132105,
+          "predicted_range_m": 10.884574663820786,
+          "signed_error_m": -0.10151078331131913,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 908,
+          "observed_range_m": 9.212247204129378,
+          "predicted_range_m": 9.1031611149217,
+          "signed_error_m": -0.10908608920767726,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 914,
+          "observed_range_m": 11.078214776387123,
+          "predicted_range_m": 10.975678445613337,
+          "signed_error_m": -0.10253633077378588,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 934,
+          "observed_range_m": 11.26547099086559,
+          "predicted_range_m": 11.160916541947403,
+          "signed_error_m": -0.10455444891818644,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 945,
+          "observed_range_m": 9.200550619758156,
+          "predicted_range_m": 9.093385768017008,
+          "signed_error_m": -0.10716485174114787,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 980,
+          "observed_range_m": 9.56245612520753,
+          "predicted_range_m": 9.51632985268012,
+          "signed_error_m": -0.046126272527411416,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 985,
+          "observed_range_m": 11.308412313353017,
+          "predicted_range_m": 11.203648410731516,
+          "signed_error_m": -0.10476390262150126,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1109,
+          "observed_range_m": 8.779548503389266,
+          "predicted_range_m": 8.598370212914313,
+          "signed_error_m": -0.18117829047495349,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1110,
+          "observed_range_m": 9.114722834378206,
+          "predicted_range_m": 8.902060779517747,
+          "signed_error_m": -0.2126620548604592,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1116,
+          "observed_range_m": 9.255772742293056,
+          "predicted_range_m": 9.128664203915484,
+          "signed_error_m": -0.12710853837757163,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1155,
+          "observed_range_m": 8.853788803087927,
+          "predicted_range_m": 8.81541616866281,
+          "signed_error_m": -0.03837263442511585,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1163,
+          "observed_range_m": 9.231588216301914,
+          "predicted_range_m": 9.191994742387934,
+          "signed_error_m": -0.03959347391398005,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1183,
+          "observed_range_m": 8.770475468927508,
+          "predicted_range_m": 8.840114845105596,
+          "signed_error_m": 0.06963937617808824,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1221,
+          "observed_range_m": 10.994722032727891,
+          "predicted_range_m": null,
+          "signed_error_m": null,
+          "candidate_actor": null
+        },
+        {
+          "point_index": 1241,
+          "observed_range_m": 11.128257712657298,
+          "predicted_range_m": 11.271003224324016,
+          "signed_error_m": 0.14274551166671756,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1273,
+          "observed_range_m": 10.881654479838398,
+          "predicted_range_m": 11.017885146789792,
+          "signed_error_m": 0.13623066695139485,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1292,
+          "observed_range_m": 29.172378881543928,
+          "predicted_range_m": 29.141638027147373,
+          "signed_error_m": -0.03074085439655505,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1360,
+          "observed_range_m": 10.940633302535755,
+          "predicted_range_m": 11.071800421239704,
+          "signed_error_m": 0.13116711870394937,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1371,
+          "observed_range_m": 29.186514963959848,
+          "predicted_range_m": 29.155385126502257,
+          "signed_error_m": -0.031129837457591236,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1388,
+          "observed_range_m": 10.970535532205355,
+          "predicted_range_m": 10.935352021096094,
+          "signed_error_m": -0.035183511109261545,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1399,
+          "observed_range_m": 11.03124480556534,
+          "predicted_range_m": 11.159081577341837,
+          "signed_error_m": 0.12783677177649722,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1419,
+          "observed_range_m": 10.662153392905099,
+          "predicted_range_m": 10.60194255000734,
+          "signed_error_m": -0.060210842897758354,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1422,
+          "observed_range_m": 10.54181576628679,
+          "predicted_range_m": 10.507407413381246,
+          "signed_error_m": -0.03440835290554389,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1452,
+          "observed_range_m": 10.427814581749987,
+          "predicted_range_m": 10.39300322714063,
+          "signed_error_m": -0.03481135460935647,
+          "candidate_actor": "BP_Segment_Rot273_ArrowOut"
+        },
+        {
+          "point_index": 1462,
+          "observed_range_m": 9.36713666325307,
+          "predicted_range_m": 9.319924635967045,
+          "signed_error_m": -0.047212027286025915,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1503,
+          "observed_range_m": 8.911263104896591,
+          "predicted_range_m": 8.87244039363224,
+          "signed_error_m": -0.03882271126435022,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1511,
+          "observed_range_m": 9.263860675855188,
+          "predicted_range_m": 9.223891146630748,
+          "signed_error_m": -0.039969529224439526,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1568,
+          "observed_range_m": 9.693051034021417,
+          "predicted_range_m": 9.717268478836205,
+          "signed_error_m": 0.024217444814787825,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1613,
+          "observed_range_m": 9.800359996669279,
+          "predicted_range_m": 9.82512167526269,
+          "signed_error_m": 0.024761678593410608,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1623,
+          "observed_range_m": 9.480424707877404,
+          "predicted_range_m": 9.504183025346546,
+          "signed_error_m": 0.023758317469141588,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1630,
+          "observed_range_m": 9.346123139524591,
+          "predicted_range_m": 9.609544631201562,
+          "signed_error_m": 0.2634214916769704,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1633,
+          "observed_range_m": 9.265926928797064,
+          "predicted_range_m": 9.288959595767317,
+          "signed_error_m": 0.02303266697025208,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1638,
+          "observed_range_m": 9.196712332822695,
+          "predicted_range_m": 9.283668064023772,
+          "signed_error_m": 0.08695573120107625,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1642,
+          "observed_range_m": 9.400157948271923,
+          "predicted_range_m": 9.714452384154908,
+          "signed_error_m": 0.3142944358829851,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1646,
+          "observed_range_m": 9.266690455157166,
+          "predicted_range_m": 9.289734671321655,
+          "signed_error_m": 0.023044216164489484,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1667,
+          "observed_range_m": 9.277692002847264,
+          "predicted_range_m": 9.300791265481475,
+          "signed_error_m": 0.02309926263421147,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1672,
+          "observed_range_m": 9.044737811450153,
+          "predicted_range_m": 9.142027731019589,
+          "signed_error_m": 0.09728991956943567,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1683,
+          "observed_range_m": 7.986981520225061,
+          "predicted_range_m": 8.073750244082216,
+          "signed_error_m": 0.08676872385715484,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1686,
+          "observed_range_m": 7.755726094969657,
+          "predicted_range_m": 7.840166073887579,
+          "signed_error_m": 0.08443997891792154,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1692,
+          "observed_range_m": 7.366595534417093,
+          "predicted_range_m": 7.436543249245913,
+          "signed_error_m": 0.06994771482882012,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1703,
+          "observed_range_m": 9.27437552316126,
+          "predicted_range_m": 9.379952558856193,
+          "signed_error_m": 0.10557703569493349,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1728,
+          "observed_range_m": 7.461602232244946,
+          "predicted_range_m": 7.542578488228669,
+          "signed_error_m": 0.08097625598372282,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1773,
+          "observed_range_m": 8.304514478183414,
+          "predicted_range_m": 8.39329477577445,
+          "signed_error_m": 0.08878029759103612,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1785,
+          "observed_range_m": 7.389340551741102,
+          "predicted_range_m": 7.469159585889394,
+          "signed_error_m": 0.07981903414829183,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1797,
+          "observed_range_m": 6.744926590556049,
+          "predicted_range_m": 6.818400250545321,
+          "signed_error_m": 0.07347365998927202,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1802,
+          "observed_range_m": 6.535288794664052,
+          "predicted_range_m": 6.6067147338040755,
+          "signed_error_m": 0.07142593914002315,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1819,
+          "observed_range_m": 9.414629565824729,
+          "predicted_range_m": 9.513446017700563,
+          "signed_error_m": 0.09881645187583388,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1835,
+          "observed_range_m": 6.423128063730316,
+          "predicted_range_m": 6.4941408706503,
+          "signed_error_m": 0.0710128069199838,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1876,
+          "observed_range_m": 9.766099308831041,
+          "predicted_range_m": 10.085317597883162,
+          "signed_error_m": 0.31921828905212024,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1893,
+          "observed_range_m": 9.754256146042238,
+          "predicted_range_m": 9.77865910277138,
+          "signed_error_m": 0.02440295672914239,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1933,
+          "observed_range_m": 6.088568983638316,
+          "predicted_range_m": 6.156347831964831,
+          "signed_error_m": 0.06777884832651448,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1934,
+          "observed_range_m": 6.063571289811052,
+          "predicted_range_m": 6.1310972954313705,
+          "signed_error_m": 0.06752600562031841,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 1967,
+          "observed_range_m": 5.891337372104357,
+          "predicted_range_m": 5.956881283084841,
+          "signed_error_m": 0.06554391098048384,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2004,
+          "observed_range_m": 5.952959688366389,
+          "predicted_range_m": 6.041049150902881,
+          "signed_error_m": 0.08808946253649275,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2005,
+          "observed_range_m": 5.928669925912423,
+          "predicted_range_m": 6.016456217811439,
+          "signed_error_m": 0.08778629189901554,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2021,
+          "observed_range_m": 5.687012000744649,
+          "predicted_range_m": 5.750399890467193,
+          "signed_error_m": 0.06338788972254417,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2046,
+          "observed_range_m": 5.6675034417790675,
+          "predicted_range_m": 5.731232355738859,
+          "signed_error_m": 0.06372891395979163,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2062,
+          "observed_range_m": 5.6732822768747075,
+          "predicted_range_m": 5.736802441785968,
+          "signed_error_m": 0.06352016491126022,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2095,
+          "observed_range_m": 5.934772514744788,
+          "predicted_range_m": 6.002025737088893,
+          "signed_error_m": 0.06725322234410491,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2103,
+          "observed_range_m": 6.115609556533807,
+          "predicted_range_m": 6.1850262769987,
+          "signed_error_m": 0.06941672046489344,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2141,
+          "observed_range_m": 6.275928352960937,
+          "predicted_range_m": 6.3470604948334115,
+          "signed_error_m": 0.07113214187247419,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2179,
+          "observed_range_m": 12.403462596689705,
+          "predicted_range_m": 12.206543433240387,
+          "signed_error_m": -0.19691916344931748,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2181,
+          "observed_range_m": 12.288079121836807,
+          "predicted_range_m": 12.093076112052655,
+          "signed_error_m": -0.19500300978415197,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2185,
+          "observed_range_m": 12.078555402838942,
+          "predicted_range_m": 11.886933046077955,
+          "signed_error_m": -0.1916223567609876,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2217,
+          "observed_range_m": 12.665892963378642,
+          "predicted_range_m": 12.824542113196163,
+          "signed_error_m": 0.15864914981752065,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2273,
+          "observed_range_m": 12.105290983001767,
+          "predicted_range_m": 12.090560690756423,
+          "signed_error_m": -0.0147302922453445,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2276,
+          "observed_range_m": 12.099003434888363,
+          "predicted_range_m": 12.07784205677472,
+          "signed_error_m": -0.021161378113642826,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2332,
+          "observed_range_m": 7.492272346234937,
+          "predicted_range_m": 7.589668502227498,
+          "signed_error_m": 0.0973961559925609,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2338,
+          "observed_range_m": 7.91892918933973,
+          "predicted_range_m": 8.009366768103364,
+          "signed_error_m": 0.09043757876363401,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2359,
+          "observed_range_m": 10.241433371456557,
+          "predicted_range_m": 10.35886840421265,
+          "signed_error_m": 0.11743503275609335,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2369,
+          "observed_range_m": 12.139383619396288,
+          "predicted_range_m": 12.057595169995135,
+          "signed_error_m": -0.08178844940115226,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2390,
+          "observed_range_m": 11.555317120655426,
+          "predicted_range_m": 11.687712346862673,
+          "signed_error_m": 0.13239522620724742,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2402,
+          "observed_range_m": 16.189281791915743,
+          "predicted_range_m": 16.55379964547105,
+          "signed_error_m": 0.36451785355530575,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2450,
+          "observed_range_m": 12.540756657333663,
+          "predicted_range_m": 12.697968535978958,
+          "signed_error_m": 0.1572118786452954,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2498,
+          "observed_range_m": 13.378163560160559,
+          "predicted_range_m": 13.149904950410244,
+          "signed_error_m": -0.22825860975031453,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2504,
+          "observed_range_m": 13.282241398306617,
+          "predicted_range_m": 13.147550475420418,
+          "signed_error_m": -0.13469092288619855,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2547,
+          "observed_range_m": 11.73765083021309,
+          "predicted_range_m": 11.406064312578197,
+          "signed_error_m": -0.3315865176348929,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2556,
+          "observed_range_m": 12.050046127540684,
+          "predicted_range_m": 11.732569335541909,
+          "signed_error_m": -0.3174767919987751,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2596,
+          "observed_range_m": 12.054632627466892,
+          "predicted_range_m": 12.13264585348514,
+          "signed_error_m": 0.078013226018248,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2643,
+          "observed_range_m": 12.103870336125164,
+          "predicted_range_m": 11.799377952920572,
+          "signed_error_m": -0.3044923832045914,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2655,
+          "observed_range_m": 14.782028118609343,
+          "predicted_range_m": 14.47081392821094,
+          "signed_error_m": -0.3112141903984025,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2667,
+          "observed_range_m": 14.556114795793375,
+          "predicted_range_m": 14.399603735985078,
+          "signed_error_m": -0.15651105980829705,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2719,
+          "observed_range_m": 7.263123767613327,
+          "predicted_range_m": 7.141478984480223,
+          "signed_error_m": -0.121644783133104,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2728,
+          "observed_range_m": 14.391619242298546,
+          "predicted_range_m": 14.088704758731254,
+          "signed_error_m": -0.30291448356729234,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2741,
+          "observed_range_m": 11.10790689395376,
+          "predicted_range_m": 10.969275915946028,
+          "signed_error_m": -0.1386309780077326,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2747,
+          "observed_range_m": 9.973822377142023,
+          "predicted_range_m": 9.84906636126451,
+          "signed_error_m": -0.12475601587751228,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2750,
+          "observed_range_m": 9.501600997781155,
+          "predicted_range_m": 9.38266941950289,
+          "signed_error_m": -0.11893157827826606,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2760,
+          "observed_range_m": 8.255238249052189,
+          "predicted_range_m": 8.151621431688689,
+          "signed_error_m": -0.10361681736350015,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2761,
+          "observed_range_m": 8.152699125929882,
+          "predicted_range_m": 8.050393543890229,
+          "signed_error_m": -0.10230558203965323,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2775,
+          "observed_range_m": 17.442132498993136,
+          "predicted_range_m": 17.181165997713624,
+          "signed_error_m": -0.26096650127951193,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2794,
+          "observed_range_m": 11.842287699685276,
+          "predicted_range_m": 11.69444776835678,
+          "signed_error_m": -0.14783993132849638,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2814,
+          "observed_range_m": 8.50724865714476,
+          "predicted_range_m": 8.400430902595392,
+          "signed_error_m": -0.10681775454936826,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2827,
+          "observed_range_m": 7.348440981972321,
+          "predicted_range_m": 7.272286693576082,
+          "signed_error_m": -0.07615428839623917,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2837,
+          "observed_range_m": 14.502708340346453,
+          "predicted_range_m": 14.197530232003107,
+          "signed_error_m": -0.30517810834334647,
+          "candidate_actor": "BP_Segment_Rot_C_271"
+        },
+        {
+          "point_index": 2880,
+          "observed_range_m": 12.378235877330662,
+          "predicted_range_m": 12.066768916933515,
+          "signed_error_m": -0.31146696039714605,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        },
+        {
+          "point_index": 2914,
+          "observed_range_m": 12.27872871729037,
+          "predicted_range_m": 11.969810708913489,
+          "signed_error_m": -0.30891800837688166,
+          "candidate_actor": "BP_Segment_Rot_C_272"
+        }
+      ]
+    },
+    {
+      "scan": "scan_011.npz",
+      "scan_sha256": "6c3065f9e2a2decb80ed77b35fceb0a7731aebc3afe71b241d49d62321c1b13c",
+      "gps_cloud_offset_s": -0.003000020980834961,
+      "imu_cloud_offset_s": -0.003000020980834961,
+      "selected": 128,
+      "partial_map_hits": 128,
+      "within_1m": 128,
+      "absolute_error_m_p50_p95": [
+        0.013131186622146407,
+        0.05832769915010493
+      ],
+      "rays": [
+        {
+          "point_index": 30,
+          "observed_range_m": 5.2991555133252435,
+          "predicted_range_m": 5.350906941948678,
+          "signed_error_m": 0.05175142862343485,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 228,
+          "observed_range_m": 22.592385177049795,
+          "predicted_range_m": 22.65508115363082,
+          "signed_error_m": 0.06269597658102555,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 251,
+          "observed_range_m": 23.986825694164242,
+          "predicted_range_m": 24.049413443527527,
+          "signed_error_m": 0.06258774936328493,
+          "candidate_actor": "BP_Segment_Rot_C_274"
+        },
+        {
+          "point_index": 266,
+          "observed_range_m": 22.74437032785698,
+          "predicted_range_m": 22.804699606840078,
+          "signed_error_m": 0.06032927898309737,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 303,
+          "observed_range_m": 19.2314993460938,
+          "predicted_range_m": 19.28610982555406,
+          "signed_error_m": 0.054610479460261985,
+          "candidate_actor": "BP_Segment_Rot_C_274"
+        },
+        {
+          "point_index": 331,
+          "observed_range_m": 7.79289769343086,
+          "predicted_range_m": 7.800031512964455,
+          "signed_error_m": 0.007133819533594377,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 346,
+          "observed_range_m": 5.76596689819742,
+          "predicted_range_m": 5.773836891088938,
+          "signed_error_m": 0.007869992891517796,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 391,
+          "observed_range_m": 5.355273216074315,
+          "predicted_range_m": 5.364342960120562,
+          "signed_error_m": 0.009069744046247052,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 471,
+          "observed_range_m": 5.866185055344855,
+          "predicted_range_m": 5.875852543624214,
+          "signed_error_m": 0.009667488279359482,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 545,
+          "observed_range_m": 9.548946118341272,
+          "predicted_range_m": 9.570334065693613,
+          "signed_error_m": 0.021387947352341286,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 588,
+          "observed_range_m": 10.602135327237251,
+          "predicted_range_m": 10.602284981117297,
+          "signed_error_m": 0.0001496538800456193,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 612,
+          "observed_range_m": 5.541105801482264,
+          "predicted_range_m": 5.553108194287031,
+          "signed_error_m": 0.012002392804767226,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 726,
+          "observed_range_m": 5.435954411152137,
+          "predicted_range_m": 5.489524882742087,
+          "signed_error_m": 0.053570471589949875,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 768,
+          "observed_range_m": 5.107535762575407,
+          "predicted_range_m": 5.1213505337737795,
+          "signed_error_m": 0.01381477119837271,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 899,
+          "observed_range_m": 5.133752295781996,
+          "predicted_range_m": 5.182284524338862,
+          "signed_error_m": 0.04853222855686656,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 906,
+          "observed_range_m": 5.069156450237708,
+          "predicted_range_m": 5.117090507617427,
+          "signed_error_m": 0.04793405737971934,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 915,
+          "observed_range_m": 5.02483909584891,
+          "predicted_range_m": 5.0723685234835525,
+          "signed_error_m": 0.047529427634642296,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 920,
+          "observed_range_m": 5.0183841612346605,
+          "predicted_range_m": 5.065870582251988,
+          "signed_error_m": 0.04748642101732781,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 924,
+          "observed_range_m": 5.022451444991495,
+          "predicted_range_m": 5.069996551239076,
+          "signed_error_m": 0.047545106247580904,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 996,
+          "observed_range_m": 4.5707056592018205,
+          "predicted_range_m": 4.58595932392975,
+          "signed_error_m": 0.015253664727929106,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1205,
+          "observed_range_m": 5.065793373625574,
+          "predicted_range_m": 5.084639541923171,
+          "signed_error_m": 0.01884616829759711,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1326,
+          "observed_range_m": 4.047634586489147,
+          "predicted_range_m": 4.06413754883097,
+          "signed_error_m": 0.016502962341822247,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1341,
+          "observed_range_m": 15.492084180816796,
+          "predicted_range_m": 15.536219812803841,
+          "signed_error_m": 0.04413563198704473,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1550,
+          "observed_range_m": 16.59780535460923,
+          "predicted_range_m": 16.678928155970848,
+          "signed_error_m": 0.08112280136161942,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1738,
+          "observed_range_m": 5.895160627924754,
+          "predicted_range_m": 5.912097785724572,
+          "signed_error_m": 0.01693715779981808,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1779,
+          "observed_range_m": 7.7692590465737075,
+          "predicted_range_m": 7.812033747693388,
+          "signed_error_m": 0.04277470111968018,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1781,
+          "observed_range_m": 7.309734075153087,
+          "predicted_range_m": 7.349499998678722,
+          "signed_error_m": 0.03976592352563468,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2108,
+          "observed_range_m": 3.269226620250656,
+          "predicted_range_m": 3.28078371317384,
+          "signed_error_m": 0.011557092923184076,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2142,
+          "observed_range_m": 3.769565743536707,
+          "predicted_range_m": 3.782422433031991,
+          "signed_error_m": 0.01285668949528418,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2148,
+          "observed_range_m": 3.575897612121973,
+          "predicted_range_m": 3.588233925213476,
+          "signed_error_m": 0.012336313091502848,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2212,
+          "observed_range_m": 3.2944746961926517,
+          "predicted_range_m": 3.3062673153172804,
+          "signed_error_m": 0.0117926191246287,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2251,
+          "observed_range_m": 3.726815523415022,
+          "predicted_range_m": 3.739895969112747,
+          "signed_error_m": 0.01308044569772493,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2272,
+          "observed_range_m": 3.145247326860342,
+          "predicted_range_m": 3.1567503878767504,
+          "signed_error_m": 0.011503061016408633,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2425,
+          "observed_range_m": 3.3522746558276624,
+          "predicted_range_m": 3.3647656315584515,
+          "signed_error_m": 0.012490975730789167,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2446,
+          "observed_range_m": 2.885604231255449,
+          "predicted_range_m": 2.896671203799197,
+          "signed_error_m": 0.011066972543748221,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2474,
+          "observed_range_m": 3.532972939359585,
+          "predicted_range_m": 3.546094797882144,
+          "signed_error_m": 0.013121858522559204,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2488,
+          "observed_range_m": 3.1209681897716157,
+          "predicted_range_m": 3.1328498268913734,
+          "signed_error_m": 0.011881637119757649,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2516,
+          "observed_range_m": 4.113764100149418,
+          "predicted_range_m": 4.128787121686996,
+          "signed_error_m": 0.015023021537577286,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2759,
+          "observed_range_m": 3.1992792732022113,
+          "predicted_range_m": 3.2120571549215367,
+          "signed_error_m": 0.012777881719325368,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2897,
+          "observed_range_m": 2.6266068270519165,
+          "predicted_range_m": 2.637535551600042,
+          "signed_error_m": 0.010928724548125324,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3051,
+          "observed_range_m": 2.8365647869997006,
+          "predicted_range_m": 2.8486542568133792,
+          "signed_error_m": 0.012089469813678644,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3110,
+          "observed_range_m": 2.774658185066169,
+          "predicted_range_m": 2.7865343409803276,
+          "signed_error_m": 0.01187615591415847,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3162,
+          "observed_range_m": 2.854415348866204,
+          "predicted_range_m": 2.866739860176375,
+          "signed_error_m": 0.012324511310171093,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3193,
+          "observed_range_m": 3.638491017671905,
+          "predicted_range_m": 3.654168854909314,
+          "signed_error_m": 0.015677837237408898,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3268,
+          "observed_range_m": 3.0027735882418667,
+          "predicted_range_m": 3.015978493186624,
+          "signed_error_m": 0.013204904944757345,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3426,
+          "observed_range_m": 3.3408422137378415,
+          "predicted_range_m": 3.355996795442222,
+          "signed_error_m": 0.015154581704380554,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3449,
+          "observed_range_m": 2.766286755866139,
+          "predicted_range_m": 2.7787993351401035,
+          "signed_error_m": 0.01251257927396443,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3500,
+          "observed_range_m": 2.8802590952887526,
+          "predicted_range_m": 2.893401868068036,
+          "signed_error_m": 0.01314277277928344,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3535,
+          "observed_range_m": 3.500614838328976,
+          "predicted_range_m": 3.5168754841878624,
+          "signed_error_m": 0.016260645858886313,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3586,
+          "observed_range_m": 3.742835943568868,
+          "predicted_range_m": 3.7604790611219876,
+          "signed_error_m": 0.017643117553119758,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3599,
+          "observed_range_m": 3.258137410676029,
+          "predicted_range_m": 3.273410465166844,
+          "signed_error_m": 0.015273054490815063,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3658,
+          "observed_range_m": 3.2038053846788523,
+          "predicted_range_m": 3.218976682333291,
+          "signed_error_m": 0.015171297654438476,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3664,
+          "observed_range_m": 3.049039106595994,
+          "predicted_range_m": 3.0633577496890503,
+          "signed_error_m": 0.014318643093056416,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3803,
+          "observed_range_m": 3.111125564045807,
+          "predicted_range_m": 3.1237890564660544,
+          "signed_error_m": 0.012663492420247557,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3851,
+          "observed_range_m": 2.9086444189577345,
+          "predicted_range_m": 2.920642542425926,
+          "signed_error_m": 0.011998123468191402,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3922,
+          "observed_range_m": 2.894882868894675,
+          "predicted_range_m": 2.9068261642117212,
+          "signed_error_m": 0.01194329531704641,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3935,
+          "observed_range_m": 2.8030884287399553,
+          "predicted_range_m": 2.8146372913985283,
+          "signed_error_m": 0.011548862658572911,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3947,
+          "observed_range_m": 2.763878816161668,
+          "predicted_range_m": 2.7753511634362513,
+          "signed_error_m": 0.011472347274583239,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4011,
+          "observed_range_m": 2.7026707116949518,
+          "predicted_range_m": 2.713953168712003,
+          "signed_error_m": 0.011282457017051328,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4093,
+          "observed_range_m": 2.7049112901615207,
+          "predicted_range_m": 2.7161593769671026,
+          "signed_error_m": 0.01124808680558198,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4148,
+          "observed_range_m": 2.6678683342009144,
+          "predicted_range_m": 2.6789373394680442,
+          "signed_error_m": 0.011069005267129839,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4221,
+          "observed_range_m": 2.5365710257379797,
+          "predicted_range_m": 2.5472382392150963,
+          "signed_error_m": 0.010667213477116633,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4498,
+          "observed_range_m": 2.4037956776670777,
+          "predicted_range_m": 2.41399049303771,
+          "signed_error_m": 0.01019481537063216,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4509,
+          "observed_range_m": 2.3794440467723437,
+          "predicted_range_m": 2.3896301807871136,
+          "signed_error_m": 0.010186134014769976,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4554,
+          "observed_range_m": 2.3848088742067524,
+          "predicted_range_m": 2.3949501609635577,
+          "signed_error_m": 0.010141286756805368,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4581,
+          "observed_range_m": 2.3778451572010435,
+          "predicted_range_m": 2.388040724462408,
+          "signed_error_m": 0.010195567261364502,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4644,
+          "observed_range_m": 2.4979044026275212,
+          "predicted_range_m": 2.50855584403542,
+          "signed_error_m": 0.010651441407898865,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4654,
+          "observed_range_m": 2.4162044114243155,
+          "predicted_range_m": 2.4265272701312015,
+          "signed_error_m": 0.010322858706885985,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4655,
+          "observed_range_m": 2.40965411278639,
+          "predicted_range_m": 2.4199594083523865,
+          "signed_error_m": 0.010305295565996353,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4669,
+          "observed_range_m": 2.3459690039024053,
+          "predicted_range_m": 2.356038594691092,
+          "signed_error_m": 0.010069590788686522,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4867,
+          "observed_range_m": 2.479951049269196,
+          "predicted_range_m": 2.4906069534306856,
+          "signed_error_m": 0.010655904161489538,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4875,
+          "observed_range_m": 2.410307817614141,
+          "predicted_range_m": 2.420708035810318,
+          "signed_error_m": 0.010400218196177313,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4880,
+          "observed_range_m": 2.3764689758541526,
+          "predicted_range_m": 2.386718196955598,
+          "signed_error_m": 0.01024922110144555,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5012,
+          "observed_range_m": 2.3085360193010076,
+          "predicted_range_m": 2.3185538170836555,
+          "signed_error_m": 0.010017797782647886,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5130,
+          "observed_range_m": 2.3188060759451545,
+          "predicted_range_m": 2.328955665026095,
+          "signed_error_m": 0.010149589080940657,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5467,
+          "observed_range_m": 2.4222671303423557,
+          "predicted_range_m": 2.4330593093568433,
+          "signed_error_m": 0.01079217901448759,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5617,
+          "observed_range_m": 3.1478220999926267,
+          "predicted_range_m": 3.161600381412438,
+          "signed_error_m": 0.0137782814198113,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5646,
+          "observed_range_m": 3.771150383826363,
+          "predicted_range_m": 3.787842674874242,
+          "signed_error_m": 0.01669229104787906,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5659,
+          "observed_range_m": 2.9249662494021598,
+          "predicted_range_m": 2.9376855249632787,
+          "signed_error_m": 0.012719275561118959,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5764,
+          "observed_range_m": 2.753821911927834,
+          "predicted_range_m": 2.7658050301187886,
+          "signed_error_m": 0.011983118190954656,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5819,
+          "observed_range_m": 2.6952024234277467,
+          "predicted_range_m": 2.7068919070931914,
+          "signed_error_m": 0.011689483665444644,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5987,
+          "observed_range_m": 2.5632191326038494,
+          "predicted_range_m": 2.5742993950025412,
+          "signed_error_m": 0.011080262398691865,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5997,
+          "observed_range_m": 2.626037373344901,
+          "predicted_range_m": 2.6373983731097836,
+          "signed_error_m": 0.011360999764882695,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6098,
+          "observed_range_m": 3.3610569639695207,
+          "predicted_range_m": 3.3758145026362913,
+          "signed_error_m": 0.014757538666770653,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6225,
+          "observed_range_m": 2.5337417052887554,
+          "predicted_range_m": 2.544717682255268,
+          "signed_error_m": 0.010975976966512757,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6398,
+          "observed_range_m": 2.5207242336378832,
+          "predicted_range_m": 2.531632694099165,
+          "signed_error_m": 0.010908460461281688,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6411,
+          "observed_range_m": 2.682794280245774,
+          "predicted_range_m": 2.694394400578656,
+          "signed_error_m": 0.011600120332881936,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6436,
+          "observed_range_m": 2.3756217004849596,
+          "predicted_range_m": 2.3858435491626673,
+          "signed_error_m": 0.010221848677707701,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6539,
+          "observed_range_m": 2.960006330610213,
+          "predicted_range_m": 2.97284673568324,
+          "signed_error_m": 0.012840405073027306,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6598,
+          "observed_range_m": 3.0244197463060862,
+          "predicted_range_m": 3.03756026102782,
+          "signed_error_m": 0.01314051472173361,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6622,
+          "observed_range_m": 2.4817480812493113,
+          "predicted_range_m": 2.4924437209098143,
+          "signed_error_m": 0.01069563966050291,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6712,
+          "observed_range_m": 3.0679717565704956,
+          "predicted_range_m": 3.0813266486067667,
+          "signed_error_m": 0.01335489203627116,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6722,
+          "observed_range_m": 2.3820381862717017,
+          "predicted_range_m": 2.3922637373981264,
+          "signed_error_m": 0.010225551126424648,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6852,
+          "observed_range_m": 2.5533324977966254,
+          "predicted_range_m": 2.564282376993396,
+          "signed_error_m": 0.010949879196770596,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6942,
+          "observed_range_m": 2.384874259257077,
+          "predicted_range_m": 2.3950335086682495,
+          "signed_error_m": 0.01015924941117241,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6964,
+          "observed_range_m": 2.57326684196518,
+          "predicted_range_m": 2.584265287752278,
+          "signed_error_m": 0.010998445787097744,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7080,
+          "observed_range_m": 2.6577319199543408,
+          "predicted_range_m": 2.669157886219017,
+          "signed_error_m": 0.01142596626467629,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7282,
+          "observed_range_m": 2.533483809011621,
+          "predicted_range_m": 2.5442146627935607,
+          "signed_error_m": 0.010730853781939498,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7497,
+          "observed_range_m": 10.12843225004479,
+          "predicted_range_m": 10.179486712959418,
+          "signed_error_m": 0.05105446291462812,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7530,
+          "observed_range_m": 5.628787200581077,
+          "predicted_range_m": 5.654979622085014,
+          "signed_error_m": 0.026192421503936636,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7637,
+          "observed_range_m": 4.974178438088071,
+          "predicted_range_m": 4.996891805205557,
+          "signed_error_m": 0.022713367117486172,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7700,
+          "observed_range_m": 5.517763822235286,
+          "predicted_range_m": 5.543075402173178,
+          "signed_error_m": 0.02531157993789268,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7722,
+          "observed_range_m": 9.746984559960472,
+          "predicted_range_m": 9.79494973936335,
+          "signed_error_m": 0.04796517940287792,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7779,
+          "observed_range_m": 3.4394796235640923,
+          "predicted_range_m": 3.4546862654366888,
+          "signed_error_m": 0.01520664187259646,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7806,
+          "observed_range_m": 4.816151207821436,
+          "predicted_range_m": 4.837986593574398,
+          "signed_error_m": 0.02183538575296229,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7938,
+          "observed_range_m": 7.179076564639415,
+          "predicted_range_m": 7.212511270861234,
+          "signed_error_m": 0.03343470622181943,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8026,
+          "observed_range_m": 4.317193482801648,
+          "predicted_range_m": 4.336430904843877,
+          "signed_error_m": 0.019237422042229113,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8088,
+          "observed_range_m": 4.714743769882464,
+          "predicted_range_m": 4.735640422401303,
+          "signed_error_m": 0.02089665251883943,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8265,
+          "observed_range_m": 5.506044599385033,
+          "predicted_range_m": 5.5304868389223465,
+          "signed_error_m": 0.02444223953731317,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8312,
+          "observed_range_m": 4.609259797156683,
+          "predicted_range_m": 4.629409526923086,
+          "signed_error_m": 0.020149729766403723,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8313,
+          "observed_range_m": 4.690721688627961,
+          "predicted_range_m": 4.711218830854688,
+          "signed_error_m": 0.02049714222672705,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8491,
+          "observed_range_m": 5.708976707477354,
+          "predicted_range_m": 5.73385901146249,
+          "signed_error_m": 0.024882303985136467,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8561,
+          "observed_range_m": 8.523220292600142,
+          "predicted_range_m": 8.560947302177231,
+          "signed_error_m": 0.03772700957708963,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8826,
+          "observed_range_m": 5.699415623688482,
+          "predicted_range_m": 5.723602807082063,
+          "signed_error_m": 0.024187183393580725,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8835,
+          "observed_range_m": 7.177068436369931,
+          "predicted_range_m": 7.207484055619124,
+          "signed_error_m": 0.03041561924919378,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8937,
+          "observed_range_m": 5.664500843421237,
+          "predicted_range_m": 5.688209414524241,
+          "signed_error_m": 0.02370857110300406,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9032,
+          "observed_range_m": 4.262548662307221,
+          "predicted_range_m": 4.280336627408887,
+          "signed_error_m": 0.01778796510166547,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9085,
+          "observed_range_m": 4.133280022707658,
+          "predicted_range_m": 4.150398880072403,
+          "signed_error_m": 0.017118857364745388,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9198,
+          "observed_range_m": 10.217621400649515,
+          "predicted_range_m": 10.268969794925459,
+          "signed_error_m": 0.05134839427594429,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9280,
+          "observed_range_m": 10.58131422649735,
+          "predicted_range_m": 10.632256172662164,
+          "signed_error_m": 0.050941946164813956,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9463,
+          "observed_range_m": 27.645152382258434,
+          "predicted_range_m": 27.592024973055693,
+          "signed_error_m": -0.05312740920274095,
+          "candidate_actor": "BP_Segment_Rot_C_1036"
+        },
+        {
+          "point_index": 9587,
+          "observed_range_m": 26.529335168376626,
+          "predicted_range_m": 26.629890903386997,
+          "signed_error_m": 0.10055573501037074,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9593,
+          "observed_range_m": 28.884360463568417,
+          "predicted_range_m": 28.89826374870968,
+          "signed_error_m": 0.013903285141264377,
+          "candidate_actor": "BP_Segment_Rot_C_1036"
+        },
+        {
+          "point_index": 9602,
+          "observed_range_m": 12.595600951512264,
+          "predicted_range_m": 12.645427722188124,
+          "signed_error_m": 0.04982677067586039,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9661,
+          "observed_range_m": 24.109367361452197,
+          "predicted_range_m": 24.04140641242876,
+          "signed_error_m": -0.06796094902343697,
+          "candidate_actor": "BP_Segment_Rot_C_1037"
+        },
+        {
+          "point_index": 9752,
+          "observed_range_m": 15.53846864274554,
+          "predicted_range_m": 15.684117394873205,
+          "signed_error_m": 0.1456487521276646,
+          "candidate_actor": "BP_Segment_Rot_C_274"
+        },
+        {
+          "point_index": 9762,
+          "observed_range_m": 18.431896227433235,
+          "predicted_range_m": 18.436669821950694,
+          "signed_error_m": 0.004773594517459401,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 9848,
+          "observed_range_m": 14.836862316396308,
+          "predicted_range_m": 14.839798321341853,
+          "signed_error_m": 0.002936004945544468,
+          "candidate_actor": "BP_Segment_Rot_C_274"
+        }
+      ]
+    },
+    {
+      "scan": "scan_022.npz",
+      "scan_sha256": "3b2052cda0ccdc084ded0771f1ec37129ec69cfd5ff060009e32f86bc0cb90c0",
+      "gps_cloud_offset_s": 0.0,
+      "imu_cloud_offset_s": 0.0,
+      "selected": 128,
+      "partial_map_hits": 128,
+      "within_1m": 128,
+      "absolute_error_m_p50_p95": [
+        0.06171475180057873,
+        0.24864970834908054
+      ],
+      "rays": [
+        {
+          "point_index": 529,
+          "observed_range_m": 8.743836995885793,
+          "predicted_range_m": 8.571236846616682,
+          "signed_error_m": -0.17260014926911182,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 535,
+          "observed_range_m": 12.778486226576527,
+          "predicted_range_m": 12.525898316622852,
+          "signed_error_m": -0.2525879099536752,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 577,
+          "observed_range_m": 10.362554519283272,
+          "predicted_range_m": 10.157929078538837,
+          "signed_error_m": -0.20462544074443478,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 742,
+          "observed_range_m": 5.240987788223276,
+          "predicted_range_m": 5.229424985490741,
+          "signed_error_m": -0.011562802732534294,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 780,
+          "observed_range_m": 5.549746553193699,
+          "predicted_range_m": 5.537508260324171,
+          "signed_error_m": -0.012238292869527712,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 861,
+          "observed_range_m": 5.101033872820803,
+          "predicted_range_m": 5.180089453580429,
+          "signed_error_m": 0.0790555807596256,
+          "candidate_actor": "1_1_BP_Segment_Half"
+        },
+        {
+          "point_index": 1079,
+          "observed_range_m": 21.477190527461214,
+          "predicted_range_m": 21.053756154042663,
+          "signed_error_m": -0.4234343734185515,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1126,
+          "observed_range_m": 15.149603212990005,
+          "predicted_range_m": 15.118884388362027,
+          "signed_error_m": -0.03071882462797859,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1254,
+          "observed_range_m": 9.80430910963914,
+          "predicted_range_m": 9.611073556481534,
+          "signed_error_m": -0.19323555315760643,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1267,
+          "observed_range_m": 24.18215350689519,
+          "predicted_range_m": 23.706373536658642,
+          "signed_error_m": -0.47577997023654817,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1376,
+          "observed_range_m": 9.440959468124918,
+          "predicted_range_m": 9.255148607984767,
+          "signed_error_m": -0.18581086014015114,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1412,
+          "observed_range_m": 5.103545186906378,
+          "predicted_range_m": 5.00277484633555,
+          "signed_error_m": -0.10077034057082823,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1448,
+          "observed_range_m": 7.672977498086712,
+          "predicted_range_m": 7.659031160378323,
+          "signed_error_m": -0.013946337708389045,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1576,
+          "observed_range_m": 5.019164963701984,
+          "predicted_range_m": 4.920114989628686,
+          "signed_error_m": -0.09904997407329752,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1599,
+          "observed_range_m": 3.7912197276287785,
+          "predicted_range_m": 3.716392578451658,
+          "signed_error_m": -0.07482714917712041,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1604,
+          "observed_range_m": 3.622803055158186,
+          "predicted_range_m": 3.5513398293717997,
+          "signed_error_m": -0.07146322578638609,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1628,
+          "observed_range_m": 5.237162886983625,
+          "predicted_range_m": 5.13383814943778,
+          "signed_error_m": -0.10332473754584459,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1662,
+          "observed_range_m": 3.4850022740055495,
+          "predicted_range_m": 3.4162884341260322,
+          "signed_error_m": -0.06871383987951729,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1727,
+          "observed_range_m": 9.220431017317246,
+          "predicted_range_m": 9.298576808393445,
+          "signed_error_m": 0.07814579107619934,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 1997,
+          "observed_range_m": 3.1779969143006266,
+          "predicted_range_m": 3.1152853812005303,
+          "signed_error_m": -0.06271153310009625,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2349,
+          "observed_range_m": 5.07137168027526,
+          "predicted_range_m": 4.971405405968693,
+          "signed_error_m": -0.09996627430656702,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2388,
+          "observed_range_m": 3.019722718424351,
+          "predicted_range_m": 2.9602104172555572,
+          "signed_error_m": -0.05951230116879369,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2392,
+          "observed_range_m": 2.9212767705809033,
+          "predicted_range_m": 2.863696334376429,
+          "signed_error_m": -0.057580436204474506,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2394,
+          "observed_range_m": 15.137227948321923,
+          "predicted_range_m": 15.121580317136408,
+          "signed_error_m": -0.01564763118551582,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2619,
+          "observed_range_m": 14.756735514551446,
+          "predicted_range_m": 14.705438484644839,
+          "signed_error_m": -0.051297029906606895,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2631,
+          "observed_range_m": 4.837308899350848,
+          "predicted_range_m": 4.742045312409199,
+          "signed_error_m": -0.09526358694164916,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2705,
+          "observed_range_m": 3.663655403977535,
+          "predicted_range_m": 3.591515745745761,
+          "signed_error_m": -0.07213965823177393,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2814,
+          "observed_range_m": 3.8358471792392352,
+          "predicted_range_m": 3.760246643421721,
+          "signed_error_m": -0.07560053581751403,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2826,
+          "observed_range_m": 3.3223439931382743,
+          "predicted_range_m": 3.2569069632234906,
+          "signed_error_m": -0.06543702991478373,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2896,
+          "observed_range_m": 2.935325358452157,
+          "predicted_range_m": 2.8774555978023466,
+          "signed_error_m": -0.05786976064981042,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2897,
+          "observed_range_m": 2.912322700361912,
+          "predicted_range_m": 2.854907353829294,
+          "signed_error_m": -0.05741534653261793,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2910,
+          "observed_range_m": 5.027071242408902,
+          "predicted_range_m": 4.92800889293486,
+          "signed_error_m": -0.09906234947404169,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2930,
+          "observed_range_m": 3.682470886228225,
+          "predicted_range_m": 3.6099346267755155,
+          "signed_error_m": -0.07253625945270947,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2932,
+          "observed_range_m": 3.5937668552953506,
+          "predicted_range_m": 3.5229998566493337,
+          "signed_error_m": -0.07076699864601688,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 2981,
+          "observed_range_m": 3.9606199447368358,
+          "predicted_range_m": 3.8826124781623057,
+          "signed_error_m": -0.07800746657453006,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3248,
+          "observed_range_m": 3.304007112556385,
+          "predicted_range_m": 3.23884178532479,
+          "signed_error_m": -0.06516532723159507,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3291,
+          "observed_range_m": 3.505920534016532,
+          "predicted_range_m": 3.436799220889217,
+          "signed_error_m": -0.06912131312731518,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3330,
+          "observed_range_m": 2.904366109823544,
+          "predicted_range_m": 2.847111194277571,
+          "signed_error_m": -0.05725491554597317,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3412,
+          "observed_range_m": 3.1520488177427683,
+          "predicted_range_m": 3.0898839197767387,
+          "signed_error_m": -0.06216489796602964,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3438,
+          "observed_range_m": 2.8059887768165015,
+          "predicted_range_m": 2.750651115611652,
+          "signed_error_m": -0.05533766120484929,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3475,
+          "observed_range_m": 2.9687854842114016,
+          "predicted_range_m": 2.910197821610331,
+          "signed_error_m": -0.05858766260107062,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3581,
+          "observed_range_m": 2.960805354466155,
+          "predicted_range_m": 2.902388304951944,
+          "signed_error_m": -0.058417049514210895,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3592,
+          "observed_range_m": 2.7942226667903665,
+          "predicted_range_m": 2.7390809304483708,
+          "signed_error_m": -0.055141736341995706,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3640,
+          "observed_range_m": 2.8636140970082646,
+          "predicted_range_m": 2.807123359375109,
+          "signed_error_m": -0.0564907376331556,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3767,
+          "observed_range_m": 2.5973028435134804,
+          "predicted_range_m": 2.5461254821064836,
+          "signed_error_m": -0.0511773614069968,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 3882,
+          "observed_range_m": 2.511363979966633,
+          "predicted_range_m": 2.461875344081999,
+          "signed_error_m": -0.049488635884634036,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4217,
+          "observed_range_m": 2.419946081999975,
+          "predicted_range_m": 2.3722231113416203,
+          "signed_error_m": -0.047722970658354846,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4231,
+          "observed_range_m": 2.329382943515425,
+          "predicted_range_m": 2.2834994951861267,
+          "signed_error_m": -0.04588344832929847,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4365,
+          "observed_range_m": 2.6454388481704694,
+          "predicted_range_m": 2.5932957342840837,
+          "signed_error_m": -0.052143113886385706,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4503,
+          "observed_range_m": 2.3676644334009884,
+          "predicted_range_m": 2.3209626321628964,
+          "signed_error_m": -0.04670180123809198,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4575,
+          "observed_range_m": 2.3004462196049955,
+          "predicted_range_m": 2.2551293300356003,
+          "signed_error_m": -0.04531688956939517,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4730,
+          "observed_range_m": 2.3907528146675032,
+          "predicted_range_m": 2.343599687155407,
+          "signed_error_m": -0.047153127512096216,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4824,
+          "observed_range_m": 2.586957576958655,
+          "predicted_range_m": 2.535949659515557,
+          "signed_error_m": -0.05100791744309818,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4896,
+          "observed_range_m": 2.4647881469538593,
+          "predicted_range_m": 2.4162462473818436,
+          "signed_error_m": -0.04854189957201571,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 4929,
+          "observed_range_m": 2.7344710755526487,
+          "predicted_range_m": 2.6805671376073597,
+          "signed_error_m": -0.05390393794528903,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5197,
+          "observed_range_m": 2.6977282321007072,
+          "predicted_range_m": 2.6445713180101666,
+          "signed_error_m": -0.053156914090540575,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5331,
+          "observed_range_m": 2.6293480852657205,
+          "predicted_range_m": 2.5774947450462484,
+          "signed_error_m": -0.05185334021947208,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5337,
+          "observed_range_m": 2.662099544645108,
+          "predicted_range_m": 2.609629734149179,
+          "signed_error_m": -0.052469810495928915,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5342,
+          "observed_range_m": 2.697706619816107,
+          "predicted_range_m": 2.6445264256556156,
+          "signed_error_m": -0.05318019416049147,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5465,
+          "observed_range_m": 2.713038792967117,
+          "predicted_range_m": 2.6595784004739795,
+          "signed_error_m": -0.05346039249313739,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5517,
+          "observed_range_m": 2.631552222448443,
+          "predicted_range_m": 2.5796958954586704,
+          "signed_error_m": -0.051856326989772494,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5531,
+          "observed_range_m": 2.4426036754136153,
+          "predicted_range_m": 2.3944485117388243,
+          "signed_error_m": -0.048155163674791,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5574,
+          "observed_range_m": 2.606436097001902,
+          "predicted_range_m": 2.5550745155360977,
+          "signed_error_m": -0.051361581465804385,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5592,
+          "observed_range_m": 2.407610792405894,
+          "predicted_range_m": 2.3601670593822366,
+          "signed_error_m": -0.04744373302365723,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5594,
+          "observed_range_m": 2.407134038165453,
+          "predicted_range_m": 2.3596630879566214,
+          "signed_error_m": -0.04747095020883174,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5674,
+          "observed_range_m": 2.452582358028918,
+          "predicted_range_m": 2.4042097591852096,
+          "signed_error_m": -0.04837259884370848,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5775,
+          "observed_range_m": 2.3585039355027546,
+          "predicted_range_m": 2.311980762142308,
+          "signed_error_m": -0.046523173360446535,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5835,
+          "observed_range_m": 2.3557158041536717,
+          "predicted_range_m": 2.3093124733775237,
+          "signed_error_m": -0.046403330776148,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5898,
+          "observed_range_m": 2.3762767669912854,
+          "predicted_range_m": 2.329405912513376,
+          "signed_error_m": -0.04687085447790951,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5935,
+          "observed_range_m": 2.298325828321796,
+          "predicted_range_m": 2.253025771856996,
+          "signed_error_m": -0.045300056464800065,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5960,
+          "observed_range_m": 2.4047055726194846,
+          "predicted_range_m": 2.357287605022406,
+          "signed_error_m": -0.047417967597078725,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 5997,
+          "observed_range_m": 2.3006159205753556,
+          "predicted_range_m": 2.255240032642498,
+          "signed_error_m": -0.045375887932857406,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6013,
+          "observed_range_m": 2.3739302535789615,
+          "predicted_range_m": 2.3271752807393624,
+          "signed_error_m": -0.04675497283959906,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6063,
+          "observed_range_m": 2.3321823875856538,
+          "predicted_range_m": 2.286236477696117,
+          "signed_error_m": -0.04594590988953673,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6241,
+          "observed_range_m": 2.3922386777010867,
+          "predicted_range_m": 2.345048536478791,
+          "signed_error_m": -0.0471901412222957,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6272,
+          "observed_range_m": 2.284043150671597,
+          "predicted_range_m": 2.2390588444164607,
+          "signed_error_m": -0.044984306255136275,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6311,
+          "observed_range_m": 2.5370159998313393,
+          "predicted_range_m": 2.4869905396496894,
+          "signed_error_m": -0.05002546018164988,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6332,
+          "observed_range_m": 2.29782652375382,
+          "predicted_range_m": 2.252530888363173,
+          "signed_error_m": -0.04529563539064707,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6377,
+          "observed_range_m": 2.295121847519993,
+          "predicted_range_m": 2.249925270556979,
+          "signed_error_m": -0.0451965769630136,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6598,
+          "observed_range_m": 2.359335641859075,
+          "predicted_range_m": 2.3128025205561054,
+          "signed_error_m": -0.046533121302969604,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6621,
+          "observed_range_m": 2.401222640417393,
+          "predicted_range_m": 2.353919949265829,
+          "signed_error_m": -0.04730269115156416,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6724,
+          "observed_range_m": 2.418260795358716,
+          "predicted_range_m": 2.370585490560485,
+          "signed_error_m": -0.04767530479823101,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6754,
+          "observed_range_m": 2.616165933532835,
+          "predicted_range_m": 2.564615279793633,
+          "signed_error_m": -0.05155065373920209,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6862,
+          "observed_range_m": 4.827585855640964,
+          "predicted_range_m": 4.732378191905354,
+          "signed_error_m": -0.09520766373561074,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6916,
+          "observed_range_m": 4.584701330684934,
+          "predicted_range_m": 4.494245773911737,
+          "signed_error_m": -0.09045555677319683,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 6936,
+          "observed_range_m": 3.220282525026122,
+          "predicted_range_m": 3.156766938192736,
+          "signed_error_m": -0.06351558683338565,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7178,
+          "observed_range_m": 3.406909276840238,
+          "predicted_range_m": 3.3397840389286118,
+          "signed_error_m": -0.06712523791162628,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7195,
+          "observed_range_m": 4.087842741299655,
+          "predicted_range_m": 4.007326008798576,
+          "signed_error_m": -0.08051673250107871,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7358,
+          "observed_range_m": 3.6829025825182296,
+          "predicted_range_m": 3.610249354612731,
+          "signed_error_m": -0.07265322790549833,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7618,
+          "observed_range_m": 2.9068667382635427,
+          "predicted_range_m": 2.8496003171731057,
+          "signed_error_m": -0.057266421090437,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7697,
+          "observed_range_m": 3.612944333258377,
+          "predicted_range_m": 3.54166933214334,
+          "signed_error_m": -0.07127500111503693,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7768,
+          "observed_range_m": 4.45624616389279,
+          "predicted_range_m": 4.368330739548502,
+          "signed_error_m": -0.08791542434428834,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7812,
+          "observed_range_m": 3.7182243200186513,
+          "predicted_range_m": 3.6449393389445204,
+          "signed_error_m": -0.07328498107413095,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7852,
+          "observed_range_m": 3.107346780163224,
+          "predicted_range_m": 3.046082174528096,
+          "signed_error_m": -0.06126460563512781,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7919,
+          "observed_range_m": 3.4808233516340654,
+          "predicted_range_m": 3.4121828407165427,
+          "signed_error_m": -0.06864051091752277,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 7940,
+          "observed_range_m": 2.5988341726866584,
+          "predicted_range_m": 2.5476248320248827,
+          "signed_error_m": -0.05120934066177574,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8008,
+          "observed_range_m": 2.8082862220375575,
+          "predicted_range_m": 2.7529235044116676,
+          "signed_error_m": -0.05536271762588996,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8074,
+          "observed_range_m": 3.050628188142435,
+          "predicted_range_m": 2.990503530566632,
+          "signed_error_m": -0.06012465757580321,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8120,
+          "observed_range_m": 2.820603044680962,
+          "predicted_range_m": 2.764995745707839,
+          "signed_error_m": -0.05560729897312289,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8121,
+          "observed_range_m": 2.84145465522378,
+          "predicted_range_m": 2.7854685503170153,
+          "signed_error_m": -0.05598610490676448,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8172,
+          "observed_range_m": 2.7533971197907383,
+          "predicted_range_m": 2.699123931772815,
+          "signed_error_m": -0.054273188017923246,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8214,
+          "observed_range_m": 4.311355945851002,
+          "predicted_range_m": 4.226359509089911,
+          "signed_error_m": -0.0849964367610907,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8270,
+          "observed_range_m": 4.332861691858546,
+          "predicted_range_m": 4.247441086320765,
+          "signed_error_m": -0.08542060553778086,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8426,
+          "observed_range_m": 3.7373128913840996,
+          "predicted_range_m": 3.663679268222518,
+          "signed_error_m": -0.07363362316158151,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8612,
+          "observed_range_m": 12.255754285404091,
+          "predicted_range_m": 12.01397690588901,
+          "signed_error_m": -0.2417773795150815,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8622,
+          "observed_range_m": 6.346286564687245,
+          "predicted_range_m": 6.221227768143888,
+          "signed_error_m": -0.12505879654335672,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8750,
+          "observed_range_m": 12.79325893585978,
+          "predicted_range_m": 12.540908742753931,
+          "signed_error_m": -0.2523501931058494,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8794,
+          "observed_range_m": 5.116119061271961,
+          "predicted_range_m": 5.015284701983542,
+          "signed_error_m": -0.10083435928841933,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8836,
+          "observed_range_m": 5.318006460655046,
+          "predicted_range_m": 5.213240653789711,
+          "signed_error_m": -0.10476580686533499,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 8883,
+          "observed_range_m": 6.056437930651758,
+          "predicted_range_m": 5.9369545370245485,
+          "signed_error_m": -0.11948339362720972,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9085,
+          "observed_range_m": 24.399002118860018,
+          "predicted_range_m": 23.917756193892057,
+          "signed_error_m": -0.48124592496796126,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9092,
+          "observed_range_m": 5.158620719700612,
+          "predicted_range_m": 5.0569059886153,
+          "signed_error_m": -0.1017147310853117,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9117,
+          "observed_range_m": 10.812335930874818,
+          "predicted_range_m": 10.599222138394238,
+          "signed_error_m": -0.2131137924805806,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9133,
+          "observed_range_m": 4.835246281478447,
+          "predicted_range_m": 4.739880074618372,
+          "signed_error_m": -0.09536620686007513,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9162,
+          "observed_range_m": 11.246715661510656,
+          "predicted_range_m": 11.025061455342103,
+          "signed_error_m": -0.22165420616855336,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9501,
+          "observed_range_m": 6.852448865002961,
+          "predicted_range_m": 6.717422960134346,
+          "signed_error_m": -0.13502590486861443,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9581,
+          "observed_range_m": 5.628739777801178,
+          "predicted_range_m": 5.517812703909123,
+          "signed_error_m": -0.11092707389205447,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9626,
+          "observed_range_m": 5.788014686901767,
+          "predicted_range_m": 5.673844076948117,
+          "signed_error_m": -0.11417060995364992,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9650,
+          "observed_range_m": 13.832496164848543,
+          "predicted_range_m": 13.559966486315536,
+          "signed_error_m": -0.27252967853300625,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9654,
+          "observed_range_m": 18.19106073006613,
+          "predicted_range_m": 17.832899335109683,
+          "signed_error_m": -0.35816139495644705,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9688,
+          "observed_range_m": 10.261824188156258,
+          "predicted_range_m": 10.059521607559827,
+          "signed_error_m": -0.20230258059643091,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9690,
+          "observed_range_m": 11.241994916367094,
+          "predicted_range_m": 11.020338133510394,
+          "signed_error_m": -0.22165678285669976,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9706,
+          "observed_range_m": 4.960731375119051,
+          "predicted_range_m": 4.86296486320717,
+          "signed_error_m": -0.09776651191188179,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9788,
+          "observed_range_m": 4.867997560559079,
+          "predicted_range_m": 4.772103393842302,
+          "signed_error_m": -0.09589416671677675,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9802,
+          "observed_range_m": 6.590486470798257,
+          "predicted_range_m": 6.460682722588104,
+          "signed_error_m": -0.1298037482101524,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9828,
+          "observed_range_m": 4.920929867327445,
+          "predicted_range_m": 4.823992103688,
+          "signed_error_m": -0.09693776363944462,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9844,
+          "observed_range_m": 7.030159317012077,
+          "predicted_range_m": 6.891692193680435,
+          "signed_error_m": -0.13846712333164213,
+          "candidate_actor": "BP_Building_Junction_7"
+        },
+        {
+          "point_index": 9930,
+          "observed_range_m": 29.824550167942412,
+          "predicted_range_m": 29.846842328628636,
+          "signed_error_m": 0.02229216068622364,
+          "candidate_actor": "BP_Segment_Rot_C_1036"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "candidate origin only supported by short initial-area trials",
+    "GPS/IMU are latest samples, not synchronized to each cloud",
+    "sensor offset and coordinate convention are assumptions",
+    "collision meshes and lidar visual returns are different modalities",
+    "most building components and other objects absent from partial map",
+    "matches do not prove collision geometry; misses do not prove free space"
+  ]
+}

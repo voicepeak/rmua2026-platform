@@ -1,0 +1,218 @@
+{
+  "method": "50 ms grid, relative to first command header; duplicate stream timestamps keep last; linear pose/wind interpolation; zero-order-hold command; no extrapolation",
+  "limitations": [
+    "diagnostic injected stage and wind, not natural progression",
+    "command publication is not verified applied motor input",
+    "header alignment does not establish physical synchronization",
+    "repeat variability is not a causal estimate of wind force",
+    "trajectory may include ground contact and other environmental effects"
+  ],
+  "within_seed": {
+    "123": {
+      "interval_s": [
+        0.0,
+        4.800000000000001
+      ],
+      "sample_count": 97,
+      "pose_difference_m": {
+        "median": 0.04421636282819955,
+        "p95": 0.3002394585596761,
+        "max": 0.5581757308843749
+      },
+      "wind_difference_m_s": {
+        "median": 0.0,
+        "p95": 1.106670081774772,
+        "max": 1.1366394612786328
+      },
+      "command_difference_pwm": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "source_sha256": [
+        {
+          "pwm_commands.jsonl": "8ccd342e53c56e7f0b42ae8cf8c984ce56d82993c30fff7386d0fd1bfb90c8c7",
+          "pose_gt_posthoc.csv": "da4039afd2d7fcad945bb8dc41b234bd4600a6bd788151bc4ce76357b299075a",
+          "before_reset_wind.csv": "ce87fb284cfd70945c6d8e50936fd7bc3274c0ea18fa0433accd168b72a5d777"
+        },
+        {
+          "pwm_commands.jsonl": "cbc30f0d28ccccc9db7510996760560b193a16bd988031f3b3b51cd2a32e1ff5",
+          "pose_gt_posthoc.csv": "69e73ee5888cef3145aba9bbb963e18dd00849831275fff0886cdb78e4cf9603",
+          "before_reset_wind.csv": "123bffd309922ade6a082e64c31c561aa29cdf7afc9b0d4122280477100903dc"
+        }
+      ]
+    },
+    "456": {
+      "interval_s": [
+        0.0,
+        4.800000000000001
+      ],
+      "sample_count": 97,
+      "pose_difference_m": {
+        "median": 0.1408077357497861,
+        "p95": 1.0252204765378854,
+        "max": 1.251515001921309
+      },
+      "wind_difference_m_s": {
+        "median": 3.1796376678432443,
+        "p95": 7.931091016267252,
+        "max": 8.112061276350374
+      },
+      "command_difference_pwm": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "source_sha256": [
+        {
+          "pwm_commands.jsonl": "210f736401145ed8c32da77cb0a713d4ef8c94f341d3df4f517b60c1df76a5f2",
+          "pose_gt_posthoc.csv": "065fa63071d07c2262572cc360150f2cec414f21f489da82cdcbce64a0900318",
+          "before_reset_wind.csv": "9b549b887657043ecf89acab4ad6b70b0dad6cbc6c235ff4ef9a7507aaa06778"
+        },
+        {
+          "pwm_commands.jsonl": "479589c1be8ec92acb435f147185235d116f52dd4e02180c81d49e2b55f65a67",
+          "pose_gt_posthoc.csv": "24c2deb2199167497ce8c9b077c18d47bafd1a71c135f665ec39622e268b2700",
+          "before_reset_wind.csv": "a85c21e872b1ce4f822083e272ff9939eb4855c3740e50ccd73034186fb722f9"
+        }
+      ]
+    },
+    "2026": {
+      "interval_s": [
+        0.0,
+        4.800000000000001
+      ],
+      "sample_count": 97,
+      "pose_difference_m": {
+        "median": 0.03214104472419949,
+        "p95": 0.23036618246907667,
+        "max": 0.4381718931001186
+      },
+      "wind_difference_m_s": {
+        "median": 0.0,
+        "p95": 0.03776829373826444,
+        "max": 0.038554383057392665
+      },
+      "command_difference_pwm": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "source_sha256": [
+        {
+          "pwm_commands.jsonl": "5d266d54341865c042bb9862493abd201e1e3eef1d97803008f4eb138cbc2bbf",
+          "pose_gt_posthoc.csv": "1b1a67d448f11d1fc593876d499b9cc45059749ecadc2efec01fc4163092bc84",
+          "before_reset_wind.csv": "8063c088d78b860e1cab381ab086211a5761871cb13a36af8b4e2e1a2a3ed024"
+        },
+        {
+          "pwm_commands.jsonl": "8dbe60ea03adc6d497a0ce7fa38f0ca7d7718659fec21b7aaac7fd856738d763",
+          "pose_gt_posthoc.csv": "609cd09e267cfa62b01b2746f84496ddb3bb6a45fddb4f7bb35909f36a1e46b1",
+          "before_reset_wind.csv": "e8ad0a6d90bf81da124431fb7d36e69fa4cd6b69a5f38201ea926636516c56bd"
+        }
+      ]
+    }
+  },
+  "across_seed_repeat1": {
+    "123_456": {
+      "interval_s": [
+        0.0,
+        4.800000000000001
+      ],
+      "sample_count": 97,
+      "pose_difference_m": {
+        "median": 0.9194983842605066,
+        "p95": 3.1408533705676795,
+        "max": 3.685256054362024
+      },
+      "wind_difference_m_s": {
+        "median": 13.18352648508032,
+        "p95": 16.862302174529827,
+        "max": 16.862302174529827
+      },
+      "command_difference_pwm": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "source_sha256": [
+        {
+          "pwm_commands.jsonl": "8ccd342e53c56e7f0b42ae8cf8c984ce56d82993c30fff7386d0fd1bfb90c8c7",
+          "pose_gt_posthoc.csv": "da4039afd2d7fcad945bb8dc41b234bd4600a6bd788151bc4ce76357b299075a",
+          "before_reset_wind.csv": "ce87fb284cfd70945c6d8e50936fd7bc3274c0ea18fa0433accd168b72a5d777"
+        },
+        {
+          "pwm_commands.jsonl": "210f736401145ed8c32da77cb0a713d4ef8c94f341d3df4f517b60c1df76a5f2",
+          "pose_gt_posthoc.csv": "065fa63071d07c2262572cc360150f2cec414f21f489da82cdcbce64a0900318",
+          "before_reset_wind.csv": "9b549b887657043ecf89acab4ad6b70b0dad6cbc6c235ff4ef9a7507aaa06778"
+        }
+      ]
+    },
+    "123_2026": {
+      "interval_s": [
+        0.0,
+        4.800000000000001
+      ],
+      "sample_count": 97,
+      "pose_difference_m": {
+        "median": 1.7534845859152306,
+        "p95": 4.318318738414507,
+        "max": 4.87016323127934
+      },
+      "wind_difference_m_s": {
+        "median": 19.739640032975903,
+        "p95": 19.79137619565371,
+        "max": 19.891019715865454
+      },
+      "command_difference_pwm": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "source_sha256": [
+        {
+          "pwm_commands.jsonl": "8ccd342e53c56e7f0b42ae8cf8c984ce56d82993c30fff7386d0fd1bfb90c8c7",
+          "pose_gt_posthoc.csv": "da4039afd2d7fcad945bb8dc41b234bd4600a6bd788151bc4ce76357b299075a",
+          "before_reset_wind.csv": "ce87fb284cfd70945c6d8e50936fd7bc3274c0ea18fa0433accd168b72a5d777"
+        },
+        {
+          "pwm_commands.jsonl": "5d266d54341865c042bb9862493abd201e1e3eef1d97803008f4eb138cbc2bbf",
+          "pose_gt_posthoc.csv": "1b1a67d448f11d1fc593876d499b9cc45059749ecadc2efec01fc4163092bc84",
+          "before_reset_wind.csv": "8063c088d78b860e1cab381ab086211a5761871cb13a36af8b4e2e1a2a3ed024"
+        }
+      ]
+    },
+    "456_2026": {
+      "interval_s": [
+        0.0,
+        4.800000000000001
+      ],
+      "sample_count": 97,
+      "pose_difference_m": {
+        "median": 1.1231960122108935,
+        "p95": 2.427726807139897,
+        "max": 2.648685461175893
+      },
+      "wind_difference_m_s": {
+        "median": 11.091692897607633,
+        "p95": 15.257921739296851,
+        "max": 15.257921739296851
+      },
+      "command_difference_pwm": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "source_sha256": [
+        {
+          "pwm_commands.jsonl": "210f736401145ed8c32da77cb0a713d4ef8c94f341d3df4f517b60c1df76a5f2",
+          "pose_gt_posthoc.csv": "065fa63071d07c2262572cc360150f2cec414f21f489da82cdcbce64a0900318",
+          "before_reset_wind.csv": "9b549b887657043ecf89acab4ad6b70b0dad6cbc6c235ff4ef9a7507aaa06778"
+        },
+        {
+          "pwm_commands.jsonl": "5d266d54341865c042bb9862493abd201e1e3eef1d97803008f4eb138cbc2bbf",
+          "pose_gt_posthoc.csv": "1b1a67d448f11d1fc593876d499b9cc45059749ecadc2efec01fc4163092bc84",
+          "before_reset_wind.csv": "8063c088d78b860e1cab381ab086211a5761871cb13a36af8b4e2e1a2a3ed024"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "source_sha256": "f489c5fb327969a9a77944ffeb742aa3f448986db30afd0424fa793f1aa239de",
+  "transition_windows": [
+    {
+      "predicate_between_transitions": 0,
+      "host_monotonic_s": 0.39979643099650275,
+      "timer_change_s": 0.4000013768672943,
+      "timer_start_s": 0.0,
+      "timer_end_s": 0.4000013768672943
+    },
+    {
+      "predicate_between_transitions": 1,
+      "host_monotonic_s": 0.552975154001615,
+      "timer_change_s": 0.0,
+      "timer_start_s": 0.4000013768672943,
+      "timer_end_s": 0.4000013768672943
+    },
+    {
+      "predicate_between_transitions": 0,
+      "host_monotonic_s": 0.8976742230006494,
+      "timer_change_s": 0.9000021517276764,
+      "timer_start_s": 0.4000013768672943,
+      "timer_end_s": 1.3000035285949707
+    },
+    {
+      "predicate_between_transitions": 1,
+      "host_monotonic_s": 0.9998310109949671,
+      "timer_change_s": 0.0,
+      "timer_start_s": 1.3000035285949707,
+      "timer_end_s": 1.3000035285949707
+    },
+    {
+      "predicate_between_transitions": 0,
+      "host_monotonic_s": 0.600516159000108,
+      "timer_change_s": 0.6000014543533325,
+      "timer_start_s": 1.3000035285949707,
+      "timer_end_s": 1.9000049829483032
+    },
+    {
+      "predicate_between_transitions": 1,
+      "host_monotonic_s": 0.6505878059979295,
+      "timer_change_s": 0.0,
+      "timer_start_s": 1.9000049829483032,
+      "timer_end_s": 1.9000049829483032
+    }
+  ],
+  "zero_predicate_timer_increases": true,
+  "one_predicate_timer_held": true,
+  "limitations": [
+    "predicate transition observations are not full tick-by-tick input",
+    "stored flag changes after predicate read; per-tick timing is unobserved",
+    "host monotonic time and game time are not calibrated",
+    "only one stage-one raised-connector run; all-stop debugger changes timing",
+    "no inference of spatial boundary, stage reset or thrust degradation"
+  ],
+  "analysis_sha256": "9b579a7279a8af0c279ad50217838fa382cf4064b028d9ba68146820c24e190d"
+}

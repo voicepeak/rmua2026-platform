@@ -1,0 +1,109 @@
+{
+  "capture_monotonic_s": 395718.241909185,
+  "body_ptr": "0x78d6b2683f80",
+  "faces": [
+    {
+      "index": 0,
+      "initial_position_m": [
+        0.0,
+        0.0,
+        -0.04515000060200691
+      ],
+      "initial_normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "candidate_drag_factor": 0.11017096042633057,
+      "current_matches_initial": true
+    },
+    {
+      "index": 1,
+      "initial_position_m": [
+        0.0,
+        0.0,
+        0.04515000060200691
+      ],
+      "initial_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "candidate_drag_factor": 0.11017096042633057,
+      "current_matches_initial": true
+    },
+    {
+      "index": 2,
+      "initial_position_m": [
+        0.0,
+        -0.04814999923110008,
+        0.0
+      ],
+      "initial_normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "candidate_drag_factor": 0.007910991087555885,
+      "current_matches_initial": true
+    },
+    {
+      "index": 3,
+      "initial_position_m": [
+        0.0,
+        0.04814999923110008,
+        0.0
+      ],
+      "initial_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "candidate_drag_factor": 0.007910991087555885,
+      "current_matches_initial": true
+    },
+    {
+      "index": 4,
+      "initial_position_m": [
+        -0.11050000041723251,
+        0.0,
+        0.0
+      ],
+      "initial_normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "candidate_drag_factor": 0.006081174127757549,
+      "current_matches_initial": true
+    },
+    {
+      "index": 5,
+      "initial_position_m": [
+        0.11050000041723251,
+        0.0,
+        0.0
+      ],
+      "initial_normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "candidate_drag_factor": 0.006081174127757549,
+      "current_matches_initial": true
+    }
+  ],
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "source_sha256": {
+    "rmua-re-7bf8466db4d7-0.log": "f9eb1eaf84b7fe8bde81ceb114c57af7518025e7051e4333d8c31881e7b720c0",
+    "pool.json": "6c490dceeed56cbd6c0054bcee2f9b752e841b605a5de57ccb4f090c92ee0c9c"
+  },
+  "limitations": [
+    "offset interpretation based on rotor reset disassembly and upstream PhysicsBodyVertex layout",
+    "initial values are not by themselves proof of applied wind force",
+    "density, threshold, runtime integration and wind zone remain independently unverified",
+    "one snapshot in a debugger-instrumented process"
+  ],
+  "analysis_sha256": "b5a3489d2d8fbc47b6689244628c2937667aa46177f35f68292c986d32a562b0"
+}

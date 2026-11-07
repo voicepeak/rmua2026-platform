@@ -1,0 +1,90 @@
+{
+  "log_sha256": "4dc7103fdf1fa0c2861bec058325186c46aa4e1301531a08419c5b2fb0a726a2",
+  "matches": [
+    {
+      "flag": 0,
+      "predicate_override": {
+        "kind": "TOGGLE",
+        "monotonic_s": 394090.177836999,
+        "fields": {
+          "start": "394089.64710507303",
+          "elapsed": "0.5307319259736687",
+          "natural": "1",
+          "forced": "0",
+          "config": "0x7b718211cb80"
+        }
+      },
+      "event_consumer": {
+        "kind": "FIELD_EVENT_CONSUMER",
+        "monotonic_s": 394090.226854597,
+        "fields": {
+          "type": "30",
+          "value": "0"
+        }
+      },
+      "scale_write": {
+        "kind": "SCALE_WRITE",
+        "monotonic_s": 394090.22779102,
+        "fields": {
+          "flag": "0",
+          "number": "1",
+          "pc": "0x26f2fd9"
+        }
+      },
+      "target_write": {
+        "kind": "TARGET_WRITE",
+        "monotonic_s": 394090.234462776,
+        "fields": {
+          "flag": "0",
+          "number": "3"
+        }
+      }
+    },
+    {
+      "flag": 1,
+      "predicate_override": {
+        "kind": "TOGGLE",
+        "monotonic_s": 394090.839019963,
+        "fields": {
+          "start": "394089.64710507303",
+          "elapsed": "1.191914889961481",
+          "natural": "1",
+          "forced": "1",
+          "config": "0x7b718211cb80"
+        }
+      },
+      "event_consumer": {
+        "kind": "FIELD_EVENT_CONSUMER",
+        "monotonic_s": 394090.891529183,
+        "fields": {
+          "type": "30",
+          "value": "1"
+        }
+      },
+      "scale_write": {
+        "kind": "SCALE_WRITE",
+        "monotonic_s": 394090.892143727,
+        "fields": {
+          "flag": "1",
+          "number": "2",
+          "pc": "0x26f2fd9"
+        }
+      },
+      "target_write": {
+        "kind": "TARGET_WRITE",
+        "monotonic_s": 394090.896555473,
+        "fields": {
+          "flag": "1",
+          "number": "4"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "controlled predicate injection and timeout suppression, not natural boundary traversal",
+    "all-stop and hardware watchpoints perturb scheduling and measured latency",
+    "one rotor watched for writes and one seed in this trace",
+    "same-run timing and static control flow support the chain, not all runtime cases"
+  ],
+  "analysis_sha256": "3a6f03e441ae921a57753cd17c86740ceb7efb80e8d56ece99760eedf5b3be21"
+}

@@ -1,0 +1,163 @@
+{
+  "window_s": [
+    0.05,
+    1.4900000000000004
+  ],
+  "reference": "50 Hz run",
+  "runs": {
+    "20": {
+      "commands": 41,
+      "interval_ms_p50": 50.18746,
+      "interval_ms_p95": 50.31603690000001,
+      "edges": [
+        {
+          "pwm": [
+            0.12,
+            0.12,
+            0.12,
+            0.12
+          ],
+          "offset_s": 0.0
+        },
+        {
+          "pwm": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "offset_s": 0.502137873
+        },
+        {
+          "pwm": [
+            0.16,
+            0.16,
+            0.16,
+            0.16
+          ],
+          "offset_s": 1.104768141
+        },
+        {
+          "pwm": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offset_s": 1.606803274
+        }
+      ],
+      "position_difference_vs_50hz_rmse_m": 0.0018847149921967096,
+      "position_difference_vs_50hz_max_m": 0.004971286181288448,
+      "source_sha256": {
+        "commands.jsonl": "a54dd4579f31c0a570385e7f48c53f38daf8d0b0dcada94d1f563b55089adc83",
+        "capture.jsonl": "ec2ee512878dfdd3ba4fd4569f8e2939b68cfb5aa54ca31c4f1c35af802b22f2"
+      }
+    },
+    "50": {
+      "commands": 97,
+      "interval_ms_p50": 20.238212500000003,
+      "interval_ms_p95": 20.31332975,
+      "edges": [
+        {
+          "pwm": [
+            0.12,
+            0.12,
+            0.12,
+            0.12
+          ],
+          "offset_s": 0.0
+        },
+        {
+          "pwm": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "offset_s": 0.5058159010000001
+        },
+        {
+          "pwm": [
+            0.16,
+            0.16,
+            0.16,
+            0.16
+          ],
+          "offset_s": 1.113015813
+        },
+        {
+          "pwm": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offset_s": 1.6192043850000002
+        }
+      ],
+      "position_difference_vs_50hz_rmse_m": 0.0,
+      "position_difference_vs_50hz_max_m": 0.0,
+      "source_sha256": {
+        "commands.jsonl": "7e050ccbf01d5eb4195f847ea6d9b461c1aa53666b65ddfe208cac63a44f58e5",
+        "capture.jsonl": "a8919fe65838447bdcd4a1934974879d16c83774b9d501afc6563641d3e03f4f"
+      }
+    },
+    "100": {
+      "commands": 189,
+      "interval_ms_p50": 10.231865500000001,
+      "interval_ms_p95": 10.2998403,
+      "edges": [
+        {
+          "pwm": [
+            0.12,
+            0.12,
+            0.12,
+            0.12
+          ],
+          "offset_s": 0.0
+        },
+        {
+          "pwm": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "offset_s": 0.501503445
+        },
+        {
+          "pwm": [
+            0.16,
+            0.16,
+            0.16,
+            0.16
+          ],
+          "offset_s": 1.1049991700000001
+        },
+        {
+          "pwm": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offset_s": 1.6057858820000002
+        }
+      ],
+      "position_difference_vs_50hz_rmse_m": 0.001325098227812805,
+      "position_difference_vs_50hz_max_m": 0.0030282181237465677,
+      "source_sha256": {
+        "commands.jsonl": "1ffb1990b3eaab40e9038294931d51f0acc1ab77f74543bcf098ac0e7fa3a1c5",
+        "capture.jsonl": "29561a95a4229cd54d4613a30f208aa4fa8f25f40fe8118ba2a186aa5f158768"
+      }
+    }
+  },
+  "limitations": [
+    "one independent process per target frequency; seed alone does not ensure identical state",
+    "pose arrival and post-publish times include transport and scheduling",
+    "different actual edge times are not corrected",
+    "no inference of motor or physics timestep",
+    "ground contact and unknown actuation time limit causal interpretation"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "status": "U, partial candidate; not official collision map",
+  "frame": "UE world centimetres",
+  "included_instances": 508,
+  "excluded_unknown_building_components": 8657,
+  "excluded_other": [
+    "road auxiliary cube components",
+    "unknown map objects",
+    "collision channels"
+  ],
+  "self_test": {
+    "actor": "1_1_BP_Segment_Half",
+    "query": {
+      "hits": [
+        {
+          "actor": "1_1_BP_Segment_Half",
+          "component": null,
+          "mesh": "Segment_Half",
+          "fraction": 0.5000019656488158,
+          "point_ue_cm": [
+            62216.08964707342,
+            -9465.822524458421,
+            13454.387109344807
+          ]
+        }
+      ],
+      "candidate_count": 2,
+      "coverage": "partial, transforms and collision channels unverified",
+      "excluded_building_components": 8657
+    },
+    "scope": "synthetic ray through its own triangle"
+  },
+  "source_sha256": {
+    "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+    "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+    "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+    "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+    "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+    "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+    "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a"
+  },
+  "limitations": [
+    "all placement transforms remain unverified",
+    "zero-radius ray is not swept drone collision",
+    "no-hit result does not prove free space",
+    "no official contact comparison"
+  ]
+}

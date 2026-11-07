@@ -1,0 +1,14 @@
+
+D:\RMUA2026-re\sim\simulator_12.0.0.5\Build\LinuxNoEditor\RMUA\Binaries\Linux\RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000026f22b0 <_start@@Base+0x115930>:
+ 26f22b0:	48 85 f6             	test   %rsi,%rsi
+ 26f22b3:	74 10                	je     26f22c5 <_start@@Base+0x115945>
+ 26f22b5:	48 83 7f 18 00       	cmpq   $0x0,0x18(%rdi)
+ 26f22ba:	74 09                	je     26f22c5 <_start@@Base+0x115945>
+ 26f22bc:	0f b6 7e 10          	movzbl 0x10(%rsi),%edi
+ 26f22c0:	e9 db 0b 00 00       	jmpq   26f2ea0 <_start@@Base+0x116520>
+ 26f22c5:	c3                   	retq   

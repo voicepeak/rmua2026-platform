@@ -1,0 +1,63 @@
+{
+  "source_sha256": "cf090db4ac1a9ee536e4d2151ff12c32094d176463b7505aa2a5f4a74feba2ca",
+  "rotors": {
+    "0x7fdf4fbdb5a0": {
+      "samples": 133,
+      "e8_range": [
+        0.00499999989,
+        0.00499999989
+      ],
+      "last_filtered_range": [
+        0.0,
+        0.199999988
+      ],
+      "thrust_over_last_filtered_median": 12.537600553852357,
+      "thrust_over_last_filtered_max_deviation": 6.447482761018364e-07
+    },
+    "0x7fdf4fbdb6d8": {
+      "samples": 133,
+      "e8_range": [
+        0.00499999989,
+        0.00499999989
+      ],
+      "last_filtered_range": [
+        0.0,
+        0.199999988
+      ],
+      "thrust_over_last_filtered_median": 12.537600553852357,
+      "thrust_over_last_filtered_max_deviation": 6.447482761018364e-07
+    },
+    "0x7fdf4fbdb810": {
+      "samples": 132,
+      "e8_range": [
+        0.00499999989,
+        0.00499999989
+      ],
+      "last_filtered_range": [
+        0.0,
+        0.199999988
+      ],
+      "thrust_over_last_filtered_median": 12.537600553852357,
+      "thrust_over_last_filtered_max_deviation": 7.103165291511004e-07
+    },
+    "0x7fdf4fbdb948": {
+      "samples": 132,
+      "e8_range": [
+        0.00499999989,
+        0.00499999989
+      ],
+      "last_filtered_range": [
+        0.0,
+        0.199999988
+      ],
+      "thrust_over_last_filtered_median": 12.537600559798484,
+      "thrust_over_last_filtered_max_deviation": 6.356572157528717e-07
+    }
+  },
+  "limitations": [
+    "GDB all-stop breakpoints alter simulator timing",
+    "addresses and offsets are specific to this executable build",
+    "observation is before each update; 0x128 and 0x118 are prior outputs",
+    "one short run does not validate the whole physics or controller bridge"
+  ]
+}

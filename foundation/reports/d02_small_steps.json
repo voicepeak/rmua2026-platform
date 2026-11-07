@@ -1,0 +1,157 @@
+{
+  "runs": {
+    "foundation\\datasets\\d02_small_steps_seed123_20261107": {
+      "status": "completed",
+      "steps": [
+        {
+          "from_pwm": 0.18,
+          "to_pwm": 0.19,
+          "pre_samples": 6,
+          "post_samples": 13,
+          "pre_median_m_s2": -9.905924797058105,
+          "post_median_m_s2": -10.43999195098877,
+          "effective_first_order_fit": {
+            "delay_s": 0.016,
+            "tau_s": 0.002,
+            "change_m_s2": -0.56928464957292,
+            "mse": 0.0019882125271119366,
+            "tau_at_boundary": true,
+            "delay_at_boundary": false
+          }
+        },
+        {
+          "from_pwm": 0.19,
+          "to_pwm": 0.18,
+          "pre_samples": 6,
+          "post_samples": 11,
+          "pre_median_m_s2": -10.421003818511963,
+          "post_median_m_s2": -9.898632049560547,
+          "effective_first_order_fit": {
+            "delay_s": 0.01,
+            "tau_s": 0.002,
+            "change_m_s2": 0.554150135993526,
+            "mse": 0.001061918813217025,
+            "tau_at_boundary": true,
+            "delay_at_boundary": false
+          }
+        },
+        {
+          "from_pwm": 0.18,
+          "to_pwm": 0.17,
+          "pre_samples": 6,
+          "post_samples": 13,
+          "pre_median_m_s2": -9.89081335067749,
+          "post_median_m_s2": -9.348660469055176,
+          "effective_first_order_fit": {
+            "delay_s": 0.016,
+            "tau_s": 0.002,
+            "change_m_s2": 0.5285939969134315,
+            "mse": 0.0014179596638904776,
+            "tau_at_boundary": true,
+            "delay_at_boundary": false
+          }
+        },
+        {
+          "from_pwm": 0.17,
+          "to_pwm": 0.18,
+          "pre_samples": 6,
+          "post_samples": 6,
+          "pre_median_m_s2": -9.342410564422607,
+          "post_median_m_s2": -9.89692497253418,
+          "effective_first_order_fit": {
+            "delay_s": 0.014,
+            "tau_s": 0.002,
+            "change_m_s2": -0.5668186734106102,
+            "mse": 0.0007600870573237317,
+            "tau_at_boundary": true,
+            "delay_at_boundary": false
+          }
+        }
+      ],
+      "source_sha256": {
+        "commands.jsonl": "f34568c2cac480e0f6c5cf7a61aee8f1e5927dacdf97cb377ba3908f7468e235",
+        "capture.jsonl": "4145bcff56badd1810fefde8fdc74ccbf7b46d8e367772773cfd3b82e0bd0138"
+      }
+    },
+    "foundation\\datasets\\d02_small_steps_seed456_20261107": {
+      "status": "completed",
+      "steps": [
+        {
+          "from_pwm": 0.18,
+          "to_pwm": 0.19,
+          "pre_samples": 6,
+          "post_samples": 12,
+          "pre_median_m_s2": -9.90366506576538,
+          "post_median_m_s2": -10.458738803863525,
+          "effective_first_order_fit": {
+            "delay_s": 0.014,
+            "tau_s": 0.002,
+            "change_m_s2": -0.5672832029846522,
+            "mse": 0.0013138697212756038,
+            "tau_at_boundary": true,
+            "delay_at_boundary": false
+          }
+        },
+        {
+          "from_pwm": 0.19,
+          "to_pwm": 0.18,
+          "pre_samples": 6,
+          "post_samples": 12,
+          "pre_median_m_s2": -10.418779373168945,
+          "post_median_m_s2": -9.889426231384277,
+          "effective_first_order_fit": {
+            "delay_s": 0.012,
+            "tau_s": 0.008,
+            "change_m_s2": 0.5853113485583754,
+            "mse": 0.002062619890935033,
+            "tau_at_boundary": false,
+            "delay_at_boundary": false
+          }
+        },
+        {
+          "from_pwm": 0.18,
+          "to_pwm": 0.17,
+          "pre_samples": 6,
+          "post_samples": 12,
+          "pre_median_m_s2": -9.889426231384277,
+          "post_median_m_s2": -9.353580951690674,
+          "effective_first_order_fit": {
+            "delay_s": 0.014,
+            "tau_s": 0.002,
+            "change_m_s2": 0.5524270937206971,
+            "mse": 0.0014252073012488286,
+            "tau_at_boundary": true,
+            "delay_at_boundary": false
+          }
+        },
+        {
+          "from_pwm": 0.17,
+          "to_pwm": 0.18,
+          "pre_samples": 6,
+          "post_samples": 8,
+          "pre_median_m_s2": -9.365550518035889,
+          "post_median_m_s2": -9.896468162536621,
+          "effective_first_order_fit": {
+            "delay_s": 0.014,
+            "tau_s": 0.008,
+            "change_m_s2": -0.5604516010173902,
+            "mse": 0.0013391271899314506,
+            "tau_at_boundary": false,
+            "delay_at_boundary": false
+          }
+        }
+      ],
+      "source_sha256": {
+        "commands.jsonl": "b48a160a602401aba7eda6b106618d45497a1486093ab8be729fda81907b7a98",
+        "capture.jsonl": "7fbf4493f68b33b2b4c19bc9d1391f55ea2f63bec170e8fd682bebdcf10a3a1c"
+      }
+    }
+  },
+  "analysis_sha256": "5d633d8ee5f9ef13d7b510813d07df2343ddf4f65d5fede1f390ec43f911aba3",
+  "limitations": [
+    "post-publish to subscriber-arrival timing combines transport, scheduler, bridge and sensor response",
+    "first-order fit is exploratory, highly correlated, and has no confidence interval",
+    "body-z specific force is not a direct motor sensor; orientation, contact and prior state are not controlled",
+    "two seeds use the same short waveform and are not a held-out excitation"
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "samples": [
+    {
+      "route_index": 1,
+      "point_index": 0,
+      "world_ue_cm": [
+        250.40944890488316,
+        -2.8882905122927527,
+        215.57080078125
+      ],
+      "nearest_road_vertex_m": 3.7477236102494045,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 1,
+      "point_index": 1,
+      "world_ue_cm": [
+        22728.436050160894,
+        -537.6569508727849,
+        1478.46484375
+      ],
+      "nearest_road_vertex_m": 4.443757486849923,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 1,
+      "point_index": 2,
+      "world_ue_cm": [
+        35190.424317739424,
+        -13360.425043198298,
+        5372.75390625
+      ],
+      "nearest_road_vertex_m": 4.5505852612578455,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 1,
+      "point_index": 3,
+      "world_ue_cm": [
+        53023.18633843678,
+        -12473.439632562919,
+        12438.5908203125
+      ],
+      "nearest_road_vertex_m": 3.678935680494766,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 1,
+      "point_index": 4,
+      "world_ue_cm": [
+        59781.29875765387,
+        -9897.296478566208,
+        13323.6708984375
+      ],
+      "nearest_road_vertex_m": 5.467147691006427,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 2,
+      "point_index": 0,
+      "world_ue_cm": [
+        14658.499608761807,
+        28623.423284641147,
+        1056.9365234375
+      ],
+      "nearest_road_vertex_m": 3.7477272922291216,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 2,
+      "point_index": 1,
+      "world_ue_cm": [
+        37453.036497092166,
+        26810.46369466266,
+        3567.86669921875
+      ],
+      "nearest_road_vertex_m": 5.202621708121414,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 2,
+      "point_index": 2,
+      "world_ue_cm": [
+        48826.38335952775,
+        20021.229592816642,
+        5277.50537109375
+      ],
+      "nearest_road_vertex_m": 4.056438200925552,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 2,
+      "point_index": 3,
+      "world_ue_cm": [
+        51755.805963316016,
+        12327.752125996762,
+        6679.13232421875
+      ],
+      "nearest_road_vertex_m": 3.7508281849817746,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 2,
+      "point_index": 4,
+      "world_ue_cm": [
+        55159.787238341,
+        1814.589501596016,
+        10518.87109375
+      ],
+      "nearest_road_vertex_m": 4.603363261891097,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 2,
+      "point_index": 5,
+      "world_ue_cm": [
+        62389.81581468452,
+        -2321.8605792529306,
+        13461.3984375
+      ],
+      "nearest_road_vertex_m": 5.418568101547362,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 3,
+      "point_index": 0,
+      "world_ue_cm": [
+        55012.8386871956,
+        51720.17474037103,
+        3287.57666015625
+      ],
+      "nearest_road_vertex_m": 3.7477022760430696,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 3,
+      "point_index": 1,
+      "world_ue_cm": [
+        71920.53606778027,
+        37766.14416293031,
+        4694.22900390625
+      ],
+      "nearest_road_vertex_m": 5.093966154830754,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 3,
+      "point_index": 2,
+      "world_ue_cm": [
+        72205.98527294755,
+        23093.753165943046,
+        10939.828125
+      ],
+      "nearest_road_vertex_m": 3.7253879452919367,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 3,
+      "point_index": 3,
+      "world_ue_cm": [
+        68771.45790630457,
+        9708.946993422931,
+        13247.412109375
+      ],
+      "nearest_road_vertex_m": 4.844352930166888,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 3,
+      "point_index": 4,
+      "world_ue_cm": [
+        70629.56754127119,
+        100.07380050778374,
+        13424.3203125
+      ],
+      "nearest_road_vertex_m": 2.8303936322084677,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 4,
+      "point_index": 0,
+      "world_ue_cm": [
+        134678.43041139524,
+        -10331.336360775149,
+        989.763671875
+      ],
+      "nearest_road_vertex_m": 3.747718670555096,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 4,
+      "point_index": 1,
+      "world_ue_cm": [
+        112337.75303037452,
+        -10755.261639619184,
+        3124.5947265625
+      ],
+      "nearest_road_vertex_m": 4.725294230370305,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 4,
+      "point_index": 2,
+      "world_ue_cm": [
+        95367.80884151082,
+        755.0289838973367,
+        6237.9150390625
+      ],
+      "nearest_road_vertex_m": 3.765858902799287,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 4,
+      "point_index": 3,
+      "world_ue_cm": [
+        76215.35118931723,
+        -7251.681878381989,
+        13578.95703125
+      ],
+      "nearest_road_vertex_m": 4.5121601990277505,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 5,
+      "point_index": 0,
+      "world_ue_cm": [
+        117310.10058489742,
+        -42354.71742926412,
+        7987.20947265625
+      ],
+      "nearest_road_vertex_m": 3.7477308568733183,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 5,
+      "point_index": 1,
+      "world_ue_cm": [
+        93327.33149999806,
+        -38856.635400419626,
+        6337.03857421875
+      ],
+      "nearest_road_vertex_m": 5.092800284165441,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 5,
+      "point_index": 2,
+      "world_ue_cm": [
+        85909.91064221792,
+        -23106.72039684421,
+        8911.68408203125
+      ],
+      "nearest_road_vertex_m": 5.022582960462273,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 5,
+      "point_index": 3,
+      "world_ue_cm": [
+        73359.24042100561,
+        -14800.917551427501,
+        13514.34033203125
+      ],
+      "nearest_road_vertex_m": 4.05482055621784,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 6,
+      "point_index": 0,
+      "world_ue_cm": [
+        78118.98147368741,
+        -67381.81613169858,
+        539.2744140625
+      ],
+      "nearest_road_vertex_m": 3.747764274499063,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 6,
+      "point_index": 1,
+      "world_ue_cm": [
+        65614.79071968934,
+        -55613.13936624126,
+        2373.1171875
+      ],
+      "nearest_road_vertex_m": 5.166865860044749,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 6,
+      "point_index": 2,
+      "world_ue_cm": [
+        63120.95765564719,
+        -30394.617724482,
+        8368.7529296875
+      ],
+      "nearest_road_vertex_m": 4.869780271723171,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 6,
+      "point_index": 3,
+      "world_ue_cm": [
+        65470.52370843533,
+        -16268.068493417537,
+        13523.857421875
+      ],
+      "nearest_road_vertex_m": 5.673485933041471,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 7,
+      "point_index": 0,
+      "world_ue_cm": [
+        430.63100373652355,
+        -28679.724356660503,
+        614.80322265625
+      ],
+      "nearest_road_vertex_m": 3.7477230273524413,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 7,
+      "point_index": 1,
+      "world_ue_cm": [
+        3178.102294481958,
+        -27832.01245518359,
+        779.6318359375
+      ],
+      "nearest_road_vertex_m": 5.494608879292628,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 7,
+      "point_index": 2,
+      "world_ue_cm": [
+        18283.461345600776,
+        -24062.120337782544,
+        4621.869140625
+      ],
+      "nearest_road_vertex_m": 3.6722059480042755,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 7,
+      "point_index": 3,
+      "world_ue_cm": [
+        31537.51182036667,
+        -11459.536944355761,
+        6860.2587890625
+      ],
+      "nearest_road_vertex_m": 3.6907963581715757,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 7,
+      "point_index": 4,
+      "world_ue_cm": [
+        48429.84870840805,
+        -13118.507717797225,
+        14199.94921875
+      ],
+      "nearest_road_vertex_m": 4.081575449982962,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 7,
+      "point_index": 5,
+      "world_ue_cm": [
+        60444.89431882006,
+        -9474.50371239425,
+        16342.814453125
+      ],
+      "nearest_road_vertex_m": 3.7708171665077828,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 8,
+      "point_index": 0,
+      "world_ue_cm": [
+        71372.953125,
+        -72546.75,
+        1730.7080078125018
+      ],
+      "nearest_road_vertex_m": 3.74772366440827,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 8,
+      "point_index": 1,
+      "world_ue_cm": [
+        73684.17434439533,
+        -56829.813167584725,
+        2249.067382812502
+      ],
+      "nearest_road_vertex_m": 5.137470286744808,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 8,
+      "point_index": 2,
+      "world_ue_cm": [
+        63913.82508224042,
+        -41625.81523741913,
+        7087.688476562502
+      ],
+      "nearest_road_vertex_m": 5.351085842389486,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 8,
+      "point_index": 3,
+      "world_ue_cm": [
+        64739.25786815177,
+        -27023.621828189986,
+        11762.244140625
+      ],
+      "nearest_road_vertex_m": 3.748518127615972,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 8,
+      "point_index": 4,
+      "world_ue_cm": [
+        65412.2637520684,
+        -15975.311371866701,
+        16401.33984375
+      ],
+      "nearest_road_vertex_m": 4.721712230165179,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 9,
+      "point_index": 0,
+      "world_ue_cm": [
+        103217.67477955388,
+        -48065.417680874,
+        5993.529296875
+      ],
+      "nearest_road_vertex_m": 3.7477433712125263,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 9,
+      "point_index": 1,
+      "world_ue_cm": [
+        99333.84105699006,
+        -24722.08945610062,
+        6878.2314453125
+      ],
+      "nearest_road_vertex_m": 5.238910077869591,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 9,
+      "point_index": 2,
+      "world_ue_cm": [
+        83656.50969608425,
+        -20030.416055892198,
+        12915.4150390625
+      ],
+      "nearest_road_vertex_m": 3.6638554197802886,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 9,
+      "point_index": 3,
+      "world_ue_cm": [
+        73229.59556197486,
+        -14659.22581276163,
+        16340.5419921875
+      ],
+      "nearest_road_vertex_m": 4.316878862963205,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 10,
+      "point_index": 0,
+      "world_ue_cm": [
+        132503.67172012493,
+        15265.527492185241,
+        3776.875
+      ],
+      "nearest_road_vertex_m": 3.7477248620984533,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 10,
+      "point_index": 1,
+      "world_ue_cm": [
+        126089.00564715141,
+        13076.53097558186,
+        3433.1845703125
+      ],
+      "nearest_road_vertex_m": 5.228303393381817,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 10,
+      "point_index": 2,
+      "world_ue_cm": [
+        116201.03598940207,
+        9312.992451677253,
+        2398.95068359375
+      ],
+      "nearest_road_vertex_m": 5.333436656966037,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 10,
+      "point_index": 3,
+      "world_ue_cm": [
+        101971.94092137349,
+        -1533.8790044332673,
+        5216.33984375
+      ],
+      "nearest_road_vertex_m": 3.75014103254029,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 10,
+      "point_index": 4,
+      "world_ue_cm": [
+        84678.87673690508,
+        -3891.9819457775484,
+        13769.896484375
+      ],
+      "nearest_road_vertex_m": 5.205734676047831,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 10,
+      "point_index": 5,
+      "world_ue_cm": [
+        76077.05582421331,
+        -7273.242378272491,
+        16353.087890625
+      ],
+      "nearest_road_vertex_m": 3.7774539669545577,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 11,
+      "point_index": 0,
+      "world_ue_cm": [
+        67447.30632978596,
+        53698.11564868211,
+        5014.66943359375
+      ],
+      "nearest_road_vertex_m": 3.7477541807029167,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 11,
+      "point_index": 1,
+      "world_ue_cm": [
+        59492.957595792985,
+        39909.473609150125,
+        5493.59619140625
+      ],
+      "nearest_road_vertex_m": 5.361826337513028,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 11,
+      "point_index": 2,
+      "world_ue_cm": [
+        58968.529415810604,
+        27403.897388522204,
+        9874.201171875
+      ],
+      "nearest_road_vertex_m": 4.169537534090654,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 11,
+      "point_index": 3,
+      "world_ue_cm": [
+        63928.20836151177,
+        17682.52107792909,
+        13167.56640625
+      ],
+      "nearest_road_vertex_m": 3.9489940941198025,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 11,
+      "point_index": 4,
+      "world_ue_cm": [
+        70722.74630826124,
+        -32.424283167973044,
+        16388.6953125
+      ],
+      "nearest_road_vertex_m": 2.6761555110197883,
+      "vertical_20m_segment_hit_count": 1
+    },
+    {
+      "route_index": 12,
+      "point_index": 0,
+      "world_ue_cm": [
+        26522.44110996223,
+        39466.20690755373,
+        246.29443359375
+      ],
+      "nearest_road_vertex_m": 3.7477236644083574,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 12,
+      "point_index": 1,
+      "world_ue_cm": [
+        30179.596858541718,
+        23580.867568538837,
+        1866.19482421875
+      ],
+      "nearest_road_vertex_m": 5.676860444680024,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 12,
+      "point_index": 2,
+      "world_ue_cm": [
+        34411.17103262395,
+        8598.797574678345,
+        4595.74462890625
+      ],
+      "nearest_road_vertex_m": 3.748352714305414,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 12,
+      "point_index": 3,
+      "world_ue_cm": [
+        43004.05831027984,
+        3934.3327262068597,
+        7630.79931640625
+      ],
+      "nearest_road_vertex_m": 3.744422045501379,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 12,
+      "point_index": 4,
+      "world_ue_cm": [
+        50299.25271875081,
+        3471.2863357935566,
+        10433.115234375
+      ],
+      "nearest_road_vertex_m": 5.258593471399944,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 12,
+      "point_index": 5,
+      "world_ue_cm": [
+        56090.52159076234,
+        772.4028002074447,
+        14390.146484375
+      ],
+      "nearest_road_vertex_m": 4.545338747548479,
+      "vertical_20m_segment_hit_count": 0
+    },
+    {
+      "route_index": 12,
+      "point_index": 6,
+      "world_ue_cm": [
+        62577.519718345226,
+        -2302.8465431938203,
+        16310.97265625
+      ],
+      "nearest_road_vertex_m": 5.5490096030265725,
+      "vertical_20m_segment_hit_count": 0
+    }
+  ],
+  "count": 61,
+  "vertical_20m_segments_with_hit": 1,
+  "distance_m": {
+    "median": 4.081575449982962,
+    "p95": 5.494608879292628,
+    "max": 5.676860444680024
+  },
+  "limitations": [
+    "spline local-to-world convention and candidate road placement assumed",
+    "nearest vertex is not nearest triangle or collision contact",
+    "spline knots may legitimately sit away from road surface",
+    "vertical line is zero-radius and cannot establish free space or collision outcome",
+    "not independent runtime validation"
+  ],
+  "map_sha256": "d4617e33888d721ff1b8647140be157fbb1fcfe30749bbc12386e910d14f4a03",
+  "placements_sha256": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c"
+}

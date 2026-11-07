@@ -1,0 +1,121 @@
+
+D:\RMUA2026-re\sim\simulator_12.0.0.5\Build\LinuxNoEditor\RMUA\Binaries\Linux\RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000026694d0 <_start@@Base+0x8cb50>:
+ 26694d0:	f3 0f 16 c5          	movshdup %xmm5,%xmm0
+ 26694d4:	f3 0f 58 c1          	addss  %xmm1,%xmm0
+ 26694d8:	f3 0f 11 43 04       	movss  %xmm0,0x4(%rbx)
+ 26694dd:	f3 0f 58 e2          	addss  %xmm2,%xmm4
+ 26694e1:	f3 0f 11 63 08       	movss  %xmm4,0x8(%rbx)
+ 26694e6:	48 89 d8             	mov    %rbx,%rax
+ 26694e9:	48 83 c4 58          	add    $0x58,%rsp
+ 26694ed:	5b                   	pop    %rbx
+ 26694ee:	41 5e                	pop    %r14
+ 26694f0:	41 5f                	pop    %r15
+ 26694f2:	5d                   	pop    %rbp
+ 26694f3:	c3                   	retq   
+ 26694f4:	bf 78 a8 15 07       	mov    $0x715a878,%edi
+ 26694f9:	e8 12 fd a3 04       	callq  70a9210 <__cxa_guard_acquire@plt>
+ 26694fe:	85 c0                	test   %eax,%eax
+ 2669500:	0f 84 eb fc ff ff    	je     26691f1 <_start@@Base+0x8c871>
+ 2669506:	0f 57 c0             	xorps  %xmm0,%xmm0
+ 2669509:	0f 11 05 50 13 af 04 	movups %xmm0,0x4af1350(%rip)        # 715a860 <__bss_start@@Base+0x10a0>
+ 2669510:	48 c7 05 55 13 af 04 	movq   $0x0,0x4af1355(%rip)        # 715a870 <__bss_start@@Base+0x10b0>
+ 2669517:	00 00 00 00 
+ 266951b:	bf 78 a8 15 07       	mov    $0x715a878,%edi
+ 2669520:	e8 0b fd a3 04       	callq  70a9230 <__cxa_guard_release@plt>
+ 2669525:	e9 c7 fc ff ff       	jmpq   26691f1 <_start@@Base+0x8c871>
+ 266952a:	cc                   	int3   
+ 266952b:	cc                   	int3   
+ 266952c:	cc                   	int3   
+ 266952d:	cc                   	int3   
+ 266952e:	cc                   	int3   
+ 266952f:	cc                   	int3   
+ 2669530:	55                   	push   %rbp
+ 2669531:	41 57                	push   %r15
+ 2669533:	41 56                	push   %r14
+ 2669535:	41 55                	push   %r13
+ 2669537:	41 54                	push   %r12
+ 2669539:	53                   	push   %rbx
+ 266953a:	48 83 ec 58          	sub    $0x58,%rsp
+ 266953e:	4d 89 cd             	mov    %r9,%r13
+ 2669541:	4d 89 c7             	mov    %r8,%r15
+ 2669544:	48 89 cd             	mov    %rcx,%rbp
+ 2669547:	49 89 d6             	mov    %rdx,%r14
+ 266954a:	48 89 f3             	mov    %rsi,%rbx
+ 266954d:	49 89 fc             	mov    %rdi,%r12
+ 2669550:	8a 05 22 13 af 04    	mov    0x4af1322(%rip),%al        # 715a878 <__bss_start@@Base+0x10b8>
+ 2669556:	84 c0                	test   %al,%al
+ 2669558:	0f 84 61 03 00 00    	je     26698bf <_start@@Base+0x8cf3f>
+ 266955e:	8b 05 04 13 af 04    	mov    0x4af1304(%rip),%eax        # 715a868 <__bss_start@@Base+0x10a8>
+ 2669564:	41 89 44 24 08       	mov    %eax,0x8(%r12)
+ 2669569:	48 8b 05 f0 12 af 04 	mov    0x4af12f0(%rip),%rax        # 715a860 <__bss_start@@Base+0x10a0>
+ 2669570:	49 89 04 24          	mov    %rax,(%r12)
+ 2669574:	48 8b 05 f1 12 af 04 	mov    0x4af12f1(%rip),%rax        # 715a86c <__bss_start@@Base+0x10ac>
+ 266957b:	49 89 44 24 0c       	mov    %rax,0xc(%r12)
+ 2669580:	8b 05 ee 12 af 04    	mov    0x4af12ee(%rip),%eax        # 715a874 <__bss_start@@Base+0x10b4>
+ 2669586:	41 89 44 24 14       	mov    %eax,0x14(%r12)
+ 266958b:	48 8b 03             	mov    (%rbx),%rax
+ 266958e:	48 8b 8b 90 00 00 00 	mov    0x90(%rbx),%rcx
+ 2669595:	f3 0f 10 45 00       	movss  0x0(%rbp),%xmm0
+ 266959a:	f3 41 0f 5c 45 00    	subss  0x0(%r13),%xmm0
+ 26695a0:	0f 29 44 24 20       	movaps %xmm0,0x20(%rsp)
+ 26695a5:	f3 0f 10 81 e4 00 00 	movss  0xe4(%rcx),%xmm0
+ 26695ac:	00 
+ 26695ad:	f3 0f 11 44 24 0c    	movss  %xmm0,0xc(%rsp)
+ 26695b3:	f2 0f 10 45 04       	movsd  0x4(%rbp),%xmm0
+ 26695b8:	0f 29 44 24 10       	movaps %xmm0,0x10(%rsp)
+ 26695bd:	f2 41 0f 10 45 04    	movsd  0x4(%r13),%xmm0
+ 26695c3:	0f 29 44 24 30       	movaps %xmm0,0x30(%rsp)
+ 26695c8:	41 0f 10 06          	movups (%r14),%xmm0
+ 26695cc:	0f 29 44 24 40       	movaps %xmm0,0x40(%rsp)
+ 26695d1:	48 89 df             	mov    %rbx,%rdi
+ 26695d4:	ff 50 70             	callq  *0x70(%rax)
+ 26695d7:	85 c0                	test   %eax,%eax
+ 26695d9:	0f 84 ef 01 00 00    	je     26697ce <_start@@Base+0x8ce4e>
+ 26695df:	0f 28 7c 24 10       	movaps 0x10(%rsp),%xmm7
+ 26695e4:	0f 5c 7c 24 30       	subps  0x30(%rsp),%xmm7
+ 26695e9:	66 0f 6f 05 cf 99 05 	movdqa -0x1fa6631(%rip),%xmm0        # 6c2fc0 <_IO_stdin_used@@Base+0x201c>
+ 26695f0:	fe 
+ 26695f1:	66 0f 6f 4c 24 40    	movdqa 0x40(%rsp),%xmm1
+ 26695f7:	66 0f ef c1          	pxor   %xmm1,%xmm0
+ 26695fb:	66 44 0f 70 c8 f5    	pshufd $0xf5,%xmm0,%xmm9
+ 2669601:	66 0f 70 e8 ee       	pshufd $0xee,%xmm0,%xmm5
+ 2669606:	44 0f 28 44 24 20    	movaps 0x20(%rsp),%xmm8
+ 266960c:	f3 41 0f 59 e8       	mulss  %xmm8,%xmm5
+ 2669611:	f3 0f 16 df          	movshdup %xmm7,%xmm3
+ 2669615:	44 0f 14 c7          	unpcklps %xmm7,%xmm8
+ 2669619:	0f 59 f8             	mulps  %xmm0,%xmm7
+ 266961c:	66 0f 70 d0 e9       	pshufd $0xe9,%xmm0,%xmm2
+ 2669621:	41 0f 28 e0          	movaps %xmm8,%xmm4
+ 2669625:	0f 59 e2             	mulps  %xmm2,%xmm4
+ 2669628:	0f 5c fc             	subps  %xmm4,%xmm7
+ 266962b:	0f 58 ff             	addps  %xmm7,%xmm7
+ 266962e:	66 0f 70 f0 e7       	pshufd $0xe7,%xmm0,%xmm6
+ 2669633:	f3 0f 59 f7          	mulss  %xmm7,%xmm6
+ 2669637:	f3 0f 58 f3          	addss  %xmm3,%xmm6
+ 266963b:	f3 0f 59 d8          	mulss  %xmm0,%xmm3
+ 266963f:	f3 0f 5c eb          	subss  %xmm3,%xmm5
+ 2669643:	f3 0f 58 ed          	addss  %xmm5,%xmm5
+ 2669647:	0f 59 d7             	mulps  %xmm7,%xmm2
+ 266964a:	66 0f 70 d8 e2       	pshufd $0xe2,%xmm0,%xmm3
+ 266964f:	0f 28 e5             	movaps %xmm5,%xmm4
+ 2669652:	0f 14 e7             	unpcklps %xmm7,%xmm4
+ 2669655:	0f 59 e3             	mulps  %xmm3,%xmm4
+ 2669658:	0f 5c d4             	subps  %xmm4,%xmm2
+ 266965b:	f3 0f 59 c5          	mulss  %xmm5,%xmm0
+ 266965f:	f3 0f 16 df          	movshdup %xmm7,%xmm3
+ 2669663:	f3 41 0f 59 d9       	mulss  %xmm9,%xmm3
+ 2669668:	f3 0f 5c c3          	subss  %xmm3,%xmm0
+ 266966c:	66 0f 70 c9 ff       	pshufd $0xff,%xmm1,%xmm1
+ 2669671:	0f c6 ef 50          	shufps $0x50,%xmm7,%xmm5
+ 2669675:	0f c6 ef f2          	shufps $0xf2,%xmm7,%xmm5
+ 2669679:	0f 59 e9             	mulps  %xmm1,%xmm5
+ 266967c:	41 0f 58 e8          	addps  %xmm8,%xmm5
+ 2669680:	0f 58 ea             	addps  %xmm2,%xmm5
+ 2669683:	0f 29 6c 24 20       	movaps %xmm5,0x20(%rsp)
+ 2669688:	f3 0f 58 f0          	addss  %xmm0,%xmm6
+ 266968c:	0f 29 74 24 10       	movaps %xmm6,0x10(%rsp)

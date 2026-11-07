@@ -1,0 +1,93 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+000000000269ab90 <_start@@Base+0xbe210>:
+ 269ab90:	53                   	push   %rbx
+ 269ab91:	48 89 fb             	mov    %rdi,%rbx
+ 269ab94:	48 8b 87 08 01 00 00 	mov    0x108(%rdi),%rax
+ 269ab9b:	f3 0f 10 80 e4 00 00 	movss  0xe4(%rax),%xmm0
+ 269aba2:	00 
+ 269aba3:	f3 0f 5e 87 10 01 00 	divss  0x110(%rdi),%xmm0
+ 269abaa:	00 
+ 269abab:	f3 0f 11 87 14 01 00 	movss  %xmm0,0x114(%rdi)
+ 269abb2:	00 
+ 269abb3:	e8 08 05 00 00       	call   269b0c0 <_start@@Base+0xbe740>
+ 269abb8:	8b 83 80 00 00 00    	mov    0x80(%rbx),%eax
+ 269abbe:	8b 8b f4 00 00 00    	mov    0xf4(%rbx),%ecx
+ 269abc4:	89 8b 2c 01 00 00    	mov    %ecx,0x12c(%rbx)
+ 269abca:	f3 0f 10 83 ec 00 00 	movss  0xec(%rbx),%xmm0
+ 269abd1:	00 
+ 269abd2:	f3 0f 11 83 28 01 00 	movss  %xmm0,0x128(%rbx)
+ 269abd9:	00 
+ 269abda:	f3 0f 10 8b ac 00 00 	movss  0xac(%rbx),%xmm1
+ 269abe1:	00 
+ 269abe2:	f3 0f 59 c8          	mulss  %xmm0,%xmm1
+ 269abe6:	f3 0f 51 c9          	sqrtss %xmm1,%xmm1
+ 269abea:	f3 0f 11 8b 20 01 00 	movss  %xmm1,0x120(%rbx)
+ 269abf1:	00 
+ 269abf2:	f3 0f 10 8b b0 00 00 	movss  0xb0(%rbx),%xmm1
+ 269abf9:	00 
+ 269abfa:	f3 0f 59 c8          	mulss  %xmm0,%xmm1
+ 269abfe:	f3 0f 11 8b 18 01 00 	movss  %xmm1,0x118(%rbx)
+ 269ac05:	00 
+ 269ac06:	f3 0f 59 83 b4 00 00 	mulss  0xb4(%rbx),%xmm0
+ 269ac0d:	00 
+ 269ac0e:	0f 57 c9             	xorps  %xmm1,%xmm1
+ 269ac11:	f3 0f 2a c8          	cvtsi2ss %eax,%xmm1
+ 269ac15:	48 8d bb b8 00 00 00 	lea    0xb8(%rbx),%rdi
+ 269ac1c:	f3 0f 59 c8          	mulss  %xmm0,%xmm1
+ 269ac20:	f3 0f 11 8b 1c 01 00 	movss  %xmm1,0x11c(%rbx)
+ 269ac27:	00 
+ 269ac28:	89 83 24 01 00 00    	mov    %eax,0x124(%rbx)
+ 269ac2e:	5b                   	pop    %rbx
+ 269ac2f:	e9                   	.byte 0xe9
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000026704e0 <_start@@Base+0x93b60>:
+ 26704e0:	48 8b 03             	mov    (%rbx),%rax
+ 26704e3:	48 89 df             	mov    %rbx,%rdi
+ 26704e6:	ff 50 28             	call   *0x28(%rax)
+ 26704e9:	48 8b 08             	mov    (%rax),%rcx
+ 26704ec:	48 89 c7             	mov    %rax,%rdi
+ 26704ef:	ff 11                	call   *(%rcx)
+ 26704f1:	48 89 c1             	mov    %rax,%rcx
+ 26704f4:	48 2b 4b 48          	sub    0x48(%rbx),%rcx
+ 26704f8:	66 48 0f 6e c9       	movq   %rcx,%xmm1
+ 26704fd:	66 0f 62 0d 9b 2a 05 	punpckldq -0x1fad565(%rip),%xmm1        # 6c2fa0 <_IO_stdin_used@@Base+0x1ffc>
+ 2670504:	fe 
+ 2670505:	66 0f 5c 0d e3 ca 05 	subpd  -0x1fa351d(%rip),%xmm1        # 6ccff0 <_IO_stdin_used@@Base+0xc04c>
+ 267050c:	fe 
+ 267050d:	66 0f 28 c1          	movapd %xmm1,%xmm0
+ 2670511:	66 0f 15 c1          	unpckhpd %xmm1,%xmm0
+ 2670515:	f2 0f 58 c1          	addsd  %xmm1,%xmm0
+ 2670519:	48 89 43 48          	mov    %rax,0x48(%rbx)
+ 267051d:	f2 0f 5e 05 e3 27 05 	divsd  -0x1fad81d(%rip),%xmm0        # 6c2d08 <_IO_stdin_used@@Base+0x1d64>
+ 2670524:	fe 
+ 2670525:	f3 0f 10 4b 30       	movss  0x30(%rbx),%xmm1
+ 267052a:	f3 0f 10 53 34       	movss  0x34(%rbx),%xmm2
+ 267052f:	f3 0f 11 54 24 0c    	movss  %xmm2,0xc(%rsp)
+ 2670535:	f3 0f 5a c9          	cvtss2sd %xmm1,%xmm1
+ 2670539:	f2 0f 5e c1          	divsd  %xmm1,%xmm0
+ 267053d:	e8 5e 91 a3 04       	call   70a96a0 <exp@plt>
+ 2670542:	f3 0f 10 4c 24 0c    	movss  0xc(%rsp),%xmm1
+ 2670548:	f3 0f 5a c9          	cvtss2sd %xmm1,%xmm1
+ 267054c:	f2 0f 59 c8          	mulsd  %xmm0,%xmm1
+ 2670550:	f3 0f 10 53 38       	movss  0x38(%rbx),%xmm2
+ 2670555:	f3 0f 5a d2          	cvtss2sd %xmm2,%xmm2
+ 2670559:	f2 0f 10 1d 2f 1d 05 	movsd  -0x1fae2d1(%rip),%xmm3        # 6c2290 <_IO_stdin_used@@Base+0x12ec>
+ 2670560:	fe 
+ 2670561:	f2 0f 5c d8          	subsd  %xmm0,%xmm3
+ 2670565:	f2 0f 59 da          	mulsd  %xmm2,%xmm3
+ 2670569:	f2 0f 58 d9          	addsd  %xmm1,%xmm3
+ 267056d:	0f 57 c0             	xorps  %xmm0,%xmm0
+ 2670570:	f2 0f 5a c3          	cvtsd2ss %xmm3,%xmm0
+ 2670574:	f3 0f 11 43 34       	movss  %xmm0,0x34(%rbx)
+ 2670579:	48 83 c4 30          	add    $0x30,%rsp
+ 267057d:	5b                   	pop    %rbx

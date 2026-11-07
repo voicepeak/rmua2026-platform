@@ -1,0 +1,204 @@
+{
+  "transitions": [
+    {
+      "elapsed_s": 0.5139882660005242,
+      "natural": 1,
+      "forced": 0
+    },
+    {
+      "elapsed_s": 1.168975367967505,
+      "natural": 1,
+      "forced": 1
+    }
+  ],
+  "rotors": {
+    "0x78f670a2b5a0": [
+      {
+        "window_s": [
+          0.25,
+          0.45
+        ],
+        "flag": 1,
+        "samples": 3,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      },
+      {
+        "window_s": [
+          0.7,
+          1.05
+        ],
+        "flag": 0,
+        "samples": 6,
+        "medians": {
+          "filtered": 0.0300000012,
+          "target": 0.0299999993,
+          "input": 0.119999997,
+          "thrust": 0.376128018
+        }
+      },
+      {
+        "window_s": [
+          1.35,
+          1.6
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      }
+    ],
+    "0x78f670a2b6d8": [
+      {
+        "window_s": [
+          0.25,
+          0.45
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      },
+      {
+        "window_s": [
+          0.7,
+          1.05
+        ],
+        "flag": 0,
+        "samples": 5,
+        "medians": {
+          "filtered": 0.0300000012,
+          "target": 0.0299999993,
+          "input": 0.119999997,
+          "thrust": 0.376128018
+        }
+      },
+      {
+        "window_s": [
+          1.35,
+          1.6
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      }
+    ],
+    "0x78f670a2b810": [
+      {
+        "window_s": [
+          0.25,
+          0.45
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      },
+      {
+        "window_s": [
+          0.7,
+          1.05
+        ],
+        "flag": 0,
+        "samples": 5,
+        "medians": {
+          "filtered": 0.0300000012,
+          "target": 0.0299999993,
+          "input": 0.119999997,
+          "thrust": 0.376128018
+        }
+      },
+      {
+        "window_s": [
+          1.35,
+          1.6
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      }
+    ],
+    "0x78f670a2b948": [
+      {
+        "window_s": [
+          0.25,
+          0.45
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      },
+      {
+        "window_s": [
+          0.7,
+          1.05
+        ],
+        "flag": 0,
+        "samples": 5,
+        "medians": {
+          "filtered": 0.0300000012,
+          "target": 0.0299999993,
+          "input": 0.119999997,
+          "thrust": 0.376128018
+        }
+      },
+      {
+        "window_s": [
+          1.35,
+          1.6
+        ],
+        "flag": 1,
+        "samples": 4,
+        "medians": {
+          "filtered": 0.11999999,
+          "target": 0.119999997,
+          "input": 0.119999997,
+          "thrust": 1.50451195
+        }
+      }
+    ]
+  },
+  "source_sha256": {
+    "rmua-re-00a18d2f3c4e-0.log": "949745228efb3d581e0f509702a79a7923b44120e0fc27d7d682e54b94d916dd",
+    "commands.jsonl": "8fb577e1d030f247b5c19c46c515678c574c2cf4501a8320ef20346604745a4f"
+  },
+  "limitations": [
+    "predicate forced on a host-clock schedule; overtime suppression enabled",
+    "ground-start constant command; no natural boundary or free-flight response",
+    "all-stop GDB and 60 ms rotor sampling do not establish physical delay",
+    "pointer ordering does not identify motor numbering",
+    "one seed and one input amplitude"
+  ],
+  "analysis_sha256": "8aa6fa72a0d7ae557d7dcf9fb8bce82134470a03d72f05a81c530d9bb9740975"
+}

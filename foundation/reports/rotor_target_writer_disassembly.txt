@@ -1,0 +1,55 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002698900 <_start@@Base+0xbbf80>:
+ 2698900:	00 49 8b             	add    %cl,-0x75(%rcx)
+ 2698903:	be 50 01 00 00       	mov    $0x150,%esi
+ 2698908:	48 8b 87 a0 00 00 00 	mov    0xa0(%rdi),%rax
+ 269890f:	48 81 c7 a0 00 00 00 	add    $0xa0,%rdi
+ 2698916:	ff 10                	call   *(%rax)
+ 2698918:	49 8b be 90 01 00 00 	mov    0x190(%r14),%rdi
+ 269891f:	48 8b 07             	mov    (%rdi),%rax
+ 2698922:	ff 10                	call   *(%rax)
+ 2698924:	4d 8b be 58 01 00 00 	mov    0x158(%r14),%r15
+ 269892b:	4d 39 be 60 01 00 00 	cmp    %r15,0x160(%r14)
+ 2698932:	0f 84 92 00 00 00    	je     26989ca <_start@@Base+0xbc04a>
+ 2698938:	bb 01 00 00 00       	mov    $0x1,%ebx
+ 269893d:	45 31 ed             	xor    %r13d,%r13d
+ 2698940:	49 bc 97 6f f9 96 6f 	movabs $0x6f96f96f96f96f97,%r12
+ 2698947:	f9 96 6f 
+ 269894a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+ 2698950:	8d 73 ff             	lea    -0x1(%rbx),%esi
+ 2698953:	49 8b be 90 01 00 00 	mov    0x190(%r14),%rdi
+ 269895a:	48 8b 07             	mov    (%rdi),%rax
+ 269895d:	ff 90 88 00 00 00    	call   *0x88(%rax)
+ 2698963:	49 69 c5 38 01 00 00 	imul   $0x138,%r13,%rax
+ 269896a:	f3 0f 10 15 a2 80 02 	movss  -0x1fd7f5e(%rip),%xmm2        # 6c0a14 <_IO_stdin_used@@Base-0x590>
+ 2698971:	fe 
+ 2698972:	0f 28 ca             	movaps %xmm2,%xmm1
+ 2698975:	f3 0f 5d c8          	minss  %xmm0,%xmm1
+ 2698979:	f3 41 0f 59 84 07 30 	mulss  0x130(%r15,%rax,1),%xmm0
+ 2698980:	01 00 00 
+ 2698983:	f3 0f 5d d0          	minss  %xmm0,%xmm2
+ 2698987:	0f 57 c0             	xorps  %xmm0,%xmm0
+ 269898a:	f3 0f 5f d0          	maxss  %xmm0,%xmm2
+ 269898e:	f3 0f 5f c8          	maxss  %xmm0,%xmm1
+ 2698992:	f3 41 0f 11 94 07 f0 	movss  %xmm2,0xf0(%r15,%rax,1)
+ 2698999:	00 00 00 
+ 269899c:	f3 41 0f 11 8c 07 f4 	movss  %xmm1,0xf4(%r15,%rax,1)
+ 26989a3:	00 00 00 
+ 26989a6:	41 89 dd             	mov    %ebx,%r13d
+ 26989a9:	4d 8b be 58 01 00 00 	mov    0x158(%r14),%r15
+ 26989b0:	49 8b 86 60 01 00 00 	mov    0x160(%r14),%rax
+ 26989b7:	4c 29 f8             	sub    %r15,%rax
+ 26989ba:	48 c1 f8 03          	sar    $0x3,%rax
+ 26989be:	49 0f af c4          	imul   %r12,%rax
+ 26989c2:	83 c3 01             	add    $0x1,%ebx
+ 26989c5:	4c 39 e8             	cmp    %r13,%rax
+ 26989c8:	77 86                	ja     2698950 <_start@@Base+0xbbfd0>
+ 26989ca:	5b                   	pop    %rbx
+ 26989cb:	41 5c                	pop    %r12
+ 26989cd:	41 5d                	pop    %r13
+ 26989cf:	41                   	rex.B

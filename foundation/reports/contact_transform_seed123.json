@@ -1,0 +1,256 @@
+{
+  "log_sha256": "b073b5312e9bc9ff5f78e1d12602210ac2183660f57d3d513d60e7725555f483",
+  "event_count": 4,
+  "events": [
+    {
+      "monotonic_s": 376033.74123101,
+      "drone_world_cm": [
+        0.0,
+        0.0,
+        -37.9081421
+      ],
+      "source_actor_ptr": "0x702609594f00",
+      "source_component_ptr": "0x702435112070",
+      "source_world_cm": [
+        -29.9921875,
+        0.00100708008,
+        -40.0000343
+      ],
+      "source_quaternion_xyzw": [
+        0.49999994,
+        0.5,
+        0.49999997,
+        0.499999911
+      ],
+      "nearest_component_transforms": [
+        {
+          "actor": "1_1_Port",
+          "component": "Building_Port",
+          "mesh": "Building_Port",
+          "distance_cm": 237.953203578583,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 484.6833214905672,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh3",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 505.3302211367308,
+          "rotation_difference_deg": 179.9997524534797
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh1",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 682.0212493051209,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Cube",
+          "mesh": "unverified_simple:Engine_BasicShapes_Cube",
+          "distance_cm": 687.970296870123,
+          "rotation_difference_deg": 90.0000033804513
+        }
+      ]
+    },
+    {
+      "monotonic_s": 376033.787606503,
+      "drone_world_cm": [
+        0.0,
+        0.0,
+        -37.9081421
+      ],
+      "source_actor_ptr": "0x702609594f00",
+      "source_component_ptr": "0x702435112070",
+      "source_world_cm": [
+        -29.9921875,
+        0.00100708008,
+        -40.0000343
+      ],
+      "source_quaternion_xyzw": [
+        0.49999994,
+        0.5,
+        0.49999997,
+        0.499999911
+      ],
+      "nearest_component_transforms": [
+        {
+          "actor": "1_1_Port",
+          "component": "Building_Port",
+          "mesh": "Building_Port",
+          "distance_cm": 237.953203578583,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 484.6833214905672,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh3",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 505.3302211367308,
+          "rotation_difference_deg": 179.9997524534797
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh1",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 682.0212493051209,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Cube",
+          "mesh": "unverified_simple:Engine_BasicShapes_Cube",
+          "distance_cm": 687.970296870123,
+          "rotation_difference_deg": 90.0000033804513
+        }
+      ]
+    },
+    {
+      "monotonic_s": 376037.287863623,
+      "drone_world_cm": [
+        0.0,
+        0.0,
+        -37.9084702
+      ],
+      "source_actor_ptr": "0x702609594f00",
+      "source_component_ptr": "0x702435112070",
+      "source_world_cm": [
+        -29.9921875,
+        0.00100708008,
+        -40.0000343
+      ],
+      "source_quaternion_xyzw": [
+        0.49999994,
+        0.5,
+        0.49999997,
+        0.499999911
+      ],
+      "nearest_component_transforms": [
+        {
+          "actor": "1_1_Port",
+          "component": "Building_Port",
+          "mesh": "Building_Port",
+          "distance_cm": 237.953203578583,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 484.6833214905672,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh3",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 505.3302211367308,
+          "rotation_difference_deg": 179.9997524534797
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh1",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 682.0212493051209,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Cube",
+          "mesh": "unverified_simple:Engine_BasicShapes_Cube",
+          "distance_cm": 687.970296870123,
+          "rotation_difference_deg": 90.0000033804513
+        }
+      ]
+    },
+    {
+      "monotonic_s": 376037.338789526,
+      "drone_world_cm": [
+        0.0,
+        0.0,
+        -37.9084702
+      ],
+      "source_actor_ptr": "0x702609594f00",
+      "source_component_ptr": "0x702435112070",
+      "source_world_cm": [
+        -29.9921875,
+        0.00100708008,
+        -40.0000343
+      ],
+      "source_quaternion_xyzw": [
+        0.49999994,
+        0.5,
+        0.49999997,
+        0.499999911
+      ],
+      "nearest_component_transforms": [
+        {
+          "actor": "1_1_Port",
+          "component": "Building_Port",
+          "mesh": "Building_Port",
+          "distance_cm": 237.953203578583,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 484.6833214905672,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh3",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 505.3302211367308,
+          "rotation_difference_deg": 179.9997524534797
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "StaticMesh1",
+          "mesh": "unverified_simple:Engine_EngineMeshes_Cube",
+          "distance_cm": 682.0212493051209,
+          "rotation_difference_deg": 90.0000033804513
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Cube",
+          "mesh": "unverified_simple:Engine_BasicShapes_Cube",
+          "distance_cm": 687.970296870123,
+          "rotation_difference_deg": 90.0000033804513
+        }
+      ]
+    }
+  ],
+  "map_sha256": {
+    "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+    "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+    "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+    "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+    "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+    "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+    "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+    "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e"
+  },
+  "limitations": [
+    "nearest transform is not an identity match; source may be an excluded component or actor",
+    "runtime component position/quaternion offsets need independent type confirmation",
+    "source component transform is not hit point or collision shape",
+    "GDB all-stop affects timing and callback behavior",
+    "the candidate map contains unverified simple modes and transforms"
+  ],
+  "analysis_sha256": "995534689c0ef4887c33f8cfafad7e1fe0312949ce0b85dd12a2e2d1319912e5"
+}

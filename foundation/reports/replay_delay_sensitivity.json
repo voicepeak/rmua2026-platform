@@ -1,0 +1,372 @@
+{
+  "selection": "minimum omega norm RMSE on fit run only",
+  "best": {
+    "delay_s": 0.0,
+    "tau_s": 0.002,
+    "omega_rmse": 0.0306787687441359,
+    "attitude_rmse_deg": 0.27378008580813185
+  },
+  "grid": [
+    {
+      "delay_s": 0.0,
+      "tau_s": 0.002,
+      "omega_rmse": 0.0306787687441359,
+      "attitude_rmse_deg": 0.27378008580813185
+    },
+    {
+      "delay_s": 0.0,
+      "tau_s": 0.005,
+      "omega_rmse": 0.04449306963915568,
+      "attitude_rmse_deg": 0.47125071625637555
+    },
+    {
+      "delay_s": 0.0,
+      "tau_s": 0.01,
+      "omega_rmse": 0.0697155868885664,
+      "attitude_rmse_deg": 0.8041041972473169
+    },
+    {
+      "delay_s": 0.0,
+      "tau_s": 0.02,
+      "omega_rmse": 0.11972907180669941,
+      "attitude_rmse_deg": 1.440234335776821
+    },
+    {
+      "delay_s": 0.0,
+      "tau_s": 0.04,
+      "omega_rmse": 0.21206048212150028,
+      "attitude_rmse_deg": 2.5734256698009434
+    },
+    {
+      "delay_s": 0.01,
+      "tau_s": 0.002,
+      "omega_rmse": 0.08272401952942518,
+      "attitude_rmse_deg": 0.9600113279074809
+    },
+    {
+      "delay_s": 0.01,
+      "tau_s": 0.005,
+      "omega_rmse": 0.09813651354296206,
+      "attitude_rmse_deg": 1.1545007381029029
+    },
+    {
+      "delay_s": 0.01,
+      "tau_s": 0.01,
+      "omega_rmse": 0.12381297642338902,
+      "attitude_rmse_deg": 1.4777509463742502
+    },
+    {
+      "delay_s": 0.01,
+      "tau_s": 0.02,
+      "omega_rmse": 0.1729182394984053,
+      "attitude_rmse_deg": 2.0912250056339725
+    },
+    {
+      "delay_s": 0.01,
+      "tau_s": 0.04,
+      "omega_rmse": 0.26249365804184355,
+      "attitude_rmse_deg": 3.1776017132616134
+    },
+    {
+      "delay_s": 0.02,
+      "tau_s": 0.002,
+      "omega_rmse": 0.13749460197665742,
+      "attitude_rmse_deg": 1.639626535144354
+    },
+    {
+      "delay_s": 0.02,
+      "tau_s": 0.005,
+      "omega_rmse": 0.15226195755369348,
+      "attitude_rmse_deg": 1.8222673360759034
+    },
+    {
+      "delay_s": 0.02,
+      "tau_s": 0.01,
+      "omega_rmse": 0.17723364253005572,
+      "attitude_rmse_deg": 2.1312694917323873
+    },
+    {
+      "delay_s": 0.02,
+      "tau_s": 0.02,
+      "omega_rmse": 0.2250076830613952,
+      "attitude_rmse_deg": 2.720174108224238
+    },
+    {
+      "delay_s": 0.02,
+      "tau_s": 0.04,
+      "omega_rmse": 0.311898097342009,
+      "attitude_rmse_deg": 3.759274250570801
+    },
+    {
+      "delay_s": 0.03,
+      "tau_s": 0.002,
+      "omega_rmse": 0.18950001235121847,
+      "attitude_rmse_deg": 2.2731182193587745
+    },
+    {
+      "delay_s": 0.03,
+      "tau_s": 0.005,
+      "omega_rmse": 0.20426182135921872,
+      "attitude_rmse_deg": 2.4538754287806106
+    },
+    {
+      "delay_s": 0.03,
+      "tau_s": 0.01,
+      "omega_rmse": 0.22889385003606336,
+      "attitude_rmse_deg": 2.754332798872199
+    },
+    {
+      "delay_s": 0.03,
+      "tau_s": 0.02,
+      "omega_rmse": 0.27557752599239743,
+      "attitude_rmse_deg": 3.322162303513557
+    },
+    {
+      "delay_s": 0.03,
+      "tau_s": 0.04,
+      "omega_rmse": 0.3600602553821772,
+      "attitude_rmse_deg": 4.316003647241392
+    },
+    {
+      "delay_s": 0.04,
+      "tau_s": 0.002,
+      "omega_rmse": 0.24129207732222416,
+      "attitude_rmse_deg": 2.896287628511947
+    },
+    {
+      "delay_s": 0.04,
+      "tau_s": 0.005,
+      "omega_rmse": 0.2558703636647976,
+      "attitude_rmse_deg": 3.0710904307385216
+    },
+    {
+      "delay_s": 0.04,
+      "tau_s": 0.01,
+      "omega_rmse": 0.2798745189160931,
+      "attitude_rmse_deg": 3.3603562788131756
+    },
+    {
+      "delay_s": 0.04,
+      "tau_s": 0.02,
+      "omega_rmse": 0.32521261454180606,
+      "attitude_rmse_deg": 3.904709055293619
+    },
+    {
+      "delay_s": 0.04,
+      "tau_s": 0.04,
+      "omega_rmse": 0.4072529712848852,
+      "attitude_rmse_deg": 4.851789475559785
+    },
+    {
+      "delay_s": 0.05,
+      "tau_s": 0.002,
+      "omega_rmse": 0.29278308873425896,
+      "attitude_rmse_deg": 3.5063986557336135
+    },
+    {
+      "delay_s": 0.05,
+      "tau_s": 0.005,
+      "omega_rmse": 0.30649509623377014,
+      "attitude_rmse_deg": 3.6697574048244808
+    },
+    {
+      "delay_s": 0.05,
+      "tau_s": 0.01,
+      "omega_rmse": 0.3295721194170436,
+      "attitude_rmse_deg": 3.94480113283801
+    },
+    {
+      "delay_s": 0.05,
+      "tau_s": 0.02,
+      "omega_rmse": 0.3735301368597534,
+      "attitude_rmse_deg": 4.464390087568879
+    },
+    {
+      "delay_s": 0.05,
+      "tau_s": 0.04,
+      "omega_rmse": 0.45325696329897347,
+      "attitude_rmse_deg": 5.364392553317532
+    },
+    {
+      "delay_s": 0.06,
+      "tau_s": 0.002,
+      "omega_rmse": 0.34103892922433193,
+      "attitude_rmse_deg": 4.073041406528173
+    },
+    {
+      "delay_s": 0.06,
+      "tau_s": 0.005,
+      "omega_rmse": 0.3546448019703407,
+      "attitude_rmse_deg": 4.233731121236129
+    },
+    {
+      "delay_s": 0.06,
+      "tau_s": 0.01,
+      "omega_rmse": 0.37729758841816463,
+      "attitude_rmse_deg": 4.499619312346447
+    },
+    {
+      "delay_s": 0.06,
+      "tau_s": 0.02,
+      "omega_rmse": 0.42026186259694354,
+      "attitude_rmse_deg": 4.997588058455399
+    },
+    {
+      "delay_s": 0.06,
+      "tau_s": 0.04,
+      "omega_rmse": 0.49796757055184104,
+      "attitude_rmse_deg": 5.852380479645637
+    }
+  ],
+  "evaluation": {
+    "fit": {
+      "baseline": {
+        "attitude_deg": {
+          "rmse": 0.47125071625637555,
+          "p95": 0.6768240369662574,
+          "max": 0.6930579012418585
+        },
+        "omega": {
+          "rmse": 0.04449306963915568,
+          "p95": 0.066627135632239,
+          "max": 0.07158591461549041
+        },
+        "position": {
+          "rmse": 0.006680040952662427,
+          "p95": 0.013511893804529097,
+          "max": 0.01495665146783328
+        },
+        "source_sha256": {
+          "truth": "2317a8f308ed9fe6f861b27bb52e1f36aa9aa7891a79cee7be6df6f7300e9278",
+          "imu": "3dd02512520ba4a6fbd205c32f44f0482be005212e3f4f2bc85dd52caa9ca7a5",
+          "command": "c33e64e26aa1ff5b3b11d6b05ea437defb68d35d4db73d2b014c932589c9218b"
+        }
+      },
+      "selected": {
+        "attitude_deg": {
+          "rmse": 0.27378008580813185,
+          "p95": 0.3579980923500225,
+          "max": 0.36070720322957694
+        },
+        "omega": {
+          "rmse": 0.0306787687441359,
+          "p95": 0.04296825860469175,
+          "max": 0.048386733734230726
+        },
+        "position": {
+          "rmse": 0.006455996662952088,
+          "p95": 0.012969692003014599,
+          "max": 0.014313650390273972
+        },
+        "source_sha256": {
+          "truth": "2317a8f308ed9fe6f861b27bb52e1f36aa9aa7891a79cee7be6df6f7300e9278",
+          "imu": "3dd02512520ba4a6fbd205c32f44f0482be005212e3f4f2bc85dd52caa9ca7a5",
+          "command": "c33e64e26aa1ff5b3b11d6b05ea437defb68d35d4db73d2b014c932589c9218b"
+        }
+      }
+    },
+    "roll_holdout": {
+      "baseline": {
+        "attitude_deg": {
+          "rmse": 0.6725258490587623,
+          "p95": 1.0302786099161312,
+          "max": 1.0636541132765527
+        },
+        "omega": {
+          "rmse": 0.05570105453834806,
+          "p95": 0.08558235937929094,
+          "max": 0.09003573511597915
+        },
+        "position": {
+          "rmse": 0.006728777834287398,
+          "p95": 0.013636966229654369,
+          "max": 0.015356620537177526
+        },
+        "source_sha256": {
+          "truth": "c2ff21282b2400351ed92c9ab6e4a0bc34d5ff54beb77f634fc3fd09055d7eb2",
+          "imu": "a18778cfdebb7392008619da2ece4eeeec0d3824b58eac3041a46e8c2631313a",
+          "command": "ab913f8502ca20fbbdad005db11e954de8a462ee8b9341121bff433b8aebd81c"
+        }
+      },
+      "selected": {
+        "attitude_deg": {
+          "rmse": 0.5397301823983667,
+          "p95": 0.813634048529433,
+          "max": 0.8375408494724226
+        },
+        "omega": {
+          "rmse": 0.045265122275954764,
+          "p95": 0.06969185877895052,
+          "max": 0.07461241366347018
+        },
+        "position": {
+          "rmse": 0.006571109577006214,
+          "p95": 0.013248459712246492,
+          "max": 0.014875678059454701
+        },
+        "source_sha256": {
+          "truth": "c2ff21282b2400351ed92c9ab6e4a0bc34d5ff54beb77f634fc3fd09055d7eb2",
+          "imu": "a18778cfdebb7392008619da2ece4eeeec0d3824b58eac3041a46e8c2631313a",
+          "command": "ab913f8502ca20fbbdad005db11e954de8a462ee8b9341121bff433b8aebd81c"
+        }
+      }
+    },
+    "yaw_holdout": {
+      "baseline": {
+        "attitude_deg": {
+          "rmse": 0.04319511964800114,
+          "p95": 0.07419196810280669,
+          "max": 0.07820463111890989
+        },
+        "omega": {
+          "rmse": 0.005346316360348725,
+          "p95": 0.007556998765397185,
+          "max": 0.009582365170737758
+        },
+        "position": {
+          "rmse": 0.0024990877916868954,
+          "p95": 0.005026246668812188,
+          "max": 0.005534549761988925
+        },
+        "source_sha256": {
+          "truth": "6b63b0d0e8522a81d3b9fca3724bd724f4677af039721ff81800ccf3a6db55ed",
+          "imu": "4002de1445ed849a743892adaaeb4546499b0a0200333452e9ede36e59a6fb7e",
+          "command": "ab9f69304668bba1d6cad37c76497750603af906204aeaa85178b09fd747e6ef"
+        }
+      },
+      "selected": {
+        "attitude_deg": {
+          "rmse": 0.040533012079512945,
+          "p95": 0.06786106328330038,
+          "max": 0.07122838718339687
+        },
+        "omega": {
+          "rmse": 0.004924104360247996,
+          "p95": 0.00709308897697385,
+          "max": 0.008591119094140358
+        },
+        "position": {
+          "rmse": 0.0024990877916906433,
+          "p95": 0.005026246668824229,
+          "max": 0.005534549762008563
+        },
+        "source_sha256": {
+          "truth": "6b63b0d0e8522a81d3b9fca3724bd724f4677af039721ff81800ccf3a6db55ed",
+          "imu": "4002de1445ed849a743892adaaeb4546499b0a0200333452e9ede36e59a6fb7e",
+          "command": "ab9f69304668bba1d6cad37c76497750603af906204aeaa85178b09fd747e6ef"
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "sensitivity_script": "c868b81f4782af162d1b208649c9c91aa3071109f184714811fa3188a15c95a8",
+    "replay_script": "f8f4b1ad19e7c9694c4a5a295aced4f66ccc8099fda30ae1ccc47c16f7658a89"
+  },
+  "limitations": [
+    "candidate delay includes clock offset and ROS/IMU scheduling",
+    "initial rotor signal assumed equal to delayed command at replay start",
+    "same narrow ground-start regime; no physics-step or motor-lag claim",
+    "roll holdout has same pattern at smaller amplitude; yaw has a different pattern",
+    "grid, metric and window exploratory, no pre-frozen acceptance threshold"
+  ]
+}
