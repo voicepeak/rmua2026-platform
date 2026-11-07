@@ -92,6 +92,10 @@ class SimFastConfig:
     line_max: int = 8
     vehicle_max: int = 3
     auto_factory_inspect: bool = True
+    track_mode: str = 'proxy'  # 'stage1_audited' is the new OL1 development environment
+    detection_gate_width_m: float = 10.0  # approximate, not the official aperture
+    detection_gate_height_m: float = 5.0
+    stage1_enable_obstacles: bool = False  # optional proxy obstacles, not calibrated
     factory_radius_m: float = 15.0
     reward_progress: float = 1.0
     reward_gate: float = 10.0
@@ -116,7 +120,19 @@ class SimFastVecEnv:
             raise ValueError("segment_id must be 1..6")
         self.spec: SegmentSpec = self.rules.segment_by_id[self.config.segment_id]
         self.map_data: MapData = load_map_data(self.config.map_name)
-        self.track: SegmentTrack = build_track(self.map_data, self.spec)
+        if self.config.track_mode == 'stage1_audited':
+            if self.spec.id != 1:
+                raise ValueError('stage1_audited requires segment 1')
+            from ..scene.stage1 import build_stage1
+            self.track = build_stage1(self.map_data, self.spec,
+                self.config.detection_gate_width_m, self.config.detection_gate_height_m)
+        elif self.config.track_mode == 'proxy':
+            self.track = build_track(self.map_data, self.spec)
+        else:
+            raise ValueError('unknown track_mode')
+        use_obstacles = not self.track.audited_stage1 or self.config.stage1_enable_obstacles
+        self.line_max = self.config.line_max if use_obstacles else 0
+        self.vehicle_max = self.config.vehicle_max if use_obstacles else 0
         self.track.corridor_half_width_m = self.config.corridor_half_width_m
         self.track.corridor_height_m = self.config.corridor_height_m
         self.n = int(self.config.num_envs)
@@ -160,6 +176,7 @@ class SimFastVecEnv:
         self.end_inside = np.zeros(self.n, dtype=bool)
         self.gates_passed = np.zeros(self.n, dtype=np.int32)
         self.total_gates = np.zeros(self.n, dtype=np.int32)
+        self.progress = np.zeros(self.n, dtype=np.float64)
         self.factory_reports = np.zeros(self.n, dtype=np.int32)
         self.factory_hold = np.zeros(self.n, dtype=np.float64)
         self.force_time = np.zeros(self.n, dtype=np.float64)
@@ -219,14 +236,15 @@ class SimFastVecEnv:
         self.end_inside.fill(False)
         self.gates_passed.fill(0)
         self.total_gates.fill(0)
+        self.progress.fill(0.0)
         self.factory_reports.fill(0)
         self.factory_hold.fill(0.0)
         self.force_time.fill(0.0)
         self.steps.fill(0)
         self.episode_return.fill(0.0)
         self.failure_reason.fill("")
-        self.lines = generate_lines(self.track, self.rngs, max_count=self.config.line_max)
-        self.vehicles = generate_vehicles(self.track, self.rngs, max_count=self.config.vehicle_max)
+        self.lines = generate_lines(self.track, self.rngs, max_count=self.line_max)
+        self.vehicles = generate_vehicles(self.track, self.rngs, max_count=self.vehicle_max)
         self.wind = WindField.create(self.rngs, self.spec.id, self.spec.wind)
         return self._obs()
 
@@ -262,18 +280,19 @@ class SimFastVecEnv:
             self.end_inside[env_index] = False
             self.gates_passed[env_index] = 0
             self.total_gates[env_index] = 0
+            self.progress[env_index] = 0.0
             self.factory_reports[env_index] = 0
             self.factory_hold[env_index] = 0.0
             self.force_time[env_index] = 0.0
             self.steps[env_index] = 0
             self.episode_return[env_index] = 0.0
             self.failure_reason[env_index] = ""
-        new_lines = generate_lines(self.track, rngs, max_count=self.config.line_max)
+        new_lines = generate_lines(self.track, rngs, max_count=self.line_max)
         self.lines.start[indices] = new_lines.start
         self.lines.end[indices] = new_lines.end
         self.lines.radius[indices] = new_lines.radius
         self.lines.active[indices] = new_lines.active
-        new_vehicles = generate_vehicles(self.track, rngs, max_count=self.config.vehicle_max)
+        new_vehicles = generate_vehicles(self.track, rngs, max_count=self.vehicle_max)
         self.vehicles.center[indices] = new_vehicles.center
         self.vehicles.yaw[indices] = new_vehicles.yaw
         self.vehicles.velocity[indices] = new_vehicles.velocity
@@ -363,7 +382,8 @@ class SimFastVecEnv:
         # 30 s start rule: leave the start trigger zone.
         start_distance = np.linalg.norm(self.pos - self.track.start_position, axis=1)
         just_started = (self.phase == PHASE_WAIT_START) & (
-            start_distance > self.track.start_trigger_length_m
+            ~self.track.start_gate.contains_trigger(self.pos) if self.track.audited_stage1
+            else start_distance > self.track.start_trigger_length_m
         )
         self.phase = np.where(just_started, PHASE_FLYING, self.phase)
         self.start_time = np.where(self.phase == PHASE_WAIT_START, self.start_time + self.dt, self.start_time)
@@ -376,42 +396,42 @@ class SimFastVecEnv:
         end_cross = end_inside & (~self.end_inside)
         self.start_inside = start_inside
         self.end_inside = end_inside
-        start_pass = (self.phase == PHASE_FLYING) & (self.gate_index == 0) & start_cross
-        end_ready = (self.phase == PHASE_FLYING) & (self.gate_index == 1) & end_cross
         factory_required = self.spec.factory_reports
-        end_pass = end_ready & (self.factory_reports >= factory_required)
-        self.gate_index = np.where(start_pass, 1, self.gate_index)
-        self.gate_index = np.where(end_pass, 2, self.gate_index)
-        self.gates_passed += start_pass.astype(np.int32) + end_pass.astype(np.int32)
-        self.total_gates += start_pass.astype(np.int32) + end_pass.astype(np.int32)
-        end_trigger = (
-            np.linalg.norm(self.pos - self.track.end_position, axis=1) < 5.0
-        )
-        segment_done = (
-            (self.gate_index == 2)
-            & end_trigger
-            & (self.phase == PHASE_FLYING)
-        )
         progress_now = self.track.project(self.pos)[0]
-        start_gate_s = float(
-            self.track.project(self.track.start_gate.center[None, :])[0][0]
-        )
-        end_gate_s = float(
-            self.track.project(self.track.end_gate.center[None, :])[0][0]
-        )
-        missed_start = (
-            (self.phase == PHASE_FLYING)
-            & (self.gate_index == 0)
-            & (progress_now > start_gate_s + 20.0)
-            & (~start_pass)
-        )
-        missed_end = (
-            (self.phase == PHASE_FLYING)
-            & (self.gate_index == 1)
-            & (progress_now > end_gate_s + 20.0)
-            & (~end_pass)
-        )
-        missed_gate = missed_start | missed_end
+        self.progress = progress_now.copy()
+        if self.track.audited_stage1:
+            # Score only the next ordered detection gate; start/end zones are separate.
+            # The swept plane/aperture test is an approximation to the UE trigger.
+            scored = np.zeros(self.n, dtype=np.int32)
+            active = (self.phase == PHASE_WAIT_START) | (self.phase == PHASE_FLYING)
+            for index, gate in enumerate(self.track.scoring_gates):
+                passed = active & (self.gate_index == index) & gate.contains_crossing(prev_pos, self.pos)
+                self.gate_index += passed.astype(np.int32)
+                scored += passed.astype(np.int32)
+            self.gates_passed += scored
+            self.total_gates += scored
+            start_pass = scored.astype(bool)
+            end_pass = np.zeros(self.n, dtype=bool)
+            segment_done = ((self.phase == PHASE_FLYING) &
+                            (self.gate_index == len(self.track.scoring_gates)) & end_cross)
+            missed_gate = np.zeros(self.n, dtype=bool)
+        else:
+            start_pass = (self.phase == PHASE_FLYING) & (self.gate_index == 0) & start_cross
+            end_ready = (self.phase == PHASE_FLYING) & (self.gate_index == 1) & end_cross
+            end_pass = end_ready & (self.factory_reports >= factory_required)
+            self.gate_index = np.where(start_pass, 1, self.gate_index)
+            self.gate_index = np.where(end_pass, 2, self.gate_index)
+            self.gates_passed += start_pass.astype(np.int32) + end_pass.astype(np.int32)
+            self.total_gates += start_pass.astype(np.int32) + end_pass.astype(np.int32)
+            end_trigger = np.linalg.norm(self.pos - self.track.end_position, axis=1) < 5.0
+            segment_done = (self.gate_index == 2) & end_trigger & (self.phase == PHASE_FLYING)
+            start_gate_s = float(self.track.project(self.track.start_gate.center[None, :])[0][0])
+            end_gate_s = float(self.track.project(self.track.end_gate.center[None, :])[0][0])
+            missed_start = ((self.phase == PHASE_FLYING) & (self.gate_index == 0) &
+                            (progress_now > start_gate_s + 20.0) & (~start_pass))
+            missed_end = ((self.phase == PHASE_FLYING) & (self.gate_index == 1) &
+                          (progress_now > end_gate_s + 20.0) & (~end_pass))
+            missed_gate = missed_start | missed_end
 
         # Factory inspection placeholder: hold near a factory target for 1 s.
         # Perception/report correctness is a node-2 concern.
@@ -443,23 +463,28 @@ class SimFastVecEnv:
             self.segment_time > self.spec.time_limit_s
         )
         force_fail = self.force_time > self.config.force_field_limit_s
-        failed = collision | timeout | force_fail | missed_gate
+        already_terminal = (self.phase == PHASE_DONE) | (self.phase == PHASE_FAILED)
+        failed = (collision | timeout | force_fail | missed_gate) & ~already_terminal
         done = segment_done | failed
 
         # Reward. Before the start gate, reward approach to the gate; path
         # progress is unlocked only after the start gate so the policy cannot
-        # farm progress by climbing parallel to the path.
+        # farm progress by climbing parallel to the path. The audited stage has
+        # no start-gate "pass"; it uses path progress from the start zone.
         path_progress = np.clip(
             progress_now - self.track.project(prev_pos)[0],
             -10.0,
             10.0,
         )
-        start_distance = np.linalg.norm(self.pos - self.track.start_gate.center, axis=1)
-        start_distance_prev = np.linalg.norm(
-            prev_pos - self.track.start_gate.center, axis=1
-        )
-        gate_approach = np.clip(start_distance_prev - start_distance, -10.0, 10.0)
-        progress = np.where(self.gate_index >= 1, path_progress, gate_approach)
+        if self.track.audited_stage1:
+            progress = path_progress
+        else:
+            start_distance = np.linalg.norm(self.pos - self.track.start_gate.center, axis=1)
+            start_distance_prev = np.linalg.norm(
+                prev_pos - self.track.start_gate.center, axis=1
+            )
+            gate_approach = np.clip(start_distance_prev - start_distance, -10.0, 10.0)
+            progress = np.where(self.gate_index >= 1, path_progress, gate_approach)
         reward = self.config.reward_progress * progress
         reward += self.config.reward_gate * (
             start_pass.astype(np.float64) + end_pass.astype(np.float64)
@@ -511,6 +536,12 @@ class SimFastVecEnv:
         return closest <= self.config.factory_radius_m
 
     def _next_gate(self):
+        if self.track.audited_stage1:
+            gates = self.track.scoring_gates
+            centers = np.stack([g.center for g in gates] + [self.track.end_gate.center])
+            normals = np.stack([g.normal for g in gates] + [self.track.end_gate.normal])
+            idx = np.minimum(self.gate_index, len(gates))
+            return centers[idx], normals[idx]
         is_start = (self.gate_index == 0)[:, None]
         centers = np.where(
             is_start,
@@ -574,11 +605,15 @@ class SimFastVecEnv:
             "gates_passed": self.gates_passed.copy(),
             "total_gates": self.total_gates.copy(),
             "segment_time": self.segment_time.copy(),
+            "progress_m": self.progress.copy(),
             "phase": self.phase.copy(),
             "success": (self.phase == PHASE_DONE),
             "failure_reason": self.failure_reason.copy(),
             "factory_reports": self.factory_reports.copy(),
             "episode_return": self.episode_return.copy(),
+            "track_mode": self.config.track_mode,
+            "track_length_m": float(self.track.total_length_m),
+            "scoring_gate_count": int(len(self.track.scoring_gates)),
         }
 
 
