@@ -1,0 +1,104 @@
+{
+  "edges": [
+    {
+      "command": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "sample_count": 26,
+      "first_match_delay_ms": 57.638958,
+      "prior_sample_age_ms": 2.393028,
+      "prior_value": [
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762
+      ],
+      "matching_samples": 21
+    },
+    {
+      "command": [
+        0.188,
+        0.188,
+        0.182,
+        0.182
+      ],
+      "sample_count": 20,
+      "first_match_delay_ms": 44.92897,
+      "prior_sample_age_ms": 5.199424,
+      "prior_value": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "matching_samples": 16
+    },
+    {
+      "command": [
+        0.182,
+        0.182,
+        0.188,
+        0.188
+      ],
+      "sample_count": 20,
+      "first_match_delay_ms": 43.111398,
+      "prior_sample_age_ms": 6.969069,
+      "prior_value": [
+        0.18799999356269836,
+        0.18799999356269836,
+        0.18199999630451202,
+        0.18199999630451202
+      ],
+      "matching_samples": 16
+    },
+    {
+      "command": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "sample_count": 25,
+      "first_match_delay_ms": 41.225157,
+      "prior_sample_age_ms": 8.589348,
+      "prior_value": [
+        0.18199999630451202,
+        0.18199999630451202,
+        0.18799999356269836,
+        0.18799999356269836
+      ],
+      "matching_samples": 21
+    },
+    {
+      "command": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_count": 50,
+      "first_match_delay_ms": 48.939835,
+      "prior_sample_age_ms": 0.921112,
+      "prior_value": [
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213
+      ],
+      "matching_samples": 46
+    }
+  ],
+  "source_sha256": {
+    "commands.jsonl": "ba0891bdf953541d71a7a5cba0d9fef65deb1b74f664074816eee6151c877be8",
+    "capture.jsonl": "ce9cf733daad57e59e3aaa480b4449b7c174e59b3d2e9a0a52712af1e5fa35a0"
+  },
+  "limitations": [
+    "command time is recorded after publish, debug time is subscriber arrival",
+    "both use host monotonic clock but include scheduling and transport",
+    "debug PWM publication is not verified motor speed or physical actuation",
+    "short phases can contain too few samples to estimate delay"
+  ]
+}

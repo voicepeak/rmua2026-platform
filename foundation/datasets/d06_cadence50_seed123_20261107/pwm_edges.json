@@ -1,0 +1,86 @@
+{
+  "edges": [
+    {
+      "command": [
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "sample_count": 51,
+      "first_match_delay_ms": 64.583618,
+      "prior_sample_age_ms": 5.412309,
+      "prior_value": [
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762
+      ],
+      "matching_samples": 45
+    },
+    {
+      "command": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "sample_count": 60,
+      "first_match_delay_ms": 58.718094,
+      "prior_sample_age_ms": 1.249178,
+      "prior_value": [
+        0.11999999731779099,
+        0.11999999731779099,
+        0.11999999731779099,
+        0.11999999731779099
+      ],
+      "matching_samples": 55
+    },
+    {
+      "command": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "sample_count": 51,
+      "first_match_delay_ms": 51.47179,
+      "prior_sample_age_ms": 8.530502,
+      "prior_value": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "matching_samples": 46
+    },
+    {
+      "command": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sample_count": 50,
+      "first_match_delay_ms": 45.287499,
+      "prior_sample_age_ms": 4.785259,
+      "prior_value": [
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213
+      ],
+      "matching_samples": 46
+    }
+  ],
+  "source_sha256": {
+    "commands.jsonl": "7e050ccbf01d5eb4195f847ea6d9b461c1aa53666b65ddfe208cac63a44f58e5",
+    "capture.jsonl": "a8919fe65838447bdcd4a1934974879d16c83774b9d501afc6563641d3e03f4f"
+  },
+  "limitations": [
+    "command time is recorded after publish, debug time is subscriber arrival",
+    "both use host monotonic clock but include scheduling and transport",
+    "debug PWM publication is not verified motor speed or physical actuation",
+    "short phases can contain too few samples to estimate delay"
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "status": "completed",
+  "command_count": 64,
+  "phases": [
+    {
+      "pwm": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "duration_s": 0.26365002600000004,
+      "imu_samples": 16,
+      "rotor_samples": 16,
+      "pose_samples": 16,
+      "median_imu_accel_z_m_s2": -11.028208255767822,
+      "median_debug_rotor_pwm": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.0014140337897889717,
+        -0.0023626754757622524,
+        -0.008016711505612194
+      ],
+      "angular_slope_samples": 23,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        0.2772737741470337,
+        0.3052513301372528
+      ]
+    },
+    {
+      "pwm": [
+        0.189,
+        0.185,
+        0.185,
+        0.185
+      ],
+      "duration_s": 0.121497535,
+      "imu_samples": 2,
+      "rotor_samples": 2,
+      "pose_samples": 2,
+      "median_imu_accel_z_m_s2": -10.181756496429443,
+      "median_debug_rotor_pwm": [
+        0.1889999955892563,
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1850000023841858
+      ],
+      "angular_rate_slope_rad_s2": [
+        -1.3458925635080343,
+        0.9068526111059653,
+        0.07638339081332525
+      ],
+      "angular_slope_samples": 9,
+      "provisional_incremental_slope_rad_s2": [
+        -1.361272520827189,
+        0.9209239174428286,
+        0.06397629017123124
+      ],
+      "position_z_range_m": [
+        0.23888756334781647,
+        0.24199730157852173
+      ]
+    },
+    {
+      "pwm": [
+        0.185,
+        0.189,
+        0.185,
+        0.185
+      ],
+      "duration_s": 0.141601275,
+      "imu_samples": 5,
+      "rotor_samples": 5,
+      "pose_samples": 5,
+      "median_imu_accel_z_m_s2": -10.220702171325684,
+      "median_debug_rotor_pwm": [
+        0.1850000023841858,
+        0.1889999955892563,
+        0.1850000023841858,
+        0.1850000023841858
+      ],
+      "angular_rate_slope_rad_s2": [
+        1.3526385974638209,
+        -0.916020373815517,
+        0.046138391842083216
+      ],
+      "angular_slope_samples": 12,
+      "provisional_incremental_slope_rad_s2": [
+        1.361272520827189,
+        -0.9209239174428286,
+        0.06397629017123124
+      ],
+      "position_z_range_m": [
+        0.18209707736968994,
+        0.1977573037147522
+      ]
+    },
+    {
+      "pwm": [
+        0.185,
+        0.185,
+        0.189,
+        0.185
+      ],
+      "duration_s": 0.12131863300000001,
+      "imu_samples": 2,
+      "rotor_samples": 2,
+      "pose_samples": 2,
+      "median_imu_accel_z_m_s2": -10.207483291625977,
+      "median_debug_rotor_pwm": [
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1889999955892563,
+        0.1850000023841858
+      ],
+      "angular_rate_slope_rad_s2": [
+        1.3555774285701705,
+        0.9216972264689693,
+        -0.07764061133354337
+      ],
+      "angular_slope_samples": 9,
+      "provisional_incremental_slope_rad_s2": [
+        1.361272520827189,
+        0.9209239174428286,
+        -0.06397629017123124
+      ],
+      "position_z_range_m": [
+        0.13001634180545807,
+        0.13412527740001678
+      ]
+    },
+    {
+      "pwm": [
+        0.185,
+        0.185,
+        0.185,
+        0.189
+      ],
+      "duration_s": 0.141871847,
+      "imu_samples": 4,
+      "rotor_samples": 4,
+      "pose_samples": 4,
+      "median_imu_accel_z_m_s2": -10.191990852355957,
+      "median_debug_rotor_pwm": [
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1889999955892563
+      ],
+      "angular_rate_slope_rad_s2": [
+        -1.3766925925128586,
+        -0.8908775986561185,
+        -0.05596498026552946
+      ],
+      "angular_slope_samples": 11,
+      "provisional_incremental_slope_rad_s2": [
+        -1.361272520827189,
+        -0.9209239174428286,
+        -0.06397629017123124
+      ],
+      "position_z_range_m": [
+        0.06139589101076126,
+        0.07666035741567612
+      ]
+    },
+    {
+      "pwm": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "duration_s": 0.243204141,
+      "imu_samples": 14,
+      "rotor_samples": 14,
+      "pose_samples": 14,
+      "median_imu_accel_z_m_s2": -8.790658950805664,
+      "median_debug_rotor_pwm": [
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.0008328511788354311,
+        -0.0055818876337418956,
+        -0.008896099408950708
+      ],
+      "angular_slope_samples": 21,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        -0.039145033806562424,
+        0.007733312901109457
+      ]
+    },
+    {
+      "pwm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "duration_s": 0.26313142500000003,
+      "imu_samples": 17,
+      "rotor_samples": 16,
+      "pose_samples": 16,
+      "median_imu_accel_z_m_s2": -0.28010618686676025,
+      "median_debug_rotor_pwm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.007311932672226626,
+        -0.003625478725173207,
+        0.002802669393933434
+      ],
+      "angular_slope_samples": 24,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        -0.03196949139237404,
+        0.16421836614608765
+      ]
+    }
+  ],
+  "analysis_sha256": "18ee012e5c265fb59739a8f662fec7ed09e9a8ddba2c2ebb140056af7568c10e",
+  "sha256": {
+    "commands.jsonl": "9c4983c9278934ed082d4a215e5908ce9181c4708e2fb261049bdbe4797a3c06",
+    "capture.jsonl": "c3dc77de681f5d4374ae251519d81e415ad38a847a9a26a6270b08e63ad9ec60"
+  },
+  "limitations": [
+    "host monotonic arrival time includes transport delay",
+    "debug PWM is not proven to be actuator state",
+    "ground contact and later free flight are not classified",
+    "angular-rate slopes include prior motion, gravity, coupling and unknown actuation latency",
+    "incremental prediction assumes RPS-squared coefficient units and ignores motor lag and prior motion",
+    "one exploratory waveform, not a calibrated or held-out experiment"
+  ]
+}

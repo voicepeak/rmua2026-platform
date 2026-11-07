@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-94c20805b3634c449d6133675792218b",
+  "exit_status": 0,
+  "mode": "field_trace",
+  "seed_requested": 123,
+  "stdout": "player=0 stop=0 collector=137 (collector may be interrupted by stop)\n",
+  "stderr": "",
+  "source_sha256": {
+    "collect_ros.py": "9e526f9b016bde936b05a5f715102bdee138c287839c15187a14fadd43eac27a",
+    "collective_remote.sh": "79230f978bd039829842383832a50af70a1d1a617d247da522c19f69954b333e",
+    "pwm_collective.py": "0c5cc930ca640f46021373716063685596e6a95bcda602ae615f4ae4f9b8d96e",
+    "field_trace.gdb": "631a39b82fc3915783328dc99d3b9ef7283a03cff4f0e369b26e4fd3bc1acd5f"
+  }
+}

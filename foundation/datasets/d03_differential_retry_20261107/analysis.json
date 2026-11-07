@@ -1,0 +1,60 @@
+{
+  "sha256": "5278e3111349d859a938ae747e827a8daeb468d3382f985511cadd14819ad396",
+  "mode": "collective",
+  "limitations": [
+    "ground-start observation; contact and free-flight effects may mix",
+    "debug truth is diagnostic only",
+    "no command or actuator latency calibration"
+  ],
+  "topics": {
+    "imu": {
+      "count": 399,
+      "duplicate_stamps": 0,
+      "backwards_stamps": 0,
+      "span_s": 3.981084823,
+      "interval_median_s": 0.009000301,
+      "interval_max_s": 0.012000323,
+      "acceleration_mean_m_s2": [
+        -0.0009223837654904596,
+        0.001440458731277365,
+        -9.042164612370065
+      ],
+      "omega_mean_rad_s": [
+        0.005411615249380745,
+        -0.002056777923842259,
+        0.0012896804948670216
+      ]
+    },
+    "pose_gt": {
+      "count": 400,
+      "duplicate_stamps": 0,
+      "backwards_stamps": 0,
+      "span_s": 3.990085124,
+      "interval_median_s": 0.009000301,
+      "interval_max_s": 0.012000323,
+      "position_min_m": [
+        -0.05999503974389264,
+        -0.018177687749962063,
+        -0.041759852319955826
+      ],
+      "position_max_m": [
+        -7.797241474690959e-05,
+        -1.0070796533909049e-05,
+        0.45527297258377075
+      ],
+      "displacement_from_first_max_m": 0.3527362911348686
+    },
+    "rotor_pwm": {
+      "count": 399,
+      "wire_types": [
+        "airsim_ros/RotorPWM:4967432b608c06d70b17be20124fa258"
+      ]
+    },
+    "wind": {
+      "count": 199,
+      "wire_types": [
+        "geometry_msgs/Vector3Stamped:7b324c7325e683bf02a9b14b01090ec7"
+      ]
+    }
+  }
+}

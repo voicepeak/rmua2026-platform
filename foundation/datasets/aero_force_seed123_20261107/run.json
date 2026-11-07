@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-e3ea5eff4bdd4003a08d305145ad3ca6",
+  "exit_status": 0,
+  "mode": "aero_force_probe",
+  "seed_requested": 123,
+  "stdout": "player=0 stop=0 collector=137 (collector may be interrupted by stop)\n",
+  "stderr": "",
+  "source_sha256": {
+    "collect_ros.py": "9e526f9b016bde936b05a5f715102bdee138c287839c15187a14fadd43eac27a",
+    "collective_remote.sh": "b0741321029d94be348515fb5ea96161d33da10bf55b77d1e6ad72e751b09e5c",
+    "pwm_collective.py": "eba9ad0611fe8a5ffb8b8cede3e23836dc6c6f68b4ba20d610d67f700a8fed7f",
+    "aero_force_readonly.gdb": "2a3d170e7031210da0ac6804465176d47ea18b030d4f0108c7ac20554fa7e377"
+  }
+}

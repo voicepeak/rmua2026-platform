@@ -1,0 +1,18 @@
+{
+  "source_sha256": "1fb8c12da0f8aceecb79f2f6acc8b9ecb8d298624a1c7cd8f0cd9cae4fe58de1",
+  "pairs": 32,
+  "unique_actor_root_values": 17,
+  "most_common_actor_root_count": 10,
+  "unique_ros_pose_values": 18,
+  "speed_threshold_m_s": 0.2,
+  "residual_threshold_cm": 5.0,
+  "moving_intervals": 15,
+  "high_residual_pairs": 1,
+  "moving_and_high_residual": 1,
+  "limitations": [
+    "speed is finite difference of asynchronous paired ROS pose samples",
+    "exact repeated values are not proof that a physical body was stationary",
+    "correlation does not identify delay, root-update semantics, or cause",
+    "debugger and injected collision fixture affect the experiment"
+  ]
+}

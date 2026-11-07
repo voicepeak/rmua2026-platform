@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-6b18108fd55d40dab04a76792019efe0",
+  "exit_status": 0,
+  "mode": "rotor_probe",
+  "seed_requested": 123,
+  "stdout": "player=0 stop=0 collector=137 (collector may be interrupted by stop)\n",
+  "stderr": "",
+  "source_sha256": {
+    "collect_ros.py": "9e526f9b016bde936b05a5f715102bdee138c287839c15187a14fadd43eac27a",
+    "collective_remote.sh": "fced3813cd96127ad87a2176d8c519df51d4c312d4118fcedbd1308d11a5f1ac",
+    "pwm_collective.py": "58d9ff440c6a1e4931b3cf18c27e894692bfd513e543abd5f71bd4846ae85627",
+    "rotor_readonly.gdb": "5139fbfee75ebf923adb373e9edae9acefeaaccd5fdb02d41280a058433f875b"
+  }
+}

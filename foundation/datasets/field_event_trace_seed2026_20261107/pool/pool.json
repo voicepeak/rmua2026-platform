@@ -1,0 +1,31 @@
+{
+  "schema": "rmua-headless-pool-v1",
+  "pool_id": "7e8407bdb0e2",
+  "simulator": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings": "/home/tianbot/RUMA-by-helinjun/main/configs/simulator_settings.json",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image": "rmua/re-probe:20261104",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "mode": "nullrhi+gdb",
+  "instances": [
+    {
+      "seed": 2026,
+      "port": 11821,
+      "container": "rmua-re-7e8407bdb0e2-0",
+      "id": "7c0ffa62d74b8dc6eca52a0c7d2c9dd83e52116f5ea7920db5da73f2fdef7d11",
+      "docker_start_wall": 1794057934.2093818,
+      "docker_created_wall": 1794057934.64472,
+      "imu_ready_observed_wall": 1794057942.9066126,
+      "startup_observed_s": 8.697230815887451
+    }
+  ],
+  "ready": true,
+  "limitations": [
+    "No lockstep or reset guarantee",
+    "Camera images are empty in NullRHI",
+    "Diagnostics only; dynamic equivalence not established",
+    "GDB changes timing; GDB exit status is not the inferior exit status"
+  ],
+  "gdb_script_sha256": "fd941faabb3821ba0c135815519d5f488c047962c7fe121f5ce2bf3b25f1c7fc"
+}

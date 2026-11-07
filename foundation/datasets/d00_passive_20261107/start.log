@@ -1,0 +1,15 @@
+{
+  "manifest": "/tmp/foundation-6783b807fc6840b290d6ec80305a3d11/pool/pool.json",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 11821,
+      "container": "rmua-re-28e4f5cca371-0",
+      "id": "5e075a19018378db72741431530edabbb8b080bda63aab520a413613e4117c06",
+      "docker_start_wall": 1794018247.1374087,
+      "docker_created_wall": 1794018247.5779245,
+      "imu_ready_observed_wall": 1794018255.2750275,
+      "startup_observed_s": 8.137618780136108
+    }
+  ]
+}

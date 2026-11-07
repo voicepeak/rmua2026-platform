@@ -1,0 +1,1878 @@
+Breakpoint 1 at 0x2fb9184
+Breakpoint 2 at 0x26f22b0
+Breakpoint 3 at 0x269ab90
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 189]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 2026 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.07-13.25.36:298][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.07-13.25.36:298][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.07-13.25.36:299][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.07-13.25.36:299][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.07-13.25.36:299][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.07-13.25.36:299][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.07-13.25.36:299][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.07-13.25.36:299][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.07-13.25.36:299][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.07-13.25.36:299][  0]LogInit: Unix hardware info:
+[2026.11.07-13.25.36:299][  0]LogInit:  - we are the first instance of this executable
+[2026.11.07-13.25.36:299][  0]LogInit:  - this process' id (pid) is 110, parent process' id (ppid) is 108
+[2026.11.07-13.25.36:299][  0]LogInit:  - we are not running under debugger
+[2026.11.07-13.25.36:299][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.07-13.25.36:299][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.07-13.25.36:299][  0]LogInit:  - we're logged in locally
+[2026.11.07-13.25.36:299][  0]LogInit:  - we're running without rendering
+[2026.11.07-13.25.36:299][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.07-13.25.36:299][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.07-13.25.36:299][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.07-13.25.36:299][  0]LogInit:  - Cache line size: 64
+[2026.11.07-13.25.36:299][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.07-13.25.36:299][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.07-13.25.36:299][  0]LogInit:  - This is an internal build.
+[2026.11.07-13.25.36:299][  0]LogCore: Benchmarking clocks:
+[2026.11.07-13.25.36:299][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 81187731 (81188K, 81M) calls per second without zero deltas.
+[2026.11.07-13.25.36:299][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 82460515 (82461K, 82M) calls per second without zero deltas.
+[2026.11.07-13.25.36:299][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 215264618 (215265K, 215M) calls per second with 99.999531% zero deltas.
+[2026.11.07-13.25.36:299][  0]LogCore: Selected clock_id 4 (CLOCK_MONOTONIC_RAW) since it is the fastest support clock without zero deltas.
+[2026.11.07-13.25.36:299][  0]LogInit: Unix-specific commandline switches:
+[2026.11.07-13.25.36:300][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.07-13.25.36:300][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.07-13.25.36:300][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.07-13.25.36:300][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.07-13.25.36:300][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.07-13.25.36:300][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.07-13.25.36:300][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.07-13.25.36:300][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.07-13.25.36:300][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.07-13.25.36:300][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.07-13.25.36:300][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.07-13.25.36:300][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.07-13.25.36:300][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.07-13.25.36:300][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.07-13.25.36:341][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.07-13.25.36:341][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.07-13.25.36:341][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.07-13.25.36:341][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.07-13.25.36:351][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.07-13.25.36:353][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.07-13.25.36:353][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.07-13.25.36:354][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.07-13.25.36:354][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.07-13.25.36:354][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.07-13.25.36:356][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.07-13.25.36:356][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.07-13.25.36:356][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.07-13.25.36:356][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.07-13.25.36:356][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.07-13.25.36:356][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.07-13.25.36:385][  0]LogTextLocalizationManager: Compacting localization data took   0.89ms
+[2026.11.07-13.25.36:385][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.07-13.25.36:385][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000022 seconds
+[2026.11.07-13.25.36:385][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.07-13.25.36:388][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.07-13.25.36:389][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.07-13.25.36:389][  0]LogInit: Active device profile: [0x7b718a0491c0][0x7b7189419250 49] LinuxNoEditor
+[2026.11.07-13.25.36:389][  0]LogInit: Profiles: [0x7b718a048ec0][0x7b7191680010 49] Linux, [0x7b718a0491c0][0x7b7189419250 49] LinuxNoEditor, 
+[2026.11.07-13.25.36:392][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.07-13.25.36:418][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.07-13.25.36:418][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.07-13.25.36:418][  0]LogTemp: Circle 构造函数调用
+[2026.11.07-13.25.36:418][  0]LogTemp: Circle 构造函数调用
+[2026.11.07-13.25.36:418][  0]LogTemp: Circle 构造函数调用
+[2026.11.07-13.25.36:423][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.07-13.25.36:454][  0]LogTemp: AirSimROS Loaded.
+[2026.11.07-13.25.36:454][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.07-13.25.36:456][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.07-13.25.36:456][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.07-13.25.36:456][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.07-13.25.36:456][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.07-13.25.36:458][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.07-13.25.36:459][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.07-13.25.36:490][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-13.25.36:490][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-13.25.36:490][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.07-13.25.36:520][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.07-13.25.36:520][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.07-13.25.36:520][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.07-13.25.36:520][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.07-13.25.36:520][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.07-13.25.36:623][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.07-13.25.36:623][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.07-13.25.36:623][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.07-13.25.36:623][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.07-13.25.36:623][  0]LogInit: Texture streaming: Disabled
+[2026.11.07-13.25.36:632][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.07-13.25.36:632][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.07-13.25.36:632][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.07-13.25.36:632][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.07-13.25.36:632][  0]LogTemp: Warning: App Init End !!! 2026-11-07 13:25:36 127.0.0.2
+[2026.11.07-13.25.36:632][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.07-13.25.36:632][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.07-13.25.36:632][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.07-13.25.36:632][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.07-13.25.36:633][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.07-13.25.36:633][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.07-13.25.36:633][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.07-13.25.36:641][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.07-13.25.36:641][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.07-13.25.36:641][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.07-13.25.36:641][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.07-13.25.36:641][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.07-13.25.36:743][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.07-13.25.36:743][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.07-13.25.36:743][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.07-13.25.36:744][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.07-13.25.36:744][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.07-13.25.36:744][  0]LogInit: Display: Starting Game.
+[2026.11.07-13.25.36:744][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.07-13.25.36:744][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.07-13.25.36:744][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.07-13.25.36:744][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-13.25.36:744][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-13.25.36:745][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2026.11.07-13.25.36:748][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.07-13.25.36:748][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.07-13.25.36:748][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.07-13.25.36
+[2026.11.07-13.25.36:748][  0]LogWorld: Bringing up level for play took: 0.000092
+[2026.11.07-13.25.36:749][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.07-13.25.36:749][  0]r.SetRes = "1280x720 w"
+[2026.11.07-13.25.36:749][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.07-13.25.36:749][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.07-13.25.36:749][  0]LogLoad: Took 0.004765 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.07-13.25.36:755][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.07-13.25.36:755][  0]LogLoad: (Engine Initialization) Total time: 0.53 seconds
+[2026.11.07-13.25.41:756][952]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.07-13.25.41:756][952]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.07-13.25.41:756][952]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.07-13.25.41:756][952]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.07-13.25.41:756][952]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.07-13.25.41:756][952]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2026.11.07-13.25.41:757][952]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.07-13.25.42:058][952]LogPakFile: Precache HighWater 16MB
+
+[2026.11.07-13.25.42:058][952]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.07-13.25.42:058][952]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.07-13.25.42:087][952]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.07-13.25.42
+[2026.11.07-13.25.42:088][952]LogWorld: Bringing up level for play took: 0.029322
+[2026.11.07-13.25.42:103][952]LogPackageName: SearchForPackageOnDisk took   0.013s, but failed to resolve .
+[2026.11.07-13.25.42:103][952]r.CustomDepth = "3"
+[2026.11.07-13.25.42:104][952]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.07-13.25.42:121][952]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.07-13.25.42:123][952]LogTemp: Warning: No Drone API
+[2026.11.07-13.25.42:123][952]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+TARGET_WATCH_INSTALLED rotor=0x7b718a15b050
+TOGGLE_ROTOR mono=394087.774984492 rotor=0x7b718a15b050 flag=1 filtered=0 target=0 input=4.42824328e-41 thrust=0 scale=1
+TOGGLE_ROTOR mono=394087.787662465 rotor=0x7b718a15b188 flag=1 filtered=0 target=0 input=1.35678722e-15 thrust=0 scale=1
+TOGGLE_ROTOR mono=394087.788512467 rotor=0x7b718a15b2c0 flag=1 filtered=0 target=0 input=4.42796302e-41 thrust=0 scale=1
+TOGGLE_ROTOR mono=394087.789278752 rotor=0x7b718a15b3f8 flag=1 filtered=0 target=0 input=4.42796302e-41 thrust=0 scale=1
+TARGET_WRITE mono=394087.789891316 flag=1 number=1
+#0  0x000000000269899c in _start ()
+[Detaching after vfork from child process 421]
+TOGGLE mono=394087.826709946 start=None elapsed=None natural=1 forced=1 config=0x7b718211cb80
+TOGGLE_ROTOR mono=394087.835582537 rotor=0x7b718a15b050 flag=1 filtered=0.00730021577 target=0.0073333336 input=0.0073333336 thrust=0.0911858156 scale=1
+TOGGLE_ROTOR mono=394087.849246279 rotor=0x7b718a15b188 flag=1 filtered=0.00732785976 target=0.0073333336 input=0.0073333336 thrust=0.0918173492 scale=1
+TOGGLE_ROTOR mono=394087.850341867 rotor=0x7b718a15b2c0 flag=1 filtered=0.00732785976 target=0.0073333336 input=0.0073333336 thrust=0.0918173492 scale=1
+TOGGLE_ROTOR mono=394087.851060177 rotor=0x7b718a15b3f8 flag=1 filtered=0.00732785976 target=0.0073333336 input=0.0073333336 thrust=0.0918173492 scale=1
+TOGGLE_ROTOR mono=394087.896637191 rotor=0x7b718a15b050 flag=1 filtered=0.00733332941 target=0.0073333336 input=0.0073333336 thrust=0.0919423103 scale=1
+FIELD_EVENT_CONSUMER mono=394087.897617993 type=30 value=1
+TOGGLE_ROTOR mono=394087.909615468 rotor=0x7b718a15b188 flag=1 filtered=0.00733333267 target=0.0073333336 input=0.0073333336 thrust=0.0919423923 scale=1
+TOGGLE_ROTOR mono=394087.910633706 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333267 target=0.0073333336 input=0.0073333336 thrust=0.0919423923 scale=1
+TOGGLE_ROTOR mono=394087.911679869 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333267 target=0.0073333336 input=0.0073333336 thrust=0.0919423923 scale=1
+TOGGLE_ROTOR mono=394087.957540510 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394087.972131432 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394087.972757646 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394087.973360983 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.020838420 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.033073638 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.033709289 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.034298785 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.082338508 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.093846113 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.094438052 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.095019230 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.144351394 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.155701421 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.156327169 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.157050175 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.209184661 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.215859198 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.216452497 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.217050291 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.270764106 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.276734632 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.277358134 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.277956984 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.330979542 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.337711175 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.338331159 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.338974804 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.392630048 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.401814852 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.402663082 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.403634008 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.455579061 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.462023986 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.465340520 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.465963485 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.515673361 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.525778064 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.526515407 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.527190067 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.576180167 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.585958202 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.586565644 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.589942852 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.639445366 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.646020332 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.646611505 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.652140092 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.702155608 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.706046195 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.706639811 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.715344321 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.763747652 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.767431851 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.768282864 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.779032162 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.824227325 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.828295757 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.828878392 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.840793062 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.888440526 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.889061607 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.889672900 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.901747787 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.948948981 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.949695584 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.950436404 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394088.962119530 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.011910140 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.012603370 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.013286586 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.024759573 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.072181935 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.072923181 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.073814718 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.087799925 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.134341268 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.134979331 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.135593369 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.153084379 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.195163519 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.195867656 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.196602081 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.213667806 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.255644259 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.256297281 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.256945558 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.273992894 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.317502557 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.318304108 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.319103334 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.335954633 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.378241906 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.378910134 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.379441691 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.398289660 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.440930070 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.441616996 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.442236230 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.459731078 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.500971133 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.502025427 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.503034694 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.524226703 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.561820661 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.562443984 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.566662649 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.585562540 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.622541152 rotor=0x7b718a15b050 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.623173668 rotor=0x7b718a15b188 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.628950399 rotor=0x7b718a15b2c0 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TOGGLE_ROTOR mono=394089.647193414 rotor=0x7b718a15b3f8 flag=1 filtered=0.00733333314 target=0.0073333336 input=0.0073333336 thrust=0.0919423997 scale=1
+TARGET_WRITE mono=394089.652710588 flag=1 number=2
+#0  0x000000000269899c in _start ()
+TOGGLE_ROTOR mono=394089.683364082 rotor=0x7b718a15b188 flag=1 filtered=0.118310645 target=0.119999997 input=0.119999997 thrust=1.4659183 scale=1
+TOGGLE_ROTOR mono=394089.689396667 rotor=0x7b718a15b050 flag=1 filtered=0.119072869 target=0.119999997 input=0.119999997 thrust=1.48333156 scale=1
+TOGGLE_ROTOR mono=394089.691337540 rotor=0x7b718a15b2c0 flag=1 filtered=0.119072869 target=0.119999997 input=0.119999997 thrust=1.48333156 scale=1
+TOGGLE_ROTOR mono=394089.708973956 rotor=0x7b718a15b3f8 flag=1 filtered=0.119953841 target=0.119999997 input=0.119999997 thrust=1.50345755 scale=1
+TOGGLE_ROTOR mono=394089.743978831 rotor=0x7b718a15b188 flag=1 filtered=0.119999789 target=0.119999997 input=0.119999997 thrust=1.5045073 scale=1
+TOGGLE_ROTOR mono=394089.751108595 rotor=0x7b718a15b050 flag=1 filtered=0.119999938 target=0.119999997 input=0.119999997 thrust=1.50451064 scale=1
+TOGGLE_ROTOR mono=394089.752736586 rotor=0x7b718a15b2c0 flag=1 filtered=0.119999938 target=0.119999997 input=0.119999997 thrust=1.50451064 scale=1
+TOGGLE_ROTOR mono=394089.777085197 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+[2026.11.07-13.25.42:124][952]r.SetRes = "1280x720 w"
+[2026.11.07-13.25.42:124][952]t.MaxFPS = "20"
+[2026.11.07-13.25.42:148][952]LogViewport: Display: Player bShowMouseCursor Changed, False -> True
+[2026.11.07-13.25.42:148][952]LogLoad: Took 0.392739 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024OL1)
+[2026.11.07-13.25.42:178][952]LogTemp: NodeRunnable: Current game type is 2
+[2026.11.07-13.25.42:178][952]LogTemp: Warning: Init Frametime Tolerance: 125000000.000000
+[2026.11.07-13.25.42:178][952]LogSlate: Took 0.000202 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2026.11.07-13.25.42:181][953]LogTemp: Warning: Reset Route 1 3
+[2026.11.07-13.25.42:181][953]LogTemp: Warning: Reset Spline 1 Num 0 PortNum 33 Reversed 0
+[2026.11.07-13.25.42:181][953]LogTemp: Warning: Reset Spline 3 Num 0 PortNum 30 Reversed 1
+[2026.11.07-13.25.42:181][953]LogTemp: NO A FACTORIE
+[2026.11.07-13.25.42:181][953]LogTemp: NO B FACTORIE
+[2026.11.07-13.25.42:181][953]LogTemp: ChangeState:0
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:0
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmb:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:038][991]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:084][992]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:1TOGGLE_ROTOR mono=394089.805191327 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.813970916 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.815445313 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.837671597 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.868300086 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.879629336 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.881065058 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.898286323 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.931705022 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.945511110 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.947430990 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394089.961595085 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+47][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:147][993]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:181][994]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:238][995]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:281][996]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: TOGGLE_ROTOR mono=394089.995433301 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.005923540 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.010281035 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.023859961 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.057169963 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.067250685 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.071422328 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.084805811 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.117931850 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.129620595 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.131533452 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.151077106 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE mono=394090.177836999 start=394089.64710507303 elapsed=0.5307319259736687 natural=1 forced=0 config=0x7b718211cb80
+pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:343][997]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:392][998]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:436][999]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:485][  0]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.4TOGGLE_ROTOR mono=394090.179038522 rotor=0x7b718a15b188 flag=0 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.189632570 rotor=0x7b718a15b050 flag=0 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.197212872 rotor=0x7b718a15b2c0 flag=0 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394090.212881045 rotor=0x7b718a15b3f8 flag=0 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+FIELD_EVENT_CONSUMER mono=394090.226854597 type=30 value=0
+SCALE_WRITE mono=394090.227791020 flag=0 number=1 pc=0x26f2fd9 <_start+1140313>
+#0  0x00000000026f2fd9 in _start ()
+TARGET_WRITE mono=394090.234462776 flag=0 number=3
+#0  0x000000000269899c in _start ()
+TOGGLE_ROTOR mono=394090.240717030 rotor=0x7b718a15b188 flag=0 filtered=0.0793924108 target=0.0299999993 input=0.119999997 thrust=1.50451195 scale=0.25
+TOGGLE_ROTOR mono=394090.250966049 rotor=0x7b718a15b050 flag=0 filtered=0.0381641947 target=0.0299999993 input=0.119999997 thrust=0.562641442 scale=0.25
+TOGGLE_ROTOR mono=394090.260119241 rotor=0x7b718a15b2c0 flag=0 filtered=0.0324589424 target=0.0299999993 input=0.119999997 thrust=0.432303309 scale=0.25
+TOGGLE_ROTOR mono=394090.273841774 rotor=0x7b718a15b3f8 flag=0 filtered=0.0304064453 target=0.0299999993 input=0.119999997 thrust=0.385413349 scale=0.25
+TOGGLE_ROTOR mono=394090.301502220 rotor=0x7b718a15b188 flag=0 filtered=0.0300033446 target=0.0299999993 input=0.119999997 thrust=0.376204431 scale=0.25
+TOGGLE_ROTOR mono=394090.311956395 rotor=0x7b718a15b050 flag=0 filtered=0.0300005525 target=0.0299999993 input=0.119999997 thrust=0.376140654 scale=0.25
+TOGGLE_ROTOR mono=394090.321645947 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300001651 target=0.0299999993 input=0.119999997 thrust=0.376131803 scale=0.25
+TOGGLE_ROTOR mono=394090.336307833 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000496 target=0.0299999993 input=0.119999997 thrust=0.37612915 scale=0.25
+4:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:534][  1]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:586][  2]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:633][  3]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:696][  4]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:696][  4]LogTemp: WarninTOGGLE_ROTOR mono=394090.362359301 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.372452851 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.383746800 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.399253572 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.422409833 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.433139519 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.446472281 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.460152261 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.485575123 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.493337357 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.509472515 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.520687490 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+g: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:735][  5]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:781][  6]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.2TOGGLE_ROTOR mono=394090.545643567 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.555292246 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.569870799 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.581024104 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.605696764 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.616077199 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.630994867 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.643311409 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.665715197 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.678526702 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.694451163 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.705186956 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.728279175 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+5.44:888][  7]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:888][  7]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:892][  8]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:892][  8]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:942][  9]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.44:991][ 10]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:041][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:041][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:041][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:041][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:041][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:042][ 11]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: WarTOGGLE_ROTOR mono=394090.741364320 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.757209472 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.769371937 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.789958811 rotor=0x7b718a15b188 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.802691452 rotor=0x7b718a15b050 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.819312607 rotor=0x7b718a15b2c0 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.829997329 rotor=0x7b718a15b3f8 flag=0 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE mono=394090.839019963 start=394089.64710507303 elapsed=1.191914889961481 natural=1 forced=1 config=0x7b718211cb80
+TOGGLE_ROTOR mono=394090.850217958 rotor=0x7b718a15b188 flag=1 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.865873026 rotor=0x7b718a15b050 flag=1 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.879982743 rotor=0x7b718a15b2c0 flag=1 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+TOGGLE_ROTOR mono=394090.890042088 rotor=0x7b718a15b3f8 flag=1 filtered=0.0300000012 target=0.0299999993 input=0.119999997 thrust=0.376128018 scale=0.25
+FIELD_EVENT_CONSUMER mono=394090.891529183 type=30 value=1
+SCALE_WRITE mono=394090.892143727 flag=1 number=2 pc=0x26f2fd9 <_start+1140313>
+#0  0x00000000026f2fd9 in _start ()
+TARGET_WRITE mono=394090.896555473 flag=1 number=4
+#0  0x000000000269899c in _start ()
+TOGGLE_ROTOR mono=394090.912695520 rotor=0x7b718a15b188 flag=1 filtered=0.105123669 target=0.119999997 input=0.119999997 thrust=1.16465795 scale=1
+TOGGLE_ROTOR mono=394090.928825834 rotor=0x7b718a15b050 flag=1 filtered=0.118650518 target=0.119999997 input=0.119999997 thrust=1.47368276 scale=1
+TOGGLE_ROTOR mono=394090.942366159 rotor=0x7b718a15b2c0 flag=1 filtered=0.119776942 target=0.119999997 input=0.119999997 thrust=1.49941623 scale=1
+ning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:093][ 12]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:140][ 13]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:195][ 14]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:250][ 15]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-1TOGGLE_ROTOR mono=394090.951076192 rotor=0x7b718a15b3f8 flag=1 filtered=0.119932815 target=0.119999997 input=0.119999997 thrust=1.50297725 scale=1
+TOGGLE_ROTOR mono=394090.973558518 rotor=0x7b718a15b188 flag=1 filtered=0.119998991 target=0.119999997 input=0.119999997 thrust=1.50448906 scale=1
+TOGGLE_ROTOR mono=394090.991459057 rotor=0x7b718a15b050 flag=1 filtered=0.119999945 target=0.119999997 input=0.119999997 thrust=1.50451076 scale=1
+TOGGLE_ROTOR mono=394091.004544241 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451183 scale=1
+TOGGLE_ROTOR mono=394091.015580145 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.035519609 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.051719059 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.067801331 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.075700275 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+3.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:300][ 16]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:342][ 17]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:393][ 18]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:440][ 19]LogTemp: TOGGLE_ROTOR mono=394091.095935748 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.113438311 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.127970055 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.136749743 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.158636499 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.176162781 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.188136599 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.198529935 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.221284806 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.236275238 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.248184479 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.258873346 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.281748184 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:490][ 20]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:542][ 21]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:595][ 22]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.0TOGGLE_ROTOR mono=394091.299318530 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.311120605 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.325463255 rotor=0x7b718a15b3f8 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.343285178 rotor=0x7b718a15b188 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.359576221 rotor=0x7b718a15b050 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TOGGLE_ROTOR mono=394091.372243499 rotor=0x7b718a15b2c0 flag=1 filtered=0.11999999 target=0.119999997 input=0.119999997 thrust=1.50451195 scale=1
+TARGET_WRITE mono=394091.373264071 flag=1 number=5
+#0  0x000000000269899c in _start ()
+TOGGLE_ROTOR mono=394091.389078362 rotor=0x7b718a15b3f8 flag=1 filtered=0.0198351014 target=0 input=0 thrust=0.453138649 scale=1
+TOGGLE_ROTOR mono=394091.407504034 rotor=0x7b718a15b188 flag=1 filtered=0.000987468404 target=0 input=0 thrust=0.022559002 scale=1
+TOGGLE_ROTOR mono=394091.420547083 rotor=0x7b718a15b050 flag=1 filtered=8.95765261e-05 target=0 input=0 thrust=0.00204640185 scale=1
+TOGGLE_ROTOR mono=394091.435066666 rotor=0x7b718a15b2c0 flag=1 filtered=8.12578219e-06 target=0 input=0 thrust=0.000185635858 scale=1
+TOGGLE_ROTOR mono=394091.455479994 rotor=0x7b718a15b3f8 flag=1 filtered=7.37116579e-07 target=0 input=0 thrust=1.68396418e-05 scale=1
+TOGGLE_ROTOR mono=394091.467565863 rotor=0x7b718a15b188 flag=1 filtered=1.21839875e-07 target=0 input=0 thrust=2.78346715e-06 scale=1
+TOGGLE_ROTOR mono=394091.481601764 rotor=0x7b718a15b050 flag=1 filtered=1.10524985e-08 target=0 input=0 thrust=2.52497529e-07 scale=1
+7-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:647][ 23]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:698][ 24]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:742][ 25]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:797][ 26]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemTOGGLE_ROTOR mono=394091.499943300 rotor=0x7b718a15b2c0 flag=1 filtered=1.00260866e-09 target=0 input=0 thrust=2.29048869e-08 scale=1
+TOGGLE_ROTOR mono=394091.517125439 rotor=0x7b718a15b3f8 flag=1 filtered=4.99137467e-11 target=0 input=0 thrust=1.14029408e-09 scale=1
+TOGGLE_ROTOR mono=394091.530698792 rotor=0x7b718a15b188 flag=1 filtered=4.52784078e-12 target=0 input=0 thrust=1.03439833e-10 scale=1
+TOGGLE_ROTOR mono=394091.544049046 rotor=0x7b718a15b050 flag=1 filtered=4.10735383e-13 target=0 input=0 thrust=9.38336908e-12 scale=1
+TOGGLE_ROTOR mono=394091.563248430 rotor=0x7b718a15b2c0 flag=1 filtered=2.04479988e-14 target=0 input=0 thrust=4.67140486e-13 scale=1
+TOGGLE_ROTOR mono=394091.580006529 rotor=0x7b718a15b3f8 flag=1 filtered=1.01798061e-15 target=0 input=0 thrust=2.32560621e-14 scale=1
+TOGGLE_ROTOR mono=394091.593889856 rotor=0x7b718a15b188 flag=1 filtered=9.23443789e-17 target=0 input=0 thrust=2.10963423e-15 scale=1
+TOGGLE_ROTOR mono=394091.606886119 rotor=0x7b718a15b050 flag=1 filtered=8.37686385e-18 target=0 input=0 thrust=1.91371888e-16 scale=1
+TOGGLE_ROTOR mono=394091.623686288 rotor=0x7b718a15b2c0 flag=1 filtered=1.38463303e-18 target=0 input=0 thrust=3.16323428e-17 scale=1
+TOGGLE_ROTOR mono=394091.641575294 rotor=0x7b718a15b3f8 flag=1 filtered=1.25604636e-19 target=0 input=0 thrust=2.86947445e-18 scale=1
+TOGGLE_ROTOR mono=394091.657466567 rotor=0x7b718a15b188 flag=1 filtered=1.13940123e-20 target=0 input=0 thrust=2.60299522e-19 scale=1
+TOGGLE_ROTOR mono=394091.669862015 rotor=0x7b718a15b050 flag=1 filtered=1.88334526e-21 target=0 input=0 thrust=4.30255701e-20 scale=1
+p: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:849][ 27]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:891][ 28]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.45:941][ 29]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.1TOGGLE_ROTOR mono=394091.686418536 rotor=0x7b718a15b2c0 flag=1 filtered=1.70844477e-22 target=0 input=0 thrust=3.90299154e-21 scale=1
+TOGGLE_ROTOR mono=394091.701848557 rotor=0x7b718a15b3f8 flag=1 filtered=2.82393145e-23 target=0 input=0 thrust=6.45135346e-22 scale=1
+TOGGLE_ROTOR mono=394091.717803837 rotor=0x7b718a15b188 flag=1 filtered=2.56168143e-24 target=0 input=0 thrust=5.85223531e-23 scale=1
+TOGGLE_ROTOR mono=394091.730105952 rotor=0x7b718a15b050 flag=1 filtered=4.2342681e-25 target=0 input=0 thrust=9.67330824e-24 scale=1
+TOGGLE_ROTOR mono=394091.746999182 rotor=0x7b718a15b2c0 flag=1 filtered=3.84104417e-26 target=0 input=0 thrust=8.77497711e-25 scale=1
+TOGGLE_ROTOR mono=394091.764421728 rotor=0x7b718a15b3f8 flag=1 filtered=3.48433776e-27 target=0 input=0 thrust=7.96007122e-26 scale=1
+TOGGLE_ROTOR mono=394091.777808629 rotor=0x7b718a15b188 flag=1 filtered=5.75935002e-28 target=0 input=0 thrust=1.31574033e-26 scale=1
+TOGGLE_ROTOR mono=394091.793359011 rotor=0x7b718a15b050 flag=1 filtered=5.22449664e-29 target=0 input=0 thrust=1.19355136e-27 scale=1
+TOGGLE_ROTOR mono=394091.812167789 rotor=0x7b718a15b2c0 flag=1 filtered=4.73931336e-30 target=0 input=0 thrust=1.08270991e-28 scale=1
+TOGGLE_ROTOR mono=394091.825724314 rotor=0x7b718a15b3f8 flag=1 filtered=7.83373086e-31 target=0 input=0 thrust=1.7896385e-29 scale=1
+TOGGLE_ROTOR mono=394091.839855275 rotor=0x7b718a15b188 flag=1 filtered=7.10623598e-32 target=0 input=0 thrust=1.62344027e-30 scale=1
+1.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:029][ 30]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:040][ 31]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:040][ 31]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:040][ 31]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:040][ 31]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:040][ 31]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:040][ 31]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:101][ 32]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:161][ 33]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTOGGLE_ROTOR mono=394091.854185571 rotor=0x7b718a15b050 flag=1 filtered=6.44630155e-33 target=0 input=0 thrust=1.47267625e-31 scale=1
+TOGGLE_ROTOR mono=394091.875787348 rotor=0x7b718a15b2c0 flag=1 filtered=5.84765323e-34 target=0 input=0 thrust=1.33591333e-32 scale=1
+TOGGLE_ROTOR mono=394091.889931006 rotor=0x7b718a15b3f8 flag=1 filtered=9.66573418e-35 target=0 input=0 thrust=2.20816504e-33 scale=1
+TOGGLE_ROTOR mono=394091.900796504 rotor=0x7b718a15b188 flag=1 filtered=1.59767375e-35 target=0 input=0 thrust=3.649932e-34 scale=1
+TOGGLE_ROTOR mono=394091.916964297 rotor=0x7b718a15b050 flag=1 filtered=7.95384004e-37 target=0 input=0 thrust=1.81707779e-35 scale=1
+TOGGLE_ROTOR mono=394091.936198091 rotor=0x7b718a15b2c0 flag=1 filtered=7.21519163e-38 target=0 input=0 thrust=1.64833146e-36 scale=1
+TOGGLE_ROTOR mono=394091.951333039 rotor=0x7b718a15b3f8 flag=1 filtered=6.54513862e-39 target=0 input=0 thrust=1.49525586e-37 scale=1
+TOGGLE_ROTOR mono=394091.962008015 rotor=0x7b718a15b188 flag=1 filtered=1.08186267e-39 target=0 input=0 thrust=2.47154661e-38 scale=1
+TOGGLE_ROTOR mono=394091.980939021 rotor=0x7b718a15b050 flag=1 filtered=5.38603078e-41 target=0 input=0 thrust=1.23043954e-39 scale=1
+TOGGLE_ROTOR mono=394091.998846119 rotor=0x7b718a15b2c0 flag=1 filtered=4.88632775e-42 target=0 input=0 thrust=1.11614824e-40 scale=1
+TOGGLE_ROTOR mono=394092.012703077 rotor=0x7b718a15b3f8 flag=1 filtered=8.07147915e-43 target=0 input=0 thrust=1.8446693e-41 scale=1
+TOGGLE_ROTOR mono=394092.023907332 rotor=0x7b718a15b188 flag=1 filtered=1.33123354e-43 target=0 input=0 thrust=3.03941637e-42 scale=1
+TOGGLE_ROTOR mono=394092.045545570 rotor=0x7b718a15b050 flag=1 filtered=7.00649232e-45 target=0 input=0 thrust=1.58346726e-43 scale=1
+Temp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:206][ 34]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:243][ 35]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:297][ 36]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:343][ 37]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwmc:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwma:2
+[2026.11.07-13.25.46:404][ 38]LogTemp: Warning: pwmc:2
+[202TOGGLE_ROTOR mono=394092.061413479 rotor=0x7b718a15b2c0 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.073108033 rotor=0x7b718a15b3f8 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.086511280 rotor=0x7b718a15b188 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.109027894 rotor=0x7b718a15b050 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.123150344 rotor=0x7b718a15b2c0 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.135919132 rotor=0x7b718a15b3f8 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.147878468 rotor=0x7b718a15b188 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.173882095 rotor=0x7b718a15b050 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.189416142 rotor=0x7b718a15b2c0 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.196870666 rotor=0x7b718a15b3f8 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.208285261 rotor=0x7b718a15b188 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1
+TOGGLE_ROTOR mono=394092.233989705 rotor=0x7b718a15b050 flag=1 filtered=1.40129846e-45 target=0 input=0 thrust=1.821688e-44 scale=1

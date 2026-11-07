@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-1c946334416c4989b110b1cb311931f8",
+  "exit_status": 1,
+  "mode": "aero_wind3",
+  "seed_requested": 123,
+  "stdout": "",
+  "stderr": "",
+  "source_sha256": {
+    "collect_ros.py": "9e526f9b016bde936b05a5f715102bdee138c287839c15187a14fadd43eac27a",
+    "collective_remote.sh": "368429cd7d238fb9e3295691c9baebea82de280f406d0f57f934dbe030ac3aec",
+    "pwm_collective.py": "94e5d41efc1f5e38ff3165282d6a43000e62c2dd11197777d2c2bca72b99557c",
+    "aero_wind_injected.gdb": "9a46dadfb487f92d3b063ec5dcb85c60285cd98bec5cde26cc817161cfaf9066"
+  }
+}

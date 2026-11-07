@@ -1,0 +1,229 @@
+{
+  "status": "completed",
+  "command_count": 162,
+  "phases": [
+    {
+      "pwm": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "duration_s": 0.22551652300000002,
+      "imu_samples": 12,
+      "rotor_samples": 12,
+      "pose_samples": 12,
+      "median_imu_accel_z_m_s2": -11.002556324005127,
+      "median_debug_rotor_pwm": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "angular_rate_slope_rad_s2": [
+        -0.0017329226862110103,
+        0.002191483281305093,
+        0.021886703424045573
+      ],
+      "angular_slope_samples": 19,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        0.28849995136260986,
+        0.3055267632007599
+      ]
+    },
+    {
+      "pwm": [
+        0.18,
+        0.18,
+        0.18,
+        0.18
+      ],
+      "duration_s": 0.24592011800000002,
+      "imu_samples": 14,
+      "rotor_samples": 15,
+      "pose_samples": 15,
+      "median_imu_accel_z_m_s2": -9.905924797058105,
+      "median_debug_rotor_pwm": [
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737
+      ],
+      "angular_rate_slope_rad_s2": [
+        -0.0026795675170447415,
+        0.006280216004863413,
+        0.0030555439342660334
+      ],
+      "angular_slope_samples": 22,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        0.22170862555503845,
+        0.2601018249988556
+      ]
+    },
+    {
+      "pwm": [
+        0.19,
+        0.19,
+        0.19,
+        0.19
+      ],
+      "duration_s": 0.25523270600000003,
+      "imu_samples": 16,
+      "rotor_samples": 16,
+      "pose_samples": 16,
+      "median_imu_accel_z_m_s2": -10.43814754486084,
+      "median_debug_rotor_pwm": [
+        0.1899999976158142,
+        0.1899999976158142,
+        0.1899999976158142,
+        0.1899999976158142
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.002340812056504239,
+        0.0018462646085640791,
+        -0.006132367322620259
+      ],
+      "angular_slope_samples": 23,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        0.13149239122867584,
+        0.18903622031211853
+      ]
+    },
+    {
+      "pwm": [
+        0.18,
+        0.18,
+        0.18,
+        0.18
+      ],
+      "duration_s": 0.24566525200000003,
+      "imu_samples": 14,
+      "rotor_samples": 14,
+      "pose_samples": 14,
+      "median_imu_accel_z_m_s2": -9.893178462982178,
+      "median_debug_rotor_pwm": [
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737
+      ],
+      "angular_rate_slope_rad_s2": [
+        -0.003772329495011524,
+        0.004587679253750173,
+        0.00969857244993732
+      ],
+      "angular_slope_samples": 21,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        0.023613741621375084,
+        0.08219389617443085
+      ]
+    },
+    {
+      "pwm": [
+        0.17,
+        0.17,
+        0.17,
+        0.17
+      ],
+      "duration_s": 0.256242727,
+      "imu_samples": 16,
+      "rotor_samples": 16,
+      "pose_samples": 16,
+      "median_imu_accel_z_m_s2": -9.347693920135498,
+      "median_debug_rotor_pwm": [
+        0.17000000178813934,
+        0.17000000178813934,
+        0.17000000178813934,
+        0.17000000178813934
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.001410772680564416,
+        0.006518169457594539,
+        -9.487084161421162e-05
+      ],
+      "angular_slope_samples": 23,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        -0.08367355167865753,
+        -0.02581481821835041
+      ]
+    },
+    {
+      "pwm": [
+        0.18,
+        0.18,
+        0.18,
+        0.18
+      ],
+      "duration_s": 0.19436892600000003,
+      "imu_samples": 9,
+      "rotor_samples": 9,
+      "pose_samples": 9,
+      "median_imu_accel_z_m_s2": -9.889863967895508,
+      "median_debug_rotor_pwm": [
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737,
+        0.18000000715255737
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.0018854497230404884,
+        -0.00421684605552167,
+        -0.0010232972017049783
+      ],
+      "angular_slope_samples": 16,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        -0.1495843380689621,
+        -0.12204916775226593
+      ]
+    },
+    {
+      "pwm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "duration_s": 0.26519257900000004,
+      "imu_samples": 17,
+      "rotor_samples": 17,
+      "pose_samples": 17,
+      "median_imu_accel_z_m_s2": -0.2598697543144226,
+      "median_debug_rotor_pwm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angular_rate_slope_rad_s2": [
+        0.005985921218833108,
+        0.00020160240417376298,
+        -0.002871193177724655
+      ],
+      "angular_slope_samples": 24,
+      "provisional_incremental_slope_rad_s2": null,
+      "position_z_range_m": [
+        -0.15394693613052368,
+        0.04324021190404892
+      ]
+    }
+  ],
+  "analysis_sha256": "18ee012e5c265fb59739a8f662fec7ed09e9a8ddba2c2ebb140056af7568c10e",
+  "sha256": {
+    "commands.jsonl": "f34568c2cac480e0f6c5cf7a61aee8f1e5927dacdf97cb377ba3908f7468e235",
+    "capture.jsonl": "4145bcff56badd1810fefde8fdc74ccbf7b46d8e367772773cfd3b82e0bd0138"
+  },
+  "limitations": [
+    "host monotonic arrival time includes transport delay",
+    "debug PWM is not proven to be actuator state",
+    "ground contact and later free flight are not classified",
+    "angular-rate slopes include prior motion, gravity, coupling and unknown actuation latency",
+    "incremental prediction assumes RPS-squared coefficient units and ignores motor lag and prior motion",
+    "one exploratory waveform, not a calibrated or held-out experiment"
+  ]
+}

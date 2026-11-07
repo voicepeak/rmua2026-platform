@@ -1,0 +1,29 @@
+{
+  "schema": "rmua-headless-pool-v1",
+  "pool_id": "28e4f5cca371",
+  "simulator": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings": "/home/tianbot/RUMA-by-helinjun/main/configs/simulator_settings.json",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image": "rmua/noetic-xal:driver-recovery-20261012",
+  "image_id": "sha256:a1bfe1df3d0f0b57c406fc7873803c07a812f291e42c1a7eba13d2f9328fc106",
+  "mode": "nullrhi",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 11821,
+      "container": "rmua-re-28e4f5cca371-0",
+      "id": "5e075a19018378db72741431530edabbb8b080bda63aab520a413613e4117c06",
+      "docker_start_wall": 1794018247.1374087,
+      "docker_created_wall": 1794018247.5779245,
+      "imu_ready_observed_wall": 1794018255.2750275,
+      "startup_observed_s": 8.137618780136108
+    }
+  ],
+  "ready": true,
+  "limitations": [
+    "No lockstep or reset guarantee",
+    "Camera images are empty in NullRHI",
+    "Diagnostics only; dynamic equivalence not established"
+  ]
+}
