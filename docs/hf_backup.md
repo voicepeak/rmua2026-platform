@@ -12,7 +12,9 @@ large data and policy weights.
 
 - Dataset data: https://huggingface.co/datasets/Vociepeak/rmua2026-platform-data/commit/31de685792f63ef69000751c57c9785a7f500651
 - Dataset card: https://huggingface.co/datasets/Vociepeak/rmua2026-platform-data/commit/766392e9a5b233cab27e2c969af690da6d732ef9
-- Model card: https://huggingface.co/Vociepeak/rmua2026-platform-policies/commit/d7a51424ca132774c7c5fade7d40eeba1e7c8274
+- Model card: https://huggingface.co/Vociepeak/rmua2026-platform-policies/commit/e89a36d49c3182650d3e5efbbc12979425ddcbd8
+- Stage 1 audited policy: https://huggingface.co/Vociepeak/rmua2026-platform-policies/tree/main/policies/stage1_audited_seed7_20261106
+- Legacy proxy policy (invalid for official stage 1): https://huggingface.co/Vociepeak/rmua2026-platform-policies/tree/main/policies/route_spline_20261106
 
 The HF username is `Vociepeak` (capital V). GitHub remains `voicepeak`.
 
