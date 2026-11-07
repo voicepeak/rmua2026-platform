@@ -106,6 +106,8 @@ class SegmentTrack:
     start_trigger_length_m: float = DEFAULT_TRIGGER_LENGTH_M
     end_trigger_length_m: float = DEFAULT_TRIGGER_LENGTH_M
     route_mode: bool = False
+    scoring_gates: tuple[GateCrossing, ...] = ()
+    audited_stage1: bool = False
     _tree: object = field(default=None, init=False, repr=False)
 
     def __post_init__(self):
