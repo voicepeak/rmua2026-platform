@@ -1,0 +1,311 @@
+CONFIG 0x7062b859a880 initial_score=0
+Hardware watchpoint 1: *(int*)($cfg+0x2fc)
+Breakpoint 2 at 0x2fc8d80
+Breakpoint 3 at 0x2fb9960
+SEG actor=0x7060d2716d00 name=387258,2 idx=32 enter=1 event=0 components=33 score=0
+STATE old=0 new=1 flag=0 score=0
+SEG actor=0x7060d2716d00 name=387258,2 idx=32 enter=0 event=1 components=33 score=0
+SCORE value=1 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000002000000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c5a68d00 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=31 enter=1 event=0 components=33 score=1
+SEG actor=0x7060d2716d00 name=387258,2 idx=32 enter=0 event=0 components=33 score=1
+SEG actor=0x7060d2716d00 name=387258,2 idx=31 enter=0 event=1 components=33 score=1
+SCORE value=2 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001f00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643e5e0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=30 enter=1 event=0 components=33 score=2
+SEG actor=0x7060d2716d00 name=387258,2 idx=30 enter=0 event=1 components=33 score=2
+SCORE value=3 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001e00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65ec4c0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=31 enter=0 event=0 components=33 score=3
+SEG actor=0x7060d2716d00 name=387258,2 idx=29 enter=1 event=0 components=33 score=3
+SEG actor=0x7060d2716d00 name=387258,2 idx=29 enter=0 event=1 components=33 score=3
+SCORE value=4 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001d00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643f540 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=30 enter=0 event=0 components=33 score=4
+SEG actor=0x7060d2716d00 name=387258,2 idx=28 enter=1 event=0 components=33 score=4
+SEG actor=0x7060d2716d00 name=387258,2 idx=28 enter=0 event=1 components=33 score=4
+SCORE value=5 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001c00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c4b33d00 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=29 enter=0 event=0 components=33 score=5
+SEG actor=0x7060d2716d00 name=387258,2 idx=27 enter=1 event=0 components=33 score=5
+SEG actor=0x7060d2716d00 name=387258,2 idx=27 enter=0 event=1 components=33 score=5
+SCORE value=6 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001b00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643a220 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=28 enter=0 event=0 components=33 score=6
+SEG actor=0x7060d2716d00 name=387258,2 idx=26 enter=1 event=0 components=33 score=6
+SEG actor=0x7060d2716d00 name=387258,2 idx=26 enter=0 event=1 components=33 score=6
+SCORE value=7 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001a00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65efb20 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=27 enter=0 event=0 components=33 score=7
+SEG actor=0x7060d2716d00 name=387258,2 idx=25 enter=1 event=0 components=33 score=7
+SEG actor=0x7060d2716d00 name=387258,2 idx=25 enter=0 event=1 components=33 score=7
+SCORE value=8 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001900000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86f7e40 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=26 enter=0 event=0 components=33 score=8
+SEG actor=0x7060d2716d00 name=387258,2 idx=24 enter=1 event=0 components=33 score=8
+SEG actor=0x7060d2716d00 name=387258,2 idx=24 enter=0 event=1 components=33 score=8
+SCORE value=9 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001800000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c514c5c0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=25 enter=0 event=0 components=33 score=9
+SEG actor=0x7060d2716d00 name=387258,2 idx=23 enter=1 event=0 components=33 score=9
+SEG actor=0x7060d2716d00 name=387258,2 idx=23 enter=0 event=1 components=33 score=9
+SCORE value=10 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001700000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86f3d60 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=24 enter=0 event=0 components=33 score=10
+SEG actor=0x7060d2716d00 name=387258,2 idx=22 enter=1 event=0 components=33 score=10
+SEG actor=0x7060d2716d00 name=387258,2 idx=22 enter=0 event=1 components=33 score=10
+SCORE value=11 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001600000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86fb640 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=23 enter=0 event=0 components=33 score=11
+SEG actor=0x7060d2716d00 name=387258,2 idx=21 enter=1 event=0 components=33 score=11
+SEG actor=0x7060d2716d00 name=387258,2 idx=21 enter=0 event=1 components=33 score=11
+SCORE value=12 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001500000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65e7a60 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=22 enter=0 event=0 components=33 score=12
+SEG actor=0x7060d2716d00 name=387258,2 idx=20 enter=1 event=0 components=33 score=12
+SEG actor=0x7060d2716d00 name=387258,2 idx=20 enter=0 event=1 components=33 score=12
+SCORE value=13 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001400000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643ea20 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=21 enter=0 event=0 components=33 score=13
+SEG actor=0x7060d2716d00 name=387258,2 idx=19 enter=1 event=0 components=33 score=13
+SEG actor=0x7060d2716d00 name=387258,2 idx=19 enter=0 event=1 components=33 score=13
+SCORE value=14 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001300000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643ac20 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=20 enter=0 event=0 components=33 score=14
+SEG actor=0x7060d2716d00 name=387258,2 idx=18 enter=1 event=0 components=33 score=14
+SEG actor=0x7060d2716d00 name=387258,2 idx=18 enter=0 event=1 components=33 score=14
+SCORE value=15 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001200000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65efb20 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=19 enter=0 event=0 components=33 score=15
+SEG actor=0x7060d2716d00 name=387258,2 idx=17 enter=1 event=0 components=33 score=15
+SEG actor=0x7060d2716d00 name=387258,2 idx=17 enter=0 event=1 components=33 score=15
+SCORE value=16 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001100000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643dcc0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=18 enter=0 event=0 components=33 score=16
+SEG actor=0x7060d2716d00 name=387258,2 idx=16 enter=1 event=0 components=33 score=16
+SEG actor=0x7060d2716d00 name=387258,2 idx=16 enter=0 event=1 components=33 score=16
+SCORE value=17 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000001000000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65ec1e0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=17 enter=0 event=0 components=33 score=17
+SEG actor=0x7060d2716d00 name=387258,2 idx=15 enter=1 event=0 components=33 score=17
+SEG actor=0x7060d2716d00 name=387258,2 idx=15 enter=0 event=1 components=33 score=17
+SCORE value=18 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000f00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86f6080 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=16 enter=0 event=0 components=33 score=18
+SEG actor=0x7060d2716d00 name=387258,2 idx=14 enter=1 event=0 components=33 score=18
+SEG actor=0x7060d2716d00 name=387258,2 idx=14 enter=0 event=1 components=33 score=18
+SCORE value=19 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000e00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c643f840 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=15 enter=0 event=0 components=33 score=19
+SEG actor=0x7060d2716d00 name=387258,2 idx=13 enter=1 event=0 components=33 score=19
+SEG actor=0x7060d2716d00 name=387258,2 idx=13 enter=0 event=1 components=33 score=19
+SCORE value=20 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000d00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86f12a0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=14 enter=0 event=0 components=33 score=20
+SEG actor=0x7060d2716d00 name=387258,2 idx=12 enter=1 event=0 components=33 score=20
+SEG actor=0x7060d2716d00 name=387258,2 idx=12 enter=0 event=1 components=33 score=20
+SCORE value=21 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000c00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86f2d60 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=13 enter=0 event=0 components=33 score=21
+SEG actor=0x7060d2716d00 name=387258,2 idx=11 enter=1 event=0 components=33 score=21
+SEG actor=0x7060d2716d00 name=387258,2 idx=11 enter=0 event=1 components=33 score=21
+SCORE value=22 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000b00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x0000706077b90140 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=12 enter=0 event=0 components=33 score=22
+SEG actor=0x7060d2716d00 name=387258,2 idx=10 enter=1 event=0 components=33 score=22
+SEG actor=0x7060d2716d00 name=387258,2 idx=10 enter=0 event=1 components=33 score=22
+SCORE value=23 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000a00000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c4b33c20 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=11 enter=0 event=0 components=33 score=23
+SEG actor=0x7060d2716d00 name=387258,2 idx=9 enter=1 event=0 components=33 score=23
+SEG actor=0x7060d2716d00 name=387258,2 idx=9 enter=0 event=1 components=33 score=23
+SCORE value=24 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000900000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c5147320 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=10 enter=0 event=0 components=33 score=24
+SEG actor=0x7060d2716d00 name=387258,2 idx=8 enter=1 event=0 components=33 score=24
+SEG actor=0x7060d2716d00 name=387258,2 idx=8 enter=0 event=1 components=33 score=24
+SCORE value=25 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000800000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65e5bc0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=9 enter=0 event=0 components=33 score=25
+SEG actor=0x7060d2716d00 name=387258,2 idx=7 enter=1 event=0 components=33 score=25
+SEG actor=0x7060d2716d00 name=387258,2 idx=7 enter=0 event=1 components=33 score=25
+SCORE value=26 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000700000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007062b86f29c0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=8 enter=0 event=0 components=33 score=26
+SEG actor=0x7060d2716d00 name=387258,2 idx=6 enter=1 event=0 components=33 score=26
+SEG actor=0x7060d2716d00 name=387258,2 idx=6 enter=0 event=1 components=33 score=26
+SCORE value=27 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000600000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65efbc0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=7 enter=0 event=0 components=33 score=27
+SEG actor=0x7060d2716d00 name=387258,2 idx=5 enter=1 event=0 components=33 score=27
+SEG actor=0x7060d2716d00 name=387258,2 idx=5 enter=0 event=1 components=33 score=27
+SCORE value=28 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000500000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65e5920 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=6 enter=0 event=0 components=33 score=28
+SEG actor=0x7060d2716d00 name=387258,2 idx=4 enter=1 event=0 components=33 score=28
+SEG actor=0x7060d2716d00 name=387258,2 idx=4 enter=0 event=1 components=33 score=28
+SCORE value=29 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000400000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c65e5f80 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=5 enter=0 event=0 components=33 score=29
+SEG actor=0x7060d2716d00 name=387258,2 idx=3 enter=1 event=0 components=33 score=29
+SEG actor=0x7060d2716d00 name=387258,2 idx=3 enter=0 event=1 components=33 score=29
+SCORE value=30 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000300000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c5a61a80 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=4 enter=0 event=0 components=33 score=30
+SEG actor=0x7060d2716d00 name=387258,2 idx=2 enter=1 event=0 components=33 score=30
+SEG actor=0x7060d2716d00 name=387258,2 idx=2 enter=0 event=1 components=33 score=30
+SCORE value=31 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000200000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c5a619a0 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=3 enter=0 event=0 components=33 score=31
+SEG actor=0x7060d2716d00 name=387258,2 idx=1 enter=1 event=0 components=33 score=31
+SEG actor=0x7060d2716d00 name=387258,2 idx=1 enter=0 event=1 components=33 score=31
+SCORE value=32 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000100000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c5148460 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=2 enter=0 event=0 components=33 score=32
+SEG actor=0x7060d2716d00 name=387258,2 idx=0 enter=1 event=0 components=33 score=32
+SEG actor=0x7060d2716d00 name=387258,2 idx=0 enter=0 event=1 components=33 score=32
+SCORE value=33 pc=0x2fc8fc4
+#0  0x0000000002fc8fc4 in ?? ()
+#1  0x0000000000000001 in ?? ()
+#2  0x00000000056a1525 in ?? ()
+#3  0x00007060c5146c60 in ?? ()
+#4  0x00007ffc830ae9b4 in ?? ()
+SEG actor=0x7060d2716d00 name=387258,2 idx=1 enter=0 event=0 components=33 score=33
+SEG actor=0x7060d2716d00 name=387258,2 idx=0 enter=0 event=0 components=33 score=33
+STATE old=1 new=12 flag=0 score=33
+#0  0x0000000002fb9960 in ?? ()
+#1  0x0000000002fce60b in ?? ()
+#2  0x00007060c7f8e350 in ?? ()
+#3  0x00007060c7f8e380 in ?? ()
+#4  0x00007060c7f8e380 in ?? ()
+#5  0x0000000002fcd71f in ?? ()
+#6  0x00007062b877b5e0 in ?? ()
+#7  0x00007062b87f3400 in ?? ()
