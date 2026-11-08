@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-56720761b85647f29001b1bdaa71fb22",
+  "exit_status": 0,
+  "mode": "kinematic_probe",
+  "seed_requested": 456,
+  "stdout": "player=0 stop=0 collector=137 (collector may be interrupted by stop)\n",
+  "stderr": "",
+  "source_sha256": {
+    "collect_ros.py": "9e526f9b016bde936b05a5f715102bdee138c287839c15187a14fadd43eac27a",
+    "collective_remote.sh": "ecef7b23dc9c5fe655cd51e08aae5d638cf346adf4ebf8d233557e6e068700fd",
+    "pwm_collective.py": "691de6dbfb4a80ff96ba739f4c3134793241e0e276ee72ef8297beebfd40bf38",
+    "kinematic_readonly.gdb": "53cff1b5feb1f100182f4652cfe0213766d60dc2bd38ce3c02f993e9932d9fde"
+  }
+}
