@@ -12,6 +12,9 @@ items:
   - id: pwm_hold_timeout
     unknown: Physical command application delay, holding behavior and timeout.
     evidence: ../reports/dynamics_candidate.md
+  - id: pwm_debug_sample_time
+    unknown: Rotor PWM sample and physical application time; debug Header is sourced from a separate IMU data request in the analyzed library.
+    evidence: ../reports/v2_ros_transport_evidence.md
   - id: motor_directions
     unknown: Independently reproducible channel and spin directions across the intended envelope.
     evidence: ../evidence/README.md

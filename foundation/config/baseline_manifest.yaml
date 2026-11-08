@@ -17,7 +17,10 @@ other_settings:
   note: Different raw byte hashes; one snapshot is UTF-16LE, the other is UTF-8.
 source:
   reverse_repo_commit_historical: d38ce6c9ac9a89a57ce3a6b2ea18bd30454cd81c
-  current_reverse_repo_commit: unknown_local_directory_not_git_checkout
+  current_reverse_repo_checkout: D:/RMUA2026-re/repo
+  current_reverse_repo_commit: d38ce6c9ac9a89a57ce3a6b2ea18bd30454cd81c
+  current_reverse_repo_origin: https://github.com/voicepeak/RMUA2026-re.git
+  current_reverse_repo_worktree_status: clean_at_2026-11-09_check
   shipped_airsim_revision: unknown
 runtime_mode_recorded: nullrhi
 launch_arguments: unknown
