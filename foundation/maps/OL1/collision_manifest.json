@@ -1,0 +1,73 @@
+{
+  "status": "PARTIAL",
+  "map_id": "OL1",
+  "source_asset_directory": "../../asset_analysis",
+  "source_pak_sha256_recorded": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "default": {
+    "instance_count": 508,
+    "mesh_count": 5,
+    "groups": {
+      "default": 508
+    },
+    "excluded_building_components_only": 8657,
+    "source_sha256": {
+      "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+      "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+      "mesh_collision/Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+      "mesh_collision/Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+      "mesh_collision/Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+      "mesh_collision/Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+      "mesh_collision/Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a"
+    }
+  },
+  "all_optional_candidates": {
+    "instance_count": 12117,
+    "mesh_count": 58,
+    "groups": {
+      "default": 508,
+      "unverified_rack": 960,
+      "unverified_road_cube": 1884,
+      "unverified_simple": 8645,
+      "unverified_sprite": 120
+    },
+    "excluded_building_components_only": 12,
+    "source_sha256": {
+      "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+      "OL1_rack_placements_candidate.json": "1e6e487160bd2e9a2b20dc33e19ce11610bd4ca0fc667daddf03b9bd74faa9bb",
+      "OL1_road_cubes_candidate.json": "90bc00b7f1bb13b8be1aa58f6c4af1c2d86db7ea8c8c7b9cd695e06c7368c315",
+      "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+      "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e",
+      "OL1_sprite_placements_candidate.json": "92c05a3ab3b515bb41d04134610fe5803a50b8a9965c03965cba17304ffaac1b",
+      "mesh_collision/Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+      "mesh_collision/Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+      "mesh_collision/Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+      "mesh_collision/Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+      "mesh_collision/Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+      "rack_simple_candidates.json": "7698a3d6a059fbcbb6f45a03acd80273e47e56b1818e5bc9d9abb2fc60f2eea9",
+      "sprite_collision_candidates.json": "eb657d0f8ec0e67511ad266163aae4b803e9519b35ec7b0e15dfcdf30d050cdc"
+    }
+  },
+  "optional_groups_require_explicit_opt_in": [
+    "unverified_simple",
+    "unverified_sprite",
+    "unverified_rack",
+    "unverified_road_cube"
+  ],
+  "known_gaps": [
+    "All physical collision channels and actual component inclusion remain unverified.",
+    "Excluded-building count does not count other missing categories.",
+    "480 rack paper/pointer components are not included in optional rack candidates.",
+    "Road auxiliary cubes, building simple shapes, sprites and rack meshes are only candidates.",
+    "Gate mesh transforms are not verified apertures or collision volumes.",
+    "Scene origin, axis alignment, geometry coverage and initial containment remain unverified.",
+    "Surface sweeps do not return time of impact and do not detect inside-solid containment."
+  ],
+  "evidence": [
+    "../../reports/road_collision_extraction.md",
+    "../../reports/gate_runtime_root_comparison.json",
+    "../../reports/gate_runtime_root_comparison_seed456.json",
+    "../../reports/contact_surface_seed123.json",
+    "../../reports/contact_surface_seed456.json"
+  ],
+  "generator_sha256": "9ebdf41e9193c6b79e8f08fd2d3a36ed5d5aa40f4c56af5b4add970bffc85ba8"
+}

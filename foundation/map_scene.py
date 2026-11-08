@@ -37,7 +37,8 @@ class CandidateMap:
         self.high = np.array([x[1] for x in bounds]).reshape(-1, 3)
 
     @classmethod
-    def load(cls, directory, *, include_unverified_simple=False, include_unverified_sprites=False):
+    def load(cls, directory, *, include_unverified_simple=False, include_unverified_sprites=False,
+             include_unverified_racks=False, include_unverified_road_cubes=False):
         directory = Path(directory)
         road = json.loads((directory/'OL1_road_placements_candidate.json').read_text(encoding='utf-8'))
         buildings = json.loads((directory/'OL1_building_placements_candidate.json').read_text(encoding='utf-8'))
@@ -91,13 +92,49 @@ class CandidateMap:
                 if name not in meshes:
                     meshes[name] = simple_mesh(assets[asset_name])
                 placements.append({**obj, 'mesh': name, 'collision_evidence': 'sprite candidate; channel unverified'})
+        rack_files = [directory/'OL1_rack_placements_candidate.json', directory/'rack_simple_candidates.json']
+        if include_unverified_racks:
+            from foundation.simple_collision_mesh import simple_mesh
+            racks = json.loads(rack_files[0].read_text(encoding='utf-8'))
+            if racks['unresolved']:
+                raise ValueError('unresolved rack transforms require explicit review')
+            assets = json.loads(rack_files[1].read_text(encoding='utf-8'))['assets']
+            rack_meshes = {}
+            for name, asset in assets.items():
+                try:
+                    rack_meshes[name] = simple_mesh(asset)
+                except (KeyError, TypeError, ValueError):
+                    continue
+            for obj in racks['placements']:
+                if obj['mesh'] not in rack_meshes:
+                    continue
+                name = 'unverified_rack:' + obj['mesh']
+                meshes[name] = rack_meshes[obj['mesh']]
+                placements.append({**obj, 'mesh': name, 'collision_evidence': 'rack candidate; channel unverified'})
+        road_cube_file = directory/'OL1_road_cubes_candidate.json'
+        if include_unverified_road_cubes:
+            from foundation.simple_collision_mesh import simple_mesh
+            cubes = json.loads(road_cube_file.read_text(encoding='utf-8'))
+            if cubes['unresolved']:
+                raise ValueError('unresolved road cube transforms require explicit review')
+            asset = json.loads(simple_file.read_text(encoding='utf-8'))['assets']['Engine_BasicShapes_Cube']
+            name = 'unverified_road_cube:Engine_BasicShapes_Cube'
+            meshes[name] = simple_mesh(asset)
+            for obj in cubes['placements']:
+                if obj['mesh_package'] != '/Engine/BasicShapes/Cube':
+                    raise ValueError('unexpected road cube mesh')
+                placements.append({**obj, 'mesh': name, 'collision_evidence': 'road cube candidate; channel unverified'})
         result = cls(placements, meshes, len(buildings['placements'])-len(admitted)-included_simple)
         paths = [directory/'OL1_road_placements_candidate.json', directory/'OL1_building_placements_candidate.json']
-        paths += [directory/'mesh_collision'/(name+'.npz') for name in sorted(meshes) if not name.startswith(('unverified_simple:', 'unverified_sprite:'))]
+        paths += [directory/'mesh_collision'/(name+'.npz') for name in sorted(meshes) if not name.startswith(('unverified_simple:', 'unverified_sprite:', 'unverified_rack:', 'unverified_road_cube:'))]
         if include_unverified_simple:
             paths.append(simple_file)
         if include_unverified_sprites:
             paths.extend(sprite_files)
+        if include_unverified_racks:
+            paths.extend(rack_files)
+        if include_unverified_road_cubes:
+            paths.extend([road_cube_file, simple_file])
         result.source_sha256 = {str(p.relative_to(directory)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         return result
 
