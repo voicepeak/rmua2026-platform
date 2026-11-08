@@ -1,0 +1,182 @@
+{
+  "status": "runtime root transform correspondence, not collision or trigger acceptance",
+  "source_sha256": {
+    "gate_candidates.json": "a40412ce48943a32649fbe3fc1d58a28fe1087c5cc63e54b0a8091152f0368f0",
+    "gdb.log": "3436a6cc6d499c2d1d4bcd80bf858dac6cb48585a864fbcf447f45650ebdafe0",
+    "manifest.json": "2a3e65aa70e6d095488d42151d2842e7fc52e79f627837482d234c64719d1799"
+  },
+  "binary_sha256_reported_by_manifest": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "run": {
+    "seed": 456,
+    "repeat": 2,
+    "status": "observed"
+  },
+  "count": 12,
+  "max_position_error_cm": 6.731432954499103e-07,
+  "max_rotation_error_deg": 3.5485554111892805e-06,
+  "max_scale_error": 4.3486022960337323e-07,
+  "matches": [
+    {
+      "candidate_actor": "1_1_Gate",
+      "runtime_actor": "0x7fffd0da7000",
+      "runtime_root": "0x7fffd0d8e800",
+      "runtime_fname": [
+        765381,
+        0
+      ],
+      "position_error_cm": 1.249991328222677e-07,
+      "second_nearest_distance_cm": 2809.957030899438,
+      "rotation_error_deg": 1.2823497383020284e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "1_2_Gate",
+      "runtime_actor": "0x7fffd0da6dc0",
+      "runtime_root": "0x7fffd0d8de00",
+      "runtime_fname": [
+        765431,
+        0
+      ],
+      "position_error_cm": 4.506943142619645e-07,
+      "second_nearest_distance_cm": 2809.9570313994354,
+      "rotation_error_deg": 1.2823497383020284e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "2_1_Gate",
+      "runtime_actor": "0x7fffd0da6b80",
+      "runtime_root": "0x7fffd0d8d400",
+      "runtime_fname": [
+        765481,
+        0
+      ],
+      "position_error_cm": 6.373740876441315e-07,
+      "second_nearest_distance_cm": 2809.9570309164046,
+      "rotation_error_deg": 3.5485554111892805e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "2_2_Gate",
+      "runtime_actor": "0x7fffd0da6940",
+      "runtime_root": "0x7fffd0d8ca00",
+      "runtime_fname": [
+        765531,
+        0
+      ],
+      "position_error_cm": 5.153877159317422e-07,
+      "second_nearest_distance_cm": 2809.9570314164016,
+      "rotation_error_deg": 3.5485554111892805e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "3_1_Gate",
+      "runtime_actor": "0x7fffd0da6700",
+      "runtime_root": "0x7fffd0d8f000",
+      "runtime_fname": [
+        765581,
+        0
+      ],
+      "position_error_cm": 5.303268355092409e-07,
+      "second_nearest_distance_cm": 2809.957030921159,
+      "rotation_error_deg": 2.857099044940149e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "3_2_Gate",
+      "runtime_actor": "0x7fffd0da64c0",
+      "runtime_root": "0x7fffd1493a00",
+      "runtime_fname": [
+        765631,
+        0
+      ],
+      "position_error_cm": 4.677078178327642e-07,
+      "second_nearest_distance_cm": 2809.9570314211564,
+      "rotation_error_deg": 2.857099044940149e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "4_1_Gate",
+      "runtime_actor": "0x7fffd0da6280",
+      "runtime_root": "0x7fffd1493000",
+      "runtime_fname": [
+        765681,
+        0
+      ],
+      "position_error_cm": 2.7950655811911576e-07,
+      "second_nearest_distance_cm": 2809.9570309191213,
+      "rotation_error_deg": 3.403923446465358e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "4_2_Gate",
+      "runtime_actor": "0x7fffd0da6040",
+      "runtime_root": "0x7fffd1492600",
+      "runtime_fname": [
+        765731,
+        0
+      ],
+      "position_error_cm": 5.30328979205865e-07,
+      "second_nearest_distance_cm": 2809.95703141912,
+      "rotation_error_deg": 3.403923446465358e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "5_1_Gate",
+      "runtime_actor": "0x7fffd0da5e00",
+      "runtime_root": "0x7fffd1491c00",
+      "runtime_fname": [
+        765781,
+        0
+      ],
+      "position_error_cm": 2.795098120310161e-07,
+      "second_nearest_distance_cm": 2809.957030910298,
+      "rotation_error_deg": 6.493617886510542e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "5_2_Gate",
+      "runtime_actor": "0x7fffd0da5bc0",
+      "runtime_root": "0x7fffd1491200",
+      "runtime_fname": [
+        765831,
+        0
+      ],
+      "position_error_cm": 5.153894806099146e-07,
+      "second_nearest_distance_cm": 2809.9570314102953,
+      "rotation_error_deg": 6.493617886510542e-07,
+      "max_scale_error": 4.3486022960337323e-07
+    },
+    {
+      "candidate_actor": "6_1_Gate",
+      "runtime_actor": "0x7fffd0da5980",
+      "runtime_root": "0x7fffd1490800",
+      "runtime_fname": [
+        765881,
+        0
+      ],
+      "position_error_cm": 5.153846277368212e-07,
+      "second_nearest_distance_cm": 2809.9570309211604,
+      "rotation_error_deg": 6.869779607854579e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "6_2_Gate",
+      "runtime_actor": "0x7fffd0da5740",
+      "runtime_root": "0x7fffd1498200",
+      "runtime_fname": [
+        765931,
+        0
+      ],
+      "position_error_cm": 6.731432954499103e-07,
+      "second_nearest_distance_cm": 2809.957031421159,
+      "rotation_error_deg": 6.869779607854579e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    }
+  ],
+  "limitations": [
+    "one historical process and startup samples, all-stop GDB",
+    "identity assigned by minimum-distance matching; runtime FNames not decoded",
+    "root transform comparison does not prove collision geometry or scoring trigger",
+    "printed values have limited decimal precision"
+  ]
+}

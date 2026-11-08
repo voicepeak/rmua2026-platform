@@ -1,0 +1,2411 @@
+{
+  "placements": [
+    {
+      "actor": "1_1_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3264,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        89261.23573407704,
+        3911.023523828886,
+        7296.092529296875
+      ],
+      "quaternion_xyzw": [
+        -0.001953806103664398,
+        -0.08713384035841215,
+        -0.022332105954338422,
+        0.9959443526371081
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_1_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3265,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        88433.08035459016,
+        7671.924400545136,
+        7449.224609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9997486982663961,
+        -0.022417410971084753
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_1_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3266,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        91916.5684491732,
+        5663.763535763514,
+        6579.224609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.722780587340892,
+        0.6910775807122926
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_1_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3267,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        85932.58887427185,
+        5932.256454038061,
+        6579.224609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.6910775807122925,
+        0.7227805873408921
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_1_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3268,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        89661.84410541614,
+        7616.791428050497,
+        7449.224609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9997486982663961,
+        -0.022417410971084753
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_1_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3269,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        88261.01026378851,
+        3965.912474974297,
+        7149.5933837890625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.9997486982663961,
+        0.022417410971084878
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_1_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3270,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        88841.00880827203,
+        5831.790024054495,
+        6039.224609375
+      ],
+      "quaternion_xyzw": [
+        0.7069290840265923,
+        -0.01585150331429978,
+        -0.01585150331429978,
+        0.7069290840265924
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "1_1_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3271,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        131358.2678058635,
+        -26621.508886420837,
+        -3603.4497117996216
+      ],
+      "quaternion_xyzw": [
+        0.41538923721503246,
+        -0.5722340269556796,
+        -0.5722340269556797,
+        0.4153892372150325
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_1_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3272,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        131034.99600175026,
+        -26516.174463436797,
+        -3603.4497413635254
+      ],
+      "quaternion_xyzw": [
+        0.41538923721503246,
+        -0.5722340269556796,
+        -0.5722340269556797,
+        0.4153892372150325
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3273,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        89261.23573407704,
+        3910.937586328886,
+        9699.717529296875
+      ],
+      "quaternion_xyzw": [
+        -0.001953806103664398,
+        -0.08713384035841215,
+        -0.022332105954338422,
+        0.9959443526371081
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3274,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        88433.08035459016,
+        7671.838463045136,
+        9852.849609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9997486982663961,
+        -0.022417410971084753
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3275,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        91916.5684491732,
+        5663.677598263514,
+        8982.849609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.722780587340892,
+        0.6910775807122926
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3276,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        85932.58887427185,
+        5932.170516538061,
+        8982.849609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.6910775807122925,
+        0.7227805873408921
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3277,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        89661.84410541614,
+        7616.705490550497,
+        9852.849609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9997486982663961,
+        -0.022417410971084753
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3278,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        88261.01026378851,
+        3965.826537474297,
+        9553.218383789062
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.9997486982663961,
+        0.022417410971084878
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "1_2_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3279,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        88841.00880827203,
+        5831.704086554495,
+        8442.849609375
+      ],
+      "quaternion_xyzw": [
+        0.7069290840265923,
+        -0.01585150331429978,
+        -0.01585150331429978,
+        0.7069290840265924
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "1_2_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3280,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        140092.62001918917,
+        889.941826570542,
+        -3204.8745164871216
+      ],
+      "quaternion_xyzw": [
+        0.4977170178268597,
+        -0.5022726054300966,
+        -0.5022726054300966,
+        0.49771701782685973
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "1_2_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3281,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        139752.6341314865,
+        893.0395939956729,
+        -3204.8745460510254
+      ],
+      "quaternion_xyzw": [
+        0.4977170178268597,
+        -0.5022726054300966,
+        -0.5022726054300966,
+        0.49771701782685973
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3282,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        80052.42222643994,
+        -9805.65816283009,
+        4697.560302734375
+      ],
+      "quaternion_xyzw": [
+        -0.03859510183717453,
+        -0.07814436389192823,
+        -0.4411440326293053,
+        0.8931941664507548
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3283,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        82401.11142734029,
+        -6753.793851522632,
+        4850.6923828125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8966060230612622,
+        -0.4428291311671663
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3284,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        83101.91394167388,
+        -10713.121471188117,
+        3980.6923828125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.947123680514571,
+        0.32086871740407014
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3285,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        79461.16352237099,
+        -5956.543248942018,
+        3980.6923828125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.32086871740406997,
+        0.9471236805145711
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3286,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        83148.71123439104,
+        -7730.520286353642,
+        4850.6923828125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8966060230612622,
+        -0.4428291311671663
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3287,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        79451.53706325915,
+        -9004.159061744545,
+        4551.0611572265625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8966060230612622,
+        0.44282913116716643
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_1_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3288,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        81253.69806930273,
+        -8249.1007540222,
+        3440.6923828125
+      ],
+      "quaternion_xyzw": [
+        0.6339961989593205,
+        -0.31312748155525044,
+        -0.3131274815552505,
+        0.6339961989593206
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "2_1_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3289,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        108822.03634874191,
+        -49454.24810270808,
+        -2763.6665086746216
+      ],
+      "quaternion_xyzw": [
+        0.3955675406981742,
+        -0.5861111846279666,
+        -0.5861111846279667,
+        0.39556754069817424
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_1_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3290,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        108506.7250273065,
+        -49327.05230649352,
+        -2763.6665382385254
+      ],
+      "quaternion_xyzw": [
+        0.3955675406981742,
+        -0.5861111846279666,
+        -0.5861111846279667,
+        0.39556754069817424
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3291,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        80052.35972643994,
+        -9805.71480345509,
+        7101.177490234375
+      ],
+      "quaternion_xyzw": [
+        -0.03859510183717453,
+        -0.07814436389192823,
+        -0.4411440326293053,
+        0.8931941664507548
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3292,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        82401.04892734029,
+        -6753.850492147632,
+        7254.3095703125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8966060230612622,
+        -0.4428291311671663
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3293,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        83101.85144167388,
+        -10713.178111813117,
+        6384.3095703125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.947123680514571,
+        0.32086871740407014
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3294,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        79461.10102237099,
+        -5956.599889567018,
+        6384.3095703125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.32086871740406997,
+        0.9471236805145711
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3295,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        83148.64873439104,
+        -7730.576926978642,
+        7254.3095703125
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8966060230612622,
+        -0.4428291311671663
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3296,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        79451.47456325915,
+        -9004.215702369545,
+        6954.6783447265625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8966060230612622,
+        0.44282913116716643
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "2_2_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3297,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        81253.63556930273,
+        -8249.1573946472,
+        5844.3095703125
+      ],
+      "quaternion_xyzw": [
+        0.6339961989593205,
+        -0.31312748155525044,
+        -0.3131274815552505,
+        0.6339961989593206
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "2_2_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3298,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        93518.71416624,
+        -56460.02255037798,
+        -3573.5537157058716
+      ],
+      "quaternion_xyzw": [
+        0.030886835518846103,
+        0.7064318816358954,
+        0.7064318816358955,
+        0.030886835518846106
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "2_2_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3299,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        93548.38861189336,
+        -56121.31998576537,
+        -3573.5537452697754
+      ],
+      "quaternion_xyzw": [
+        0.030886835518846103,
+        0.7064318816358954,
+        0.7064318816358955,
+        0.030886835518846106
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3300,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        65525.09184312733,
+        -12457.262245591039,
+        6401.913818359375
+      ],
+      "quaternion_xyzw": [
+        -0.06299439873029461,
+        -0.06023146372540373,
+        -0.7200292722682703,
+        0.6884487806532373
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3301,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        69285.99051431906,
+        -11629.096850222224,
+        6555.0458984375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.6910785431522483,
+        -0.7227796671147897
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3302,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        67277.8389266345,
+        -15112.590292848781,
+        5685.0458984375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9997487281160982,
+        -0.022416079725148308
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3303,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        67546.31590860654,
+        -9128.610002928766,
+        5685.0458984375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.02241607972514853,
+        0.9997487281160982
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3304,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        69230.86081422043,
+        -12857.860747871822,
+        6555.0458984375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.6910785431522483,
+        -0.7227796671147897
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3305,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        65579.978130511,
+        -11457.03662912795,
+        6255.4146728515625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.6910785431522483,
+        0.7227796671147897
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_1_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3306,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        67445.85722421412,
+        -12037.030204476921,
+        5145.0458984375
+      ],
+      "quaternion_xyzw": [
+        0.4886663241954748,
+        -0.5110824039206232,
+        -0.5110824039206233,
+        0.4886663241954749
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "3_1_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3307,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        63110.01888698286,
+        -59121.518827931715,
+        -532.1640672683716
+      ],
+      "quaternion_xyzw": [
+        0.25533340976506474,
+        -0.6593973383762975,
+        -0.6593973383762977,
+        0.2553334097650648
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_1_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3308,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        62881.04089469809,
+        -58870.18423212518,
+        -532.1640968322754
+      ],
+      "quaternion_xyzw": [
+        0.25533340976506474,
+        -0.6593973383762975,
+        -0.6593973383762977,
+        0.2553334097650648
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3309,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        65525.00590562733,
+        -12457.264198716039,
+        8805.530029296875
+      ],
+      "quaternion_xyzw": [
+        -0.06299439873029461,
+        -0.06023146372540373,
+        -0.7200292722682703,
+        0.6884487806532373
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3310,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        69285.90457681906,
+        -11629.098803347224,
+        8958.662109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.6910785431522483,
+        -0.7227796671147897
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3311,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        67277.7529891345,
+        -15112.592245973781,
+        8088.662109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9997487281160982,
+        -0.022416079725148308
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3312,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        67546.22997110654,
+        -9128.611956053766,
+        8088.662109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.02241607972514853,
+        0.9997487281160982
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3313,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        69230.77487672043,
+        -12857.862700996822,
+        8958.662109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.6910785431522483,
+        -0.7227796671147897
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3314,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        65579.892193011,
+        -11457.03858225295,
+        8659.030883789062
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.6910785431522483,
+        0.7227796671147897
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "3_2_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3315,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        67445.77128671412,
+        -12037.032157601921,
+        7548.662109375
+      ],
+      "quaternion_xyzw": [
+        0.4886663241954748,
+        -0.5110824039206232,
+        -0.5110824039206233,
+        0.4886663241954749
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "3_2_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3316,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        49617.703141523234,
+        -56938.19760375417,
+        1198.2519483566284
+      ],
+      "quaternion_xyzw": [
+        0.39245833774594635,
+        0.5881976310167261,
+        0.5881976310167262,
+        0.3924583377459464
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "3_2_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3317,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        49931.64970929074,
+        -56807.66962749235,
+        1198.2519187927246
+      ],
+      "quaternion_xyzw": [
+        0.39245833774594635,
+        0.5881976310167261,
+        0.5881976310167262,
+        0.3924583377459464
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3318,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        51166.20528521042,
+        -493.58434892810146,
+        7128.556396484375
+      ],
+      "quaternion_xyzw": [
+        -0.08697254393056165,
+        -0.00564801700975597,
+        -0.9941007260305285,
+        0.06455712982839647
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3319,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        52634.866928351,
+        -4053.535151260305,
+        7281.6884765625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.06480372757660578,
+        -0.9978980293056887
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3320,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        48855.58188689299,
+        -2680.7992191328076,
+        6411.6884765625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.7514436186703283,
+        -0.659797308239161
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3321,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        54795.27157735065,
+        -1906.0822507688158,
+        6411.6884765625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.6597973082391612,
+        0.7514436186703282
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3322,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        51415.19775519625,
+        -4212.617230879585,
+        7281.6884765625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.06480372757660578,
+        -0.9978980293056887
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3323,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        52160.765971543355,
+        -373.94811038522334,
+        6982.0572509765625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.06480372757660567,
+        0.9978980293056887
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_1_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3324,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        51913.59288714304,
+        -2312.1954645979304,
+        5871.6884765625
+      ],
+      "quaternion_xyzw": [
+        0.045823155215583576,
+        -0.7056204634547446,
+        -0.7056204634547447,
+        0.04582315521558358
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "4_1_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3325,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        5553.035521064586,
+        25191.10260436305,
+        -132.56543445587158
+      ],
+      "quaternion_xyzw": [
+        0.5621184087395261,
+        0.4289788975650703,
+        0.42897889756507035,
+        0.5621184087395262
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_1_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3326,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        5880.98175304826,
+        25101.373740959407,
+        -132.5654640197754
+      ],
+      "quaternion_xyzw": [
+        0.5621184087395261,
+        0.4289788975650703,
+        0.42897889756507035,
+        0.5621184087395262
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3327,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        51166.19356646042,
+        -493.49792314685146,
+        9532.178466796875
+      ],
+      "quaternion_xyzw": [
+        -0.08697254393056165,
+        -0.00564801700975597,
+        -0.9941007260305285,
+        0.06455712982839647
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3328,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        52634.855209601,
+        -4053.448725479055,
+        9685.310546875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.06480372757660578,
+        -0.9978980293056887
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3329,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        48855.57016814299,
+        -2680.7127933515576,
+        8815.310546875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.7514436186703283,
+        -0.659797308239161
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3330,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        54795.25985860065,
+        -1905.9958249875658,
+        8815.310546875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.6597973082391612,
+        0.7514436186703282
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3331,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        51415.18603644625,
+        -4212.530805098335,
+        9685.310546875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.06480372757660578,
+        -0.9978980293056887
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3332,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        52160.754252793355,
+        -373.86168460397334,
+        9385.679321289062
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.06480372757660567,
+        0.9978980293056887
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "4_2_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3333,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        51913.58116839304,
+        -2312.1090388166804,
+        8275.310546875
+      ],
+      "quaternion_xyzw": [
+        0.045823155215583576,
+        -0.7056204634547446,
+        -0.7056204634547447,
+        0.04582315521558358
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "4_2_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3334,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        -369.99218749999045,
+        4.793689962312442e-05,
+        -40.00000476837158
+      ],
+      "quaternion_xyzw": [
+        0.5000000998685309,
+        0.4999999001314491,
+        0.4999999001314492,
+        0.5000000998685309
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "4_2_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3335,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        -29.992187500017565,
+        -8.78843159757281e-05,
+        -40.00003433227539
+      ],
+      "quaternion_xyzw": [
+        0.5000000998685309,
+        0.4999999001314491,
+        0.4999999001314492,
+        0.5000000998685309
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3336,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        59979.34251043166,
+        19398.328532881293,
+        5092.709716796875
+      ],
+      "quaternion_xyzw": [
+        -0.045259402292039036,
+        -0.07448295105635479,
+        -0.5173173353897228,
+        0.8513440262381484
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3337,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        62822.330959917555,
+        21995.949254454772,
+        5245.841796875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8545960221118775,
+        -0.5192934035692689
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3338,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        62824.909567238836,
+        17975.079607882468,
+        4375.841796875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9714865294996298,
+        0.23709475532108482
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3339,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        60065.503766492155,
+        23291.63672944202,
+        4375.841796875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.23709475532108465,
+        0.9714865294996299
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3340,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        63388.953488000785,
+        20904.235505036653,
+        5245.841796875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8545960221118775,
+        -0.5192934035692689
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3341,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        59526.77547328412,
+        20291.99897843671,
+        4946.2105712890625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8545960221118775,
+        0.5192934035692689
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_1_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3342,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        61432.67714951188,
+        20722.621946143634,
+        3835.841796875
+      ],
+      "quaternion_xyzw": [
+        0.6042906424103572,
+        -0.36719588708927253,
+        -0.3671958870892726,
+        0.6042906424103573
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "5_1_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3343,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        32014.405167250457,
+        50338.24955840017,
+        6869.323237419128
+      ],
+      "quaternion_xyzw": [
+        0.5848071524196593,
+        0.39749288607320915,
+        0.39749288607320926,
+        0.5848071524196594
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_1_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3344,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        32330.54625587416,
+        50213.13036689135,
+        6869.323207855225
+      ],
+      "quaternion_xyzw": [
+        0.5848071524196593,
+        0.39749288607320915,
+        0.39749288607320926,
+        0.5848071524196594
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3345,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        59979.26438543166,
+        19398.279704756293,
+        7496.327880859375
+      ],
+      "quaternion_xyzw": [
+        -0.045259402292039036,
+        -0.07448295105635479,
+        -0.5173173353897228,
+        0.8513440262381484
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3346,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        62822.252834917555,
+        21995.900426329772,
+        7649.4599609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8545960221118775,
+        -0.5192934035692689
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3347,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        62824.831442238836,
+        17975.030779757468,
+        6779.4599609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.9714865294996298,
+        0.23709475532108482
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3348,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        60065.425641492155,
+        23291.58790131702,
+        6779.4599609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.23709475532108465,
+        0.9714865294996299
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3349,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        63388.875363000785,
+        20904.186676911653,
+        7649.4599609375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8545960221118775,
+        -0.5192934035692689
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3350,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        59526.69734828412,
+        20291.95015031171,
+        7349.8287353515625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8545960221118775,
+        0.5192934035692689
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "5_2_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3351,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        61432.59902451188,
+        20722.573118018634,
+        6239.4599609375
+      ],
+      "quaternion_xyzw": [
+        0.6042906424103572,
+        -0.36719588708927253,
+        -0.3671958870892726,
+        0.6042906424103573
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "5_2_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3352,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        47834.73331049058,
+        51820.462337428755,
+        4867.355463981628
+      ],
+      "quaternion_xyzw": [
+        0.7049360840984594,
+        -0.055363501839476914,
+        -0.05536350183947693,
+        0.7049360840984595
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "5_2_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3353,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        47781.65559743394,
+        51484.63089700562,
+        4867.355434417725
+      ],
+      "quaternion_xyzw": [
+        0.7049360840984594,
+        -0.055363501839476914,
+        -0.05536350183947693,
+        0.7049360840984595
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3354,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        85612.144688774,
+        18156.94876433321,
+        5997.113037109375
+      ],
+      "quaternion_xyzw": [
+        0.04187490244942506,
+        -0.07643700699757353,
+        0.4786323251699575,
+        0.8736789878488003
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3355,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        81941.03044675384,
+        19320.192917163906,
+        6150.2451171875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8770162996474189,
+        0.48046062289510144
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3356,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        85421.89134378494,
+        21332.904217738847,
+        5280.2451171875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.2804072081495842,
+        0.9598811372340619
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3357,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        82197.38356539671,
+        16284.869987752494,
+        5280.2451171875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.9598811372340618,
+        0.28040720814958436
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3358,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        82603.15811777808,
+        20356.767539303582,
+        6150.2451171875
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8770162996474189,
+        0.48046062289510144
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3359,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        85064.49734184482,
+        17318.17217204349,
+        5850.6138916015625
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8770162996474189,
+        -0.48046062289510133
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_1_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3360,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        83738.5982051124,
+        18753.403449216876,
+        4740.2451171875
+      ],
+      "quaternion_xyzw": [
+        0.620144172691823,
+        0.33973696454223873,
+        0.3397369645422388,
+        0.6201441726918231
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "6_1_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3361,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        77209.85586273708,
+        62266.46659196928,
+        -3278.7451219558716
+      ],
+      "quaternion_xyzw": [
+        0.6658306579304966,
+        0.23805363882923947,
+        0.23805363882923952,
+        0.6658306579304967
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_1_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3362,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        77425.4205016487,
+        62003.537159514664,
+        -3278.7451515197754
+      ],
+      "quaternion_xyzw": [
+        0.6658306579304966,
+        0.23805363882923947,
+        0.23805363882923952,
+        0.6658306579304967
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "a6_Sprite",
+      "export_index": 3363,
+      "sprite_package": "/Game/Resources/Sprites/a6_Sprite",
+      "translation_ue_cm": [
+        85612.222813774,
+        18156.90188933321,
+        8400.739013671875
+      ],
+      "quaternion_xyzw": [
+        0.04187490244942506,
+        -0.07643700699757353,
+        0.4786323251699575,
+        0.8736789878488003
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "AVATA_Sprite",
+      "export_index": 3364,
+      "sprite_package": "/Game/Resources/Sprites/AVATA_Sprite",
+      "translation_ue_cm": [
+        81941.10857175384,
+        19320.146042163906,
+        8553.87109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8770162996474189,
+        0.48046062289510144
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "long_logo_Sprite",
+      "export_index": 3365,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        85421.96946878494,
+        21332.857342738847,
+        7683.87109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.2804072081495842,
+        0.9598811372340619
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "long_logo_Sprite1",
+      "export_index": 3366,
+      "sprite_package": "/Game/Resources/Sprites/Longlogo_Sprite",
+      "translation_ue_cm": [
+        82197.46169039671,
+        16284.823112752494,
+        7683.87109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.9598811372340618,
+        0.28040720814958436
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "Mavic_Sprite",
+      "export_index": 3367,
+      "sprite_package": "/Game/Resources/Sprites/Mavic_Sprite",
+      "translation_ue_cm": [
+        82603.23624277808,
+        20356.720664303582,
+        8553.87109375
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        -0.8770162996474189,
+        0.48046062289510144
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "p3_Sprite",
+      "export_index": 3368,
+      "sprite_package": "/Game/Resources/Sprites/p3_Sprite",
+      "translation_ue_cm": [
+        85064.57546684482,
+        17318.12529704349,
+        8254.239868164062
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.8770162996474189,
+        -0.48046062289510133
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "actor": "6_2_Factory",
+      "component": "R_logo_Sprite",
+      "export_index": 3369,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        83738.6763301124,
+        18753.356574216876,
+        7143.87109375
+      ],
+      "quaternion_xyzw": [
+        0.620144172691823,
+        0.33973696454223873,
+        0.3397369645422388,
+        0.6201441726918231
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9999999403953552
+      ]
+    },
+    {
+      "actor": "6_2_Port",
+      "component": "R_logo_Sprite",
+      "export_index": 3370,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        85917.50205777257,
+        65148.851401106185,
+        -2084.5273485183716
+      ],
+      "quaternion_xyzw": [
+        0.684914400987124,
+        -0.17576195071871833,
+        -0.17576195071871836,
+        0.6849144009871241
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    },
+    {
+      "actor": "6_2_Port",
+      "component": "R_logo_Sprite1",
+      "export_index": 3371,
+      "sprite_package": "/Game/Resources/Sprites/Rlogo_Sprite",
+      "translation_ue_cm": [
+        85753.7826857503,
+        64850.864879222,
+        -2084.5273780822754
+      ],
+      "quaternion_xyzw": [
+        0.684914400987124,
+        -0.17576195071871833,
+        -0.17576195071871836,
+        0.6849144009871241
+      ],
+      "scale": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  ],
+  "unresolved": [],
+  "limitations": [
+    "sprite geometry and runtime collision mode are not decoded",
+    "FTransform and template composition are candidate interpretations",
+    "construction overrides and runtime object identity are not confirmed"
+  ],
+  "source_sha256": {
+    "map": "6adfd35db2a228c9b80ec7de85c3d9be62331763a2eb496546c1c8f21ca8b58f",
+    "blueprints": {
+      "BP_Building_1_1.json": "24d2a793598efa627c29fadc852cde82addb1d833d5cc7c6e31144616c208234",
+      "BP_Building_1_2.json": "cff2d91fd0a690fd85c8c1f4cada1855feb7a5e8a09b8db6208ca46528158f66",
+      "BP_Building_2_1.json": "886967d5533150a9bba46bfac08d054650dfd801811cbc98a81b1783dfbc9aa7",
+      "BP_Building_3_1.json": "8b885afdfa60a7bb4bea6cf019e3d85946b916573ea78024120459b556200af8",
+      "BP_Building_3_2.json": "3455fc02aa922d4a741581849bfa2dc7ebd296a2983d439cf79d7565a69f2592",
+      "BP_Building_3_3.json": "7c99fd5483f73b14b06368d471ad9856dfce1ca19776165317e1b98ef4ab727c",
+      "BP_Building_4_1.json": "a706ae9303ba46332b25f698b03e25a59602574d38bca46ddcfd0371cd9cdf5f",
+      "BP_Building_5_1.json": "108aaddebe5afe1977d73258d7fcb4c7908243f14a42153bc30650683d565a4e",
+      "BP_Building_6_1.json": "099722a1bfd2aeb716162ce7eb09cf1ef8530b68e3f0e50acd7b1cf885ad4a24",
+      "BP_Building_6_2.json": "876a786f2fea5d208acffd35f9ed076d2cc67a0a05fb88bb8cd267c00c442c84",
+      "BP_Building_Factory_1.json": "41bdb6661d499944f5402b6ad49bb8d93cd99600360a7cd3671ea3fbb1e59c91",
+      "BP_Building_Factory_Pillar.json": "fe69e60cc47ace402ca7c02cc33d69b9026b6e484cb462610dba72a2a9857c8c",
+      "BP_Building_Junction_2.json": "eff6ae07864f5c15c6e4c8be410dd4c21788b80f343ffaa1987f767762564aed",
+      "BP_Building_Port.json": "9c52dac94e57b784a02a9c9e7c8866ea4530bce1724a7682916cb86123763fb2",
+      "BP_FlyingPawn.json": "0053a5adfe73ca1dc9a6d97bad8ed62eb864cd5756fd3af7d297c6573166b49f",
+      "BP_Gate.json": "d8a6b3ac9bec15a88925d8c73e39717a9d20ac7450a9e6cc109734232f0d6eb7",
+      "BP_Rack.json": "dbbbbc08db153984a3b1a180a0df92da46ae0c976147a8e62b0570de604bfe14",
+      "BP_Segment_Half.json": "50cc3dc230f479b66e477fa5e5495ba3fd18fc77fdb993e644e52de3387cae8d",
+      "BP_Segment_Rot.json": "38e428d1cbebf9aa5c7f159c6c087a865023d03045dee96c216b97c7228aa772",
+      "BP_Spline.json": "e26c36cc18c2acc7abf8cd3714d1409a24e6fa22e3eb0f1b8fbd98e183b4f1ba"
+    }
+  }
+}

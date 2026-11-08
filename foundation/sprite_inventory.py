@@ -53,6 +53,8 @@ def build(asset, blueprints):
         template_exports = {e.get('ObjectName'): e for e in bp['Exports']}
         templates = {key: props(e) for key, e in template_exports.items()}
         try:
+            if any(p.get('Name') == 'SourceSprite' for p in child.get('Data', [])):
+                raise ValueError('instance SourceSprite override requires map import resolution')
             chain, seen, node = [], set(), index
             while isinstance(node, int) and 0 < node <= len(exports) and node not in seen:
                 seen.add(node)

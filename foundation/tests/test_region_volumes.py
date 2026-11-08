@@ -48,11 +48,14 @@ def test_candidate_union_startup_port_and_spatial_sim():
            'quaternion_xyzw': [0, 0, 0, 1], 'scale': [1, 1, 1], 'box_half_extents_cm': [100]*3}
     safe = CandidateRegionUnion({'road': CandidateBoxVolumes([obj])}, origin_ue_cm=[0, 0, 0])
     p = Params(.9, (.0046890742, .0069312, .010421166), .18, 12., .16, .01)
-    sim = PhysicsSim(p, candidate_field=safe, out_time_counter=OutTimeCounter(.02))
+    with pytest.raises(ValueError, match='scale must be selected explicitly'):
+        PhysicsSim(p, candidate_field=safe)
+    sim = PhysicsSim(p, candidate_field=safe, field_rotor_target_scale=.25, out_time_counter=OutTimeCounter(.02))
     sim.reset({'position': [5, 0, 0]})
     _, info = sim.step([.2]*4, .03)
     assert info['candidate_field_state']['flag'] == 0 and info['out_time_exceeded']
-    assert info['force_degradation'] == 'unverified_spatial_union_025_target_candidate'
+    assert info['force_degradation'] == 'unverified_spatial_union_explicit_target_candidate'
+    assert info['field_rotor_target_scale'] == .25
     sim.reset({'position': [0, 0, 0]})
     _, info = sim.step([.2]*4, .03)
     assert info['candidate_field_state']['flag'] == 1 and not info['out_time_exceeded']
@@ -87,7 +90,7 @@ def test_sphere_region_respects_offset_rotation_and_box_corners():
     with pytest.raises(ValueError, match='rotation'):
         field.evaluate([0,0,0])
     params = Params(.9, (.0046890742, .0069312, .010421166), .18, 12., .16, .01)
-    sim = PhysicsSim(params, candidate_field=field, max_substep_s=.01)
+    sim = PhysicsSim(params, candidate_field=field, field_rotor_target_scale=.25, max_substep_s=.01)
     sim.reset({'position':[0,0,-.05]})
     _, info = sim.step([.2]*4, .01)
     assert info['candidate_field_state']['flag'] == 1

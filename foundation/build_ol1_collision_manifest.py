@@ -39,7 +39,8 @@ def main():
             'Road auxiliary cubes, building simple shapes, sprites and rack meshes are only candidates.',
             'Gate mesh transforms are not verified apertures or collision volumes.',
             'Scene origin, axis alignment, geometry coverage and initial containment remain unverified.',
-            'Surface sweeps do not return time of impact and do not detect inside-solid containment.',
+            'Surface sweeps do not return time of impact; default mode does not check solid containment.',
+            'Optional containment assumes topologically closed meshes are solid; open/ambiguous cases remain unknown.',
         ],
         'evidence': ['../../reports/road_collision_extraction.md',
                      '../../reports/gate_runtime_root_comparison.json',
@@ -47,6 +48,7 @@ def main():
                      '../../reports/contact_surface_seed123.json',
                      '../../reports/contact_surface_seed456.json'],
         'generator_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'loader_sha256': hashlib.sha256(Path('foundation/map_scene.py').read_bytes()).hexdigest(),
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n', encoding='utf-8')

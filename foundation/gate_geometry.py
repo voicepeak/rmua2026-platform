@@ -49,6 +49,26 @@ class GateMeshVolumes:
         result.source_sha256 = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         return result
 
+    @classmethod
+    def load_serialized_candidates(cls, map_directory, assets, *, crossing_axis):
+        """Load a map's own gate candidates and require matching road provenance."""
+        map_directory, assets = Path(map_directory), Path(assets)
+        gate_path = map_directory/'gate_candidates.json'
+        road_path = map_directory/'road_candidates.json'
+        shape_path = assets/'OL1_simple_convex_candidates.json'
+        gate, road, shapes = (json.loads(p.read_bytes()) for p in (gate_path, road_path, shape_path))
+        if (gate['unresolved'] or not gate['placements'] or gate.get('actor_class') != 'BP_Gate_C'
+                or gate['source_sha256']['map'] != road['source_sha256']['map_json']
+                or gate['source_sha256']['blueprints'].get('BP_Gate.json')
+                   != road['source_sha256']['building_blueprints'].get('BP_Gate.json')):
+            raise ValueError('mismatched or unresolved gate candidates')
+        vertices, _ = simple_mesh(shapes['assets']['Engine_EngineMeshes_Cube'])
+        result = cls(gate['placements'], (vertices.min(axis=0), vertices.max(axis=0)),
+                     crossing_axis=crossing_axis)
+        result.source_sha256 = {str(p): hashlib.sha256(p.read_bytes()).hexdigest()
+                                for p in (gate_path, road_path, shape_path)}
+        return result
+
     def crossings_ue(self, start, end):
         start, end = np.asarray(start, float), np.asarray(end, float)
         if start.shape != (3,) or end.shape != (3,) or not np.isfinite([start, end]).all():

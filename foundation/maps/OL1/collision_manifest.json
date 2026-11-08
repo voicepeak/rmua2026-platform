@@ -60,7 +60,8 @@
     "Road auxiliary cubes, building simple shapes, sprites and rack meshes are only candidates.",
     "Gate mesh transforms are not verified apertures or collision volumes.",
     "Scene origin, axis alignment, geometry coverage and initial containment remain unverified.",
-    "Surface sweeps do not return time of impact and do not detect inside-solid containment."
+    "Surface sweeps do not return time of impact; default mode does not check solid containment.",
+    "Optional containment assumes topologically closed meshes are solid; open/ambiguous cases remain unknown."
   ],
   "evidence": [
     "../../reports/road_collision_extraction.md",
@@ -69,5 +70,6 @@
     "../../reports/contact_surface_seed123.json",
     "../../reports/contact_surface_seed456.json"
   ],
-  "generator_sha256": "9ebdf41e9193c6b79e8f08fd2d3a36ed5d5aa40f4c56af5b4add970bffc85ba8"
+  "generator_sha256": "0b19d573716f92afca3bc95379c8b362074e5b145528c69bc5025eac4c8ccf8a",
+  "loader_sha256": "58362b25a4816e980595cb00bd2a480d488820931a9a2228e744ece532ff06eb"
 }
