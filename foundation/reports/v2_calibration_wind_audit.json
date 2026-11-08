@@ -1,0 +1,95 @@
+{
+  "status": "observed ROS debug wind only; not proof of physical zero wind",
+  "runs": [
+    {
+      "directory": "foundation/datasets/d03_roll_pitch_seed2026_20261107",
+      "window_s": [
+        0.3,
+        0.8
+      ],
+      "first_command_header_ns": 1794034579101174354,
+      "total_wind_samples": 136,
+      "invalid_or_zero_stamp_count": 0,
+      "window_sample_count": 25,
+      "first_sample_relative_s": 0.314466477,
+      "last_sample_relative_s": 0.794476748,
+      "nonincreasing_stamp_pairs": 0,
+      "max_adjacent_gap_s": 0.021000624000000002,
+      "max_observed_vector_norm": 0.0,
+      "max_abs_component": 0.0,
+      "source_sha256": {
+        "commands.jsonl": "10a2fee69770e25453574f6cef62061a170569f5ed43782ff2948b616f2df6ec",
+        "capture.jsonl": "3bae965862da3bc4db4b63c198f87903543a0f8e81699d320e2180e9e1755e53"
+      }
+    },
+    {
+      "directory": "foundation/datasets/d03_roll_pitch_small_seed456_20261107",
+      "window_s": [
+        0.3,
+        0.8
+      ],
+      "first_command_header_ns": 1794034681167034626,
+      "total_wind_samples": 137,
+      "invalid_or_zero_stamp_count": 0,
+      "window_sample_count": 25,
+      "first_sample_relative_s": 0.304273844,
+      "last_sample_relative_s": 0.7842841150000001,
+      "nonincreasing_stamp_pairs": 0,
+      "max_adjacent_gap_s": 0.021000624000000002,
+      "max_observed_vector_norm": 0.0,
+      "max_abs_component": 0.0,
+      "source_sha256": {
+        "commands.jsonl": "5000a5e9462586979ed7c14bb98ca00efc1428d2a334704d43d5f5f0506db479",
+        "capture.jsonl": "147714db715a23cbb233bcc922ed6e3f5fe307ac836a82bf14e24901971bb829"
+      }
+    },
+    {
+      "directory": "foundation/datasets/d04_yaw_seed2026_20261107",
+      "window_s": [
+        0.3,
+        0.8
+      ],
+      "first_command_header_ns": 1794033295127873420,
+      "total_wind_samples": 128,
+      "invalid_or_zero_stamp_count": 0,
+      "window_sample_count": 25,
+      "first_sample_relative_s": 0.315794707,
+      "last_sample_relative_s": 0.795804978,
+      "nonincreasing_stamp_pairs": 0,
+      "max_adjacent_gap_s": 0.021000624000000002,
+      "max_observed_vector_norm": 0.0,
+      "max_abs_component": 0.0,
+      "source_sha256": {
+        "commands.jsonl": "ba0891bdf953541d71a7a5cba0d9fef65deb1b74f664074816eee6151c877be8",
+        "capture.jsonl": "ce9cf733daad57e59e3aaa480b4449b7c174e59b3d2e9a0a52712af1e5fa35a0"
+      }
+    },
+    {
+      "directory": "foundation/datasets/d04_yaw_small_seed456_20261107",
+      "window_s": [
+        0.3,
+        0.8
+      ],
+      "first_command_header_ns": 1794033785234188079,
+      "total_wind_samples": 130,
+      "invalid_or_zero_stamp_count": 0,
+      "window_sample_count": 25,
+      "first_sample_relative_s": 0.31167674100000003,
+      "last_sample_relative_s": 0.7916867740000001,
+      "nonincreasing_stamp_pairs": 0,
+      "max_adjacent_gap_s": 0.021000624000000002,
+      "max_observed_vector_norm": 0.0,
+      "max_abs_component": 0.0,
+      "source_sha256": {
+        "commands.jsonl": "f3a7b4a8a1211665dc01a82926355ffd6bf949422cf050364461e120e9b165c9",
+        "capture.jsonl": "f876222bb8cef2efadbf5e602c9aed36f20ff66fc0e9d3e2ba01709698c5efb7"
+      }
+    }
+  ],
+  "analysis_sha256": "284def974e07f43d9f1b78425860b8cbd05e3544255cffb221e76f9eb97c72c0",
+  "limitations": [
+    "sampled debug messages do not establish continuous physical wind",
+    "command header and wind header are not verified physical timing",
+    "absence of observed wind does not establish absence of contact"
+  ]
+}
