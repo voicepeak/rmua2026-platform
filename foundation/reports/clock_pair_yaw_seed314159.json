@@ -1,0 +1,45 @@
+{
+  "status": "descriptive comparison, not a controlled measurement of debugger effects",
+  "window_host_s": [
+    0.3,
+    0.8
+  ],
+  "runs": [
+    {
+      "directory": "foundation\\datasets\\kinematic_yaw_seed314159_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.30112890800000003,
+        0.791166601
+      ],
+      "elapsed_source_over_host": 0.7530192702951937,
+      "host_gap_s_max": 0.010432869000000067,
+      "source_sha256": {
+        "run.json": "84fdd5527478cc8432984e33ccd0156b53bd14fb05d73d5586377e434d9b019e",
+        "commands.jsonl": "b7a3fe8dc8b3bced9bcf61f76623ba02ef9378851c8238198162f6256e9b5802",
+        "capture.jsonl": "9a0a266c27608f01a4472f326cea9318f998a70ff6c8b551df5ef853b479a36f"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\clock_pair_yaw_seed314159_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.309107405,
+        0.7987813610000001
+      ],
+      "elapsed_source_over_host": 0.9986447676216617,
+      "host_gap_s_max": 0.010457178000000011,
+      "source_sha256": {
+        "run.json": "723f88da57a8b3e2e2b114311c35102fdd60bf06878fafe388fc372ddf54de8f",
+        "commands.jsonl": "88dc6ed1df5f5c68f4ec4e790fd61921cc2d4885d6942ef240536970570bcc12",
+        "capture.jsonl": "c0b1b131351d8961f3cabcdabd5699a5035f933d78711c0bab58627c5e348ced"
+      }
+    }
+  ],
+  "limitations": [
+    "different seeds and run conditions can affect elapsed ratios",
+    "arrival timestamps include variable queue and scheduling delay",
+    "header clock semantics and true physics time remain unverified"
+  ],
+  "analysis_sha256": "7ccbd3fa945be0a19cad3bd5664122895c382f47163d3396aa88c4f5bfead855"
+}

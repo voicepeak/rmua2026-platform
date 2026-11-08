@@ -1,0 +1,45 @@
+{
+  "status": "descriptive comparison, not a controlled measurement of debugger effects",
+  "window_host_s": [
+    0.3,
+    0.8
+  ],
+  "runs": [
+    {
+      "directory": "foundation\\datasets\\kinematic_steps_seed27182_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.30300360600000004,
+        0.793425877
+      ],
+      "elapsed_source_over_host": 0.7952497960680908,
+      "host_gap_s_max": 0.010436112000000053,
+      "source_sha256": {
+        "run.json": "a9a5c41c5039151537d46f7f77af8543df132115ca37e2df4948cd56e6777d6f",
+        "commands.jsonl": "1346f40957252b6cfb78095b7ae650c309b404493b4b4b8ac3734ba4364bcc17",
+        "capture.jsonl": "b746c50c124058f173fca8483dcbdc13002ac97a053c21d0c2d844b03d651cd1"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\clock_pair_steps_retry_seed27182_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.30990127700000003,
+        0.79959402
+      ],
+      "elapsed_source_over_host": 0.9986064547417646,
+      "host_gap_s_max": 0.010272349000000014,
+      "source_sha256": {
+        "run.json": "4fb2c51a5d2b726635def4e35bce73c5285b51df93352b6aac88a59664274a1e",
+        "commands.jsonl": "4e4abfd4bf35791f847fe969a32d726f11bde109a8d46521b36f0ba5eadf96fa",
+        "capture.jsonl": "ad754c362fc183ee8c8e0cac98b9f8bc3c130d9621898ef8aaf566d3388e903c"
+      }
+    }
+  ],
+  "limitations": [
+    "different seeds and run conditions can affect elapsed ratios",
+    "arrival timestamps include variable queue and scheduling delay",
+    "header clock semantics and true physics time remain unverified"
+  ],
+  "analysis_sha256": "7ccbd3fa945be0a19cad3bd5664122895c382f47163d3396aa88c4f5bfead855"
+}

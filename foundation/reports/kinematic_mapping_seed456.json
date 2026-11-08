@@ -1,0 +1,76 @@
+{
+  "rotor_pointers_ascending": [
+    "0x7742c5b4c040",
+    "0x7742c5b4c178",
+    "0x7742c5b4c2b0",
+    "0x7742c5b4c3e8"
+  ],
+  "counts": [
+    26,
+    26,
+    26,
+    26
+  ],
+  "window_s": [
+    0.3,
+    0.85
+  ],
+  "delay_results": [
+    {
+      "assumed_delay_s": 0.002,
+      "fixed_mapping_rmse": 3.268572877477897e-05,
+      "best_alternative_rmse": 0.0011098787404054606,
+      "best_alternative_mapping": [
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "assumed_delay_s": 0.003,
+      "fixed_mapping_rmse": 3.268572877477897e-05,
+      "best_alternative_rmse": 0.0011098787404054606,
+      "best_alternative_mapping": [
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "assumed_delay_s": 0.004,
+      "fixed_mapping_rmse": 5.285037736097399e-09,
+      "best_alternative_rmse": 0.001109397341607778,
+      "best_alternative_mapping": [
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "assumed_delay_s": 0.005,
+      "fixed_mapping_rmse": 5.285037736097399e-09,
+      "best_alternative_rmse": 0.001109397341607778,
+      "best_alternative_mapping": [
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  ],
+  "status": "exploratory raw-input mapping, not actuator-latency acceptance",
+  "source_sha256": {
+    "rmua-re-a77eb07abdd4-0.log": "7b29767905383f1d3abac9da7ac363a62baa70066d341e706762809b26a473bb",
+    "commands.jsonl": "d8cd60fb2efe8295e724173bc427adc009b873df11a6a80159376461063d2e99",
+    "run.json": "c98a1a9734b68531bb9aecc0d3efa3148f0fd1459cfe6144076c2c7ee058d8c7"
+  },
+  "limitations": [
+    "address ordering is a build/run hypothesis",
+    "arrival times differ from physical command and sensor time",
+    "same waveform used to choose mapping and repeat",
+    "all-stop debugger affects execution"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "status": "descriptive comparison, not a controlled measurement of debugger effects",
+  "window_host_s": [
+    0.3,
+    0.8
+  ],
+  "runs": [
+    {
+      "directory": "foundation\\datasets\\d04_yaw_seed2026_20261107",
+      "samples": 50,
+      "host_interval_s": [
+        0.307604521,
+        0.797606723
+      ],
+      "elapsed_source_over_host": 1.0040982530115246,
+      "host_gap_s_max": 0.010402798999999963,
+      "source_sha256": {
+        "run.json": "e68a93265e54e0263d8f22412b990da1c112f475c83162d914d079d6491fa8cd",
+        "commands.jsonl": "ba0891bdf953541d71a7a5cba0d9fef65deb1b74f664074816eee6151c877be8",
+        "capture.jsonl": "ce9cf733daad57e59e3aaa480b4449b7c174e59b3d2e9a0a52712af1e5fa35a0"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\d02_small_steps_seed123_20261107",
+      "samples": 50,
+      "host_interval_s": [
+        0.305993926,
+        0.7957520330000001
+      ],
+      "elapsed_source_over_host": 1.0045986946776562,
+      "host_gap_s_max": 0.010252073999999944,
+      "source_sha256": {
+        "run.json": "83601bc8ec26cf28357d16eee0798b0f374e7e6be66bab3e7add425eff6608aa",
+        "commands.jsonl": "f34568c2cac480e0f6c5cf7a61aee8f1e5927dacdf97cb377ba3908f7468e235",
+        "capture.jsonl": "4145bcff56badd1810fefde8fdc74ccbf7b46d8e367772773cfd3b82e0bd0138"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\d02_small_steps_seed456_20261107",
+      "samples": 50,
+      "host_interval_s": [
+        0.306227364,
+        0.7966227300000001
+      ],
+      "elapsed_source_over_host": 0.9971756829366124,
+      "host_gap_s_max": 0.010390703000000001,
+      "source_sha256": {
+        "run.json": "613d717fe6fa3a62bc072c63e5773cf4481b155c938a984b1cc72bf3d261c607",
+        "commands.jsonl": "b48a160a602401aba7eda6b106618d45497a1486093ab8be729fda81907b7a98",
+        "capture.jsonl": "7fbf4493f68b33b2b4c19bc9d1391f55ea2f63bec170e8fd682bebdcf10a3a1c"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\kinematic_yaw_seed314159_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.30112890800000003,
+        0.791166601
+      ],
+      "elapsed_source_over_host": 0.7530192702951937,
+      "host_gap_s_max": 0.010432869000000067,
+      "source_sha256": {
+        "run.json": "84fdd5527478cc8432984e33ccd0156b53bd14fb05d73d5586377e434d9b019e",
+        "commands.jsonl": "b7a3fe8dc8b3bced9bcf61f76623ba02ef9378851c8238198162f6256e9b5802",
+        "capture.jsonl": "9a0a266c27608f01a4472f326cea9318f998a70ff6c8b551df5ef853b479a36f"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\kinematic_steps_seed27182_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.30300360600000004,
+        0.793425877
+      ],
+      "elapsed_source_over_host": 0.7952497960680908,
+      "host_gap_s_max": 0.010436112000000053,
+      "source_sha256": {
+        "run.json": "a9a5c41c5039151537d46f7f77af8543df132115ca37e2df4948cd56e6777d6f",
+        "commands.jsonl": "1346f40957252b6cfb78095b7ae650c309b404493b4b4b8ac3734ba4364bcc17",
+        "capture.jsonl": "b746c50c124058f173fca8483dcbdc13002ac97a053c21d0c2d844b03d651cd1"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\kinematic_probe_seed2026_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.304791751,
+        0.794779404
+      ],
+      "elapsed_source_over_host": 0.7469735262900593,
+      "host_gap_s_max": 0.01055928500000003,
+      "source_sha256": {
+        "run.json": "1056ef1b35f35fb30f697a8cde6837cc5994565d1f8872ad81bd7f8c039e1b0a",
+        "commands.jsonl": "ac2552f56f18e2ac1f3e1e82cecb4140003635f48e223b2bf2e326f920c66137",
+        "capture.jsonl": "4025fb2710e3ab20d4b711865b0182c2b3ffa3730232f477798c1d4ed1416e38"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\kinematic_probe_seed456_20261108",
+      "samples": 50,
+      "host_interval_s": [
+        0.30625503000000004,
+        0.796531273
+      ],
+      "elapsed_source_over_host": 0.8322018858254162,
+      "host_gap_s_max": 0.010380372999999998,
+      "source_sha256": {
+        "run.json": "c98a1a9734b68531bb9aecc0d3efa3148f0fd1459cfe6144076c2c7ee058d8c7",
+        "commands.jsonl": "d8cd60fb2efe8295e724173bc427adc009b873df11a6a80159376461063d2e99",
+        "capture.jsonl": "c559d3c2f9d7ecb74835c7c6ab503822a335d56fa39f999e09f40c7e198a38ff"
+      }
+    }
+  ],
+  "limitations": [
+    "different seeds and run conditions can affect elapsed ratios",
+    "arrival timestamps include variable queue and scheduling delay",
+    "header clock semantics and true physics time remain unverified"
+  ],
+  "analysis_sha256": "7ccbd3fa945be0a19cad3bd5664122895c382f47163d3396aa88c4f5bfead855"
+}
