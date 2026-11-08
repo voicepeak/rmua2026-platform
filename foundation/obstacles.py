@@ -142,7 +142,7 @@ class VehiclePath:
 
 def generate(seed, bounds_min, bounds_max, launch, exclusion_m, n_lines, n_vehicles,
              line_radius_m, line_length_m, vehicle_half_extents_m, speed_range_m_s,
-             *, line_directions=((0, 0, 1),), feasible=None):
+             *, line_directions=((0, 0, 1),), feasible=None, vehicle_center_z_m=None):
     """Sample full obstacles inside bounds; optional feasibility must be supplied externally.
 
     ``feasible`` receives each candidate obstacle and must return true before
@@ -161,6 +161,9 @@ def generate(seed, bounds_min, bounds_max, launch, exclusion_m, n_lines, n_vehic
     directions = directions / np.linalg.norm(directions, axis=1)[:, None]
     if feasible is not None and not callable(feasible):
         raise ValueError('feasible must be callable')
+    if vehicle_center_z_m is not None and (not math.isfinite(vehicle_center_z_m)
+            or (n_vehicles and not low[2]+ext[2] <= vehicle_center_z_m <= high[2]-ext[2])):
+        raise ValueError('vehicle center height is outside bounds')
     rng = np.random.default_rng(seed)
     lines = []
     for _ in range(n_lines):
@@ -187,6 +190,8 @@ def generate(seed, bounds_min, bounds_max, launch, exclusion_m, n_lines, n_vehic
                 continue
             p = rng.uniform(low+margin, high-margin)
             speed = float(rng.uniform(*speed_range_m_s))
+            if vehicle_center_z_m is not None:
+                p[2] = vehicle_center_z_m
             candidate = Vehicle(tuple(p), tuple(ext), (speed*math.cos(yaw), speed*math.sin(yaw), 0.), yaw)
             if not candidate.hit_swept(launch, launch, 0, exclusion_m) and (feasible is None or feasible(candidate)):
                 vehicles.append(candidate)
@@ -194,6 +199,115 @@ def generate(seed, bounds_min, bounds_max, launch, exclusion_m, n_lines, n_vehic
         else:
             raise ValueError('cannot place feasible vehicle')
     return lines, vehicles
+
+
+def _obstacle_envelope(obstacle, horizon_s):
+    if isinstance(obstacle, Line):
+        return [(vec(obstacle.start), vec(obstacle.end))], float(obstacle.radius_m)
+    if isinstance(obstacle, Vehicle):
+        start = vec(obstacle.center)
+        return [(start, start + vec(obstacle.velocity_m_s) * horizon_s)], float(np.linalg.norm(vec(obstacle.half_extents_m)))
+    if isinstance(obstacle, VehiclePath):
+        points = [vec(p) for p in obstacle.positions_m]
+        return list(zip(points[:-1], points[1:])), float(np.linalg.norm(vec(obstacle.half_extents_m)))
+    raise ValueError('unsupported obstacle type for clearance')
+
+
+class CandidateMapObstacleFilter:
+    """Conservative path-envelope check against an explicitly partial map.
+
+    A miss is not official free-space evidence. Bounding spheres for vehicles
+    can overlap the road even when their true wheels would rest on it.
+    """
+    def __init__(self, scene, *, origin_ue_cm, horizon_s, clearance_m=0.):
+        from foundation.map_scene import CandidateMap
+        if not isinstance(scene, CandidateMap) or not scene.assume_closed_meshes_solid:
+            raise ValueError('candidate map must explicitly enable closed-mesh solid assumption')
+        self.scene = scene
+        self.origin = vec(origin_ue_cm).copy()
+        if not math.isfinite(horizon_s) or horizon_s <= 0 or not math.isfinite(clearance_m) or clearance_m < 0:
+            raise ValueError('invalid map clearance or horizon')
+        self.horizon_s = float(horizon_s)
+        self.clearance_m = float(clearance_m)
+
+    def __call__(self, obstacle):
+        segments, radius = _obstacle_envelope(obstacle, self.horizon_s)
+        for start, end in segments:
+            result = self.scene.sweep_sphere_ned(start, end, radius + self.clearance_m,
+                                                 origin_ue_cm=self.origin)
+            if result['hits'] or result['containment_unknown']:
+                return False
+        return True
+
+
+def _obstacle_conflict(a, b, horizon_s, separation_m):
+    paths_a, radius_a = _obstacle_envelope(a, horizon_s)
+    paths_b, radius_b = _obstacle_envelope(b, horizon_s)
+    limit2 = (radius_a + radius_b + separation_m) ** 2
+    return any(segment_distance_squared(x0, x1, y0, y1) <= limit2
+               for x0, x1 in paths_a for y0, y1 in paths_b)
+
+
+def generate_constrained(seed, bounds_min, bounds_max, launch, exclusion_m, n_lines, n_vehicles,
+                         line_radius_m, line_length_m, vehicle_half_extents_m, speed_range_m_s,
+                         *, protected_paths, corridor_radius_m, horizon_s,
+                         line_directions=((0, 0, 1),), feasible=None, vehicle_center_z_m=None,
+                         obstacle_separation_m=None):
+    """Generate reproducible obstacles outside supplied protected route tubes.
+
+    The complete constant-velocity vehicle trajectory over ``horizon_s`` is
+    checked using a bounding sphere. This is conservative and can reject
+    feasible scenarios. Caller-provided paths/clearance and optional trusted
+    geometry predicate determine whether routes are actually flyable; partial
+    map misses and this route check alone never prove official clearance. If
+    obstacle_separation_m is set, candidate path envelopes must be disjoint.
+    """
+    low, high, launch_v, ext = map(vec, (bounds_min, bounds_max, launch, vehicle_half_extents_m))
+    if (not math.isfinite(corridor_radius_m) or corridor_radius_m <= 0
+            or not math.isfinite(horizon_s) or horizon_s < 0):
+        raise ValueError('invalid corridor radius or horizon')
+    if feasible is not None and not callable(feasible):
+        raise ValueError('feasible must be callable')
+    if obstacle_separation_m is not None and (not math.isfinite(obstacle_separation_m) or obstacle_separation_m < 0):
+        raise ValueError('invalid obstacle separation')
+    paths = []
+    for path in protected_paths:
+        points = np.asarray(path, float)
+        if (points.ndim != 2 or points.shape[1] != 3 or len(points) < 2
+                or not np.isfinite(points).all() or np.any(points < low) or np.any(points > high)):
+            raise ValueError('invalid protected path')
+        paths.extend(zip(points[:-1], points[1:]))
+    if not paths:
+        raise ValueError('at least one protected path is required')
+    accepted = []
+
+    def accept(obj):
+        if isinstance(obj, Line):
+            a, b = vec(obj.start), vec(obj.end)
+            clearance = corridor_radius_m + obj.radius_m
+        else:
+            a, b = vec(obj.center), vec(obj.center) + vec(obj.velocity_m_s) * horizon_s
+            c, s = abs(math.cos(obj.yaw_rad)), abs(math.sin(obj.yaw_rad))
+            margin = np.array([c*ext[0] + s*ext[1], s*ext[0] + c*ext[1], ext[2]])
+            if np.any(np.minimum(a, b) - margin < low) or np.any(np.maximum(a, b) + margin > high):
+                return False
+            radius = float(np.linalg.norm(ext))
+            if segment_distance_squared(a, b, launch_v, launch_v) <= (exclusion_m + radius)**2:
+                return False
+            clearance = corridor_radius_m + radius
+        if any(segment_distance_squared(a, b, p, q) <= clearance**2 for p, q in paths):
+            return False
+        if obstacle_separation_m is not None and any(_obstacle_conflict(obj, prior, horizon_s, obstacle_separation_m) for prior in accepted):
+            return False
+        if feasible is not None and not feasible(obj):
+            return False
+        if obstacle_separation_m is not None:
+            accepted.append(obj)
+        return True
+
+    return generate(seed, low, high, launch_v, exclusion_m, n_lines, n_vehicles,
+                    line_radius_m, line_length_m, ext, speed_range_m_s,
+                    line_directions=line_directions, feasible=accept, vehicle_center_z_m=vehicle_center_z_m)
 
 
 def generate_vehicle_paths(seed, routes, half_extents_m, speed_range_m_s, stop_range_s,
@@ -246,4 +360,92 @@ def generate_vehicle_paths(seed, routes, half_extents_m, speed_range_m_s, stop_r
         if not feasible(vehicle):
             raise ValueError('route rejected by feasibility callback')
         result.append(vehicle)
+    return result
+
+
+def generate_random_vehicle_paths(seed, count, legs, leg_length_range_m, turn_range_rad,
+                                  half_extents_m, speed_range_m_s, stop_range_s,
+                                  bounds_min, bounds_max, launch, exclusion_m,
+                                  *, protected_paths, corridor_radius_m, feasible=None, max_attempts=10000,
+                                  vehicle_center_z_m=None, obstacle_separation_m=None,
+                                  existing_obstacles=(), horizon_s=0.):
+    """Create seeded horizontal turning/stopping paths outside protected tubes.
+
+    Whole paths use conservative vehicle bounding spheres. Optional envelope
+    separation ignores time and can reject paths that would not actually meet.
+    Geometry/road feasibility and official random distributions remain unknown.
+    """
+    low, high, launch_v, ext = map(vec, (bounds_min, bounds_max, launch, half_extents_m))
+    lengths, turns = np.asarray(leg_length_range_m, float), np.asarray(turn_range_rad, float)
+    speeds, stops = np.asarray(speed_range_m_s, float), np.asarray(stop_range_s, float)
+    if (type(seed) is not int or seed < 0 or type(count) is not int or count < 0
+            or type(legs) is not int or legs < 1 or type(max_attempts) is not int or max_attempts < 1
+            or np.any(low >= high) or np.any(ext <= 0)
+            or not math.isfinite(exclusion_m) or exclusion_m < 0
+            or not math.isfinite(corridor_radius_m) or corridor_radius_m <= 0
+            or any(x.shape != (2,) or not np.isfinite(x).all() for x in (lengths, turns, speeds, stops))
+            or lengths[0] <= 0 or lengths[1] < lengths[0]
+            or turns[0] < 0 or turns[1] < turns[0] or turns[1] > math.pi
+            or speeds[0] <= 0 or speeds[1] < speeds[0]
+            or stops[0] < 0 or stops[1] < stops[0]
+            or not math.isfinite(horizon_s) or horizon_s < 0
+            or (obstacle_separation_m is not None and (not math.isfinite(obstacle_separation_m) or obstacle_separation_m < 0))
+            or (feasible is not None and not callable(feasible))):
+        raise ValueError('invalid random vehicle path configuration')
+    protected = []
+    for path in protected_paths:
+        p = np.asarray(path, float)
+        if p.ndim != 2 or p.shape[1] != 3 or len(p) < 2 or not np.isfinite(p).all() or np.any(p < low) or np.any(p > high):
+            raise ValueError('invalid protected path')
+        protected.extend(zip(p[:-1], p[1:]))
+    if not protected:
+        raise ValueError('at least one protected path is required')
+    radius = float(np.linalg.norm(ext))
+    if np.any(low + radius >= high - radius):
+        raise ValueError('bounds too small for vehicle')
+    if vehicle_center_z_m is not None and (not math.isfinite(vehicle_center_z_m)
+            or not low[2]+radius <= vehicle_center_z_m <= high[2]-radius):
+        raise ValueError('vehicle center height is outside conservative bounds')
+    rng = np.random.default_rng(seed)
+    existing = tuple(existing_obstacles)
+    if obstacle_separation_m is not None:
+        for obstacle in existing:
+            _obstacle_envelope(obstacle, horizon_s)
+    result = []
+    for _ in range(count):
+        for _ in range(max_attempts):
+            point = rng.uniform(low + radius, high - radius)
+            if vehicle_center_z_m is not None:
+                point[2] = vehicle_center_z_m
+            route = [point]
+            heading = float(rng.uniform(-math.pi, math.pi))
+            valid = True
+            for leg in range(legs):
+                if leg:
+                    heading += float(rng.uniform(*turns)) * (1 if rng.integers(2) else -1)
+                length = float(rng.uniform(*lengths))
+                target = point + np.array([length*math.cos(heading), length*math.sin(heading), 0.])
+                if (np.any(target-radius < low) or np.any(target+radius > high)
+                        or segment_distance_squared(point, target, launch_v, launch_v) <= (radius+exclusion_m)**2
+                        or any(segment_distance_squared(point, target, a, b) <= (radius+corridor_radius_m)**2
+                               for a, b in protected)):
+                    valid = False
+                    break
+                route.append(target)
+                point = target
+            if not valid:
+                continue
+            # Route geometry is already checked above; the helper adds seeded
+            # travel speed and stops, and repeats bounds/launch checks.
+            path_seed = int(rng.integers(0, 0x80000000))
+            vehicle = generate_vehicle_paths(path_seed, [route], ext, speeds, stops, low, high,
+                                             launch_v, exclusion_m, feasible=lambda _: True)[0]
+            if (obstacle_separation_m is not None and any(_obstacle_conflict(vehicle, prior, horizon_s, obstacle_separation_m)
+                                                         for prior in (*existing, *result))):
+                continue
+            if feasible is None or feasible(vehicle):
+                result.append(vehicle)
+                break
+        else:
+            raise ValueError('cannot generate feasible turning vehicle path')
     return result

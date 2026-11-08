@@ -106,3 +106,23 @@ from the controlled match, not independently typed from engine metadata. The
 result supports the extracted end-cap geometry and fixture transform under
 these injected conditions; it does not establish the complete drone shape,
 contact force, natural-course collision channels or general FTransform space.
+
+## V2 protected route and synthetic sweep checks
+
+`generate_constrained` adds explicit protected route tubes and a finite motion
+horizon to the existing seeded generator. It rejects line capsules that touch a
+protected tube. For moving vehicles it conservatively bounds the entire
+constant-velocity trajectory by a circumscribed sphere for route and launch
+clearance, and keeps the oriented box within configured bounds over the whole
+horizon. A caller can additionally supply a trusted-map feasibility predicate;
+the route itself and the predicate still need trustworthy map evidence. A
+route tube alone does not establish official passability, and vehicles may
+still overlap one another. The checks do not cover motion after the horizon.
+
+`python -m foundation.collision_sweep_benchmark` runs 90 analytical synthetic
+crossing/near-miss cases at relative speeds 10–150 m/s and timesteps
+0.001–0.1 s. The saved [report](v2_collision_sweep_benchmark.json) records zero
+misses and zero false hits in these axis-aligned examples, including moving
+vehicles. These are controlled calculations, not a measured probability of
+misses in real 3D courses; turning, mesh shapes, contact forces and official
+collision channels remain outside this benchmark.

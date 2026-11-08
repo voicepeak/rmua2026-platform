@@ -1,5 +1,6 @@
 import pytest
-from foundation.obstacles import (Line, Vehicle, VehiclePath, generate, generate_vehicle_paths,
+from foundation.obstacles import (Line, Vehicle, VehiclePath, generate, generate_constrained, generate_vehicle_paths,
+                                  generate_random_vehicle_paths,
                                   segment_distance_squared)
 
 
@@ -81,6 +82,73 @@ def test_seeded_vehicle_routes_stop_and_fail_closed():
         generate_vehicle_paths(*args, feasible=lambda path: False)
     with pytest.raises(ValueError, match='launch exclusion'):
         generate_vehicle_paths(9, [[[-5, 0, 0], [5, 0, 0]]], *args[2:], feasible=lambda path: True)
+
+
+def test_protected_corridor_and_full_vehicle_horizon_are_reproducible():
+    import numpy as np
+    path = [[-15, 0, 0], [15, 0, 0]]
+    args = (26, [-20]*3, [20]*3, [0, 0, 0], 2, 5, 5, .03, 4, [1, .5, .5], [1, 3])
+    kwargs = dict(protected_paths=[path], corridor_radius_m=1., horizon_s=2., vehicle_center_z_m=-1.5)
+    lines, vehicles = generate_constrained(*args, **kwargs)
+    assert (lines, vehicles) == generate_constrained(*args, **kwargs)
+    for line in lines:
+        assert segment_distance_squared(line.start, line.end, *path) > (1 + line.radius_m)**2
+    for vehicle in vehicles:
+        start = np.array(vehicle.center)
+        end = start + np.array(vehicle.velocity_m_s)*2
+        assert start[2] == end[2] == -1.5
+        radius = np.linalg.norm(vehicle.half_extents_m)
+        assert segment_distance_squared(start, end, *path) > (1 + radius)**2
+        assert segment_distance_squared(start, end, [0, 0, 0], [0, 0, 0]) > (2 + radius)**2
+        c, s = abs(np.cos(vehicle.yaw_rad)), abs(np.sin(vehicle.yaw_rad))
+        ext = vehicle.half_extents_m
+        margin = [c*ext[0]+s*ext[1], s*ext[0]+c*ext[1], ext[2]]
+        assert np.all(np.minimum(start, end)-margin >= -20)
+        assert np.all(np.maximum(start, end)+margin <= 20)
+    with pytest.raises(ValueError, match='protected path'):
+        generate_constrained(*args, protected_paths=[], corridor_radius_m=1, horizon_s=2)
+    with pytest.raises(ValueError, match='height is outside'):
+        generate_constrained(*args, **{**kwargs, 'vehicle_center_z_m': 100.})
+
+
+def test_random_vehicle_turns_stops_and_whole_route_clearance():
+    import numpy as np
+    protected = [[[-15, 0, 0], [15, 0, 0]]]
+    args = (77, 3, 2, (2., 4.), (.3, .8), (.5, .4, .3), (1., 2.), (.2, .4),
+            [-20]*3, [20]*3, [0, 0, 0], 2.)
+    paths = generate_random_vehicle_paths(*args, protected_paths=protected, corridor_radius_m=1., vehicle_center_z_m=-1.5)
+    assert paths == generate_random_vehicle_paths(*args, protected_paths=protected, corridor_radius_m=1., vehicle_center_z_m=-1.5)
+    radius = np.linalg.norm(args[5])
+    for path in paths:
+        assert len(path.positions_m) == 4  # two legs and one nonzero stop
+        assert path.positions_m[1] == path.positions_m[2]
+        assert path.times_s[2] > path.times_s[1]
+        assert abs(path.yaw_rad[-1] - path.yaw_rad[0]) > .29
+        for point in path.positions_m:
+            assert np.all(np.abs(point) + radius <= 20)
+            assert point[2] == -1.5
+        for start, end in zip(path.positions_m, path.positions_m[1:]):
+            assert segment_distance_squared(start, end, *protected[0]) > (1 + radius)**2
+            assert segment_distance_squared(start, end, [0]*3, [0]*3) > (2 + radius)**2
+    with pytest.raises(ValueError, match='cannot generate feasible'):
+        generate_random_vehicle_paths(*args, protected_paths=protected, corridor_radius_m=1.,
+                                      feasible=lambda _: False, max_attempts=3)
+    with pytest.raises(ValueError, match='height is outside'):
+        generate_random_vehicle_paths(*args, protected_paths=protected, corridor_radius_m=1., vehicle_center_z_m=100.)
+
+
+def test_conservative_obstacle_envelopes_cover_future_crossings_and_clearance():
+    from foundation.obstacles import _obstacle_conflict
+    line = Line((0, 0, -2), (0, 0, 2), .05)
+    approaching = Vehicle((-5, 0, 0), (.5, .5, .5), (5, 0, 0), 0)
+    passing = Vehicle((-5, 3, 0), (.5, .5, .5), (5, 0, 0), 0)
+    assert not _obstacle_conflict(line, approaching, .5, 0)
+    assert _obstacle_conflict(line, approaching, 2., 0)
+    assert not _obstacle_conflict(line, passing, 2., 0)
+    assert _obstacle_conflict(line, passing, 2., 2.5)
+    route = VehiclePath((0, 1, 2), ((-4, 1, 0), (0, 1, 0), (4, 1, 0)), (.5, .5, .5), (0, 0))
+    assert not _obstacle_conflict(line, route, 2., 0)
+    assert _obstacle_conflict(line, route, 2., .2)
 
 
 def test_extracted_asset_bounds_enclose_every_serialized_vertex():
