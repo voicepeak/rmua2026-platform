@@ -13,13 +13,17 @@ from scipy.spatial.transform import Rotation, Slerp
 from foundation.compare import compare
 from foundation.quad import Params, Quad
 from foundation.replay_closed_loop import position_velocity
+from foundation.effects import RecordedEffects
+from foundation.sim import PhysicsSim
 
 ROTOR = re.compile(r'TOGGLE_ROTOR mono=([\d.]+) rotor=(0x[0-9a-f]+) flag=(\d+) '
                    r'filtered=([^ ]+) target=([^ ]+) input=([^ ]+) thrust=([^\s]+)')
 TOGGLE = re.compile(r'TOGGLE mono=([\d.]+) start=([^ ]+) elapsed=([^ ]+) natural=(\d+) forced=(\d+)')
 
 
-def run(directory, start_offset=.35, end_offset=.83, with_recovery=False):
+def run(directory, start_offset=.35, end_offset=.83, with_recovery=False, engine='direct'):
+    if engine not in ('direct', 'integrated'):
+        raise ValueError('unknown replay engine')
     command_path, capture_path = directory/'commands.jsonl', directory/'capture.jsonl'
     log_path, = (directory/'pool').glob('*.log')
     commands = [json.loads(x) for x in command_path.read_text().splitlines() if x]
@@ -87,8 +91,22 @@ def run(directory, start_offset=.35, end_offset=.83, with_recovery=False):
     if with_recovery:
         candidates.append(('no_recovery', .25, False))
     for label, low_scale, do_restore in candidates:
-        plant = Quad(params)
-        plant.reset(pos, vel, q[[3, 0, 1, 2]], w, [.2]*4)
+        if engine == 'integrated':
+            times = [0., switch-start]
+            flags = [1, 0 if low_scale == .25 else 1]
+            if do_restore:
+                times.append(restore-start)
+                flags.append(1)
+            times.append(end_offset-start+.1)
+            flags.append(flags[-1])
+            effects = RecordedEffects(times, None, flags)
+            sim = PhysicsSim(params, recorded_effects=effects, max_substep_s=.002)
+            sim.reset({'position':pos, 'velocity':vel, 'quaternion_wxyz':q[[3,0,1,2]],
+                       'omega':w, 'rotor_signal':[.2]*4})
+            plant = sim.quad
+        else:
+            plant = Quad(params)
+            plant.reset(pos, vel, q[[3, 0, 1, 2]], w, [.2]*4)
         predicted = []
         for row in reference:
             while plant.time < row['t']-1e-10:
@@ -99,11 +117,14 @@ def run(directory, start_offset=.35, end_offset=.83, with_recovery=False):
                 if do_restore and now < restore < now+step:
                     step = restore-now
                 in_low = now >= switch-1e-10 and (not do_restore or now < restore-1e-10)
-                plant.step([.2]*4, step, rotor_target_scale=low_scale if in_low else 1.)
+                if engine == 'integrated':
+                    sim.step([.2]*4, step)
+                else:
+                    plant.step([.2]*4, step, rotor_target_scale=low_scale if in_low else 1.)
             s = plant.state()
             predicted.append({k: (float(v) if k == 't' else v.tolist()) for k, v in s.items() if k != 'rotor_signal'})
         outcomes[label] = compare(reference, predicted, max_gap=.05)
-    return {'window_start_end_s': [start, float(pt[chosen[-1]])], 'forced_flag_time_s': forced,
+    return {'window_start_end_s': [start, float(pt[chosen[-1]])], 'engine': engine, 'forced_flag_time_s': forced,
             'first_low_target_s_per_rotor': first, 'switch_median_s': switch,
             'forced_restore_time_s': forced_restore, 'first_restored_target_s_per_rotor': restore_samples,
             'restore_median_s': restore,
@@ -124,8 +145,9 @@ def main():
     p.add_argument('--start', type=float, default=.35)
     p.add_argument('--end', type=float, default=.83)
     p.add_argument('--with-recovery', action='store_true')
+    p.add_argument('--engine', choices=('direct', 'integrated'), default='direct')
     a = p.parse_args()
-    result = run(a.run, a.start, a.end, a.with_recovery)
+    result = run(a.run, a.start, a.end, a.with_recovery, a.engine)
     result['analysis_sha256'] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     a.output.write_text(json.dumps(result, indent=2, allow_nan=False)+'\n', encoding='utf-8')
     print('window', result['window_start_end_s'], 'target switch', result['switch_median_s'])
