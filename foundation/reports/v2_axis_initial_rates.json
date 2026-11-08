@@ -1,0 +1,178 @@
+{
+  "status": "exploratory diagnostic; correlations do not establish cause",
+  "window_source_s": [
+    0.3,
+    0.8
+  ],
+  "grid_step_s": 0.01,
+  "groups": {
+    "roll_pitch": {
+      "runs": [
+        {
+          "name": "d03_roll_pitch_seed2026_20261107",
+          "omega_initial_rad_s": [
+            0.18729116966865955,
+            -0.0004342394437437707,
+            0.0010208529767322468
+          ],
+          "imu_max_gap_s": 0.01200032300000009
+        },
+        {
+          "name": "v2_roll_pitch_seed314159_20261108",
+          "omega_initial_rad_s": [
+            0.17940187341805067,
+            0.002070457667564935,
+            0.0005383374155031632
+          ],
+          "imu_max_gap_s": 0.012000323000000035
+        },
+        {
+          "name": "v2_roll_pitch_seed27182_20261108",
+          "omega_initial_rad_s": [
+            0.1687408564843757,
+            -0.0019847703062929496,
+            0.00039695339163505475
+          ],
+          "imu_max_gap_s": 0.012000323000000035
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "initial_omega_difference_rad_s": [
+            0.007889296250608885,
+            -0.002504697111308706,
+            0.0004825155612290836
+          ],
+          "initial_omega_difference_norm_rad_s": 0.008291400618478027,
+          "constant_initial_rate_scale_deg_over_0_5_s": 0.2375311308454757,
+          "omega_difference_rmse_rad_s": 0.041242537829014776,
+          "relative_attitude_difference_end_deg": 1.0940458478083999,
+          "relative_attitude_difference_max_deg": 1.0940458478083999
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "initial_omega_difference_rad_s": [
+            0.01855031318428385,
+            0.0015505308625491788,
+            0.0006238995850971921
+          ],
+          "initial_omega_difference_norm_rad_s": 0.018625453441004254,
+          "constant_initial_rate_scale_deg_over_0_5_s": 0.5335799368434802,
+          "omega_difference_rmse_rad_s": 0.016124935326057976,
+          "relative_attitude_difference_end_deg": 0.35045670629586134,
+          "relative_attitude_difference_max_deg": 0.35045670629586134
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "initial_omega_difference_rad_s": [
+            0.010661016933674966,
+            0.004055227973857885,
+            0.00014138402386810843
+          ],
+          "initial_omega_difference_norm_rad_s": 0.011407109424489144,
+          "constant_initial_rate_scale_deg_over_0_5_s": 0.3267896132335667,
+          "omega_difference_rmse_rad_s": 0.03335581175713573,
+          "relative_attitude_difference_end_deg": 0.7679360524361151,
+          "relative_attitude_difference_max_deg": 0.7679360524361151
+        }
+      ]
+    },
+    "yaw": {
+      "runs": [
+        {
+          "name": "d04_yaw_seed2026_20261107",
+          "omega_initial_rad_s": [
+            1.1525505755551231e-06,
+            -1.9284655778525775e-05,
+            0.007115599093974202
+          ],
+          "imu_max_gap_s": 0.01200032300000009
+        },
+        {
+          "name": "clock_pair_yaw_seed314159_20261108",
+          "omega_initial_rad_s": [
+            0.0003278254416901066,
+            0.0008442476059938812,
+            0.011341231563793299
+          ],
+          "imu_max_gap_s": 0.012000323000000035
+        },
+        {
+          "name": "v2_yaw_seed27182_20261108",
+          "omega_initial_rad_s": [
+            0.0023509154462201414,
+            -0.00017495644395274618,
+            0.007541896843676954
+          ],
+          "imu_max_gap_s": 0.01200032300000009
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "initial_omega_difference_rad_s": [
+            -0.00032667289111455147,
+            -0.0008635322617724069,
+            -0.004225632469819097
+          ],
+          "initial_omega_difference_norm_rad_s": 0.004325317666357045,
+          "constant_initial_rate_scale_deg_over_0_5_s": 0.1239112236678165,
+          "omega_difference_rmse_rad_s": 0.002799713387930188,
+          "relative_attitude_difference_end_deg": 0.004624864329010559,
+          "relative_attitude_difference_max_deg": 0.004624864329010559
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "initial_omega_difference_rad_s": [
+            -0.0023497628956445863,
+            0.0001556717881742204,
+            -0.0004262977497027521
+          ],
+          "initial_omega_difference_norm_rad_s": 0.0023931880709177496,
+          "constant_initial_rate_scale_deg_over_0_5_s": 0.0685597880223211,
+          "omega_difference_rmse_rad_s": 0.0024711868269255547,
+          "relative_attitude_difference_end_deg": 7.430118668075882e-05,
+          "relative_attitude_difference_max_deg": 0.00021247417703249566
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "initial_omega_difference_rad_s": [
+            -0.0020230900045300347,
+            0.0010192040499466272,
+            0.0037993347201163447
+          ],
+          "initial_omega_difference_norm_rad_s": 0.004423416595499285,
+          "constant_initial_rate_scale_deg_over_0_5_s": 0.12672155097511814,
+          "omega_difference_rmse_rad_s": 0.0029096877132456073,
+          "relative_attitude_difference_end_deg": 0.004699165515691378,
+          "relative_attitude_difference_max_deg": 0.004699165515691378
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "IMU bias, sensor delay, clock alignment and contact remain unverified",
+    "rate scale is a small-angle magnitude estimate, not an orientation correction or error decomposition",
+    "source files and command phase timing are recorded in v2_axis_repeatability.json"
+  ],
+  "analysis_sha256": "e551a8802954161eec69135b04ab9184f069359d69d1a7ab10dbdb0714bec024"
+}

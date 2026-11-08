@@ -1,0 +1,1099 @@
+{
+  "samples": [
+    {
+      "monotonic_s": 396976.905880135,
+      "density": 1.21070826,
+      "velocity_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        -0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0662627518,
+        0.0,
+        0.0
+      ],
+      "candidate_force_body": [
+        0.06626274972276924,
+        0.0,
+        0.0
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 2.0772307623984076e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396976.98650121,
+      "density": 1.21071076,
+      "velocity_world": [
+        0.00507203536,
+        0.0,
+        0.652547657
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        -0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0660390183,
+        0.0,
+        -0.0567978658
+      ],
+      "candidate_force_body": [
+        0.06603901748551133,
+        0.0,
+        -0.056797864449101815
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.5774402369971684e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396977.069997035,
+      "density": 1.21071875,
+      "velocity_world": [
+        0.0103463661,
+        0.0,
+        1.31906354
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        -0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.065807052,
+        0.0,
+        -0.232082203
+      ],
+      "candidate_force_body": [
+        0.06580705558688915,
+        0.0,
+        -0.2320822018840218
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 3.7564852044934625e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396977.152307445,
+      "density": 1.21073222,
+      "velocity_world": [
+        0.0156022003,
+        0.0,
+        1.96729803
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        -0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0655766129,
+        0.0,
+        -0.51624465
+      ],
+      "candidate_force_body": [
+        0.06557660991720705,
+        0.0,
+        -0.5162446329119769
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.7346399841716926e-08,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396977.234568076,
+      "density": 1.21075189,
+      "velocity_world": [
+        0.0208396558,
+        0.0,
+        2.58908892
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        -0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0653477088,
+        0.0,
+        -0.894161999
+      ],
+      "candidate_force_body": [
+        0.06534770677438999,
+        0.0,
+        -0.8941620290315638
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 3.009979932952861e-08,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396978.886780866,
+      "density": 1.21075165,
+      "velocity_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0662651211,
+        0.0,
+        0.0
+      ],
+      "candidate_force_body": [
+        0.06626512448207787,
+        0.0,
+        0.0
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 3.3820778677640106e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396978.968561328,
+      "density": 1.21075165,
+      "velocity_world": [
+        0.0046318369,
+        0.0,
+        -0.072609812
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0660606697,
+        0.0,
+        0.0
+      ],
+      "candidate_force_body": [
+        0.06606066294359621,
+        0.0,
+        0.0
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 6.7564037975476054e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.051860312,
+      "density": 1.21075118,
+      "velocity_world": [
+        0.00968841836,
+        0.0,
+        -0.155872673
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0658377856,
+        0.0,
+        0.00324087287
+      ],
+      "candidate_force_body": [
+        0.06583778720389893,
+        0.0,
+        0.003240872923819081
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.6048016301648632e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.133042164,
+      "density": 1.21074939,
+      "velocity_world": [
+        0.0147279501,
+        0.0,
+        -0.237728611
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.00546359923,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_force_body": [
+        0.0656159595,
+        0.0,
+        0.00753848907
+      ],
+      "candidate_force_body": [
+        0.06561596611963655,
+        0.0,
+        0.007538488907333898
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 6.6216348644682e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.21347463,
+      "density": 1.21074748,
+      "velocity_world": [
+        0.0195324942,
+        0.00168556313,
+        -0.263982743
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.263781995,
+        1.39626353e-12,
+        5.36220512e-10
+      ],
+      "quaternion_xyzw": [
+        0.00413632719,
+        2.1223734e-15,
+        2.41309143e-12,
+        0.999991477
+      ],
+      "native_force_body": [
+        0.0654048249,
+        0.0,
+        0.00929582585
+      ],
+      "candidate_force_body": [
+        0.06540482615137681,
+        -3.0648850208243313e-21,
+        0.00929582505889428
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.4804702542656203e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.29556192,
+      "density": 1.21074581,
+      "velocity_world": [
+        0.0243215933,
+        0.0145040462,
+        -0.2883178
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.413526744,
+        3.07972072e-12,
+        -1.60869618e-09
+      ],
+      "quaternion_xyzw": [
+        0.0166614223,
+        3.16992662e-13,
+        7.24008267e-12,
+        0.99986124
+      ],
+      "native_force_body": [
+        0.0651947185,
+        0.0,
+        0.0111131212
+      ],
+      "candidate_force_body": [
+        0.06519471646369318,
+        4.842393698000853e-20,
+        0.011113121706161322
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 2.098271846131804e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.375788473,
+      "density": 1.21074331,
+      "velocity_world": [
+        0.029095307,
+        0.0439284258,
+        -0.311995834
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        0.147930965,
+        -3.96566946e-11,
+        -3.2173002e-09
+      ],
+      "quaternion_xyzw": [
+        0.0261338707,
+        1.57350988e-12,
+        -8.68675756e-11,
+        0.999658525
+      ],
+      "native_force_body": [
+        0.0649855733,
+        0.0,
+        0.0131402854
+      ],
+      "candidate_force_body": [
+        0.06498557362144156,
+        -1.8398117950970096e-20,
+        0.013140284214798043
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.2280180586787435e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.457509132,
+      "density": 1.2107408,
+      "velocity_world": [
+        0.0339781865,
+        0.0822008252,
+        -0.336221427
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0120856566,
+        0.0801609904,
+        2.692831e-06
+      ],
+      "quaternion_xyzw": [
+        0.0274465363,
+        0.000544313167,
+        1.50180031e-05,
+        0.999623179
+      ],
+      "native_force_body": [
+        0.0647557303,
+        0.0,
+        0.0157347135
+      ],
+      "candidate_force_body": [
+        0.064755739655379,
+        1.2616934148568047e-19,
+        0.015734714175621396
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 9.37974309297061e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.538569418,
+      "density": 1.21073771,
+      "velocity_world": [
+        0.0351386145,
+        0.118773222,
+        -0.359125316
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121055646,
+        0.260369956,
+        3.12443226e-05
+      ],
+      "quaternion_xyzw": [
+        0.0270467792,
+        0.00602573901,
+        0.000165797188,
+        0.999616027
+      ],
+      "native_force_body": [
+        0.0645197555,
+        0.0,
+        0.0214211214
+      ],
+      "candidate_force_body": [
+        0.06451975956093367,
+        4.4140980953326674e-21,
+        0.021421120085747633
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 4.26830664046843e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.623104921,
+      "density": 1.2107352,
+      "velocity_world": [
+        0.025290167,
+        0.156389564,
+        -0.382430762
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121062612,
+        0.173802197,
+        7.71015766e-05
+      ],
+      "quaternion_xyzw": [
+        0.0266267881,
+        0.0148253795,
+        0.000408562395,
+        0.999535441
+      ],
+      "native_force_body": [
+        0.0645884946,
+        -0.000176864633,
+        0.030511314
+      ],
+      "candidate_force_body": [
+        0.06458849603071769,
+        -0.00017686466623833178,
+        0.03051131197254775
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 2.4816568068041194e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.704851737,
+      "density": 1.21073163,
+      "velocity_world": [
+        0.0083513055,
+        0.190734029,
+        -0.384197652
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121066431,
+        0.0330400579,
+        9.28508161e-05
+      ],
+      "quaternion_xyzw": [
+        0.0262261331,
+        0.0178475622,
+        0.000498219568,
+        0.999496639
+      ],
+      "native_force_body": [
+        0.0651938394,
+        -0.000278442982,
+        0.0333778225
+      ],
+      "candidate_force_body": [
+        0.06519383717013726,
+        -0.00027844297602385034,
+        0.033377829071855956
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 6.939856932632894e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.788832713,
+      "density": 1.21072912,
+      "velocity_world": [
+        -0.00891231745,
+        0.222229093,
+        -0.312378228
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121068042,
+        0.0327676535,
+        9.87439707e-05
+      ],
+      "quaternion_xyzw": [
+        0.025808135,
+        0.0189780984,
+        0.000538645836,
+        0.999486625
+      ],
+      "native_force_body": [
+        0.0660186857,
+        -0.000406862848,
+        0.0255228747
+      ],
+      "candidate_force_body": [
+        0.0660186883235831,
+        -0.00040686286714817886,
+        0.025522876789912483
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 3.354294132087389e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.870966192,
+      "density": 1.21072662,
+      "velocity_world": [
+        -0.0266606193,
+        0.251890153,
+        -0.244064808
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121069681,
+        0.0327675715,
+        0.000104377512
+      ],
+      "quaternion_xyzw": [
+        0.0254082736,
+        0.0200585835,
+        0.000577481231,
+        0.999475777
+      ],
+      "native_force_body": [
+        0.0668790787,
+        -0.000549728749,
+        0.0190373976
+      ],
+      "candidate_force_body": [
+        0.06687907251941837,
+        -0.0005497287489950781,
+        0.019037396116846992
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 6.3560468944212764e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396979.951249864,
+      "density": 1.21072555,
+      "velocity_world": [
+        -0.0433414392,
+        0.27786389,
+        -0.170431286
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121071208,
+        0.032767497,
+        0.000109498913
+      ],
+      "quaternion_xyzw": [
+        0.0250447225,
+        0.0210408177,
+        0.000612946693,
+        0.999464691
+      ],
+      "native_force_body": [
+        0.0677227303,
+        -0.00069565454,
+        0.0129897036
+      ],
+      "candidate_force_body": [
+        0.06772273703829723,
+        -0.0006956545467867231,
+        0.012989704754363725
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 6.836464815559315e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396980.033851314,
+      "density": 1.21072674,
+      "velocity_world": [
+        -0.0388598628,
+        0.278697282,
+        0.488425106
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121073145,
+        0.0327674113,
+        0.000115388619
+      ],
+      "quaternion_xyzw": [
+        0.0246265922,
+        0.0221703518,
+        0.000653920812,
+        0.999450684
+      ],
+      "native_force_body": [
+        0.0687980875,
+        -0.000879758969,
+        -0.0153174195
+      ],
+      "candidate_force_body": [
+        0.06879808808267913,
+        -0.000879759067889737,
+        -0.015317421219550757
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.8182818723650418e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396980.117456387,
+      "density": 1.21073282,
+      "velocity_world": [
+        -0.033979591,
+        0.278851509,
+        1.13108528
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121074989,
+        0.0327673294,
+        0.000121022327
+      ],
+      "quaternion_xyzw": [
+        0.0242266301,
+        0.0232507586,
+        0.000693303533,
+        0.999435842
+      ],
+      "native_force_body": [
+        0.0699598789,
+        -0.00106926705,
+        -0.126524195
+      ],
+      "candidate_force_body": [
+        0.0699598785161261,
+        -0.0010692670684111383,
+        -0.126524201376998
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 6.3885680271692474e-09,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396980.199392365,
+      "density": 1.21074438,
+      "velocity_world": [
+        -0.0293994397,
+        0.279604733,
+        1.79024255
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121077122,
+        0.03276724,
+        0.000126912244
+      ],
+      "quaternion_xyzw": [
+        0.0238084458,
+        0.024380235,
+        0.000734674104,
+        0.999418974
+      ],
+      "native_force_body": [
+        0.071315825,
+        -0.00127940986,
+        -0.352253199
+      ],
+      "candidate_force_body": [
+        0.0713158206831729,
+        -0.0012794098595682122,
+        -0.35225318894562485
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.094191283127699e-08,
+      "torque_error_norm": 0.0
+    },
+    {
+      "monotonic_s": 396980.2821875,
+      "density": 1.21075857,
+      "velocity_world": [
+        -0.0261990558,
+        0.28103134,
+        2.34658217
+      ],
+      "wind_world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "omega_body": [
+        -0.0121078985,
+        0.0327671655,
+        0.000132033936
+      ],
+      "quaternion_xyzw": [
+        0.0234447941,
+        0.02536235,
+        0.000770812505,
+        0.999403059
+      ],
+      "native_force_body": [
+        0.0726135075,
+        -0.00147065404,
+        -0.630616486
+      ],
+      "candidate_force_body": [
+        0.07261350221799934,
+        -0.0014706539718642437,
+        -0.6306165005379771
+      ],
+      "native_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_torque_body": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_error_norm": 1.5467933061233817e-08,
+      "torque_error_norm": 0.0
+    }
+  ],
+  "max_force_error": 3.009979932952861e-08,
+  "max_torque_error": 0.0,
+  "source_sha256": {
+    "log": "78cf5cea581d38bc98a1f02c0de01240829ec4bbdf4958266f8a71b093a81d7a",
+    "faces": "faf58c7c408d44162c1e9c00f0d287979e94ffc64798232fe207e74c5a034e3b"
+  },
+  "limitations": [
+    "debugger injects wind at physics entry; natural wind path not tested",
+    "native wrench sampled before world-force rotation",
+    "candidate parameters from a separate seed snapshot; density sampled from same update",
+    "debugger affects timing; startup and contact are not excluded",
+    "matching instantaneous wrench does not validate trajectory integration"
+  ],
+  "analysis_sha256": "e04a81a7540025894ac9f4001ded794df289b1d39403b8871d75024aeb7d34b6"
+}

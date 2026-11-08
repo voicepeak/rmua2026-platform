@@ -1,0 +1,565 @@
+{
+  "status": "exploratory repeatability; not a held-out acceptance",
+  "window_s_after_first_published_source_stamp": [
+    0.3,
+    0.8
+  ],
+  "grid_step_s": 0.01,
+  "protocol": "v2_axis_repeat_collection_protocol.md",
+  "groups": {
+    "roll_pitch": {
+      "runs": [
+        {
+          "run": "foundation\\datasets\\d03_roll_pitch_seed2026_20261107",
+          "seed_requested": 2026,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.182,
+              0.188,
+              0.188,
+              0.182
+            ],
+            [
+              0.188,
+              0.182,
+              0.182,
+              0.188
+            ],
+            [
+              0.188,
+              0.182,
+              0.188,
+              0.182
+            ],
+            [
+              0.182,
+              0.188,
+              0.182,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241434230327e-05,
+            -3.284588825849458e-06,
+            0.2581736768428807
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999975515909321,
+            0.0022128741808868065,
+            -6.599167100632578e-11,
+            -2.982715825321932e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.262623549,
+            0.404467344,
+            0.5464553830000001,
+            0.688704729,
+            0.810397625,
+            1.0737342840000001
+          ],
+          "relative_position_min_m": [
+            -0.0047256265906789816,
+            0.0,
+            -0.19943990776452894
+          ],
+          "relative_position_max_m": [
+            5.235590809770383e-10,
+            0.07218797412003078,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 6.107615253097905,
+          "max_pose_interval_s": 0.01200032300000009,
+          "median_command_interval_s": 0.020235537999999997,
+          "source_sha256": {
+            "run.json": "dae31d68e5a96b4a02b5f1e5fa621c69bd46b16aaf2f07b4c3a1d3aa38d09578",
+            "commands.jsonl": "10a2fee69770e25453574f6cef62061a170569f5ed43782ff2948b616f2df6ec",
+            "capture.jsonl": "3bae965862da3bc4db4b63c198f87903543a0f8e81699d320e2180e9e1755e53",
+            "pool\\pool.json": "a6a78da955b8fc042f812a3c78654dcacf51f76386059c0259d25236b07a1f5b"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_roll_pitch_seed314159_20261108",
+          "seed_requested": 314159,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.182,
+              0.188,
+              0.188,
+              0.182
+            ],
+            [
+              0.188,
+              0.182,
+              0.182,
+              0.188
+            ],
+            [
+              0.188,
+              0.182,
+              0.188,
+              0.182
+            ],
+            [
+              0.182,
+              0.188,
+              0.182,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241441685831e-05,
+            -4.534840628171378e-06,
+            0.25878284756785996
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999979421231678,
+            0.002028730989727171,
+            -6.049635352433342e-11,
+            -2.982633768270968e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.262777567,
+            0.404203415,
+            0.5455341340000001,
+            0.68694067,
+            0.8284657000000001,
+            1.071421146
+          ],
+          "relative_position_min_m": [
+            -0.004597755741306473,
+            0.0,
+            -0.19956343172401417
+          ],
+          "relative_position_max_m": [
+            5.663215621416274e-10,
+            0.06635399619494355,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 5.1881602822271615,
+          "max_pose_interval_s": 0.012000323000000035,
+          "median_command_interval_s": 0.020227908999999933,
+          "source_sha256": {
+            "run.json": "9b7207ca425c13c2d6d3fb765427bb8541fea668f954ae78a0c89fbbd54de6be",
+            "commands.jsonl": "73e1f6f568189462435d55ec145e6630bb5ca40d85a6da3c4d4a4d78ac6a0170",
+            "capture.jsonl": "ca0a7dc90fabc10ad19967cd49260b78c795dee4387ede6639df0d8dbe149b9a",
+            "pool\\pool.json": "ee5a5b1000f68d60de4cb14235dddcef454617e97805c95d962b1715dd528406"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_roll_pitch_seed27182_20261108",
+          "seed_requested": 27182,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.182,
+              0.188,
+              0.188,
+              0.182
+            ],
+            [
+              0.188,
+              0.182,
+              0.182,
+              0.188
+            ],
+            [
+              0.188,
+              0.182,
+              0.188,
+              0.182
+            ],
+            [
+              0.182,
+              0.188,
+              0.182,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241447406377e-05,
+            -5.492646320382274e-06,
+            0.2585915888472859
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999983620470176,
+            0.0018099456569628692,
+            -5.393496182592038e-11,
+            -2.980834359827032e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.263402462,
+            0.40545439800000005,
+            0.5473120220000001,
+            0.6891858580000001,
+            0.810531855,
+            1.073451758
+          ],
+          "relative_position_min_m": [
+            -0.004653326705169861,
+            0.0,
+            -0.20059419855961103
+          ],
+          "relative_position_max_m": [
+            5.538555763919938e-10,
+            0.06834479645716449,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 5.877678687314465,
+          "max_pose_interval_s": 0.012000323000000035,
+          "median_command_interval_s": 0.02024412200000003,
+          "source_sha256": {
+            "run.json": "b5a882ad4effa66a1794d630c66b2b46f5e3031b7c68f35d498a211d08f744c0",
+            "commands.jsonl": "149a1ed998eb206d6d7f706a85124e39d8cae314134ff5b87855457de4c83110",
+            "capture.jsonl": "0e611de32bd16e0223b60e731fa7a9be428637b3486b5d3a4728765f230210d0",
+            "pool\\pool.json": "d87bc77a8fe204420c55db93ba8bec883c78fbf9accb012406155d9ec4051cd2"
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "relative_position_max_m": 0.005836686350412475,
+          "relative_position_rmse_m": 0.0021543572657171015,
+          "relative_attitude_max_deg": 1.0940458478083999
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "relative_position_max_m": 0.0040134310834260365,
+          "relative_position_rmse_m": 0.001715970071087774,
+          "relative_attitude_max_deg": 0.35045670629586134
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "relative_position_max_m": 0.002242510665626817,
+          "relative_position_rmse_m": 0.0009515624721974853,
+          "relative_attitude_max_deg": 0.7679360524361151
+        }
+      ]
+    },
+    "yaw": {
+      "runs": [
+        {
+          "run": "foundation\\datasets\\d04_yaw_seed2026_20261107",
+          "seed_requested": 2026,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.188,
+              0.188,
+              0.182,
+              0.182
+            ],
+            [
+              0.182,
+              0.182,
+              0.188,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.2584801173511402
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999962523032,
+            0.0,
+            0.0,
+            8.657594173016813e-05
+          ],
+          "phase_start_s": [
+            0.0,
+            0.262595415,
+            0.46433520300000003,
+            0.66613245,
+            0.908456087
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.18973449028971445
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.4513524748369348,
+          "max_pose_interval_s": 0.012000323000000035,
+          "median_command_interval_s": 0.020175218000000106,
+          "source_sha256": {
+            "run.json": "e68a93265e54e0263d8f22412b990da1c112f475c83162d914d079d6491fa8cd",
+            "commands.jsonl": "ba0891bdf953541d71a7a5cba0d9fef65deb1b74f664074816eee6151c877be8",
+            "capture.jsonl": "ce9cf733daad57e59e3aaa480b4449b7c174e59b3d2e9a0a52712af1e5fa35a0",
+            "pool\\pool.json": "272dc7a566177f2947e5ea4faa708448dd133be538247b1e1e7347efe3f04e76"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\clock_pair_yaw_seed314159_20261108",
+          "seed_requested": 314159,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.188,
+              0.188,
+              0.182,
+              0.182
+            ],
+            [
+              0.182,
+              0.182,
+              0.188,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.25953031617862715
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999961583997,
+            0.0,
+            0.0,
+            8.76538678128706e-05
+          ],
+          "phase_start_s": [
+            0.0,
+            0.263122797,
+            0.46543026000000004,
+            0.66786027,
+            0.91018343
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.1903056353037898
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.4467276105079243,
+          "max_pose_interval_s": 0.012000323000000035,
+          "median_command_interval_s": 0.020238160999999977,
+          "source_sha256": {
+            "run.json": "723f88da57a8b3e2e2b114311c35102fdd60bf06878fafe388fc372ddf54de8f",
+            "commands.jsonl": "88dc6ed1df5f5c68f4ec4e790fd61921cc2d4885d6942ef240536970570bcc12",
+            "capture.jsonl": "c0b1b131351d8961f3cabcdabd5699a5035f933d78711c0bab58627c5e348ced",
+            "pool\\pool.json": "620c001c8a58e9b327c5c9abadd9e4f9303973c474dd759315479921bfed5ca1"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_yaw_seed27182_20261108",
+          "seed_requested": 27182,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.188,
+              0.188,
+              0.182,
+              0.182
+            ],
+            [
+              0.182,
+              0.182,
+              0.188,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.2595201967275732
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999963067902,
+            0.0,
+            0.0,
+            8.594428224727692e-05
+          ],
+          "phase_start_s": [
+            0.0,
+            0.263415098,
+            0.465839386,
+            0.667714357,
+            0.910383939
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.18799205313821898
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.45142677602361564,
+          "max_pose_interval_s": 0.01200032300000009,
+          "median_command_interval_s": 0.020241021999999997,
+          "source_sha256": {
+            "run.json": "863e824482a4cc46fa9956d1b421a2444003008e3947a9fbef99639fb5ad7b5d",
+            "commands.jsonl": "ed36602ba19ca741cc5b0a24f26f2b032e180454030f04d05e3f731a0d4d35d0",
+            "capture.jsonl": "7ac6448cb7c2ba806555e94f8c6ea2779336ad2620eda0f55a75cf3aa326cf6b",
+            "pool\\pool.json": "779ef3c623c7daa268ee92f6e52578a4b44feb199227267f457ab2ef4f56bf87"
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "relative_position_max_m": 0.0005711450140753471,
+          "relative_position_rmse_m": 0.00019422000010924258,
+          "relative_attitude_max_deg": 0.004624864329010559
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "relative_position_max_m": 0.0017424371514954684,
+          "relative_position_rmse_m": 0.0010115617887864635,
+          "relative_attitude_max_deg": 0.00021247417703249566
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "relative_position_max_m": 0.0023135821655708155,
+          "relative_position_rmse_m": 0.00118004431877645,
+          "relative_attitude_max_deg": 0.004699165515691378
+        }
+      ]
+    }
+  },
+  "analysis_sha256": "2cabb4976c494ba714d3ef1d36cec6b158616fabbbbc9b4c77d5afc39f1cc573",
+  "shared_reader_sha256": "8b9048a2491cfa3d7addca94c5877025e9532dd815d44b4088df8348aec5eea8"
+}

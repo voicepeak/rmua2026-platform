@@ -1,0 +1,305 @@
+{
+  "status": "exploratory descriptive repeatability; not a held-out acceptance",
+  "window_s_after_first_published_source_stamp": [
+    0.3,
+    0.8
+  ],
+  "grid_step_s": 0.01,
+  "runs": [
+    {
+      "run": "foundation\\datasets\\d02_small_steps_seed123_20261107",
+      "seed_requested": 123,
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "input_sequence": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.19,
+          0.19,
+          0.19,
+          0.19
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.17,
+          0.17,
+          0.17,
+          0.17
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_position_m": [
+        -7.797241474690959e-05,
+        -1.0070796533909049e-05,
+        0.2613855149425743
+      ],
+      "initial_quaternion_wxyz": [
+        0.9999999999999996,
+        0.0,
+        0.0,
+        -2.98023259404094e-08
+      ],
+      "phase_start_s": [
+        0.0,
+        0.225528478,
+        0.47146391800000004,
+        0.726694822,
+        0.9723403450000001,
+        1.228585481,
+        1.422973394
+      ],
+      "relative_position_min_m": [
+        0.0,
+        0.0,
+        -0.1725295597583118
+      ],
+      "relative_position_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_attitude_change_max_deg": 0.0,
+      "max_pose_interval_s": 0.012000323000000035,
+      "median_command_interval_s": 0.010233640999999905,
+      "source_sha256": {
+        "run.json": "83601bc8ec26cf28357d16eee0798b0f374e7e6be66bab3e7add425eff6608aa",
+        "commands.jsonl": "f34568c2cac480e0f6c5cf7a61aee8f1e5927dacdf97cb377ba3908f7468e235",
+        "capture.jsonl": "4145bcff56badd1810fefde8fdc74ccbf7b46d8e367772773cfd3b82e0bd0138",
+        "pool\\pool.json": "640d16878fdf25644e363b9489b1dd37b37de041c544bdaa641cbab5ba36ea6f"
+      }
+    },
+    {
+      "run": "foundation\\datasets\\d02_small_steps_seed456_20261107",
+      "seed_requested": 456,
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "input_sequence": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.19,
+          0.19,
+          0.19,
+          0.19
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.17,
+          0.17,
+          0.17,
+          0.17
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_position_m": [
+        -7.797241474690959e-05,
+        -1.0070796533909049e-05,
+        0.2607249405668478
+      ],
+      "initial_quaternion_wxyz": [
+        0.9999999999999996,
+        0.0,
+        0.0,
+        -2.98023259404094e-08
+      ],
+      "phase_start_s": [
+        0.0,
+        0.225403547,
+        0.470548153,
+        0.725843191,
+        0.970054626,
+        1.225729942,
+        1.429952383
+      ],
+      "relative_position_min_m": [
+        0.0,
+        0.0,
+        -0.17378683524283436
+      ],
+      "relative_position_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_attitude_change_max_deg": 0.0,
+      "max_pose_interval_s": 0.01200032300000009,
+      "median_command_interval_s": 0.010229349000000054,
+      "source_sha256": {
+        "run.json": "613d717fe6fa3a62bc072c63e5773cf4481b155c938a984b1cc72bf3d261c607",
+        "commands.jsonl": "b48a160a602401aba7eda6b106618d45497a1486093ab8be729fda81907b7a98",
+        "capture.jsonl": "7fbf4493f68b33b2b4c19bc9d1391f55ea2f63bec170e8fd682bebdcf10a3a1c",
+        "pool\\pool.json": "e300c7cd695a539f894853ff754cb4e04dd78998d3a22b0a13143710994f8428"
+      }
+    },
+    {
+      "run": "foundation\\datasets\\clock_pair_steps_retry_seed27182_20261108",
+      "seed_requested": 27182,
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "input_sequence": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.19,
+          0.19,
+          0.19,
+          0.19
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.17,
+          0.17,
+          0.17,
+          0.17
+        ],
+        [
+          0.18,
+          0.18,
+          0.18,
+          0.18
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "initial_position_m": [
+        -7.797241474690959e-05,
+        -1.0070796533909049e-05,
+        0.26096933699288166
+      ],
+      "initial_quaternion_wxyz": [
+        0.9999999999999996,
+        0.0,
+        0.0,
+        -2.98023259404094e-08
+      ],
+      "phase_start_s": [
+        0.0,
+        0.224738121,
+        0.470080376,
+        0.725617886,
+        0.9707703590000001,
+        1.2261443140000001,
+        1.420532227
+      ],
+      "relative_position_min_m": [
+        0.0,
+        0.0,
+        -0.17348769032789796
+      ],
+      "relative_position_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_attitude_change_max_deg": 0.0,
+      "max_pose_interval_s": 0.01200032299999998,
+      "median_command_interval_s": 0.010235071000000096,
+      "source_sha256": {
+        "run.json": "4fb2c51a5d2b726635def4e35bce73c5285b51df93352b6aac88a59664274a1e",
+        "commands.jsonl": "4e4abfd4bf35791f847fe969a32d726f11bde109a8d46521b36f0ba5eadf96fa",
+        "capture.jsonl": "ad754c362fc183ee8c8e0cac98b9f8bc3c130d9621898ef8aaf566d3388e903c",
+        "pool\\pool.json": "a01720b86f4d153e65bd1e5395697859a626d104fb3a6e3c369bac5e3c49444e"
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "runs": [
+        0,
+        1
+      ],
+      "relative_position_max_m": 0.001257275484522563,
+      "relative_position_rmse_m": 0.0005668219508243307,
+      "relative_attitude_max_deg": 0.0
+    },
+    {
+      "runs": [
+        0,
+        2
+      ],
+      "relative_position_max_m": 0.0009581305695861575,
+      "relative_position_rmse_m": 0.00044586813638373686,
+      "relative_attitude_max_deg": 0.0
+    },
+    {
+      "runs": [
+        1,
+        2
+      ],
+      "relative_position_max_m": 0.0002991449149364056,
+      "relative_position_rmse_m": 0.00012141769598025109,
+      "relative_attitude_max_deg": 0.0
+    }
+  ],
+  "analysis_sha256": "8b9048a2491cfa3d7addca94c5877025e9532dd815d44b4088df8348aec5eea8",
+  "protocol": "v2_p02_repeatability_protocol.md"
+}

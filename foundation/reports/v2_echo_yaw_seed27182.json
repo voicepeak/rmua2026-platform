@@ -1,0 +1,134 @@
+{
+  "status": "debug message audit; not motor or physics latency",
+  "mode": "yaw",
+  "edges": [
+    {
+      "edge_index": 0,
+      "command_pwm": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "command_source_stamp_ns": 1794147002213966608,
+      "command_recorded_monotonic_ns": 483147858978266,
+      "interval_sample_count": 26,
+      "prior_debug_pwm": [
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 55.736302,
+      "first_match_source_minus_command_header_ms": 33.761025,
+      "first_match_debug_stamp_ns": 1794147002247727633,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 1,
+      "command_pwm": [
+        0.188,
+        0.188,
+        0.182,
+        0.182
+      ],
+      "command_source_stamp_ns": 1794147002477381706,
+      "command_recorded_monotonic_ns": 483148122390074,
+      "interval_sample_count": 21,
+      "prior_debug_pwm": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 42.3031,
+      "first_match_source_minus_command_header_ms": 22.351265,
+      "first_match_debug_stamp_ns": 1794147002499732971,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 2,
+      "command_pwm": [
+        0.182,
+        0.182,
+        0.188,
+        0.188
+      ],
+      "command_source_stamp_ns": 1794147002679805994,
+      "command_recorded_monotonic_ns": 483148324791230,
+      "interval_sample_count": 20,
+      "prior_debug_pwm": [
+        0.18799999356269836,
+        0.18799999356269836,
+        0.18199999630451202,
+        0.18199999630451202
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 39.846724,
+      "first_match_source_minus_command_header_ms": 17.931223,
+      "first_match_debug_stamp_ns": 1794147002697737217,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 3,
+      "command_pwm": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "command_source_stamp_ns": 1794147002881680965,
+      "command_recorded_monotonic_ns": 483148526669539,
+      "interval_sample_count": 24,
+      "prior_debug_pwm": [
+        0.18199999630451202,
+        0.18199999630451202,
+        0.18799999356269836,
+        0.18799999356269836
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 37.988055,
+      "first_match_source_minus_command_header_ms": 17.060519,
+      "first_match_debug_stamp_ns": 1794147002898741484,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 4,
+      "command_pwm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_source_stamp_ns": 1794147003124350547,
+      "command_recorded_monotonic_ns": 483148769335768,
+      "interval_sample_count": 24,
+      "prior_debug_pwm": [
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 45.420324,
+      "first_match_source_minus_command_header_ms": 23.396254,
+      "first_match_debug_stamp_ns": 1794147003147746801,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    }
+  ],
+  "debug_samples": 260,
+  "source_sha256": {
+    "run.json": "863e824482a4cc46fa9956d1b421a2444003008e3947a9fbef99639fb5ad7b5d",
+    "commands.jsonl": "ed36602ba19ca741cc5b0a24f26f2b032e180454030f04d05e3f731a0d4d35d0",
+    "capture.jsonl": "7ac6448cb7c2ba806555e94f8c6ea2779336ad2620eda0f55a75cf3aa326cf6b"
+  },
+  "analysis_sha256": "f5fad0496e44a825ef52ab7bf8e80db8f4fd896f95645ad9da2d11831c5445cf",
+  "limitations": [
+    "command record is after publish; debug arrival includes ROS transport and scheduling",
+    "debug stamp is not independently verified as command application or simulation clock",
+    "matching values can recur; matching does not prove command causality",
+    "physical response onset and latency remain unidentified"
+  ]
+}
