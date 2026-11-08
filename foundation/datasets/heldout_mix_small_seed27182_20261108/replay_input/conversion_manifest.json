@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "capture.jsonl": "7b8bf4d4efe9799a13b7e725c0c2e0318738d5c8fcca2fad4a96ea0d7bafb8c6",
+    "commands.jsonl": "7a11ff5e63ef19b74144226003dbb36146d56df2c9a47f1b5e079d6ddc9868c3"
+  },
+  "limitations": [
+    "command stamps are publish-side ROS time; physical actuation delay unknown",
+    "nanosecond epoch stamps converted to float seconds for exploratory replay"
+  ]
+}
