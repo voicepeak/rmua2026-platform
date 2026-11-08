@@ -1,0 +1,1662 @@
+Breakpoint 1 at 0x2630780
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 189]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 123 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-12.11.13:438][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-12.11.13:438][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.08-12.11.13:438][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.08-12.11.13:439][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.08-12.11.13:439][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.08-12.11.13:439][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.08-12.11.13:439][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.08-12.11.13:439][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.08-12.11.13:439][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-12.11.13:439][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.08-12.11.13:439][  0]LogInit: Unix hardware info:
+[2026.11.08-12.11.13:439][  0]LogInit:  - we are the first instance of this executable
+[2026.11.08-12.11.13:439][  0]LogInit:  - this process' id (pid) is 110, parent process' id (ppid) is 108
+[2026.11.08-12.11.13:439][  0]LogInit:  - we are not running under debugger
+[2026.11.08-12.11.13:439][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.08-12.11.13:439][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.08-12.11.13:439][  0]LogInit:  - we're logged in locally
+[2026.11.08-12.11.13:439][  0]LogInit:  - we're running without rendering
+[2026.11.08-12.11.13:439][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.08-12.11.13:439][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.08-12.11.13:439][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.08-12.11.13:439][  0]LogInit:  - Cache line size: 64
+[2026.11.08-12.11.13:439][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.08-12.11.13:439][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.08-12.11.13:439][  0]LogInit:  - This is an internal build.
+[2026.11.08-12.11.13:439][  0]LogCore: Benchmarking clocks:
+[2026.11.08-12.11.13:439][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 81240135 (81240K, 81M) calls per second without zero deltas.
+[2026.11.08-12.11.13:439][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 81780701 (81781K, 82M) calls per second without zero deltas.
+[2026.11.08-12.11.13:439][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 213564202 (213564K, 214M) calls per second with 99.999527% zero deltas.
+[2026.11.08-12.11.13:439][  0]LogCore: Selected clock_id 4 (CLOCK_MONOTONIC_RAW) since it is the fastest support clock without zero deltas.
+[2026.11.08-12.11.13:439][  0]LogInit: Unix-specific commandline switches:
+[2026.11.08-12.11.13:439][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.08-12.11.13:439][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.08-12.11.13:439][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.08-12.11.13:439][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.08-12.11.13:439][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.08-12.11.13:439][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.08-12.11.13:439][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.08-12.11.13:439][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.08-12.11.13:439][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.08-12.11.13:440][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.08-12.11.13:440][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.08-12.11.13:440][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.08-12.11.13:440][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.08-12.11.13:440][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.08-12.11.13:479][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.08-12.11.13:479][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.08-12.11.13:479][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.08-12.11.13:480][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.08-12.11.13:490][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.08-12.11.13:492][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.08-12.11.13:492][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.08-12.11.13:493][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.08-12.11.13:493][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.08-12.11.13:493][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.08-12.11.13:495][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.08-12.11.13:495][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.08-12.11.13:495][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.08-12.11.13:495][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.08-12.11.13:495][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.08-12.11.13:495][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.08-12.11.13:524][  0]LogTextLocalizationManager: Compacting localization data took   1.38ms
+[2026.11.08-12.11.13:524][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.08-12.11.13:524][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000022 seconds
+[2026.11.08-12.11.13:524][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.08-12.11.13:527][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.08-12.11.13:527][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.08-12.11.13:528][  0]LogInit: Active device profile: [0x78f2f8c891c0][0x78f2f8059250 49] LinuxNoEditor
+[2026.11.08-12.11.13:528][  0]LogInit: Profiles: [0x78f2f8c88ec0][0x78f3002a0010 49] Linux, [0x78f2f8c891c0][0x78f2f8059250 49] LinuxNoEditor, 
+[2026.11.08-12.11.13:530][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.08-12.11.13:555][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.08-12.11.13:555][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.08-12.11.13:555][  0]LogTemp: Circle 构造函数调用
+[2026.11.08-12.11.13:555][  0]LogTemp: Circle 构造函数调用
+[2026.11.08-12.11.13:555][  0]LogTemp: Circle 构造函数调用
+[2026.11.08-12.11.13:561][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.08-12.11.13:592][  0]LogTemp: AirSimROS Loaded.
+[2026.11.08-12.11.13:592][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.08-12.11.13:594][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.08-12.11.13:594][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.08-12.11.13:594][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.08-12.11.13:594][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.08-12.11.13:596][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.08-12.11.13:596][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.08-12.11.13:629][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.08-12.11.13:629][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.08-12.11.13:629][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.08-12.11.13:651][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.08-12.11.13:652][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-12.11.13:652][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.08-12.11.13:652][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-12.11.13:652][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.08-12.11.13:755][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.08-12.11.13:755][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.08-12.11.13:755][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.08-12.11.13:755][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.08-12.11.13:755][  0]LogInit: Texture streaming: Disabled
+[2026.11.08-12.11.13:764][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.08-12.11.13:764][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.08-12.11.13:764][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.08-12.11.13:764][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.08-12.11.13:764][  0]LogTemp: Warning: App Init End !!! 2026-11-08 12:11:13 127.0.0.2
+[2026.11.08-12.11.13:764][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.08-12.11.13:764][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.08-12.11.13:764][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.08-12.11.13:764][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.08-12.11.13:764][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.08-12.11.13:764][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.08-12.11.13:772][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.08-12.11.13:772][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-12.11.13:773][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.08-12.11.13:773][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-12.11.13:773][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.08-12.11.13:875][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.08-12.11.13:875][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.08-12.11.13:875][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.08-12.11.13:875][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.08-12.11.13:875][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.08-12.11.13:875][  0]LogInit: Display: Starting Game.
+[2026.11.08-12.11.13:875][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.08-12.11.13:875][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.08-12.11.13:875][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.08-12.11.13:876][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.08-12.11.13:876][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.08-12.11.13:877][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2026.11.08-12.11.13:880][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.08-12.11.13:880][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.08-12.11.13:880][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.08-12.11.13
+[2026.11.08-12.11.13:880][  0]LogWorld: Bringing up level for play took: 0.000093
+[2026.11.08-12.11.13:880][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.08-12.11.13:880][  0]r.SetRes = "1280x720 w"
+[2026.11.08-12.11.13:880][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.08-12.11.13:880][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.08-12.11.13:880][  0]LogLoad: Took 0.005122 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.08-12.11.13:887][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.08-12.11.13:887][  0]LogLoad: (Engine Initialization) Total time: 0.52 seconds
+[2026.11.08-12.11.18:887][886]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.08-12.11.18:887][886]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.08-12.11.18:887][886]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.08-12.11.18:887][886]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.08-12.11.18:887][886]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.08-12.11.18:888][886]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2026.11.08-12.11.18:888][886]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.08-12.11.19:192][886]LogPakFile: Precache HighWater 16MB
+
+[2026.11.08-12.11.19:192][886]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.08-12.11.19:192][886]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.08-12.11.19:220][886]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.08-12.11.19
+[2026.11.08-12.11.19:220][886]LogWorld: Bringing up level for play took: 0.027822
+[2026.11.08-12.11.19:235][886]LogPackageName: SearchForPackageOnDisk took   0.013s, but failed to resolve .
+[2026.11.08-12.11.19:235][886]r.CustomDepth = "3"
+[2026.11.08-12.11.19:237][886]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.08-12.11.19:253][886]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.08-12.11.19:254][886]LogTemp: Warning: No Drone API
+[2026.11.08-12.11.19:254][886]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 421]
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0xf8 component=0x78f2f8ca04c0 fname=765551,0 class=0x78f2fff7d580 world_xyz=2.09499726e-40,8.73001937e-40,2.3693558e-38 world_quat=7.96430139e-35,0,2.80259693e-44,0 vtable=0x10b9840
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x130 component=0x78f1018d10f0 fname=776463,0 class=0x78f2ffee3300 world_xyz=0,0,-38.0283356 world_quat=0,0,0,1 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x340 component=0x78f11b421be0 fname=776478,0 class=0x78f2fff60600 world_xyz=0,0,-31.5836277 world_quat=0,0,0,1 vtable=0x10b47d8
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x348 component=0x78f11afbc940 fname=776445,0 class=0x78f2fff70380 world_xyz=0,0,-32.0283356 world_quat=0,0,0,1 vtable=0x10c66b8
+DRONE_CANDIDATE_BYTES component=0x78f11afbc940 bytes=b8660c010000000000002000928b00008003f7fff2780000fdd80b000000000030b5fbf8f2780000886f0c010000000030660b010000000002000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000d064a05010000000000000000000000000000000000000030b5fbf8f2780000207141f0f27800000052cff0f2780000ffffffff00000000f0108d01f178000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000041d00c20000004000000040000000400000004000000000000000000000c0400000000000000000000000000000803f0000803f0000803f000000000000000000000000614400020000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f0000000000000000041d00c2000000000000803f0000803f0000803f000000000000000000000000d06f0c01000000000000000000000000000000000000010040a11f6205183b0001000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000000000000000000000000000000000000000001263900000000803f00000000000000000000803f0000000000007ac400007ac400000000000000000000000000000000000000000000000000000000000000000000000080d7aaf0f27800000300000004000000d883bc0000000000938b0000723d00001c000000ffffffffffff00000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030000200000000803f0000803f0000803f17f30a000000000008010000010101010101010100020202020200020202020202020202020202020202020240a2c5f8f27800000800000008000000000000000000c842ffffffff000000000ad7233c000000000000000000000000000000000000000000000000000000000000803f0000803f0000803f0000803f000000000000000000000000000000000000000000000000000000000000803f0000000000000000000061450000803f0000803f00000000d0cf4201f1780000928b0000733d00000000000000000000010000000000000008ccfb1af178000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c07e201af178000000ddfdfff27800000000ffff0800000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000090a50b010000000000000000578a000000c9f8fff2780000bc6105009afbff7fa0424000f378000068ae0b010000000030660b010000000002000e010000000000000000000000000000000000000000a0c948f8f2780000d0cdfb1af17800000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffff018e430400000000000000000000000000000000000000000000000000000000207141f0f27800000000000000000000ffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080490000804900008049d7b3dd490000000000000000000000000000000000000000000000000000803f0000803f0000803f000000000000000000000000214000020000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000803f0000803f0000803f000000000000000000000000b0ae0b01000000000000000000000000000000000000010040a01fe205103b0000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000000000000000000000000000000000000000001123900000000803f00000000000000000000803f0000000000007ac400007ac400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d883bc0000000000ffffffff0000000014000000ffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030000200000000803f0000803f0000803f4964020000000000080100000202020000020202000202020202000202020202020202020202020202020202801a25f1f27800000200000020000000000000000000c842
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x350 component=0x78f2f06e8b20 fname=776496,0 class=0x78f2ffee3300 world_xyz=9.26588535,14.084403,-33.2368546 world_quat=-0.0274585374,-0.0528758839,-0.763675332,0.642845511 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x358 component=0x78f2f8d7d580 fname=776524,0 class=0x78f2ffee3300 world_xyz=9.33069801,-14.1561899,-33.2186394 world_quat=-0.00872235745,-0.0778203979,0.934737623,0.346602798 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x360 component=0x78f2f06eb050 fname=776538,0 class=0x78f2ffee3300 world_xyz=-11.9102316,11.1353655,-35.5802383 world_quat=-0.0290508904,0.0341055058,0.996693015,0.0677929968 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x368 component=0x78f2f06eab00 fname=776510,0 class=0x78f2ffee3300 world_xyz=-11.8896084,-11.0765839,-35.5567665 world_quat=0.0538075119,0.0553400666,-0.881182551,0.46643275 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x370 component=0x78f2f0aad540 fname=776396,0 class=0x78f2fff66a00 world_xyz=22.1357765,-12.5,-38.0283356 world_quat=0,0,8.94069316e-08,1 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x378 component=0x78f2f0aa4c00 fname=776259,0 class=0x78f2fff66a00 world_xyz=-22.6780586,-1.66811642e-05,-38.0283356 world_quat=0,0,0.99999994,3.57627869e-07 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x380 component=0x78f2f0aa4e40 fname=776370,0 class=0x78f2fff66a00 world_xyz=22.1357765,-4.26725001e-06,-38.0283356 world_quat=0,0,8.94069316e-08,1 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x388 component=0x78f2f0aac580 fname=776420,0 class=0x78f2fff66a00 world_xyz=22.1357765,12.5,-38.0283356 world_quat=0,0,8.94069316e-08,1 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x390 component=0x78f2f0aa5740 fname=776284,0 class=0x78f2fff66a00 world_xyz=0,0,-38.0283356 world_quat=1.1920929e-07,0.707106769,-8.94069672e-08,0.707106709 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x3a0 component=0x78f11a6d4300 fname=776614,0 class=0x78f2fffc2180 world_xyz=4.44832669e-38,4.33856018e-41,1.68155816e-44 world_quat=3.36311631e-44,3.36311631e-44,5.62454579e-40,0 vtable=0x10c3180
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x3a8 component=0x78f11a6dacc0 fname=776596,0 class=0x78f2fffc2180 world_xyz=4.44873923e-38,4.33856018e-41,1.821688e-44 world_quat=3.22298647e-44,3.36311631e-44,5.62454579e-40,0 vtable=0x10c3180
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x3b0 component=0x78f11a6d0f40 fname=776578,0 class=0x78f2fffc2180 world_xyz=0,0,0 world_quat=0,0,0,0 vtable=0x10c3180
+DRONE_OWNED_PTR actor=0x78f2f8fbb530 actor_offset=0x3b8 component=0x78f11a6d9d00 fname=776560,0 class=0x78f2fffc2180 world_xyz=4.44899931e-38,4.33856018e-41,1.68155816e-44 world_quat=3.36311631e-44,3.36311631e-44,5.62454579e-40,0 vtable=0x10c3180
+MAP_CONTACT mono=476025.243134097 drone=0x78f2f8fbb530 drone_component=0x78f1018d10f0 drone_xyz=0,0,-38.0283356 source_actor=0x78f2f0796400 source_component=0x78f11af72070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x78f11a76d200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x78f2f11cc100 hit_ptr=0x7fff8a2710f0 hit_bytes=ffffffff00000000f1de643f000000000000000080b01bc2001f99c000fa8b3e09001cc2dd4c6233027e94270000803fdd4c6233027e94270000803f0000000000000000041d18c20000000000000000b7e44dc200000000ffffffff00010000ffffffff00000000e1440000763d0000944e0000bc26000000000000000000000000000000000000
+MAP_CONTACT mono=476025.290238669 drone=0x78f2f8fbb530 drone_component=0x78f1018d10f0 drone_xyz=0,0,-38.0283356 source_actor=0x78f2f0796400 source_component=0x78f11af72070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x78f11a76d200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x78f2f11cc100 hit_ptr=0x7fff8a2710f0 hit_bytes=ffffffff00000000f1de643f000000000000000080b01bc2001f99c000fa8b3e09001cc2dd4c6233027e94270000803fdd4c6233027e94270000803f0000000000000000041d18c20000000000000000d29787c200000000ffffffff00010000ffffffff00000000e1440000763d0000944e0000bc26000000000000000000000000000000000000
+[2026.11.08-12.11.19:255][886]r.SetRes = "1280x720 w"
+[2026.11.08-12.11.19:255][886]t.MaxFPS = "20"
+[2026.11.08-12.11.19:270][886]LogViewport: Display: Player bShowMouseCursor Changed, False -> True
+[2026.11.08-12.11.19:270][886]LogLoad: Took 0.383187 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024OL1)
+[2026.11.08-12.11.19:292][886]LogTemp: NodeRunnable: Current game type is 2
+[2026.11.08-12.11.19:292][886]LogTemp: Warning: Init Frametime Tolerance: 125000000.000000
+[2026.11.08-12.11.19:292][886]LogSlate: Took 0.000187 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2026.11.08-12.11.19:294][887]LogTemp: Warning: Reset Route 1 3
+[2026.11.08-12.11.19:294][887]LogTemp: Warning: Reset Spline 1 Num 0 PortNum 33 Reversed 0
+[2026.11.08-12.11.19:294][887]LogTemp: Warning: Reset Spline 3 Num 0 PortNum 30 Reversed 1
+[2026.11.08-12.11.19:294][887]LogTemp: NO A FACTORIE
+[2026.11.08-12.11.19:294][887]LogTemp: NO B FACTORIE
+[2026.11.08-12.11.19:294][887]LogTemp: ChangeState:0
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:0
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmb:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:196][926]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:244][927]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:296][928]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:344][929]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:394][930]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:444][931]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:494][932]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:544][933]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:593][934]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:646][935]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:694][936]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:745][937]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:794][938]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:844][939]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:894][940]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:944][941]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.21:994][942]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:044][943]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:096][944]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:144][945]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:195][946]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:244][947]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:294][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:295][948]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:344][949]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:394][950]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:444][951]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:494][952]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:546][953]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:594][954]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:646][955]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:694][956]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:744][957]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:794][958]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:844][959]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:894][960]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:944][961]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemMAP_CONTACT mono=476028.790687067 drone=0x78f2f8fbb530 drone_component=0x78f1018d10f0 drone_xyz=0,0,-37.9077606 source_actor=0x78f2f0796400 source_component=0x78f11af72070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x78f11a76d200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x78f2f11cc100 hit_ptr=0x7fff8a2710f0 hit_bytes=ffffffffbc02d53e2fe3e240000000000000000080b01bc2001f99c000fa8b3e0a001cc211f66033139d93270000803f11f66033139d93270000803f000000000000000034a8fec100000000000000002fbe39c200000000ffffffff00010000ffffffff00000000e1440000763d0000944e0000bc26000000000000000000000000000000000000
+MAP_CONTACT mono=476028.840302231 drone=0x78f2f8fbb530 drone_component=0x78f1018d10f0 drone_xyz=0,0,-37.9077606 source_actor=0x78f2f0796400 source_component=0x78f11af72070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x78f11a76d200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x78f2f11cc100 hit_ptr=0x7fff8a2710f0 hit_bytes=ffffffff0000000078de813f000000000000000080b01bc2001f99c000fa8b3e09001cc211f66033149d93270000803f11f66033149d93270000803f00000000000000008ca117c200000000000000004fb878c200000000ffffffff00010000ffffffff00000000e1440000763d0000944e0000bc26000000000000000000000000000000000000
+p: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.22:996][962]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:044][963]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:095][964]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:146][965]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:196][966]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:244][967]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:294][968]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:344][969]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:394][970]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:446][971]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:494][972]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:545][973]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:593][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:594][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:594][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:594][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:594][974]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:594][974]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:645][975]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:694][976]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwma:2
+[2026.11.08-12.11.23:744][977]LogTemp: Warning: pwmc:2
+[2026.11.08-12.11.23:744][977]
