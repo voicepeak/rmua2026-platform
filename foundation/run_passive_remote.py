@@ -12,7 +12,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("connection_script", type=Path)
     p.add_argument("output", type=Path, help="new local output directory")
-    p.add_argument("--mode", choices=("passive", "collective", "aero_probe", "aero_force_probe", "aero_wind0", "aero_wind3", "aero_wind3_tilt", "differential", "yaw", "yaw_small", "roll_pitch", "roll_pitch_small", "braking", "small_steps", "rotor_probe", "contact_probe", "field_forced0", "field_forced1", "field_toggle", "field_toggle_high", "field_toggle_air", "field_trace", "field_recovery", "cadence20", "cadence50", "cadence100", "frame_probe", "frame_lateral"), default="passive")
+    p.add_argument("--mode", choices=("passive", "collective", "wind_stage4", "wind_stage4_late", "aero_probe", "aero_force_probe", "aero_wind0", "aero_wind3", "aero_wind3_tilt", "differential", "yaw", "yaw_small", "roll_pitch", "roll_pitch_small", "braking", "heldout_mix", "heldout_mix_small", "kinematic_probe", "kinematic_yaw", "kinematic_steps", "small_steps", "rotor_probe", "contact_probe", "field_forced0", "field_forced1", "field_toggle", "field_toggle_high", "field_toggle_air", "field_trace", "field_recovery", "cadence20", "cadence50", "cadence100", "frame_probe", "frame_lateral"), default="passive")
     p.add_argument("--seed", type=int, default=123)
     args = p.parse_args()
     if not 0 <= args.seed <= 2147483647:
@@ -22,6 +22,13 @@ def main():
     args.output.mkdir(parents=True, exist_ok=False)
     remote = "/tmp/foundation-" + uuid.uuid4().hex
     here = Path(__file__).parent / "probes"
+    manifest = {"remote_directory": remote, "exit_status": None,
+                "mode": args.mode, "seed_requested": args.seed,
+                "capture_state": "started; result not yet received"}
+    manifest_path = args.output / "run.json"
+    def save_manifest():
+        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    save_manifest()
     c = connect(args.connection_script)
     try:
         sftp = c.open_sftp()
@@ -32,10 +39,16 @@ def main():
             sources.append('frame_readonly.gdb')
         if args.mode == 'rotor_probe':
             sources.append('rotor_readonly.gdb')
+        if args.mode in ('kinematic_probe', 'kinematic_yaw', 'kinematic_steps'):
+            sources.append('kinematic_readonly.gdb')
         if args.mode == 'aero_probe':
             sources.append('aero_readonly.gdb')
         if args.mode == 'aero_force_probe':
             sources.append('aero_force_readonly.gdb')
+        if args.mode == 'wind_stage4':
+            sources.append('wind_stage4_input.gdb')
+        if args.mode == 'wind_stage4_late':
+            sources.append('wind_stage4_late.gdb')
         if args.mode in ('aero_wind0', 'aero_wind3', 'aero_wind3_tilt'):
             sources.append('aero_wind_injected.gdb')
         if args.mode == 'contact_probe':
@@ -48,12 +61,17 @@ def main():
             sources.append('field_trace.gdb')
         if args.mode == 'field_recovery':
             sources.append('field_recovery.gdb')
+        manifest["source_sha256"] = {name: hashlib.sha256((here / name).read_bytes()).hexdigest() for name in sources}
+        save_manifest()
         for name in sources:
             sftp.put(str(here / name), remote + "/" + name)
         script = "passive_remote.sh" if args.mode == "passive" else "collective_remote.sh"
         _, out, err = c.exec_command("timeout --signal=TERM --kill-after=15s 120s bash " + remote + "/" + script + " " + args.mode + " " + str(args.seed), timeout=145)
         stdout, stderr = out.read().decode("utf-8", "replace"), err.read().decode("utf-8", "replace")
         status = out.channel.recv_exit_status()
+        manifest.update(command_exit_status=status, stdout=stdout, stderr=stderr,
+                        capture_state="command finished; file transfer incomplete")
+        save_manifest()
         for name in ("start.log", "stop.log", "binary_check.log", "topics.txt", "collector.log", "player.log", "capture.jsonl", "commands.jsonl", "cleanup.log", "pool/pool.json", "scripts/headless_pool.py"):
             try:
                 dest = args.output / name
@@ -67,11 +85,17 @@ def main():
                     sftp.get(remote + '/pool/' + name, str(args.output/'pool'/name))
         except FileNotFoundError:
             pass
-        hashes = {name: hashlib.sha256((here / name).read_bytes()).hexdigest() for name in sources}
+        required = ['capture.jsonl'] + ([] if args.mode == 'passive' else ['commands.jsonl'])
+        missing = [name for name in required if not (args.output / name).is_file()
+                   or (args.output / name).stat().st_size == 0]
+        if status == 0 and missing:
+            manifest['missing_required_files'] = missing
+            save_manifest()
+            raise RuntimeError('successful remote command but required capture files missing: ' + ', '.join(missing))
         for name in sources:
             (args.output / name).write_bytes((here / name).read_bytes())
-        (args.output / "run.json").write_text(json.dumps({"remote_directory": remote, "exit_status": status,
-            "mode": args.mode, "seed_requested": args.seed, "stdout": stdout, "stderr": stderr, "source_sha256": hashes}, indent=2) + "\n", encoding="utf-8")
+        manifest.update(exit_status=status, capture_state="file transfer complete")
+        save_manifest()
         sftp.close()
         print("exit_status:", status)
         print(stdout, stderr)

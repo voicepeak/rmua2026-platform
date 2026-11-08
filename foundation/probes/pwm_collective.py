@@ -23,7 +23,7 @@ def phases(mode):
         return ((1.7, common(.20)), (.2, common(0.)))
     if mode == 'field_recovery':
         return ((1.35, common(.20)), (.2, common(0.)))
-    if mode in ('collective', 'aero_probe', 'aero_force_probe', 'aero_wind0', 'aero_wind3', 'frame_probe', 'contact_probe', 'field_forced0', 'field_forced1', 'cadence20', 'cadence50', 'cadence100'):
+    if mode in ('collective', 'wind_stage4', 'wind_stage4_late', 'aero_probe', 'aero_force_probe', 'aero_wind0', 'aero_wind3', 'frame_probe', 'contact_probe', 'field_forced0', 'field_forced1', 'cadence20', 'cadence50', 'cadence100'):
         return ((.5, common(.12)), (.6, common(.20)), (.5, common(.16)), (.3, common(0.)))
     if mode == 'differential':
         pulses = []
@@ -32,7 +32,7 @@ def phases(mode):
             values[i] = .189
             pulses.append((.13, values))
         return ((.25, common(.20)), *pulses, (.25, common(.16)), (.2, common(0.)))
-    if mode == 'yaw':
+    if mode in ('yaw', 'kinematic_yaw'):
         return ((.25, common(.20)), (.20, [.188, .188, .182, .182]),
                 (.20, [.182, .182, .188, .188]), (.25, common(.16)), (.2, common(0.)))
     if mode == 'yaw_small':
@@ -52,7 +52,18 @@ def phases(mode):
         return ((.25, common(.20)), (.14, [.187, .183, .187, .183]),
                 (.14, [.183, .187, .183, .187]), (.25, common(.18)),
                 (.20, common(.16)), (.2, common(0.)))
-    if mode in ('small_steps', 'rotor_probe'):
+    if mode == 'heldout_mix':
+        # Predeclared combined-axis waveform, distinct from the identification
+        # pulses. Ground-start safety guards and bounded shutdown still apply.
+        return ((.25, common(.20)), (.12, [.186, .180, .184, .170]),
+                (.12, [.176, .184, .174, .186]), (.12, [.180, .178, .188, .174]),
+                (.12, [.177, .185, .183, .175]), (.20, common(.18)),
+                (.18, common(.16)), (.20, common(0.)))
+    if mode in ('heldout_mix_small', 'kinematic_probe'):
+        mixed = phases('heldout_mix')
+        return tuple((duration, [.18 + (x-.18)/3 for x in values]) if 1 <= i <= 4
+                     else (duration, values) for i, (duration, values) in enumerate(mixed))
+    if mode in ('small_steps', 'rotor_probe', 'kinematic_steps'):
         # Lift off first, then examine both directions of small collective
         # steps and returns while keeping the usual guard and shutdown path.
         return ((.22, common(.20)), (.25, common(.18)), (.25, common(.19)),
@@ -64,7 +75,7 @@ def phases(mode):
 def main():
     mode = sys.argv[2] if len(sys.argv) > 2 else 'collective'
     waveform = phases(mode)
-    rate_hz = {'cadence20': 20, 'cadence50': 50, 'cadence100': 100, 'small_steps': 100, 'rotor_probe': 100}.get(mode, 50)
+    rate_hz = {'cadence20': 20, 'cadence50': 50, 'cadence100': 100, 'small_steps': 100, 'rotor_probe': 100, 'kinematic_steps': 100}.get(mode, 50)
     pwm_type = genpy.dynamic.generate_dynamic('airsim_ros/RotorPWM', DEFINITION)['airsim_ros/RotorPWM']
     if pwm_type._md5sum != '4967432b608c06d70b17be20124fa258':
         raise RuntimeError('message MD5 mismatch')

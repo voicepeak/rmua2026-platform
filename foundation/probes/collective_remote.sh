@@ -13,16 +13,22 @@ trap 'cleanup || true' EXIT TERM INT
 SEED=${2:-123}
 case "$SEED" in *[!0-9]*|'') exit 3 ;; esac
 MODE=${1:-collective}
-if [ "$MODE" = frame_probe ] || [ "$MODE" = frame_lateral ] || [ "$MODE" = rotor_probe ] || [ "$MODE" = aero_probe ] || [ "$MODE" = aero_force_probe ] || [ "$MODE" = aero_wind0 ] || [ "$MODE" = aero_wind3 ] || [ "$MODE" = aero_wind3_tilt ] || [ "$MODE" = contact_probe ] || [ "$MODE" = field_forced0 ] || [ "$MODE" = field_forced1 ] || [ "$MODE" = field_toggle ] || [ "$MODE" = field_toggle_high ] || [ "$MODE" = field_toggle_air ] || [ "$MODE" = field_trace ] || [ "$MODE" = field_recovery ]; then
+if [ "$MODE" = frame_probe ] || [ "$MODE" = frame_lateral ] || [ "$MODE" = rotor_probe ] || [ "$MODE" = kinematic_probe ] || [ "$MODE" = kinematic_yaw ] || [ "$MODE" = kinematic_steps ] || [ "$MODE" = aero_probe ] || [ "$MODE" = aero_force_probe ] || [ "$MODE" = aero_wind0 ] || [ "$MODE" = aero_wind3 ] || [ "$MODE" = aero_wind3_tilt ] || [ "$MODE" = wind_stage4 ] || [ "$MODE" = wind_stage4_late ] || [ "$MODE" = contact_probe ] || [ "$MODE" = field_forced0 ] || [ "$MODE" = field_forced1 ] || [ "$MODE" = field_toggle ] || [ "$MODE" = field_toggle_high ] || [ "$MODE" = field_toggle_air ] || [ "$MODE" = field_trace ] || [ "$MODE" = field_recovery ]; then
   printf '%s  %s\n' 5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800 "$SIM/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping" | sha256sum -c > "$HERE/binary_check.log"
   mkdir "$HERE/scripts"
   cp "$POOL" "$HERE/scripts/headless_pool.py"
   if [ "$MODE" = rotor_probe ]; then
     cp "$HERE/rotor_readonly.gdb" "$HERE/scripts/crash_capture.gdb"
+  elif [ "$MODE" = kinematic_probe ] || [ "$MODE" = kinematic_yaw ] || [ "$MODE" = kinematic_steps ]; then
+    cp "$HERE/kinematic_readonly.gdb" "$HERE/scripts/crash_capture.gdb"
   elif [ "$MODE" = aero_probe ]; then
     cp "$HERE/aero_readonly.gdb" "$HERE/scripts/crash_capture.gdb"
   elif [ "$MODE" = aero_force_probe ]; then
     cp "$HERE/aero_force_readonly.gdb" "$HERE/scripts/crash_capture.gdb"
+  elif [ "$MODE" = wind_stage4 ]; then
+    cp "$HERE/wind_stage4_input.gdb" "$HERE/scripts/crash_capture.gdb"
+  elif [ "$MODE" = wind_stage4_late ]; then
+    cp "$HERE/wind_stage4_late.gdb" "$HERE/scripts/crash_capture.gdb"
   elif [ "$MODE" = aero_wind0 ] || [ "$MODE" = aero_wind3 ] || [ "$MODE" = aero_wind3_tilt ]; then
     WIND=${MODE#aero_wind}
     if [ "$MODE" = aero_wind3_tilt ]; then WIND=3; fi
@@ -51,7 +57,7 @@ docker exec -i "$CONTAINER" bash -c 'source /opt/ros/noetic/setup.bash; python3 
 COLLECTOR=$!
 sleep .5
 set +e
-case "$MODE" in collective|aero_probe|aero_force_probe|aero_wind0|aero_wind3|aero_wind3_tilt|differential|yaw|yaw_small|roll_pitch|roll_pitch_small|braking|small_steps|rotor_probe|contact_probe|field_forced0|field_forced1|field_toggle|field_toggle_high|field_toggle_air|field_trace|field_recovery|cadence20|cadence50|cadence100|frame_probe|frame_lateral) ;; *) exit 3 ;; esac
+case "$MODE" in collective|wind_stage4|wind_stage4_late|aero_probe|aero_force_probe|aero_wind0|aero_wind3|aero_wind3_tilt|differential|yaw|yaw_small|roll_pitch|roll_pitch_small|braking|heldout_mix|heldout_mix_small|kinematic_probe|kinematic_yaw|kinematic_steps|small_steps|rotor_probe|contact_probe|field_forced0|field_forced1|field_toggle|field_toggle_high|field_toggle_air|field_trace|field_recovery|cadence20|cadence50|cadence100|frame_probe|frame_lateral) ;; *) exit 3 ;; esac
 docker exec -i "$CONTAINER" bash -c 'source /opt/ros/noetic/setup.bash; python3 - /tmp/foundation_commands.jsonl "$1"' _ "$MODE" < "$HERE/pwm_collective.py" > "$HERE/player.log" 2>&1
 PLAYER_STATUS=$?
 # Stop the dedicated simulator as soon as the guarded player exits, including
