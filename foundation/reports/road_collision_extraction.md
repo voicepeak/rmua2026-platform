@@ -222,7 +222,111 @@ origin is not the hit point, and runtime channels and full shape alignment are
 not established. Evidence: `contact_sprite_match_seed456.json` and
 `datasets/contact_source_seed456_20261107`. G01 remains open.
 
+### Startup contact candidate surface
+
+Two new, unforced seed-123/456 processes captured the contact callback's source
+component transform and 136 candidate hit-result bytes in the same breakpoint.
+Each run produced four callbacks. The nearest saved candidate transform is
+`1_1_Port/R_logo_Sprite1`; the independently decoded candidate vector at byte
+offset `0x18` lies within 1.5e-8 cm of that candidate sprite's transformed box
+surface in all eight callbacks. The result, runtime source-transform errors,
+next-nearest distances and complete source hashes are in
+`contact_surface_seed123.json` and `contact_surface_seed456.json`.
+
+The eight callbacks cover the same startup location and effectively the same
+surface point; the tiny numerical residual is not a physical accuracy bound.
+Component identity is inferred from transform matching rather than decoded UE
+names, and the `0x18` field is a candidate hit point rather than independently
+typed metadata. Both runs use all-stop GDB. This evidence strengthens the
+local sprite geometry and attribution but does not verify the rest of OL1,
+arbitrary contacts, channels or contact response; G01 remains open.
+
 With both simple-building and sprite candidates enabled, 9,273 instances are
 queryable. This count is a static asset inventory, not verified collision
 coverage. Standalone sprites' effective runtime profile and channel remain
 unknown, as do unlisted non-sprite objects and construction effects.
+# Rack child-actor candidates (2026-11-08)
+
+The serialized OL1 map contains 240 `BP_Rack_C` child actors and 1,440 static
+mesh components. `foundation.rack_placements` follows each component's
+attachment chain across the rack and owning building Blueprint templates;
+all 1,440 have candidate placements, with no unresolved attachment. Their
+source hashes are recorded in `OL1_rack_placements_candidate.json`. A nested
+attachment unit test checks the composition and rejects mesh overrides.
+
+Five rack mesh assets were parsed. Frame, lights and rack each contain one
+serialized convex element; paper and pointer contain none. All five have a
+decoded cooked triangle prefix, but their collision trace flags are omitted and
+therefore unknown. The optional `CandidateMap.load(...,
+include_unverified_racks=True)` adds the 960 components backed by these three
+simple convex meshes. With the existing optional simple and sprite candidates,
+the scene has 10,233 queryable candidate instances. The 480 paper and pointer
+components are not included by that option. Tests exercise opt-in behavior and
+a candidate ray intersection.
+
+These are not verified official collisions: construction scripts, child-actor
+runtime transforms, trace flags, collision channels, and official contact results
+still require independent validation. The default scene remains unchanged and
+G01 remains unaccepted.
+
+## Road auxiliary cube candidates (2026-11-08)
+
+The 471 `BP_Segment_Rot_C` actors each serialize four cube components.
+`foundation.rack_placements` can also follow these attachment chains through
+the parsed `BP_Spline` Blueprint. All 1,884 cube transforms were composed with
+no unresolved chains and recorded in `OL1_road_cubes_candidate.json`; map and
+Blueprint hashes are included. As a consistency check, the same composition
+for all 471 main `Segment` components exactly matches the previously generated
+road placements in position and rotation. That is a comparison of two static
+calculations, not an independent runtime validation.
+
+The four cube templates import `/Engine/BasicShapes/Cube`; their serialized
+collision profile is absent, so the effective runtime setting remains unknown.
+The opt-in `include_unverified_road_cubes=True` uses the packaged cube's simple
+box. With all four optional groups enabled, 12,117 candidate instances are
+queryable. A unit test checks the count and a self-intersection. No claim is made
+that these cube components block the official drone; official channel and
+contact validation are still required.
+
+## Gate mesh and candidate geometric events (2026-11-08)
+
+The 12 `BP_Gate_C` actors each contain one `StaticMesh` component using
+`/Engine/EngineMeshes/Cube`; their Blueprint template does not serialize a
+collision profile. `OL1_gate_mesh_placements_candidate.json` records all 12
+composed transforms with no unresolved components and source hashes. These
+centers and rotations exactly match the OL1 static map summary, which is another
+export of the same source and is not independent runtime evidence. The local
+cube bounds are approximately 256 cm per axis. For the first gate the scaled
+full mesh dimensions are approximately 11.392 × 4.760 × 6.271 m in its local
+axes. This is the bounding volume of a solid mesh; it is not evidence of a
+physical aperture, a solid obstacle, a trigger direction or official scoring.
+
+`GateMeshVolumes` provides a candidate center-plane crossing query with an
+explicitly selected local axis and reports direction, position and segment
+fraction. It can be passed to `PhysicsSim` with an explicit UE/NED origin; the
+simulator emits unverified geometric events, never an official score. Tests
+cover rotated crossings, reverse direction, misses, substep boundaries, all
+12 candidate gates and simulator event propagation. When a collision and a
+gate event occur in the same substep, no exact contact ordering is claimed.
+Official trigger direction, aperture and runtime semantics remain unverified.
+
+### Runtime gate-root correspondence
+
+An independent historical seed-123 OL1 process recorded 12 runtime gate root
+transforms at the gate initialization breakpoint `0x2fc1360`. Its manifest
+reports the expected 12.0.0.5 binary hash, and the source log and manifest are
+hashed in `gate_runtime_root_comparison.json`. A one-to-one minimum-distance
+matching against the 12 extracted candidates produces maximum position,
+rotation and scale differences of 0.00000075 cm, 0.00000348 degrees and
+0.000000435 respectively. The nearest alternative gate center is more than
+28 m away, so positional assignment is unambiguous at the logged precision.
+A separate seed-456 stationary process gives the same maximum discrepancies;
+its log and run-manifest hashes are recorded in
+`gate_runtime_root_comparison_seed456.json`.
+
+This is substantially stronger evidence for startup gate-root placement than
+comparing two static exports. Runtime FNames were not decoded, however, and the
+results come from startup observations with all-stop GDB and rounded text output. They
+do not validate a physical aperture, collision profile, crossing direction or
+official scoring behavior, and they do not establish complete G01 acceptance.
+

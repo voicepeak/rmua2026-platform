@@ -151,3 +151,69 @@ calculation and its local configured constant, not end-to-end latency, actual
 physics step, all force/torque coupling, or behavior without debugger timing
 perturbation. The two initial probes at `0x269af00` captured reset, not ongoing
 updates, and are retained separately.
+
+## Paired physics-loop and rotor observation
+
+A fresh seed-2026 process used the bounded small mixed-axis waveform and
+read-only breakpoints at the physics-loop input and each rotor update. It
+completed and stopped its dedicated container. The log contains 83 candidate
+physics-input snapshots and 719 rotor snapshots across four rotor pointers.
+In the 0.30–0.80 s window, 22 physics snapshots could be compared with
+two-sided pose-derived velocity estimates. Their vector differences had median
+0.0633 m/s, p95 0.0702 m/s and maximum 0.0743 m/s. Per-sample native velocity,
+wind, angular velocity, orientation, nearest rotor states and hashes are
+retained in `kinematic_probe_seed2026.json`.
+
+The two measurements do not share a calibrated physical timestamp: GDB
+monotonic capture and ROS arrival differ, and pose velocity is estimated using
+future samples. Rotor snapshots are asynchronous and pointer-to-motor index is
+not established. The result exposes an initial-state/timing error scale; it is
+not a measured physical latency or a justification to replace the initial
+state in a held-out replay. Collision-free motion remains unproven.
+
+### Initial-state sensitivity, including negative result
+
+For each of the two kinematic-probe runs, `replay_observed_state.py` compares
+four combinations of pose-derived versus candidate native initial velocity,
+and commanded versus sampled filtered rotor state, over the same 0.30–0.80 s
+window. For seed 2026/456, maximum position error with derived velocity and
+commanded motor state was 0.0186/0.0171 m; using the native velocity instead
+increased it to 0.0502/0.0396 m. Substituting sampled rotor states changed
+these maxima by less than 0.0002 m in the tested windows. Per-sample errors,
+snapshot ages, pointer order and hashes are in
+`observed_state_replay_seed2026.json` and `observed_state_replay_seed456.json`.
+
+The native snapshot was taken about 0.8/18.4 ms before the selected pose
+arrival and individual rotor snapshots up to 12.7/20.6 ms before it. These are
+host-time gaps, not calibrated measurement times. The worse native-velocity
+result demonstrates that substituting it directly is not justified; possible
+causes include source/arrival delay, reference-point differences, contact and
+model error. The four alternatives all use the same recording and are not
+independent calibration or Gate B acceptance.
+
+### Source-time investigation
+
+In the same 0.30–0.80 s host-arrival windows, pose header time advanced at
+approximately 0.747/0.832 times the host arrival duration for seeds 2026/456.
+When pose velocity is differentiated against header time rather than arrival
+time, its median vector difference from the physics-input velocity drops from
+0.0633/0.0468 m/s to 0.00242/0.00220 m/s. The direct input still has only a
+host breakpoint timestamp and is paired to pose arrival, not synchronized to
+the physical measurement. See `kinematic_clock_seed2026.json` and
+`kinematic_clock_seed456.json` for samples and hashes.
+
+An exploratory replay maps command publication arrivals onto the pose header
+clock by interpolation, uses that clock for integration and uses the same
+native and motor snapshots as before. Maximum position error for the
+pose-derived-velocity/command-motor combination is 0.00255/0.00465 m, versus
+0.0186/0.0171 m under arrival-time integration. With native velocity it is
+0.00844/0.00962 m, versus 0.0502/0.0396 m before. The sampled-motor variants
+and all per-sample results are in `observed_state_source_clock_seed2026.json`
+and `observed_state_source_clock_seed456.json`.
+
+This comparison is posthoc on the same runs, and mapping command time through
+pose arrivals does not establish when the physical command was applied. Header
+clock semantics, ROS queueing, native snapshot timing and contact remain
+unverified; source-time interpolation cannot be promoted as a calibrated clock
+or used to claim a held-out Gate B pass. It does identify a likely time-base
+contribution that warrants direct clock instrumentation.

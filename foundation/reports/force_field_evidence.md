@@ -28,6 +28,166 @@ observations and retains the source hash. Predicate transitions were recorded
 before the stored flag update, so they are not a complete per-tick signal;
 the run used GDB and one particular route/stage.
 
+The saved predicate disassembly (`field_predicate_disassembly.txt`) further
+shows an early raw float-field comparison, followed by a weak-reference flag
+and four short-circuit object-array checks. The called accessors read either a
+byte flag (`+0x220` or `+0x238`) or perform a signed comparison between two
+32-bit fields (`+0x288 > +0x2b4`); the supporting instruction listings are in
+`field_regionA_disassembly.txt`, `field_regionB_disassembly.txt` and
+`field_regionC_disassembly.txt`. This explains why geometry alone cannot yet
+reproduce the predicate: the membership state and object types feeding these
+fields must also be established. The float operands and object fields remain
+unlabeled; their spatial meaning is not inferred from these instructions.
+
+## Candidate road box volumes and event comparison
+
+The serialized `BP_Segment_Rot` Blueprint contains three `BoxComponent`
+templates: `ChargeArea`, `TriggerEnter` and `TriggerExit`. Their respective
+local half-extents are (1400, 550, 350), (990, 600, 350), and
+(32, 550, 350) UE cm. Composing template and serialized attachment chains
+produces 1,413 candidate boxes over 471 road actors, with no unresolved chains;
+the map and Blueprint hashes are in `OL1_road_box_volumes_candidate.json`.
+`CandidateBoxVolumes` queries point containment and signed distance under an
+explicit UE/NED origin. It does not equate those boxes with force-field zones.
+
+In the existing seed-123 unmodified-stage segment-event trace, all 99 events
+have an accepted nearest GPS callback. Under the candidate startup origin,
+98 of those points fall inside at least one `ChargeArea` and 93 inside at
+least one `TriggerEnter`; none fall inside any `TriggerExit`. The complete
+breakdown and source hashes are in `road_box_event_comparison.json`. This is
+an exploratory broad union across *all* road actors, not a match to each event's
+spline or segment; callback arrival and GPS position are not synchronized, and
+the drone is not a point. In particular, the absence of point containment in
+`TriggerExit` is an unresolved mismatch, not proof that those components fail
+to generate overlaps. Blueprint defaults, runtime transforms/profiles, actor
+association and object membership still require validation before using these
+boxes to drive degradation or claiming F01.
+
+### Spline and tentative segment association
+
+The recorded event spline's FName pair matches an independently captured
+runtime inventory entry whose root position uniquely matches serialized spline
+`1_1`; restricting the above search to its 33 road actors leaves 99 candidate
+boxes and the same broad-union counts. This is a cross-process FName/root
+correspondence, not decoded object identity. The actors' serialized numeric
+suffixes form the consecutive sequence 242–274. A hypothesis selected after
+examining this trace maps event indices 32–0 to actor suffixes 242–274.
+
+Under that unverified mapping, the 33 enter-type points have a median signed
+distance of -0.207 m from their associated `ChargeArea` boundary, with 0.425 m
+95th-percentile absolute distance; the 33 exit-type points have median signed
+distance +0.271 m and 0.493 m 95th-percentile absolute distance. The third
+event type lies deeper inside. Nearest GPS-arrival gaps reach 42.6 ms and the
+drone has finite extent, so a nonzero residual is expected but cannot by itself
+be assigned to either cause. Full data and hashes are in
+`road_box_events_segment_hypothesis.json`.
+
+This substantially narrows a plausible road-overlap mechanism but the mapping
+was chosen from the same data, and other predicate branches exist. Independent
+runtime actor-to-segment identification and synchronized enter/exit tests are
+needed before those boxes can control the field automatically. `TriggerExit`
+point containment remains unverified and F01 remains open.
+
+A separately launched 4 m/s repeat with the mapping fixed in advance observed
+33 events on the first 12 segments. Enter/exit point-to-boundary absolute
+distance p95 was 0.261/0.354 m, respectively. The full protocol, partial
+coverage and remaining uncertainties are in `segment_repeat_protocol.md`;
+this supports the tentative association but does not close F01.
+
+### Road, port and factory union as an opt-in proxy
+
+The serialized OL1 port and factory Blueprints each contain an `Extent`
+`BoxComponent`. The same attachment resolver produced 12 port and 12 factory
+candidate boxes, without unresolved chains, alongside the 471 road
+`ChargeArea` boxes. In the historical raised-route predicate trace, the
+startup sample lies inside the candidate `1_1_Port` extent while the road
+union does not contain it; the snapshot also has a passing `array40` object,
+previously root-matched to a port. That initial GPS sample arrives about 1.57 s
+after the predicate snapshot and is excluded from the timely comparison.
+
+Among the seven later transition snapshots with nearest GPS arrival within
+0.1 s, road-union point containment agrees with the observed predicate in six;
+one predicate-zero sample is about 0.07 m inside a road box. Adding the port
+and factory boxes does not change those seven results. The full record and
+source hashes are in `field_road_port_factory_predicate_comparison.json`.
+These are selected transition observations, not a continuous confusion matrix,
+and point position, clock pairing, the vehicle footprint and other branches
+remain uncertain.
+
+`CandidateRegionUnion` and the optional `PhysicsSim(candidate_field=...)`
+provide an explicit training approximation combining the extracted road, port
+and factory boxes. The simulator samples the vehicle center at each physics
+substep, applies the candidate 0.25/1.0 target scale, and can report a separate
+out-time request. It does not run by default and its status remains unverified:
+there is no exact overlap geometry, crossing time, side-route/weak-reference
+handling, event latency or official state-machine equivalence. F01 remains open.
+
+An independent repeat on the same nominal route yielded five matches and five
+mismatches in ten timely paired transition observations, contradicting any
+claim of exact point-union prediction. See `field_natural_repeat_protocol.md`.
+The original seven-sample result is retained as a separate pilot, and the
+training approximation must not be promoted to an official field model.
+
+### Blueprint detection sphere hypothesis
+
+The packaged `BP_FlyingPawn` Blueprint has a `SphereComponent` named
+`JianCeQiu`, with serialized radius 2 cm, relative offset (0, 0, 6) cm and
+`OverlapAll` profile. Its construction-script node is a child of `Mavic3`.
+The `Mavic3` mesh imports `Drone2024R_Body`, whose serialized simple collision
+has one convex element with local bounds approximately (-12.99..11.88,
+-15.18..15.16, -0.07..12.94) cm. These are Blueprint/asset defaults, not yet
+verified runtime instance settings. Source hashes and geometry are preserved
+in `blueprints/BP_FlyingPawn.json` and `drone_simple_collision_candidates.json`.
+
+An exploratory hypothesis treats the cached runtime component as the sphere's
+parent, rotates the 6 cm offset using the nearest accepted ROS orientation,
+and tests a 2 cm sphere against the candidate road/port/factory boxes. In the
+three earlier transition recordings it matched all 43 eligible events; three
+events lacked an accepted orientation within 0.1 s. In two previously recorded
+periodic datasets it matched all 626 eligible samples in each, with 11 and 21
+samples respectively excluded by the orientation-gap rule. Per-sample data,
+exclusions and hashes are in `sphere_field_direct_pose_*` and
+`sphere_field_periodic_*`/`sphere_field_lift6_*` reports.
+
+This geometric hypothesis was chosen after examining the prior results. The
+cached component has not been independently identified as `Mavic3`, the actual
+overlap event has not been traced to `JianCeQiu`, and frame conversion, instance
+scale, geometry and asynchronous orientation remain assumptions. The repeated
+samples are correlated and cover similar routes; none of this proves F01 or
+justifies replacing the current default with this hypothesis. A new predeclared
+experiment and direct event-component attribution are required.
+
+Two further fresh seed-123/456 startup processes inventoried pointers owned by
+the drone actor during the contact callback. The actor's `+0x130` pointer
+matches the callback's drone component; `+0x348` points to a component whose
+position is exactly 6 cm above that root in these near-identity startup poses.
+The `+0x340` component is 6.444708 cm above it, matching the Blueprint
+`Outermost` box default to the printed precision. Results and source hashes are
+in `drone_components_seed123.json` and `drone_components_seed456.json`.
+This strengthens the candidate association of `+0x348` with `JianCeQiu`, but
+FNames/classes have not been decoded and neither the sphere radius nor its
+participation in natural field events has been observed through those pointers.
+The startup matches are not independent checks under rotation or flight.
+
+A new seed-123 startup observation records the candidate `+0x348` object's
+virtual-table pointer as `0x10c66b8`; the same verified binary exports
+`vtable for USphereComponent` at `0x10c66a8`. The 16-byte difference matches
+the usual Itanium C++ vtable address-point offset, strengthening the component
+type attribution. The raw component snapshot contains float32 2.0 at several
+offsets, including `0x460`, but none is independently typed as the radius;
+do not promote that value as a runtime measurement. Hashes, symbol evidence and
+the complete list are in `drone_sphere_vtable_seed123.json`. The type match
+still does not prove this component supplies the natural field overlap event.
+
+`CandidateSphereRegionUnion` now exposes this sphere/box hypothesis as an
+explicit opt-in spatial field to `PhysicsSim`. The caller must supply the UE
+local offset, radius and origin; the implementation uses the candidate UE/NED
+reflection and unit component scale, and evaluates overlap at the start of each
+physics substep. Point-based `CandidateRegionUnion` remains available. Unit
+tests exercise sphere/box corners, body offset and simulator integration.
+The spatial field remains unverified and does not imply exact crossing time,
+overlap events, full zone coverage or official state-machine behavior.
+
 The archived `hub_lift_cause_20261104/outtime_branch.objdump.txt` shows that
 the observed branch adds a float32 tick delta to `GameState+0x1ac` only when
 `+0x180` is zero; it requests state 12 when the accumulated value is strictly
@@ -148,6 +308,17 @@ wind, the first sample of each target can lag the physical update, initial
 velocity comes from posthoc pose, and all-stop GDB perturbs timing. This is
 an exploratory same-run comparison under injected flags, not a natural
 boundary test, a held-out calibration, or F01 acceptance.
+
+The same two records have now also been replayed through the integrated
+`PhysicsSim`/`RecordedEffects` interface with no wind model: flags switch at
+the same estimated target-observation times as in the direct replay. Maximum
+position errors agree to displayed precision (0.0411/0.1090 m for attenuation
+plus recovery), and the no-attenuation and no-recovery alternatives also agree.
+The pipeline results and source hashes are in
+`field_recovery_integrated_seed123.json` and
+`field_recovery_integrated_seed456.json`. This verifies implementation
+consistency only: both methods use the same captured runs and estimated switch
+times, with all the debugger, initial-state and contact limitations above.
 
 F01 still requires an independently timed controlled crossing with pose, raw
 commands, IMU, debug rotor observations and state transitions, including two
