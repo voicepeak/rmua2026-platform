@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "asset": "BP_FlyingPawn",
+      "source_sha256": "0053a5adfe73ca1dc9a6d97bad8ed62eb864cd5756fd3af7d297c6573166b49f",
+      "body_count": 0,
+      "collision_trace_flag": null,
+      "simple_shapes": {},
+      "triangle_status": "not decoded"
+    },
+    {
+      "asset": "Drone2024R_Body",
+      "source_sha256": "819becd51272fc7aeb8b9f8b5b60cb9ba4dbfd61b60515f9188e77486562fb12",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 17539,
+      "triangle_count": 29173
+    }
+  ],
+  "limitations": [
+    "decoded data is local mesh space, not world aligned",
+    "an omitted collision trace flag is unknown, not an assumed default",
+    "not every cooked prefix is necessarily used for runtime collision",
+    "materials, channels and actor construction remain unverified"
+  ]
+}

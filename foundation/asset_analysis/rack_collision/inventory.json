@@ -1,0 +1,66 @@
+{
+  "assets": [
+    {
+      "asset": "Rack_Frame",
+      "source_sha256": "a23b59f276544e6c66b23f60cca0086d7103fdd81c3a011e5fd032c4f2aab487",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 16,
+      "triangle_count": 28
+    },
+    {
+      "asset": "Rack_Lights",
+      "source_sha256": "77bf53b059514c8f40e66de315cf363d76322048ce5bf505d77e1118d023aeb7",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 72,
+      "triangle_count": 132
+    },
+    {
+      "asset": "Rack_Paper",
+      "source_sha256": "a0786bbf25b3b00e337615b22cb176a8140b3623caa2e5e18acecf2968d5dffe",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {},
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 4,
+      "triangle_count": 2
+    },
+    {
+      "asset": "Rack_Pointer",
+      "source_sha256": "a3df6a37072d4779e69f546cbcbc771afe1b704f470975548c245be558416582",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {},
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 9,
+      "triangle_count": 7
+    },
+    {
+      "asset": "Rack_Rack",
+      "source_sha256": "0fbdc14cc2a35552bc9d65d4a66bc108b4aa5da5988201ca21a8e0ba23b6b46c",
+      "body_count": 1,
+      "collision_trace_flag": null,
+      "simple_shapes": {
+        "ConvexElems": 1
+      },
+      "triangle_status": "decoded_prefix",
+      "vertex_count": 76,
+      "triangle_count": 136
+    }
+  ],
+  "limitations": [
+    "decoded data is local mesh space, not world aligned",
+    "an omitted collision trace flag is unknown, not an assumed default",
+    "not every cooked prefix is necessarily used for runtime collision",
+    "materials, channels and actor construction remain unverified"
+  ]
+}

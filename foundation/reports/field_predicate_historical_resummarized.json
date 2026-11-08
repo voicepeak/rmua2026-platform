@@ -1,0 +1,347 @@
+{
+  "events": [
+    {
+      "field_14": -2.782291889190674,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": [
+            {
+              "flag": 1,
+              "index": 0,
+              "object": "0x7fffdcda7600",
+              "passed": true
+            }
+          ]
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125366.798459895,
+      "out_timer": 0.0,
+      "predicate": 1,
+      "state": 0,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1793789221.1535015,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 1.5690102329972433,
+        "gps_stamp_ros_s": 1793789222.6164262,
+        "position": [
+          -0.00026493987708524645,
+          0.0016623182585796792,
+          0.3137017370094587
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13312.2470703125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125483.730306683,
+      "out_timer": 0.0,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1793789338.0853477,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.03721388899430167,
+        "gps_stamp_ros_s": 1793789337.7738829,
+        "position": [
+          555.6199263609283,
+          -117.5254856138519,
+          -133.32484066565058
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13329.1494140625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe19230400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125484.130103114,
+      "out_timer": 0.4000013768672943,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1793789338.4851444,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.03748074299073778,
+        "gps_stamp_ros_s": 1793789338.1758914,
+        "position": [
+          557.6955350296537,
+          -116.75806486283625,
+          -133.33938190133068
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13369.6328125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125484.683078268,
+      "out_timer": 0.4000013768672943,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1793789339.0380924,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.015497779997531325,
+        "gps_stamp_ros_s": 1793789338.673902,
+        "position": [
+          560.3434992330211,
+          -115.65130654775353,
+          -133.80291681880294
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13401.7314453125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe19230400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125485.580752491,
+      "out_timer": 1.3000035285949707,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1793789339.9357934,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.013225465008872561,
+        "gps_stamp_ros_s": 1793789339.5739212,
+        "position": [
+          564.6512852310879,
+          -113.79173648268896,
+          -134.07646510345225
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13453.978515625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125486.580583502,
+      "out_timer": 1.3000035285949707,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1793789340.9356244,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.013158361005480401,
+        "gps_stamp_ros_s": 1793789340.5729425,
+        "position": [
+          568.512173963975,
+          -112.00330388008605,
+          -134.53145201910726
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13459.8369140625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe19230400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125487.181099661,
+      "out_timer": 1.9000049829483032,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1793789341.5361404,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.013652773006469943,
+        "gps_stamp_ros_s": 1793789341.1729553,
+        "position": [
+          569.5734939923575,
+          -111.50934213276926,
+          -134.66591191404464
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13478.939453125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 125487.831687467,
+      "out_timer": 1.9000049829483032,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1793789342.186728,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.03578703600214794,
+        "gps_stamp_ros_s": 1793789341.8749704,
+        "position": [
+          570.6627341559623,
+          -110.99169345563924,
+          -134.9813450419587
+        ],
+        "accepted": true
+      }
+    }
+  ],
+  "source_sha256": {
+    "log": "b9cf3afe77bbaed5454c2b77bfd06aea7f5e396d21a64b0e33c95e83b087855e",
+    "gps": "a62561b3dcc8ecdcbc04c441e0577a202bdfbd30c40fdc9e96d504bc8e69eb05"
+  },
+  "limitations": [
+    "nearest callback arrival is not synchronized physical pose",
+    "only predicate changes logged; debugger perturbs timing"
+  ]
+}

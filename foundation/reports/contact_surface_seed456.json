@@ -1,0 +1,99 @@
+{
+  "status": "runtime contact source and candidate surface comparison; not complete G01",
+  "seed": 456,
+  "event_count": 4,
+  "events": [
+    {
+      "monotonic_s": 457608.057277467,
+      "candidate_actor": "1_1_Port",
+      "candidate_component": "R_logo_Sprite1",
+      "candidate_mesh": "unverified_sprite:Rlogo_Sprite",
+      "runtime_component_ptr": "0x7bf716f52070",
+      "source_transform_error_cm": 1.2232339126064355e-06,
+      "second_nearest_transform_distance_cm": 237.953203578583,
+      "source_rotation_error_deg": 3.4768912770948763e-06,
+      "candidate_hit_point_cm": [
+        -4.7850341796875,
+        0.2733917236328125,
+        -39.00003433227539
+      ],
+      "candidate_surface_distance_cm": 1.4901161193847656e-08,
+      "hit_bytes_sha256": "2c793c5d3aebb877c870d776210c775a28019366bcf1d219729eb1a9f0a75f67"
+    },
+    {
+      "monotonic_s": 457608.105134783,
+      "candidate_actor": "1_1_Port",
+      "candidate_component": "R_logo_Sprite1",
+      "candidate_mesh": "unverified_sprite:Rlogo_Sprite",
+      "runtime_component_ptr": "0x7bf716f52070",
+      "source_transform_error_cm": 1.2232339126064355e-06,
+      "second_nearest_transform_distance_cm": 237.953203578583,
+      "source_rotation_error_deg": 3.4768912770948763e-06,
+      "candidate_hit_point_cm": [
+        -4.7850341796875,
+        0.2733917236328125,
+        -39.00003433227539
+      ],
+      "candidate_surface_distance_cm": 1.4901161193847656e-08,
+      "hit_bytes_sha256": "c3d77b055d9d491dfa03d8dbb4e815a5ab9e793c4dfd82c7cf6f452e6dda91fe"
+    },
+    {
+      "monotonic_s": 457611.605966916,
+      "candidate_actor": "1_1_Port",
+      "candidate_component": "R_logo_Sprite1",
+      "candidate_mesh": "unverified_sprite:Rlogo_Sprite",
+      "runtime_component_ptr": "0x7bf716f52070",
+      "source_transform_error_cm": 1.2232339126064355e-06,
+      "second_nearest_transform_distance_cm": 237.953203578583,
+      "source_rotation_error_deg": 3.4768912770948763e-06,
+      "candidate_hit_point_cm": [
+        -4.7850341796875,
+        0.2733917236328125,
+        -39.00003433227539
+      ],
+      "candidate_surface_distance_cm": 1.4901161193847656e-08,
+      "hit_bytes_sha256": "a7d963f130fa50941198eb509367b8f48749e77440ce1308c7807e3f57360b2d"
+    },
+    {
+      "monotonic_s": 457611.655245713,
+      "candidate_actor": "1_1_Port",
+      "candidate_component": "R_logo_Sprite1",
+      "candidate_mesh": "unverified_sprite:Rlogo_Sprite",
+      "runtime_component_ptr": "0x7bf716f52070",
+      "source_transform_error_cm": 1.2232339126064355e-06,
+      "second_nearest_transform_distance_cm": 237.953203578583,
+      "source_rotation_error_deg": 3.4768912770948763e-06,
+      "candidate_hit_point_cm": [
+        -4.7850341796875,
+        0.2733917236328125,
+        -39.00003433227539
+      ],
+      "candidate_surface_distance_cm": 1.4901161193847656e-08,
+      "hit_bytes_sha256": "06027137fe70b58e5f9621111936f79048a7045ef8c01627d8507f1d54aa7201"
+    }
+  ],
+  "max_candidate_surface_distance_cm": 1.4901161193847656e-08,
+  "source_sha256": {
+    "run": "056a67bd0c79b3fa37a9911aadabe105f107957cdb8f824a6f656d21e2c37aed",
+    "binary_check": "b2d39184167cbc1b2dfbdd3ea043e3ffc7c68d85e5e7fb3858cce237aafa416b",
+    "log": "21228ed38b2384b89f39710f5f63b552c4ec8e97d69493e9df55d423e0765a6e",
+    "map": {
+      "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+      "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+      "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+      "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+      "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+      "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+      "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+      "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e",
+      "OL1_sprite_placements_candidate.json": "92c05a3ab3b515bb41d04134610fe5803a50b8a9965c03965cba17304ffaac1b",
+      "sprite_collision_candidates.json": "eb657d0f8ec0e67511ad266163aae4b803e9519b35ec7b0e15dfcdf30d050cdc"
+    }
+  },
+  "limitations": [
+    "candidate hit point offset 0x18 not independently typed",
+    "source component identity inferred from nearest transform, names not decoded",
+    "only captured contact points and one local area are covered",
+    "GDB all-stop changes timing, collision channels and response not fully established"
+  ]
+}

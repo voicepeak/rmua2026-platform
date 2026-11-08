@@ -1,0 +1,24 @@
+{
+  "status": "runtime vtable correspondence, not event attribution",
+  "symbol_vtable": "0x10c66a8",
+  "object_vptr": "0x10c66b8",
+  "vptr_offset_bytes": 16,
+  "matches_itanium_address_point": true,
+  "float32_equal_2_offsets": [
+    "0x10c",
+    "0x110",
+    "0x114",
+    "0x118",
+    "0x460"
+  ],
+  "source_sha256": {
+    "log": "8f3ad6df0097292add80b32c173191012dcf2c15757f5798ac6351adbd375d4d",
+    "symbol": "f7d2b28cad8c42f0ce4bf6f1674e35c96d43de5614666e54f4e76e133aa3143f",
+    "run": "e421d7fb215659903d30c2fc9ea01bf312ad9fe86f4069bcc505f4a09ce585f1"
+  },
+  "limitations": [
+    "2.0 float offsets are untyped and do not independently establish sphere radius",
+    "one instrumented startup process; UE reflection name not decoded",
+    "type correspondence does not prove field-event binding"
+  ]
+}

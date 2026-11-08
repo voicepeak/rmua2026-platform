@@ -1,0 +1,92 @@
+{
+  "status": "startup transform correspondence, runtime names and use not verified",
+  "seed": 123,
+  "root": {
+    "actor": "0x770c159eb530",
+    "component": "0x770a1ec610f0",
+    "fname": "776463,0",
+    "class": "0x770c1c933300",
+    "position_cm": [
+      0.0,
+      0.0,
+      -37.908268
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "candidates": {
+    "JianCeQiu_candidate": {
+      "actor_offset_hex": "0x348",
+      "actor": "0x770c159eb530",
+      "component": "0x770a3345cdd0",
+      "fname": "776445,0",
+      "class": "0x770c1c9c0380",
+      "position_cm": [
+        0.0,
+        0.0,
+        -31.908268
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "relative_delta_cm": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "blueprint_default_offset_cm": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "difference_cm": 0.0
+    },
+    "Outermost_candidate": {
+      "actor_offset_hex": "0x340",
+      "actor": "0x770c159eb530",
+      "component": "0x770a338c1be0",
+      "fname": "776478,0",
+      "class": "0x770c1c9b0600",
+      "position_cm": [
+        0.0,
+        0.0,
+        -31.4635601
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "relative_delta_cm": [
+        0.0,
+        0.0,
+        6.444707900000001
+      ],
+      "blueprint_default_offset_cm": [
+        0.0,
+        0.0,
+        6.444707870483398
+      ],
+      "difference_cm": 2.951660249550514e-08
+    }
+  },
+  "source_sha256": {
+    "log": "3c7ad941da42f3f7d6e2fc42f9e7d852ae6f33787843a4e57e28bc2284555e4a",
+    "run": "333107d7982f0a607e26e5961f37715559dec267947a025e5dd90e2e7d6b97c4",
+    "blueprint": "0053a5adfe73ca1dc9a6d97bad8ed62eb864cd5756fd3af7d297c6573166b49f"
+  },
+  "limitations": [
+    "one startup pose with near-identity orientation",
+    "object fields and names not independently decoded",
+    "actor offsets and component identity may vary by build or instance",
+    "does not establish sphere overlap event participation"
+  ]
+}
