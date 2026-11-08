@@ -1,0 +1,51 @@
+{
+  "status": "historical ROS-layer evidence, not actuator application or physical clock measurement",
+  "library_sha256": "69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885",
+  "rea_evidence_id": "ev_973adbf0e4ccf263a1fde36aabe78b2118a0e8340f3ce5cde2e7d119d8ba186a",
+  "pwm_header_interpretation": "rotor values use GET_ROTOR_PWM; header uses separate GET_IMU_DATA timestamp",
+  "runs": 6,
+  "seeds": [
+    123,
+    456,
+    2026
+  ],
+  "sender_return_to_command_callback_p99_ms_range": [
+    0.337548,
+    0.430503
+  ],
+  "matched_callback_to_debug_publish_count": 30,
+  "matched_callback_to_debug_publish_ms_range": [
+    15.628455,
+    62.193814
+  ],
+  "source_sha256": {
+    "decompilation": {
+      "path": "D:/RMUA2026-re/repo/artifacts/rea/ros_transport_functions_rea.json",
+      "sha256": "915b4c8b3d5e421409b76b6f747234072f2d87f36a01bb2c02be10b969dfbf16"
+    },
+    "transport_matrix": {
+      "path": "D:/RMUA2026-re/repo/experiments/transport_matrix_20261105/summary.json",
+      "sha256": "35d0d26d81e79916e499fa60f5dc687e913c6b0581748958d533757d9e5d265b"
+    },
+    "unhooked_comparison": {
+      "path": "D:/RMUA2026-re/repo/experiments/transport_control_comparison_20261105/summary.json",
+      "sha256": "a6662b2d6fae0be69fe57c73a325247b998f43ed638a9a1827467b500f3b1a12"
+    },
+    "interposer_source": {
+      "path": "D:/RMUA2026-re/repo/scripts/ros_publish_interpose.c",
+      "sha256": "b7f9b7a64d28f16110d597ed389fca9af1d1ff5bd5a4d7f9dfab39871301335c"
+    },
+    "library": {
+      "path": "D:/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so",
+      "sha256": "69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885"
+    }
+  },
+  "limitations": [
+    "historical preload hook and ROS observers can change scheduling",
+    "published values matching commands are observational, not causally proven actuator state",
+    "sender-return timing omits time before publish returned",
+    "source header is a separate IMU request, not motor sample time",
+    "physical application time, contact and clock mapping remain unobserved"
+  ],
+  "analysis_sha256": "1d95520c8c7e3a0cf5bc40ab028ebc44d381c488c6798cfb47e9b2453b941a41"
+}

@@ -1,0 +1,2585 @@
+{
+  "status": "metadata eligibility audit; not proof of free flight, independence or G1 acceptance",
+  "groups": {
+    "cadence100": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d06_cadence100_seed123_20261107",
+          "mode": "cadence100",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 123,
+          "seed_recorded_by_pool": 123,
+          "requested_rate_hz": 100,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 339,
+            "imu": 339,
+            "rotor_pwm": 339,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 189,
+          "median_host_interval_s": 0.010231865500000001,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "55788198314392bdd543ab6e1baf01ae9568652af21a660eba822903622a18d1",
+            "commands.jsonl": "1ffb1990b3eaab40e9038294931d51f0acc1ab77f74543bcf098ac0e7fa3a1c5",
+            "capture.jsonl": "29561a95a4229cd54d4613a30f208aa4fa8f25f40fe8118ba2a186aa5f158768",
+            "pool/pool.json": "02188a2c0875483460c3e9a031171e8317a35a13521ba5b1d4e8d62440ced871"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_cadence100_seed2026_20261109",
+          "mode": "cadence100",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 2026,
+          "seed_recorded_by_pool": 2026,
+          "requested_rate_hz": 100,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 340,
+            "imu": 340,
+            "rotor_pwm": 340,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 189,
+          "median_host_interval_s": 0.0102363355,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "04fdbb6c5d936ca5b6c1fb9362ce3f051d5eef8342f6a8bfb75a87a87675c947",
+            "commands.jsonl": "aee5c37e00f126fb5513892d153bcaa27312a3e371fad622c4c2561cd0222462",
+            "capture.jsonl": "2ecec0e65cb4ddbb1fe05a159ebd626033412aba91971988fe2461964ba12f30",
+            "pool/pool.json": "5f0a40cbf6c82fae5a5c3bd81980d2519503aa14949ec1dd1bf743e7fe4ebe88"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_cadence100_seed456_20261109",
+          "mode": "cadence100",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 456,
+          "seed_recorded_by_pool": 456,
+          "requested_rate_hz": 100,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 341,
+            "imu": 340,
+            "rotor_pwm": 340,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 190,
+          "median_host_interval_s": 0.010227972,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "9332bd92764b2c0473580ea04923d3db2fc2a4c022deceb5f02dd5eed884dc9f",
+            "commands.jsonl": "33beddd742d123b6eaf040adb10807d59d381617d88a61a0709d2ead63966845",
+            "capture.jsonl": "ae5adae4425045c71bab1f99e58399cd4188d24acbee743a5994a78518258fa4",
+            "pool/pool.json": "ba33fbdf3c807c9f8d2943fc8012f0ddf415302de46253491d3f451151cbc586"
+          }
+        }
+      ],
+      "eligible_count": 3,
+      "largest_exact_declared_phase_group": 3,
+      "eligible_phase_group_counts": {
+        "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc": 3
+      }
+    },
+    "cadence20": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d06_cadence20_seed123_20261107",
+          "mode": "cadence20",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 123,
+          "seed_recorded_by_pool": 123,
+          "requested_rate_hz": 20,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 336,
+            "imu": 335,
+            "rotor_pwm": 335,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 41,
+          "median_host_interval_s": 0.05018746,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "1495c09798e5500b6706520fb4cb133eb698007e234b194ba1c140fdb0bc2225",
+            "commands.jsonl": "a54dd4579f31c0a570385e7f48c53f38daf8d0b0dcada94d1f563b55089adc83",
+            "capture.jsonl": "ec2ee512878dfdd3ba4fd4569f8e2939b68cfb5aa54ca31c4f1c35af802b22f2",
+            "pool/pool.json": "68cdf7ad1ff0969c087f30abec4d0910d04d7a64ea6bad724addffde9179be02"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_cadence20_seed2026_20261109",
+          "mode": "cadence20",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 2026,
+          "seed_recorded_by_pool": 2026,
+          "requested_rate_hz": 20,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 342,
+            "imu": 342,
+            "rotor_pwm": 342,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 41,
+          "median_host_interval_s": 0.050268546000000004,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "27ccc331c10f8feb524bbda1e85fa8c8b9bc522342defedd07752db64d4c9f0c",
+            "commands.jsonl": "17f42cf11d41b16a676d62edd1b2749a2955b2e22f112eb19f937d05a002c306",
+            "capture.jsonl": "4c3c822a18fd32147750d0f58de4b1fe537d6d4fe9d6c43c78179ec88153ec0b",
+            "pool/pool.json": "695eb33db9bb9c616fb8d12e563a21d3e7d83be8f333e7cc99a2d241b38212ef"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_cadence20_seed456_20261109",
+          "mode": "cadence20",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 456,
+          "seed_recorded_by_pool": 456,
+          "requested_rate_hz": 20,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 336,
+            "imu": 336,
+            "rotor_pwm": 336,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 41,
+          "median_host_interval_s": 0.0502734165,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "1fbc1ba4cf4f7665779a9a82cd222dcd8bf243bae56f5bf112a26ec8ada52801",
+            "commands.jsonl": "f5b953017ac83ad7c408c21c4b07b01d56b62c1e0669e33429c63bfde3d32db6",
+            "capture.jsonl": "2a38547853cd8192a5ae1103ddc3adb61f799cdc60e0118e437d1dd1fb190fcf",
+            "pool/pool.json": "cae01cff6b30ba858ab67e886e8194880805d489a65819f6b082cbdd4cc08ea1"
+          }
+        }
+      ],
+      "eligible_count": 3,
+      "largest_exact_declared_phase_group": 3,
+      "eligible_phase_group_counts": {
+        "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc": 3
+      }
+    },
+    "cadence50": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d06_cadence50_seed123_20261107",
+          "mode": "cadence50",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 123,
+          "seed_recorded_by_pool": 123,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 344,
+            "imu": 344,
+            "rotor_pwm": 343,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 97,
+          "median_host_interval_s": 0.0202382125,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "cb93b8237f88958785ca134ccaa504e6504bce3557dd4a7dfe8ca769d1521f34",
+            "commands.jsonl": "7e050ccbf01d5eb4195f847ea6d9b461c1aa53666b65ddfe208cac63a44f58e5",
+            "capture.jsonl": "a8919fe65838447bdcd4a1934974879d16c83774b9d501afc6563641d3e03f4f",
+            "pool/pool.json": "72634c651fbb9f3c6dd1abc852ba688ba7200f1dc9dcd0737996f94176fc0074"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_cadence50_seed2026_20261109",
+          "mode": "cadence50",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 2026,
+          "seed_recorded_by_pool": 2026,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 334,
+            "imu": 334,
+            "rotor_pwm": 334,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 97,
+          "median_host_interval_s": 0.0202426005,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "f4562f7912ebf4c7867752a7cb240e635cca4584f0991c447908c9c9f26d09e9",
+            "commands.jsonl": "08ef6b747725f4ac5ba022eb874df176e22bed0256d7aaa42d007c0644179797",
+            "capture.jsonl": "413324a33981417101afe2e7e1b513e5400d757283570b1ffead5ddc04244f84",
+            "pool/pool.json": "dc132158f2f0538cffe643ef2ef03a6498607fa98d7fadffbd2065651bb6b06a"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_cadence50_seed456_20261109",
+          "mode": "cadence50",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 456,
+          "seed_recorded_by_pool": 456,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 338,
+            "imu": 338,
+            "rotor_pwm": 337,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 97,
+          "median_host_interval_s": 0.0202665365,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "03a71e05eab536def07083bef1c33aab08b1e183e92c6e63c467b52316456117",
+            "commands.jsonl": "ef3d02b0b9c4c9b22d904d23fcb852ab79458809903e25e5d82f6b8f774c31e4",
+            "capture.jsonl": "a279c7b8d0796d863dd6787b1e041127e75633f4fef7285852af20d725d9c2e9",
+            "pool/pool.json": "a6fc9b921a488ebe1e90f0117aa97883a3ae084ba69059b9d40b5880f5212437"
+          }
+        }
+      ],
+      "eligible_count": 3,
+      "largest_exact_declared_phase_group": 3,
+      "eligible_phase_group_counts": {
+        "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc": 3
+      }
+    },
+    "collective": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d01_collective_20261107",
+          "mode": "collective",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": null,
+          "seed_recorded_by_pool": 123,
+          "requested_rate_hz": null,
+          "declared_phases": [
+            [
+              0.5,
+              0.12
+            ],
+            [
+              0.6,
+              0.2
+            ],
+            [
+              0.5,
+              0.16
+            ],
+            [
+              0.3,
+              0.0
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 399,
+            "imu": 399,
+            "rotor_pwm": 399,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 97,
+          "median_host_interval_s": 0.020243526,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "f2def98689d8aecf0d61cc9d7343042af91235f72f363eb15f4589bfdef86cde",
+            "commands.jsonl": "9e8b9889f900103d61a4b9ffaa1304627ac92077439baff5d4a297012749055a",
+            "capture.jsonl": "ef93a5a5a2315d43f7edddae05bc3210b17f7ebff554efffa3ac737a86b747fd",
+            "pool/pool.json": "4c0e27ba2a80e8d96b5154f973ed34603bebb66406f5ab9060058e0e50431de7"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_clock_gps_seed77771_20261109",
+          "mode": "collective",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 77771,
+          "seed_recorded_by_pool": 77771,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.5,
+              [
+                0.12,
+                0.12,
+                0.12,
+                0.12
+              ]
+            ],
+            [
+              0.6,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.5,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.3,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc",
+          "actual_pwm_phase_vectors": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 338,
+            "imu": 337,
+            "rotor_pwm": 338,
+            "gps": 33,
+            "clock": 0
+          },
+          "command_count": 97,
+          "median_host_interval_s": 0.0202291155,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "3c869ecfc76edd79eb4ec896adb3682c54e9f1013c925396e8ab5db9342504b1",
+            "commands.jsonl": "7145421ed869ae1bd1d040651731a86f7932edcdbdb4862da704411f4ba13ed4",
+            "capture.jsonl": "1194b6ea0be0f02b6ec8f05a3f974dd45311311658571243b62f8dc6b51e3cac",
+            "pool/pool.json": "3f75765a24c7aa81e32b7a2a37e1aa3f226ff81c41aad3fcb49a9550be350311"
+          }
+        }
+      ],
+      "eligible_count": 2,
+      "largest_exact_declared_phase_group": 2,
+      "eligible_phase_group_counts": {
+        "f1d33fa41a7b0d3711ec38021b3befe228c3cd12729f0031b3963d58711071bc": 2
+      }
+    },
+    "roll_pitch": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d03_roll_pitch_seed2026_20261107",
+          "mode": "roll_pitch",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 2026,
+          "seed_recorded_by_pool": 2026,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.182,
+                0.188,
+                0.188,
+                0.182
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.188,
+                0.182,
+                0.182,
+                0.188
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.188,
+                0.182,
+                0.188,
+                0.182
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.182,
+                0.188,
+                0.182,
+                0.188
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f07c10dd23f454deaf34e0379eecf6d19376aa45f633396115687ff31333b4f0",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.182,
+              0.188,
+              0.188,
+              0.182
+            ],
+            [
+              0.188,
+              0.182,
+              0.182,
+              0.188
+            ],
+            [
+              0.188,
+              0.182,
+              0.188,
+              0.182
+            ],
+            [
+              0.182,
+              0.188,
+              0.182,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 273,
+            "imu": 273,
+            "rotor_pwm": 273,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 66,
+          "median_host_interval_s": 0.020233688,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "dae31d68e5a96b4a02b5f1e5fa621c69bd46b16aaf2f07b4c3a1d3aa38d09578",
+            "commands.jsonl": "10a2fee69770e25453574f6cef62061a170569f5ed43782ff2948b616f2df6ec",
+            "capture.jsonl": "3bae965862da3bc4db4b63c198f87903543a0f8e81699d320e2180e9e1755e53",
+            "pool/pool.json": "a6a78da955b8fc042f812a3c78654dcacf51f76386059c0259d25236b07a1f5b"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_roll_pitch_seed27182_20261108",
+          "mode": "roll_pitch",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 27182,
+          "seed_recorded_by_pool": 27182,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.182,
+                0.188,
+                0.188,
+                0.182
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.188,
+                0.182,
+                0.182,
+                0.188
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.188,
+                0.182,
+                0.188,
+                0.182
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.182,
+                0.188,
+                0.182,
+                0.188
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f07c10dd23f454deaf34e0379eecf6d19376aa45f633396115687ff31333b4f0",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.182,
+              0.188,
+              0.188,
+              0.182
+            ],
+            [
+              0.188,
+              0.182,
+              0.182,
+              0.188
+            ],
+            [
+              0.188,
+              0.182,
+              0.188,
+              0.182
+            ],
+            [
+              0.182,
+              0.188,
+              0.182,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 276,
+            "imu": 275,
+            "rotor_pwm": 275,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 66,
+          "median_host_interval_s": 0.020246901,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "b5a882ad4effa66a1794d630c66b2b46f5e3031b7c68f35d498a211d08f744c0",
+            "commands.jsonl": "149a1ed998eb206d6d7f706a85124e39d8cae314134ff5b87855457de4c83110",
+            "capture.jsonl": "0e611de32bd16e0223b60e731fa7a9be428637b3486b5d3a4728765f230210d0",
+            "pool/pool.json": "d87bc77a8fe204420c55db93ba8bec883c78fbf9accb012406155d9ec4051cd2"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_roll_pitch_seed314159_20261108",
+          "mode": "roll_pitch",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 314159,
+          "seed_recorded_by_pool": 314159,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.182,
+                0.188,
+                0.188,
+                0.182
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.188,
+                0.182,
+                0.182,
+                0.188
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.188,
+                0.182,
+                0.188,
+                0.182
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.182,
+                0.188,
+                0.182,
+                0.188
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "f07c10dd23f454deaf34e0379eecf6d19376aa45f633396115687ff31333b4f0",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.182,
+              0.188,
+              0.188,
+              0.182
+            ],
+            [
+              0.188,
+              0.182,
+              0.182,
+              0.188
+            ],
+            [
+              0.188,
+              0.182,
+              0.188,
+              0.182
+            ],
+            [
+              0.182,
+              0.188,
+              0.182,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 278,
+            "imu": 278,
+            "rotor_pwm": 278,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 66,
+          "median_host_interval_s": 0.020226855000000002,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "9b7207ca425c13c2d6d3fb765427bb8541fea668f954ae78a0c89fbbd54de6be",
+            "commands.jsonl": "73e1f6f568189462435d55ec145e6630bb5ca40d85a6da3c4d4a4d78ac6a0170",
+            "capture.jsonl": "ca0a7dc90fabc10ad19967cd49260b78c795dee4387ede6639df0d8dbe149b9a",
+            "pool/pool.json": "ee5a5b1000f68d60de4cb14235dddcef454617e97805c95d962b1715dd528406"
+          }
+        }
+      ],
+      "eligible_count": 3,
+      "largest_exact_declared_phase_group": 3,
+      "eligible_phase_group_counts": {
+        "f07c10dd23f454deaf34e0379eecf6d19376aa45f633396115687ff31333b4f0": 3
+      }
+    },
+    "roll_pitch_small": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d03_roll_pitch_small_seed456_20261107",
+          "mode": "roll_pitch_small",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 456,
+          "seed_recorded_by_pool": 456,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.183,
+                0.187,
+                0.187,
+                0.183
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.187,
+                0.183,
+                0.183,
+                0.187
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.187,
+                0.183,
+                0.187,
+                0.183
+              ]
+            ],
+            [
+              0.14,
+              [
+                0.183,
+                0.187,
+                0.183,
+                0.187
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "d19c22a1c949988afa2a20fd84fc11fb9354b2508da544625eee2c30e66e2696",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.183,
+              0.187,
+              0.187,
+              0.183
+            ],
+            [
+              0.187,
+              0.183,
+              0.183,
+              0.187
+            ],
+            [
+              0.187,
+              0.183,
+              0.187,
+              0.183
+            ],
+            [
+              0.183,
+              0.187,
+              0.183,
+              0.187
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 273,
+            "imu": 273,
+            "rotor_pwm": 273,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 66,
+          "median_host_interval_s": 0.020242214,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "4832696990fa22f9e1e7bfc74b67bacf0144c54f18645df66252b67734aadaa2",
+            "commands.jsonl": "5000a5e9462586979ed7c14bb98ca00efc1428d2a334704d43d5f5f0506db479",
+            "capture.jsonl": "147714db715a23cbb233bcc922ed6e3f5fe307ac836a82bf14e24901971bb829",
+            "pool/pool.json": "ee60068c2f7c8877fc4788b58e4234b654a6222bd512030846f47e37de7451c5"
+          }
+        }
+      ],
+      "eligible_count": 1,
+      "largest_exact_declared_phase_group": 1,
+      "eligible_phase_group_counts": {
+        "d19c22a1c949988afa2a20fd84fc11fb9354b2508da544625eee2c30e66e2696": 1
+      }
+    },
+    "small_steps": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\clock_pair_steps_retry_seed27182_20261108",
+          "mode": "small_steps",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 27182,
+          "seed_recorded_by_pool": 27182,
+          "requested_rate_hz": 100,
+          "declared_phases": [
+            [
+              0.22,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.19,
+                0.19,
+                0.19,
+                0.19
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.17,
+                0.17,
+                0.17,
+                0.17
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "c65da8f26a3e6ac5e5c4bb6fd3fadfae902673803fede6f939ac46e5765175cb",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.19,
+              0.19,
+              0.19,
+              0.19
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.17,
+              0.17,
+              0.17,
+              0.17
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 308,
+            "imu": 307,
+            "rotor_pwm": 307,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 162,
+          "median_host_interval_s": 0.010234524,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "4fb2c51a5d2b726635def4e35bce73c5285b51df93352b6aac88a59664274a1e",
+            "commands.jsonl": "4e4abfd4bf35791f847fe969a32d726f11bde109a8d46521b36f0ba5eadf96fa",
+            "capture.jsonl": "ad754c362fc183ee8c8e0cac98b9f8bc3c130d9621898ef8aaf566d3388e903c",
+            "pool/pool.json": "a01720b86f4d153e65bd1e5395697859a626d104fb3a6e3c369bac5e3c49444e"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\d02_small_steps_seed123_20261107",
+          "mode": "small_steps",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 123,
+          "seed_recorded_by_pool": 123,
+          "requested_rate_hz": 100,
+          "declared_phases": [
+            [
+              0.22,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.19,
+                0.19,
+                0.19,
+                0.19
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.17,
+                0.17,
+                0.17,
+                0.17
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "c65da8f26a3e6ac5e5c4bb6fd3fadfae902673803fede6f939ac46e5765175cb",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.19,
+              0.19,
+              0.19,
+              0.19
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.17,
+              0.17,
+              0.17,
+              0.17
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 310,
+            "imu": 310,
+            "rotor_pwm": 310,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 162,
+          "median_host_interval_s": 0.010234107000000001,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "83601bc8ec26cf28357d16eee0798b0f374e7e6be66bab3e7add425eff6608aa",
+            "commands.jsonl": "f34568c2cac480e0f6c5cf7a61aee8f1e5927dacdf97cb377ba3908f7468e235",
+            "capture.jsonl": "4145bcff56badd1810fefde8fdc74ccbf7b46d8e367772773cfd3b82e0bd0138",
+            "pool/pool.json": "640d16878fdf25644e363b9489b1dd37b37de041c544bdaa641cbab5ba36ea6f"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\d02_small_steps_seed456_20261107",
+          "mode": "small_steps",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 456,
+          "seed_recorded_by_pool": 456,
+          "requested_rate_hz": 100,
+          "declared_phases": [
+            [
+              0.22,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.19,
+                0.19,
+                0.19,
+                0.19
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.17,
+                0.17,
+                0.17,
+                0.17
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.18,
+                0.18,
+                0.18,
+                0.18
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "c65da8f26a3e6ac5e5c4bb6fd3fadfae902673803fede6f939ac46e5765175cb",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.19,
+              0.19,
+              0.19,
+              0.19
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.17,
+              0.17,
+              0.17,
+              0.17
+            ],
+            [
+              0.18,
+              0.18,
+              0.18,
+              0.18
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 309,
+            "imu": 308,
+            "rotor_pwm": 308,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 162,
+          "median_host_interval_s": 0.010229389,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "613d717fe6fa3a62bc072c63e5773cf4481b155c938a984b1cc72bf3d261c607",
+            "commands.jsonl": "b48a160a602401aba7eda6b106618d45497a1486093ab8be729fda81907b7a98",
+            "capture.jsonl": "7fbf4493f68b33b2b4c19bc9d1391f55ea2f63bec170e8fd682bebdcf10a3a1c",
+            "pool/pool.json": "e300c7cd695a539f894853ff754cb4e04dd78998d3a22b0a13143710994f8428"
+          }
+        }
+      ],
+      "eligible_count": 3,
+      "largest_exact_declared_phase_group": 3,
+      "eligible_phase_group_counts": {
+        "c65da8f26a3e6ac5e5c4bb6fd3fadfae902673803fede6f939ac46e5765175cb": 3
+      }
+    },
+    "yaw": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\clock_pair_yaw_seed314159_20261108",
+          "mode": "yaw",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 314159,
+          "seed_recorded_by_pool": 314159,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.188,
+                0.188,
+                0.182,
+                0.182
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.182,
+                0.182,
+                0.188,
+                0.188
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "9d91d39b4c789f6e86802e1d8c52db456a25d604275ea1c11d54ba1d97ade344",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.188,
+              0.188,
+              0.182,
+              0.182
+            ],
+            [
+              0.182,
+              0.182,
+              0.188,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 258,
+            "imu": 258,
+            "rotor_pwm": 258,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 58,
+          "median_host_interval_s": 0.020236507,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "723f88da57a8b3e2e2b114311c35102fdd60bf06878fafe388fc372ddf54de8f",
+            "commands.jsonl": "88dc6ed1df5f5c68f4ec4e790fd61921cc2d4885d6942ef240536970570bcc12",
+            "capture.jsonl": "c0b1b131351d8961f3cabcdabd5699a5035f933d78711c0bab58627c5e348ced",
+            "pool/pool.json": "620c001c8a58e9b327c5c9abadd9e4f9303973c474dd759315479921bfed5ca1"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\d04_yaw_seed2026_20261107",
+          "mode": "yaw",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 2026,
+          "seed_recorded_by_pool": 2026,
+          "requested_rate_hz": null,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.188,
+                0.188,
+                0.182,
+                0.182
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.182,
+                0.182,
+                0.188,
+                0.188
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "9d91d39b4c789f6e86802e1d8c52db456a25d604275ea1c11d54ba1d97ade344",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.188,
+              0.188,
+              0.182,
+              0.182
+            ],
+            [
+              0.182,
+              0.182,
+              0.188,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 257,
+            "imu": 257,
+            "rotor_pwm": 257,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 58,
+          "median_host_interval_s": 0.020176104,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "e68a93265e54e0263d8f22412b990da1c112f475c83162d914d079d6491fa8cd",
+            "commands.jsonl": "ba0891bdf953541d71a7a5cba0d9fef65deb1b74f664074816eee6151c877be8",
+            "capture.jsonl": "ce9cf733daad57e59e3aaa480b4449b7c174e59b3d2e9a0a52712af1e5fa35a0",
+            "pool/pool.json": "272dc7a566177f2947e5ea4faa708448dd133be538247b1e1e7347efe3f04e76"
+          }
+        },
+        {
+          "directory": "foundation\\datasets\\v2_yaw_seed27182_20261108",
+          "mode": "yaw",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 27182,
+          "seed_recorded_by_pool": 27182,
+          "requested_rate_hz": 50,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.188,
+                0.188,
+                0.182,
+                0.182
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.182,
+                0.182,
+                0.188,
+                0.188
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "9d91d39b4c789f6e86802e1d8c52db456a25d604275ea1c11d54ba1d97ade344",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.188,
+              0.188,
+              0.182,
+              0.182
+            ],
+            [
+              0.182,
+              0.182,
+              0.188,
+              0.188
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 260,
+            "imu": 260,
+            "rotor_pwm": 260,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 58,
+          "median_host_interval_s": 0.020241628,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "863e824482a4cc46fa9956d1b421a2444003008e3947a9fbef99639fb5ad7b5d",
+            "commands.jsonl": "ed36602ba19ca741cc5b0a24f26f2b032e180454030f04d05e3f731a0d4d35d0",
+            "capture.jsonl": "7ac6448cb7c2ba806555e94f8c6ea2779336ad2620eda0f55a75cf3aa326cf6b",
+            "pool/pool.json": "779ef3c623c7daa268ee92f6e52578a4b44feb199227267f457ab2ef4f56bf87"
+          }
+        }
+      ],
+      "eligible_count": 3,
+      "largest_exact_declared_phase_group": 3,
+      "eligible_phase_group_counts": {
+        "9d91d39b4c789f6e86802e1d8c52db456a25d604275ea1c11d54ba1d97ade344": 3
+      }
+    },
+    "yaw_small": {
+      "records": [
+        {
+          "directory": "foundation\\datasets\\d04_yaw_small_seed456_20261107",
+          "mode": "yaw_small",
+          "eligible": true,
+          "reasons": [],
+          "seed_requested": 456,
+          "seed_recorded_by_pool": 456,
+          "requested_rate_hz": null,
+          "declared_phases": [
+            [
+              0.25,
+              [
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.187,
+                0.187,
+                0.183,
+                0.183
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.183,
+                0.183,
+                0.187,
+                0.187
+              ]
+            ],
+            [
+              0.25,
+              [
+                0.16,
+                0.16,
+                0.16,
+                0.16
+              ]
+            ],
+            [
+              0.2,
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "declared_phase_sha256": "baadb2be91cc56292cc0f7447ac18e005314289ac2e613058715c57cade91131",
+          "actual_pwm_phase_vectors": [
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.187,
+              0.187,
+              0.183,
+              0.183
+            ],
+            [
+              0.183,
+              0.183,
+              0.187,
+              0.187
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "actual_phase_sequence_matches_declared": true,
+          "topic_sample_counts": {
+            "pose_gt": 260,
+            "imu": 260,
+            "rotor_pwm": 261,
+            "gps": 0,
+            "clock": 0
+          },
+          "command_count": 58,
+          "median_host_interval_s": 0.02023904,
+          "source_script_hash_matches": {
+            "collect_ros.py": true,
+            "collective_remote.sh": true,
+            "pwm_collective.py": true
+          },
+          "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sha256": {
+            "run.json": "c19e4fd006ee543460ef9825ff7a0da14e47fe9ee586c741dc8a00823dbb2811",
+            "commands.jsonl": "f3a7b4a8a1211665dc01a82926355ffd6bf949422cf050364461e120e9b165c9",
+            "capture.jsonl": "f876222bb8cef2efadbf5e602c9aed36f20ff66fc0e9d3e2ba01709698c5efb7",
+            "pool/pool.json": "a6b642f723d9ca00fbf20ffd5919541aa00755f779443f405fce87a9c676792c"
+          }
+        }
+      ],
+      "eligible_count": 1,
+      "largest_exact_declared_phase_group": 1,
+      "eligible_phase_group_counts": {
+        "baadb2be91cc56292cc0f7447ac18e005314289ac2e613058715c57cade91131": 1
+      }
+    }
+  },
+  "expected_binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "expected_settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "analysis_sha256": "2ea18991614598fc3bedee0cae38643c26a226aa7149e2c2ac99348c057314cf",
+  "limitations": [
+    "mode and saved script indicate no runtime debugger configured, not an independent process trace",
+    "declared phases and command timestamps do not establish identical applied motor input",
+    "seed and completed process do not prove matched initial states or no wind/contact",
+    "source and timestamp coverage need separate analysis",
+    "reserved v2_holdout_axis is explicitly excluded from this inventory"
+  ]
+}

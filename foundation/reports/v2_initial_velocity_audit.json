@@ -1,0 +1,119 @@
+{
+  "status": "pose-estimator sensitivity, not measured velocity or model validation",
+  "runs": [
+    {
+      "directory": "foundation/datasets/d03_roll_pitch_seed2026_20261107",
+      "pose_start_after_command_s": 0.30546617600000003,
+      "centered_sample_count": 23,
+      "causal_sample_count": 12,
+      "centered_velocity_m_s": [
+        2.1003563988799256e-10,
+        0.003516362878813413,
+        -0.3126868896973438
+      ],
+      "causal_velocity_m_s": [
+        1.4197348839577598e-11,
+        0.00023811771308510196,
+        -0.33058801650632896
+      ],
+      "difference_m_s": [
+        -1.9583829104841495e-10,
+        -0.0032782451657283112,
+        -0.017901126808985146
+      ],
+      "difference_norm_m_s": 0.018198825027951334,
+      "constant_velocity_half_second_scale_m": 0.009099412513975667,
+      "source_sha256": {
+        "commands.jsonl": "10a2fee69770e25453574f6cef62061a170569f5ed43782ff2948b616f2df6ec",
+        "capture.jsonl": "3bae965862da3bc4db4b63c198f87903543a0f8e81699d320e2180e9e1755e53"
+      }
+    },
+    {
+      "directory": "foundation/datasets/d03_roll_pitch_small_seed456_20261107",
+      "pose_start_after_command_s": 0.304273844,
+      "centered_sample_count": 23,
+      "causal_sample_count": 12,
+      "centered_velocity_m_s": [
+        1.384633911177987e-10,
+        0.0023177580907899724,
+        -0.3198158055241394
+      ],
+      "causal_velocity_m_s": [
+        9.244254784767798e-12,
+        0.00015501358277422253,
+        -0.3381204633177097
+      ],
+      "difference_m_s": [
+        -1.292191363330309e-10,
+        -0.00216274450801575,
+        -0.018304657793570267
+      ],
+      "difference_norm_m_s": 0.018431982008093026,
+      "constant_velocity_half_second_scale_m": 0.009215991004046513,
+      "source_sha256": {
+        "commands.jsonl": "5000a5e9462586979ed7c14bb98ca00efc1428d2a334704d43d5f5f0506db479",
+        "capture.jsonl": "147714db715a23cbb233bcc922ed6e3f5fe307ac836a82bf14e24901971bb829"
+      }
+    },
+    {
+      "directory": "foundation/datasets/d04_yaw_seed2026_20261107",
+      "pose_start_after_command_s": 0.306794644,
+      "centered_sample_count": 23,
+      "causal_sample_count": 12,
+      "centered_velocity_m_s": [
+        6.560764119806962e-20,
+        1.6532124103113156e-22,
+        -0.3146679377648749
+      ],
+      "causal_velocity_m_s": [
+        -5.25137178269496e-19,
+        -1.312862898422716e-19,
+        -0.33414562873188547
+      ],
+      "difference_m_s": [
+        -5.9074481946756565e-19,
+        -1.3145161108330272e-19,
+        -0.019477690967010575
+      ],
+      "difference_norm_m_s": 0.019477690967010575,
+      "constant_velocity_half_second_scale_m": 0.009738845483505287,
+      "source_sha256": {
+        "commands.jsonl": "ba0891bdf953541d71a7a5cba0d9fef65deb1b74f664074816eee6151c877be8",
+        "capture.jsonl": "ce9cf733daad57e59e3aaa480b4449b7c174e59b3d2e9a0a52712af1e5fa35a0"
+      }
+    },
+    {
+      "directory": "foundation/datasets/d04_yaw_small_seed456_20261107",
+      "pose_start_after_command_s": 0.30267644000000005,
+      "centered_sample_count": 23,
+      "causal_sample_count": 12,
+      "centered_velocity_m_s": [
+        6.94081283814639e-20,
+        1.3072730769948617e-22,
+        -0.3168565897520799
+      ],
+      "causal_velocity_m_s": [
+        -5.440316906991226e-19,
+        -1.3599778047174829e-19,
+        -0.33881255922166525
+      ],
+      "difference_m_s": [
+        -6.134398190805865e-19,
+        -1.3612850777944777e-19,
+        -0.021955969469585335
+      ],
+      "difference_norm_m_s": 0.021955969469585335,
+      "constant_velocity_half_second_scale_m": 0.010977984734792667,
+      "source_sha256": {
+        "commands.jsonl": "f3a7b4a8a1211665dc01a82926355ffd6bf949422cf050364461e120e9b165c9",
+        "capture.jsonl": "f876222bb8cef2efadbf5e602c9aed36f20ff66fc0e9d3e2ba01709698c5efb7"
+      }
+    }
+  ],
+  "analysis_sha256": "436ac14e4b60abb50de6ec4f9488d73b0200a68160eb3c7239a788b337a65645",
+  "limitations": [
+    "neither estimate is an independently measured velocity",
+    "source time, actuation timing, wind and contact remain unverified",
+    "difference times duration is not trajectory prediction error"
+  ]
+}
