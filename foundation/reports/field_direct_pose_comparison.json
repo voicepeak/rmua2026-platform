@@ -1,0 +1,600 @@
+{
+  "status": "same-breakpoint component location comparison; official overlap unverified",
+  "counts": {
+    "observed_0_inside_0": 4,
+    "observed_0_inside_1": 3,
+    "observed_1_inside_1": 7
+  },
+  "gps_origin_ue_cm": [
+    0.0078,
+    0.001,
+    -7.0
+  ],
+  "events": [
+    {
+      "monotonic_s": 459842.170327338,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        0.0,
+        0.0,
+        -1.982409954071045
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 1,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "ChargeArea",
+          "signed_distance_cm": 199.3803343999043,
+          "contains": false
+        },
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": -60.018261432647705,
+          "contains": true
+        },
+        "factory": {
+          "actor": "2_1_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 49440.0768335229,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": 1.5649408170138486,
+      "gps_vs_component_distance_cm": 31.704167126822508
+    },
+    {
+      "monotonic_s": 459959.713705358,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        55540.30859375,
+        -11762.8740234375,
+        13311.33203125
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -3.1362104910254516,
+          "contains": true
+        },
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 57881.267776092376,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4112.335559153462,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": 0.02136915101436898,
+      "gps_vs_component_distance_cm": 33.87273760727178
+    },
+    {
+      "monotonic_s": 459960.113344701,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        55750.9453125,
+        -11680.470703125,
+        13328.169921875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -8.215644456489997,
+          "contains": true
+        },
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58070.36265748903,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4324.92506350782,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": 0.021965646010357887,
+      "gps_vs_component_distance_cm": 34.016625321229164
+    },
+    {
+      "monotonic_s": 459960.664703193,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        56033.484375,
+        -11565.265625,
+        13362.923828125
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -3.0892961083421255,
+          "contains": true
+        },
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58326.23339691801,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4615.091754112572,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": -0.029387280985247344,
+      "gps_vs_component_distance_cm": 8.19830835979636
+    },
+    {
+      "monotonic_s": 459961.513860016,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        56437.5,
+        -11392.30859375,
+        13398.6748046875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -9.94104448001849,
+          "contains": true
+        },
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58688.36641776712,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5038.166747487243,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": 0.02121783496113494,
+      "gps_vs_component_distance_cm": 25.45248633091453
+    },
+    {
+      "monotonic_s": 459962.714060451,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        56870.59765625,
+        -11191.40625,
+        13451.419921875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -3.502165113613273,
+          "contains": true
+        },
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59039.73406171402,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5503.877682990311,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": 0.021011532982811332,
+      "gps_vs_component_distance_cm": 9.638836410975184
+    },
+    {
+      "monotonic_s": 459963.414646007,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        56939.4765625,
+        -11156.001953125,
+        13450.1181640625
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -12.249985639270108,
+          "contains": true
+        },
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59065.28737860601,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5580.199024143097,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": 0.020551679015625268,
+      "gps_vs_component_distance_cm": 10.978350282405124
+    },
+    {
+      "monotonic_s": 459964.215081082,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57053.296875,
+        -11101.8154296875,
+        13477.216796875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": false,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": 2.5662402191108526,
+          "contains": false
+        },
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59116.597926268354,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5703.80507412567,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": -0.07979625003645197,
+      "gps_vs_component_distance_cm": 12.217972958188351
+    },
+    {
+      "monotonic_s": 459971.2260194,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57155.390625,
+        -11055.791015625,
+        13451.21875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -19.73551495149053,
+          "contains": true
+        },
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59154.176650377805,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5813.2342198659,
+          "contains": false
+        }
+      }
+    },
+    {
+      "monotonic_s": 459972.125519364,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57199.9375,
+        -11030.44921875,
+        13474.341796875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": false,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": 0.4984996744850605,
+          "contains": false
+        },
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59174.23589949847,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5864.128969566916,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": -0.03333028103224933,
+      "gps_vs_component_distance_cm": 8.09575258881712
+    },
+    {
+      "monotonic_s": 459979.960394407,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57244.8359375,
+        -11008.4609375,
+        13454.732421875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -21.8724751248792,
+          "contains": true
+        },
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59188.021571622536,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5913.328420364732,
+          "contains": false
+        }
+      }
+    },
+    {
+      "monotonic_s": 459980.91038281,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57271.05078125,
+        -11001.380859375,
+        13481.7958984375
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": false,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": 3.6532762416233027,
+          "contains": false
+        },
+        "port": {
+          "actor": "5_2_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59180.23320308849,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5938.659548252204,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": -0.08430283301277086,
+      "gps_vs_component_distance_cm": 18.94360993476692
+    },
+    {
+      "monotonic_s": 459988.973393649,
+      "observed_predicate": 1,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57321.12890625,
+        -10982.015625,
+        13465.091796875
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": true,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -16.018264101198554,
+          "contains": true
+        },
+        "port": {
+          "actor": "5_2_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59151.936907490664,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5990.528751661905,
+          "contains": false
+        }
+      }
+    },
+    {
+      "monotonic_s": 459989.923070633,
+      "observed_predicate": 0,
+      "drone_actor": "0x7fffe57dc100",
+      "drone_component": "0x7ffdef0210f0",
+      "drone_world_cm": [
+        57349.7421875,
+        -10967.154296875,
+        13493.662109375
+      ],
+      "available": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      },
+      "candidate_inside": false,
+      "region_minima": {
+        "road": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": 10.708107430392374,
+          "contains": false
+        },
+        "port": {
+          "actor": "5_2_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59142.83882745612,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 6022.4106104814055,
+          "contains": false
+        }
+      },
+      "gps_arrival_delta_s": -0.0845883700530976,
+      "gps_vs_component_distance_cm": 19.685612080209804
+    }
+  ],
+  "source_sha256": {
+    "summary": "55f75b131d0a92533ea397b375512de697e4fa3ee0ebb4849c9b4dbb4ebce8bf",
+    "manifest": "ee1b1d5edca637c4b7fe9eb1579988c8614800663087612badb6f4c543492c5a",
+    "stage_trace_predicate.gdb": "7666b8c9e70fa34ea8319db717405366b040fef34eaa4bd8a787abc9241632b7",
+    "predicate_pose_probe.gdb": "5c76aeaf058d9e3a4ce9a06c34ca210331219bf64c05a3516ac32974bf119a90",
+    "charge_state_probe.py": "7505df87250b89d1ce6656b9a185e50f1d7cb83be4ce2da723f63a16f7dc7e30",
+    "OL1_road_box_volumes_candidate.json": "af34ae909498e3367019be0e175d3308bc9bcbf3a6f4edf2017f657e4e2dbc3d",
+    "OL1_port_volumes_candidate.json": "0d9978887b9a0476e90c13171d5b243de8313912f42a17d54ca8a7c5f9d1f82a",
+    "OL1_factory_volumes_candidate.json": "0fadfad23b44b87783398945efe64b4d1b37599483094aa34ef256f162cd1aa2"
+  },
+  "limitations": [
+    "component pointer identity inferred from separate probe, not independently decoded",
+    "component transform may lag physics position or differ from overlap primitive",
+    "candidate union omits other predicate branches",
+    "only predicate changes sampled; debugger alters scheduling",
+    "candidate boxes and channel settings not independently validated"
+  ]
+}

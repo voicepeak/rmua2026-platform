@@ -1,0 +1,533 @@
+{
+  "status": "exploratory same-run sphere hypothesis, not independent validation",
+  "sphere_radius_cm": 2.0,
+  "sphere_offset_cm": [
+    0.0,
+    0.0,
+    6.0
+  ],
+  "max_gap_s": 0.1,
+  "counts": {
+    "observed_0_predicted_0": 8,
+    "observed_1_predicted_1": 7
+  },
+  "events": [
+    {
+      "monotonic_s": 473486.767965974,
+      "observed_predicate": 1,
+      "eligible": false,
+      "orientation_arrival_gap_s": 1.5664306390099227,
+      "reason": "missing component position or orientation gap too large"
+    },
+    {
+      "monotonic_s": 473614.261935845,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.027583482034970075,
+      "sphere_center_ue_cm": [
+        55535.728591049156,
+        -11766.615148985606,
+        13317.989059520658
+      ],
+      "signed_distance_cm": 4.036196868947968,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": 4.036196868947968,
+          "contains": false
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 57879.09853407309,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4106.4279902933395,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473614.661234702,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.026892886962741613,
+      "sphere_center_ue_cm": [
+        55729.07446741641,
+        -11690.559350654481,
+        13333.269672549883
+      ],
+      "signed_distance_cm": -0.8158562639672482,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -0.8158562639672482,
+          "contains": true
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58052.52970398707,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4301.783380448977,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473615.211878258,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.022444204019848257,
+      "sphere_center_ue_cm": [
+        55990.13383291077,
+        -11584.072735008007,
+        13365.763166904246
+      ],
+      "signed_distance_cm": 4.299231004748037,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": 4.299231004748037,
+          "contains": false
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58288.966508438694,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4569.720850863299,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473616.062613814,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.028226641996297985,
+      "sphere_center_ue_cm": [
+        56359.25099146347,
+        -11426.871691175284,
+        13395.653236745153
+      ],
+      "signed_distance_cm": -4.690490920158879,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -4.690490920158879,
+          "contains": true
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58619.204530801755,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4955.341273202524,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473617.314538427,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.019728070008568466,
+      "sphere_center_ue_cm": [
+        56747.60640497988,
+        -11249.731312774791,
+        13450.163962724762
+      ],
+      "signed_distance_cm": 4.436356886935016,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": 4.436356886935016,
+          "contains": false
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58970.55610640808,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5370.643739798213,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473617.912770685,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.021472347027156502,
+      "sphere_center_ue_cm": [
+        56786.00352065361,
+        -11229.593471771439,
+        13443.611739081938
+      ],
+      "signed_distance_cm": -4.52476784827104,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -4.52476784827104,
+          "contains": true
+        },
+        {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59002.2450713562,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5413.390915040738,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473618.6644175,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.03005458100233227,
+      "sphere_center_ue_cm": [
+        56873.159301340376,
+        -11189.225051880396,
+        13465.344538686408
+      ],
+      "signed_distance_cm": 10.04845289395729,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": 10.04845289395729,
+          "contains": false
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59042.98477771102,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5507.2363408475885,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473623.977765901,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.03872640698682517,
+      "sphere_center_ue_cm": [
+        56984.611488843046,
+        -11140.42862669232,
+        13453.292749947552
+      ],
+      "signed_distance_cm": -13.693200229652291,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -13.693200229652291,
+          "contains": true
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59087.979967380736,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5625.660072743537,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473624.827941757,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.011205198999959975,
+      "sphere_center_ue_cm": [
+        57054.38130728538,
+        -11122.521595654845,
+        13481.950652674457
+      ],
+      "signed_distance_cm": 7.942094858301857,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": 7.942094858301857,
+          "contains": false
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59132.10177725912,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5692.338972406725,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473631.689490866,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.059999491029884666,
+      "sphere_center_ue_cm": [
+        57078.91155591566,
+        -11129.812240591926,
+        13457.86029883172
+      ],
+      "signed_distance_cm": -17.95833074767728,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -17.95833074767728,
+          "contains": true
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59149.61724043805,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5707.763541223337,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473632.644654415,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.004878176958300173,
+      "sphere_center_ue_cm": [
+        57096.371782617796,
+        -11121.807663804353,
+        13485.944656303564
+      ],
+      "signed_distance_cm": 8.141366114549555,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": 8.141366114549555,
+          "contains": false
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59162.63610341116,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5726.576812829019,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473639.647396512,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.03963941498659551,
+      "sphere_center_ue_cm": [
+        57132.50196592866,
+        -11088.072035664307,
+        13463.016887749149
+      ],
+      "signed_distance_cm": -6.038938906476346,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -6.038938906476346,
+          "contains": true
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59161.52492399687,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5775.663924359617,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473640.546884757,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": -0.03903566801454872,
+      "sphere_center_ue_cm": [
+        57159.59829750749,
+        -11070.672990899026,
+        13485.10199315168
+      ],
+      "signed_distance_cm": 14.229872237350662,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": 14.229872237350662,
+          "contains": false
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59174.03912723738,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5807.80251639733,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473648.500630531,
+      "observed_predicate": 1,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.059717260010074824,
+      "sphere_center_ue_cm": [
+        57199.47344886803,
+        -11050.889084731467,
+        13460.21180958818
+      ],
+      "signed_distance_cm": -13.107254247009564,
+      "predicted_overlap": 1,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -13.107254247009564,
+          "contains": true
+        },
+        {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59184.530754484134,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5851.6593101289645,
+          "contains": false
+        }
+      ]
+    },
+    {
+      "monotonic_s": 473649.451536318,
+      "observed_predicate": 0,
+      "eligible": true,
+      "orientation_arrival_gap_s": 0.009010342007968575,
+      "sphere_center_ue_cm": [
+        57227.893778570266,
+        -11043.05205327189,
+        13481.941343363504
+      ],
+      "signed_distance_cm": 6.963292823222332,
+      "predicted_overlap": 0,
+      "nearest_by_group": [
+        {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": 6.963292823222332,
+          "contains": false
+        },
+        {
+          "actor": "5_2_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59187.21230075777,
+          "contains": false
+        },
+        {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5879.230739784378,
+          "contains": false
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "foundation\\datasets\\field_direct_pose_seed2026_20261108\\predicate_summary.json": "14e0850e52d4df189fe7fc8c0130151653db44c7a93177eea9ce763a97072d6d",
+    "foundation\\datasets\\field_direct_pose_seed2026_20261108\\pose_samples.jsonl": "1c48861ee3f99dcbd2ece60bdb7e40fa6c55c7adf431b6b7ae12748fa0c1dc20",
+    "foundation\\asset_analysis\\blueprints\\BP_FlyingPawn.json": "0053a5adfe73ca1dc9a6d97bad8ed62eb864cd5756fd3af7d297c6573166b49f",
+    "foundation\\asset_analysis\\OL1_road_box_volumes_candidate.json": "af34ae909498e3367019be0e175d3308bc9bcbf3a6f4edf2017f657e4e2dbc3d",
+    "foundation\\asset_analysis\\OL1_port_volumes_candidate.json": "0d9978887b9a0476e90c13171d5b243de8313912f42a17d54ca8a7c5f9d1f82a",
+    "foundation\\asset_analysis\\OL1_factory_volumes_candidate.json": "0fadfad23b44b87783398945efe64b4d1b37599483094aa34ef256f162cd1aa2"
+  },
+  "limitations": [
+    "sphere identity and runtime use for this predicate not proven",
+    "cached component is assumed to be sphere parent and scale is assumed identity",
+    "ROS orientation paired by nearest arrival; UE/NED body reflection assumed",
+    "sampled only at predicate changes with debugger timing perturbation",
+    "hypothesis selected after inspecting these recordings; not held-out"
+  ]
+}

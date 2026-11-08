@@ -1,0 +1,236 @@
+{
+  "status": "posthoc interpolation sensitivity, not acceptance",
+  "counts": {
+    "observed_0_candidate_0": 2,
+    "observed_0_candidate_1": 1,
+    "observed_1_candidate_1": 6
+  },
+  "events": [
+    {
+      "monotonic_s": 459378.69421421,
+      "observed_predicate": 1,
+      "eligible": false,
+      "reason": "no accepted bracketing samples"
+    },
+    {
+      "monotonic_s": 459496.528026047,
+      "observed_predicate": 0,
+      "eligible": true,
+      "bracketing_gap_s": 0.09991794603411108,
+      "position_ned_m": [
+        555.3943974280013,
+        -117.72878541716301,
+        -133.18709616446296
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot_C_272",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459496.927386167,
+      "observed_predicate": 1,
+      "eligible": true,
+      "bracketing_gap_s": 0.09999078599503264,
+      "position_ned_m": [
+        557.5149557554089,
+        -116.84084057984478,
+        -133.28935145765945
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot_C_272",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459497.477682921,
+      "observed_predicate": 0,
+      "eligible": true,
+      "bracketing_gap_s": 0.10013402299955487,
+      "position_ned_m": [
+        560.3296474861203,
+        -115.68961890232382,
+        -133.77205767478466
+      ],
+      "candidate_flag": 0,
+      "matching_regions": {}
+    },
+    {
+      "monotonic_s": 459498.428026413,
+      "observed_predicate": 1,
+      "eligible": true,
+      "bracketing_gap_s": 0.09992468904238194,
+      "position_ned_m": [
+        564.8969510006785,
+        -113.75587285281549,
+        -134.00581508327826
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot273_ArrowOut",
+            "component": "ChargeArea"
+          },
+          {
+            "actor": "BP_Segment_Rot_C_272",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459499.678333476,
+      "observed_predicate": 0,
+      "eligible": true,
+      "bracketing_gap_s": 0.09988500998588279,
+      "position_ned_m": [
+        569.1263995523177,
+        -111.7452976761126,
+        -134.67856416563387
+      ],
+      "candidate_flag": 0,
+      "matching_regions": {}
+    },
+    {
+      "monotonic_s": 459500.278980415,
+      "observed_predicate": 1,
+      "eligible": true,
+      "bracketing_gap_s": 0.10012154199648649,
+      "position_ned_m": [
+        569.5515946149692,
+        -111.45351549156666,
+        -134.57669827681357
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot273_ArrowOut",
+            "component": "ChargeArea"
+          },
+          {
+            "actor": "BP_Segment_Rot_C_272",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459500.978418278,
+      "observed_predicate": 0,
+      "eligible": false,
+      "bracketing_gap_s": 0.6201068529626355,
+      "reason": "accepted GPS gap exceeds limit"
+    },
+    {
+      "monotonic_s": 459507.940011796,
+      "observed_predicate": 1,
+      "eligible": true,
+      "bracketing_gap_s": 0.1000216780230403,
+      "position_ned_m": [
+        571.479795813941,
+        -110.61072376889668,
+        -134.67489332507253
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot273_ArrowOut",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459508.691555503,
+      "observed_predicate": 0,
+      "eligible": false,
+      "bracketing_gap_s": 0.6907254219986498,
+      "reason": "accepted GPS gap exceeds limit"
+    },
+    {
+      "monotonic_s": 459517.05561902,
+      "observed_predicate": 1,
+      "eligible": true,
+      "bracketing_gap_s": 0.10002770402934402,
+      "position_ned_m": [
+        572.011491483125,
+        -110.26797698504762,
+        -134.71033686941502
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot273_ArrowOut",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459517.907028738,
+      "observed_predicate": 0,
+      "eligible": false,
+      "bracketing_gap_s": 0.710247335024178,
+      "reason": "accepted GPS gap exceeds limit"
+    },
+    {
+      "monotonic_s": 459526.506210003,
+      "observed_predicate": 1,
+      "eligible": true,
+      "bracketing_gap_s": 0.10012568003730848,
+      "position_ned_m": [
+        572.5508956854687,
+        -110.0275940485733,
+        -134.58041710727872
+      ],
+      "candidate_flag": 1,
+      "matching_regions": {
+        "road": [
+          {
+            "actor": "BP_Segment_Rot273_ArrowOut",
+            "component": "ChargeArea"
+          }
+        ]
+      }
+    },
+    {
+      "monotonic_s": 459527.353926833,
+      "observed_predicate": 0,
+      "eligible": false,
+      "reason": "no accepted bracketing samples"
+    }
+  ],
+  "max_gap_s": 0.2,
+  "origin_ue_cm": [
+    0.0078,
+    0.001,
+    -7.0
+  ],
+  "source_sha256": {
+    "events": "eb1741e2cb0665d2b9eafb3b704240bf4eeb3940fcadd6a2fc17f377542e4074",
+    "gps": "a4144a8d574d562a229793ea5f8bb8bb8ec8f07affcf54134e44934af2c235ac",
+    "OL1_road_box_volumes_candidate.json": "af34ae909498e3367019be0e175d3308bc9bcbf3a6f4edf2017f657e4e2dbc3d",
+    "OL1_port_volumes_candidate.json": "0d9978887b9a0476e90c13171d5b243de8313912f42a17d54ca8a7c5f9d1f82a",
+    "OL1_factory_volumes_candidate.json": "0fadfad23b44b87783398945efe64b4d1b37599483094aa34ef256f162cd1aa2"
+  },
+  "limitations": [
+    "arrival-time interpolation chosen after observing nearest-sample mismatches",
+    "GPS arrival times are not physical source time; interpolation is approximate",
+    "events without closely spaced accepted bracketing GPS remain unclassified",
+    "finite drone shape, overlap semantics and other field branches unverified"
+  ]
+}
