@@ -1,4 +1,14 @@
-# Foundation acceptance — initial evidence
+# Foundation acceptance — V2 status and historical evidence
+
+## Current V2 status
+
+The governing plan is [V2.0](implementation_plan_v2_zh.md); the current module-by-module record is [V2 execution status](v2_execution_status_zh.md). G0, G1, G2, G3, G4 and overall acceptance are **PARTIAL**. No module currently has the complete independent evidence and frozen test thresholds needed for a V2 PASS.
+
+The runnable single-vehicle PWM interface is available for research and prototype work, but its 6DOF parameters, map collision coverage, wind and force-zone effects are not proven equivalent to the official simulator. It must not be represented as an aligned high-frequency PWM training environment or a complete 1:1 replica. The default observation excludes simulator truth; the separate truth accessor is research-only. Candidate gate events are not official scoring. The current acceptance thresholds and held-out sets remain [PROVISIONAL](../config/acceptance.yaml).
+
+The rest of this document retains the original historical evidence; its earlier table and “next” actions are not the V2 current status.
+
+## Initial evidence snapshot
 
 Decision: **No-Go** for PWM controller training and claims of official equivalence.
 
