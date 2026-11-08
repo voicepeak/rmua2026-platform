@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-8342bc5f8f7942c683efeada83af9ad8",
+  "exit_status": 0,
+  "mode": "wind_stage4_late",
+  "seed_requested": 456,
+  "stdout": "player=0 stop=0 collector=137 (collector may be interrupted by stop)\n",
+  "stderr": "",
+  "source_sha256": {
+    "collect_ros.py": "9e526f9b016bde936b05a5f715102bdee138c287839c15187a14fadd43eac27a",
+    "collective_remote.sh": "ec742a2b6602d627d0df743a7783290913f91afcae9db63a21e1015b723b50e6",
+    "pwm_collective.py": "aa5ebeff11b1239b6d044cdbe2da9dc99dc1acad92fb49dd95bc4671ed2a89ac",
+    "wind_stage4_late.gdb": "d9c10ec8df5338f428bab82cea0fe3f2802fc73333967f9a7c662537dbc20afa"
+  }
+}
