@@ -78,10 +78,12 @@ def main():
     observations = [decode(x) for x in (json.loads(s) for s in raw[2].splitlines() if s) if x.get('topic') == 'rotor_pwm']
     result = {'status': 'debug message audit; not motor or physics latency', 'mode': run.get('mode'),
               'edges': audit(commands, observations), 'debug_samples': len(observations),
+              'debug_header_semantics': ('in analyzed 12.0.0.5 ROS library, header comes from separate '
+                                         'GET_IMU_DATA; not an independently timestamped rotor PWM sample'),
               'source_sha256': {x.name: hashlib.sha256(b).hexdigest() for x, b in zip(paths, raw)},
               'analysis_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               'limitations': ['command record is after publish; debug arrival includes ROS transport and scheduling',
-                              'debug stamp is not independently verified as command application or simulation clock',
+                              'debug header uses a separately requested IMU timestamp in analyzed library; it is not a rotor sample or application timestamp',
                               'matching values can recur; matching does not prove command causality',
                               'physical response onset and latency remain unidentified']}
     args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n', encoding='utf-8')

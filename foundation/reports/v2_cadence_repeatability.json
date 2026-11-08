@@ -1,0 +1,720 @@
+{
+  "status": "exploratory repeatability; not independent held-out acceptance",
+  "protocol": "v2_cadence_repeat_collection_protocol.md",
+  "window_source_s": [
+    0.6,
+    1.0
+  ],
+  "grid_step_s": 0.01,
+  "groups": {
+    "cadence20": {
+      "runs": [
+        {
+          "run": "foundation\\datasets\\d06_cadence20_seed123_20261107",
+          "seed_requested": 123,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.30323823965509
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.5021543500000001,
+            1.1047761440000001,
+            1.6068115230000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.1430449786110438
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032300000009,
+          "median_command_interval_s": 0.05019104450000009,
+          "source_sha256": {
+            "run.json": "1495c09798e5500b6706520fb4cb133eb698007e234b194ba1c140fdb0bc2225",
+            "commands.jsonl": "a54dd4579f31c0a570385e7f48c53f38daf8d0b0dcada94d1f563b55089adc83",
+            "capture.jsonl": "ec2ee512878dfdd3ba4fd4569f8e2939b68cfb5aa54ca31c4f1c35af802b22f2",
+            "pool\\pool.json": "68cdf7ad1ff0969c087f30abec4d0910d04d7a64ea6bad724addffde9179be02"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_cadence20_seed456_20261109",
+          "seed_requested": 456,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.30370492859421255
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.502841234,
+            1.105690241,
+            1.6089398860000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.1412072502439399
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032299999998,
+          "median_command_interval_s": 0.05027163000000001,
+          "source_sha256": {
+            "run.json": "1fbc1ba4cf4f7665779a9a82cd222dcd8bf243bae56f5bf112a26ec8ada52801",
+            "commands.jsonl": "f5b953017ac83ad7c408c21c4b07b01d56b62c1e0669e33429c63bfde3d32db6",
+            "capture.jsonl": "2a38547853cd8192a5ae1103ddc3adb61f799cdc60e0118e437d1dd1fb190fcf",
+            "pool\\pool.json": "cae01cff6b30ba858ab67e886e8194880805d489a65819f6b082cbdd4cc08ea1"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_cadence20_seed2026_20261109",
+          "seed_requested": 2026,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.3039061758842679
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.5020554070000001,
+            1.105676174,
+            1.6083841330000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.14034209992616198
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032299999998,
+          "median_command_interval_s": 0.05026745799999999,
+          "source_sha256": {
+            "run.json": "27ccc331c10f8feb524bbda1e85fa8c8b9bc522342defedd07752db64d4c9f0c",
+            "commands.jsonl": "17f42cf11d41b16a676d62edd1b2749a2955b2e22f112eb19f937d05a002c306",
+            "capture.jsonl": "4c3c822a18fd32147750d0f58de4b1fe537d6d4fe9d6c43c78179ec88153ec0b",
+            "pool\\pool.json": "695eb33db9bb9c616fb8d12e563a21d3e7d83be8f333e7cc99a2d241b38212ef"
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "relative_position_max_m": 0.0018377283671038858,
+          "relative_position_rmse_m": 0.0010746118689139493,
+          "relative_attitude_max_deg": 0.0
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "relative_position_max_m": 0.00270287868488181,
+          "relative_position_rmse_m": 0.0016048871355078564,
+          "relative_attitude_max_deg": 0.0
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "relative_position_max_m": 0.0012806559149491914,
+          "relative_position_rmse_m": 0.0005417873676540398,
+          "relative_attitude_max_deg": 0.0
+        }
+      ]
+    },
+    "cadence50": {
+      "runs": [
+        {
+          "run": "foundation\\datasets\\d06_cadence50_seed123_20261107",
+          "seed_requested": 123,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.30422167935790645
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.505856514,
+            1.113056183,
+            1.6192238330000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.13886408091462868
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032299999998,
+          "median_command_interval_s": 0.02024090249999999,
+          "source_sha256": {
+            "run.json": "cb93b8237f88958785ca134ccaa504e6504bce3557dd4a7dfe8ca769d1521f34",
+            "commands.jsonl": "7e050ccbf01d5eb4195f847ea6d9b461c1aa53666b65ddfe208cac63a44f58e5",
+            "capture.jsonl": "a8919fe65838447bdcd4a1934974879d16c83774b9d501afc6563641d3e03f4f",
+            "pool\\pool.json": "72634c651fbb9f3c6dd1abc852ba688ba7200f1dc9dcd0737996f94176fc0074"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_cadence50_seed456_20261109",
+          "seed_requested": 456,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.30427478669043756
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.5058813090000001,
+            1.113309622,
+            1.61974144
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.13869564399834614
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032299999998,
+          "median_command_interval_s": 0.02025675749999989,
+          "source_sha256": {
+            "run.json": "03a71e05eab536def07083bef1c33aab08b1e183e92c6e63c467b52316456117",
+            "commands.jsonl": "ef3d02b0b9c4c9b22d904d23fcb852ab79458809903e25e5d82f6b8f774c31e4",
+            "capture.jsonl": "a279c7b8d0796d863dd6787b1e041127e75633f4fef7285852af20d725d9c2e9",
+            "pool\\pool.json": "a6fc9b921a488ebe1e90f0117aa97883a3ae084ba69059b9d40b5880f5212437"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_cadence50_seed2026_20261109",
+          "seed_requested": 2026,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.30442408667094867
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.505601645,
+            1.1122164730000001,
+            1.618296385
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.13801623194404067
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032299999998,
+          "median_command_interval_s": 0.020244479000000003,
+          "source_sha256": {
+            "run.json": "f4562f7912ebf4c7867752a7cb240e635cca4584f0991c447908c9c9f26d09e9",
+            "commands.jsonl": "08ef6b747725f4ac5ba022eb874df176e22bed0256d7aaa42d007c0644179797",
+            "capture.jsonl": "413324a33981417101afe2e7e1b513e5400d757283570b1ffead5ddc04244f84",
+            "pool\\pool.json": "dc132158f2f0538cffe643ef2ef03a6498607fa98d7fadffbd2065651bb6b06a"
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "relative_position_max_m": 0.00016843691628254387,
+          "relative_position_rmse_m": 9.662607877691047e-05,
+          "relative_attitude_max_deg": 0.0
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "relative_position_max_m": 0.000847848970588011,
+          "relative_position_rmse_m": 0.000492557803309871,
+          "relative_attitude_max_deg": 0.0
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "relative_position_max_m": 0.0006794120543054671,
+          "relative_position_rmse_m": 0.00039604618699808937,
+          "relative_attitude_max_deg": 0.0
+        }
+      ]
+    },
+    "cadence100": {
+      "runs": [
+        {
+          "run": "foundation\\datasets\\d06_cadence100_seed123_20261107",
+          "seed_requested": 123,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.3036462463097791
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.5014984610000001,
+            1.105009795,
+            1.6057960990000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.14136101957083483
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032300000009,
+          "median_command_interval_s": 0.01023137599999999,
+          "source_sha256": {
+            "run.json": "55788198314392bdd543ab6e1baf01ae9568652af21a660eba822903622a18d1",
+            "commands.jsonl": "1ffb1990b3eaab40e9038294931d51f0acc1ab77f74543bcf098ac0e7fa3a1c5",
+            "capture.jsonl": "29561a95a4229cd54d4613a30f208aa4fa8f25f40fe8118ba2a186aa5f158768",
+            "pool\\pool.json": "02188a2c0875483460c3e9a031171e8317a35a13521ba5b1d4e8d62440ced871"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_cadence100_seed456_20261109",
+          "seed_requested": 456,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.3043190520943805
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.510148048,
+            1.1024353500000001,
+            1.6031191340000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.13850596644203414
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032300000009,
+          "median_command_interval_s": 0.010227679999999961,
+          "source_sha256": {
+            "run.json": "9332bd92764b2c0473580ea04923d3db2fc2a4c022deceb5f02dd5eed884dc9f",
+            "commands.jsonl": "33beddd742d123b6eaf040adb10807d59d381617d88a61a0709d2ead63966845",
+            "capture.jsonl": "ae5adae4425045c71bab1f99e58399cd4188d24acbee743a5994a78518258fa4",
+            "pool\\pool.json": "ba33fbdf3c807c9f8d2943fc8012f0ddf415302de46253491d3f451151cbc586"
+          }
+        },
+        {
+          "run": "foundation\\datasets\\v2_cadence100_seed2026_20261109",
+          "seed_requested": 2026,
+          "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+          "input_sequence": [
+            [
+              0.12,
+              0.12,
+              0.12,
+              0.12
+            ],
+            [
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            [
+              0.16,
+              0.16,
+              0.16,
+              0.16
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "initial_position_m": [
+            -7.797241474690959e-05,
+            -1.0070796533909049e-05,
+            0.30334379795037547
+          ],
+          "initial_quaternion_wxyz": [
+            0.9999999999999996,
+            0.0,
+            0.0,
+            -2.98023259404094e-08
+          ],
+          "phase_start_s": [
+            0.0,
+            0.500799894,
+            1.103318453,
+            1.6045362950000002
+          ],
+          "relative_position_min_m": [
+            0.0,
+            0.0,
+            -0.1409870678723172
+          ],
+          "relative_position_max_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "relative_attitude_change_max_deg": 0.0,
+          "max_pose_interval_s": 0.01200032300000009,
+          "median_command_interval_s": 0.010234713999999978,
+          "source_sha256": {
+            "run.json": "04fdbb6c5d936ca5b6c1fb9362ce3f051d5eef8342f6a8bfb75a87a87675c947",
+            "commands.jsonl": "aee5c37e00f126fb5513892d153bcaa27312a3e371fad622c4c2561cd0222462",
+            "capture.jsonl": "2ecec0e65cb4ddbb1fe05a159ebd626033412aba91971988fe2461964ba12f30",
+            "pool\\pool.json": "5f0a40cbf6c82fae5a5c3bd81980d2519503aa14949ec1dd1bf743e7fe4ebe88"
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "runs": [
+            0,
+            1
+          ],
+          "relative_position_max_m": 0.0028550531288006886,
+          "relative_position_rmse_m": 0.0016705551891292437,
+          "relative_attitude_max_deg": 0.0
+        },
+        {
+          "runs": [
+            0,
+            2
+          ],
+          "relative_position_max_m": 0.0011738065092352368,
+          "relative_position_rmse_m": 0.0006779348473534869,
+          "relative_attitude_max_deg": 0.0
+        },
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "relative_position_max_m": 0.0038182546376834825,
+          "relative_position_rmse_m": 0.0023051377586264395,
+          "relative_attitude_max_deg": 0.0
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "No collision-free guarantee or independently calibrated actuation clock.",
+    "Different processes may have different initial velocity, wind and timing.",
+    "Historical waveforms previously used for exploration; no acceptance threshold frozen."
+  ],
+  "analysis_sha256": "93b0521fb0915e9c767a48770d8db227b1c81c404375941fdc9ae57279ae4bc8",
+  "shared_reader_sha256": "34b195953ee341757e788c9d483c8b46bdafe88979deb3b8e6a4394fd40cd131"
+}

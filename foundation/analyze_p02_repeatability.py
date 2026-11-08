@@ -16,7 +16,7 @@ RUNS = [
 OUTPUT = Path('foundation/reports/v2_p02_repeatability.json')
 
 
-def read_run(directory, expected_mode='small_steps'):
+def read_run(directory, expected_mode='small_steps', window=(.30, .80)):
     paths = [directory / 'run.json', directory / 'commands.jsonl',
              directory / 'capture.jsonl', directory / 'pool/pool.json']
     contents = [p.read_bytes() for p in paths]
@@ -42,7 +42,10 @@ def read_run(directory, expected_mode='small_steps'):
     t = np.array([(x['stamp_ns'] - epoch) * 1e-9 for x in poses])
     if len(t) < 5 or np.any(np.diff(t) <= 0) or np.any(np.diff(command_t) <= 0):
         raise ValueError(f'{directory}: invalid timestamps')
-    grid = np.linspace(.30, .80, 51)
+    start, end = window
+    if end <= start or not np.isclose((end - start) / .01, round((end - start) / .01)):
+        raise ValueError('window must be a positive multiple of 10 ms')
+    grid = np.linspace(start, end, round((end - start) / .01) + 1)
     if t[0] > grid[0] or t[-1] < grid[-1] or command_t[-1] < grid[-1]:
         raise ValueError(f'{directory}: window not covered')
     used = (t >= grid[0] - .05) & (t <= grid[-1] + .05)

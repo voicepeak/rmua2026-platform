@@ -165,15 +165,16 @@
     }
   ],
   "debug_samples": 275,
+  "debug_header_semantics": "in analyzed 12.0.0.5 ROS library, header comes from separate GET_IMU_DATA; not an independently timestamped rotor PWM sample",
   "source_sha256": {
     "run.json": "b5a882ad4effa66a1794d630c66b2b46f5e3031b7c68f35d498a211d08f744c0",
     "commands.jsonl": "149a1ed998eb206d6d7f706a85124e39d8cae314134ff5b87855457de4c83110",
     "capture.jsonl": "0e611de32bd16e0223b60e731fa7a9be428637b3486b5d3a4728765f230210d0"
   },
-  "analysis_sha256": "f5fad0496e44a825ef52ab7bf8e80db8f4fd896f95645ad9da2d11831c5445cf",
+  "analysis_sha256": "91a819dc5c036b3bef99e1edee202a6c8b7d20f8629fff8ff25267cfb13ae825",
   "limitations": [
     "command record is after publish; debug arrival includes ROS transport and scheduling",
-    "debug stamp is not independently verified as command application or simulation clock",
+    "debug header uses a separately requested IMU timestamp in analyzed library; it is not a rotor sample or application timestamp",
     "matching values can recur; matching does not prove command causality",
     "physical response onset and latency remain unidentified"
   ]

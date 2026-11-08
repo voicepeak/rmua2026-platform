@@ -1,0 +1,152 @@
+{
+  "status": "clock and message diagnostic; not actuation timing",
+  "use_sim_time_at_collector_start": false,
+  "collector_ros_now_ns": 1794155916043275833,
+  "collector_wall_ns": 1794155916044183722,
+  "clock_published_at_start": false,
+  "gps_published_at_start": true,
+  "published_topics_at_start": [
+    [
+      "/rosout_agg",
+      "rosgraph_msgs/Log"
+    ],
+    [
+      "/rosout",
+      "rosgraph_msgs/Log"
+    ],
+    [
+      "/airsim_node/drone_1/back_left/Scene",
+      "sensor_msgs/Image"
+    ],
+    [
+      "/airsim_node/drone_1/back_left/Scene/camera_info",
+      "sensor_msgs/CameraInfo"
+    ],
+    [
+      "/airsim_node/drone_1/back_right/Scene",
+      "sensor_msgs/Image"
+    ],
+    [
+      "/airsim_node/drone_1/back_right/Scene/camera_info",
+      "sensor_msgs/CameraInfo"
+    ],
+    [
+      "/airsim_node/drone_1/front_left/Scene",
+      "sensor_msgs/Image"
+    ],
+    [
+      "/airsim_node/drone_1/front_left/Scene/camera_info",
+      "sensor_msgs/CameraInfo"
+    ],
+    [
+      "/airsim_node/drone_1/front_right/Scene",
+      "sensor_msgs/Image"
+    ],
+    [
+      "/airsim_node/drone_1/front_right/Scene/camera_info",
+      "sensor_msgs/CameraInfo"
+    ],
+    [
+      "/airsim_node/drone_1/lidar",
+      "sensor_msgs/PointCloud2"
+    ],
+    [
+      "/airsim_node/drone_1/gps",
+      "geometry_msgs/PoseStamped"
+    ],
+    [
+      "/airsim_node/drone_1/imu/imu",
+      "sensor_msgs/Imu"
+    ],
+    [
+      "/airsim_node/initial_pose",
+      "geometry_msgs/PoseStamped"
+    ],
+    [
+      "/airsim_node/end_goal",
+      "geometry_msgs/PoseStamped"
+    ],
+    [
+      "/airsim_node/drone_1/debug/rotor_pwm",
+      "airsim_ros/RotorPWM"
+    ],
+    [
+      "/airsim_node/drone_1/debug/wind",
+      "geometry_msgs/Vector3Stamped"
+    ],
+    [
+      "/airsim_node/drone_1/debug/pose_gt",
+      "geometry_msgs/PoseStamped"
+    ]
+  ],
+  "window_host_s_from_player_start": [
+    0.3,
+    0.8
+  ],
+  "topics": {
+    "pose_gt": {
+      "sample_count": 338,
+      "nonzero_stamp_count": 338,
+      "nonincreasing_source_stamp_pairs": 0,
+      "source_stamp_first_ns": 1794155916045463324,
+      "source_stamp_last_ns": 1794155919414535284,
+      "source_over_host_elapsed_ratio_window": 0.9979211313680512,
+      "arrival_wall_minus_source_ms_median": 21.046483,
+      "samples_in_window": 50
+    },
+    "imu": {
+      "sample_count": 337,
+      "nonzero_stamp_count": 337,
+      "nonincreasing_source_stamp_pairs": 0,
+      "source_stamp_first_ns": 1794155916057463646,
+      "source_stamp_last_ns": 1794155919414535284,
+      "source_over_host_elapsed_ratio_window": 0.9979113870353745,
+      "arrival_wall_minus_source_ms_median": 21.009261,
+      "samples_in_window": 50
+    },
+    "gps": {
+      "sample_count": 33,
+      "nonzero_stamp_count": 33,
+      "nonincreasing_source_stamp_pairs": 0,
+      "source_stamp_first_ns": 1794155916144465446,
+      "source_stamp_last_ns": 1794155919345533609,
+      "source_over_host_elapsed_ratio_window": 0.9973296231729908,
+      "arrival_wall_minus_source_ms_median": 21.054655,
+      "samples_in_window": 5
+    },
+    "rotor_pwm": {
+      "sample_count": 338,
+      "nonzero_stamp_count": 338,
+      "nonincreasing_source_stamp_pairs": 0,
+      "source_stamp_first_ns": 1794155916045463324,
+      "source_stamp_last_ns": 1794155919414535284,
+      "source_over_host_elapsed_ratio_window": 0.9979453677843705,
+      "arrival_wall_minus_source_ms_median": 20.933105499999996,
+      "samples_in_window": 50
+    },
+    "clock": {
+      "sample_count": 0,
+      "nonzero_stamp_count": 0,
+      "nonincreasing_source_stamp_pairs": 0,
+      "source_stamp_first_ns": null,
+      "source_stamp_last_ns": null,
+      "source_over_host_elapsed_ratio_window": null,
+      "arrival_wall_minus_source_ms_median": null,
+      "samples_in_window": 0
+    }
+  },
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "source_sha256": {
+    "run.json": "3c869ecfc76edd79eb4ec896adb3682c54e9f1013c925396e8ab5db9342504b1",
+    "capture.jsonl": "1194b6ea0be0f02b6ec8f05a3f974dd45311311658571243b62f8dc6b51e3cac",
+    "commands.jsonl": "7145421ed869ae1bd1d040651731a86f7932edcdbdb4862da704411f4ba13ed4",
+    "pool/pool.json": "3f75765a24c7aa81e32b7a2a37e1aa3f226ff81c41aad3fcb49a9550be350311"
+  },
+  "limitations": [
+    "ROS parameter and topic presence are point-in-time observations",
+    "header and wall-time differences include uncalibrated clock and transport offsets",
+    "ROS time is not verified physical simulation time or actuator application time",
+    "truth and debug topics are for offline research, not policy observations"
+  ],
+  "analysis_sha256": "ccba7ddeda3fd8845070634dc2ad4321b4f2e5e03792df0a76b712bccd342953"
+}
