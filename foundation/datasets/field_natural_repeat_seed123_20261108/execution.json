@@ -1,0 +1,13 @@
+{
+  "remote_directory": "/tmp/foundation-segment-9c0e79beb7bb4f73a0d5a3c115bb23f3",
+  "ssh_exit_status": 0,
+  "stdout": "{\n  \"seed\": 123,\n  \"mode\": \"VEL diagnostic\",\n  \"requested_duration_wall_s\": 145,\n  \"binary_sha256\": \"5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800\",\n  \"settings_sha256\": \"0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17\",\n  \"bridge_sha256\": \"70295627077d381d76e2ac9808e8670e681ee33ac74864661b2c75db4d35e8d1\",\n  \"route_sha256\": \"667c17e02e77e80f335f9d1df1993a879ddcea14f9e9f1fe883559fad2185b6a\",\n  \"guides_sha256\": \"9af4299995d5ecbe5a9353fbdfa3957d4e5795ed144f8e1b77a61d45527f2166\",\n  \"beta_controller_sha256\": \"8657e952b7afb8b4612a75c96c3f6ab9e43494c7af930c9b3e34fc9c0c7ad0dd\",\n  \"start_wall_unix_s\": 1794123224.9956584,\n  \"debug_truth_control\": false,\n  \"debug_state_used_to_stop\": false,\n  \"map\": \"default OL1\",\n  \"status\": \"controller_exited\",\n  \"container_id\": \"68b9824d7d58b53a1d15bdf5f453ef489e77ae43d1bbf87cf59e0fec49e4d3cf\",\n  \"ready_wall_unix_s\": 1794123234.1780126,\n  \"control_command\": \"timeout --signal=INT --kill-after=5 145 rosrun route_follower route_follower.py /airsim_node/drone_1/debug/pose_gt:=/rmua/diagnostic/pose _route_file:=/out/route/route.json _route_name:=static_spline1 _guides_file:=/out/route/guides.json _gates_file:= _gate_z_uses_offset:=false _use_gate_map:=false _wait_for_first_map:=false _course_frame_calibration:=false _adaptive_speed:=true _lidar_fresh_publication_check:=true _lidar_stereo_obstacles:=false _cruise_speed:=6.0 _max_speed:=6.0 _normal_speed_floor:=1.0\",\n  \"control_start_wall_unix_s\": 1794123236.1810403,\n  \"controller_exit_code\": 124,\n  \"end_wall_unix_s\": 1794123382.2948267\n}\n",
+  "stderr": "",
+  "requested_seconds": 145,
+  "requested_speed": 6.0,
+  "trace": "predicate",
+  "route_sha256": {
+    "route.json": "667c17e02e77e80f335f9d1df1993a879ddcea14f9e9f1fe883559fad2185b6a",
+    "guides.json": "9af4299995d5ecbe5a9353fbdfa3957d4e5795ed144f8e1b77a61d45527f2166"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "experiments\\stage_probe_20261104\\static_spline_candidates.json",
+  "sha256": "a794b957b15065552032c1d1166e8f543b3d0434c05a093f1b2975a1a441dac0",
+  "gate_source": null,
+  "gate_waypoints_ned_m": [],
+  "map": "RMUA2024OL1",
+  "route": "candidate_1_3",
+  "straight_unverified_connector_m": 147.52710883192594,
+  "candidate_lift_m": 6.0,
+  "lift_ramp_m": 80,
+  "station": "2D cumulative length, matching beta RouteGeometry",
+  "route_z": "-NED_z (UP); route geometry consumes x/y, not direct altitude",
+  "guide_z": "NED_z",
+  "count": 161,
+  "length_xy_m": 1419.7144568461829,
+  "limitations": [
+    "not validated collision-free",
+    "no terrain or stage-trigger knowledge",
+    "gaps need an independently verified route",
+    "component hierarchy/rotation conversion not established in flight",
+    "straight connector is an unverified candidate, guarded by online LiDAR; not a mapped free-space claim",
+    "lift is a hypothesis based on prior LiDAR returns, not evidence that overhead is free"
+  ]
+}

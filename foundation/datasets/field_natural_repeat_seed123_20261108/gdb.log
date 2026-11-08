@@ -1,0 +1,983 @@
+Breakpoint 1 at 0x2fcc89a
+Breakpoint 2 at 0x2fba970
+Breakpoint 3 at 0x2fc1360
+Breakpoint 4 at 0x2fb2040
+Breakpoint 5 at 0x2fb23b0
+Breakpoint 6 at 0x2fc77b0
+Breakpoint 7 at 0x2fc8900
+Breakpoint 8 at 0x2fb7110
+Breakpoint 9 at 0x2fb9960
+Breakpoint 10 at 0x2fbac30
+Breakpoint 11 at 0x2fb9830
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 123 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.08-07.33.47:066][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.08-07.33.47:066][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.08-07.33.47:066][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.08-07.33.47:066][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.08-07.33.47:066][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.08-07.33.47:066][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.08-07.33.47:067][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.08-07.33.47:067][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.08-07.33.47:067][  0]LogInit: Unix hardware info:
+[2026.11.08-07.33.47:067][  0]LogInit:  - we are the first instance of this executable
+[2026.11.08-07.33.47:067][  0]LogInit:  - this process' id (pid) is 127, parent process' id (ppid) is 125
+[2026.11.08-07.33.47:067][  0]LogInit:  - we are not running under debugger
+[2026.11.08-07.33.47:067][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.08-07.33.47:067][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.08-07.33.47:067][  0]LogInit:  - we're logged in locally
+[2026.11.08-07.33.47:067][  0]LogInit:  - we're running without rendering
+[2026.11.08-07.33.47:067][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.08-07.33.47:067][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.08-07.33.47:067][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.08-07.33.47:067][  0]LogInit:  - Cache line size: 64
+[2026.11.08-07.33.47:067][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.08-07.33.47:067][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.08-07.33.47:067][  0]LogInit:  - This is an internal build.
+[2026.11.08-07.33.47:067][  0]LogCore: Benchmarking clocks:
+[2026.11.08-07.33.47:067][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 83871734 (83872K, 84M) calls per second without zero deltas.
+[2026.11.08-07.33.47:067][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 81192327 (81192K, 81M) calls per second without zero deltas.
+[2026.11.08-07.33.47:067][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 233871021 (233871K, 234M) calls per second with 99.999568% zero deltas.
+[2026.11.08-07.33.47:067][  0]LogCore: Selected clock_id 1 (CLOCK_MONOTONIC) since it is the fastest support clock without zero deltas.
+[2026.11.08-07.33.47:067][  0]LogInit: Unix-specific commandline switches:
+[2026.11.08-07.33.47:067][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.08-07.33.47:067][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.08-07.33.47:067][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.08-07.33.47:067][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.08-07.33.47:067][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.08-07.33.47:067][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.08-07.33.47:067][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.08-07.33.47:067][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.08-07.33.47:067][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.08-07.33.47:067][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.08-07.33.47:067][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.08-07.33.47:067][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.08-07.33.47:067][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.08-07.33.47:067][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.08-07.33.47:108][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.08-07.33.47:109][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.08-07.33.47:109][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.08-07.33.47:109][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.08-07.33.47:119][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.08-07.33.47:121][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.08-07.33.47:121][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.08-07.33.47:122][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.08-07.33.47:122][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.08-07.33.47:122][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.08-07.33.47:124][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.08-07.33.47:124][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.08-07.33.47:124][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.08-07.33.47:124][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.08-07.33.47:124][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.08-07.33.47:124][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.08-07.33.47:152][  0]LogTextLocalizationManager: Compacting localization data took   1.23ms
+[2026.11.08-07.33.47:152][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.08-07.33.47:153][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000023 seconds
+[2026.11.08-07.33.47:153][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.08-07.33.47:156][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.08-07.33.47:156][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.08-07.33.47:157][  0]LogInit: Active device profile: [0x7fffe54b91c0][0x7fffe4889250 49] LinuxNoEditor
+[2026.11.08-07.33.47:157][  0]LogInit: Profiles: [0x7fffe54b8ec0][0x7fffecad0010 49] Linux, [0x7fffe54b91c0][0x7fffe4889250 49] LinuxNoEditor, 
+[2026.11.08-07.33.47:160][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.08-07.33.47:184][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.08-07.33.47:184][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.08-07.33.47:184][  0]LogTemp: Circle 构造函数调用
+[2026.11.08-07.33.47:184][  0]LogTemp: Circle 构造函数调用
+[2026.11.08-07.33.47:184][  0]LogTemp: Circle 构造函数调用
+[2026.11.08-07.33.47:189][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.08-07.33.47:222][  0]LogTemp: AirSimROS Loaded.
+[2026.11.08-07.33.47:222][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.08-07.33.47:223][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.08-07.33.47:223][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.08-07.33.47:224][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.08-07.33.47:224][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.08-07.33.47:226][  0]LogEngine: Initializing Engine...
+[2026.11.08-07.33.47:226][  0]LogStats: UGameplayTagsManager::InitialRMUA_TRACE_CLOCK wall_unix=1794123227.396963120 monotonic=459373.041922277
+RMUA_RANDOM_INIT singleton=0x7fffe5498200 configured=123 initial=123 current=123
+izeManager -  0.000 s
+[2026.11.08-07.33.47:258][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.08-07.33.47:258][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.08-07.33.47:258][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.08-07.33.47:258][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.08-07.33.47:259][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.08-07.33.47:259][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.08-07.33.47:259][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.08-07.33.47:259][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.08-07.33.47:259][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.08-07.33.47:259][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.08-07.33.47:259][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.08-07.33.47:281][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.08-07.33.47:282][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-07.33.47:282][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.08-07.33.47:282][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-07.33.47:282][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.08-07.33.47:384][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.08-07.33.47:384][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.08-07.33.47:384][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.08-07.33.47:384][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.08-07.33.47:384][  0]LogInit: Texture streaming: Disabled
+[2026.11.08-07.33.47:401][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.08-07.33.47:401][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.08-07.33.47:401][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.08-07.33.47:401][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.08-07.33.47:401][  0]LogTemp: Warning: App Init End !!! 2026-11-08 07:33:47 127.0.0.2
+[2026.11.08-07.33.47:401][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.08-07.33.47:401][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.08-07.33.47:401][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.08-07.33.47:401][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.08-07.33.47:401][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.08-07.33.47:401][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.08-07.33.47:408][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.08-07.33.47:408][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-07.33.47:408][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.08-07.33.47:408][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.08-07.33.47:408][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.08-07.33.47:510][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.08-07.33.47:510][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.08-07.33.47:510][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.08-07.33.47:511][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.08-07.33.47:511][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.08-07.33.47:511][  0]LogInit: Display: Starting Game.
+[2026.11.08-07.33.47:511][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.08-07.33.47:511][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.08-07.33.47:511][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.08-07.33.47:512][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.08-07.33.47:512][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.08-07.33.47:513][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2026.11.08-07.33.47:516][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.08-07.33.47:516][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.08-07.33.47:516][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.08-07.33.47
+[2026.11.08-07.33.47:516][  0]LogWorld: Bringing up level for play took: 0.000093
+[2026.11.08-07.33.47:517][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.08-07.33.47:517][  0]r.SetRes = "1280x720 w"
+[2026.11.08-07.33.47:517][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.08-07.33.47:517][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.08-07.33.47:517][  0]LogLoad: Took 0.005877 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.08-07.33.47:523][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.08-07.33.47:523][  0]LogLoad: (Engine Initialization) Total time: 0.54 seconds
+[2026.11.08-07.33.52:523][317]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.08-07.33.52:523][317]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.08-07.33.52:523][317]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.08-07.33.52:523][317]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.08-07.33.52:523][317]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.08-07.33.52:524][317]LogUObjectHash: Compacting FUObjectHashTables data took   0.31ms
+[2026.11.08-07.33.52:524][317]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.08-07.33.52:822][317]LogPakFile: Precache HighWater 16MB
+
+[2026.11.08-07.33.52:822][317]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.08-07.33.52:822][317]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.08-07.33.52:850][317]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.08-07.33.52
+[2026.11.08-07.33.52:850][317]LogWorld: Bringing up level for play took: 0.027682
+[2026.11.08-07.33.52:865][317]LogPackageName: SearchForPackageOnDisk took   0.013s, but failed to resolve .
+[2026.11.08-07.33.52:865][317]r.CustomDepth = "3"
+[2026.11.08-07.33.52:867][317]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.08-07.33.52:883][317]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.08-07.33.52:884][317]LogTemp: Warning: No Drone API
+[2026.11.08-07.33.52:885][317]LogTemp: drone_1
+drone_1
+RMUA_TRACE_CLOCK wall_unix=1794123232.898391962 monotonic=459378.543350821
+RMUA_GATE actor=0x7ffe02bfe980 fname_index=765779 fname_number=0 root=0x7ffe0278d400 xyz_cm=62349.585938,-8776.669922,13507.503906 quat=-0.00000000,0.00000000,-0.66370100,0.74799794 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.917966127 monotonic=459378.562924717
+RMUA_GATE actor=0x7ffe02bfe740 fname_index=765829 fname_number=0 root=0x7ffe0278ca00 xyz_cm=62349.597656,-8776.666992,16317.460938 quat=-0.00000000,0.00000000,-0.66370100,0.74799794 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.923829794 monotonic=459378.568787983
+RMUA_GATE actor=0x7ffe02bfe500 fname_index=765879 fname_number=0 root=0x7ffe0278dc00 xyz_cm=65070.550781,-3507.754639,13507.503906 quat=-0.00000000,0.00000000,-0.94878143,0.31593323 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.934174061 monotonic=459378.579132170
+RMUA_GATE actor=0x7ffe02bfe2c0 fname_index=765929 fname_number=0 root=0x7ffe02fc3a00 xyz_cm=65070.558594,-3507.765869,16317.460938 quat=-0.00000000,0.00000000,-0.94878143,0.31593323 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.940369606 monotonic=459378.585328165
+RMUA_GATE actor=0x7ffe02bfe080 fname_index=765979 fname_number=0 root=0x7ffe02fc3000 xyz_cm=71005.195312,-3248.251709,13507.503906 quat=0.00000000,-0.00000000,0.97963524,0.20078528 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.946166039 monotonic=459378.591124401
+RMUA_GATE actor=0x7ffe029c49c0 fname_index=766029 fname_number=0 root=0x7ffe02fc2600 xyz_cm=71005.187500,-3248.265625,16317.460938 quat=0.00000000,-0.00000000,0.97963524,0.20078528 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.951943874 monotonic=459378.596902213
+RMUA_GATE actor=0x7ffe029c4780 fname_index=766079 fname_number=0 root=0x7ffe02fc1c00 xyz_cm=74193.562500,-8222.387695,13507.503906 quat=0.00000000,-0.00000000,0.74799609,0.66370314 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.957631826 monotonic=459378.602589997
+RMUA_GATE actor=0x7ffe029c4540 fname_index=766129 fname_number=0 root=0x7ffe02fc1200 xyz_cm=74193.554688,-8222.390625,16317.460938 quat=0.00000000,-0.00000000,0.74799609,0.66370314 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.963301897 monotonic=459378.608260073
+RMUA_GATE actor=0x7ffe029c4300 fname_index=766179 fname_number=0 root=0x7ffe02fc0800 xyz_cm=71468.804688,-13417.945312,13507.503906 quat=0.00000000,-0.00000000,0.39742145,0.91763622 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.968943357 monotonic=459378.613901598
+RMUA_GATE actor=0x7ffe029c40c0 fname_index=766229 fname_number=0 root=0x7ffe02fc8200 xyz_cm=71468.789062,-13417.935547,16317.460938 quat=0.00000000,-0.00000000,0.39742145,0.91763622 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.974728346 monotonic=459378.619686639
+RMUA_GATE actor=0x7ffe029c3e80 fname_index=766279 fname_number=0 root=0x7ffe02fc7800 xyz_cm=65531.375000,-13744.593750,13507.503906 quat=-0.00000000,0.00000000,-0.20078216,0.97963589 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123232.980403185 monotonic=459378.625361545
+RMUA_GATE actor=0x7ffe029c3c40 fname_index=766329 fname_number=0 root=0x7ffe02fc6e00 xyz_cm=65531.378906,-13744.580078,16317.460938 quat=-0.00000000,0.00000000,-0.20078216,0.97963589 scale=4.449822,1.859345,2.449434
+RMUA_TRACE_CLOCK wall_unix=1794123233.023713112 monotonic=459378.668672059
+RMUA_SRAND context=0x7ffdefaf4980 seed=123
+RMUA_TRACE_CLOCK wall_unix=1794123233.029726028 monotonic=459378.674684438
+RMUA_GAME_RESET state=0x7ffdefaf4780 singleton=0x7fffe5498200 initial=123 current=123
+RMUA_TRACE_CLOCK wall_unix=1794123233.039857864 monotonic=459378.684816393
+RMUA_STAGE_INIT object=0x7ffdefaf4780 arg1=1 arg2=3 stage=1 timer_1a8=0.000000 timer_1ac=0.000000
+RMUA_TRACE_CLOCK wall_unix=1794123233.046144962 monotonic=459378.691103463
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=0 requested_state=0 flag=0 timer_1a8=0.000000 timer_1ac=0.000000
+RMUA_PREDICATE_CHANGE {"field_14": -2.1697702407836914, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": [{"flag": 1, "index": 0, "object": "0x7fffdcda7300", "passed": true}]}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459378.69421421, "out_timer": 0.0, "predicate": 1, "state": 0, "stored_flag_before_update": 1, "wall_unix_s": 1794123233.0492556}
+RMUA_COLLISION_CALLBACK wall_unix=1794123233.274545670 monotonic=459378.919504797
+RMUA_COLLISION state=0 object=0x7ffdefaf4780
+#0  0x0000000002fb7110 in  ()
+#1  0x0000000002fce60b in  ()
+#2  0x0000000002fcd85a in  ()
+#3  0x0000000002fcd479 in  ()
+#4  0x00000000058ff00f in  ()
+#5  0x00000000053c5701 in  ()
+RMUA_COLLISION_CALLBACK wall_unix=1794123233.324129581 monotonic=459378.969088444
+RMUA_COLLISION state=0 object=0x7ffdefaf4780
+#0  0x0000000002fb7110 in  ()
+#1  0x0000000002fce60b in  ()
+#2  0x0000000002fcd85a in  ()
+#3  0x0000000002fcd479 in  ()
+#4  0x00000000058ff00f in  ()
+#5  0x00000000053c5701 in  ()
+RMUA_TRACE_CLOCK wall_unix=1794123241.578328609 monotonic=459387.223287554
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=0 requested_state=1 flag=0 timer_1a8=8.994667 timer_1ac=0.000000
+RMUA_PREDICATE_CHANGE {"field_14": 13311.0908203125, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459496.528026047, "out_timer": 0.0, "predicate": 0, "state": 1, "stored_flag_before_update": 1, "wall_unix_s": 1794123350.8830664}
+RMUA_PREDICATE_CHANGE {"field_14": 13327.017578125, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": [{"index": 0, "object": "0x7ffe02f5c400", "passed": true, "value_288": 2, "value_2b4": 1}]}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459496.927386167, "out_timer": 0.40000101923942566, "predicate": 1, "state": 1, "stored_flag_before_update": 0, "wall_unix_s": 1794123351.282427}
+RMUA_PREDICATE_CHANGE {"field_14": 13367.3876953125, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459497.477682921, "out_timer": 0.40000101923942566, "predicate": 0, "state": 1, "stored_flag_before_update": 1, "wall_unix_s": 1794123351.8327231}
+RMUA_PREDICATE_CHANGE {"field_14": 13397.169921875, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": [{"index": 0, "object": "0x7ffe02f5c400", "passed": true, "value_288": 2, "value_2b4": 0}]}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459498.428026413, "out_timer": 1.3500034809112549, "predicate": 1, "state": 1, "stored_flag_before_update": 0, "wall_unix_s": 1794123352.783067}
+RMUA_PREDICATE_CHANGE {"field_14": 13459.1484375, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459499.678333476, "out_timer": 1.3500034809112549, "predicate": 0, "state": 1, "stored_flag_before_update": 1, "wall_unix_s": 1794123354.033374}
+RMUA_PREDICATE_CHANGE {"field_14": 13452.5927734375, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": [{"index": 0, "object": "0x7ffe02f5c400", "passed": true, "value_288": 2, "value_2b4": 0}]}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459500.278980415, "out_timer": 1.9500058889389038, "predicate": 1, "state": 1, "stored_flag_before_update": 0, "wall_unix_s": 1794123354.634021}
+RMUA_PREDICATE_CHANGE {"field_14": 13472.8017578125, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459500.978418278, "out_timer": 1.9500058889389038, "predicate": 0, "state": 1, "stored_flag_before_update": 1, "wall_unix_s": 1794123355.3334584}
+RMUA_TRACE_CLOCK wall_unix=1794123355.347244740 monotonic=459500.992203805
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=1 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=2.000006
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123355.977500439 monotonic=459501.622459456
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=2.629175
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123356.605192900 monotonic=459502.250151999
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=3.257468
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123357.233716488 monotonic=459502.878675577
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=3.886360
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123357.877834082 monotonic=459503.522792876
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=4.528732
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123358.503990173 monotonic=459504.148949286
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=5.157639
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123359.131332397 monotonic=459504.776291393
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=5.783713
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123359.761899471 monotonic=459505.406858270
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=6.414372
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123360.389795780 monotonic=459506.034754812
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=7.043350
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123361.031642437 monotonic=459506.676601352
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=7.684363
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123361.673199415 monotonic=459507.318158128
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=8.325739
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_PREDICATE_CHANGE {"field_14": 13465.119140625, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": [{"index": 0, "object": "0x7ffe02f5c400", "passed": true, "value_288": 2, "value_2b4": 1}]}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459507.940011796, "out_timer": 8.325738906860352, "predicate": 1, "state": 12, "stored_flag_before_update": 0, "wall_unix_s": 1794123362.2950523}
+RMUA_PREDICATE_CHANGE {"field_14": 13477.8037109375, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459508.691555503, "out_timer": 8.325738906860352, "predicate": 0, "state": 12, "stored_flag_before_update": 1, "wall_unix_s": 1794123363.0465958}
+RMUA_TRACE_CLOCK wall_unix=1794123363.060879707 monotonic=459508.705838120
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=8.375739
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123363.700236559 monotonic=459509.345195268
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=9.016762
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123364.342522860 monotonic=459509.987481660
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=9.659987
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123364.985827446 monotonic=459510.630786241
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=10.302150
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123365.627812147 monotonic=459511.272771068
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=10.945127
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123366.270592451 monotonic=459511.915551408
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=11.587334
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123366.914364576 monotonic=459512.559323456
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=12.231195
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123367.557487726 monotonic=459513.202446890
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=12.874221
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123368.199604034 monotonic=459513.844562701
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=13.516464
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123368.841369390 monotonic=459514.486328343
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=14.158886
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123369.484345913 monotonic=459515.129304876
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=14.801516
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123370.130650043 monotonic=459515.775609120
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=15.448153
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123370.778537750 monotonic=459516.423496691
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=16.095594
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_PREDICATE_CHANGE {"field_14": 13468.412109375, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": [{"index": 0, "object": "0x7ffe02f5c400", "passed": true, "value_288": 2, "value_2b4": 1}]}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459517.05561902, "out_timer": 16.09559440612793, "predicate": 1, "state": 12, "stored_flag_before_update": 0, "wall_unix_s": 1794123371.4106596}
+RMUA_PREDICATE_CHANGE {"field_14": 13483.2041015625, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459517.907028738, "out_timer": 16.09559440612793, "predicate": 0, "state": 12, "stored_flag_before_update": 1, "wall_unix_s": 1794123372.2620692}
+RMUA_TRACE_CLOCK wall_unix=1794123372.277734041 monotonic=459517.922692686
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=16.145596
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123372.935345888 monotonic=459518.580304838
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=16.806108
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123373.591907024 monotonic=459519.236865979
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=17.463335
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123374.260375261 monotonic=459519.905334294
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=18.131281
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123374.917917013 monotonic=459520.562875716
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=18.787357
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123375.574238062 monotonic=459521.219196782
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=19.443289
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123376.232946396 monotonic=459521.877905410
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=20.100950
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123376.893767834 monotonic=459522.538726841
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=20.764864
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123377.559571266 monotonic=459523.204530123
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=21.424971
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123378.222248793 monotonic=459523.867207535
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=22.091454
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123378.884980202 monotonic=459524.529939258
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=22.754648
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123379.547278166 monotonic=459525.192236948
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=23.418449
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_TRACE_CLOCK wall_unix=1794123380.210426331 monotonic=459525.855385944
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=24.080782
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+RMUA_PREDICATE_CHANGE {"field_14": 13462.9443359375, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": [{"index": 0, "object": "0x7ffe02f5c400", "passed": true, "value_288": 2, "value_2b4": 1}]}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459526.506210003, "out_timer": 24.080781936645508, "predicate": 1, "state": 12, "stored_flag_before_update": 0, "wall_unix_s": 1794123380.8612509}
+RMUA_PREDICATE_CHANGE {"field_14": 13476.6015625, "field_f4": 0.0, "lists": {"array30": {"count": 12, "passing": []}, "array40": {"count": 12, "passing": []}, "array60": {"count": 12, "passing": []}, "array70": {"count": 24, "passing": []}}, "monotonic_s": 459527.353926833, "out_timer": 24.080781936645508, "predicate": 0, "state": 12, "stored_flag_before_update": 1, "wall_unix_s": 1794123381.7089672}
+RMUA_TRACE_CLOCK wall_unix=1794123381.723539829 monotonic=459527.368498343
+RMUA_STATE_ENTER object=0x7ffdefaf4780 old_state=12 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=24.130781
+#0  0x0000000002fb9960 in  ()
+#1  0x0000000002fb9517 in  ()
+#2  0x0000000002fcd89d in  ()
+#3  0x00000000058ff00f in  ()
+#4  0x00000000053c5701 in  ()
+#5  0x00000000025de5e9 in _start ()
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 221]
+sh: 1: xdg-user-dir: not found
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 463]

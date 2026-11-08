@@ -1,0 +1,795 @@
+{
+  "events": [
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        0.0,
+        0.0,
+        -2.3655362129211426
+      ],
+      "field_14": -2.3655362129211426,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": [
+            {
+              "flag": 1,
+              "index": 0,
+              "object": "0x7fffdcc17000",
+              "passed": true
+            }
+          ]
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473486.767965974,
+      "out_timer": 0.0,
+      "predicate": 1,
+      "state": 0,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137341.1230075,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 1.5664306390099227,
+        "gps_stamp_ros_s": 1794137342.580051,
+        "position": [
+          0.01919431715005381,
+          -0.014447135468559757,
+          0.2961539786311979
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        55535.6328125,
+        -11766.744140625,
+        13311.9912109375
+      ],
+      "field_14": 13311.9912109375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473614.261935845,
+      "out_timer": 0.0,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137468.6169767,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.027583482034970075,
+        "gps_stamp_ros_s": 1794137468.258732,
+        "position": [
+          555.354716558626,
+          -117.66858479680042,
+          -133.1887843498206
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        55728.99609375,
+        -11690.724609375,
+        13327.2724609375
+      ],
+      "field_14": 13327.2724609375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473614.661234702,
+      "out_timer": 0.4000156819820404,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137469.0162754,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.026892886962741613,
+        "gps_stamp_ros_s": 1794137468.6577406,
+        "position": [
+          557.260479708009,
+          -116.89204068823041,
+          -133.3314552161077
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        55990.65625,
+        -11583.9130859375,
+        13359.7880859375
+      ],
+      "field_14": 13359.7880859375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473615.211878258,
+      "out_timer": 0.4000156819820404,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137469.5669188,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.022444204019848257,
+        "gps_stamp_ros_s": 1794137469.2577534,
+        "position": [
+          560.1325485111296,
+          -115.83505366171994,
+          -133.83735311903047
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        56358.97265625,
+        -11427.0732421875,
+        13389.6630859375
+      ],
+      "field_14": 13389.6630859375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473616.062613814,
+      "out_timer": 1.2500213384628296,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137470.4176548,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.028226641996297985,
+        "gps_stamp_ros_s": 1794137470.0587704,
+        "position": [
+          563.5489251578547,
+          -114.29117769665676,
+          -133.95867083511544
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        56749.12890625,
+        -11249.111328125,
+        13444.3935546875
+      ],
+      "field_14": 13444.3935546875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473617.314538427,
+      "out_timer": 1.2500213384628296,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137471.669579,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.019728070008568466,
+        "gps_stamp_ros_s": 1794137471.357798,
+        "position": [
+          567.5207483901901,
+          -112.4878261324553,
+          -134.59391979861363
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        56785.25390625,
+        -11229.9580078125,
+        13437.669921875
+      ],
+      "field_14": 13437.669921875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 0
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473617.912770685,
+      "out_timer": 1.8500226736068726,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137472.2678113,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.021472347027156502,
+        "gps_stamp_ros_s": 1794137471.9578109,
+        "position": [
+          567.9064815730508,
+          -112.27224262542838,
+          -134.26220308802638
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        56872.578125,
+        -11189.49609375,
+        13459.37890625
+      ],
+      "field_14": 13459.37890625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473618.6644175,
+      "out_timer": 1.8500226736068726,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137473.0194585,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.03005458100233227,
+        "gps_stamp_ros_s": 1794137472.6568258,
+        "position": [
+          568.669065281904,
+          -111.96368894467459,
+          -134.681113442686
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        56985.3046875,
+        -11140.1416015625,
+        13447.33984375
+      ],
+      "field_14": 13447.33984375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 0
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473623.977765901,
+      "out_timer": 6.467474937438965,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137478.3328063,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.03855571203166619,
+        "gps_stamp_ros_s": 1794137473.3408403,
+        "position": [
+          569.8264553374004,
+          -111.42579690233327,
+          -134.5485664508169
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57054.0703125,
+        -11122.900390625,
+        13475.970703125
+      ],
+      "field_14": 13475.970703125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473624.827941757,
+      "out_timer": 6.467474937438965,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137479.1829824,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.011205198999959975,
+        "gps_stamp_ros_s": 1794137474.2318594,
+        "position": [
+          570.461069400825,
+          -111.2602387806223,
+          -134.94544975286942
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57079.0546875,
+        -11129.8720703125,
+        13451.8623046875
+      ],
+      "field_14": 13451.8623046875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 0
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473631.689490866,
+      "out_timer": 12.6101713180542,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137486.0445318,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.0401086809579283,
+        "gps_stamp_ros_s": 1794137474.969875,
+        "position": [
+          570.8844853140491,
+          -111.27274976688031,
+          -134.61489380018352
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57095.4765625,
+        -11122.4052734375,
+        13480.0419921875
+      ],
+      "field_14": 13480.0419921875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473632.644654415,
+      "out_timer": 12.6101713180542,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137486.999695,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.004878176958300173,
+        "gps_stamp_ros_s": 1794137475.9688966,
+        "position": [
+          570.9714790156313,
+          -111.18500185854032,
+          -134.99768143388727
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57132.74609375,
+        -11087.8662109375,
+        13457.025390625
+      ],
+      "field_14": 13457.025390625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473639.647396512,
+      "out_timer": 18.886051177978516,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137494.002437,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.03952420596033335,
+        "gps_stamp_ros_s": 1794137476.7279127,
+        "position": [
+          571.3182814151688,
+          -110.86979395332172,
+          -134.698268486764
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57159.0078125,
+        -11071.009765625,
+        13479.140625
+      ],
+      "field_14": 13479.140625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473640.546884757,
+      "out_timer": 18.886051177978516,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137494.9019253,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.03903566801454872,
+        "gps_stamp_ros_s": 1794137477.6279318,
+        "position": [
+          571.5684149341297,
+          -110.80343923009833,
+          -134.79406295200874
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57199.6953125,
+        -11050.7861328125,
+        13454.216796875
+      ],
+      "field_14": 13454.216796875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe09100700",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473648.500630531,
+      "out_timer": 26.088077545166016,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794137502.8556714,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.04034072096692398,
+        "gps_stamp_ros_s": 1794137478.5519516,
+        "position": [
+          572.0367606551886,
+          -110.5203336793223,
+          -134.6260547785268
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "drone_actor": "0x7fffe57dbd10",
+      "drone_component": "0x7ffdee8810f0",
+      "drone_world_cm": [
+        57227.0078125,
+        -11043.6181640625,
+        13476.0341796875
+      ],
+      "field_14": 13476.0341796875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 473649.451536318,
+      "out_timer": 26.088077545166016,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794137503.8065767,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.009010342007968575,
+        "gps_stamp_ros_s": 1794137479.550973,
+        "position": [
+          572.2612327716193,
+          -110.39740128556721,
+          -135.02953196628349
+        ],
+        "accepted": true
+      }
+    }
+  ],
+  "source_sha256": {
+    "log": "0d5b6229643d9d665b8b9ac77d58018251528bfabf3a28ddb2584b0550559d9e",
+    "gps": "1c48861ee3f99dcbd2ece60bdb7e40fa6c55c7adf431b6b7ae12748fa0c1dc20"
+  },
+  "limitations": [
+    "nearest callback arrival is not synchronized physical pose",
+    "only predicate changes logged; debugger perturbs timing"
+  ]
+}

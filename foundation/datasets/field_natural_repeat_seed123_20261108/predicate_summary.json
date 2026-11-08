@@ -1,0 +1,599 @@
+{
+  "events": [
+    {
+      "field_14": -2.1697702407836914,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": [
+            {
+              "flag": 1,
+              "index": 0,
+              "object": "0x7fffdcda7300",
+              "passed": true
+            }
+          ]
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459378.69421421,
+      "out_timer": 0.0,
+      "predicate": 1,
+      "state": 0,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123233.0492556,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 1.5694853760069236,
+        "gps_stamp_ros_s": 1794123234.5100121,
+        "position": [
+          0.007959345959549348,
+          -0.015727725417706485,
+          0.30655032811354627
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13311.0908203125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459496.528026047,
+      "out_timer": 0.0,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123350.8830664,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.0356782820308581,
+        "gps_stamp_ros_s": 1794123350.570488,
+        "position": [
+          555.5941362910895,
+          -117.7010499876379,
+          -133.2223031076219
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13327.017578125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe02f5c400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459496.927386167,
+      "out_timer": 0.40000101923942566,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794123351.282427,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.03623492002952844,
+        "gps_stamp_ros_s": 1794123350.9694965,
+        "position": [
+          557.7005003050457,
+          -116.75616558554978,
+          -133.2742685563643
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13367.3876953125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459497.477682921,
+      "out_timer": 0.40000101923942566,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123351.8327231,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.014035957981832325,
+        "gps_stamp_ros_s": 1794123351.4705071,
+        "position": [
+          560.2599260537216,
+          -115.71825559175419,
+          -133.73309392455766
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13397.169921875,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe02f5c400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 0
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459498.428026413,
+      "out_timer": 1.3500034809112549,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794123352.783067,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": 0.03573138499632478,
+        "gps_stamp_ros_s": 1794123352.4695287,
+        "position": [
+          565.0737914264145,
+          -113.71047703523175,
+          -133.93163779878793
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13459.1484375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459499.678333476,
+      "out_timer": 1.3500034809112549,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123354.033374,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.014572629996109754,
+        "gps_stamp_ros_s": 1794123353.6695542,
+        "position": [
+          569.1174962442651,
+          -111.74410457674415,
+          -134.65396935499894
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13452.5927734375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe02f5c400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 0
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459500.278980415,
+      "out_timer": 1.9500058889389038,
+      "predicate": 1,
+      "state": 1,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794123354.634021,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.015292393043637276,
+        "gps_stamp_ros_s": 1794123354.269567,
+        "position": [
+          569.5469067323157,
+          -111.45321800496966,
+          -134.60041524449557
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13472.8017578125,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459500.978418278,
+      "out_timer": 1.9500058889389038,
+      "predicate": 0,
+      "state": 1,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123355.3334584,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.01469282095786184,
+        "gps_stamp_ros_s": 1794123354.968582,
+        "position": [
+          570.3841427448455,
+          -111.13482071231032,
+          -134.82657560679263
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13465.119140625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe02f5c400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459507.940011796,
+      "out_timer": 8.325738906860352,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794123362.2950523,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.023931645031552762,
+        "gps_stamp_ros_s": 1794123355.6675968,
+        "position": [
+          571.4769382383909,
+          -110.62327891489608,
+          -134.78951757663523
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "field_14": 13477.8037109375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459508.691555503,
+      "out_timer": 8.325738906860352,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123363.0465958,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.0756809149752371,
+        "gps_stamp_ros_s": 1794123356.3666117,
+        "position": [
+          572.046783792271,
+          -110.2937163271717,
+          -134.61428969754863
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13468.412109375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe02f5c400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459517.05561902,
+      "out_timer": 16.09559440612793,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794123371.4106596,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.024552902032155544,
+        "gps_stamp_ros_s": 1794123357.2756312,
+        "position": [
+          572.1354800509777,
+          -110.23808161294701,
+          -134.7398591453518
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "field_14": 13483.2041015625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459517.907028738,
+      "out_timer": 16.09559440612793,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123372.2620692,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.07582391001051292,
+        "gps_stamp_ros_s": 1794123358.0766482,
+        "position": [
+          572.1318484309836,
+          -110.18905177477079,
+          -134.75037329653875
+        ],
+        "accepted": true
+      }
+    },
+    {
+      "field_14": 13462.9443359375,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": [
+            {
+              "index": 0,
+              "object": "0x7ffe02f5c400",
+              "passed": true,
+              "value_288": 2,
+              "value_2b4": 1
+            }
+          ]
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459526.506210003,
+      "out_timer": 24.080781936645508,
+      "predicate": 1,
+      "state": 12,
+      "stored_flag_before_update": 0,
+      "wall_unix_s": 1794123380.8612509,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.02639915596228093,
+        "gps_stamp_ros_s": 1794123359.0156682,
+        "position": [
+          572.4469346405066,
+          -110.10049079041302,
+          -134.68848035653022
+        ],
+        "accepted": false
+      }
+    },
+    {
+      "field_14": 13476.6015625,
+      "field_f4": 0.0,
+      "lists": {
+        "array30": {
+          "count": 12,
+          "passing": []
+        },
+        "array40": {
+          "count": 12,
+          "passing": []
+        },
+        "array60": {
+          "count": 12,
+          "passing": []
+        },
+        "array70": {
+          "count": 24,
+          "passing": []
+        }
+      },
+      "monotonic_s": 459527.353926833,
+      "out_timer": 24.080781936645508,
+      "predicate": 0,
+      "state": 12,
+      "stored_flag_before_update": 1,
+      "wall_unix_s": 1794123381.7089672,
+      "nearest_gps": {
+        "arrival_monotonic_delta_s": -0.07428386603714898,
+        "gps_stamp_ros_s": 1794123359.8136852,
+        "position": [
+          572.7527069111751,
+          -110.10564864357683,
+          -134.59394178011297
+        ],
+        "accepted": true
+      }
+    }
+  ],
+  "source_sha256": {
+    "log": "fa95362776dd070810d955a0fb529fe7bb58b854e0cb7f34282987faeb7fc9ae",
+    "gps": "a4144a8d574d562a229793ea5f8bb8bb8ec8f07affcf54134e44934af2c235ac"
+  },
+  "limitations": [
+    "nearest callback arrival is not synchronized physical pose",
+    "only predicate changes logged; debugger perturbs timing"
+  ]
+}
