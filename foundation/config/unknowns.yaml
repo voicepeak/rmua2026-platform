@@ -1,0 +1,26 @@
+status: PARTIAL
+items:
+  - id: runtime_configuration
+    unknown: Complete active simulator settings and launch arguments for each run.
+    evidence: baseline_manifest.yaml
+  - id: airsim_revision
+    unknown: AirSim revision and integration in the shipped binary.
+    evidence: ../reports/dynamics_candidate.md
+  - id: pwm_bounds
+    unknown: Official accepted PWM range, clipping and invalid-value behavior.
+    evidence: ../evidence/README.md
+  - id: pwm_hold_timeout
+    unknown: Physical command application delay, holding behavior and timeout.
+    evidence: ../reports/dynamics_candidate.md
+  - id: motor_directions
+    unknown: Independently reproducible channel and spin directions across the intended envelope.
+    evidence: ../evidence/README.md
+  - id: physical_units
+    unknown: Inertia frame and physical units and coefficient speed units in the released build.
+    evidence: quad_params.yaml
+  - id: coordinate_alignment
+    unknown: Full map origin, alignment, body/world rotations and reference points.
+    evidence: ../frame_spec.md
+  - id: clock_mapping
+    unknown: Synchronization between ROS stamps, applied command and physical dynamics.
+    evidence: ../reports/debugger_clock_pair_protocol.md

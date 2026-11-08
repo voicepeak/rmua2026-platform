@@ -1,0 +1,20 @@
+{
+  "parsed_json_equal": true,
+  "files": [
+    {
+      "path": "foundation\\config\\official_settings_Game2024_1.json",
+      "byte_sha256": "048864b6af51ae3f7e3c6299c9632cc4ad8b58dd6a3b47759dec1287a9fa9983",
+      "canonical_json_sha256": "88198448664ec21c7739f95df28dbf590a819842bffd02545f138b985147909b",
+      "byte_order_mark": "UTF-16LE"
+    },
+    {
+      "path": "foundation\\evidence\\seed123_simulator_settings.json",
+      "byte_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "canonical_json_sha256": "88198448664ec21c7739f95df28dbf590a819842bffd02545f138b985147909b",
+      "byte_order_mark": "none"
+    }
+  ],
+  "limitations": [
+    "Value equality does not prove the simulator read or applied the intended settings at runtime."
+  ]
+}

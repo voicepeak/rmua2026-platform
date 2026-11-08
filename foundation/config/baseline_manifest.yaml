@@ -1,0 +1,24 @@
+# V2 G0 evidence inventory. Values identify recorded artifacts, not a claim
+# that every historical run used the same settings or verified physics.
+status: PARTIAL
+simulator_version_reported: 12.0.0.5
+binary_sha256_recorded: 5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800
+binary_evidence: ../datasets/clock_pair_yaw_seed314159_20261108/pool/pool.json
+runtime_settings:
+  sha256_recorded: 0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17
+  snapshot: ../evidence/seed123_simulator_settings.json
+  run_metadata: ../datasets/clock_pair_yaw_seed314159_20261108/pool/pool.json
+  runtime_readback_verified: false
+other_settings:
+  snapshot: official_settings_Game2024_1.json
+  sha256_locally_checked: 048864b6af51ae3f7e3c6299c9632cc4ad8b58dd6a3b47759dec1287a9fa9983
+  parsed_json_equals_recorded_runtime_snapshot: true
+  semantic_comparison_evidence: ../reports/settings_semantic_comparison.json
+  note: Different raw byte hashes; one snapshot is UTF-16LE, the other is UTF-8.
+source:
+  reverse_repo_commit_historical: d38ce6c9ac9a89a57ce3a6b2ea18bd30454cd81c
+  current_reverse_repo_commit: unknown_local_directory_not_git_checkout
+  shipped_airsim_revision: unknown
+runtime_mode_recorded: nullrhi
+launch_arguments: unknown
+runtime_configuration_verified: false

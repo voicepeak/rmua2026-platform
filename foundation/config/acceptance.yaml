@@ -1,0 +1,44 @@
+# V2 thresholds are deliberately unset until repeatability and a task-derived
+# error budget are documented. This file does not certify the model.
+schema: rmua-v2-acceptance-1
+version: 0
+status: PROVISIONAL
+change_policy: Freeze a new version with provenance before evaluating a held-out set.
+task_error_budget_source: null
+metrics:
+  position_rmse:
+    unit: m
+    threshold: null
+    windows_s: [0.25, 0.5, 1.0]
+    test_set: null
+    source: null
+  velocity_rmse:
+    unit: m/s
+    threshold: null
+    windows_s: [0.25, 0.5, 1.0]
+    test_set: null
+    source: null
+  rotation_angle_error:
+    unit: rad
+    threshold: null
+    windows_s: [0.25, 0.5, 1.0]
+    test_set: null
+    source: null
+  angular_rate_rmse:
+    unit: rad/s
+    threshold: null
+    windows_s: [0.25, 0.5, 1.0]
+    test_set: null
+    source: null
+  response_delay_error:
+    unit: s
+    threshold: null
+    windows_s: null
+    test_set: null
+    source: null
+  collision_miss_rate:
+    unit: fraction
+    threshold: null
+    windows_s: null
+    test_set: null
+    source: null
