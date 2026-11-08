@@ -1,0 +1,173 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fdc400 <_ZdaPvm@@Base+0x7d50>:
+ 2fdc400:	20 48 89             	and    %cl,-0x77(%rax)
+ 2fdc403:	83 80 00 00 00 48 8d 	addl   $0xffffff8d,0x48000000(%rax)
+ 2fdc40a:	74 24                	je     2fdc430 <_ZdaPvm@@Base+0x7d80>
+ 2fdc40c:	08 48 89             	or     %cl,-0x77(%rax)
+ 2fdc40f:	df e8                	fucomip %st(0),%st
+ 2fdc411:	8b e6                	mov    %esi,%esp
+ 2fdc413:	3b 00                	cmp    (%rax),%eax
+ 2fdc415:	48 8b 43 20          	mov    0x20(%rbx),%rax
+ 2fdc419:	48 83 f8 01          	cmp    $0x1,%rax
+ 2fdc41d:	48 83 d8 ff          	sbb    $0xffffffffffffffff,%rax
+ 2fdc421:	48 89 43 20          	mov    %rax,0x20(%rbx)
+ 2fdc425:	f3 0f 10 44 24 14    	movss  0x14(%rsp),%xmm0
+ 2fdc42b:	f3 0f 10 4c 24 10    	movss  0x10(%rsp),%xmm1
+ 2fdc431:	f3 0f 10 54 24 0c    	movss  0xc(%rsp),%xmm2
+ 2fdc437:	f3 0f 10 5c 24 08    	movss  0x8(%rsp),%xmm3
+ 2fdc43d:	4c 89 f7             	mov    %r14,%rdi
+ 2fdc440:	e8 7b cf fe ff       	call   2fc93c0 <SampleVectorField@@Base+0x278950>
+ 2fdc445:	48 83 c4 18          	add    $0x18,%rsp
+ 2fdc449:	5b                   	pop    %rbx
+ 2fdc44a:	41 5e                	pop    %r14
+ 2fdc44c:	c3                   	ret    
+ 2fdc44d:	cc                   	int3   
+ 2fdc44e:	cc                   	int3   
+ 2fdc44f:	cc                   	int3   
+ 2fdc450:	55                   	push   %rbp
+ 2fdc451:	41 56                	push   %r14
+ 2fdc453:	53                   	push   %rbx
+ 2fdc454:	48 83 ec 10          	sub    $0x10,%rsp
+ 2fdc458:	48 89 f3             	mov    %rsi,%rbx
+ 2fdc45b:	49 89 fe             	mov    %rdi,%r14
+ 2fdc45e:	c7 44 24 0c 00 00 00 	movl   $0x0,0xc(%rsp)
+ 2fdc465:	00 
+ 2fdc466:	e8 95 6c 38 00       	call   3363100 <LZ4_saveDictHC@@Base+0x368b70>
+ 2fdc46b:	48 83 7b 20 00       	cmpq   $0x0,0x20(%rbx)
+ 2fdc470:	74 13                	je     2fdc485 <_ZdaPvm@@Base+0x7dd5>
+ 2fdc472:	48 8b 73 18          	mov    0x18(%rbx),%rsi
+ 2fdc476:	48 8d 54 24 0c       	lea    0xc(%rsp),%rdx
+ 2fdc47b:	48 89 df             	mov    %rbx,%rdi
+ 2fdc47e:	e8 ed e5 3b 00       	call   339aa70 <LZ4_saveDictHC@@Base+0x3a04e0>
+ 2fdc483:	eb 1f                	jmp    2fdc4a4 <_ZdaPvm@@Base+0x7df4>
+ 2fdc485:	48 8b 93 80 00 00 00 	mov    0x80(%rbx),%rdx
+ 2fdc48c:	48 8b 42 20          	mov    0x20(%rdx),%rax
+ 2fdc490:	48 89 83 80 00 00 00 	mov    %rax,0x80(%rbx)
+ 2fdc497:	48 8d 74 24 0c       	lea    0xc(%rsp),%rsi
+ 2fdc49c:	48 89 df             	mov    %rbx,%rdi
+ 2fdc49f:	e8 fc e5 3b 00       	call   339aaa0 <LZ4_saveDictHC@@Base+0x3a0510>
+ 2fdc4a4:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%rsp)
+ 2fdc4ab:	00 
+ 2fdc4ac:	e8 3f 5d 37 00       	call   33521f0 <LZ4_saveDictHC@@Base+0x357c60>
+ 2fdc4b1:	48 83 7b 20 00       	cmpq   $0x0,0x20(%rbx)
+ 2fdc4b6:	74 13                	je     2fdc4cb <_ZdaPvm@@Base+0x7e1b>
+ 2fdc4b8:	48 8b 73 18          	mov    0x18(%rbx),%rsi
+ 2fdc4bc:	48 8d 54 24 08       	lea    0x8(%rsp),%rdx
+ 2fdc4c1:	48 89 df             	mov    %rbx,%rdi
+ 2fdc4c4:	e8 a7 e5 3b 00       	call   339aa70 <LZ4_saveDictHC@@Base+0x3a04e0>
+ 2fdc4c9:	eb 1f                	jmp    2fdc4ea <_ZdaPvm@@Base+0x7e3a>
+ 2fdc4cb:	48 8b 93 80 00 00 00 	mov    0x80(%rbx),%rdx
+ 2fdc4d2:	48 8b 42 20          	mov    0x20(%rdx),%rax
+ 2fdc4d6:	48 89 83 80 00 00 00 	mov    %rax,0x80(%rbx)
+ 2fdc4dd:	48 8d 74 24 08       	lea    0x8(%rsp),%rsi
+ 2fdc4e2:	48 89 df             	mov    %rbx,%rdi
+ 2fdc4e5:	e8 b6 e5 3b 00       	call   339aaa0 <LZ4_saveDictHC@@Base+0x3a0510>
+ 2fdc4ea:	8b 6c 24 08          	mov    0x8(%rsp),%ebp
+ 2fdc4ee:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%rsp)
+ 2fdc4f5:	00 
+ 2fdc4f6:	e8 f5 5c 37 00       	call   33521f0 <LZ4_saveDictHC@@Base+0x357c60>
+ 2fdc4fb:	48 83 7b 20 00       	cmpq   $0x0,0x20(%rbx)
+ 2fdc500:	74 13                	je     2fdc515 <_ZdaPvm@@Base+0x7e65>
+ 2fdc502:	48 8b 73 18          	mov    0x18(%rbx),%rsi
+ 2fdc506:	48 8d 54 24 04       	lea    0x4(%rsp),%rdx
+ 2fdc50b:	48 89 df             	mov    %rbx,%rdi
+ 2fdc50e:	e8 5d e5 3b 00       	call   339aa70 <LZ4_saveDictHC@@Base+0x3a04e0>
+ 2fdc513:	eb 1f                	jmp    2fdc534 <_ZdaPvm@@Base+0x7e84>
+ 2fdc515:	48 8b 93 80 00 00 00 	mov    0x80(%rbx),%rdx
+ 2fdc51c:	48 8b 42 20          	mov    0x20(%rdx),%rax
+ 2fdc520:	48 89 83 80 00 00 00 	mov    %rax,0x80(%rbx)
+ 2fdc527:	48 8d 74 24 04       	lea    0x4(%rsp),%rsi
+ 2fdc52c:	48 89 df             	mov    %rbx,%rdi
+ 2fdc52f:	e8 6c e5 3b 00       	call   339aaa0 <LZ4_saveDictHC@@Base+0x3a0510>
+ 2fdc534:	31 d2                	xor    %edx,%edx
+ 2fdc536:	85 ed                	test   %ebp,%ebp
+ 2fdc538:	0f 95 c2             	setne  %dl
+ 2fdc53b:	31 c9                	xor    %ecx,%ecx
+ 2fdc53d:	83 7c 24 04 00       	cmpl   $0x0,0x4(%rsp)
+ 2fdc542:	0f 95 c1             	setne  %cl
+ 2fdc545:	48 8b 43 20          	mov    0x20(%rbx),%rax
+ 2fdc549:	48 83 f8 01          	cmp    $0x1,%rax
+ 2fdc54d:	48 83 d8 ff          	sbb    $0xffffffffffffffff,%rax
+ 2fdc551:	48 89 43 20          	mov    %rax,0x20(%rbx)
+ 2fdc555:	8b 74 24 0c          	mov    0xc(%rsp),%esi
+ 2fdc559:	4c 89 f7             	mov    %r14,%rdi
+ 2fdc55c:	e8 1f c8 fe ff       	call   2fc8d80 <SampleVectorField@@Base+0x278310>
+ 2fdc561:	48 83 c4 10          	add    $0x10,%rsp
+ 2fdc565:	5b                   	pop    %rbx
+ 2fdc566:	41 5e                	pop    %r14
+ 2fdc568:	5d                   	pop    %rbp
+ 2fdc569:	c3                   	ret    
+ 2fdc56a:	cc                   	int3   
+ 2fdc56b:	cc                   	int3   
+ 2fdc56c:	cc                   	int3   
+ 2fdc56d:	cc                   	int3   
+ 2fdc56e:	cc                   	int3   
+ 2fdc56f:	cc                   	int3   
+ 2fdc570:	50                   	push   %rax
+ 2fdc571:	48 8b 3d 38 a0 1c 04 	mov    0x41ca038(%rip),%rdi        # 71a65b0 <__bss_start@@Base+0x4cdf0>
+ 2fdc578:	48 85 ff             	test   %rdi,%rdi
+ 2fdc57b:	75 59                	jne    2fdc5d6 <_ZdaPvm@@Base+0x7f26>
+ 2fdc57d:	bf a8 a3 91 00       	mov    $0x91a3a8,%edi
+ 2fdc582:	be 28 7e 8e 00       	mov    $0x8e7e28,%esi
+ 2fdc587:	ba b0 65 1a 07       	mov    $0x71a65b0,%edx
+ 2fdc58c:	b9 70 c5 fd 02       	mov    $0x2fdc570,%ecx
+ 2fdc591:	41 b8 f0 02 00 00    	mov    $0x2f0,%r8d
+ 2fdc597:	41 b9 08 00 00 00    	mov    $0x8,%r9d
+ 2fdc59d:	6a 00                	push   $0x0
+ 2fdc59f:	6a 00                	push   $0x0
+ 2fdc5a1:	68 30 6e 6c 02       	push   $0x26c6e30
+ 2fdc5a6:	68 d0 73 6c 02       	push   $0x26c73d0
+ 2fdc5ab:	68 20 89 09 05       	push   $0x5098920
+ 2fdc5b0:	68 90 c7 fd 02       	push   $0x2fdc790
+ 2fdc5b5:	68 80 c7 fd 02       	push   $0x2fdc780
+ 2fdc5ba:	68 a8 3f 7d 00       	push   $0x7d3fa8
+ 2fdc5bf:	6a 00                	push   $0x0
+ 2fdc5c1:	68 04 00 00 10       	push   $0x10000004
+ 2fdc5c6:	e8 85 16 2a 00       	call   327dc50 <LZ4_saveDictHC@@Base+0x2836c0>
+ 2fdc5cb:	48 83 c4 50          	add    $0x50,%rsp
+ 2fdc5cf:	48 8b 3d da 9f 1c 04 	mov    0x41c9fda(%rip),%rdi        # 71a65b0 <__bss_start@@Base+0x4cdf0>
+ 2fdc5d6:	be 60 d4 cd 00       	mov    $0xcdd460,%esi
+ 2fdc5db:	ba 02 00 00 00       	mov    $0x2,%edx
+ 2fdc5e0:	58                   	pop    %rax
+ 2fdc5e1:	e9 aa 12 2a 00       	jmp    327d890 <LZ4_saveDictHC@@Base+0x283300>
+ 2fdc5e6:	cc                   	int3   
+ 2fdc5e7:	cc                   	int3   
+ 2fdc5e8:	cc                   	int3   
+ 2fdc5e9:	cc                   	int3   
+ 2fdc5ea:	cc                   	int3   
+ 2fdc5eb:	cc                   	int3   
+ 2fdc5ec:	cc                   	int3   
+ 2fdc5ed:	cc                   	int3   
+ 2fdc5ee:	cc                   	int3   
+ 2fdc5ef:	cc                   	int3   
+ 2fdc5f0:	50                   	push   %rax
+ 2fdc5f1:	48 8b 05 b8 9f 1c 04 	mov    0x41c9fb8(%rip),%rax        # 71a65b0 <__bss_start@@Base+0x4cdf0>
+ 2fdc5f8:	48 85 c0             	test   %rax,%rax
+ 2fdc5fb:	74 02                	je     2fdc5ff <_ZdaPvm@@Base+0x7f4f>
+ 2fdc5fd:	59                   	pop    %rcx
+ 2fdc5fe:	c3                   	ret    
+ 2fdc5ff:	bf a8 a3 91 00       	mov    $0x91a3a8,%edi
+ 2fdc604:	be 28 7e 8e 00       	mov    $0x8e7e28,%esi
+ 2fdc609:	ba b0 65 1a 07       	mov    $0x71a65b0,%edx
+ 2fdc60e:	b9 70 c5 fd 02       	mov    $0x2fdc570,%ecx
+ 2fdc613:	41 b8 f0 02 00 00    	mov    $0x2f0,%r8d
+ 2fdc619:	41 b9 08 00 00 00    	mov    $0x8,%r9d
+ 2fdc61f:	6a 00                	push   $0x0
+ 2fdc621:	6a 00                	push   $0x0
+ 2fdc623:	68 30 6e 6c 02       	push   $0x26c6e30
+ 2fdc628:	68 d0 73 6c 02       	push   $0x26c73d0
+ 2fdc62d:	68 20 89 09 05       	push   $0x5098920
+ 2fdc632:	68 90 c7 fd 02       	push   $0x2fdc790
+ 2fdc637:	68 80 c7 fd 02       	push   $0x2fdc780
+ 2fdc63c:	68 a8 3f 7d 00       	push   $0x7d3fa8
+ 2fdc641:	6a 00                	push   $0x0
+ 2fdc643:	68 04 00 00 10       	push   $0x10000004
+ 2fdc648:	e8 03 16 2a 00       	call   327dc50 <LZ4_saveDictHC@@Base+0x2836c0>
+ 2fdc64d:	48                   	rex.W
+ 2fdc64e:	83                   	.byte 0x83
+ 2fdc64f:	c4                   	.byte 0xc4

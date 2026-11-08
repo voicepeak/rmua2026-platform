@@ -1,0 +1,317 @@
+{
+  "status": "exploratory comparison; road union is not the official predicate",
+  "origin_ue_cm": [
+    0.0078,
+    0.001,
+    -7.0
+  ],
+  "max_arrival_gap_s": 0.1,
+  "counts": {
+    "observed_0_road_inside_0": 3,
+    "observed_0_road_inside_1": 1,
+    "observed_1_road_inside_1": 3
+  },
+  "union_counts": {
+    "observed_0_union_inside_0": 3,
+    "observed_0_union_inside_1": 1,
+    "observed_1_union_inside_1": 3
+  },
+  "events": [
+    {
+      "monotonic_s": 125366.798459895,
+      "observed_predicate": 1,
+      "gps_position_ned_m": [
+        -0.00026493987708524645,
+        0.0016623182585796792,
+        0.3137017370094587
+      ],
+      "gps_arrival_delta_s": 1.5690102329972433,
+      "within_arrival_gap": false,
+      "candidate_road_inside": false,
+      "candidate_road_signed_distance_cm": 201.23032656572332,
+      "candidate_actor": "BP_Segment_Rot_C_242",
+      "other_regions": {
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": -23.630497685772866,
+          "contains": true
+        },
+        "factory": {
+          "actor": "2_1_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 49445.138549571435,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 1,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125483.730306683,
+      "observed_predicate": 0,
+      "gps_position_ned_m": [
+        555.6199263609283,
+        -117.5254856138519,
+        -133.32484066565058
+      ],
+      "gps_arrival_delta_s": 0.03721388899430167,
+      "within_arrival_gap": true,
+      "candidate_road_inside": false,
+      "candidate_road_signed_distance_cm": 8.633056844571513,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 57903.12943548462,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4135.387539801276,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": false,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125484.130103114,
+      "observed_predicate": 1,
+      "gps_position_ned_m": [
+        557.6955350296537,
+        -116.75806486283625,
+        -133.33938190133068
+      ],
+      "gps_arrival_delta_s": 0.03748074299073778,
+      "within_arrival_gap": true,
+      "candidate_road_inside": true,
+      "candidate_road_signed_distance_cm": -11.275512213707714,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58086.98851114889,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4342.072377790534,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125484.683078268,
+      "observed_predicate": 0,
+      "gps_position_ned_m": [
+        560.3434992330211,
+        -115.65130654775353,
+        -133.80291681880294
+      ],
+      "gps_arrival_delta_s": -0.015497779997531325,
+      "within_arrival_gap": true,
+      "candidate_road_inside": false,
+      "candidate_road_signed_distance_cm": 7.147113398308477,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58329.33783169819,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 4615.851357336485,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": false,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125485.580752491,
+      "observed_predicate": 1,
+      "gps_position_ned_m": [
+        564.6512852310879,
+        -113.79173648268896,
+        -134.07646510345225
+      ],
+      "gps_arrival_delta_s": -0.013225465008872561,
+      "within_arrival_gap": true,
+      "candidate_road_inside": true,
+      "candidate_road_signed_distance_cm": -10.929283976807142,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "1_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 58712.83100582307,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5068.014183988448,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125486.580583502,
+      "observed_predicate": 0,
+      "gps_position_ned_m": [
+        568.512173963975,
+        -112.00330388008605,
+        -134.53145201910726
+      ],
+      "gps_arrival_delta_s": -0.013158361005480401,
+      "within_arrival_gap": true,
+      "candidate_road_inside": true,
+      "candidate_road_signed_distance_cm": -6.694304753437905,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59030.712768798,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5483.041510570889,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": true,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125487.181099661,
+      "observed_predicate": 1,
+      "gps_position_ned_m": [
+        569.5734939923575,
+        -111.50934213276926,
+        -134.66591191404464
+      ],
+      "gps_arrival_delta_s": -0.013652773006469943,
+      "within_arrival_gap": true,
+      "candidate_road_inside": true,
+      "candidate_road_signed_distance_cm": -4.604285757838454,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59076.69663911838,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5597.544219194294,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": true,
+      "passing_objects": {
+        "array30": 1,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    },
+    {
+      "monotonic_s": 125487.831687467,
+      "observed_predicate": 0,
+      "gps_position_ned_m": [
+        570.6627341559623,
+        -110.99169345563924,
+        -134.9813450419587
+      ],
+      "gps_arrival_delta_s": 0.03578703600214794,
+      "within_arrival_gap": true,
+      "candidate_road_inside": false,
+      "candidate_road_signed_distance_cm": 15.162093114530023,
+      "candidate_actor": "BP_Segment_Rot_C_272",
+      "other_regions": {
+        "port": {
+          "actor": "2_1_Port",
+          "component": "Extent",
+          "signed_distance_cm": 59127.04403989119,
+          "contains": false
+        },
+        "factory": {
+          "actor": "1_2_Factory",
+          "component": "Extent",
+          "signed_distance_cm": 5715.804513064129,
+          "contains": false
+        }
+      },
+      "candidate_union_inside": false,
+      "passing_objects": {
+        "array30": 0,
+        "array40": 0,
+        "array60": 0,
+        "array70": 0
+      }
+    }
+  ],
+  "source_sha256": {
+    "summary": "f489c5fb327969a9a77944ffeb742aa3f448986db30afd0424fa793f1aa239de",
+    "manifest": "0e9d317cbaf6940d94ca4c9b3ebacee24b84054c512f1b1d8807777cad243b9c",
+    "volumes": "af34ae909498e3367019be0e175d3308bc9bcbf3a6f4edf2017f657e4e2dbc3d",
+    "other_volumes": {
+      "port": "0d9978887b9a0476e90c13171d5b243de8313912f42a17d54ca8a7c5f9d1f82a",
+      "factory": "0fadfad23b44b87783398945efe64b4d1b37599483094aa34ef256f162cd1aa2"
+    }
+  },
+  "limitations": [
+    "GPS arrival is not physical event time and candidate origin is unverified",
+    "point model excludes finite drone collision shape and overlap latency",
+    "union may omit other predicate branches, including weak reference and side routes",
+    "single raised-route run, all-stop GDB and only predicate changes sampled",
+    "matches do not establish natural field boundary or F01"
+  ]
+}

@@ -1,0 +1,161 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fc2430 <SampleVectorField@@Base+0x2719c0>:
+ 2fc2430:	8a 87 38 02 00 00    	mov    0x238(%rdi),%al
+ 2fc2436:	c3                   	ret    
+ 2fc2437:	cc                   	int3   
+ 2fc2438:	cc                   	int3   
+ 2fc2439:	cc                   	int3   
+ 2fc243a:	cc                   	int3   
+ 2fc243b:	cc                   	int3   
+ 2fc243c:	cc                   	int3   
+ 2fc243d:	cc                   	int3   
+ 2fc243e:	cc                   	int3   
+ 2fc243f:	cc                   	int3   
+ 2fc2440:	40 88 b7 38 02 00 00 	mov    %sil,0x238(%rdi)
+ 2fc2447:	c3                   	ret    
+ 2fc2448:	cc                   	int3   
+ 2fc2449:	cc                   	int3   
+ 2fc244a:	cc                   	int3   
+ 2fc244b:	cc                   	int3   
+ 2fc244c:	cc                   	int3   
+ 2fc244d:	cc                   	int3   
+ 2fc244e:	cc                   	int3   
+ 2fc244f:	cc                   	int3   
+ 2fc2450:	55                   	push   %rbp
+ 2fc2451:	41 56                	push   %r14
+ 2fc2453:	53                   	push   %rbx
+ 2fc2454:	48 83 ec 20          	sub    $0x20,%rsp
+ 2fc2458:	49 89 fe             	mov    %rdi,%r14
+ 2fc245b:	48 8b 41 18          	mov    0x18(%rcx),%rax
+ 2fc245f:	48 89 04 24          	mov    %rax,(%rsp)
+ 2fc2463:	48 8d 7c 24 10       	lea    0x10(%rsp),%rdi
+ 2fc2468:	48 89 e6             	mov    %rsp,%rsi
+ 2fc246b:	e8 a0 49 21 00       	call   31d6e10 <LZ4_saveDictHC@@Base+0x1dc880>
+ 2fc2470:	0f 57 c0             	xorps  %xmm0,%xmm0
+ 2fc2473:	0f 29 04 24          	movaps %xmm0,(%rsp)
+ 2fc2477:	48 89 e7             	mov    %rsp,%rdi
+ 2fc247a:	be 0a 00 00 00       	mov    $0xa,%esi
+ 2fc247f:	e8 fc 88 62 ff       	call   25ead80 <_start@@Base+0xe400>
+ 2fc2484:	8b 74 24 08          	mov    0x8(%rsp),%esi
+ 2fc2488:	8d 46 0a             	lea    0xa(%rsi),%eax
+ 2fc248b:	89 44 24 08          	mov    %eax,0x8(%rsp)
+ 2fc248f:	3b 44 24 0c          	cmp    0xc(%rsp),%eax
+ 2fc2493:	7e 08                	jle    2fc249d <SampleVectorField@@Base+0x271a2d>
+ 2fc2495:	48 89 e7             	mov    %rsp,%rdi
+ 2fc2498:	e8 43 89 62 ff       	call   25eade0 <_start@@Base+0xe460>
+ 2fc249d:	48 8b 3c 24          	mov    (%rsp),%rdi
+ 2fc24a1:	0f 28 05 b8 42 71 fd 	movaps -0x28ebd48(%rip),%xmm0        # 6d6760 <_IO_stdin_used@@Base+0x157bc>
+ 2fc24a8:	0f 11 07             	movups %xmm0,(%rdi)
+ 2fc24ab:	c7 47 10 75 00 00 00 	movl   $0x75,0x10(%rdi)
+ 2fc24b2:	8b 44 24 18          	mov    0x18(%rsp),%eax
+ 2fc24b6:	8b 4c 24 08          	mov    0x8(%rsp),%ecx
+ 2fc24ba:	39 c8                	cmp    %ecx,%eax
+ 2fc24bc:	75 40                	jne    2fc24fe <SampleVectorField@@Base+0x271a8e>
+ 2fc24be:	40 b5 01             	mov    $0x1,%bpl
+ 2fc24c1:	83 f8 02             	cmp    $0x2,%eax
+ 2fc24c4:	7c 41                	jl     2fc2507 <SampleVectorField@@Base+0x271a97>
+ 2fc24c6:	48 8b 44 24 10       	mov    0x10(%rsp),%rax
+ 2fc24cb:	0f b7 08             	movzwl (%rax),%ecx
+ 2fc24ce:	0f b7 1f             	movzwl (%rdi),%ebx
+ 2fc24d1:	89 de                	mov    %ebx,%esi
+ 2fc24d3:	66 09 ce             	or     %cx,%si
+ 2fc24d6:	74 2f                	je     2fc2507 <SampleVectorField@@Base+0x271a97>
+ 2fc24d8:	be 02 00 00 00       	mov    $0x2,%esi
+ 2fc24dd:	0f 1f 00             	nopl   (%rax)
+ 2fc24e0:	66 39 d9             	cmp    %bx,%cx
+ 2fc24e3:	0f 85 88 00 00 00    	jne    2fc2571 <SampleVectorField@@Base+0x271b01>
+ 2fc24e9:	0f b7 0c 30          	movzwl (%rax,%rsi,1),%ecx
+ 2fc24ed:	0f b7 1c 37          	movzwl (%rdi,%rsi,1),%ebx
+ 2fc24f1:	48 83 c6 02          	add    $0x2,%rsi
+ 2fc24f5:	89 da                	mov    %ebx,%edx
+ 2fc24f7:	66 09 ca             	or     %cx,%dx
+ 2fc24fa:	75 e4                	jne    2fc24e0 <SampleVectorField@@Base+0x271a70>
+ 2fc24fc:	eb 09                	jmp    2fc2507 <SampleVectorField@@Base+0x271a97>
+ 2fc24fe:	01 c1                	add    %eax,%ecx
+ 2fc2500:	83 f9 01             	cmp    $0x1,%ecx
+ 2fc2503:	40 0f 94 c5          	sete   %bpl
+ 2fc2507:	e8 94 f9 0a 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fc250c:	48 8b 7c 24 10       	mov    0x10(%rsp),%rdi
+ 2fc2511:	48 85 ff             	test   %rdi,%rdi
+ 2fc2514:	74 05                	je     2fc251b <SampleVectorField@@Base+0x271aab>
+ 2fc2516:	e8 85 f9 0a 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fc251b:	40 84 ed             	test   %bpl,%bpl
+ 2fc251e:	74 48                	je     2fc2568 <SampleVectorField@@Base+0x271af8>
+ 2fc2520:	41 c6 86 38 02 00 00 	movb   $0x1,0x238(%r14)
+ 2fc2527:	01 
+ 2fc2528:	41 83 be 30 02 00 00 	cmpl   $0x0,0x230(%r14)
+ 2fc252f:	00 
+ 2fc2530:	74 1e                	je     2fc2550 <SampleVectorField@@Base+0x271ae0>
+ 2fc2532:	49 8b be 28 02 00 00 	mov    0x228(%r14),%rdi
+ 2fc2539:	48 85 ff             	test   %rdi,%rdi
+ 2fc253c:	74 12                	je     2fc2550 <SampleVectorField@@Base+0x271ae0>
+ 2fc253e:	41 8b b6 20 02 00 00 	mov    0x220(%r14),%esi
+ 2fc2545:	48 8b 07             	mov    (%rdi),%rax
+ 2fc2548:	ba 01 00 00 00       	mov    $0x1,%edx
+ 2fc254d:	ff 50 58             	call   *0x58(%rax)
+ 2fc2550:	80 3d 35 4f 26 04 05 	cmpb   $0x5,0x4264f35(%rip)        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fc2557:	72 0f                	jb     2fc2568 <SampleVectorField@@Base+0x271af8>
+ 2fc2559:	49 81 c6 20 02 00 00 	add    $0x220,%r14
+ 2fc2560:	4c 89 f7             	mov    %r14,%rdi
+ 2fc2563:	e8 58 00 00 00       	call   2fc25c0 <SampleVectorField@@Base+0x271b50>
+ 2fc2568:	48 83 c4 20          	add    $0x20,%rsp
+ 2fc256c:	5b                   	pop    %rbx
+ 2fc256d:	41 5e                	pop    %r14
+ 2fc256f:	5d                   	pop    %rbp
+ 2fc2570:	c3                   	ret    
+ 2fc2571:	31 ed                	xor    %ebp,%ebp
+ 2fc2573:	eb 92                	jmp    2fc2507 <SampleVectorField@@Base+0x271a97>
+ 2fc2575:	48 89 c7             	mov    %rax,%rdi
+ 2fc2578:	e8 c3 cf 64 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fc257d:	48 89 c7             	mov    %rax,%rdi
+ 2fc2580:	e8 bb cf 64 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fc2585:	48 89 c3             	mov    %rax,%rbx
+ 2fc2588:	48 8b 3c 24          	mov    (%rsp),%rdi
+ 2fc258c:	48 85 ff             	test   %rdi,%rdi
+ 2fc258f:	74 05                	je     2fc2596 <SampleVectorField@@Base+0x271b26>
+ 2fc2591:	e8 0a f9 0a 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fc2596:	48 8b 7c 24 10       	mov    0x10(%rsp),%rdi
+ 2fc259b:	48 85 ff             	test   %rdi,%rdi
+ 2fc259e:	74 05                	je     2fc25a5 <SampleVectorField@@Base+0x271b35>
+ 2fc25a0:	e8 fb f8 0a 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fc25a5:	48 89 df             	mov    %rbx,%rdi
+ 2fc25a8:	e8 73 6d 0e 04       	call   70a9320 <_Unwind_Resume@plt>
+ 2fc25ad:	48 89 c7             	mov    %rax,%rdi
+ 2fc25b0:	e8 8b cf 64 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fc25b5:	48 89 c7             	mov    %rax,%rdi
+ 2fc25b8:	e8 83 cf 64 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fc25bd:	cc                   	int3   
+ 2fc25be:	cc                   	int3   
+ 2fc25bf:	cc                   	int3   
+ 2fc25c0:	44 8b 0f             	mov    (%rdi),%r9d
+ 2fc25c3:	ba 90 74 22 07       	mov    $0x7227490,%edx
+ 2fc25c8:	41 b8 fc 84 9c 00    	mov    $0x9c84fc,%r8d
+ 2fc25ce:	bf 00 00 00 00       	mov    $0x0,%edi
+ 2fc25d3:	be 00 00 00 00       	mov    $0x0,%esi
+ 2fc25d8:	b9 05 00 00 00       	mov    $0x5,%ecx
+ 2fc25dd:	31 c0                	xor    %eax,%eax
+ 2fc25df:	e9 cc 63 13 00       	jmp    30f89b0 <LZ4_saveDictHC@@Base+0xfe420>
+ 2fc25e4:	cc                   	int3   
+ 2fc25e5:	cc                   	int3   
+ 2fc25e6:	cc                   	int3   
+ 2fc25e7:	cc                   	int3   
+ 2fc25e8:	cc                   	int3   
+ 2fc25e9:	cc                   	int3   
+ 2fc25ea:	cc                   	int3   
+ 2fc25eb:	cc                   	int3   
+ 2fc25ec:	cc                   	int3   
+ 2fc25ed:	cc                   	int3   
+ 2fc25ee:	cc                   	int3   
+ 2fc25ef:	cc                   	int3   
+ 2fc25f0:	55                   	push   %rbp
+ 2fc25f1:	41 56                	push   %r14
+ 2fc25f3:	53                   	push   %rbx
+ 2fc25f4:	48 83 ec 20          	sub    $0x20,%rsp
+ 2fc25f8:	49 89 fe             	mov    %rdi,%r14
+ 2fc25fb:	48 8b 41 18          	mov    0x18(%rcx),%rax
+ 2fc25ff:	48                   	rex.W

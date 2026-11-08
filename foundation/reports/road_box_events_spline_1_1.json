@@ -1,0 +1,3129 @@
+{
+  "status": "exploratory point containment, not official field predicate",
+  "origin_ue_cm": [
+    0.0078,
+    0.001,
+    -7.0
+  ],
+  "spline_attribution": {
+    "runtime_fname": [
+      387258,
+      2
+    ],
+    "candidate_spline": "1_1",
+    "selected_boxes": 99,
+    "evidence": "separate run FName and unique root-position match"
+  },
+  "event_count": 99,
+  "counts": {
+    "enter=1,event=0": {
+      "events": 33,
+      "inside": {
+        "ChargeArea": 33,
+        "TriggerEnter": 32,
+        "TriggerExit": 0
+      }
+    },
+    "enter=0,event=1": {
+      "events": 33,
+      "inside": {
+        "ChargeArea": 33,
+        "TriggerEnter": 30,
+        "TriggerExit": 0
+      }
+    },
+    "enter=0,event=0": {
+      "events": 33,
+      "inside": {
+        "ChargeArea": 32,
+        "TriggerEnter": 31,
+        "TriggerExit": 0
+      }
+    }
+  },
+  "events": [
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 32,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        1.9564860229823,
+        -0.04265782837801281,
+        -1.2842580681884346
+      ],
+      "gps_arrival_delta_s": -0.012980453000636771,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "ChargeArea",
+          "signed_distance_cm": -2.2428687277229074,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerEnter",
+          "signed_distance_cm": 69.42021709055985,
+          "contains": false
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerExit",
+          "signed_distance_cm": 1980.6489768561846,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 32,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        2.5580911624585805,
+        -0.06665416497142784,
+        -1.3697976950612996
+      ],
+      "gps_arrival_delta_s": -0.0076033280056435615,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "ChargeArea",
+          "signed_distance_cm": -62.7601344009704,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerEnter",
+          "signed_distance_cm": 8.902951417312352,
+          "contains": false
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerExit",
+          "signed_distance_cm": 1920.1317111829371,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 31,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        19.44590163573972,
+        -0.019413651027554296,
+        -3.0309292361445865
+      ],
+      "gps_arrival_delta_s": -0.008820346993161365,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.16343557936193,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -293.90824808136665,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerExit",
+          "signed_distance_cm": 225.13700784699142,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 32,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        23.37986691354034,
+        0.000749837299331424,
+        -3.1091553590324486
+      ],
+      "gps_arrival_delta_s": 0.04155352599627804,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "ChargeArea",
+          "signed_distance_cm": -333.10865265334144,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "TriggerEnter",
+          "signed_distance_cm": 16.980362261028972,
+          "contains": false
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerExit",
+          "signed_distance_cm": 104.15237809851934,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 31,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        23.86965225319783,
+        -0.05910458345343074,
+        -3.213338704848411
+      ],
+      "gps_arrival_delta_s": 0.03986570000415668,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "ChargeArea",
+          "signed_distance_cm": -341.49083775191343,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -32.16327228729767,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_242",
+          "component": "TriggerExit",
+          "signed_distance_cm": 153.59946597589794,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 30,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        40.77309088825116,
+        0.47204166311877144,
+        -3.901795233131697
+      ],
+      "gps_arrival_delta_s": 0.03492989300866611,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.9576647739713,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -255.2613482332962,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "TriggerExit",
+          "signed_distance_cm": 186.4901079989212,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 30,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        44.73183660232644,
+        0.7142224291442928,
+        -4.06511091832801
+      ],
+      "gps_arrival_delta_s": 0.03735426999628544,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.9558258748554,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -22.86265296880663,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "TriggerExit",
+          "signed_distance_cm": 146.30678050936177,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 31,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        47.63905721209825,
+        0.800619426854243,
+        -4.267799875546588
+      ],
+      "gps_arrival_delta_s": -0.007632287000888027,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "ChargeArea",
+          "signed_distance_cm": -349.62845955258837,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -314.17610550644736,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_243",
+          "component": "TriggerExit",
+          "signed_distance_cm": 437.7466331091108,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 29,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        61.74956006628239,
+        1.5353770522407586,
+        -4.7856884826013575
+      ],
+      "gps_arrival_delta_s": 0.03970027400646359,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "ChargeArea",
+          "signed_distance_cm": -349.9567678715324,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -251.91460718530823,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "TriggerExit",
+          "signed_distance_cm": 183.1433669509334,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 29,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        65.70079479602049,
+        1.8284554005265097,
+        -4.80740770602474
+      ],
+      "gps_arrival_delta_s": -0.007895501999882981,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.77798852692695,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -22.542344289271796,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "TriggerExit",
+          "signed_distance_cm": 148.79824268489492,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 30,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        68.39632367130143,
+        1.9497844109715132,
+        -4.94891279767103
+      ],
+      "gps_arrival_delta_s": -0.008922641995013691,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.67819684867777,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -292.6564595144239,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_244",
+          "component": "TriggerExit",
+          "signed_distance_cm": 418.95060993692323,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 28,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        82.58950916513595,
+        2.792522055538596,
+        -5.401173972744259
+      ],
+      "gps_arrival_delta_s": -0.013538241997594014,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.17133478212685,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -264.8148406841085,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "TriggerExit",
+          "signed_distance_cm": 196.04360044973325,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 28,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        86.89265300757036,
+        3.067828479305765,
+        -5.4756623516458625
+      ],
+      "gps_arrival_delta_s": 0.03904903700458817,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "ChargeArea",
+          "signed_distance_cm": -331.80711853880746,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -42.97563975573496,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "TriggerExit",
+          "signed_distance_cm": 171.15169754408325,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 29,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        89.81990758542976,
+        3.202139239300266,
+        -5.66951107333817
+      ],
+      "gps_arrival_delta_s": 0.04255399700195994,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "ChargeArea",
+          "signed_distance_cm": -340.9367433655494,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -336.48211531211905,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_245",
+          "component": "TriggerExit",
+          "signed_distance_cm": 464.6400140209653,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 27,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        103.4539442288215,
+        4.072914038536952,
+        -6.194109493143655
+      ],
+      "gps_arrival_delta_s": -0.008087416004855186,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.6040830506663,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -276.35274665333384,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "TriggerExit",
+          "signed_distance_cm": 207.5815064189584,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 27,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        107.83587590189356,
+        4.296874978143259,
+        -6.318711412955283
+      ],
+      "gps_arrival_delta_s": 0.042105937012820505,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.53884829253997,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -38.925863626071305,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "TriggerExit",
+          "signed_distance_cm": 167.3370418463666,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 28,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        110.72992221284038,
+        4.485642981715075,
+        -6.4253010315986865
+      ],
+      "gps_arrival_delta_s": 0.04249260800133925,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.0048139299542,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -329.0818698127275,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_246",
+          "component": "TriggerExit",
+          "signed_distance_cm": 457.5466390714288,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 26,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        124.28751075340122,
+        5.04135188256122,
+        -6.916454649463491
+      ],
+      "gps_arrival_delta_s": -0.009248103990103118,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "ChargeArea",
+          "signed_distance_cm": -338.74251845497525,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -293.14703321567674,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "TriggerExit",
+          "signed_distance_cm": 224.37579298130208,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 26,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        128.8209350497736,
+        5.2929109653510436,
+        -7.096629313576368
+      ],
+      "gps_arrival_delta_s": 0.04103640600806102,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "ChargeArea",
+          "signed_distance_cm": -338.9002537036135,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -38.68911275627579,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "TriggerExit",
+          "signed_distance_cm": 165.99629965324937,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 27,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        131.5590137313406,
+        5.342151723833822,
+        -7.269106412484601
+      ],
+      "gps_arrival_delta_s": 0.040062359999865294,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.6824361626417,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -313.042186076386,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_247",
+          "component": "TriggerExit",
+          "signed_distance_cm": 440.21028992117755,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 25,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        145.71817038466338,
+        5.656869683742586,
+        -7.952501081724972
+      ],
+      "gps_arrival_delta_s": 0.03859122100402601,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "ChargeArea",
+          "signed_distance_cm": -347.57676623343934,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -249.0621382429457,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "TriggerExit",
+          "signed_distance_cm": 180.2908980085715,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 25,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        149.56328190285515,
+        5.664449619953571,
+        -8.049573499624293
+      ],
+      "gps_arrival_delta_s": -0.007997941997018643,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.53430464857746,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -14.814529899557215,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "TriggerExit",
+          "signed_distance_cm": 140.2150447331189,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 26,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        152.41072494927224,
+        5.589259116461324,
+        -8.211253402054874
+      ],
+      "gps_arrival_delta_s": -0.012278882000828162,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.6387410330872,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -300.1161417344482,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_248",
+          "component": "TriggerExit",
+          "signed_distance_cm": 425.21779594836147,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 24,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        166.5667297377544,
+        5.279593937257746,
+        -9.023730364443413
+      ],
+      "gps_arrival_delta_s": 0.04128203900472727,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "ChargeArea",
+          "signed_distance_cm": -341.03434447070856,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -261.6218927606792,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "TriggerExit",
+          "signed_distance_cm": 192.8506525263027,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 24,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        170.5699221648926,
+        5.074082174246758,
+        -9.199054644078124
+      ],
+      "gps_arrival_delta_s": -0.010045962000731379,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.47810019311754,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -20.471054839886506,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "TriggerExit",
+          "signed_distance_cm": 144.2053886256628,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 25,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        173.3617710086791,
+        4.934514980146846,
+        -9.459262493305419
+      ],
+      "gps_arrival_delta_s": -0.009933367007761262,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "ChargeArea",
+          "signed_distance_cm": -341.23773770236437,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -300.94390967890854,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_249",
+          "component": "TriggerExit",
+          "signed_distance_cm": 424.6714973478241,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 23,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        187.51678159634682,
+        3.661997892383494,
+        -10.564908557810863
+      ],
+      "gps_arrival_delta_s": 0.04181236099975649,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "ChargeArea",
+          "signed_distance_cm": -348.769619917017,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -253.5728184767205,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "TriggerExit",
+          "signed_distance_cm": 184.80157824234544,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 23,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        191.48785772431972,
+        3.2651685841234306,
+        -10.811326304112445
+      ],
+      "gps_arrival_delta_s": -0.008381339008337818,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.696526428462,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -26.649841424105603,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "TriggerExit",
+          "signed_distance_cm": 150.99784645377062,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 24,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        194.20412929867373,
+        2.795671751870966,
+        -11.077786407893068
+      ],
+      "gps_arrival_delta_s": -0.008313117999932729,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "ChargeArea",
+          "signed_distance_cm": -344.00671083985986,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -303.5719786505317,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_250",
+          "component": "TriggerExit",
+          "signed_distance_cm": 426.9258857611591,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 22,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        208.18884582375762,
+        0.2839971642926076,
+        -12.369226630481801
+      ],
+      "gps_arrival_delta_s": 0.039449048999813385,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.4342765889224,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -249.75414887300008,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "TriggerExit",
+          "signed_distance_cm": 180.9829086386237,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 22,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        211.9472890099276,
+        -0.7252080854865892,
+        -12.752835593638272
+      ],
+      "gps_arrival_delta_s": 0.04020953500003088,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.5918955406613,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -21.660692520312637,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "TriggerExit",
+          "signed_distance_cm": 144.82297108242054,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 23,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        214.66339606281295,
+        -1.391185104636457,
+        -13.096382398680989
+      ],
+      "gps_arrival_delta_s": -0.008673239994095638,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "ChargeArea",
+          "signed_distance_cm": -336.6433922772022,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -302.50480532000745,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_251",
+          "component": "TriggerExit",
+          "signed_distance_cm": 426.0101909767662,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 21,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        228.05487095199075,
+        -5.866284499461693,
+        -14.877190586054583
+      ],
+      "gps_arrival_delta_s": 0.03638580800907221,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.8635390269957,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -254.36780139249208,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "TriggerExit",
+          "signed_distance_cm": 185.5965611581168,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 21,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        231.72849832655595,
+        -7.449980315619782,
+        -15.491689870438805
+      ],
+      "gps_arrival_delta_s": -0.011364084988599643,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.8093096849377,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -24.000185320539913,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "TriggerExit",
+          "signed_distance_cm": 153.5517488423321,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 22,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        234.26508329788868,
+        -8.633393385251368,
+        -15.908890963689707
+      ],
+      "gps_arrival_delta_s": -0.011413086001994088,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "ChargeArea",
+          "signed_distance_cm": -349.50245000075665,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -304.21483024932854,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_252",
+          "component": "TriggerExit",
+          "signed_distance_cm": 434.6490973017673,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 20,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        245.54798285509148,
+        -16.003106218809446,
+        -17.735241636062188
+      ],
+      "gps_arrival_delta_s": -0.009942051998223178,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "ChargeArea",
+          "signed_distance_cm": -347.3951684688474,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -315.81644794293504,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "TriggerExit",
+          "signed_distance_cm": 247.04520770856163,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 20,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        248.93340202254706,
+        -18.89436543380811,
+        -18.26813237066126
+      ],
+      "gps_arrival_delta_s": 0.0418611119966954,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.31703338496817,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -36.75720810163011,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "TriggerExit",
+          "signed_distance_cm": 133.6034203511575,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 21,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        251.11230681480077,
+        -20.764303389606145,
+        -18.760972957240526
+      ],
+      "gps_arrival_delta_s": -0.0122477440017974,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "ChargeArea",
+          "signed_distance_cm": -349.9626766540102,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -325.08982049351266,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_253",
+          "component": "TriggerExit",
+          "signed_distance_cm": 422.31275146460746,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 19,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        259.98096341653076,
+        -30.93108013782359,
+        -20.53577275660842
+      ],
+      "gps_arrival_delta_s": -0.01039828101056628,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.01941213625287,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -294.16952130871107,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "TriggerExit",
+          "signed_distance_cm": 225.39828107433704,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 19,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        262.4627358091346,
+        -34.07510867934895,
+        -20.968941011696792
+      ],
+      "gps_arrival_delta_s": -0.009417414010385983,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "ChargeArea",
+          "signed_distance_cm": -334.11251386234807,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -2.701404159001413,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "TriggerExit",
+          "signed_distance_cm": 112.79389891331013,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 20,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        264.37996629822237,
+        -36.73684457618558,
+        -21.469732258202363
+      ],
+      "gps_arrival_delta_s": 0.03778954499284737,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.6290921894458,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -333.6503659484806,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_254",
+          "component": "TriggerExit",
+          "signed_distance_cm": 443.06318886066066,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 18,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        271.4829173101001,
+        -48.310155521761544,
+        -23.395603725319802
+      ],
+      "gps_arrival_delta_s": -0.009374362998642027,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.1033856199203,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -274.84564318433434,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "TriggerExit",
+          "signed_distance_cm": 206.07440294995965,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 18,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        273.610820316884,
+        -52.134641408855465,
+        -24.08202380634984
+      ],
+      "gps_arrival_delta_s": 0.040938279998954386,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.350928835542,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -46.19684477512135,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "TriggerExit",
+          "signed_distance_cm": 172.48376071630736,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 19,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        274.94969698487677,
+        -54.58082426077344,
+        -24.571462954527068
+      ],
+      "gps_arrival_delta_s": 0.04105524600890931,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.6900030451359,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -329.2985967251833,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_255",
+          "component": "TriggerExit",
+          "signed_distance_cm": 455.1099598290871,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 17,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        281.3198039700459,
+        -66.62740174823695,
+        -26.70562783231273
+      ],
+      "gps_arrival_delta_s": 0.03859140399436001,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "ChargeArea",
+          "signed_distance_cm": -336.5945519466085,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -271.4714573012127,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "TriggerExit",
+          "signed_distance_cm": 202.7002170668378,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 17,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        283.30469170207044,
+        -70.08302063141119,
+        -27.41297007466752
+      ],
+      "gps_arrival_delta_s": -0.008014575010747649,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "ChargeArea",
+          "signed_distance_cm": -341.3214001329112,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -14.562206633474489,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "TriggerExit",
+          "signed_distance_cm": 137.87490807888486,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 18,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        284.6981219682212,
+        -72.53378030795628,
+        -27.93432231992619
+      ],
+      "gps_arrival_delta_s": -0.008205869002267718,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.5903639901269,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -301.1899241700181,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_256",
+          "component": "TriggerExit",
+          "signed_distance_cm": 424.4509086482208,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 16,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        291.59642322598575,
+        -84.23022898148254,
+        -30.59905552321296
+      ],
+      "gps_arrival_delta_s": -0.008838487992761657,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "ChargeArea",
+          "signed_distance_cm": -334.6356983171357,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -295.0035078173604,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "TriggerExit",
+          "signed_distance_cm": 226.23226758298642,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 16,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        293.9845531123708,
+        -87.98365315827586,
+        -31.598408569713026
+      ],
+      "gps_arrival_delta_s": 0.04083703500509728,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.6888139711803,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -44.97536569203021,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "TriggerExit",
+          "signed_distance_cm": 165.37498980391285,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 17,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        295.5994272433896,
+        -90.26299069919364,
+        -32.21940860108274
+      ],
+      "gps_arrival_delta_s": 0.040919110004324466,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "ChargeArea",
+          "signed_distance_cm": -338.0385540822831,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -330.90153607059426,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_257",
+          "component": "TriggerExit",
+          "signed_distance_cm": 450.56717962013215,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 15,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        303.46305941502703,
+        -100.66629959305774,
+        -35.44484402332152
+      ],
+      "gps_arrival_delta_s": -0.011300879996269941,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.17075322381254,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -305.7394913380849,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "TriggerExit",
+          "signed_distance_cm": 236.96825110370958,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 15,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        306.15390112628563,
+        -103.67044076803387,
+        -36.43452799475045
+      ],
+      "gps_arrival_delta_s": -0.009925835998728871,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.3446124888148,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "TriggerEnter",
+          "signed_distance_cm": 0.21522827476883322,
+          "contains": false
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "TriggerExit",
+          "signed_distance_cm": 113.11742574466675,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 16,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        308.3904298679347,
+        -106.09815383755677,
+        -37.33164659477715
+      ],
+      "gps_arrival_delta_s": 0.040687553002499044,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "ChargeArea",
+          "signed_distance_cm": -338.4815353668491,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -338.48153536684913,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_258",
+          "component": "TriggerExit",
+          "signed_distance_cm": 453.708753866591,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 14,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        317.9181372784008,
+        -114.94678215860634,
+        -41.083961959432635
+      ],
+      "gps_arrival_delta_s": 0.039401488000294194,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.1248218588731,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -285.89499551376775,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "TriggerExit",
+          "signed_distance_cm": 217.12375527939275,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 14,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        321.0144212959434,
+        -117.42901715226134,
+        -42.24302316548866
+      ],
+      "gps_arrival_delta_s": 0.0410682910005562,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.66651406261934,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -22.80027406129534,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "TriggerExit",
+          "signed_distance_cm": 131.37887099677147,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 15,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        323.2216050781275,
+        -119.07284047641716,
+        -43.19104574064236
+      ],
+      "gps_arrival_delta_s": -0.009775896003702655,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "ChargeArea",
+          "signed_distance_cm": -346.23340246782874,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -312.7983005402955,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_259",
+          "component": "TriggerExit",
+          "signed_distance_cm": 420.6157926144,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 13,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        334.43516982191005,
+        -125.87245569391233,
+        -47.384985984175806
+      ],
+      "gps_arrival_delta_s": -0.018654430998140015,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.1789592757621,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -290.3972992505451,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "TriggerExit",
+          "signed_distance_cm": 221.62605901617135,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 13,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        337.84627797271924,
+        -127.64898865972476,
+        -48.6263362162347
+      ],
+      "gps_arrival_delta_s": -0.01050758500059601,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.2235867770729,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -11.127458933377625,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "TriggerExit",
+          "signed_distance_cm": 117.5591369690878,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 14,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        340.4257544089779,
+        -128.93844710602414,
+        -49.57465967330072
+      ],
+      "gps_arrival_delta_s": -0.009291309004765935,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.3186519908781,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -313.62090103775506,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_260",
+          "component": "TriggerExit",
+          "signed_distance_cm": 420.0457364814016,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 12,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        352.95567417704467,
+        -133.93441326045644,
+        -54.12592026635322
+      ],
+      "gps_arrival_delta_s": -0.009746814001118764,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.6598491791623,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -242.76075818978313,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "TriggerExit",
+          "signed_distance_cm": 173.98951795541097,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 12,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        356.7430818128119,
+        -135.12727731323662,
+        -55.43693361201403
+      ],
+      "gps_arrival_delta_s": -0.009298598000896163,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "ChargeArea",
+          "signed_distance_cm": -340.7794719422023,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -8.516245125319756,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "TriggerExit",
+          "signed_distance_cm": 179.24950386897908,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 13,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        359.0010535045329,
+        -135.87594578227367,
+        -56.26651502748417
+      ],
+      "gps_arrival_delta_s": -0.009620707991416566,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.12708356952265,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -259.94255857011046,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_261",
+          "component": "TriggerExit",
+          "signed_distance_cm": 430.8331019392398,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 11,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        372.07954097011134,
+        -139.26900696502966,
+        -61.15998169907351
+      ],
+      "gps_arrival_delta_s": -0.01197469599719625,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.8257319743367,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -283.0426670780173,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "TriggerExit",
+          "signed_distance_cm": 214.27142684364074,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 11,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        376.0374343190051,
+        -140.06501175970308,
+        -62.4826857368057
+      ],
+      "gps_arrival_delta_s": 0.04000687498773914,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "ChargeArea",
+          "signed_distance_cm": -333.88786670412463,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -30.1422985157501,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "TriggerExit",
+          "signed_distance_cm": 145.84439224482682,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 12,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        378.70158796000504,
+        -140.5502513887803,
+        -63.56831795892808
+      ],
+      "gps_arrival_delta_s": 0.04030936300114263,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.89560920999884,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -321.7393370087575,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_262",
+          "component": "TriggerExit",
+          "signed_distance_cm": 436.69843348531595,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 10,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        391.549840675939,
+        -142.6300451631221,
+        -68.54242326236285
+      ],
+      "gps_arrival_delta_s": 0.04009009199216962,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.80556204582206,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -264.94549894180136,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "TriggerExit",
+          "signed_distance_cm": 196.1742587074238,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 10,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        395.5441486822959,
+        -143.10349685413456,
+        -69.9751821009284
+      ],
+      "gps_arrival_delta_s": 0.035294453002279624,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.27433444643754,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -37.525775241170095,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "TriggerExit",
+          "signed_distance_cm": 166.49966787334148,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 11,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        398.25142552317254,
+        -143.4137327195668,
+        -71.03545692333789
+      ],
+      "gps_arrival_delta_s": 0.03885071599506773,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "ChargeArea",
+          "signed_distance_cm": -336.56762526460165,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -329.5548008227703,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_263",
+          "component": "TriggerExit",
+          "signed_distance_cm": 458.68805225246666,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 9,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        411.35107064537254,
+        -144.1729234502931,
+        -76.21988591397863
+      ],
+      "gps_arrival_delta_s": 0.0399720670102397,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.8119629935807,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -239.58203545908498,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "TriggerExit",
+          "signed_distance_cm": 170.81079522471248,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 9,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        414.69198945485203,
+        -144.2386015145551,
+        -77.54646455119043
+      ],
+      "gps_arrival_delta_s": -0.010124509004526772,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "ChargeArea",
+          "signed_distance_cm": -341.2556337702573,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "TriggerEnter",
+          "signed_distance_cm": 3.6876597308213377,
+          "contains": false
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "TriggerExit",
+          "signed_distance_cm": 124.45767484230291,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 10,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        417.5549984656469,
+        -144.22857358367602,
+        -78.81078962154365
+      ],
+      "gps_arrival_delta_s": -0.009159332999843173,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "ChargeArea",
+          "signed_distance_cm": -348.33637514003095,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -309.05708179344344,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot264_ArrowIn",
+          "component": "TriggerExit",
+          "signed_distance_cm": 436.62123987682673,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 8,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        430.6382951506221,
+        -143.9663361484649,
+        -83.97445413905967
+      ],
+      "gps_arrival_delta_s": -0.011071461005485617,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.06606839844585,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -264.20221839130875,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "TriggerExit",
+          "signed_distance_cm": 195.43097815693585,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 8,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        434.4781814785099,
+        -143.77113031549717,
+        -85.5357680238343
+      ],
+      "gps_arrival_delta_s": 0.04000079000252299,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.3122060956559,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -27.232781025857435,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "TriggerExit",
+          "signed_distance_cm": 155.4218665829619,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 9,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        437.2930196006054,
+        -143.53297141567023,
+        -86.80825988583985
+      ],
+      "gps_arrival_delta_s": 0.04056037600093987,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.5664796058964,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -336.82804520514446,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_265",
+          "component": "TriggerExit",
+          "signed_distance_cm": 464.5266946755065,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 7,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        449.7583802048348,
+        -142.2587407559534,
+        -91.80630882462492
+      ],
+      "gps_arrival_delta_s": -0.0101223069941625,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.8637884541181,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -294.18071280160586,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "TriggerExit",
+          "signed_distance_cm": 225.40947256722922,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 7,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        453.76000350438943,
+        -141.7880853456787,
+        -93.36036475792095
+      ],
+      "gps_arrival_delta_s": -0.010885444993618876,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.575314989174,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -13.984906450622816,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "TriggerExit",
+          "signed_distance_cm": 142.30878575170854,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 8,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        456.52117404881466,
+        -141.33817911193063,
+        -94.64949384534268
+      ],
+      "gps_arrival_delta_s": 0.03925726198940538,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "ChargeArea",
+          "signed_distance_cm": -348.92124778826064,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -321.7249579269221,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_266",
+          "component": "TriggerExit",
+          "signed_distance_cm": 449.54858096831435,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 6,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        469.3714807865638,
+        -139.24934979353895,
+        -99.86627307254352
+      ],
+      "gps_arrival_delta_s": 0.03906026700860821,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "ChargeArea",
+          "signed_distance_cm": -338.6212900547104,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -255.7969574287173,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "TriggerExit",
+          "signed_distance_cm": 187.02571719434005,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 6,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        473.03075178326526,
+        -138.53443635491433,
+        -101.48328847482982
+      ],
+      "gps_arrival_delta_s": 0.038551638994249515,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "ChargeArea",
+          "signed_distance_cm": -347.18633796548716,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -26.946456518231685,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "TriggerExit",
+          "signed_distance_cm": 155.15743408200922,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 7,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        475.82900135311314,
+        -138.0023882613885,
+        -102.60171467497328
+      ],
+      "gps_arrival_delta_s": 0.04035119699256029,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.6716676822519,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -332.8054769861809,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_267",
+          "component": "TriggerExit",
+          "signed_distance_cm": 461.069345401306,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 5,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        488.06051022974754,
+        -135.2206304251114,
+        -107.69416120518301
+      ],
+      "gps_arrival_delta_s": -0.0101614200102631,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.4456047125666,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -293.3928374548469,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "TriggerExit",
+          "signed_distance_cm": 224.6215972204689,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 5,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        491.84145346828376,
+        -134.35468374895132,
+        -109.27579064854352
+      ],
+      "gps_arrival_delta_s": -0.011075984002673067,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "ChargeArea",
+          "signed_distance_cm": -344.1809653858034,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -5.682613364746658,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "TriggerExit",
+          "signed_distance_cm": 130.262399648335,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 6,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        494.4797634200956,
+        -133.67954633518008,
+        -110.39124479092342
+      ],
+      "gps_arrival_delta_s": -0.009608166990801692,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "ChargeArea",
+          "signed_distance_cm": -347.392881072153,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -299.9536042364324,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_268",
+          "component": "TriggerExit",
+          "signed_distance_cm": 424.4284347425813,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 4,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        507.13187030209576,
+        -130.44072010960375,
+        -115.55430604390229
+      ],
+      "gps_arrival_delta_s": 0.03978964500129223,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.4838939074833,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -275.69878914518756,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "TriggerExit",
+          "signed_distance_cm": 206.92754891081404,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 4,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        510.89933644282996,
+        -129.3351763032214,
+        -117.07280233640468
+      ],
+      "gps_arrival_delta_s": 0.039640293005504645,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "ChargeArea",
+          "signed_distance_cm": -343.0794296403577,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -37.60649570335397,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "TriggerExit",
+          "signed_distance_cm": 149.8615059650659,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 5,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        513.5900280671077,
+        -128.6987576755684,
+        -118.05922299773478
+      ],
+      "gps_arrival_delta_s": 0.0338597009977093,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.90437906343084,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -331.14730239456037,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_269",
+          "component": "TriggerExit",
+          "signed_distance_cm": 443.1753640401752,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 3,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        526.159431790597,
+        -125.50501161023683,
+        -123.03547851321584
+      ],
+      "gps_arrival_delta_s": 0.03610383698833175,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.1810156688495,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -259.96449649269994,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "TriggerExit",
+          "signed_distance_cm": 191.19325625832226,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 3,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        529.9312674923082,
+        -124.60834431842608,
+        -124.30220576146739
+      ],
+      "gps_arrival_delta_s": 0.04000920099497307,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "ChargeArea",
+          "signed_distance_cm": -346.4995629267934,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -24.726123068068205,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "TriggerExit",
+          "signed_distance_cm": 152.37765965078623,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 4,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        532.764674447987,
+        -124.15455650592001,
+        -125.16634768487202
+      ],
+      "gps_arrival_delta_s": 0.04034438899543602,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.431858579873,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -322.84576973283265,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_270",
+          "component": "TriggerExit",
+          "signed_distance_cm": 450.6585902764847,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 2,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        545.4299839451385,
+        -121.03211967141507,
+        -128.2623376625134
+      ],
+      "gps_arrival_delta_s": -0.015155761007918045,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.3865581761714,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -316.4706218134429,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "TriggerExit",
+          "signed_distance_cm": 247.69938157907023,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 2,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        549.7003744935951,
+        -119.82242148722916,
+        -129.057385662545
+      ],
+      "gps_arrival_delta_s": 0.04025919199921191,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -345.1861102308845,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -31.09458209517095,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "TriggerExit",
+          "signed_distance_cm": 138.2957573555179,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 3,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        552.3540921971786,
+        -118.71032076389244,
+        -129.41013935486873
+      ],
+      "gps_arrival_delta_s": -0.009298368997406214,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -347.4886250572355,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -320.88265262836524,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_271",
+          "component": "TriggerExit",
+          "signed_distance_cm": 423.1667804682879,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 1,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        565.0419683219898,
+        -113.67163193523872,
+        -130.85057911326334
+      ],
+      "gps_arrival_delta_s": -0.014962718996684998,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.9404856515809,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -286.5156535586377,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "TriggerExit",
+          "signed_distance_cm": 217.74441332426053,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 1,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        569.1870662972618,
+        -111.74204684220656,
+        -131.02452630774033
+      ],
+      "gps_arrival_delta_s": 0.04052950099867303,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -339.8314680512017,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -52.80350768687913,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "TriggerExit",
+          "signed_distance_cm": 174.5536315241175,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 2,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        571.6063111780007,
+        -110.51090176222597,
+        -131.14467343664205
+      ],
+      "gps_arrival_delta_s": 0.03585587900306564,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -336.6736262476784,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -324.3019142406947,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_272",
+          "component": "TriggerExit",
+          "signed_distance_cm": 445.02310745299474,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=1,event=0",
+      "segment_index": 0,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        584.1255934577578,
+        -104.7782025143375,
+        -131.9255472834547
+      ],
+      "gps_arrival_delta_s": -0.013264676003018394,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "ChargeArea",
+          "signed_distance_cm": -337.71484643594573,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -276.5530412606349,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "TriggerExit",
+          "signed_distance_cm": 207.78180102626163,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=1",
+      "segment_index": 0,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        587.9837445525395,
+        -102.97233700721705,
+        -132.22277350951163
+      ],
+      "gps_arrival_delta_s": 0.04045721700822469,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "ChargeArea",
+          "signed_distance_cm": -342.0516499310445,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -30.28359627090458,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "TriggerExit",
+          "signed_distance_cm": 155.1943718147138,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 1,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        590.648357930895,
+        -101.90360872085695,
+        -132.4291837231117
+      ],
+      "gps_arrival_delta_s": 0.0397979439876508,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "ChargeArea",
+          "signed_distance_cm": -335.55736745093776,
+          "contains": true
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "TriggerEnter",
+          "signed_distance_cm": -318.0275084156618,
+          "contains": true
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot273_ArrowOut",
+          "component": "TriggerExit",
+          "signed_distance_cm": 442.62023448120755,
+          "contains": false
+        }
+      }
+    },
+    {
+      "event_kind": "enter=0,event=0",
+      "segment_index": 0,
+      "spline_pointer": "0x7ffe090f0100",
+      "gps_position_ned_m": [
+        608.3571101177961,
+        -89.39941244817842,
+        -132.71111695321395
+      ],
+      "gps_arrival_delta_s": 0.03699146599683445,
+      "minimum_signed_distance_by_component": {
+        "ChargeArea": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "ChargeArea",
+          "signed_distance_cm": 37.612590110210476,
+          "contains": false
+        },
+        "TriggerEnter": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "TriggerEnter",
+          "signed_distance_cm": 445.9495042919257,
+          "contains": false
+        },
+        "TriggerExit": {
+          "actor": "BP_Segment_Rot_C_274",
+          "component": "TriggerExit",
+          "signed_distance_cm": 450.72074452630034,
+          "contains": false
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "summary": "a4265f8e594a95ed3045fe538004e04c60d849ddbc8405b2974f76fb2a27437a",
+    "manifest": "1ec007513a8449eb51e9f9760ec25925a849ab77eb0172d8f48f40b9a0cb1e80",
+    "volume_candidates": "af34ae909498e3367019be0e175d3308bc9bcbf3a6f4edf2017f657e4e2dbc3d",
+    "inventory": "658a69cc48b6e38d7c074c623fb908970f0333b4d29f372db7fab192e9ad9bdb"
+  },
+  "limitations": [
+    "GPS arrival is nearest event, not synchronized physical position",
+    "axis-aligned UE/NED origin is candidate from startup only",
+    "cross-process FName/root match does not prove identity; individual segment not matched",
+    "point containment ignores drone collision geometry and UE overlap rules",
+    "serialized box transforms and runtime profiles are unverified",
+    "association does not establish natural field membership"
+  ]
+}

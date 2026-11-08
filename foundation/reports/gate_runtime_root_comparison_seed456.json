@@ -1,0 +1,182 @@
+{
+  "status": "runtime root transform correspondence, not collision or trigger acceptance",
+  "source_sha256": {
+    "OL1_gate_mesh_placements_candidate.json": "c3e52ea638fe390d38da2ea4be3e94679ab03e34f0429d4f23b3424355f108a2",
+    "gdb.log": "67917a7f8b61328209f3d64b8cbdb3b2e8e844f86100110debc227de1f139cc2",
+    "manifest.json": "2549ed26ffeda3c77fe847b29cdd7444aaf331df3ec12142c943c1f714781f21"
+  },
+  "binary_sha256_reported_by_manifest": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "run": {
+    "seed": 456,
+    "repeat": 1,
+    "status": "observed"
+  },
+  "count": 12,
+  "max_position_error_cm": 7.500026792259234e-07,
+  "max_rotation_error_deg": 3.4730489285513664e-06,
+  "max_scale_error": 4.3486022960337323e-07,
+  "matches": [
+    {
+      "candidate_actor": "1_1_Gate",
+      "runtime_actor": "0x7ffe08dee980",
+      "runtime_root": "0x7ffe089ed400",
+      "runtime_fname": [
+        765779,
+        0
+      ],
+      "position_error_cm": 5.728187818362788e-07,
+      "second_nearest_distance_cm": 2809.9570317759626,
+      "rotation_error_deg": 2.217697665801737e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "1_2_Gate",
+      "runtime_actor": "0x7ffe08dee740",
+      "runtime_root": "0x7ffe089eca00",
+      "runtime_fname": [
+        765829,
+        0
+      ],
+      "position_error_cm": 5.896246470055279e-07,
+      "second_nearest_distance_cm": 2809.9570315259616,
+      "rotation_error_deg": 2.217697665801737e-07,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "2_1_Gate",
+      "runtime_actor": "0x7ffe08dee500",
+      "runtime_root": "0x7ffe089edc00",
+      "runtime_fname": [
+        765879,
+        0
+      ],
+      "position_error_cm": 4.82355840911978e-07,
+      "second_nearest_distance_cm": 2809.957031783303,
+      "rotation_error_deg": 2.232552853552512e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "2_2_Gate",
+      "runtime_actor": "0x7ffe08dee2c0",
+      "runtime_root": "0x7ffe09153a00",
+      "runtime_fname": [
+        765929,
+        0
+      ],
+      "position_error_cm": 5.764343475817558e-07,
+      "second_nearest_distance_cm": 2809.957031533302,
+      "rotation_error_deg": 2.232552853552512e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "3_1_Gate",
+      "runtime_actor": "0x7ffe08dee080",
+      "runtime_root": "0x7ffe09153000",
+      "runtime_fname": [
+        765979,
+        0
+      ],
+      "position_error_cm": 5.592387628921884e-07,
+      "second_nearest_distance_cm": 2809.9570317953194,
+      "rotation_error_deg": 3.0521889448525847e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "3_2_Gate",
+      "runtime_actor": "0x7ffe08c449c0",
+      "runtime_root": "0x7ffe09152600",
+      "runtime_fname": [
+        766029,
+        0
+      ],
+      "position_error_cm": 5.000001692678779e-07,
+      "second_nearest_distance_cm": 2809.957031545318,
+      "rotation_error_deg": 3.0521889448525847e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "4_1_Gate",
+      "runtime_actor": "0x7ffe08c44780",
+      "runtime_root": "0x7ffe09151c00",
+      "runtime_fname": [
+        766079,
+        0
+      ],
+      "position_error_cm": 4.001957554180828e-07,
+      "second_nearest_distance_cm": 2809.9570317623866,
+      "rotation_error_deg": 3.4730489285513664e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "4_2_Gate",
+      "runtime_actor": "0x7ffe08c44540",
+      "runtime_root": "0x7ffe09151200",
+      "runtime_fname": [
+        766129,
+        0
+      ],
+      "position_error_cm": 7.071095930116398e-07,
+      "second_nearest_distance_cm": 2809.9570315123883,
+      "rotation_error_deg": 3.4730489285513664e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "5_1_Gate",
+      "runtime_actor": "0x7ffe08c44300",
+      "runtime_root": "0x7ffe09150800",
+      "runtime_fname": [
+        766179,
+        0
+      ],
+      "position_error_cm": 7.500026792259234e-07,
+      "second_nearest_distance_cm": 2809.957031810414,
+      "rotation_error_deg": 1.8332219045481503e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "5_2_Gate",
+      "runtime_actor": "0x7ffe08c440c0",
+      "runtime_root": "0x7ffe09158200",
+      "runtime_fname": [
+        766229,
+        0
+      ],
+      "position_error_cm": 7.18072948756187e-07,
+      "second_nearest_distance_cm": 2809.957031560413,
+      "rotation_error_deg": 1.8332219045481503e-06,
+      "max_scale_error": 4.3486022960337323e-07
+    },
+    {
+      "candidate_actor": "6_1_Gate",
+      "runtime_actor": "0x7ffe08c43e80",
+      "runtime_root": "0x7ffe09157800",
+      "runtime_fname": [
+        766279,
+        0
+      ],
+      "position_error_cm": 2.5000008463393897e-07,
+      "second_nearest_distance_cm": 2809.9570317859757,
+      "rotation_error_deg": 2.0414061576258344e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    },
+    {
+      "candidate_actor": "6_2_Gate",
+      "runtime_actor": "0x7ffe08c43c40",
+      "runtime_root": "0x7ffe09156e00",
+      "runtime_fname": [
+        766329,
+        0
+      ],
+      "position_error_cm": 5.728227511975415e-07,
+      "second_nearest_distance_cm": 2809.9570315359756,
+      "rotation_error_deg": 2.0414061576258344e-06,
+      "max_scale_error": 5.0994873213028313e-08
+    }
+  ],
+  "limitations": [
+    "one historical process and startup samples, all-stop GDB",
+    "identity assigned by minimum-distance matching; runtime FNames not decoded",
+    "root transform comparison does not prove collision geometry or scoring trigger",
+    "printed values have limited decimal precision"
+  ]
+}

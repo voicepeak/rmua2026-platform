@@ -1,0 +1,130 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fc8d70 <SampleVectorField@@Base+0x278300>:
+ 2fc8d70:	8b 87 88 02 00 00    	mov    0x288(%rdi),%eax
+ 2fc8d76:	3b 87 b4 02 00 00    	cmp    0x2b4(%rdi),%eax
+ 2fc8d7c:	0f 9f c0             	setg   %al
+ 2fc8d7f:	c3                   	ret    
+ 2fc8d80:	55                   	push   %rbp
+ 2fc8d81:	41 57                	push   %r15
+ 2fc8d83:	41 56                	push   %r14
+ 2fc8d85:	41 55                	push   %r13
+ 2fc8d87:	41 54                	push   %r12
+ 2fc8d89:	53                   	push   %rbx
+ 2fc8d8a:	48 83 ec 38          	sub    $0x38,%rsp
+ 2fc8d8e:	89 f5                	mov    %esi,%ebp
+ 2fc8d90:	49 89 ff             	mov    %rdi,%r15
+ 2fc8d93:	89 74 24 04          	mov    %esi,0x4(%rsp)
+ 2fc8d97:	85 c9                	test   %ecx,%ecx
+ 2fc8d99:	0f 84 2a 01 00 00    	je     2fc8ec9 <SampleVectorField@@Base+0x278459>
+ 2fc8d9f:	4d 8d a7 d0 02 00 00 	lea    0x2d0(%r15),%r12
+ 2fc8da6:	c7 44 24 18 00 00 00 	movl   $0x0,0x18(%rsp)
+ 2fc8dad:	00 
+ 2fc8dae:	41 83 bf d8 02 00 00 	cmpl   $0x0,0x2d8(%r15)
+ 2fc8db5:	00 
+ 2fc8db6:	0f 8e d4 03 00 00    	jle    2fc9190 <SampleVectorField@@Base+0x278720>
+ 2fc8dbc:	49 8b 04 24          	mov    (%r12),%rax
+ 2fc8dc0:	39 28                	cmp    %ebp,(%rax)
+ 2fc8dc2:	0f 85 87 03 00 00    	jne    2fc914f <SampleVectorField@@Base+0x2786df>
+ 2fc8dc8:	48 8d 4c 24 04       	lea    0x4(%rsp),%rcx
+ 2fc8dcd:	48 89 4c 24 18       	mov    %rcx,0x18(%rsp)
+ 2fc8dd2:	48 39 c8             	cmp    %rcx,%rax
+ 2fc8dd5:	77 14                	ja     2fc8deb <SampleVectorField@@Base+0x27837b>
+ 2fc8dd7:	49 63 97 dc 02 00 00 	movslq 0x2dc(%r15),%rdx
+ 2fc8dde:	48 8d 04 90          	lea    (%rax,%rdx,4),%rax
+ 2fc8de2:	48 39 c8             	cmp    %rcx,%rax
+ 2fc8de5:	0f 87 c4 03 00 00    	ja     2fc91af <SampleVectorField@@Base+0x27873f>
+ 2fc8deb:	49 63 af d8 02 00 00 	movslq 0x2d8(%r15),%rbp
+ 2fc8df2:	48 85 ed             	test   %rbp,%rbp
+ 2fc8df5:	0f 84 bd 01 00 00    	je     2fc8fb8 <SampleVectorField@@Base+0x278548>
+ 2fc8dfb:	4c 89 7c 24 30       	mov    %r15,0x30(%rsp)
+ 2fc8e00:	49 8b 04 24          	mov    (%r12),%rax
+ 2fc8e04:	8b 74 24 04          	mov    0x4(%rsp),%esi
+ 2fc8e08:	39 30                	cmp    %esi,(%rax)
+ 2fc8e0a:	0f 94 c3             	sete   %bl
+ 2fc8e0d:	45 31 d2             	xor    %r10d,%r10d
+ 2fc8e10:	45 31 c0             	xor    %r8d,%r8d
+ 2fc8e13:	41 89 db             	mov    %ebx,%r11d
+ 2fc8e16:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+ 2fc8e1d:	00 00 00 
+ 2fc8e20:	41 80 f3 01          	xor    $0x1,%r11b
+ 2fc8e24:	4d 63 c8             	movslq %r8d,%r9
+ 2fc8e27:	45 8d 69 01          	lea    0x1(%r9),%r13d
+ 2fc8e2b:	41 39 e9             	cmp    %ebp,%r9d
+ 2fc8e2e:	44 0f 4c ed          	cmovl  %ebp,%r13d
+ 2fc8e32:	49 8d 41 01          	lea    0x1(%r9),%rax
+ 2fc8e36:	44 89 c7             	mov    %r8d,%edi
+ 2fc8e39:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+ 2fc8e40:	48 39 e8             	cmp    %rbp,%rax
+ 2fc8e43:	7d 2b                	jge    2fc8e70 <SampleVectorField@@Base+0x278400>
+ 2fc8e45:	49 8b 14 24          	mov    (%r12),%rdx
+ 2fc8e49:	39 34 82             	cmp    %esi,(%rdx,%rax,4)
+ 2fc8e4c:	0f 94 c2             	sete   %dl
+ 2fc8e4f:	89 d9                	mov    %ebx,%ecx
+ 2fc8e51:	80 e1 01             	and    $0x1,%cl
+ 2fc8e54:	83 c7 01             	add    $0x1,%edi
+ 2fc8e57:	48 83 c0 01          	add    $0x1,%rax
+ 2fc8e5b:	38 d1                	cmp    %dl,%cl
+ 2fc8e5d:	74 e1                	je     2fc8e40 <SampleVectorField@@Base+0x2783d0>
+ 2fc8e5f:	41 b7 01             	mov    $0x1,%r15b
+ 2fc8e62:	41 89 fd             	mov    %edi,%r13d
+ 2fc8e65:	f6 c3 01             	test   $0x1,%bl
+ 2fc8e68:	74 0e                	je     2fc8e78 <SampleVectorField@@Base+0x278408>
+ 2fc8e6a:	eb 45                	jmp    2fc8eb1 <SampleVectorField@@Base+0x278441>
+ 2fc8e6c:	0f 1f 40 00          	nopl   0x0(%rax)
+ 2fc8e70:	45 31 ff             	xor    %r15d,%r15d
+ 2fc8e73:	f6 c3 01             	test   $0x1,%bl
+ 2fc8e76:	75 39                	jne    2fc8eb1 <SampleVectorField@@Base+0x278441>
+ 2fc8e78:	45 89 ee             	mov    %r13d,%r14d
+ 2fc8e7b:	45 29 c6             	sub    %r8d,%r14d
+ 2fc8e7e:	45 39 c2             	cmp    %r8d,%r10d
+ 2fc8e81:	74 2b                	je     2fc8eae <SampleVectorField@@Base+0x27843e>
+ 2fc8e83:	49 8b 04 24          	mov    (%r12),%rax
+ 2fc8e87:	49 63 ca             	movslq %r10d,%rcx
+ 2fc8e8a:	48 8d 3c 88          	lea    (%rax,%rcx,4),%rdi
+ 2fc8e8e:	4a 8d 34 88          	lea    (%rax,%r9,4),%rsi
+ 2fc8e92:	49 63 d6             	movslq %r14d,%rdx
+ 2fc8e95:	48 c1 e2 02          	shl    $0x2,%rdx
+ 2fc8e99:	44 89 54 24 28       	mov    %r10d,0x28(%rsp)
+ 2fc8e9e:	44 89 db             	mov    %r11d,%ebx
+ 2fc8ea1:	e8 aa 03 0e 04       	call   70a9250 <memmove@plt>
+ 2fc8ea6:	41 89 db             	mov    %ebx,%r11d
+ 2fc8ea9:	44 8b 54 24 28       	mov    0x28(%rsp),%r10d
+ 2fc8eae:	45 01 f2             	add    %r14d,%r10d
+ 2fc8eb1:	45 84 ff             	test   %r15b,%r15b
+ 2fc8eb4:	0f 84 f2 00 00 00    	je     2fc8fac <SampleVectorField@@Base+0x27853c>
+ 2fc8eba:	8b 74 24 04          	mov    0x4(%rsp),%esi
+ 2fc8ebe:	45 89 e8             	mov    %r13d,%r8d
+ 2fc8ec1:	44 89 db             	mov    %r11d,%ebx
+ 2fc8ec4:	e9 57 ff ff ff       	jmp    2fc8e20 <SampleVectorField@@Base+0x2783b0>
+ 2fc8ec9:	4d 8d b7 80 02 00 00 	lea    0x280(%r15),%r14
+ 2fc8ed0:	84 d2                	test   %dl,%dl
+ 2fc8ed2:	74 30                	je     2fc8f04 <SampleVectorField@@Base+0x278494>
+ 2fc8ed4:	4c 89 f7             	mov    %r14,%rdi
+ 2fc8ed7:	e8 44 8b 81 ff       	call   27e1a20 <_start@@Base+0x2050a0>
+ 2fc8edc:	89 2a                	mov    %ebp,(%rdx)
+ 2fc8ede:	c7 42 04 ff ff ff ff 	movl   $0xffffffff,0x4(%rdx)
+ 2fc8ee5:	4c 89 f7             	mov    %r14,%rdi
+ 2fc8ee8:	89 ee                	mov    %ebp,%esi
+ 2fc8eea:	89 c1                	mov    %eax,%ecx
+ 2fc8eec:	45 31 c0             	xor    %r8d,%r8d
+ 2fc8eef:	e8 cc 8b 81 ff       	call   27e1ac0 <_start@@Base+0x205140>
+ 2fc8ef4:	8b 44 24 04          	mov    0x4(%rsp),%eax
+ 2fc8ef8:	41 89 87 74 02 00 00 	mov    %eax,0x274(%r15)
+ 2fc8eff:	e9 4b 02 00 00       	jmp    2fc914f <SampleVectorField@@Base+0x2786df>
+ 2fc8f04:	41 8b 87 88 02 00 00 	mov    0x288(%r15),%eax
+ 2fc8f0b:	41 8b 97 b4 02 00 00 	mov    0x2b4(%r15),%edx
+ 2fc8f12:	39 d0                	cmp    %edx,%eax
+ 2fc8f14:	0f 84 2a 02 00 00    	je     2fc9144 <SampleVectorField@@Base+0x2786d4>
+ 2fc8f1a:	4d 8d 87 b8 02 00 00 	lea    0x2b8(%r15),%r8
+ 2fc8f21:	49 8b 8f c0 02 00 00 	mov    0x2c0(%r15),%rcx
+ 2fc8f28:	48 85 c9             	test   %rcx,%rcx
+ 2fc8f2b:	4c 0f 45 c1          	cmovne %rcx,%r8
+ 2fc8f2f:	49 63 bf c8 02 00 00 	movslq 0x2c8(%r15),%rdi
+ 2fc8f36:	48 83 c7 ff          	add    $0xffffffffffffffff,%rdi
+ 2fc8f3a:	48 63 cd             	movslq %ebp,%rcx
+ 2fc8f3d:	48 21 f9             	and    %rdi,%rcx
