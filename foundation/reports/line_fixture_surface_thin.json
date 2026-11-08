@@ -1,0 +1,1207 @@
+{
+  "status": "controlled fixture surface correspondence, not natural collision acceptance",
+  "selector": 0,
+  "source_sha256": {
+    "manifest": "aca51aa7b8530cbdd1fa1c89a0109e576f0f1f3b9c92193f5f7441d061b7dbe8",
+    "asset_candidates": "101adadcc8e3c34bfe415713922a1c4f852c81b431118e2998fb861b33e19d0a"
+  },
+  "runs": {
+    "seed123_repeat1": {
+      "fixture_component": "0x7fffdcc16140",
+      "fixture_return_index": 7,
+      "fixture_transform_hex": "0000000000000000000000000000803f00000000000000000000af43000000000000803f0000803f0000803f00000000",
+      "same_component_hits": 16,
+      "surface_distance_cm": {
+        "max": 0.0023902955966906146,
+        "median": 9.549119116272408e-06,
+        "p95": 0.002380283616799033
+      },
+      "hits": [
+        {
+          "candidate_point_cm": [
+            -0.6261874437332153,
+            -0.34115248918533325,
+            -0.11743354797363281
+          ],
+          "surface_distance_cm": 0.0023769462901685055,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -0.6261886358261108,
+            -0.3411565124988556,
+            -0.1174468994140625
+          ],
+          "surface_distance_cm": 0.0023902955966906146,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.59999942779541,
+            -1.0250005722045898,
+            -0.11754131317138672
+          ],
+          "surface_distance_cm": 4.863751339095343e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599999189376831,
+            -1.0250003337860107,
+            -0.11747550964355469
+          ],
+          "surface_distance_cm": 2.384185791015625e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.1768574714660645,
+            0.05112278461456299,
+            -0.11744213104248047
+          ],
+          "surface_distance_cm": 2.2938709748232632e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.1580193042755127,
+            0.007765650749206543,
+            -0.11745643615722656
+          ],
+          "surface_distance_cm": 1.623322856142985e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.752066969871521,
+            -0.9265501499176025,
+            -0.11750030517578125
+          ],
+          "surface_distance_cm": 5.2236912813278604e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.024943232536316,
+            -2.600055694580078,
+            -0.11748218536376953
+          ],
+          "surface_distance_cm": 2.0027685164026386e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.024943470954895,
+            -2.6000561714172363,
+            -0.11742401123046875
+          ],
+          "surface_distance_cm": 8.429369655076039e-08,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.024943470954895,
+            -2.6000566482543945,
+            -0.11743354797363281
+          ],
+          "surface_distance_cm": 2.665600619157955e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999999046325684,
+            -1.0250003337860107,
+            -0.11749744415283203
+          ],
+          "surface_distance_cm": 4.792672484838209e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999999046325684,
+            -1.0250003337860107,
+            -0.11751651763916016
+          ],
+          "surface_distance_cm": 2.3846923454572544e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999996662139893,
+            -1.0250003337860107,
+            -0.1174774169921875
+          ],
+          "surface_distance_cm": 2.384185791015625e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.6000001430511475,
+            -1.0250002145767212,
+            -0.11748313903808594
+          ],
+          "surface_distance_cm": 7.152557373046875e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249431133270264,
+            -2.6000561714172363,
+            -0.1174764633178711
+          ],
+          "surface_distance_cm": 1.4305565747706606e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.60005521774292,
+            -0.11745929718017578
+          ],
+          "surface_distance_cm": 8.42936938816032e-07,
+          "candidate_index": 7
+        }
+      ],
+      "log_sha256": "73e55e3a146418c9e162168b46ef9a57ddba387ce598067f1feff45ee4b71481"
+    },
+    "seed123_repeat2": {
+      "fixture_component": "0x7fffdcc098d0",
+      "fixture_return_index": 7,
+      "fixture_transform_hex": "0000000000000000000000000000803f00000000000000000000af43000000000000803f0000803f0000803f00000000",
+      "same_component_hits": 20,
+      "surface_distance_cm": {
+        "max": 0.0023904260247200617,
+        "median": 9.481645100716999e-06,
+        "p95": 0.002382273763037509
+      },
+      "hits": [
+        {
+          "candidate_point_cm": [
+            -0.6261143088340759,
+            -0.3409003019332886,
+            -0.11743831634521484
+          ],
+          "surface_distance_cm": 0.002381844696633164,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -0.6261151432991028,
+            -0.34090325236320496,
+            -0.1174468994140625
+          ],
+          "surface_distance_cm": 0.0023904260247200617,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999999046325684,
+            -1.0250003337860107,
+            -0.117523193359375
+          ],
+          "surface_distance_cm": 3.052153598929184e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999996662139893,
+            -1.0250004529953003,
+            -0.11746788024902344
+          ],
+          "surface_distance_cm": 2.384185791015625e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.1760332584381104,
+            0.049225568771362305,
+            -0.11741447448730469
+          ],
+          "surface_distance_cm": 2.5378825372747115e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.1565752029418945,
+            0.004442572593688965,
+            -0.11748218536376953
+          ],
+          "surface_distance_cm": 4.195527363696441e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.96568763256073,
+            -0.43489277362823486,
+            -0.11743545532226562
+          ],
+          "surface_distance_cm": 8.472141482895027e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249435901641846,
+            -2.6000564098358154,
+            -0.11748504638671875
+          ],
+          "surface_distance_cm": 2.2889228869927158e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249431133270264,
+            -2.600055694580078,
+            -0.1174783706665039
+          ],
+          "surface_distance_cm": 1.621252219036138e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249435901641846,
+            -2.6000561714172363,
+            -0.11747264862060547
+          ],
+          "surface_distance_cm": 1.0491148718538972e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249437093734741,
+            -2.6000564098358154,
+            -0.1174306869506836
+          ],
+          "surface_distance_cm": 2.5288109310648455e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599999189376831,
+            -1.0250000953674316,
+            -0.11747455596923828
+          ],
+          "surface_distance_cm": 2.384185791015625e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599998950958252,
+            -1.0250009298324585,
+            -0.11751556396484375
+          ],
+          "surface_distance_cm": 2.2889524530239248e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599998950958252,
+            -1.0250002145767212,
+            -0.11747360229492188
+          ],
+          "surface_distance_cm": 4.76837158203125e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.59999942779541,
+            -1.0250005722045898,
+            -0.1174917221069336
+          ],
+          "surface_distance_cm": 8.429369702178807e-08,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.6000001430511475,
+            -1.0250004529953003,
+            -0.11749744415283203
+          ],
+          "surface_distance_cm": 4.821717361487552e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.6000003814697266,
+            -1.0250003337860107,
+            -0.11748600006103516
+          ],
+          "surface_distance_cm": 9.5367431640625e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599998712539673,
+            -1.0250005722045898,
+            -0.1175069808959961
+          ],
+          "surface_distance_cm": 1.4305848330049286e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.5999975204467773,
+            -1.0249996185302734,
+            -0.10750293731689453
+          ],
+          "surface_distance_cm": 1.7701676751397695e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.600001811981201,
+            -1.0250016450881958,
+            -0.10750102996826172
+          ],
+          "surface_distance_cm": 2.780414530071252e-06,
+          "candidate_index": 7
+        }
+      ],
+      "log_sha256": "f754080d5da473b214c874596a83ff664e5cf984196d69bb7ea809677dc81729"
+    },
+    "seed456_repeat1": {
+      "fixture_component": "0x7fffdcc0e830",
+      "fixture_return_index": 7,
+      "fixture_transform_hex": "0000000000000000000000000000803f00000000000000000000af43000000000000803f0000803f0000803f00000000",
+      "same_component_hits": 22,
+      "surface_distance_cm": {
+        "max": 0.007375996472499517,
+        "median": 1.7699903850723783e-05,
+        "p95": 0.0013487591167173102
+      },
+      "hits": [
+        {
+          "candidate_point_cm": [
+            1.8605036735534668,
+            0.5600923299789429,
+            -0.11744976043701172
+          ],
+          "surface_distance_cm": 0.007375996472499517,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            0.3997690677642822,
+            1.060073733329773,
+            -0.11743354797363281
+          ],
+          "surface_distance_cm": 0.00010198479416240243,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.5305118560791016,
+            0.8650715947151184,
+            -0.11747169494628906
+          ],
+          "surface_distance_cm": 3.870818365909742e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.515535354614258,
+            0.8306032419204712,
+            -0.11748790740966797
+          ],
+          "surface_distance_cm": 5.4630432808088445e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.024943470954895,
+            -2.6000566482543945,
+            -0.11746025085449219
+          ],
+          "surface_distance_cm": 2.665600741137217e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000566482543945,
+            -0.11748504638671875
+          ],
+          "surface_distance_cm": 2.288942532349966e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.024943232536316,
+            -2.6000559329986572,
+            -0.11747932434082031
+          ],
+          "surface_distance_cm": 1.7166262205538946e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249435901641846,
+            -2.6000566482543945,
+            -0.11742591857910156
+          ],
+          "surface_distance_cm": 3.3717477936225563e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999999046325684,
+            -1.0250006914138794,
+            -0.11748504638671875
+          ],
+          "surface_distance_cm": 5.331201499700045e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999984741210938,
+            -1.0250002145767212,
+            -0.11748600006103516
+          ],
+          "surface_distance_cm": 8.429369702178807e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249433517456055,
+            2.60005521774292,
+            -0.11737346649169922
+          ],
+          "surface_distance_cm": 1.0115243386689504e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249438285827637,
+            2.600055694580078,
+            -0.1174173355102539
+          ],
+          "surface_distance_cm": 1.621460004259172e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249439477920532,
+            2.6000568866729736,
+            -0.11742115020751953
+          ],
+          "surface_distance_cm": 2.0036028420067223e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249441862106323,
+            2.6000571250915527,
+            -0.11740589141845703
+          ],
+          "surface_distance_cm": 4.8584184342181284e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.5075392723083496,
+            1.0651745796203613,
+            -0.1174774169921875
+          ],
+          "surface_distance_cm": 0.0005294491370295324,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.4796485900878906,
+            1.0772931575775146,
+            -0.11743640899658203
+          ],
+          "surface_distance_cm": 0.0006343421000177024,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.356356620788574,
+            1.1308646202087402,
+            -0.11742115020751953
+          ],
+          "surface_distance_cm": 0.0012640443751707748,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.3451437950134277,
+            1.1357367038726807,
+            -0.11745166778564453
+          ],
+          "surface_distance_cm": 0.0013532177873250228,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            0.04678452014923096,
+            -2.6000564098358154,
+            -0.11226749420166016
+          ],
+          "surface_distance_cm": 6.217248937900877e-15,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            0.031621694564819336,
+            -2.600055456161499,
+            -0.1123495101928711
+          ],
+          "surface_distance_cm": 5.534189717763536e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.6267485618591309,
+            -1.9982526302337646,
+            -0.11136341094970703
+          ],
+          "surface_distance_cm": 1.823354549590862e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.6129755973815918,
+            -2.012024402618408,
+            -0.11124324798583984
+          ],
+          "surface_distance_cm": 8.429369702178807e-08,
+          "candidate_index": 7
+        }
+      ],
+      "log_sha256": "eed50bbcc4f5d48f7e9c7af58c3a04f4efd3faec2815acd3f4177884592a96f8"
+    },
+    "seed456_repeat2": {
+      "fixture_component": "0x7fffdcc05160",
+      "fixture_return_index": 7,
+      "fixture_transform_hex": "0000000000000000000000000000803f00000000000000000000af43000000000000803f0000803f0000803f00000000",
+      "same_component_hits": 29,
+      "surface_distance_cm": {
+        "max": 0.00738549901529961,
+        "median": 1.0490503887498166e-05,
+        "p95": 8.535593849003086e-05
+      },
+      "hits": [
+        {
+          "candidate_point_cm": [
+            1.8604928255081177,
+            0.5600840449333191,
+            -0.11745929718017578
+          ],
+          "surface_distance_cm": 0.00738549901529961,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            0.3997584879398346,
+            1.0600734949111938,
+            -0.11743545532226562
+          ],
+          "surface_distance_cm": 0.00010394284836036869,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.5270259380340576,
+            0.8570489883422852,
+            -0.11745929718017578
+          ],
+          "surface_distance_cm": 2.624266085236266e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.511000633239746,
+            0.8201650381088257,
+            -0.11746692657470703
+          ],
+          "surface_distance_cm": 3.35639040726345e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249431133270264,
+            -2.600055694580078,
+            -0.11747264862060547
+          ],
+          "surface_distance_cm": 1.0490503887498166e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000561714172363,
+            -0.11744213104248047
+          ],
+          "surface_distance_cm": 1.6858739231647456e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.024943470954895,
+            -2.600055694580078,
+            -0.11747550964355469
+          ],
+          "surface_distance_cm": 1.3352135147819687e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000561714172363,
+            -0.11743640899658203
+          ],
+          "surface_distance_cm": 1.6858739372955776e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000561714172363,
+            -0.11748600006103516
+          ],
+          "surface_distance_cm": 2.3842020660004594e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000559329986572,
+            -0.11745071411132812
+          ],
+          "surface_distance_cm": 3.3717477819556997e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249433517456055,
+            2.6000559329986572,
+            -0.11742496490478516
+          ],
+          "surface_distance_cm": 2.384189830622963e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249433517456055,
+            2.6000559329986572,
+            -0.1174020767211914
+          ],
+          "surface_distance_cm": 9.538998918219227e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249438285827637,
+            2.6000564098358154,
+            -0.11740303039550781
+          ],
+          "surface_distance_cm": 1.915507074130957e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249431133270264,
+            2.600055694580078,
+            -0.11739349365234375
+          ],
+          "surface_distance_cm": 7.15255742633758e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249428749084473,
+            2.6000547409057617,
+            -0.11742401123046875
+          ],
+          "surface_distance_cm": 2.2888225987932894e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.563889503479004,
+            0.941891074180603,
+            -0.11748981475830078
+          ],
+          "surface_distance_cm": 5.7475573684524366e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000561714172363,
+            -0.11742877960205078
+          ],
+          "surface_distance_cm": 1.6858739545665947e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.6000561714172363,
+            -0.11746788024902344
+          ],
+          "surface_distance_cm": 5.722425915876522e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249431133270264,
+            -2.6000564098358154,
+            -0.11746501922607422
+          ],
+          "surface_distance_cm": 2.8619649683518374e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249433517456055,
+            -2.600055694580078,
+            -0.11750125885009766
+          ],
+          "surface_distance_cm": 3.910148989481843e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249435901641846,
+            -2.6000566482543945,
+            -0.11745166778564453
+          ],
+          "surface_distance_cm": 3.3717478556152407e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249438285827637,
+            -2.6000561714172363,
+            -0.11744499206542969
+          ],
+          "surface_distance_cm": 1.6858740911646385e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249435901641846,
+            -2.6000566482543945,
+            -0.11744880676269531
+          ],
+          "surface_distance_cm": 3.3717478487271645e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249437093734741,
+            -2.6000566482543945,
+            -0.11746788024902344
+          ],
+          "surface_distance_cm": 5.737865494505551e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249438285827637,
+            -2.6000566482543945,
+            -0.11748790740966797
+          ],
+          "surface_distance_cm": 2.575466916463522e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249435901641846,
+            -2.6000571250915527,
+            -0.11748504638671875
+          ],
+          "surface_distance_cm": 2.29005978614056e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249431133270264,
+            -2.6000561714172363,
+            -0.11749458312988281
+          ],
+          "surface_distance_cm": 3.2425160122009546e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.0249438285827637,
+            -2.600058078765869,
+            -0.11747074127197266
+          ],
+          "surface_distance_cm": 8.756812893012503e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -1.28525710105896,
+            -2.0009331703186035,
+            -0.11748218536376953
+          ],
+          "surface_distance_cm": 2.5071270741496426e-05,
+          "candidate_index": 7
+        }
+      ],
+      "log_sha256": "fa74b282e137afc092f48a16349346cdc4d32267e0f0f67aa9e08b929cfd7336"
+    },
+    "seed2026_repeat1": {
+      "fixture_component": "0x7fffe55598d0",
+      "fixture_return_index": 7,
+      "fixture_transform_hex": "0000000000000000000000000000803f00000000000000000000af43000000000000803f0000803f0000803f00000000",
+      "same_component_hits": 18,
+      "surface_distance_cm": {
+        "max": 0.006902790981697696,
+        "median": 2.574961281352846e-05,
+        "p95": 0.0068873987643229845
+      },
+      "hits": [
+        {
+          "candidate_point_cm": [
+            1.8285040855407715,
+            0.7506279945373535,
+            -0.11743640899658203
+          ],
+          "surface_distance_cm": 0.006884682490668623,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.8285027742385864,
+            0.7506309747695923,
+            -0.11745452880859375
+          ],
+          "surface_distance_cm": 0.006902790981697696,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.2984015941619873,
+            0.3308618664741516,
+            -0.11744880676269531
+          ],
+          "surface_distance_cm": 1.1324939943517204e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.284452199935913,
+            0.29875582456588745,
+            -0.11747932434082031
+          ],
+          "surface_distance_cm": 4.157012229077507e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.2088303565979004,
+            1.1949653625488281,
+            -0.11745452880859375
+          ],
+          "surface_distance_cm": 0.002069155709537869,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.2130396366119385,
+            1.1931360960006714,
+            -0.11745452880859375
+          ],
+          "surface_distance_cm": 0.002047135693092026,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249439477920532,
+            2.6000561714172363,
+            -0.11738967895507812
+          ],
+          "surface_distance_cm": 8.429371287972196e-08,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.024943470954895,
+            2.6000561714172363,
+            -0.11742687225341797
+          ],
+          "surface_distance_cm": 2.5749214335628178e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249439477920532,
+            2.6000566482543945,
+            -0.117431640625
+          ],
+          "surface_distance_cm": 3.0520604773280235e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599999189376831,
+            -1.0250000953674316,
+            -0.11746788024902344
+          ],
+          "surface_distance_cm": 2.384185791015625e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.5999999046325684,
+            -1.0250015258789062,
+            -0.11753082275390625
+          ],
+          "surface_distance_cm": 3.8164210082336085e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.59999942779541,
+            -1.0250003337860107,
+            -0.11751747131347656
+          ],
+          "surface_distance_cm": 2.4795818785698824e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249439477920532,
+            2.6000564098358154,
+            -0.11739540100097656
+          ],
+          "surface_distance_cm": 2.5288110064292833e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249433517456055,
+            2.6000564098358154,
+            -0.11742687225341797
+          ],
+          "surface_distance_cm": 2.575001129142874e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.1484758853912354,
+            1.4765223264694214,
+            -0.1145486831665039
+          ],
+          "surface_distance_cm": 1.1801117583050329e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.1029157638549805,
+            1.5220845937728882,
+            -0.11434555053710938
+          ],
+          "surface_distance_cm": 5.3706036064702904e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.6673389673233032,
+            1.9576644897460938,
+            -0.11339664459228516
+          ],
+          "surface_distance_cm": 4.182841801281919e-06,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.6721773147583008,
+            1.9528257846832275,
+            -0.1133279800415039
+          ],
+          "surface_distance_cm": 2.2262746345998707e-06,
+          "candidate_index": 7
+        }
+      ],
+      "log_sha256": "2af951ac482bca8fe1e0c3ddee1c9a112a69ac1d2f3a8cbddafb3502b3a05233"
+    },
+    "seed2026_repeat2": {
+      "fixture_component": "0x7fffdcc029b0",
+      "fixture_return_index": 7,
+      "fixture_transform_hex": "0000000000000000000000000000803f00000000000000000000af43000000000000803f0000803f0000803f00000000",
+      "same_component_hits": 18,
+      "surface_distance_cm": {
+        "max": 0.006902593436205374,
+        "median": 2.0313201198531424e-05,
+        "p95": 0.006887201040941996
+      },
+      "hits": [
+        {
+          "candidate_point_cm": [
+            1.8284809589385986,
+            0.7506815791130066,
+            -0.11743640899658203
+          ],
+          "surface_distance_cm": 0.006884484735895518,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.8284796476364136,
+            0.7506844401359558,
+            -0.11745452880859375
+          ],
+          "surface_distance_cm": 0.006902593436205374,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.2989072799682617,
+            0.3320257067680359,
+            -0.11745166778564453
+          ],
+          "surface_distance_cm": 1.4195696020678767e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.28493595123291,
+            0.2998684048652649,
+            -0.11745452880859375
+          ],
+          "surface_distance_cm": 1.6784386581060665e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.210148811340332,
+            1.1943920850753784,
+            -0.1174631118774414
+          ],
+          "surface_distance_cm": 0.0020708408605273677,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.2141876220703125,
+            1.19263756275177,
+            -0.11745929718017578
+          ],
+          "surface_distance_cm": 0.002045899237056944,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249439477920532,
+            2.6000566482543945,
+            -0.11738395690917969
+          ],
+          "surface_distance_cm": 4.2146848840613477e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249435901641846,
+            2.6000561714172363,
+            -0.11742496490478516
+          ],
+          "surface_distance_cm": 2.3842015816002184e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249435901641846,
+            2.6000559329986572,
+            -0.11742877960205078
+          ],
+          "surface_distance_cm": 2.765707173197103e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.7050373554229736,
+            1.0347932577133179,
+            -0.11746692657470703
+          ],
+          "surface_distance_cm": 0.005862790367191946,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.59999942779541,
+            -1.025000810623169,
+            -0.1174917221069336
+          ],
+          "surface_distance_cm": 2.5288109106536417e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            2.599998950958252,
+            -1.0249996185302734,
+            -0.1175079345703125
+          ],
+          "surface_distance_cm": 1.5263620112564064e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.0249431133270264,
+            2.6000561714172363,
+            -0.11739253997802734
+          ],
+          "surface_distance_cm": 2.3841858487472223e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.024943470954895,
+            2.6000561714172363,
+            -0.11739540100097656
+          ],
+          "surface_distance_cm": 2.384185830983654e-07,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.120534896850586,
+            1.5044656991958618,
+            -0.11445999145507812
+          ],
+          "surface_distance_cm": 5.685884891228202e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            -2.0750765800476074,
+            1.5499236583709717,
+            -0.11412715911865234
+          ],
+          "surface_distance_cm": 1.1160724074950251e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.239332675933838,
+            2.3856663703918457,
+            -0.11610031127929688
+          ],
+          "surface_distance_cm": 3.674754812321228e-05,
+          "candidate_index": 7
+        },
+        {
+          "candidate_point_cm": [
+            1.2464286088943481,
+            2.3785722255706787,
+            -0.11601734161376953
+          ],
+          "surface_distance_cm": 6.01909271758148e-07,
+          "candidate_index": 7
+        }
+      ],
+      "log_sha256": "d680c83bc565b39169b50da3a039b0a37ab4334c775b7dc303988d9f3c9cbe93"
+    }
+  },
+  "limitations": [
+    "candidate hit location offset 0x18 and instance index offset 0x58 not independently typed",
+    "fixture world transform is injected and presumed to apply directly to the collision convex",
+    "GDB and forced stage/state perturb timing and behavior",
+    "surface correspondence does not establish natural world transforms or collision response"
+  ]
+}
