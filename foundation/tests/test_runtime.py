@@ -22,6 +22,9 @@ def test_command_hold_uses_same_physics_steps_and_hides_truth():
         single.step([.18]*4, .0025)
     _, events = grouped.step([.18]*4, .05)
     assert events['completed_physics_steps'] == 20
+    assert events['map_status'] == 'unimplemented'
+    assert events['wind_status'] == 'unidentified'
+    assert events['force_degradation_status'] == 'unidentified'
     for key in ('position', 'velocity', 'quaternion_wxyz', 'omega', 'rotor_signal'):
         np.testing.assert_allclose(single.truth_state()[key], grouped.truth_state()[key], atol=1e-14)
     truth = grouped.truth_state()
@@ -53,6 +56,34 @@ def test_invalid_command_or_nonintegral_duration_does_not_advance():
         with pytest.raises(ValueError):
             sim.step(pwm, dt)
         assert sim.truth_state()['t'] == 0
+
+
+def test_timeout_must_include_at_least_one_physics_step():
+    with pytest.raises(ValueError, match='at least one'):
+        RmuaPhysics(params(), physics_dt=.01, timeout_s=1e-12)
+    sim = RmuaPhysics(params(), physics_dt=.01, timeout_s=.01)
+    sim.reset()
+    _, events = sim.step([0] * 4, .01)
+    assert events['timeout'] and events['completed_physics_steps'] == 1
+
+
+def test_candidate_flight_bounds_stop_at_first_outside_step_and_validate_reset():
+    with pytest.raises(ValueError, match='flight bounds'):
+        RmuaPhysics(params(), flight_bounds_ned_m=[[0, 0, 0], [1, 0, 1]])
+    sim = RmuaPhysics(params(), physics_dt=.01,
+                      flight_bounds_ned_m=[[-1, -1, -1], [1, 1, 1]])
+    with pytest.raises(ValueError, match='initial position'):
+        sim.reset({'position': [2, 0, 0]})
+    with pytest.raises(RuntimeError):
+        sim.step([0]*4, .01)
+    sim.reset({'position': [0, 0, 0], 'velocity': [60, 0, 0]})
+    obs, event = sim.step([0]*4, .05)
+    assert event['out_of_bounds_candidate'] and event['terminal']
+    assert not event['timeout'] and obs['time_s'] == pytest.approx(.02)
+    with pytest.raises(RuntimeError):
+        sim.step([0]*4, .01)
+    sim.reset()
+    assert not sim.step([0]*4, .01)[1]['out_of_bounds_candidate']
 
 
 def test_uncovered_force_schedule_is_rejected_before_any_step():

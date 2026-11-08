@@ -61,7 +61,7 @@ def test_path_vehicle_collision_during_step():
 
 def test_recorded_effects_split_transitions_and_counter_without_terminal():
     effects = RecordedEffects([0, .03, .06, .1], None, [1, 0, 1, 1])
-    sim = PhysicsSim(params(), recorded_effects=effects,
+    sim = PhysicsSim(params(), recorded_effects=effects, field_rotor_target_scale=.25,
                      out_time_counter=OutTimeCounter(.02), max_substep_s=.1)
     manual = PhysicsSim(params(), max_substep_s=.1)
     sim.reset(); manual.reset()
@@ -103,7 +103,26 @@ def test_recorded_field_can_combine_with_explicit_wind():
             return np.zeros(3), np.zeros(3)
     aero = ObserveDrag()
     effects = RecordedEffects([0, .1], None, [0, 0])
-    sim = PhysicsSim(params(), recorded_effects=effects, aero_model=aero)
+    sim = PhysicsSim(params(), recorded_effects=effects, field_rotor_target_scale=.25, aero_model=aero)
     sim.reset()
     sim.step([.2]*4, .01, wind_world_m_s=[1, 2, 3])
     assert aero.winds and all(np.array_equal(wind, [1, 2, 3]) for wind in aero.winds)
+
+
+def test_field_attenuation_must_be_explicit_and_selected_scale_changes_motor_target():
+    effects = RecordedEffects([0, .1], None, [0, 0])
+    with pytest.raises(ValueError, match='scale must be selected explicitly'):
+        PhysicsSim(params(), recorded_effects=effects)
+    with pytest.raises(ValueError, match='invalid field rotor target scale'):
+        PhysicsSim(params(), recorded_effects=effects, field_rotor_target_scale=1.1)
+    weak = PhysicsSim(params(), recorded_effects=effects, field_rotor_target_scale=.1)
+    mild = PhysicsSim(params(), recorded_effects=effects, field_rotor_target_scale=.7)
+    initial = {'rotor_signal': [.2]*4}
+    weak.reset(initial); mild.reset(initial)
+    a, info_a = weak.step([.2]*4, .02)
+    b, info_b = mild.step([.2]*4, .02)
+    assert np.all(a['rotor_signal'] < b['rotor_signal'])
+    assert info_a['field_rotor_target_scale'] == .1 and info_b['field_rotor_target_scale'] == .7
+    wind_only = RecordedEffects([0, .1], None, [1, 1])
+    _, wind_only_info = PhysicsSim(params(), recorded_effects=wind_only).step([.2]*4, .01)
+    assert wind_only_info['force_degradation'] == 'recorded_effects_without_field_scaling'
