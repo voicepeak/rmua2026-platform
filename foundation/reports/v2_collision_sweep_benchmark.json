@@ -1,0 +1,735 @@
+{
+  "status": "synthetic axis-aligned collision check; not official parity",
+  "case_count": 90,
+  "miss_count": 0,
+  "false_hit_count": 0,
+  "cases": [
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 10.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 50.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.001,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.01,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": -0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.0,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.20700000000000002,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.9,
+      "expected_hit": true,
+      "observed_hit": true
+    },
+    {
+      "kind": "line",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 0.34500000000000003,
+      "expected_hit": false,
+      "observed_hit": false
+    },
+    {
+      "kind": "vehicle",
+      "relative_speed_m_s": 150.0,
+      "dt_s": 0.1,
+      "lateral_offset_m": 1.5,
+      "expected_hit": false,
+      "observed_hit": false
+    }
+  ],
+  "analysis_sha256": "dd73f576920d17be4852285860ea8c4309b5ec354dcaf77f49c74e3c7cea7621",
+  "model_sha256": "7bcb14c5da0b4af43d356d27292343274f428c7cc37a9e9c42ce51d45924408f",
+  "limitations": [
+    "analytic line crossings and constant-velocity axis-aligned vehicles only",
+    "vehicle expansion is conservative near edges and corners",
+    "turning, real-world mesh, collision response and official collision channels are not covered"
+  ]
+}

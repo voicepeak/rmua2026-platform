@@ -1,0 +1,375 @@
+{
+  "status": "candidate-map one-step contact workload; not official throughput or geometry validation",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "code_sha256": {
+    "D:\\RMUA2026-Platform\\foundation\\benchmark_batch_map_contact.py": "35ca53bb8beaf41fab3ab64e1031c7750d942ca9208ea2b887ac8c47390b755d",
+    "foundation\\batch.py": "879525596afd4320ab17b559e22e7382409c7e5ab78923280119b843e852ad7a",
+    "foundation\\runtime.py": "686aea786f54c0d184922c8d7f8cfd84ba38059dc38f788aaf2668c6af93d03c",
+    "foundation\\sim.py": "5fdb159bfb12c7f2f5b639117758cc3c4c92a623851909e71396a2ba11fcf4a2",
+    "foundation\\quad.py": "24dc2041c901490715054efbcf7ef7929920a9e339f4cc939c9f26d523ea51b5",
+    "foundation\\map_scene.py": "21f67ac8c5f47033eef1e5931c5feca9a6fb0d8deeb327c6a59b7d03df8d8a9a",
+    "foundation\\swept_mesh.py": "974977921d305f0181a191b6080f88210d449f8b26b0a5472cec2928fdbb9248",
+    "foundation\\frames.py": "8e8adcf981ff136b27fc13d04712cfd5118ac0e70291aa9069db610b3756a0b5"
+  },
+  "groups": {
+    "default": {
+      "candidate_instance_count": 508,
+      "source_sha256": {
+        "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+        "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+        "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+        "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+        "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+        "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+        "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a"
+      },
+      "sizes": {
+        "64": {
+          "runs": [
+            {
+              "environments": 64,
+              "seed": 20261109,
+              "pwm_sha256": "83fdd4af3628fb2870a192be8496a5336b238d14b67c0c0e1facbcdc03864323",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.09965660000307253,
+              "single_wall_s": 0.09885680000297725,
+              "batch_environment_commands_per_wall_s": 642.2053330941133,
+              "single_environment_commands_per_wall_s": 647.401089232835,
+              "terminal_count": 64,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            },
+            {
+              "environments": 64,
+              "seed": 20261110,
+              "pwm_sha256": "4bad614cdffb2e85979cf2d090d7f185bf8eee2f4f1f636be02aa403db160002",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.09891719999723136,
+              "single_wall_s": 0.09945709999738028,
+              "batch_environment_commands_per_wall_s": 647.0057785884692,
+              "single_environment_commands_per_wall_s": 643.4935263715288,
+              "terminal_count": 64,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            }
+          ],
+          "median_batch_commands_per_s": 644.6055558412912
+        },
+        "256": {
+          "runs": [
+            {
+              "environments": 256,
+              "seed": 20261109,
+              "pwm_sha256": "53164563d473aebeaca9a16e60d4665fef7edb20265a684c42daefc291c9eb95",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.4034685999940848,
+              "single_wall_s": 0.40064820000407053,
+              "batch_environment_commands_per_wall_s": 634.4979510270518,
+              "single_environment_commands_per_wall_s": 638.9645579273764,
+              "terminal_count": 256,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            },
+            {
+              "environments": 256,
+              "seed": 20261110,
+              "pwm_sha256": "f9f4e9702b3f23fc6b2e30c6d3435ad5e6b1e36fc0f27e9a4fb1363f2540a42d",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.4004891000004136,
+              "single_wall_s": 0.40133719999721507,
+              "batch_environment_commands_per_wall_s": 639.2183957059896,
+              "single_environment_commands_per_wall_s": 637.8676085889283,
+              "terminal_count": 256,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            }
+          ],
+          "median_batch_commands_per_s": 636.8581733665208
+        }
+      }
+    },
+    "all_optional": {
+      "candidate_instance_count": 12117,
+      "source_sha256": {
+        "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+        "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+        "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+        "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+        "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+        "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+        "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+        "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e",
+        "OL1_sprite_placements_candidate.json": "92c05a3ab3b515bb41d04134610fe5803a50b8a9965c03965cba17304ffaac1b",
+        "sprite_collision_candidates.json": "eb657d0f8ec0e67511ad266163aae4b803e9519b35ec7b0e15dfcdf30d050cdc",
+        "OL1_rack_placements_candidate.json": "1e6e487160bd2e9a2b20dc33e19ce11610bd4ca0fc667daddf03b9bd74faa9bb",
+        "rack_simple_candidates.json": "7698a3d6a059fbcbb6f45a03acd80273e47e56b1818e5bc9d9abb2fc60f2eea9",
+        "OL1_road_cubes_candidate.json": "90bc00b7f1bb13b8be1aa58f6c4af1c2d86db7ea8c8c7b9cd695e06c7368c315"
+      },
+      "sizes": {
+        "64": {
+          "runs": [
+            {
+              "environments": 64,
+              "seed": 20261109,
+              "pwm_sha256": "83fdd4af3628fb2870a192be8496a5336b238d14b67c0c0e1facbcdc03864323",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.1131870000026538,
+              "single_wall_s": 0.11115099999733502,
+              "batch_environment_commands_per_wall_s": 565.4359599468088,
+              "single_environment_commands_per_wall_s": 575.7932902226204,
+              "terminal_count": 64,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            },
+            {
+              "environments": 64,
+              "seed": 20261110,
+              "pwm_sha256": "4bad614cdffb2e85979cf2d090d7f185bf8eee2f4f1f636be02aa403db160002",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.11133040000277106,
+              "single_wall_s": 0.1106761999981245,
+              "batch_environment_commands_per_wall_s": 574.8654455423408,
+              "single_environment_commands_per_wall_s": 578.263438761762,
+              "terminal_count": 64,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            }
+          ],
+          "median_batch_commands_per_s": 570.1507027445748
+        },
+        "256": {
+          "runs": [
+            {
+              "environments": 256,
+              "seed": 20261109,
+              "pwm_sha256": "53164563d473aebeaca9a16e60d4665fef7edb20265a684c42daefc291c9eb95",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.44418460000451887,
+              "single_wall_s": 0.44477289999485947,
+              "batch_environment_commands_per_wall_s": 576.3369553951119,
+              "single_environment_commands_per_wall_s": 575.574635961316,
+              "terminal_count": 256,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            },
+            {
+              "environments": 256,
+              "seed": 20261110,
+              "pwm_sha256": "f9f4e9702b3f23fc6b2e30c6d3435ad5e6b1e36fc0f27e9a4fb1363f2540a42d",
+              "initial_state": {
+                "position": [
+                  622.5983415846564,
+                  -94.47809843114479,
+                  -134.7057231968829
+                ],
+                "velocity": [
+                  -87.48908208447119,
+                  -36.02525566162598,
+                  32.37037952404194
+                ]
+              },
+              "preflight_candidate_count": 2,
+              "preflight_hits": [
+                {
+                  "actor": "1_1_BP_Segment_Half",
+                  "component": null,
+                  "mesh": "Segment_Half"
+                }
+              ],
+              "batch_wall_s": 0.4451843999995617,
+              "single_wall_s": 0.44303629999922123,
+              "batch_environment_commands_per_wall_s": 575.0426115565865,
+              "single_environment_commands_per_wall_s": 577.8307556298435,
+              "terminal_count": 256,
+              "max_state_errors": {
+                "position": 0.0,
+                "velocity": 0.0,
+                "quaternion_wxyz": 0.0,
+                "omega": 0.0,
+                "rotor_signal": 0.0
+              }
+            }
+          ],
+          "median_batch_commands_per_s": 575.6897834758493
+        }
+      }
+    }
+  },
+  "limitations": [
+    "same candidate surface and initial state for all environments",
+    "one .01 s command at 100 m/s aimed at a mesh, no full route or realistic dynamics",
+    "single process, two short trials per size, no CPU isolation, no official same-machine baseline",
+    "no time of impact, no contact physics comparison, loaded geometry and channels unverified"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "status": "vectorized free-flight local benchmark; not complete scene or official comparison",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "groups": {
+    "64": {
+      "trials": [
+        {
+          "environments": 64,
+          "backend_requested": "auto",
+          "backend_used": "vectorized_free_flight",
+          "commands_per_environment": 12,
+          "physics_dt_s": 0.0025,
+          "command_dt_s": 0.01,
+          "seed": 20261109,
+          "action_bytes_sha256": "6a9022f2a0b99add1796e3e08c53ab42183cd5fc771d99c90fcf39aeabbd9c87",
+          "batch_wall_s": 0.016756699998950353,
+          "singles_wall_s": 0.29568210000070394,
+          "batch_environment_commands_per_wall_s": 45832.41330620635,
+          "single_environment_commands_per_wall_s": 2597.3841500658023,
+          "final_max_absolute_errors": {
+            "position": 2.4936649967166602e-18,
+            "velocity": 2.7755575615628914e-17,
+            "quaternion_wxyz": 3.469446951953614e-18,
+            "omega": 0.0,
+            "rotor_signal": 0.0,
+            "time_s": 0.0
+          }
+        },
+        {
+          "environments": 64,
+          "backend_requested": "auto",
+          "backend_used": "vectorized_free_flight",
+          "commands_per_environment": 12,
+          "physics_dt_s": 0.0025,
+          "command_dt_s": 0.01,
+          "seed": 20261110,
+          "action_bytes_sha256": "9797c50a3a069dba4a1eb0d6dee45c5d7c712535abb8c8012b7cddb59475963a",
+          "batch_wall_s": 0.01598770000055083,
+          "singles_wall_s": 0.2974696000019321,
+          "batch_environment_commands_per_wall_s": 48036.92838704378,
+          "single_environment_commands_per_wall_s": 2581.776423523653,
+          "final_max_absolute_errors": {
+            "position": 1.8431436932253575e-18,
+            "velocity": 3.469446951953614e-17,
+            "quaternion_wxyz": 3.469446951953614e-18,
+            "omega": 0.0,
+            "rotor_signal": 0.0,
+            "time_s": 0.0
+          }
+        },
+        {
+          "environments": 64,
+          "backend_requested": "auto",
+          "backend_used": "vectorized_free_flight",
+          "commands_per_environment": 12,
+          "physics_dt_s": 0.0025,
+          "command_dt_s": 0.01,
+          "seed": 20261111,
+          "action_bytes_sha256": "be9647bfec935ec3314483fa41e4ffd770f47d1cf76dd46a7cc39103904d22a9",
+          "batch_wall_s": 0.015969500000210246,
+          "singles_wall_s": 0.29360190000079456,
+          "batch_environment_commands_per_wall_s": 48091.67475436857,
+          "single_environment_commands_per_wall_s": 2615.7868869306417,
+          "final_max_absolute_errors": {
+            "position": 2.656295322589486e-18,
+            "velocity": 3.122502256758253e-17,
+            "quaternion_wxyz": 1.734723475976807e-18,
+            "omega": 0.0,
+            "rotor_signal": 0.0,
+            "time_s": 0.0
+          }
+        }
+      ],
+      "median_batch_commands_per_s": 48036.92838704378,
+      "median_singles_commands_per_s": 2597.3841500658023,
+      "median_local_batch_to_singles_ratio": 18.494348780031945
+    },
+    "256": {
+      "trials": [
+        {
+          "environments": 256,
+          "backend_requested": "auto",
+          "backend_used": "vectorized_free_flight",
+          "commands_per_environment": 12,
+          "physics_dt_s": 0.0025,
+          "command_dt_s": 0.01,
+          "seed": 20261109,
+          "action_bytes_sha256": "d1b858e8002b7ae8b636d2b1d83dbc9898e54a6eb3ecfe23ff91d835bf9d3f63",
+          "batch_wall_s": 0.05795370000123512,
+          "singles_wall_s": 1.2256054999998014,
+          "batch_environment_commands_per_wall_s": 53007.83211312701,
+          "single_environment_commands_per_wall_s": 2506.516166907294,
+          "final_max_absolute_errors": {
+            "position": 1.5178830414797062e-18,
+            "velocity": 2.42861286636753e-17,
+            "quaternion_wxyz": 1.1102230246251565e-16,
+            "omega": 0.0,
+            "rotor_signal": 0.0,
+            "time_s": 0.0
+          }
+        },
+        {
+          "environments": 256,
+          "backend_requested": "auto",
+          "backend_used": "vectorized_free_flight",
+          "commands_per_environment": 12,
+          "physics_dt_s": 0.0025,
+          "command_dt_s": 0.01,
+          "seed": 20261110,
+          "action_bytes_sha256": "7039bb0f96ab902fe9a20a47f6da6dc31d216ea50b0171e6a79ebeb17cbbd99d",
+          "batch_wall_s": 0.05194459999984247,
+          "singles_wall_s": 1.2361516999990272,
+          "batch_environment_commands_per_wall_s": 59139.92984851778,
+          "single_environment_commands_per_wall_s": 2485.1318814692545,
+          "final_max_absolute_errors": {
+            "position": 1.951563910473908e-18,
+            "velocity": 4.163336342344337e-17,
+            "quaternion_wxyz": 1.1102230246251565e-16,
+            "omega": 0.0,
+            "rotor_signal": 0.0,
+            "time_s": 0.0
+          }
+        },
+        {
+          "environments": 256,
+          "backend_requested": "auto",
+          "backend_used": "vectorized_free_flight",
+          "commands_per_environment": 12,
+          "physics_dt_s": 0.0025,
+          "command_dt_s": 0.01,
+          "seed": 20261111,
+          "action_bytes_sha256": "3d98534f7c6235f3a9a5587369edccdf924d90e3ca255c7c150bd8fccb28cf6e",
+          "batch_wall_s": 0.05151090000072145,
+          "singles_wall_s": 1.2206776999992144,
+          "batch_environment_commands_per_wall_s": 59637.86305339209,
+          "single_environment_commands_per_wall_s": 2516.634816874247,
+          "final_max_absolute_errors": {
+            "position": 2.8189256484623115e-18,
+            "velocity": 3.8163916471489756e-17,
+            "quaternion_wxyz": 1.1102230246251565e-16,
+            "omega": 0.0,
+            "rotor_signal": 0.0,
+            "time_s": 0.0
+          }
+        }
+      ],
+      "median_batch_commands_per_s": 59139.92984851778,
+      "median_singles_commands_per_s": 2506.516166907294,
+      "median_local_batch_to_singles_ratio": 23.594473727846946
+    }
+  },
+  "code_sha256": {
+    "D:\\RMUA2026-Platform\\foundation\\benchmark_batch_vectorized.py": "e32160353c47bd12fd8f032a8673a3d94d8265c8a4f4b56ec1a94c6af0c67d9d",
+    "foundation\\benchmark_batch_reference.py": "d537a393d5ca57a67ec076e070db6c5ce9a84d5225c71cdc481ef6f607a393a0",
+    "foundation\\batch.py": "6deeb0bb8122226420a863750ab0543ebdcaa8174a9ac3e8428c58b9d0b9134f",
+    "foundation\\runtime.py": "15379fdce3deb9395b7a60386c0f9b663d3abf37038649fca6a2782510f67cf0",
+    "foundation\\sim.py": "5fdb159bfb12c7f2f5b639117758cc3c4c92a623851909e71396a2ba11fcf4a2",
+    "foundation\\quad.py": "24dc2041c901490715054efbcf7ef7929920a9e339f4cc939c9f26d523ea51b5"
+  },
+  "limitations": [
+    "free flight only; map, wind, field, gates, obstacles and timeouts use reference fallback",
+    "three local trials, 12 commands each, no CPU isolation",
+    "compares to local single environments, not official simulator or cross-machine performance",
+    "batch speed does not establish physical alignment"
+  ]
+}

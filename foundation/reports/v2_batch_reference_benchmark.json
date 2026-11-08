@@ -1,0 +1,63 @@
+{
+  "status": "sequential reference baseline; not optimized and not official comparison",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "runs": [
+    {
+      "environments": 64,
+      "commands_per_environment": 12,
+      "physics_dt_s": 0.0025,
+      "command_dt_s": 0.01,
+      "seed": 20261109,
+      "action_bytes_sha256": "6a9022f2a0b99add1796e3e08c53ab42183cd5fc771d99c90fcf39aeabbd9c87",
+      "batch_wall_s": 0.2946617999987211,
+      "singles_wall_s": 0.29322270000193384,
+      "batch_environment_commands_per_wall_s": 2606.377888152904,
+      "single_environment_commands_per_wall_s": 2619.169661813137,
+      "final_max_absolute_errors": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "quaternion_wxyz": 0.0,
+        "omega": 0.0,
+        "rotor_signal": 0.0,
+        "time_s": 0.0
+      }
+    },
+    {
+      "environments": 256,
+      "commands_per_environment": 12,
+      "physics_dt_s": 0.0025,
+      "command_dt_s": 0.01,
+      "seed": 20261109,
+      "action_bytes_sha256": "d1b858e8002b7ae8b636d2b1d83dbc9898e54a6eb3ecfe23ff91d835bf9d3f63",
+      "batch_wall_s": 1.2078989000001457,
+      "singles_wall_s": 1.3886671000000206,
+      "batch_environment_commands_per_wall_s": 2543.2592081999824,
+      "single_environment_commands_per_wall_s": 2212.193260717385,
+      "final_max_absolute_errors": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "quaternion_wxyz": 0.0,
+        "omega": 0.0,
+        "rotor_signal": 0.0,
+        "time_s": 0.0
+      }
+    }
+  ],
+  "analysis_sha256": "ee4c8a6546658c4dcdd6ac79e3c67aa445375f3644ce8a0f4ff905330ce72d02",
+  "code_sha256": {
+    "foundation\\batch.py": "0781b17e9f0e2b7e28e78a95be731f7d6c9d0985db4d4ffe1b7842e1b328e584",
+    "foundation\\runtime.py": "dd3ec23ecac3a55b66d8138213a3538bc216910ef32202710f777f81576a54ac",
+    "foundation\\sim.py": "8c9abc46b46a674b02ec4c373ea4bebcba12332fc089c0aa92fce0c4df836cbe",
+    "foundation\\quad.py": "24dc2041c901490715054efbcf7ef7929920a9e339f4cc939c9f26d523ea51b5"
+  },
+  "limitations": [
+    "no maps, wind, field, obstacles or terminal events in this benchmark",
+    "final states only; step-by-step parity is tested separately at small batch size",
+    "single local timing per size; warmup, variance and CPU contention not controlled",
+    "no official simulator on the same hardware was timed; no official speed ratio",
+    "this batch is sequential and does not establish V2 throughput or physics alignment"
+  ]
+}

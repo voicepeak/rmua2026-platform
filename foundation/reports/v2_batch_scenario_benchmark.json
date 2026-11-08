@@ -1,0 +1,127 @@
+{
+  "status": "synthetic configured-scenario reference benchmark; not official parity",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "candidate_map_instances": 508,
+  "candidate_map_source_sha256": {
+    "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+    "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+    "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+    "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+    "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+    "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+    "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a"
+  },
+  "groups": {
+    "64": {
+      "runs": [
+        {
+          "environments": 64,
+          "seed": 20261109,
+          "commands_per_environment": 6,
+          "action_bytes_sha256": "3116b612e35e88eb1fcaf9a749aba67add4b4cc2d9631857bf38142fba9f2f34",
+          "batch_wall_s": 0.4322988999992958,
+          "singles_wall_s": 0.44173639999644365,
+          "batch_environment_commands_per_wall_s": 888.2742935515809,
+          "single_environment_commands_per_wall_s": 869.2967118016345,
+          "final_max_absolute_errors": {
+            "position": 0.0,
+            "velocity": 0.0,
+            "quaternion_wxyz": 0.0,
+            "omega": 0.0,
+            "rotor_signal": 0.0
+          },
+          "max_field_counter_error_s": 0.0,
+          "backend": "reference",
+          "terminal_count": 0
+        },
+        {
+          "environments": 64,
+          "seed": 20261110,
+          "commands_per_environment": 6,
+          "action_bytes_sha256": "b7ac6b8a7396b5d6b2ddf1729f210c5f2cee3c04c6c437a9d5cb13a328d6bef8",
+          "batch_wall_s": 0.4366742999991402,
+          "singles_wall_s": 0.42375790000369307,
+          "batch_environment_commands_per_wall_s": 879.3739407168136,
+          "single_environment_commands_per_wall_s": 906.1777963234513,
+          "final_max_absolute_errors": {
+            "position": 0.0,
+            "velocity": 0.0,
+            "quaternion_wxyz": 0.0,
+            "omega": 0.0,
+            "rotor_signal": 0.0
+          },
+          "max_field_counter_error_s": 0.0,
+          "backend": "reference",
+          "terminal_count": 0
+        }
+      ],
+      "median_batch_commands_per_s": 883.8241171341972
+    },
+    "256": {
+      "runs": [
+        {
+          "environments": 256,
+          "seed": 20261109,
+          "commands_per_environment": 6,
+          "action_bytes_sha256": "c14c7d1a541105879b7f30d50a19e42789c800d5426b9175ae5e3d0780d6dad6",
+          "batch_wall_s": 2.2587163999996847,
+          "singles_wall_s": 1.9185517000005348,
+          "batch_environment_commands_per_wall_s": 680.0322519463773,
+          "single_environment_commands_per_wall_s": 800.6039138791891,
+          "final_max_absolute_errors": {
+            "position": 0.0,
+            "velocity": 0.0,
+            "quaternion_wxyz": 0.0,
+            "omega": 0.0,
+            "rotor_signal": 0.0
+          },
+          "max_field_counter_error_s": 0.0,
+          "backend": "reference",
+          "terminal_count": 0
+        },
+        {
+          "environments": 256,
+          "seed": 20261110,
+          "commands_per_environment": 6,
+          "action_bytes_sha256": "8325b19f3d401bc7846ef848bdf81444535ff13bb926c53e639aa5bf7de47fe0",
+          "batch_wall_s": 1.6908283999946434,
+          "singles_wall_s": 1.6742864000043483,
+          "batch_environment_commands_per_wall_s": 908.4304474687473,
+          "single_environment_commands_per_wall_s": 917.4057676130027,
+          "final_max_absolute_errors": {
+            "position": 0.0,
+            "velocity": 0.0,
+            "quaternion_wxyz": 0.0,
+            "omega": 0.0,
+            "rotor_signal": 0.0
+          },
+          "max_field_counter_error_s": 0.0,
+          "backend": "reference",
+          "terminal_count": 0
+        }
+      ],
+      "median_batch_commands_per_s": 794.2313497075622
+    }
+  },
+  "code_sha256": {
+    "D:\\RMUA2026-Platform\\foundation\\benchmark_batch_scenario.py": "3328cdcfa24f23e27b090b98c26c16cb53e841dad10beec7158ed3671daccbc1",
+    "foundation\\batch.py": "6deeb0bb8122226420a863750ab0543ebdcaa8174a9ac3e8428c58b9d0b9134f",
+    "foundation\\runtime.py": "15379fdce3deb9395b7a60386c0f9b663d3abf37038649fca6a2782510f67cf0",
+    "foundation\\sim.py": "5fdb159bfb12c7f2f5b639117758cc3c4c92a623851909e71396a2ba11fcf4a2",
+    "foundation\\quad.py": "24dc2041c901490715054efbcf7ef7929920a9e339f4cc939c9f26d523ea51b5",
+    "foundation\\obstacles.py": "7bcb14c5da0b4af43d356d27292343274f428c7cc37a9e9c42ce51d45924408f",
+    "foundation\\map_scene.py": "ae0b3c674d69fa85dac5f3a647238bf043a4a40dae75e8b2f52ad6ad824517fb",
+    "foundation\\aero.py": "69ac5cff2daeb3c4ddef1cf47be7c800cc3d36b097cb1a6bbdffb016ade15f37",
+    "foundation\\effects.py": "c28c4c47b9fb74a7652ca7bad107c6151ac4a5e57d085cc62ca4ab2f2e52b24a",
+    "foundation\\out_time.py": "9f2a5604d3fccb242e7bf47fa89a354e620fe9d46033c24ec9bf35a1e7a0aa1f"
+  },
+  "limitations": [
+    "synthetic starting positions far from candidate map and obstacles: no collision workload",
+    "wind and field parameters are illustrative, not validated against official",
+    "two short trials per size, no CPU isolation, no same-machine official baseline",
+    "events and final states are compared; complex event sequences tested separately at small batch size"
+  ]
+}
