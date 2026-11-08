@@ -9,6 +9,7 @@ import math
 from pathlib import Path
 from vendor.rmua_re.wind import (ElfFloatReader, Keyframe, WindSeries,
                                  generate_stage, keyframes_bytes)
+from vendor.rmua_re.ue_rng import f32
 
 
 class WindGenerator:
@@ -19,6 +20,14 @@ class WindGenerator:
             raise ValueError('invalid wind frames')
         if any(a.time >= b.time for a, b in zip(self.frames, self.frames[1:])):
             raise ValueError('wind frame times must strictly increase')
+        try:
+            rounded_times = [f32(f.time) for f in self.frames]
+            rounded_values = [f32(x) for frame in self.frames for x in (frame.speed, frame.direction)]
+        except (OverflowError, ValueError):
+            raise ValueError('wind frames must be representable as float32') from None
+        if (not all(math.isfinite(x) for x in rounded_times + rounded_values)
+                or any(a >= b for a, b in zip(rounded_times, rounded_times[1:]))):
+            raise ValueError('wind frames must remain finite and ordered in float32')
         self.series = WindSeries(self.frames, constants)
         self.origin = origin
 
@@ -43,6 +52,7 @@ class WindGenerator:
         return keyframes_bytes(self.frames)
 
     def sample(self, t):
-        if not math.isfinite(t) or not self.frames[0].time <= t < self.frames[-1].time:
+        if (not math.isfinite(t) or not self.frames[0].time <= t < self.frames[-1].time
+                or not f32(self.frames[0].time) <= f32(t) < f32(self.frames[-1].time)):
             raise ValueError('time outside captured keyframe interval')
         return self.series.sample(t)

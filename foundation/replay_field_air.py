@@ -100,7 +100,7 @@ def run(directory, start_offset=.35, end_offset=.83, with_recovery=False, engine
             times.append(end_offset-start+.1)
             flags.append(flags[-1])
             effects = RecordedEffects(times, None, flags)
-            sim = PhysicsSim(params, recorded_effects=effects, max_substep_s=.002)
+            sim = PhysicsSim(params, recorded_effects=effects, field_rotor_target_scale=low_scale, max_substep_s=.002)
             sim.reset({'position':pos, 'velocity':vel, 'quaternion_wxyz':q[[3,0,1,2]],
                        'omega':w, 'rotor_signal':[.2]*4})
             plant = sim.quad
