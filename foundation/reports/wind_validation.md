@@ -1,5 +1,29 @@
 # Wind generator: constrained validation
 
+## Integrated recorded-effects replay (2026-11-08)
+
+`RecordedEffects` accepts explicitly time-aligned NED wind samples and
+externally supplied field flags; wind is linearly interpolated and flags held
+until the next timestamp. `PhysicsSim` can now consume this schedule, requiring
+an aerodynamic model when wind samples are provided, split steps at schedule boundaries, apply the
+observed candidate 0.25/1.0 rotor-target scaling, and optionally accumulate
+the separately supplied `OutTimeCounter`. A timeout request is reported but
+does not automatically end the simulation. Out-of-range schedules fail before
+state advances. This interface does not infer natural wind zones, natural
+field membership, game-state reset behavior, or official failure semantics.
+
+The integrated engine replayed the same forced-stage wind recordings as the
+previous direct `Quad` replay, with constant field flag 1. On seed 123/456,
+the recorded-wind horizontal position RMSE was 0.000300/0.000094 m over the
+short chosen windows; the zero-wind comparison was 0.001747/0.000913 m.
+The seed-456 integrated and direct recorded-wind RMSE values differ by about
+2.4e-8 m; their discretizations differ because the integrated engine splits at
+wind sample timestamps. Full errors and hashes are in
+`wind_stage4_integrated_seed123.json` and `wind_stage4_integrated_seed456.json`.
+This is a pipeline consistency check and same-recording exploratory replay,
+not an independent held-out W01 or F01 acceptance. The original GDB, forced
+stage, initial-state and arrival-time limitations remain.
+
 `foundation.wind_generator` wraps the unchanged vendored reference generator,
 requires the hash-verified 12.0.0.5 ELF for its constants, and supports fresh
 seed generation or recorded keyframe bytes. Out-of-range sampling is rejected.
@@ -110,6 +134,24 @@ nor does it validate a full simultaneous net wrench, natural zone behavior,
 airborne trajectory parity, or W01. Ground contact, startup and debugger
 pauses limit the two trajectory comparisons.
 
+## Forced stage-4 wind delivery
+
+Two further fresh seed-123/456 processes forced stage-4 initialization and
+state 7, initialized its wind clock, and suppressed overtime; unlike the
+physics-entry injection above, they did not overwrite the physics wind vector.
+In each run, 30 nearest-time pairs between the decoded ROS debug wind and the
+read-only physics-entry vector were nonzero. Their maximum vector differences
+were 9.1e-8 and 8.7e-8 m/s respectively, using a 60 ms maximum arrival-time
+gap. Individual pairs and hashes are in `wind_delivery_stage4_seed123.json`
+and `wind_delivery_stage4_seed456.json`.
+
+The observed vectors were effectively constant in these short captures, so
+these results support matching values at the initial area in the controlled
+stage but do not measure delivery latency or dynamic transitions. Stage and
+state injection, all-stop GDB, ground start, and nearest subscriber-arrival
+pairing limit extrapolation; natural course progression, wind-zone boundaries,
+and W01 trajectory accuracy remain unverified.
+
 An additional seed-456 run used injected (3, 0, 0) m/s wind and a small
 roll/pitch PWM waveform. Its 46 sampled active-face calculations include
 angular rates up to 0.409 rad/s and quaternion vector-part norm up to 0.0367.
@@ -121,6 +163,58 @@ directions appeared in the sampled data. See
 supports the rotation and angular-velocity terms over that short injected
 excitation; it does not establish natural-zone activation, independent net
 wrench, or end-to-end trajectory accuracy.
+
+## Six-face instantaneous wrench comparison
+
+A separate seed-2026 injected-wind tilt trial captured the native sum at the
+end of the six-face loop, before force rotation to world coordinates. For 23
+samples, the candidate uses the six-face snapshot from seed 456 and each
+update's observed density, velocity, wind, orientation and angular velocity.
+The largest body-frame force-vector discrepancy was 3.01e-8 in the logged
+force units. The maximum angular-rate norm was 0.414 rad/s and the largest
+quaternion vector-part norm was 0.0346. Full per-sample data and hashes are in
+`aero_net_tilt_seed2026.json`.
+
+Both observed and candidate torque were zero throughout: these six observed
+face positions are parallel to their normals, so this does not validate a
+nonzero aerodynamic torque. Wind was injected at the physics entry, and GDB
+affects scheduling; this comparison does not verify natural wind delivery,
+full trajectory dynamics, collision effects or W01 acceptance.
+
+## Controlled changing-wind delivery
+
+A further seed-456 trial forced the same stage-4 state but initialized its
+wind clock five seconds in the past to sample a changing portion. Of 30
+paired ROS/physics-entry observations, all were nonzero and 16 native
+vectors were distinct; the first-to-last vector difference was 0.538 m/s.
+The nearest-arrival gap was at most 9.96 ms, and the maximum vector mismatch
+was 9.45e-8 m/s. Per-pair data and hashes are in
+`wind_delivery_stage4_late_seed456.json`.
+
+This supports delivery of the observed changing values in that forced run.
+The clock offset, forced stage/state and debugger make it unsuitable for
+measuring natural onset or latency; nearest-arrival pairing, one seed, and
+limited initial-area coverage also prevent W01 acceptance.
+
+## Exploratory forced-stage trajectory comparison
+
+Three approximately 0.54 s windows from the forced stage-4 captures were
+replayed from their own posthoc estimated initial states, using the observed
+six-face candidate and either the recorded debug wind or zero wind. Horizontal
+position RMSE with recorded wind was 0.300, 0.094 and 0.320 mm; the same
+models with zero wind gave 1.747, 0.913 and 1.272 mm. Maximum total position
+errors with recorded wind were 1.75, 1.62 and 1.47 cm. The third run used the
+five-second wind-clock offset. Full samples, assumptions and hashes are in
+`wind_stage4_replay_seed123.json`, `wind_stage4_replay_seed456.json` and
+`wind_stage4_late_replay_seed456.json`.
+
+These are short same-recording diagnostics, not independent holdout tests.
+Initial velocity comes from the same posthoc pose, initial motor state and
+constant density are assumed, and wind and pose use subscriber arrival times.
+Force-field state, contact, actuation latency and exact physics time remain
+unverified. The millimetre-scale horizontal differences are sensitive to
+those assumptions; neither these windows nor forced-stage data establish
+natural boundary behavior or W01 acceptance.
 
 ## Historical trajectory repeatability
 
