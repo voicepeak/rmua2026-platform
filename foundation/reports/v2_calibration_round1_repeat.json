@@ -1,0 +1,129 @@
+{
+  "status": "same waveform, different process; not held-out acceptance",
+  "protocol": "v2_calibration_round1_protocol.md",
+  "directories": [
+    "foundation\\datasets\\v2_roll_pitch_seed314159_20261108\\replay_input",
+    "foundation\\datasets\\v2_yaw_seed27182_20261108\\replay_input"
+  ],
+  "baseline_tau_s": 0.005,
+  "candidate_tau_s": 0.002,
+  "delay_s": 0.0,
+  "baseline_metrics": [
+    {
+      "position": {
+        "rmse": 0.008187142386488629,
+        "p95": 0.017164585355429415,
+        "max": 0.019603113874298254
+      },
+      "velocity": {
+        "rmse": 0.051923012667769365,
+        "p95": 0.09868849388256215,
+        "max": 0.11250201421455538
+      },
+      "omega": {
+        "rmse": 0.07845864225236955,
+        "p95": 0.11407118051721349,
+        "max": 0.1148770143501171
+      },
+      "attitude_deg": {
+        "rmse": 1.053612714778772,
+        "p95": 1.7556803198411897,
+        "max": 1.8494016283011578
+      }
+    },
+    {
+      "position": {
+        "rmse": 0.0070633334865669245,
+        "p95": 0.015046547987118455,
+        "max": 0.016908437168229904
+      },
+      "velocity": {
+        "rmse": 0.04888970134264894,
+        "p95": 0.08144699480811117,
+        "max": 0.08534649303976911
+      },
+      "omega": {
+        "rmse": 0.004344705013293071,
+        "p95": 0.007037215111207944,
+        "max": 0.008260271680910663
+      },
+      "attitude_deg": {
+        "rmse": 0.04835244083717375,
+        "p95": 0.08011506324473906,
+        "max": 0.08325396264112549
+      }
+    }
+  ],
+  "candidate_metrics": [
+    {
+      "position": {
+        "rmse": 0.007808450982032513,
+        "p95": 0.016220719573011366,
+        "max": 0.018431880191891115
+      },
+      "velocity": {
+        "rmse": 0.04820634868302454,
+        "p95": 0.0902877755239198,
+        "max": 0.10339693816810634
+      },
+      "omega": {
+        "rmse": 0.06305812795474441,
+        "p95": 0.09079633151049861,
+        "max": 0.09153628858544362
+      },
+      "attitude_deg": {
+        "rmse": 0.8497520798187144,
+        "p95": 1.419287409625871,
+        "max": 1.4966228137097677
+      }
+    },
+    {
+      "position": {
+        "rmse": 0.006940202563323625,
+        "p95": 0.014666929712982097,
+        "max": 0.016434694659988095
+      },
+      "velocity": {
+        "rmse": 0.04730970946450026,
+        "p95": 0.0784506105136853,
+        "max": 0.08404016812070288
+      },
+      "omega": {
+        "rmse": 0.003915643928557833,
+        "p95": 0.006477908962996686,
+        "max": 0.007175324320263317
+      },
+      "attitude_deg": {
+        "rmse": 0.042417648454982075,
+        "p95": 0.06924304951642199,
+        "max": 0.0720048591150102
+      }
+    }
+  ],
+  "omega_rmse_ratios": [
+    0.8037116899361074,
+    0.9012450595788478
+  ],
+  "mean_omega_rmse_improvement_fraction": 0.1911707183958814,
+  "meets_engineering_screen_only": true,
+  "source_sha256": {
+    "foundation\\datasets\\v2_roll_pitch_seed314159_20261108\\replay_input\\evaluation_truth.jsonl": "46961e5c3893c055ede7b7383e2e1ac1aae16590ae253e4361e0aeb6cde0bcd0",
+    "foundation\\datasets\\v2_roll_pitch_seed314159_20261108\\replay_input\\evaluation_imu.jsonl": "b5336188313c9834e28d4e75b4b7d54c4a34455d00522f826ad3098daa46ee40",
+    "foundation\\datasets\\v2_roll_pitch_seed314159_20261108\\replay_input\\evaluation_pwm_commands.jsonl": "188d6fd2b245fca182531f8a346e80759f45577e06debed0b1f381597e082989",
+    "foundation\\datasets\\v2_yaw_seed27182_20261108\\replay_input\\evaluation_truth.jsonl": "36a25aadd458286fbc45e9f876257c6438f030f96b04e771e3e2cc74c58c571d",
+    "foundation\\datasets\\v2_yaw_seed27182_20261108\\replay_input\\evaluation_imu.jsonl": "fa959badd3cf7dde53ccaa93559a23153b113568d367a825fc6045e0578e5f7a",
+    "foundation\\datasets\\v2_yaw_seed27182_20261108\\replay_input\\evaluation_pwm_commands.jsonl": "daf128b9e099ee6cbc270b0504e5aa95b269170a8df9a7400d1c2182bc2faa5e"
+  },
+  "code_sha256": {
+    "D:\\RMUA2026-Platform\\foundation\\validate_v2_round1_repeat.py": "926c0b4ad102cc6462c894816f07abd9f02b485b3b2c4fd59a3c33d8f988f1d0",
+    "foundation\\quad.py": "24dc2041c901490715054efbcf7ef7929920a9e339f4cc939c9f26d523ea51b5",
+    "foundation\\replay_closed_loop.py": "f8f4b1ad19e7c9694c4a5a295aced4f66ccc8099fda30ae1ccc47c16f7658a89",
+    "foundation\\compare.py": "1c4b914f8323e247756c40a219858f9d2e96b97dc9a54ea0b743185bc0d579b6"
+  },
+  "limitations": [
+    "same waveform types seen during fitting",
+    "initial velocity estimated using future pose",
+    "actuation time, motor initial state, contact and wind unverified",
+    "engineering screen is not an official or task-derived threshold"
+  ]
+}

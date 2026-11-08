@@ -12,7 +12,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("connection_script", type=Path)
     p.add_argument("output", type=Path, help="new local output directory")
-    p.add_argument("--mode", choices=("passive", "collective", "wind_stage4", "wind_stage4_late", "aero_probe", "aero_force_probe", "aero_wind0", "aero_wind3", "aero_wind3_tilt", "differential", "yaw", "yaw_small", "roll_pitch", "roll_pitch_small", "braking", "heldout_mix", "heldout_mix_small", "kinematic_probe", "kinematic_yaw", "kinematic_steps", "small_steps", "rotor_probe", "contact_probe", "field_forced0", "field_forced1", "field_toggle", "field_toggle_high", "field_toggle_air", "field_trace", "field_recovery", "cadence20", "cadence50", "cadence100", "frame_probe", "frame_lateral"), default="passive")
+    p.add_argument("--mode", choices=("passive", "collective", "wind_stage4", "wind_stage4_late", "aero_probe", "aero_force_probe", "aero_wind0", "aero_wind3", "aero_wind3_tilt", "differential", "yaw", "yaw_small", "roll_pitch", "roll_pitch_small", "braking", "heldout_mix", "heldout_mix_small", "v2_holdout_axis", "kinematic_probe", "kinematic_yaw", "kinematic_steps", "small_steps", "rotor_probe", "contact_probe", "field_forced0", "field_forced1", "field_toggle", "field_toggle_high", "field_toggle_air", "field_trace", "field_recovery", "cadence20", "cadence50", "cadence100", "frame_probe", "frame_lateral"), default="passive")
     p.add_argument("--seed", type=int, default=123)
     args = p.parse_args()
     if not 0 <= args.seed <= 2147483647:

@@ -1,0 +1,101 @@
+{
+  "status": "sealed candidate holdout; no trajectories or model errors evaluated",
+  "protocol": "v2_blind_holdout_protocol.md",
+  "runs": [
+    {
+      "directory": "foundation\\datasets\\v2_reserved_axis_seed260001_20261109",
+      "seed_requested": 260001,
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "player_status": "completed",
+      "command_last_s": 1.517650127,
+      "commands_cover_planned_window": true,
+      "coverage": {
+        "pose_gt": {
+          "first_s": -0.769563674,
+          "last_s": 2.1494987020000003,
+          "sample_count": 124,
+          "max_gap_s": 0.01200032300000009,
+          "covers_planned_fit_interval": true
+        },
+        "imu": {
+          "first_s": -0.769563674,
+          "last_s": 2.1494987020000003,
+          "sample_count": 124,
+          "max_gap_s": 0.01200032300000009,
+          "covers_planned_fit_interval": true
+        }
+      },
+      "source_sha256": {
+        "run.json": "655062af5740256a2ef9d2d4325a973e97e540452e3f0595039423f71d10e71f",
+        "commands.jsonl": "6b575303db7d48e3540277788fe62b31b94bb2e5097942405f20ee285449503e",
+        "capture.jsonl": "feb3b7386dd3e517517972cb45f27604e2d5bdc1156e02f4febc88c73d640b21",
+        "pool/pool.json": "cd0fc985cb0bb0182a83fb835b4ed16a213608bdcd19360ca8783869aa632ca4"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\v2_reserved_axis_seed260002_20261109",
+      "seed_requested": 260002,
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "player_status": "completed",
+      "command_last_s": 1.515701294,
+      "commands_cover_planned_window": true,
+      "coverage": {
+        "pose_gt": {
+          "first_s": -0.789253234,
+          "last_s": 2.147809506,
+          "sample_count": 124,
+          "max_gap_s": 0.01200032300000009,
+          "covers_planned_fit_interval": true
+        },
+        "imu": {
+          "first_s": -0.789253234,
+          "last_s": 2.147809506,
+          "sample_count": 124,
+          "max_gap_s": 0.01200032300000009,
+          "covers_planned_fit_interval": true
+        }
+      },
+      "source_sha256": {
+        "run.json": "13667ae52e7e8d423327e15ee48caa258f08709f1fc2e451938e08eb54647667",
+        "commands.jsonl": "29f4d3baa9e6d0dd6ab1fb830a2ce04f0c40e42edee9710757fb0c08e3efaeda",
+        "capture.jsonl": "3f0c7bcbd3be2147b476b734688a636afe7ba31b50c19278e2bba86439513ccf",
+        "pool/pool.json": "5d02d20d6c56f119ff4db062ed48f60261d8e80a51ee46b8508c007566ea112d"
+      }
+    },
+    {
+      "directory": "foundation\\datasets\\v2_reserved_axis_seed260003_20261109",
+      "seed_requested": 260003,
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "player_status": "completed",
+      "command_last_s": 1.5158450600000002,
+      "commands_cover_planned_window": true,
+      "coverage": {
+        "pose_gt": {
+          "first_s": -0.8147370810000001,
+          "last_s": 2.155326128,
+          "sample_count": 124,
+          "max_gap_s": 0.01200032300000009,
+          "covers_planned_fit_interval": true
+        },
+        "imu": {
+          "first_s": -0.8027369980000001,
+          "last_s": 2.155326128,
+          "sample_count": 124,
+          "max_gap_s": 0.01200032300000009,
+          "covers_planned_fit_interval": true
+        }
+      },
+      "source_sha256": {
+        "run.json": "d9c786d8849db56743455619c37580a3f38c86d885bc9e16cf56db6138c9c0e3",
+        "commands.jsonl": "7745d624a8ef49b9e1c3de68801b7d2f568935914b89e4d7ec7cc9472712475d",
+        "capture.jsonl": "e43cae495fb341de3ca0d22c1c9c933a6019fa449bd4579ff9566b42e04a3d0a",
+        "pool/pool.json": "6401b234effa92b6c9f6c23a878f7edf83996bb578b1aef5a11d8a5de1d317b1"
+      }
+    }
+  ],
+  "analysis_sha256": "c25b63984e00fe5649f202a5b0a85d0fa7b69861a96a880b844f22bdabad0f6f",
+  "limitations": [
+    "timestamp coverage does not prove no collision or synchronized actuation",
+    "sampling interval and model assumptions require separate validation"
+  ]
+}

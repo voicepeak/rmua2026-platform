@@ -63,6 +63,13 @@ def phases(mode):
         mixed = phases('heldout_mix')
         return tuple((duration, [.18 + (x-.18)/3 for x in values]) if 1 <= i <= 4
                      else (duration, values) for i, (duration, values) in enumerate(mixed))
+    if mode == 'v2_holdout_axis':
+        # Reserved, previously unused mixed-axis waveform. Never tune from
+        # its measurements before the V2 acceptance criteria are frozen.
+        return ((.25, common(.20)), (.12, [.181, .179, .1805, .1795]),
+                (.12, [.179, .181, .1795, .1805]), (.12, [.1805, .1795, .179, .181]),
+                (.12, [.1795, .1805, .181, .179]), (.12, [.1808, .1808, .1792, .1792]),
+                (.12, [.1792, .1792, .1808, .1808]), (.30, common(.18)), (.20, common(0.)))
     if mode in ('small_steps', 'rotor_probe', 'kinematic_steps'):
         # Lift off first, then examine both directions of small collective
         # steps and returns while keeping the usual guard and shutdown path.
