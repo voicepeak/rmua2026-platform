@@ -32,6 +32,7 @@ The governing plan is [V2.0](implementation_plan_v2_zh.md); the current module-b
 - Official G2 contact probes: `g2_official_contact_20261109.md`, `g2_contact_road_seed123_20261109.json`, `g2_contact_portwall_seed123_20261109.json`, `g2_contact_gate1_seed123_20261109_v2.json`; runner `foundation/run_contact_waypoints_local.py`, pilot `foundation/probes/contact_waypoints.py`, analyzer `foundation/analyze_contact_waypoints.py`.
 - G2 direct-function checks: `g2_gate_collision_re20261109.md` (route-gate `NoCollision`/`BlockAll` toggle) and `datasets/g2_meter_report_probe_seed123_20261109/` (inconclusive `meter_report` service probe).
 - G2 detection-gate candidates: `maps/OL1/detection_gate_candidates.json`, `foundation/detection_gates.py`, `v2_detection_gates.md`, `v2_detection_gate_alignment.json`; first probe `g2_detection_gate32_20261109.md`, `g2_detection_gate32_seed123_20261109.json`; early sequence `g2_detection_gate_sequence_20261109.md`, `g2_detection_gate_sequence_seed123_20261109.json`; score-trigger probe `g2_detection_gate_score_20261109.md`, `g2_detection_gate_score_seed123_20261109.json`; full road1 sequence `g2_score_route_20261109.md`, `g2_score_route_seed123_20261109.json`.
+- Granular sub-item ledger: `v2_evidence_ledger_20261109.md`.
 - Smoke test: `.\.venv\Scripts\python.exe run_smoke_test.py` passes as a synthetic integration check only.
 - Test command: `.\.venv\Scripts\python.exe -m pytest -q foundation\tests` — 159 tests passed at the recorded closeout.
 
