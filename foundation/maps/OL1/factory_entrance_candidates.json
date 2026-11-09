@@ -1,0 +1,483 @@
+{
+ "status": "candidate factory volumes; entry trigger/event UNVERIFIED",
+ "frame": "UE world centimetres; quaternion xyzw",
+ "source_file": "foundation/asset_analysis/OL1_factory_volumes_candidate.json",
+ "source_sha256": "0fadfad23b44b87783398945efe64b4d1b37599483094aa34ef256f162cd1aa2",
+ "actors": [
+  {
+   "actor": "1_1_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "1_1_Factory",
+     "component": "Extent",
+     "export_index": 11,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1909,
+       "actor": "1_1_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      50034.19921875,
+      -17674.208984375,
+      10621.52978515625
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      -0.990891126842568,
+      0.1346654177755594
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "1_2_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "1_2_Factory",
+     "component": "Extent",
+     "export_index": 13,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1910,
+       "actor": "1_2_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      50034.16796875,
+      -17674.123046875,
+      13025.15478515625
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      -0.990891126842568,
+      0.1346654177755594
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "2_1_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "2_1_Factory",
+     "component": "Extent",
+     "export_index": 15,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1911,
+       "actor": "2_1_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      52920.640625,
+      -1881.3447265625,
+      8022.998046875
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.9549643696291167,
+      0.29672049598715594
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "2_2_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "2_2_Factory",
+     "component": "Extent",
+     "export_index": 17,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1912,
+       "actor": "2_2_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      52920.6875,
+      -1881.2705078125,
+      10426.61572265625
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.9549643696291167,
+      0.29672049598715594
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "3_1_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "3_1_Factory",
+     "component": "Extent",
+     "export_index": 19,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1913,
+       "actor": "3_1_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      64926.5,
+      6009.064453125,
+      9727.35205078125
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.7958894311940603,
+      0.6054419983066877
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "3_2_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "3_2_Factory",
+     "component": "Extent",
+     "export_index": 21,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1914,
+       "actor": "3_2_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      64926.58203125,
+      6009.0927734375,
+      12130.96728515625
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.7958894311940603,
+      0.6054419983066877
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "4_1_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "4_1_Factory",
+     "component": "Extent",
+     "export_index": 23,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1915,
+       "actor": "4_1_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      82773.265625,
+      1502.2626953125,
+      10453.99462890625
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.22051640214331267,
+      0.9753832664064772
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "4_2_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "4_2_Factory",
+     "component": "Extent",
+     "export_index": 25,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1916,
+       "actor": "4_2_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      82773.3046875,
+      1502.1845703125,
+      12857.61572265625
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.22051640214331267,
+      0.9753832664064772
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "5_1_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "5_1_Factory",
+     "component": "Extent",
+     "export_index": 27,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1917,
+       "actor": "5_1_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      80753.90625,
+      -23280.8671875,
+      8418.1474609375
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.9254674280458652,
+      0.3788271896606306
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "5_2_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "5_2_Factory",
+     "component": "Extent",
+     "export_index": 29,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1918,
+       "actor": "5_2_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      80753.96875,
+      -23280.798828125,
+      10821.76611328125
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.9254674280458652,
+      0.3788271896606306
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "6_1_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "6_1_Factory",
+     "component": "Extent",
+     "export_index": 31,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1919,
+       "actor": "6_1_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      58917.640625,
+      -28449.78515625,
+      9322.55078125
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      -0.7908038533345656,
+      0.6120696574338602
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "actor": "6_2_Factory",
+   "volume_count": 1,
+   "volumes": [
+    {
+     "actor": "6_2_Factory",
+     "component": "Extent",
+     "export_index": 33,
+     "box_half_extents_cm": [
+      3200.0,
+      2400.0,
+      1200.0
+     ],
+     "attachment_owners": [
+      {
+       "export_index": 1920,
+       "actor": "6_2_Factory",
+       "class": "BP_Building_Factory_1_C"
+      }
+     ],
+     "translation_ue_cm": [
+      58917.55078125,
+      -28449.763671875,
+      11726.17626953125
+     ],
+     "quaternion_xyzw": [
+      0.0,
+      0.0,
+      -0.7908038533345656,
+      0.6120696574338602
+     ],
+     "scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  }
+ ],
+ "limitations": [
+  "these are static BoxComponent extents attached to BP_Building_Factory_1_C; they are not decoded entry triggers",
+  "no OnMeterReport / FactoryA / EnterPort runtime event was observed",
+  "meter_report service success is explicitly not evidence",
+  "stage 1-3 have no factory; stage 4-6 entry routes remain unverified"
+ ],
+ "generator_sha256": null
+}
