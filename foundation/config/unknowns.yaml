@@ -25,5 +25,8 @@ items:
     unknown: Full map origin, alignment, body/world rotations and reference points.
     evidence: ../frame_spec.md
   - id: clock_mapping
-    unknown: Synchronization between ROS stamps, applied command and physical dynamics.
-    evidence: ../reports/debugger_clock_pair_protocol.md
+    unknown: Synchronization between ROS stamps, applied command and physical dynamics. Two clean post-zero free-fall tails support the pose source timestamp as a uniform physical-time base to about 0.2%, but command application and motor state remain unknown.
+    evidence: ../reports/debugger_clock_pair_protocol.md; ../reports/v2_ballistic_clock_audit.md
+  - id: g1_parameter_identifiability
+    unknown: Joint motor time constant and command delay under the unverified ROS/physical clock; the two-round grids only bound the candidate family and stop at grid boundaries.
+    evidence: ../reports/v2_identifiability.md

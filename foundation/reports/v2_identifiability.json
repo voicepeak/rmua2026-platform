@@ -1,0 +1,344 @@
+{
+  "status": "posthoc identifiability summary of existing calibration grids; not a new fit",
+  "rounds": [
+    {
+      "source": "v2_calibration_round1.json",
+      "source_sha256": "773e051c00d10557ea3ea1728e79f412b5f38fbacc10bafa7e0830f1a7dd1cdc",
+      "model_family": "first-order motor filter plus one nonnegative uniform command delay",
+      "grid": {
+        "tau_s": [
+          0.002,
+          0.005,
+          0.01,
+          0.02
+        ],
+        "delay_s": [
+          0.0,
+          0.01,
+          0.02,
+          0.04
+        ]
+      },
+      "best": {
+        "tau_s": 0.002,
+        "delay_s": 0.0,
+        "objective": 0.02092024439870102,
+        "boundary": true
+      },
+      "baseline": {
+        "tau_s": 0.005,
+        "delay_s": 0.0,
+        "objective": 0.02799992802317188
+      },
+      "improvement_fraction": 0.2528464936985527,
+      "near_optimal_within_5_percent": {
+        "count": 1,
+        "tau_s": [
+          0.002
+        ],
+        "delay_s": [
+          0.0
+        ],
+        "rows": [
+          {
+            "tau_s": 0.002,
+            "delay_s": 0.0,
+            "objective": 0.02092024439870102
+          }
+        ]
+      },
+      "best_per_run_omega_ratio": null,
+      "metric_ranges_at_best_and_baseline": {
+        "position_rmse_m": {
+          "best_min": 0.006976088750997466,
+          "best_max": 0.007359438865716018,
+          "baseline_min": 0.007113002134875917,
+          "baseline_max": 0.007646317432716905
+        },
+        "attitude_rmse_deg": {
+          "best_min": 0.047209442033490805,
+          "best_max": 0.3894064438258042,
+          "baseline_min": 0.04726759046173464,
+          "baseline_max": 0.5939942672624257
+        },
+        "omega_rmse_rad_s": {
+          "best_min": 0.0038966416691893846,
+          "best_max": 0.03794384712821266,
+          "baseline_min": 0.004003741553025335,
+          "baseline_max": 0.05199611449331843
+        }
+      },
+      "delay_penalty_by_tau": {
+        "0.002": [
+          {
+            "delay_s": 0.0,
+            "objective": 0.02092024439870102
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 0.04713509348737087
+          },
+          {
+            "delay_s": 0.02,
+            "objective": 0.07346641782149343
+          },
+          {
+            "delay_s": 0.04,
+            "objective": 0.12730259108214964
+          }
+        ],
+        "0.005": [
+          {
+            "delay_s": 0.0,
+            "objective": 0.02799992802317188
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 0.05475876162569062
+          },
+          {
+            "delay_s": 0.02,
+            "objective": 0.08147233488297208
+          },
+          {
+            "delay_s": 0.04,
+            "objective": 0.13463305986092458
+          }
+        ],
+        "0.01": [
+          {
+            "delay_s": 0.0,
+            "objective": 0.04057205267030721
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 0.0676151201639629
+          },
+          {
+            "delay_s": 0.02,
+            "objective": 0.09434004519211069
+          },
+          {
+            "delay_s": 0.04,
+            "objective": 0.14681899879237453
+          }
+        ],
+        "0.02": [
+          {
+            "delay_s": 0.0,
+            "objective": 0.06564779932850084
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 0.09246252955784857
+          },
+          {
+            "delay_s": 0.02,
+            "objective": 0.11876951731806779
+          },
+          {
+            "delay_s": 0.04,
+            "objective": 0.16994410688127673
+          }
+        ]
+      },
+      "tau_penalty_at_delay_zero": [
+        {
+          "tau_s": 0.002,
+          "objective": 0.02092024439870102
+        },
+        {
+          "tau_s": 0.005,
+          "objective": 0.02799992802317188
+        },
+        {
+          "tau_s": 0.01,
+          "objective": 0.04057205267030721
+        },
+        {
+          "tau_s": 0.02,
+          "objective": 0.06564779932850084
+        }
+      ]
+    },
+    {
+      "source": "v2_calibration_round2.json",
+      "source_sha256": "eebcc0db3b6494ced9ecfe483a08cddd6de98228bf194147e4561733024b7097",
+      "model_family": "first-order motor filter plus one nonnegative uniform command delay",
+      "grid": {
+        "tau_s": [
+          0.0005,
+          0.001,
+          0.002,
+          0.005
+        ],
+        "delay_s": [
+          0.0,
+          0.002,
+          0.005,
+          0.01
+        ]
+      },
+      "best": {
+        "tau_s": 0.0005,
+        "delay_s": 0.0,
+        "objective": 0.9195210306598932,
+        "boundary": true
+      },
+      "baseline": {
+        "tau_s": 0.002,
+        "delay_s": 0.0,
+        "objective": 1.0
+      },
+      "improvement_fraction": 0.08047896934010679,
+      "near_optimal_within_5_percent": {
+        "count": 2,
+        "tau_s": [
+          0.0005,
+          0.001
+        ],
+        "delay_s": [
+          0.0
+        ],
+        "rows": [
+          {
+            "tau_s": 0.0005,
+            "delay_s": 0.0,
+            "objective": 0.9195210306598932
+          },
+          {
+            "tau_s": 0.001,
+            "delay_s": 0.0,
+            "objective": 0.9450018433483258
+          }
+        ]
+      },
+      "best_per_run_omega_ratio": [
+        0.8140021038384059,
+        1.0072983060966976,
+        0.8854328304309176,
+        0.9713508822735517
+      ],
+      "metric_ranges_at_best_and_baseline": {
+        "position_rmse_m": {
+          "best_min": 0.006496761961482234,
+          "best_max": 0.007152763241841832,
+          "baseline_min": 0.00656423115463754,
+          "baseline_max": 0.007245923543722393
+        },
+        "attitude_rmse_deg": {
+          "best_min": 0.04848155652076186,
+          "best_max": 0.49928594673842697,
+          "baseline_min": 0.04758205039298753,
+          "baseline_max": 0.5703474040312161
+        },
+        "omega_rmse_rad_s": {
+          "best_min": 0.003924266455878276,
+          "best_max": 0.04025554391502231,
+          "baseline_min": 0.0038958334707072943,
+          "baseline_max": 0.04546425491748591
+        }
+      },
+      "delay_penalty_by_tau": {
+        "0.0005": [
+          {
+            "delay_s": 0.0,
+            "objective": 0.9195210306598932
+          },
+          {
+            "delay_s": 0.002,
+            "objective": 1.029850156537941
+          },
+          {
+            "delay_s": 0.005,
+            "objective": 1.2211091486437327
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 1.5733710933484255
+          }
+        ],
+        "0.001": [
+          {
+            "delay_s": 0.0,
+            "objective": 0.9450018433483258
+          },
+          {
+            "delay_s": 0.002,
+            "objective": 1.0596520811790942
+          },
+          {
+            "delay_s": 0.005,
+            "objective": 1.2543676179059213
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 1.6097590844017537
+          }
+        ],
+        "0.002": [
+          {
+            "delay_s": 0.0,
+            "objective": 1.0
+          },
+          {
+            "delay_s": 0.002,
+            "objective": 1.1216303459161652
+          },
+          {
+            "delay_s": 0.005,
+            "objective": 1.3221335050176606
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 1.6831990944838624
+          }
+        ],
+        "0.005": [
+          {
+            "delay_s": 0.0,
+            "objective": 1.1831699816502605
+          },
+          {
+            "delay_s": 0.002,
+            "objective": 1.3181622812191538
+          },
+          {
+            "delay_s": 0.005,
+            "objective": 1.5315937122785872
+          },
+          {
+            "delay_s": 0.01,
+            "objective": 1.9058096098469943
+          }
+        ]
+      },
+      "tau_penalty_at_delay_zero": [
+        {
+          "tau_s": 0.0005,
+          "objective": 0.9195210306598932
+        },
+        {
+          "tau_s": 0.001,
+          "objective": 0.9450018433483258
+        },
+        {
+          "tau_s": 0.002,
+          "objective": 1.0
+        },
+        {
+          "tau_s": 0.005,
+          "objective": 1.1831699816502605
+        }
+      ]
+    }
+  ],
+  "analysis_sha256": "2e24a9dd773b90c03683a5ad4d94b30ad6f42b78f4caed0a7d8d173c57423ad9",
+  "limitations": [
+    "no new data or model replay; the source grids already used the allowed two rounds",
+    "the sealed v2_holdout_axis records were not read",
+    "near-optimal grid rows are not statistical confidence intervals",
+    "the ROS command header is not the physical command application time",
+    "wind, contact and independently measured initial velocity remain unexcluded"
+  ]
+}
