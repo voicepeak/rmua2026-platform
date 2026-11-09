@@ -1,0 +1,156 @@
+{
+  "status": "exploratory posthoc free-fall gravity consistency; not clock calibration or G1 acceptance",
+  "criterion": {
+    "duration_s": [
+      0.15,
+      0.35
+    ],
+    "drop_m": [
+      0.1,
+      0.6
+    ],
+    "imu_specific_force_mean_abs_lt_m_s2": 0.05,
+    "imu_specific_force_max_abs_lt_m_s2": 0.5
+  },
+  "gravity_m_s2": 9.80665,
+  "clean_run_count": 4,
+  "runs": [
+    {
+      "run": "heldout_mix_seed27182_20261108",
+      "window_after_first_command_s": [
+        0.9903406960000001,
+        1.240525257
+      ],
+      "drop_m": 0.3198811784386635,
+      "imu_specific_force_mean_m_s2": 0.00911245146067813,
+      "imu_specific_force_max_abs_m_s2": 0.08692613244056702,
+      "source_fit": {
+        "samples": 26,
+        "acceleration_m_s2": 9.783247357756883,
+        "initial_velocity_m_s": 0.0669415660142394,
+        "quadratic_rmse_m": 2.048812622728569e-05,
+        "duration_s": 0.24900531699999995
+      },
+      "arrival_fit": {
+        "samples": 26,
+        "acceleration_m_s2": 9.705888287443878,
+        "initial_velocity_m_s": 0.07396153313638787,
+        "quadratic_rmse_m": 0.0011747416094505957,
+        "duration_s": 0.25018456099999997
+      },
+      "acceleration_deviation_from_g_fraction": {
+        "source": -0.0023864053721828205,
+        "arrival": -0.010274835194089782
+      },
+      "source_sha256": {
+        "capture.jsonl": "d247311ba8005ff3368ba4830eac6040ddac09f18f5b3c73cad7f4214b097927",
+        "commands.jsonl": "953845c231f4320db80d140fb732ad0786a343e5a2acb860592a662cb98c9085"
+      }
+    },
+    {
+      "run": "heldout_mix_seed31415_20261108",
+      "window_after_first_command_s": [
+        0.9894170800000001,
+        1.209341459
+      ],
+      "drop_m": 0.2511682063341141,
+      "imu_specific_force_mean_m_s2": 0.0011045149638613855,
+      "imu_specific_force_max_abs_m_s2": 0.11003732681274414,
+      "source_fit": {
+        "samples": 23,
+        "acceleration_m_s2": 9.789827354325679,
+        "initial_velocity_m_s": 0.07508632488389111,
+        "quadratic_rmse_m": 1.2240945704337113e-05,
+        "duration_s": 0.219004631
+      },
+      "arrival_fit": {
+        "samples": 23,
+        "acceleration_m_s2": 9.701067380330144,
+        "initial_velocity_m_s": 0.08399158089296566,
+        "quadratic_rmse_m": 0.0011168792763412991,
+        "duration_s": 0.21992437899999995
+      },
+      "acceleration_deviation_from_g_fraction": {
+        "source": -0.0017154324539288002,
+        "arrival": -0.010766430908603297
+      },
+      "source_sha256": {
+        "capture.jsonl": "69900bf4f6b838f7e7276c3a1b1aea5642fa3a47ccbaf1441f133169b61a116b",
+        "commands.jsonl": "60af670bf31ba97a92aefe761f0c1b80437b08ed7a5d67e1773ef2cb45474010"
+      }
+    },
+    {
+      "run": "v2_official_heldout_mix_seed260004_20261109",
+      "window_after_first_command_s": [
+        0.9692190660000001,
+        1.199031157
+      ],
+      "drop_m": 0.26551613956689835,
+      "imu_specific_force_mean_m_s2": -0.006981941304453041,
+      "imu_specific_force_max_abs_m_s2": 0.09877793490886688,
+      "source_fit": {
+        "samples": 24,
+        "acceleration_m_s2": 9.789667645979248,
+        "initial_velocity_m_s": 0.018935551072155388,
+        "quadratic_rmse_m": 1.4344654600379548e-05,
+        "duration_s": 0.2310047150000003
+      },
+      "arrival_fit": {
+        "samples": 24,
+        "acceleration_m_s2": 9.797216982091172,
+        "initial_velocity_m_s": 0.026464457269823827,
+        "quadratic_rmse_m": 0.0013216596254538332,
+        "duration_s": 0.229812091
+      },
+      "acceleration_deviation_from_g_fraction": {
+        "source": -0.0017317181729490372,
+        "arrival": -0.0009619001298942775
+      },
+      "source_sha256": {
+        "capture.jsonl": "41afc0cb61b6ea00d25a3f660153e10915eefdd1d27d314efd0c87252e04ffc1",
+        "commands.jsonl": "9d234626dcaf70d5a54aaf383d88ccf278aa9b6d77b60dbfa16680ed14569e16"
+      }
+    },
+    {
+      "run": "v2_official_heldout_mix_seed260006_20261109",
+      "window_after_first_command_s": [
+        1.000961376,
+        1.23069973
+      ],
+      "drop_m": 0.25830722227692604,
+      "imu_specific_force_mean_m_s2": -0.019747021163559773,
+      "imu_specific_force_max_abs_m_s2": 0.1094452366232872,
+      "source_fit": {
+        "samples": 24,
+        "acceleration_m_s2": 9.79077102104041,
+        "initial_velocity_m_s": -0.012412615190762866,
+        "quadratic_rmse_m": 1.4101124122423048e-05,
+        "duration_s": 0.23100495399999987
+      },
+      "arrival_fit": {
+        "samples": 24,
+        "acceleration_m_s2": 9.878996336230887,
+        "initial_velocity_m_s": -0.020951183748364022,
+        "quadratic_rmse_m": 0.0010829384358528123,
+        "duration_s": 0.22973835399999998
+      },
+      "acceleration_deviation_from_g_fraction": {
+        "source": -0.0016192052290628922,
+        "arrival": 0.007377273200418921
+      },
+      "source_sha256": {
+        "capture.jsonl": "cc4984ab636ff61096458ce6d4c0e3dfbb350a7b4071a35574fc07d41a624864",
+        "commands.jsonl": "e5af83122a59844a8afb80333e4195c1633c5567c1f11cc794fb63a31a0cca14"
+      }
+    }
+  ],
+  "analysis_sha256": "38fc322f5d9f6b8606afd65015298acee8268f4562516a77e64e1f7b0c616f91",
+  "limitations": [
+    "window criterion was chosen posthoc after inspecting existing runs",
+    "heldout_mix seed 27182, 31415 and aborted seeds 260004/260006 met the clean free-fall criterion",
+    "same waveform and similar initial conditions; not independent excitation",
+    "residual thrust, drag and gravity-value uncertainty can bias the fitted acceleration",
+    "does not identify command application time, motor state, initial velocity, contact or wind",
+    "source and arrival timestamps are compared only over this short free-fall window"
+  ]
+}

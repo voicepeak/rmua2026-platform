@@ -1,0 +1,279 @@
+{
+  "status": "two-process differential sign consistency; not full motor identity or envelope validation",
+  "published_motor_order": [
+    "front_right",
+    "rear_left",
+    "front_left",
+    "rear_right"
+  ],
+  "candidate_frd_signs": [
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "runs": [
+    {
+      "run": "d03_differential_retry_20261107",
+      "source_sha256": "cbff4e82588d961ea2f1bffe17cf6403ed5acb94131c645589b542fadf4ca026",
+      "pulse_pwm": [
+        [
+          0.189,
+          0.185,
+          0.185,
+          0.185
+        ],
+        [
+          0.185,
+          0.189,
+          0.185,
+          0.185
+        ],
+        [
+          0.185,
+          0.185,
+          0.189,
+          0.185
+        ],
+        [
+          0.185,
+          0.185,
+          0.185,
+          0.189
+        ]
+      ],
+      "observed_signs": [
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "samples": [
+        9,
+        11,
+        9,
+        11
+      ],
+      "limitations": [
+        "host monotonic arrival time includes transport delay",
+        "debug PWM is not proven to be actuator state",
+        "ground contact and later free flight are not classified",
+        "angular-rate slopes include prior motion, gravity, coupling and unknown actuation latency",
+        "incremental prediction assumes RPS-squared coefficient units and ignores motor lag and prior motion",
+        "one exploratory waveform, not a calibrated or held-out experiment"
+      ],
+      "matches_candidate_xy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "z_sign_resolved": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "run": "d03_differential_seed456_20261107",
+      "source_sha256": "6e80440cb9f4b5e5ac2edf77bf8e29c98baa6a3429510a5100037e7d659109c6",
+      "pulse_pwm": [
+        [
+          0.189,
+          0.185,
+          0.185,
+          0.185
+        ],
+        [
+          0.185,
+          0.189,
+          0.185,
+          0.185
+        ],
+        [
+          0.185,
+          0.185,
+          0.189,
+          0.185
+        ],
+        [
+          0.185,
+          0.185,
+          0.185,
+          0.189
+        ]
+      ],
+      "observed_signs": [
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "samples": [
+        9,
+        12,
+        9,
+        11
+      ],
+      "limitations": [
+        "host monotonic arrival time includes transport delay",
+        "debug PWM is not proven to be actuator state",
+        "ground contact and later free flight are not classified",
+        "angular-rate slopes include prior motion, gravity, coupling and unknown actuation latency",
+        "incremental prediction assumes RPS-squared coefficient units and ignores motor lag and prior motion",
+        "one exploratory waveform, not a calibrated or held-out experiment"
+      ],
+      "matches_candidate_xy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "z_sign_resolved": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "run": "v2_official_differential_seed260007_20261109",
+      "source_sha256": "1bcec47587a89562038263f526f47bee6cb004711b6e062f2b726b6a54051c55",
+      "pulse_pwm": [
+        [
+          0.189,
+          0.185,
+          0.185,
+          0.185
+        ],
+        [
+          0.185,
+          0.189,
+          0.185,
+          0.185
+        ],
+        [
+          0.185,
+          0.185,
+          0.189,
+          0.185
+        ],
+        [
+          0.185,
+          0.185,
+          0.185,
+          0.189
+        ]
+      ],
+      "observed_signs": [
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "samples": [
+        9,
+        11,
+        9,
+        11
+      ],
+      "limitations": [
+        "host monotonic arrival time includes transport delay",
+        "debug PWM is not proven to be actuator state",
+        "ground contact and later free flight are not classified",
+        "angular-rate slopes include prior motion, gravity, coupling and unknown actuation latency",
+        "incremental prediction assumes RPS-squared coefficient units and ignores motor lag and prior motion",
+        "one exploratory waveform, not a calibrated or held-out experiment"
+      ],
+      "matches_candidate_xy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "z_sign_resolved": [
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "all_motor_xy_signs_match_in_each_run": true,
+  "any_z_sign_resolved": false,
+  "cross_run_signs_identical": true,
+  "analysis_sha256": "bc6ea2e663b17e519cd162e0357f48c72c529e39440a5e9114fc95096d80d768",
+  "limitations": [
+    "the candidate FRD frame and published motor order are assumptions, not independently decoded runtime labels",
+    "only roll/pitch (x/y) signs are resolved; yaw (z) responses are below the 0.1 rad/s^2 reporting threshold",
+    "pulse slopes include prior motion, gravity coupling and unknown actuation latency",
+    "ground contact and later flight are not classified per phase",
+    "only two processes of one differential waveform; not the full operating envelope",
+    "sign consistency does not establish PWM range, clipping, hold or timeout"
+  ]
+}
