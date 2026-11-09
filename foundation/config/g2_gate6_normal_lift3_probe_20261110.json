@@ -1,0 +1,61 @@
+{
+ "name": "g2_gate6_normal_lift3_probe_20261110",
+ "purpose": "Gate-normal gate6 probe at +3 m from gate7 center. Diagnostic only.",
+ "frame": "NED metres; gate normal = local X",
+ "safety": {
+  "max_speed": 3.5,
+  "max_duration_s": 120.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.6,
+  "log_period_s": 0.3
+ },
+ "waypoints": [
+  {
+   "name": "gate7_center",
+   "position": [
+    699.16515625,
+    148.459697265625,
+    -128.36791015625
+   ],
+   "speed": 2.5,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate6_pre3",
+   "position": [
+    695.1368926517779,
+    135.56450847365244,
+    -132.48501953125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate6_center3",
+   "position": [
+    693.4590625,
+    127.742431640625,
+    -132.48501953125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate6_post3",
+   "position": [
+    691.781232348222,
+    119.92035480759755,
+    -132.48501953125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  }
+ ]
+}

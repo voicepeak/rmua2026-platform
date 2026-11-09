@@ -1,0 +1,369 @@
+{
+ "name": "g2_stage2_full_road3_20261110",
+ "purpose": "Stage-2 injection + diagnostic teleport to road3 end; fly all 30 road3 detection-component centres in reverse order and record score. Diagnostic only.",
+ "frame": "NED metres, z down; road3 centres from data/audits/ol1_seed123/road3_components.json",
+ "safety": {
+  "max_speed": 7.0,
+  "max_duration_s": 420.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.8,
+  "log_period_s": 0.5
+ },
+ "waypoints": [
+  {
+   "name": "teleport_stage2_approach",
+   "position": [
+    545.7,
+    519.6,
+    -32.9
+   ],
+   "speed": 2.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.5
+  },
+  {
+   "name": "road3_gate_29",
+   "position": [
+    550.1283984375,
+    517.20171875,
+    -32.8757666015625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_28",
+   "position": [
+    568.922109375,
+    506.9547265625,
+    -34.3256298828125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_27",
+   "position": [
+    587.6284375,
+    496.3190625,
+    -35.2431103515625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_26",
+   "position": [
+    606.03875,
+    485.3040234375,
+    -35.8842138671875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_25",
+   "position": [
+    624.186640625,
+    473.77296875,
+    -36.4144384765625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_24",
+   "position": [
+    641.9824609375,
+    461.62296875,
+    -36.9578759765625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_23",
+   "position": [
+    659.266171875,
+    448.74015625,
+    -37.6321337890625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_22",
+   "position": [
+    675.8190625,
+    434.964921875,
+    -38.5708447265625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_21",
+   "position": [
+    691.298515625,
+    420.0616015625,
+    -39.9506494140625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_20",
+   "position": [
+    705.102578125,
+    403.7012109375,
+    -42.0331298828125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_19",
+   "position": [
+    716.04734375,
+    385.543671875,
+    -45.2188623046875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_18",
+   "position": [
+    722.725546875,
+    365.8998828125,
+    -49.9883056640625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_17",
+   "position": [
+    726.95421875,
+    345.85421875,
+    -56.4347900390625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_16",
+   "position": [
+    729.23921875,
+    325.9132421875,
+    -64.1498193359375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_15",
+   "position": [
+    729.89171875,
+    306.20626953125,
+    -72.7781884765625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_14",
+   "position": [
+    729.20609375,
+    286.7852734375,
+    -82.00119140625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_13",
+   "position": [
+    727.4521875,
+    267.631484375,
+    -91.5207421875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_12",
+   "position": [
+    724.85875,
+    248.425859375,
+    -101.12150390625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_11",
+   "position": [
+    721.79390625,
+    229.3714453125,
+    -110.08083984375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_10",
+   "position": [
+    717.28703125,
+    209.4987890625,
+    -116.8337890625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_09",
+   "position": [
+    711.53375,
+    189.269765625,
+    -121.45107421875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_08",
+   "position": [
+    705.335,
+    168.92296875,
+    -124.80228515625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_07",
+   "position": [
+    699.16515625,
+    148.459697265625,
+    -127.36791015625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_06",
+   "position": [
+    693.4590625,
+    127.742431640625,
+    -129.48501953125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_05",
+   "position": [
+    688.9740625,
+    106.833203125,
+    -131.46662109375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_04",
+   "position": [
+    687.399375,
+    85.6219921875,
+    -133.536796875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_03",
+   "position": [
+    689.86921875,
+    64.315234375,
+    -134.5883203125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_02",
+   "position": [
+    694.96734375,
+    43.429453125,
+    -134.7628125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_01",
+   "position": [
+    701.16890625,
+    22.78900390625,
+    -134.45896484375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_00",
+   "position": [
+    706.183125,
+    1.91666015625,
+    -134.2335546875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "stage2_exit",
+   "position": [
+    708.0517168123321,
+    -5.8615985476468735,
+    -134.14955365097057
+   ],
+   "speed": 4.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  }
+ ]
+}

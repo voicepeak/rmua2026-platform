@@ -1,0 +1,930 @@
+{
+ "name": "g2_stage2_routexy_gate11_8_corridor_20261110",
+ "purpose": "Stage-2 injection + teleport; v7 routexy baseline to gate12, then gate-normal pre/center corridor for gates 11-0 at +1 m. Diagnostic only.",
+ "frame": "NED metres, z down; x/y from route_1_3 last 101 points, z interpolated on the 30 runtime road3 gate centres",
+ "safety": {
+  "max_speed": 4.5,
+  "max_duration_s": 750.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.7,
+  "log_period_s": 0.5
+ },
+ "waypoints": [
+  {
+   "name": "road3_route_000",
+   "position": [
+    551.12,
+    517.18,
+    -32.93543895905955
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_001",
+   "position": [
+    556.39,
+    514.35,
+    -33.3405925561675
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_002",
+   "position": [
+    561.86,
+    511.38,
+    -33.762179005596295
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_003",
+   "position": [
+    567.5,
+    508.29,
+    -34.19776580331799
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_004",
+   "position": [
+    572.91,
+    505.28,
+    -34.508733275380365
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_005",
+   "position": [
+    578.29,
+    502.26,
+    -34.77178486891461
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_006",
+   "position": [
+    583.77,
+    499.13,
+    -35.04086105242685
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_007",
+   "position": [
+    589.29,
+    495.94,
+    -35.29153433163242
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_008",
+   "position": [
+    594.59,
+    492.83,
+    -35.47516017024971
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_009",
+   "position": [
+    599.94,
+    489.63,
+    -35.66144902011027
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_010",
+   "position": [
+    605.33,
+    486.37,
+    -35.84968416695331
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_011",
+   "position": [
+    610.69,
+    483.06,
+    -36.010701249469264
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_012",
+   "position": [
+    615.95,
+    479.75,
+    -36.16395654373275
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_013",
+   "position": [
+    621.21,
+    476.38,
+    -36.31800533590995
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_014",
+   "position": [
+    626.46,
+    472.95,
+    -36.473491949117744
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_015",
+   "position": [
+    631.68,
+    469.47,
+    -36.63170352711828
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_016",
+   "position": [
+    636.84,
+    465.95,
+    -36.78923421991764
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_017",
+   "position": [
+    641.97,
+    462.37,
+    -36.946993289458334
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_018",
+   "position": [
+    647.04,
+    458.74,
+    -37.13860017742289
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_019",
+   "position": [
+    652.08,
+    455.03,
+    -37.33434390670208
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_020",
+   "position": [
+    657.1,
+    451.23,
+    -37.531268407306
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_021",
+   "position": [
+    662.03,
+    447.39,
+    -37.76238401985102
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_022",
+   "position": [
+    666.86,
+    443.5,
+    -38.03268136781896
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_023",
+   "position": [
+    671.69,
+    439.48,
+    -38.306603526804594
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_024",
+   "position": [
+    676.46,
+    435.35,
+    -38.583343408671396
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_025",
+   "position": [
+    681.09,
+    431.18,
+    -38.983239360521516
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_026",
+   "position": [
+    685.56,
+    426.97,
+    -39.37751541494979
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_027",
+   "position": [
+    690.07,
+    422.5,
+    -39.78522139839437
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_028",
+   "position": [
+    694.42,
+    417.95,
+    -40.303486375883764
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_029",
+   "position": [
+    698.54,
+    413.36,
+    -40.903245967698666
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_030",
+   "position": [
+    702.51,
+    408.62,
+    -41.50474824873203
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_031",
+   "position": [
+    706.4,
+    403.6,
+    -42.14679771226785
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_032",
+   "position": [
+    709.96,
+    398.55,
+    -43.0728469244371
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_033",
+   "position": [
+    713.19,
+    393.43,
+    -43.98230603549436
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_034",
+   "position": [
+    716.26,
+    387.89,
+    -44.93340441613934
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_035",
+   "position": [
+    718.86,
+    382.33,
+    -46.126403598199204
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_036",
+   "position": [
+    720.97,
+    376.74,
+    -47.49914416235077
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_037",
+   "position": [
+    722.85,
+    370.93,
+    -48.90274814023042
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_038",
+   "position": [
+    724.54,
+    365.11,
+    -50.349349873039365
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_039",
+   "position": [
+    726.04,
+    359.29,
+    -52.23868664973512
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_040",
+   "position": [
+    727.37,
+    353.46,
+    -54.12006086103912
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_041",
+   "position": [
+    728.53,
+    347.64,
+    -55.98731473307736
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_042",
+   "position": [
+    729.53,
+    341.82,
+    -58.08808664367454
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_043",
+   "position": [
+    730.38,
+    336.01,
+    -60.34399868964897
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_044",
+   "position": [
+    731.08,
+    330.24,
+    -62.57807175268539
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_045",
+   "position": [
+    731.64,
+    324.46,
+    -64.82016571747134
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_046",
+   "position": [
+    732.07,
+    318.72,
+    -67.33680358467586
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_047",
+   "position": [
+    732.37,
+    313.02,
+    -69.83406478946733
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_048",
+   "position": [
+    732.56,
+    307.29,
+    -72.34285371813398
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_049",
+   "position": [
+    732.63,
+    301.62,
+    -74.90763865746787
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_050",
+   "position": [
+    732.6,
+    295.99,
+    -77.57849172832493
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_051",
+   "position": [
+    732.47,
+    290.32,
+    -80.26999155675685
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_052",
+   "position": [
+    732.25,
+    284.74,
+    -82.87187390956231
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_053",
+   "position": [
+    731.94,
+    279.13,
+    -85.65088465266146
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_054",
+   "position": [
+    731.55,
+    273.54,
+    -88.42364850841554
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_055",
+   "position": [
+    731.09,
+    268.05,
+    -91.1502842826915
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_056",
+   "position": [
+    730.54,
+    262.4,
+    -93.88438843309173
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_route_057",
+   "position": [
+    729.95,
+    256.9,
+    -96.62367837339764
+   ],
+   "speed": 4.5,
+   "arrive_radius_m": 1.2,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_11_pre",
+   "position": [
+    723.563241325997,
+    237.17333312179633,
+    -111.08083984375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_11_center",
+   "position": [
+    721.79390625,
+    229.3714453125,
+    -111.08083984375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_10_pre",
+   "position": [
+    719.4754858940586,
+    217.1936357972244,
+    -117.8337890625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_10_center",
+   "position": [
+    717.28703125,
+    209.4987890625,
+    -117.8337890625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_09_pre",
+   "position": [
+    713.8650170817041,
+    196.92255556029568,
+    -122.45107421875
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_09_center",
+   "position": [
+    711.53375,
+    189.269765625,
+    -122.45107421875
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_08_pre",
+   "position": [
+    707.6442729236558,
+    176.58242425049548,
+    -125.80228515625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_08_center",
+   "position": [
+    705.335,
+    168.92296875,
+    -125.80228515625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_07_pre",
+   "position": [
+    701.2894093394544,
+    156.17251444302156,
+    -128.36791015625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_07_center",
+   "position": [
+    699.16515625,
+    148.459697265625,
+    -128.36791015625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_06_pre",
+   "position": [
+    695.1368926517779,
+    135.56450847365244,
+    -130.48501953125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_06_center",
+   "position": [
+    693.4590625,
+    127.742431640625,
+    -130.48501953125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_05_pre",
+   "position": [
+    689.5663462787786,
+    114.81124799360005,
+    -132.46662109375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_05_center",
+   "position": [
+    688.9740625,
+    106.833203125,
+    -132.46662109375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_04_pre",
+   "position": [
+    686.4781986234827,
+    93.56877984562617,
+    -134.536796875
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_04_center",
+   "position": [
+    687.399375,
+    85.6219921875,
+    -134.536796875
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_03_pre",
+   "position": [
+    687.9719567824383,
+    72.08700360899326,
+    -135.5883203125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_03_center",
+   "position": [
+    689.86921875,
+    64.315234375,
+    -135.5883203125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_02_pre",
+   "position": [
+    692.6653645672457,
+    51.091103850670386,
+    -135.7628125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_02_center",
+   "position": [
+    694.96734375,
+    43.429453125,
+    -135.7628125
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_01_pre",
+   "position": [
+    699.3001510031074,
+    30.56767691822394,
+    -135.45896484375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_01_center",
+   "position": [
+    701.16890625,
+    22.78900390625,
+    -135.45896484375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_00_pre",
+   "position": [
+    705.2069384263395,
+    9.856878023122734,
+    -135.2335546875
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_00_center",
+   "position": [
+    706.183125,
+    1.91666015625,
+    -135.2335546875
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "exit",
+   "position": [
+    707.1593115736605,
+    -6.023557710622733,
+    -135.2335546875
+   ],
+   "speed": 2.5,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  }
+ ]
+}

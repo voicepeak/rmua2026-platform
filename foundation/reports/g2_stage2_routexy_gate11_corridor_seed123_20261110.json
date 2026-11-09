@@ -1,0 +1,806 @@
+{
+ "status": "runtime detection-component roots; trigger aperture and official scoring unverified",
+ "source_log": "foundation/datasets/g2_stage2_routexy_gate11_corridor_seed123_20261110/run/simulator.log",
+ "source_sha256": "63aa3f037ccc5579d628aef0f6d68d8da771ecbe74452615f2029c26b9fda478",
+ "actors": {
+  "0x727706f5a900": {
+   "count": 30,
+   "array": "0x7278e0a9b4c0",
+   "components": []
+  }
+ },
+ "actor_count": 1,
+ "declared_component_count": 30,
+ "component_count": 0,
+ "score_start": 0,
+ "score_end": 23,
+ "score_increment_count": 23,
+ "score_increments": [
+  {
+   "from": 0,
+   "to": 1,
+   "actor": "0x727706f5a900",
+   "index": 28,
+   "enter": 1,
+   "event": 0,
+   "score": 1
+  },
+  {
+   "from": 1,
+   "to": 2,
+   "actor": "0x727706f5a900",
+   "index": 27,
+   "enter": 1,
+   "event": 0,
+   "score": 2
+  },
+  {
+   "from": 2,
+   "to": 3,
+   "actor": "0x727706f5a900",
+   "index": 28,
+   "enter": 0,
+   "event": 0,
+   "score": 3
+  },
+  {
+   "from": 3,
+   "to": 4,
+   "actor": "0x727706f5a900",
+   "index": 27,
+   "enter": 0,
+   "event": 0,
+   "score": 4
+  },
+  {
+   "from": 4,
+   "to": 5,
+   "actor": "0x727706f5a900",
+   "index": 26,
+   "enter": 0,
+   "event": 0,
+   "score": 5
+  },
+  {
+   "from": 5,
+   "to": 6,
+   "actor": "0x727706f5a900",
+   "index": 25,
+   "enter": 0,
+   "event": 0,
+   "score": 6
+  },
+  {
+   "from": 6,
+   "to": 7,
+   "actor": "0x727706f5a900",
+   "index": 24,
+   "enter": 0,
+   "event": 0,
+   "score": 7
+  },
+  {
+   "from": 7,
+   "to": 8,
+   "actor": "0x727706f5a900",
+   "index": 23,
+   "enter": 0,
+   "event": 0,
+   "score": 8
+  },
+  {
+   "from": 8,
+   "to": 9,
+   "actor": "0x727706f5a900",
+   "index": 22,
+   "enter": 0,
+   "event": 0,
+   "score": 9
+  },
+  {
+   "from": 9,
+   "to": 10,
+   "actor": "0x727706f5a900",
+   "index": 21,
+   "enter": 0,
+   "event": 0,
+   "score": 10
+  },
+  {
+   "from": 10,
+   "to": 11,
+   "actor": "0x727706f5a900",
+   "index": 20,
+   "enter": 0,
+   "event": 0,
+   "score": 11
+  },
+  {
+   "from": 11,
+   "to": 12,
+   "actor": "0x727706f5a900",
+   "index": 19,
+   "enter": 0,
+   "event": 0,
+   "score": 12
+  },
+  {
+   "from": 12,
+   "to": 13,
+   "actor": "0x727706f5a900",
+   "index": 18,
+   "enter": 0,
+   "event": 0,
+   "score": 13
+  },
+  {
+   "from": 13,
+   "to": 14,
+   "actor": "0x727706f5a900",
+   "index": 17,
+   "enter": 0,
+   "event": 0,
+   "score": 14
+  },
+  {
+   "from": 14,
+   "to": 15,
+   "actor": "0x727706f5a900",
+   "index": 16,
+   "enter": 0,
+   "event": 0,
+   "score": 15
+  },
+  {
+   "from": 15,
+   "to": 16,
+   "actor": "0x727706f5a900",
+   "index": 15,
+   "enter": 0,
+   "event": 0,
+   "score": 16
+  },
+  {
+   "from": 16,
+   "to": 17,
+   "actor": "0x727706f5a900",
+   "index": 14,
+   "enter": 0,
+   "event": 0,
+   "score": 17
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "actor": "0x727706f5a900",
+   "index": 13,
+   "enter": 0,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "from": 18,
+   "to": 19,
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 0,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 0,
+   "event": 0,
+   "score": 20
+  },
+  {
+   "from": 20,
+   "to": 21,
+   "actor": "0x727706f5a900",
+   "index": 10,
+   "enter": 0,
+   "event": 0,
+   "score": 21
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "actor": "0x727706f5a900",
+   "index": 9,
+   "enter": 0,
+   "event": 0,
+   "score": 22
+  },
+  {
+   "from": 22,
+   "to": 23,
+   "actor": "0x727706f5a900",
+   "index": 8,
+   "enter": 0,
+   "event": 0,
+   "score": 23
+  }
+ ],
+ "seg_events": [
+  {
+   "actor": "0x727706f5a900",
+   "index": 29,
+   "enter": 1,
+   "event": 0,
+   "score": 0
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 29,
+   "enter": 0,
+   "event": 1,
+   "score": 0
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 28,
+   "enter": 1,
+   "event": 0,
+   "score": 1
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 29,
+   "enter": 0,
+   "event": 0,
+   "score": 1
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 28,
+   "enter": 0,
+   "event": 1,
+   "score": 1
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 27,
+   "enter": 1,
+   "event": 0,
+   "score": 2
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 27,
+   "enter": 0,
+   "event": 1,
+   "score": 2
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 28,
+   "enter": 0,
+   "event": 0,
+   "score": 3
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 26,
+   "enter": 1,
+   "event": 0,
+   "score": 3
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 26,
+   "enter": 0,
+   "event": 1,
+   "score": 3
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 27,
+   "enter": 0,
+   "event": 0,
+   "score": 4
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 25,
+   "enter": 1,
+   "event": 0,
+   "score": 4
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 25,
+   "enter": 0,
+   "event": 1,
+   "score": 4
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 26,
+   "enter": 0,
+   "event": 0,
+   "score": 5
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 24,
+   "enter": 1,
+   "event": 0,
+   "score": 5
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 24,
+   "enter": 0,
+   "event": 1,
+   "score": 5
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 25,
+   "enter": 0,
+   "event": 0,
+   "score": 6
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 23,
+   "enter": 1,
+   "event": 0,
+   "score": 6
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 23,
+   "enter": 0,
+   "event": 1,
+   "score": 6
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 24,
+   "enter": 0,
+   "event": 0,
+   "score": 7
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 22,
+   "enter": 1,
+   "event": 0,
+   "score": 7
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 22,
+   "enter": 0,
+   "event": 1,
+   "score": 7
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 23,
+   "enter": 0,
+   "event": 0,
+   "score": 8
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 21,
+   "enter": 1,
+   "event": 0,
+   "score": 8
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 21,
+   "enter": 0,
+   "event": 1,
+   "score": 8
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 22,
+   "enter": 0,
+   "event": 0,
+   "score": 9
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 20,
+   "enter": 1,
+   "event": 0,
+   "score": 9
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 20,
+   "enter": 0,
+   "event": 1,
+   "score": 9
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 21,
+   "enter": 0,
+   "event": 0,
+   "score": 10
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 19,
+   "enter": 1,
+   "event": 0,
+   "score": 10
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 19,
+   "enter": 0,
+   "event": 1,
+   "score": 10
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 20,
+   "enter": 0,
+   "event": 0,
+   "score": 11
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 18,
+   "enter": 1,
+   "event": 0,
+   "score": 11
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 18,
+   "enter": 0,
+   "event": 1,
+   "score": 11
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 19,
+   "enter": 0,
+   "event": 0,
+   "score": 12
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 17,
+   "enter": 1,
+   "event": 0,
+   "score": 12
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 17,
+   "enter": 0,
+   "event": 1,
+   "score": 12
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 18,
+   "enter": 0,
+   "event": 0,
+   "score": 13
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 16,
+   "enter": 1,
+   "event": 0,
+   "score": 13
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 16,
+   "enter": 0,
+   "event": 1,
+   "score": 13
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 17,
+   "enter": 0,
+   "event": 0,
+   "score": 14
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 15,
+   "enter": 1,
+   "event": 0,
+   "score": 14
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 15,
+   "enter": 0,
+   "event": 1,
+   "score": 14
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 16,
+   "enter": 0,
+   "event": 0,
+   "score": 15
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 14,
+   "enter": 1,
+   "event": 0,
+   "score": 15
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 14,
+   "enter": 0,
+   "event": 1,
+   "score": 15
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 15,
+   "enter": 0,
+   "event": 0,
+   "score": 16
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 13,
+   "enter": 1,
+   "event": 0,
+   "score": 16
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 13,
+   "enter": 0,
+   "event": 1,
+   "score": 16
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 14,
+   "enter": 0,
+   "event": 0,
+   "score": 17
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 1,
+   "event": 0,
+   "score": 17
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 0,
+   "event": 1,
+   "score": 17
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 13,
+   "enter": 0,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 0,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 1,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 0,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 1,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 1,
+   "event": 0,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 0,
+   "event": 1,
+   "score": 18
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 12,
+   "enter": 0,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 0,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 1,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 0,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 1,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 0,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 1,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 10,
+   "enter": 1,
+   "event": 0,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 10,
+   "enter": 0,
+   "event": 1,
+   "score": 19
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 11,
+   "enter": 0,
+   "event": 0,
+   "score": 20
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 9,
+   "enter": 1,
+   "event": 0,
+   "score": 20
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 9,
+   "enter": 0,
+   "event": 1,
+   "score": 20
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 10,
+   "enter": 0,
+   "event": 0,
+   "score": 21
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 8,
+   "enter": 1,
+   "event": 0,
+   "score": 21
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 8,
+   "enter": 0,
+   "event": 1,
+   "score": 21
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 9,
+   "enter": 0,
+   "event": 0,
+   "score": 22
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 7,
+   "enter": 1,
+   "event": 0,
+   "score": 22
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 7,
+   "enter": 0,
+   "event": 1,
+   "score": 22
+  },
+  {
+   "actor": "0x727706f5a900",
+   "index": 8,
+   "enter": 0,
+   "event": 0,
+   "score": 23
+  }
+ ],
+ "observed_indices": [
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29
+ ],
+ "limitations": [
+  "GDB all-stop changes timing; this is a diagnostic trace, not a race result",
+  "component roots do not establish trigger plane, aperture or extent",
+  "the 12 named *_Gate actors are solid route gates, not these components"
+ ],
+ "map": "RMUA2024OL1"
+}

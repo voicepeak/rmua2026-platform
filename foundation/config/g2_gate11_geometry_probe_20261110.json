@@ -1,0 +1,61 @@
+{
+ "name": "g2_gate11_geometry_probe_20261110",
+ "purpose": "Short stage2-injected geometry probe: teleport to gate12, bypass west of the east post, pass gate11 and gate10. Diagnostic only; score not expected from a mid-queue start.",
+ "frame": "NED metres",
+ "safety": {
+  "max_speed": 4.0,
+  "max_duration_s": 90.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.7,
+  "log_period_s": 0.3
+ },
+ "waypoints": [
+  {
+   "name": "gate12_start",
+   "position": [
+    724.85875,
+    248.425859375,
+    -101.12150390625
+   ],
+   "speed": 2.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "bypass_west",
+   "position": [
+    722.0,
+    240.0,
+    -104.0
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate11_center",
+   "position": [
+    721.79390625,
+    229.3714453125,
+    -110.08083984375
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate10_center",
+   "position": [
+    717.28703125,
+    209.4987890625,
+    -116.8337890625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  }
+ ]
+}

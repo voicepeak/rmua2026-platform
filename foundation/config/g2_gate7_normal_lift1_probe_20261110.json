@@ -1,0 +1,61 @@
+{
+ "name": "g2_gate7_normal_lift1_probe_20261110",
+ "purpose": "Gate-normal corridor probe from gate8 through gate7 at +1 m. Diagnostic only.",
+ "frame": "NED metres; gate normal = local X axis",
+ "safety": {
+  "max_speed": 3.5,
+  "max_duration_s": 120.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.6,
+  "log_period_s": 0.3
+ },
+ "waypoints": [
+  {
+   "name": "gate8_center",
+   "position": [
+    705.335,
+    168.92296875,
+    -125.80228515625
+   ],
+   "speed": 2.5,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate7_pre",
+   "position": [
+    701.2894093394544,
+    156.17251444302156,
+    -128.36791015625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate7_center",
+   "position": [
+    699.16515625,
+    148.459697265625,
+    -128.36791015625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate7_post",
+   "position": [
+    697.0409031605456,
+    140.74688008822847,
+    -128.36791015625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.8,
+   "hold_s": 0.0
+  }
+ ]
+}

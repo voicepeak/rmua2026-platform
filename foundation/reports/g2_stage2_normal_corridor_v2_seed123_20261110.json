@@ -1,0 +1,240 @@
+{
+ "status": "runtime detection-component roots; trigger aperture and official scoring unverified",
+ "source_log": "foundation/datasets/g2_stage2_normal_corridor_v2_seed123_20261110/run/simulator.log",
+ "source_sha256": "7ac22f855789c5eaefe04886af1388a997d9f4601eed9d7332a2d2949a688a38",
+ "actors": {
+  "0x7bf8d2f3af00": {
+   "count": 30,
+   "array": "0x7bfaa9e7b680",
+   "components": []
+  }
+ },
+ "actor_count": 1,
+ "declared_component_count": 30,
+ "component_count": 0,
+ "score_start": 0,
+ "score_end": 7,
+ "score_increment_count": 7,
+ "score_increments": [
+  {
+   "from": 0,
+   "to": 1,
+   "actor": "0x7bf8d2f3af00",
+   "index": 28,
+   "enter": 1,
+   "event": 0,
+   "score": 1
+  },
+  {
+   "from": 1,
+   "to": 2,
+   "actor": "0x7bf8d2f3af00",
+   "index": 27,
+   "enter": 1,
+   "event": 0,
+   "score": 2
+  },
+  {
+   "from": 2,
+   "to": 3,
+   "actor": "0x7bf8d2f3af00",
+   "index": 28,
+   "enter": 0,
+   "event": 0,
+   "score": 3
+  },
+  {
+   "from": 3,
+   "to": 4,
+   "actor": "0x7bf8d2f3af00",
+   "index": 27,
+   "enter": 0,
+   "event": 0,
+   "score": 4
+  },
+  {
+   "from": 4,
+   "to": 5,
+   "actor": "0x7bf8d2f3af00",
+   "index": 26,
+   "enter": 0,
+   "event": 0,
+   "score": 5
+  },
+  {
+   "from": 5,
+   "to": 6,
+   "actor": "0x7bf8d2f3af00",
+   "index": 25,
+   "enter": 0,
+   "event": 0,
+   "score": 6
+  },
+  {
+   "from": 6,
+   "to": 7,
+   "actor": "0x7bf8d2f3af00",
+   "index": 24,
+   "enter": 0,
+   "event": 0,
+   "score": 7
+  }
+ ],
+ "seg_events": [
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 29,
+   "enter": 1,
+   "event": 0,
+   "score": 0
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 29,
+   "enter": 0,
+   "event": 1,
+   "score": 0
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 28,
+   "enter": 1,
+   "event": 0,
+   "score": 1
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 29,
+   "enter": 0,
+   "event": 0,
+   "score": 1
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 28,
+   "enter": 0,
+   "event": 1,
+   "score": 1
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 27,
+   "enter": 1,
+   "event": 0,
+   "score": 2
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 27,
+   "enter": 0,
+   "event": 1,
+   "score": 2
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 28,
+   "enter": 0,
+   "event": 0,
+   "score": 3
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 26,
+   "enter": 1,
+   "event": 0,
+   "score": 3
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 26,
+   "enter": 0,
+   "event": 1,
+   "score": 3
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 27,
+   "enter": 0,
+   "event": 0,
+   "score": 4
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 25,
+   "enter": 1,
+   "event": 0,
+   "score": 4
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 25,
+   "enter": 0,
+   "event": 1,
+   "score": 4
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 26,
+   "enter": 0,
+   "event": 0,
+   "score": 5
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 24,
+   "enter": 1,
+   "event": 0,
+   "score": 5
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 24,
+   "enter": 0,
+   "event": 1,
+   "score": 5
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 25,
+   "enter": 0,
+   "event": 0,
+   "score": 6
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 23,
+   "enter": 1,
+   "event": 0,
+   "score": 6
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 23,
+   "enter": 0,
+   "event": 1,
+   "score": 6
+  },
+  {
+   "actor": "0x7bf8d2f3af00",
+   "index": 24,
+   "enter": 0,
+   "event": 0,
+   "score": 7
+  }
+ ],
+ "observed_indices": [
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29
+ ],
+ "limitations": [
+  "GDB all-stop changes timing; this is a diagnostic trace, not a race result",
+  "component roots do not establish trigger plane, aperture or extent",
+  "the 12 named *_Gate actors are solid route gates, not these components"
+ ],
+ "map": "RMUA2024OL1"
+}

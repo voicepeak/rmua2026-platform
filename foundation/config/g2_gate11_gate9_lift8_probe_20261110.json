@@ -1,0 +1,61 @@
+{
+ "name": "g2_gate11_gate9_lift8_probe_20261110",
+ "purpose": "Check whether an +8 m gate-centre path still triggers road3 components 11,10,9. Diagnostic only.",
+ "frame": "NED metres, z down; gate centres +8 m",
+ "safety": {
+  "max_speed": 5.0,
+  "max_duration_s": 120.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.7,
+  "log_period_s": 0.3
+ },
+ "waypoints": [
+  {
+   "name": "gate12_start",
+   "position": [
+    724.85875,
+    248.425859375,
+    -101.12150390625
+   ],
+   "speed": 2.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate11_lift8",
+   "position": [
+    721.79390625,
+    229.3714453125,
+    -118.08083984375
+   ],
+   "speed": 4.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate10_lift8",
+   "position": [
+    717.28703125,
+    209.4987890625,
+    -124.8337890625
+   ],
+   "speed": 4.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate9_lift8",
+   "position": [
+    711.53375,
+    189.269765625,
+    -129.45107421875
+   ],
+   "speed": 4.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  }
+ ]
+}
