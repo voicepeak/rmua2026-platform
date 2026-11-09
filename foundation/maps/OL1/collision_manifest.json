@@ -21,16 +21,18 @@
     }
   },
   "all_optional_candidates": {
-    "instance_count": 12117,
-    "mesh_count": 58,
+    "instance_count": 12609,
+    "mesh_count": 61,
     "groups": {
       "default": 508,
+      "unverified_building_mesh": 12,
       "unverified_rack": 960,
+      "unverified_rack_mesh": 480,
       "unverified_road_cube": 1884,
       "unverified_simple": 8645,
       "unverified_sprite": 120
     },
-    "excluded_building_components_only": 12,
+    "excluded_building_components_only": 0,
     "source_sha256": {
       "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
       "OL1_rack_placements_candidate.json": "1e6e487160bd2e9a2b20dc33e19ce11610bd4ca0fc667daddf03b9bd74faa9bb",
@@ -38,11 +40,17 @@
       "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
       "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e",
       "OL1_sprite_placements_candidate.json": "92c05a3ab3b515bb41d04134610fe5803a50b8a9965c03965cba17304ffaac1b",
+      "mesh_collision/AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+      "mesh_collision/AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
       "mesh_collision/Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
       "mesh_collision/Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
       "mesh_collision/Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
       "mesh_collision/Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
       "mesh_collision/Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+      "rack_collision/Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+      "rack_collision/Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+      "rack_collision/Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+      "rack_collision/Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e",
       "rack_simple_candidates.json": "7698a3d6a059fbcbb6f45a03acd80273e47e56b1818e5bc9d9abb2fc60f2eea9",
       "sprite_collision_candidates.json": "eb657d0f8ec0e67511ad266163aae4b803e9519b35ec7b0e15dfcdf30d050cdc"
     }
@@ -51,14 +59,17 @@
     "unverified_simple",
     "unverified_sprite",
     "unverified_rack",
-    "unverified_road_cube"
+    "unverified_road_cube",
+    "unverified_building_mesh",
+    "unverified_rack_mesh"
   ],
   "known_gaps": [
     "All physical collision channels and actual component inclusion remain unverified.",
     "Excluded-building count does not count other missing categories.",
-    "480 rack paper/pointer components are not included in optional rack candidates.",
+    "The 12 building and 480 rack cooked-mesh components are optional triangle candidates; their runtime collision channels are unverified.",
     "Road auxiliary cubes, building simple shapes, sprites and rack meshes are only candidates.",
     "Gate mesh transforms are not verified apertures or collision volumes.",
+    "The remaining 24 arrows, 3 environment static meshes, 5 Niagara effects, 3 cable spline meshes and 2 instanced meshes are not collision candidates.",
     "Scene origin, axis alignment, geometry coverage and initial containment remain unverified.",
     "Surface sweeps do not return time of impact; default mode does not check solid containment.",
     "Optional containment assumes topologically closed meshes are solid; open/ambiguous cases remain unknown."
@@ -70,6 +81,6 @@
     "../../reports/contact_surface_seed123.json",
     "../../reports/contact_surface_seed456.json"
   ],
-  "generator_sha256": "0b19d573716f92afca3bc95379c8b362074e5b145528c69bc5025eac4c8ccf8a",
-  "loader_sha256": "58362b25a4816e980595cb00bd2a480d488820931a9a2228e744ece532ff06eb"
+  "generator_sha256": "0983a75a0bb89f6745e327060313b36c3e67842a909c83d667e356fcae3859d2",
+  "loader_sha256": "ed4a1b512ca667ef928921fbfbcabd4186bce6ae9488a0e4aa76f3e448084044"
 }

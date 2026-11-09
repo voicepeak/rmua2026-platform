@@ -1,9 +1,11 @@
 """Queryable *partial* candidate static map in UE centimetres.
 
-Only explicitly complex-as-simple mesh candidates are queried. A negative ray
-result is never proof of free space: most building modes, road auxiliary
-components, instance construction, transforms and collision channels are U.
-Swept-sphere queries are candidate surface tests, not official drone contact.
+Only explicitly complex-as-simple mesh candidates are queried by default.
+Optional groups add serialized simple shapes, sprites, road cubes, racks and
+cooked triangle-mesh fallbacks for components without a simple shape. A
+negative ray result is never proof of free space: collision channels,
+construction, instance transforms and most runtime behavior are U. Swept-sphere
+queries are candidate surface tests, not official drone contact.
 """
 import hashlib
 import itertools
@@ -13,6 +15,19 @@ import numpy as np
 from scipy.spatial.transform import Rotation
 from foundation.frames import ned_m_to_ue_cm, ue_cm_to_ned_m
 from foundation.road_scene import segment_intersections
+
+
+def _load_triangle_mesh(path):
+    """Load one locally decoded cooked triangle prefix with strict checks."""
+    path = Path(path)
+    with np.load(path, allow_pickle=False) as data:
+        vertices, triangles = data['vertices'], data['triangles']
+    if (vertices.ndim != 2 or vertices.shape[1] != 3 or triangles.ndim != 2
+            or triangles.shape[1] != 3 or not np.isfinite(vertices).all()
+            or triangles.size == 0 or triangles.min() < 0
+            or triangles.max() >= len(vertices) or triangles.dtype.kind not in 'iu'):
+        raise ValueError('invalid mesh contents')
+    return vertices, triangles.astype(int)
 
 
 def _closed_indexed_mesh(triangles):
@@ -74,8 +89,20 @@ class CandidateMap:
     @classmethod
     def load_serialized_candidates(cls, directory, mesh_directory, *, simple_shapes_file=None,
                                    road_cube_shapes_file=None, rack_shapes_file=None, sprite_shapes_file=None,
-                                   assume_closed_meshes_solid=False):
-        """Load a map's own road/building exports; all runtime behavior unverified."""
+                                   building_mesh_fallback=False, rack_mesh_fallback=False,
+                                   rack_mesh_directory=None, assume_closed_meshes_solid=False):
+        """Load a map's own road/building exports; all runtime behavior unverified.
+
+        ``building_mesh_fallback`` supplements a supplied simple-shape file with
+        cooked triangle meshes for building components that have no simple
+        shape. ``rack_mesh_fallback`` does the same for rack components and
+        requires the explicit ``rack_mesh_directory``. Both are candidates only;
+        their collision channels remain unverified.
+        """
+        if building_mesh_fallback and simple_shapes_file is None:
+            raise ValueError('building mesh fallback requires simple shapes file')
+        if rack_mesh_fallback and (rack_shapes_file is None or rack_mesh_directory is None):
+            raise ValueError('rack mesh fallback requires rack shapes file and mesh directory')
         directory, mesh_directory = Path(directory), Path(mesh_directory)
         road_path, building_path = directory/'road_candidates.json', directory/'building_candidates.json'
         road, buildings = (json.loads(p.read_bytes()) for p in (road_path, building_path))
@@ -99,11 +126,11 @@ class CandidateMap:
             meshes[name] = (vertices, triangles.astype(int))
             paths.append(path)
         included_simple = 0
+        simple_meshes = {}
         if simple_shapes_file is not None:
             from foundation.simple_collision_mesh import simple_mesh
             simple_path = Path(simple_shapes_file)
             simple_assets = json.loads(simple_path.read_bytes())['assets']
-            simple_meshes = {}
             for name, asset in simple_assets.items():
                 try:
                     simple_meshes[name] = simple_mesh(asset)
@@ -117,6 +144,25 @@ class CandidateMap:
                 placements.append({**obj, 'mesh': name, 'collision_evidence': 'unverified simple candidate'})
                 included_simple += 1
             paths.append(simple_path)
+        included_building_mesh = 0
+        if building_mesh_fallback:
+            for obj in buildings['placements']:
+                if obj['collision_trace_flag'] == 'CTF_UseComplexAsSimple' or obj['mesh'] in simple_meshes:
+                    continue
+                name = 'unverified_building_mesh:' + obj['mesh']
+                if name not in meshes:
+                    path = mesh_directory / (obj['mesh'] + '.npz')
+                    if not path.is_file():
+                        continue
+                    meshes[name] = _load_triangle_mesh(path)
+                    paths.append(path)
+                    metadata = path.with_suffix('.json')
+                    if metadata.is_file():
+                        paths.append(metadata)
+                placements.append({**obj, 'mesh': name,
+                                   'collision_evidence': 'cooked triangle mesh fallback; channel unverified'})
+                included_building_mesh += 1
+        result_extra = {}
         if road_cube_shapes_file is not None or rack_shapes_file is not None or sprite_shapes_file is not None:
             from foundation.simple_collision_mesh import simple_mesh
 
@@ -150,12 +196,41 @@ class CandidateMap:
                         rack_meshes[name] = simple_mesh(asset)
                     except (KeyError, TypeError, ValueError):
                         continue
+                included_rack_simple = 0
                 for obj in racks['placements']:
                     if obj['mesh'] not in rack_meshes:
                         continue
                     name = 'unverified_rack:' + obj['mesh']
                     meshes[name] = rack_meshes[obj['mesh']]
                     placements.append({**obj, 'mesh': name, 'collision_evidence': 'rack candidate; channel unverified'})
+                    included_rack_simple += 1
+                included_rack_mesh = 0
+                if rack_mesh_fallback:
+                    rack_directory = Path(rack_mesh_directory)
+                    for obj in racks['placements']:
+                        if obj['mesh'] in rack_meshes:
+                            continue
+                        name = 'unverified_rack_mesh:' + obj['mesh']
+                        if name not in meshes:
+                            path = rack_directory / (obj['mesh'] + '.npz')
+                            if not path.is_file():
+                                continue
+                            meshes[name] = _load_triangle_mesh(path)
+                            paths.append(path)
+                            metadata = path.with_suffix('.json')
+                            if metadata.is_file():
+                                paths.append(metadata)
+                        placements.append({**obj, 'mesh': name,
+                                           'collision_evidence': 'rack cooked triangle mesh fallback; channel unverified'})
+                        included_rack_mesh += 1
+                    result_extra = {'included_rack_simple': included_rack_simple,
+                                    'included_rack_mesh': included_rack_mesh,
+                                    'excluded_rack_components': len(racks['placements'])
+                                                                - included_rack_simple - included_rack_mesh}
+                else:
+                    result_extra = {'included_rack_simple': included_rack_simple,
+                                    'included_rack_mesh': 0,
+                                    'excluded_rack_components': len(racks['placements']) - included_rack_simple}
             if sprite_shapes_file is not None:
                 sprites, shapes = load_group('sprite_candidates.json', None, sprite_shapes_file)
                 for obj in sprites['placements']:
@@ -167,15 +242,24 @@ class CandidateMap:
                     if name not in meshes:
                         meshes[name] = simple_mesh(shapes[asset_name])
                     placements.append({**obj, 'mesh': name, 'collision_evidence': 'sprite candidate; channel unverified'})
-        result = cls(placements, meshes, len(buildings['placements']) - len(admitted) - included_simple,
+        result = cls(placements, meshes,
+                     len(buildings['placements']) - len(admitted) - included_simple - included_building_mesh,
                      assume_closed_meshes_solid=assume_closed_meshes_solid)
+        result.included_building_mesh = included_building_mesh
+        for key, value in result_extra.items():
+            setattr(result, key, value)
         result.source_sha256 = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         return result
 
     @classmethod
     def load(cls, directory, *, include_unverified_simple=False, include_unverified_sprites=False,
              include_unverified_racks=False, include_unverified_road_cubes=False,
+             include_unverified_building_meshes=False, include_unverified_rack_meshes=False,
              assume_closed_meshes_solid=False):
+        if include_unverified_building_meshes and not include_unverified_simple:
+            raise ValueError('building mesh fallback requires unverified simple shapes')
+        if include_unverified_rack_meshes and not include_unverified_racks:
+            raise ValueError('rack mesh fallback requires unverified racks')
         directory = Path(directory)
         road = json.loads((directory/'OL1_road_placements_candidate.json').read_text(encoding='utf-8'))
         buildings = json.loads((directory/'OL1_building_placements_candidate.json').read_text(encoding='utf-8'))
@@ -198,10 +282,10 @@ class CandidateMap:
             meshes[name] = (vertices, triangles.astype(int))
         simple_file = directory/'OL1_simple_convex_candidates.json'
         included_simple = 0
+        simple_meshes = {}
         if include_unverified_simple:
             from foundation.simple_collision_mesh import simple_mesh
             assets = json.loads(simple_file.read_text(encoding='utf-8'))['assets']
-            simple_meshes = {}
             for name, asset in assets.items():
                 try:
                     simple_meshes[name] = simple_mesh(asset)
@@ -215,6 +299,21 @@ class CandidateMap:
                 meshes[name] = simple_meshes[obj['mesh']]
                 placements.append({**obj, 'mesh': name, 'collision_evidence': 'unverified simple candidate'})
                 included_simple += 1
+        included_building_mesh = 0
+        if include_unverified_building_meshes:
+            for obj in buildings['placements']:
+                if (obj['collision_trace_flag'] == 'CTF_UseComplexAsSimple'
+                        or obj['mesh'] in simple_meshes):
+                    continue
+                name = 'unverified_building_mesh:' + obj['mesh']
+                if name not in meshes:
+                    path = directory/'mesh_collision'/(obj['mesh'] + '.npz')
+                    if not path.is_file():
+                        continue
+                    meshes[name] = _load_triangle_mesh(path)
+                placements.append({**obj, 'mesh': name,
+                                   'collision_evidence': 'cooked triangle mesh fallback; channel unverified'})
+                included_building_mesh += 1
         sprite_files = [directory/'OL1_sprite_placements_candidate.json', directory/'sprite_collision_candidates.json']
         if include_unverified_sprites:
             from foundation.simple_collision_mesh import simple_mesh
@@ -230,6 +329,7 @@ class CandidateMap:
                     meshes[name] = simple_mesh(assets[asset_name])
                 placements.append({**obj, 'mesh': name, 'collision_evidence': 'sprite candidate; channel unverified'})
         rack_files = [directory/'OL1_rack_placements_candidate.json', directory/'rack_simple_candidates.json']
+        rack_result = {}
         if include_unverified_racks:
             from foundation.simple_collision_mesh import simple_mesh
             racks = json.loads(rack_files[0].read_text(encoding='utf-8'))
@@ -242,12 +342,33 @@ class CandidateMap:
                     rack_meshes[name] = simple_mesh(asset)
                 except (KeyError, TypeError, ValueError):
                     continue
+            included_rack_simple = 0
             for obj in racks['placements']:
                 if obj['mesh'] not in rack_meshes:
                     continue
                 name = 'unverified_rack:' + obj['mesh']
                 meshes[name] = rack_meshes[obj['mesh']]
                 placements.append({**obj, 'mesh': name, 'collision_evidence': 'rack candidate; channel unverified'})
+                included_rack_simple += 1
+            included_rack_mesh = 0
+            if include_unverified_rack_meshes:
+                rack_directory = directory/'rack_collision'
+                for obj in racks['placements']:
+                    if obj['mesh'] in rack_meshes:
+                        continue
+                    name = 'unverified_rack_mesh:' + obj['mesh']
+                    if name not in meshes:
+                        path = rack_directory/(obj['mesh'] + '.npz')
+                        if not path.is_file():
+                            continue
+                        meshes[name] = _load_triangle_mesh(path)
+                    placements.append({**obj, 'mesh': name,
+                                       'collision_evidence': 'rack cooked triangle mesh fallback; channel unverified'})
+                    included_rack_mesh += 1
+            rack_result = {'included_rack_simple': included_rack_simple,
+                           'included_rack_mesh': included_rack_mesh,
+                           'excluded_rack_components': len(racks['placements'])
+                                                       - included_rack_simple - included_rack_mesh}
         road_cube_file = directory/'OL1_road_cubes_candidate.json'
         if include_unverified_road_cubes:
             from foundation.simple_collision_mesh import simple_mesh
@@ -261,16 +382,37 @@ class CandidateMap:
                 if obj['mesh_package'] != '/Engine/BasicShapes/Cube':
                     raise ValueError('unexpected road cube mesh')
                 placements.append({**obj, 'mesh': name, 'collision_evidence': 'road cube candidate; channel unverified'})
-        result = cls(placements, meshes, len(buildings['placements'])-len(admitted)-included_simple,
+        result = cls(placements, meshes,
+                     len(buildings['placements'])-len(admitted)-included_simple-included_building_mesh,
                      assume_closed_meshes_solid=assume_closed_meshes_solid)
+        result.included_building_mesh = included_building_mesh
+        for key, value in rack_result.items():
+            setattr(result, key, value)
         paths = [directory/'OL1_road_placements_candidate.json', directory/'OL1_building_placements_candidate.json']
-        paths += [directory/'mesh_collision'/(name+'.npz') for name in sorted(meshes) if not name.startswith(('unverified_simple:', 'unverified_sprite:', 'unverified_rack:', 'unverified_road_cube:'))]
+        paths += [directory/'mesh_collision'/(name+'.npz') for name in sorted(meshes)
+                  if not name.startswith(('unverified_simple:', 'unverified_sprite:', 'unverified_rack:',
+                                          'unverified_road_cube:', 'unverified_building_mesh:',
+                                          'unverified_rack_mesh:'))]
         if include_unverified_simple:
             paths.append(simple_file)
+        if include_unverified_building_meshes:
+            for name in sorted(meshes):
+                if name.startswith('unverified_building_mesh:'):
+                    for suffix in ('.npz', '.json'):
+                        path = directory/'mesh_collision'/(name.split(':', 1)[1] + suffix)
+                        if path.is_file():
+                            paths.append(path)
         if include_unverified_sprites:
             paths.extend(sprite_files)
         if include_unverified_racks:
             paths.extend(rack_files)
+        if include_unverified_rack_meshes:
+            for name in sorted(meshes):
+                if name.startswith('unverified_rack_mesh:'):
+                    for suffix in ('.npz', '.json'):
+                        path = directory/'rack_collision'/(name.split(':', 1)[1] + suffix)
+                        if path.is_file():
+                            paths.append(path)
         if include_unverified_road_cubes:
             paths.extend([road_cube_file, simple_file])
         result.source_sha256 = {str(p.relative_to(directory)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}

@@ -330,3 +330,26 @@ results come from startup observations with all-stop GDB and rounded text output
 do not validate a physical aperture, collision profile, crossing direction or
 official scoring behavior, and they do not establish complete G01 acceptance.
 
+
+## Cooked triangle-mesh fallback for missing simple shapes (2026-11-09)
+
+The 12 `AirSimROS_SM_plane` building components and the 480 `Rack_Paper` /
+`Rack_Pointer` rack components have no serialized convex or box element in the
+simple-shape file, but each source mesh has a decoded PhysX cooked triangle
+prefix in `mesh_collision/` or `rack_collision/`. `CandidateMap` now exposes
+these only through explicit `building_mesh_fallback=True` and
+`rack_mesh_fallback=True` options (with an explicit rack mesh directory for
+serialized maps). The default 508-instance scene is unchanged.
+
+With all optional groups plus both fallbacks, OL1 loads 12,609 candidate
+instances and OL2–OL12 load 12,597 each. The fallback adds 12 building and 480
+rack instances per map, with the `.npz` and extraction `.json` hashes recorded
+in `source_sha256`. `foundation.audit_map_cooked_meshes` swept a 0.01 cm sphere
+at one transformed vertex of every added instance in all 12 maps: 5,904 of
+5,904 queries matched the intended actor/component. The per-map counts and
+source digests are in `v2_map_cooked_mesh_audit.json`.
+
+This is a candidate-loading and self-query audit, not official collision
+coverage. The source metadata omits collision trace flags, and runtime
+construction, component transforms, channels and official contacts remain
+unverified. It also does not prove that a miss elsewhere is free space.

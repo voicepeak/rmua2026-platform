@@ -24,20 +24,24 @@ def main():
     default = CandidateMap.load(ASSETS)
     optional = CandidateMap.load(ASSETS, include_unverified_simple=True,
                                  include_unverified_sprites=True, include_unverified_racks=True,
-                                 include_unverified_road_cubes=True)
+                                 include_unverified_road_cubes=True,
+                                 include_unverified_building_meshes=True,
+                                 include_unverified_rack_meshes=True)
     result = {
         'status': 'PARTIAL', 'map_id': 'OL1',
         'source_asset_directory': '../../asset_analysis',
         'source_pak_sha256_recorded': '2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2',
         'default': summarize(default), 'all_optional_candidates': summarize(optional),
         'optional_groups_require_explicit_opt_in': ['unverified_simple', 'unverified_sprite',
-                                                     'unverified_rack', 'unverified_road_cube'],
+                                                     'unverified_rack', 'unverified_road_cube',
+                                                     'unverified_building_mesh', 'unverified_rack_mesh'],
         'known_gaps': [
             'All physical collision channels and actual component inclusion remain unverified.',
             'Excluded-building count does not count other missing categories.',
-            '480 rack paper/pointer components are not included in optional rack candidates.',
+            'The 12 building and 480 rack cooked-mesh components are optional triangle candidates; their runtime collision channels are unverified.',
             'Road auxiliary cubes, building simple shapes, sprites and rack meshes are only candidates.',
             'Gate mesh transforms are not verified apertures or collision volumes.',
+            'The remaining 24 arrows, 3 environment static meshes, 5 Niagara effects, 3 cable spline meshes and 2 instanced meshes are not collision candidates.',
             'Scene origin, axis alignment, geometry coverage and initial containment remain unverified.',
             'Surface sweeps do not return time of impact; default mode does not check solid containment.',
             'Optional containment assumes topologically closed meshes are solid; open/ambiguous cases remain unknown.',

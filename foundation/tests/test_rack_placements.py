@@ -69,3 +69,27 @@ def test_road_cube_candidates_are_opt_in_and_queryable():
     start, end = center.copy(), center.copy()
     start[0], end[0] = single.low[0, 0] - 100, single.high[0, 0] + 100
     assert single.raycast_ue(start, end)['hits']
+
+
+def test_rack_paper_pointer_and_plane_cooked_meshes_are_opt_in():
+    from pathlib import Path
+    from foundation.map_scene import CandidateMap
+    assets = Path(__file__).resolve().parents[1] / 'asset_analysis'
+    with pytest.raises(ValueError, match='building mesh fallback'):
+        CandidateMap.load(assets, include_unverified_building_meshes=True)
+    with pytest.raises(ValueError, match='rack mesh fallback'):
+        CandidateMap.load(assets, include_unverified_rack_meshes=True)
+    scene = CandidateMap.load(
+        assets, include_unverified_simple=True, include_unverified_racks=True,
+        include_unverified_building_meshes=True, include_unverified_rack_meshes=True)
+    buildings = [x for x in scene.placements if x['mesh'].startswith('unverified_building_mesh:')]
+    racks = [x for x in scene.placements if x['mesh'].startswith('unverified_rack_mesh:')]
+    assert len(buildings) == 12 and len(racks) == 480
+    assert scene.excluded_count == 0 and scene.excluded_rack_components == 0
+    for group in (buildings, racks):
+        obj = group[0]
+        single = CandidateMap([obj], {obj['mesh']: scene.meshes[obj['mesh']]})
+        center = (single.low[0] + single.high[0]) / 2
+        start, end = center.copy(), center.copy()
+        start[0], end[0] = single.low[0, 0] - 100, single.high[0, 0] + 100
+        assert single.raycast_ue(start, end)['hits']

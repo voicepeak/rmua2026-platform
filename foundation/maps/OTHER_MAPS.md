@@ -2,7 +2,11 @@
 
 每张地图目录包含 `road_candidates.json` 和 `building_candidates.json`。它们分别由 `D:/RMUA2026-re/artifacts/maps_json/RMUA2024OL{N}.json` 的完整序列化导出独立生成，并记录该导出、蓝图、网格清单及生成器哈希；不是把 OL1 按门变换复制到其他地图。OL2 与 OL3 的道路实例内容并不完全相同。
 
-各地图均提取到 483 个道路实例、485 个建筑 actor、8,682 个建筑组件，建筑附件链未解析数和缺失蓝图数均为 0。每图另有 12 个门网格候选、1,884 个道路附属立方体、1,440 个货架组件和 108 个 sprite 组件，附件链未解析数均为 0。数字是静态资产清点，不是碰撞覆盖率。默认碰撞查询加载 483 条道路及 25 个 complex-as-simple 建筑组件；显式启用以下候选组时，每图查询实例数为 12,105：额外的 8,645 个建筑简单形状、1,884 个道路立方体、960 个货架简单形状和 108 个 sprite 形状。仍有 12 个建筑组件、480 个不含简单形状的货架纸张/指针及其他类别未纳入；门仅用作穿越代理，未作为碰撞体加载。OL1 有 120 个 sprite 候选，多出的 12 个独立标识未在这些地图导出中出现。
+各地图均提取到 483 个道路实例、485 个建筑 actor、8,682 个建筑组件，建筑附件链未解析数和缺失蓝图数均为 0。每图另有 12 个门网格候选、1,884 个道路附属立方体、1,440 个货架组件和 108 个 sprite 组件，附件链未解析数均为 0。数字是静态资产清点，不是碰撞覆盖率。默认碰撞查询加载 483 条道路及 25 个 complex-as-simple 建筑组件；显式启用以下候选组时，每图查询实例数为 12,597：额外的 8,645 个建筑简单形状、1,884 个道路立方体、960 个货架简单形状、108 个 sprite 形状、12 个 `AirSimROS_SM_plane` 建筑 cooked 网格和 480 个货架纸张/指针 cooked 网格。OL1 有 120 个 sprite 候选，因此其全可选实例数为 12,609。门仅用作穿越代理，未作为碰撞体加载。仍有其他 actor 类别未纳入；12 个建筑和 480 个货架组件已通过可选 cooked 网格回退纳入，但它们的运行时碰撞通道仍未证实。
+
+全 12 图的可选 cooked 网格回退审计见 [v2_map_cooked_mesh_audit.json](../reports/v2_map_cooked_mesh_audit.json)：每图 12 个建筑和 480 个货架组件共 492 个实例，均能通过本图候选变换和三角网格命中；这是加载与查询自洽检查，不是官方接触。
+
+除已纳入的道路、建筑、货架、道路立方体和 sprite 外，每图剩余 39 个静态网格组件可完整归类为：12 个 `BP_Gate_C` 门网格（仅作穿越代理）、24 个 `BP_Arrow_C` 指示箭头（视觉标识）和 3 个 `StaticMeshActor`（`RockyDesert`、`SkyDome`、`SkyScreen`，环境/天空视觉体）。另有 5 个 Niagara 特效、3 个 `SplineMeshActor` 电缆和 2 个 HierarchicalInstancedStaticMeshComponent，未作为碰撞候选。门洞、箭头、天空/地平线视觉体、电缆和特效的运行时碰撞通道未验证，因此不能把“剩余组件已归类”当作碰撞覆盖完成。
 
 ```python
 from foundation.map_scene import CandidateMap
@@ -14,7 +18,9 @@ scene_with_candidates = CandidateMap.load_serialized_candidates(
     simple_shapes_file='foundation/asset_analysis/OL1_simple_convex_candidates.json',
     road_cube_shapes_file='foundation/asset_analysis/OL1_simple_convex_candidates.json',
     rack_shapes_file='foundation/asset_analysis/rack_simple_candidates.json',
-    sprite_shapes_file='foundation/asset_analysis/sprite_collision_candidates.json')
+    sprite_shapes_file='foundation/asset_analysis/sprite_collision_candidates.json',
+    building_mesh_fallback=True, rack_mesh_fallback=True,
+    rack_mesh_directory='foundation/asset_analysis/rack_collision')
 from foundation.gate_geometry import GateMeshVolumes
 gates = GateMeshVolumes.load_serialized_candidates(
     'foundation/maps/OL2', 'foundation/asset_analysis', crossing_axis=0)
@@ -36,4 +42,4 @@ python -m foundation.sprite_inventory D:/RMUA2026-re/artifacts/maps_json/RMUA202
 
 sprite 候选使用 `sprite_inventory.py`（SHA-256 `28b8c2b9ad00e6854f96e31228f4f3705a3acab8eceee7167c727373c397878a`）从各自地图生成，源地图和蓝图哈希与道路候选核对；实例级 SourceSprite 覆盖尚未实现，因此存在覆盖时会列为未解析并拒绝加载。OL1 启动接触曾与局部 sprite 候选面相符，但这不验证其他地图上该类组件的实际碰撞通道。
 
-流程对 OL1 的独立重建与现有 OL1 道路、建筑候选逐项相同，但两者来自相同序列化资产，属于实现一致性检查，不是运行时验证。OL2 的六次历史启动门根对照见 [OL2 证据](OL2/gate_runtime_evidence.md)，该路径并未证明飞行初始化成功；其他地图的物理加载、实际组件变换、碰撞通道及无人机接触均未验证。缺失类别和表面近似意味着没有命中不证明可以通行。G2 保持 PARTIAL。
+流程对 OL1 的独立重建与现有 OL1 道路、建筑候选逐项相同，但两者来自相同序列化资产，属于实现一致性检查，不是运行时验证。OL2 的六次历史启动门根对照见 [OL2 证据](OL2/gate_runtime_evidence.md)，该路径并未证明飞行初始化成功；其他地图的物理加载、实际组件变换、碰撞通道及无人机接触均未验证。缺失类别和表面近似意味着没有命中不证明可以通行。G2 保持 PARTIAL。可运行 `python -m foundation.audit_map_cooked_meshes` 重新生成全图 cooked 网格审计。

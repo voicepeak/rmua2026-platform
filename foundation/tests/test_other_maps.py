@@ -95,6 +95,48 @@ def test_other_map_auxiliary_groups_and_cross_map_rejection(tmp_path):
                                                 road_cube_shapes_file=assets/'OL1_simple_convex_candidates.json')
 
 
+def test_other_map_cooked_mesh_fallback_is_explicit_and_queryable():
+    assets = ROOT/'asset_analysis'
+    source = ROOT/'maps'/'OL2'
+    kwargs = dict(
+        simple_shapes_file=assets/'OL1_simple_convex_candidates.json',
+        road_cube_shapes_file=assets/'OL1_simple_convex_candidates.json',
+        rack_shapes_file=assets/'rack_simple_candidates.json',
+        sprite_shapes_file=assets/'sprite_collision_candidates.json')
+    default = CandidateMap.load_serialized_candidates(source, assets/'mesh_collision', **kwargs)
+    assert len(default.placements) == 12105 and default.excluded_count == 12
+    scene = CandidateMap.load_serialized_candidates(
+        source, assets/'mesh_collision', building_mesh_fallback=True,
+        rack_mesh_fallback=True, rack_mesh_directory=assets/'rack_collision', **kwargs)
+    assert len(scene.placements) == 12597 and scene.excluded_count == 0
+    assert scene.included_building_mesh == 12
+    assert scene.included_rack_mesh == 480 and scene.excluded_rack_components == 0
+    assert len(scene.placements) == len(default.placements) + 492
+    for prefix in ('unverified_building_mesh:', 'unverified_rack_mesh:'):
+        index = next(i for i, p in enumerate(scene.placements) if p['mesh'].startswith(prefix))
+        obj = scene.placements[index]
+        rotation, translation, scale = scene.transforms[index]
+        point = rotation.apply(scene.meshes[obj['mesh']][0][0] * scale) + translation
+        assert any(hit['actor'] == obj['actor'] and hit['component'] == obj['component']
+                   for hit in scene.sweep_sphere_ue(point, point, .01)['hits'])
+    assert any('AirSimROS_SM_plane.npz' in name for name in scene.source_sha256)
+    assert any('Rack_Paper.npz' in name for name in scene.source_sha256)
+    assert any('Rack_Pointer.npz' in name for name in scene.source_sha256)
+
+
+def test_cooked_mesh_fallback_requires_its_opt_in_prerequisites():
+    assets = ROOT/'asset_analysis'
+    source = ROOT/'maps'/'OL2'
+    with pytest.raises(ValueError, match='building mesh fallback'):
+        CandidateMap.load_serialized_candidates(source, assets/'mesh_collision',
+                                                building_mesh_fallback=True)
+    with pytest.raises(ValueError, match='rack mesh fallback'):
+        CandidateMap.load_serialized_candidates(
+            source, assets/'mesh_collision',
+            rack_shapes_file=assets/'rack_simple_candidates.json',
+            rack_mesh_fallback=True)
+
+
 def test_sprite_group_is_opt_in_and_rejects_cross_map_sources(tmp_path):
     assets, source = ROOT/'asset_analysis', ROOT/'maps'/'OL2'
     sprite_shapes = assets/'sprite_collision_candidates.json'
