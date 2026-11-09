@@ -1,0 +1,81 @@
+{
+  "name": "g2_contact_wall_seed123_20261109",
+  "purpose": "Controlled official contact probe for one OL1 building wall; diagnostic velocity control with debug pose truth.",
+  "frame": "NED metres, z down; targets derived from candidate map UE centimetres divided by 100 with x,y,z_up mapped to NED x,y,-z_up",
+  "targets": {
+    "wall": {
+      "candidate_actor": "BP_Building_1_9",
+      "candidate_component": "Building_1_Cap",
+      "candidate_mesh": "unverified_simple:Building_1_Cap",
+      "surface_point_ue_cm": [
+        -586.78197515,
+        -1664.39405976,
+        419.9251709
+      ],
+      "surface_normal_ue": [
+        0.68412976,
+        0.72936032,
+        0.0
+      ],
+      "source": "foundation/asset_analysis/OL1_building_placements_candidate.json; low vertical face facing the origin"
+    }
+  },
+  "safety": {
+    "max_speed": 6.0,
+    "max_duration_s": 60.0,
+    "max_xy_m": 80.0,
+    "min_z_m": -30.0,
+    "max_z_m": 1.0,
+    "stale_pose_s": 0.3,
+    "position_gain": 0.8,
+    "log_period_s": 0.1
+  },
+  "waypoints": [
+    {
+      "name": "port_exit",
+      "position": [
+        2.504,
+        -0.029,
+        -2.156
+      ],
+      "speed": 2.0,
+      "arrive_radius_m": 0.5,
+      "hold_s": 0.2
+    },
+    {
+      "name": "clear_port",
+      "position": [
+        3.5,
+        -8.0,
+        -4.2
+      ],
+      "speed": 2.5,
+      "arrive_radius_m": 0.6,
+      "hold_s": 0.2
+    },
+    {
+      "name": "wall_approach",
+      "position": [
+        -3.815,
+        -14.456,
+        -4.199
+      ],
+      "speed": 2.0,
+      "arrive_radius_m": 0.4,
+      "hold_s": 0.2
+    },
+    {
+      "name": "wall_push",
+      "position": [
+        -6.278,
+        -17.082,
+        -4.199
+      ],
+      "speed": 1.5,
+      "arrive_radius_m": 0.4,
+      "max_approach_s": 5.0,
+      "push_s": 3.0,
+      "push_speed": 1.2
+    }
+  ]
+}
