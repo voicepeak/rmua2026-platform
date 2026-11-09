@@ -614,9 +614,10 @@
   "factory entrance actor/trigger not located; 12 static candidate volumes exist, no event evidence",
   "OL1 stage1 direct road3 score is 0/30; stage2 injection reaches 30/30; this is not official stage progression"
  ],
+ "map_layout_correction": "OL2-OL12 are congruent copies of the same OL1 course under yaw+translation, not 12 different tracks; see foundation/reports/v2_map_clone_20261110.md. Runtime detection/score/config equivalence remains unverified.",
  "source_sha256": {
   "detection_gate_candidates": "fca3743516708f26bb269a081a143ee2c2f0642bf683607f1b1361e34a20b30d",
   "score_evidence": "7f4939308df939ffe860d9632e79c6d9bda73828976bd1956a24065130667a59"
  },
- "generator_sha256": "43a2f7d47ae699fe3248433dd9d13bb56825724f78ce5253767e534575ac3a87"
+ "generator_sha256": "154a6633f9962589e97e5c7a3fadade2f925d580d58ceaa9059df7157857c776"
 }

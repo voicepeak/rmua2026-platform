@@ -1,0 +1,33 @@
+{
+ "status": "diagnostic route reconstruction; official stage geometry unverified",
+ "stage": 6,
+ "route_segments": [
+  {
+   "route_index": 6,
+   "direction": "forward",
+   "source": "data/tables/routes.csv",
+   "points": 176
+  },
+  {
+   "route_index": 7,
+   "direction": "reverse",
+   "source": "data/tables/routes.csv",
+   "points": 176
+  }
+ ],
+ "length_m": 1398.5726448784094,
+ "expected_detection_components_ceil_length_over_21m": 67,
+ "known_detection_components": {},
+ "waypoint_count": 366,
+ "waypoints_sha256": "ca6920a09a21b2455c5500a9dd999570a5ba52f52657d513ad92094061b0d842",
+ "source_sha256": {
+  "routes.csv": "62065786e20e479cacd9b9404607c9a28414e629d80d62f30e2764b1fde1c505",
+  "road3_components.json": "68a8e9ee6360f1d34e61df641fb8acc7f8a8d225d724557aefdd4790d7ada8e8"
+ },
+ "limitations": [
+  "route control points are sparse static spline points, densified here with Catmull-Rom",
+  "hub connectors are reconstructed, not official",
+  "expected component count uses ceil(length / 21 m) and is a hypothesis",
+  "no score or contact evidence is implied by this manifest"
+ ]
+}
