@@ -1,0 +1,622 @@
+{
+ "status": "coverage index; PARTIAL/UNVERIFIED rows are not official equivalence",
+ "baseline_commit": "f1d6b7e",
+ "scope": {
+  "ol1_stages": [
+   "OL1-stage1",
+   "OL1-stage2",
+   "OL1-stage3",
+   "OL1-stage4",
+   "OL1-stage5",
+   "OL1-stage6"
+  ],
+  "maps": [
+   "OL2",
+   "OL3",
+   "OL4",
+   "OL5",
+   "OL6",
+   "OL7",
+   "OL8",
+   "OL9",
+   "OL10",
+   "OL11",
+   "OL12"
+  ],
+  "columns": [
+   "detection_components",
+   "score",
+   "official_contact",
+   "factory_entry"
+  ]
+ },
+ "summary": {
+  "ol1_detection_component_runtime_groups": 2,
+  "ol1_detection_component_roots": 63,
+  "ol1_score_components_verified": 63,
+  "ol1_score_components_pending": 0,
+  "maps_with_static_gate_candidates": 11,
+  "maps_with_runtime_gate_transform_evidence": 1,
+  "maps_with_runtime_map_redirect": 3,
+  "maps_with_runtime_detection_components": 0,
+  "maps_with_runtime_score": 0,
+  "maps_with_official_contact": 0,
+  "factory_entrances_verified": 0,
+  "factory_candidate_volumes": 12,
+  "ol1_stage_route_manifests": 6,
+  "ol1_stage3_declared_components": 31,
+  "training_env": "foundation/training_env.py (approximate sandbox)"
+ },
+ "ol1": {
+  "OL1-stage1": {
+   "routes": [
+    "road1",
+    "road3"
+   ],
+   "detection_components": {
+    "status": "PARTIAL",
+    "road1": {
+     "count": 33,
+     "source": "foundation/maps/OL1/detection_gate_candidates.json"
+    },
+    "road3": {
+     "count": 30,
+     "source": "foundation/maps/OL1/detection_gate_candidates.json"
+    },
+    "sha256": "fca3743516708f26bb269a081a143ee2c2f0642bf683607f1b1361e34a20b30d"
+   },
+   "score": {
+    "status": "PARTIAL",
+    "road1": {
+     "end": 33,
+     "increments": 33,
+     "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+     ]
+    },
+    "road3": {
+     "end": 0,
+     "increments": 0,
+     "indices": [],
+     "component_triggers_observed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+     ],
+     "trigger_evidence": "foundation/reports/g2_road3_teleport_seed123_20261110.json",
+     "blocker": "stage1 active scoring queue; stage2 injection required"
+    },
+    "evidence": "foundation/reports/g2_score_route_seed123_20261109.json",
+    "sha256": "7f4939308df939ffe860d9632e79c6d9bda73828976bd1956a24065130667a59"
+   },
+   "official_contact": {
+    "status": "PARTIAL",
+    "road_side_rail": "939 grouped callbacks",
+    "port_inner_wall": "115 callbacks",
+    "hub_wall": "234 callbacks",
+    "evidence": [
+     "g2_contact_road_seed123_20261109.json",
+     "g2_contact_portwall_seed123_20261109.json",
+     "g2_contact_gate1_seed123_20261109_v2.json"
+    ]
+   },
+   "factory_entry": {
+    "status": "NOT_APPLICABLE",
+    "reason": "stage 1-3 have no factory"
+   },
+   "limitations": "single seed, single diagnostic route, GDB all-stop; road3 score still 0/30 after three geometry/stage-state failures",
+   "attempts": "foundation/reports/g2_road3_attempt_20261110.md",
+   "route_manifest": "foundation/maps/OL1/stage1_route_manifest.json",
+   "waypoints": "foundation/maps/OL1/stage1_waypoints.json"
+  },
+  "OL1-stage2": {
+   "routes": [
+    "reverse road3",
+    "route5"
+   ],
+   "route_manifest": "foundation/maps/OL1/stage2_route_manifest.json",
+   "waypoints": "foundation/maps/OL1/stage2_waypoints.json",
+   "detection_components": {
+    "status": "PARTIAL",
+    "road3": {
+     "count": 30,
+     "source": "runtime road3 component list"
+    },
+    "route5": {
+     "count": null
+    }
+   },
+   "score": {
+    "status": "PASS (controlled stage2 injection)",
+    "end": 30,
+    "observed_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "evidence": "foundation/reports/g2_stage2_routexy_gate11_0_corridor_v12_seed123_20261110.json",
+    "limitation": "controlled stage2 injection + GDB teleport; 30/30 road3, not official stage progression"
+   },
+   "official_contact": {
+    "status": "PARTIAL",
+    "kind": "hub wall contact used by stage1 run; route5 contact not observed"
+   },
+   "factory_entry": {
+    "status": "NOT_APPLICABLE",
+    "reason": "stage 1-3 have no factory"
+   }
+  },
+  "OL1-stage3": {
+   "route_manifest": "foundation/maps/OL1/stage3_route_manifest.json",
+   "waypoints": "foundation/maps/OL1/stage3_waypoints.json",
+   "routes": [
+    "reverse route5",
+    "route8"
+   ],
+   "detection_components": {
+    "status": "PARTIAL",
+    "declared_count": 31,
+    "roots": "unusable (nan transforms)",
+    "evidence": "foundation/reports/g2_stage3_return_20261110.json"
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": 0,
+    "observed_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ]
+   },
+   "official_contact": {
+    "status": "UNVERIFIED"
+   },
+   "factory_entry": {
+    "status": "NOT_APPLICABLE",
+    "reason": "stage 1-3 have no factory"
+   }
+  },
+  "OL1-stage4": {
+   "route_manifest": "foundation/maps/OL1/stage4_route_manifest.json",
+   "waypoints": "foundation/maps/OL1/stage4_waypoints.json",
+   "routes": [
+    "reverse route8",
+    "route12"
+   ],
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null,
+    "attempt": "foundation/reports/g2_stage4_return_20261110.md"
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null,
+    "attempt": "foundation/reports/g2_stage4_return_20261110.md"
+   },
+   "official_contact": {
+    "status": "UNVERIFIED"
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "expected": "one factory before hub"
+   }
+  },
+  "OL1-stage5": {
+   "route_manifest": "foundation/maps/OL1/stage5_route_manifest.json",
+   "waypoints": "foundation/maps/OL1/stage5_waypoints.json",
+   "routes": [
+    "reverse route12",
+    "route10"
+   ],
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED"
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "expected": "one before hub and one after hub"
+   }
+  },
+  "OL1-stage6": {
+   "route_manifest": "foundation/maps/OL1/stage6_route_manifest.json",
+   "waypoints": "foundation/maps/OL1/stage6_waypoints.json",
+   "routes": [
+    "reverse route10",
+    "route7"
+   ],
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED"
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "expected": "one before hub and one after hub"
+   }
+  }
+ },
+ "maps": {
+  "OL2": {
+   "runtime_map_redirect": {
+    "status": "OBSERVED",
+    "evidence": "foundation/reports/g2_ol2_attempt_20261110.md",
+    "limitation": "map URL redirect and teleport observed; no SEG/DUMP, no flyable state"
+   },
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "a40412ce48943a32649fbe3fc1d58a28fe1087c5cc63e54b0a8091152f0368f0",
+   "runtime_gate_transform_evidence": {
+    "static_gate_runtime_matches": 12,
+    "evidence": "foundation/maps/OL2/gate_runtime_evidence.md",
+    "limitations": "historical patched default-map startup observation; not detection gates, flight or scoring"
+   },
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL3": {
+   "runtime_map_redirect": {
+    "status": "OBSERVED",
+    "evidence": "foundation/reports/g2_ol3_attempt_20261110.md",
+    "limitation": "map URL redirect and teleport observed; no SEG/DUMP, no flyable state"
+   },
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "a7cd99836dc216864d5f61017ee56006d2bf1984c9518266ec68fcc6171a4c5d",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL4": {
+   "runtime_map_redirect": {
+    "status": "OBSERVED",
+    "evidence": "foundation/reports/g2_ol4_attempt_20261110.md",
+    "limitation": "map URL redirect and teleport observed; no SEG/DUMP"
+   },
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "f9c82ea18d21e3c03d207efe79fcd4c126c9bfc358bec8e787826800aa3b3048",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL5": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "983bc3caa555dcc5411f48b5d7d039a38ddfb095c0479fb1cc69a413cd7ac2f8",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL6": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "6498e82eb3affe95cf70e13334cfa1166fe268553c03c4a7995711cf64a06757",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL7": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "6a1f7c03ce1f8939c1c812975a51a7dc8e10ab12a9c24ba0cc023bac8a06b22c",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL8": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "f16cf0e3da9dcc881724dce276c30fa0035cf816dc03ec75f14b9559623f2cc5",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL9": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "0401e78154b8d059dc382e795ba19b3d15518fce89c1342621af6df62f1b8967",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL10": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "3cd1d601c56743a2ef0677d743e69c374c1b0f6258341f48f3c6e5e4e7f97234",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL11": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "a51f36cea9e4d5eef3b8b25fecf22a3d3cb8162a9b686df492b305485607b021",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  },
+  "OL12": {
+   "runtime_map_redirect": null,
+   "static_gate_candidates": 12,
+   "static_gate_candidates_sha256": "091ef7bf32e0c42af835cff471bc426c6bf4ca7d669e3d731dc0cd3e2d951abd",
+   "runtime_gate_transform_evidence": null,
+   "detection_components": {
+    "status": "UNVERIFIED",
+    "count": null
+   },
+   "score": {
+    "status": "UNVERIFIED",
+    "end": null
+   },
+   "official_contact": {
+    "status": "UNVERIFIED",
+    "kind": null
+   },
+   "factory_entry": {
+    "status": "UNVERIFIED",
+    "evidence": null
+   }
+  }
+ },
+ "known_gaps": [
+  "12 named *_Gate actors are solid route gates, not detection gates",
+  "OL1 road3 score 30/30 under injected stage2 (controlled); stage1 direct remains 0/30 and component triggers 30/30",
+  "OL1 stage2 score is 30/30 under controlled injection; stage3-6 runtime roots/score and route5 components remain unverified",
+  "OL2-OL12 runtime detection roots and scores not yet audited",
+  "factory entrance actor/trigger not located; 12 static candidate volumes exist, no event evidence",
+  "OL1 stage1 direct road3 score is 0/30; stage2 injection reaches 30/30; this is not official stage progression"
+ ],
+ "source_sha256": {
+  "detection_gate_candidates": "fca3743516708f26bb269a081a143ee2c2f0642bf683607f1b1361e34a20b30d",
+  "score_evidence": "7f4939308df939ffe860d9632e79c6d9bda73828976bd1956a24065130667a59"
+ },
+ "generator_sha256": "43a2f7d47ae699fe3248433dd9d13bb56825724f78ce5253767e534575ac3a87"
+}
