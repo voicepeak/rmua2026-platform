@@ -1,0 +1,309 @@
+{
+  "status": "candidate cooked-mesh query audit; not official collision coverage",
+  "map_count": 12,
+  "aggregate": {
+    "building_mesh_instances": 144,
+    "rack_mesh_instances": 5760,
+    "all_fallback_queries_hit": true,
+    "all_building_components_included": true,
+    "all_rack_components_included": true
+  },
+  "maps": {
+    "OL1": {
+      "instance_count_with_cooked_fallbacks": 12609,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "34de063b46459fb28485d78c345fb374c97fb856e0f379d4c7b876f4f8b95920"
+    },
+    "OL2": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "a088b5774c1a7728da88e2f2035c6e76e7291164c64b913e90f5c56b2f9431b7"
+    },
+    "OL3": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "e959c79d89377a702dfcf2bc89bebdd52e9cdcb8e9f375d1573fac2abfe42a79"
+    },
+    "OL4": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "1a2eb3a802f0ab188038a78992529af8d4da71cc039af31ab62af8a447bddf72"
+    },
+    "OL5": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "7c287fcc8558beaa0fc8b9da6605a74090409d486287460fb9c98403ec3df0de"
+    },
+    "OL6": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "56d469d454004d727dc57ddecc6085a50621f3dff808f1c4803218b9d382dd61"
+    },
+    "OL7": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "f4dff76f8ca6123fc8c20c19ca789e6b13747de8d8d69c3607a5db62187db9cf"
+    },
+    "OL8": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "829079a2d0fa0aeaa479dd9295dd5aa1f26be005569d1035edae231b1d89ce3d"
+    },
+    "OL9": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "273889b205aa37360e2addde03648679ae8f45a177c0667c1fa2f0fd9142fc82"
+    },
+    "OL10": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "17103ff5305aeb802132101de63e90299789bd86e2393725aae1538d0f008e9c"
+    },
+    "OL11": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "ff4692c5dab6c212ddf8b240b13028e588474d57d487f7e44c53ea85bca98915"
+    },
+    "OL12": {
+      "instance_count_with_cooked_fallbacks": 12597,
+      "included_building_mesh": 12,
+      "included_rack_mesh": 480,
+      "excluded_building_components": 0,
+      "excluded_rack_components": 0,
+      "building_query_hits": 12,
+      "rack_query_hits": 480,
+      "all_fallback_queries_hit": true,
+      "fallback_meshes": [
+        "unverified_building_mesh:AirSimROS_SM_plane",
+        "unverified_rack_mesh:Rack_Paper",
+        "unverified_rack_mesh:Rack_Pointer"
+      ],
+      "fallback_source_sha256": {
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+        "foundation\\asset_analysis\\mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+        "foundation\\asset_analysis\\rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e"
+      },
+      "source_sha256_digest": "870f009466f2e1142e8a41ac9ba5d8d17cffbf1d629b387f3b94aa4a5ad4c688"
+    }
+  },
+  "analysis_sha256": "69225bd18a67b16d76d27be03d97d89770753875dd4c7a23f469c9ff9f51f1af",
+  "limitations": [
+    "only decoded cooked triangle prefixes are used; material and mesh-tree data are not interpreted",
+    "collision trace flags are omitted in the source metadata and remain unknown",
+    "component transforms, construction scripts and runtime collision channels are unverified",
+    "query hits are self-consistency checks against the same extracted geometry, not official contacts",
+    "a miss still does not prove free space"
+  ]
+}

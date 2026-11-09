@@ -1,0 +1,3358 @@
+{
+  "status": "candidate geometry self-consistency probe; not official clearance or contact",
+  "candidate_map_instance_count": 12609,
+  "candidate_map_source_sha256": {
+    "OL1_road_placements_candidate.json": "15167a2a1fdcc68177474fcff2c2565839d373cd4585eb468df3a28e3798e82c",
+    "OL1_building_placements_candidate.json": "772f937b51da18fa068e17ba979ef2b1342711b899f69fefed9390547ae03a28",
+    "mesh_collision\\Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+    "mesh_collision\\Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+    "mesh_collision\\Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+    "mesh_collision\\Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+    "mesh_collision\\Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+    "OL1_simple_convex_candidates.json": "9d960b646c635f95543817ec11f0421ae34c50786fe4ba34dcddae9ca7674e1e",
+    "mesh_collision\\AirSimROS_SM_plane.npz": "cb0b85d87e08f4291aecdfc61cedac02fece7f47e5391ffb446fa804a0579c36",
+    "mesh_collision\\AirSimROS_SM_plane.json": "e1dfc6a21e96f56d4bd4a87b8bdbdb7dd2dcf4540b57f7f91f7ea8ac9deba794",
+    "OL1_sprite_placements_candidate.json": "92c05a3ab3b515bb41d04134610fe5803a50b8a9965c03965cba17304ffaac1b",
+    "sprite_collision_candidates.json": "eb657d0f8ec0e67511ad266163aae4b803e9519b35ec7b0e15dfcdf30d050cdc",
+    "OL1_rack_placements_candidate.json": "1e6e487160bd2e9a2b20dc33e19ce11610bd4ca0fc667daddf03b9bd74faa9bb",
+    "rack_simple_candidates.json": "7698a3d6a059fbcbb6f45a03acd80273e47e56b1818e5bc9d9abb2fc60f2eea9",
+    "rack_collision\\Rack_Paper.npz": "1af8b99128a1c044b0663d1b068d1a621569cfeea0e60744d0bfab7b8b255850",
+    "rack_collision\\Rack_Paper.json": "6bd4780a3f19443182ed91e1d3653a7d3896b0d852ed681ee410b0d69893db0a",
+    "rack_collision\\Rack_Pointer.npz": "33305801c98316f04d8d7307594bb721c83599c073df45a3d733dca47d54f94e",
+    "rack_collision\\Rack_Pointer.json": "f9dee9e725c5bb0f6e07cb06c9b42bc3db66b62201c216460826120fa2a780ab",
+    "OL1_road_cubes_candidate.json": "90bc00b7f1bb13b8be1aa58f6c4af1c2d86db7ea8c8c7b9cd695e06c7368c315"
+  },
+  "gate_count": 12,
+  "gate_axis": 1,
+  "probe": {
+    "gate_center_plane_crossings": [
+      {
+        "gate": "1_1_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "1_2_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "2_1_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "2_2_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "3_1_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "3_2_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "4_1_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "4_2_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "5_1_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "5_2_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "6_1_Gate",
+        "matched": true,
+        "hit_count": 1
+      },
+      {
+        "gate": "6_2_Gate",
+        "matched": true,
+        "hit_count": 1
+      }
+    ],
+    "gate_matched": 12,
+    "road_surface_self_hits": [
+      {
+        "actor": "1_1_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_1_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.5000000000000093,
+            "point_ue_cm": [
+              62083.396885048634,
+              -9528.754073730242,
+              13555.396218880884
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_2_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_2_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.49999999999998324,
+            "point_ue_cm": [
+              62744.69970824112,
+              -9224.751640966564,
+              16467.11281959764
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_1_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_1_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.4999999999999967,
+            "point_ue_cm": [
+              64434.62372984291,
+              -3817.8281099616283,
+              13594.014987275752
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_2_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_2_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.4999999999999989,
+            "point_ue_cm": [
+              64509.60668232271,
+              -3844.628539031241,
+              16411.156195958454
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_1_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_1_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.5,
+            "point_ue_cm": [
+              70448.18920334123,
+              -3507.0041909314627,
+              13479.245030748983
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_2_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_2_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.5000000000000141,
+            "point_ue_cm": [
+              70459.14478996162,
+              -3528.412524952157,
+              16504.445501722348
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_1_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_1_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.49999999999999917,
+            "point_ue_cm": [
+              74187.26299021958,
+              -7574.074771981443,
+              13501.462213636309
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_2_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_2_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.49999999999998973,
+            "point_ue_cm": [
+              74294.93735302165,
+              -7446.264595330939,
+              16413.542300624642
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_1_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_1_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.4999999999999884,
+            "point_ue_cm": [
+              72127.00549131239,
+              -13270.828142069144,
+              13612.503124655517
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_2_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_2_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.5000000000000242,
+            "point_ue_cm": [
+              72014.15259240854,
+              -13134.883764304539,
+              16457.601527070445
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_1_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_1_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.5000000000000027,
+            "point_ue_cm": [
+              66043.16551131941,
+              -14047.31790144791,
+              13681.115673778588
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_2_BP_Segment_Half",
+        "component": null,
+        "mesh": "Segment_Half",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_2_BP_Segment_Half",
+            "component": null,
+            "mesh": "Segment_Half",
+            "fraction": 0.5000000000000002,
+            "point_ue_cm": [
+              66069.15376164955,
+              -14027.08221901212,
+              16546.2643022291
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot1195_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot1195_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999095,
+            "point_ue_cm": [
+              46818.493012199375,
+              3545.1645686774577,
+              9203.049275651048
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot1204_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot1204_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000168,
+            "point_ue_cm": [
+              62840.13256217968,
+              -3018.017847983068,
+              16698.41151002467
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot231_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot231_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999992,
+            "point_ue_cm": [
+              40821.122016808185,
+              -12436.97887317544,
+              11321.936305470763
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot240_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot240_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000208,
+            "point_ue_cm": [
+              58630.12755652032,
+              -10657.858307004555,
+              16626.097429003945
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot264_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot264_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999695,
+            "point_ue_cm": [
+              41196.90040375179,
+              -14923.48197918097,
+              8017.766643281758
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot273_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot273_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000041,
+            "point_ue_cm": [
+              58839.49240107675,
+              -10871.120699815212,
+              13550.840381613654
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot2999_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot2999_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999914,
+            "point_ue_cm": [
+              68894.32708883822,
+              13142.743933636559,
+              13266.94476602379
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot3006_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot3006_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000038,
+            "point_ue_cm": [
+              70327.3280448967,
+              -1811.4137869080525,
+              13783.774532904454
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot3920_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot3920_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000147,
+            "point_ue_cm": [
+              90896.69238116896,
+              -2676.9410796314846,
+              10604.907629267045
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot3928_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot3928_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000027,
+            "point_ue_cm": [
+              75876.49418418291,
+              -6779.319556113067,
+              16693.890241579793
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot4240_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot4240_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999999,
+            "point_ue_cm": [
+              87610.10108244074,
+              -25386.473828546343,
+              8894.781636903226
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot4248_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot4248_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999484,
+            "point_ue_cm": [
+              75266.42825726747,
+              -15412.479585601088,
+              13717.93492723416
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot5647_ArrowIn",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot5647_ArrowIn",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999684,
+            "point_ue_cm": [
+              63911.10885047569,
+              -37112.07890573284,
+              8840.150268877615
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot5656_ArrowOut",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot5656_ArrowOut",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000093,
+            "point_ue_cm": [
+              65662.00911371384,
+              -19861.75109929939,
+              15872.091924523516
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1035",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1035",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000033,
+            "point_ue_cm": [
+              60737.05210742413,
+              -3786.3906908665613,
+              14869.572262985193
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1036",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1036",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.500000000000001,
+            "point_ue_cm": [
+              59932.07888922515,
+              -5126.868718328663,
+              13251.512206821404
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1037",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1037",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999784,
+            "point_ue_cm": [
+              58560.03647591848,
+              -5376.355292568256,
+              12058.187133288784
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1038",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1038",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999938,
+            "point_ue_cm": [
+              57290.96427552979,
+              -4493.589683652467,
+              11419.83634528513
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1039",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1039",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000027,
+            "point_ue_cm": [
+              55822.17270521843,
+              -3154.0383960066633,
+              10980.811818108057
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1095",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1095",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000028,
+            "point_ue_cm": [
+              64184.16667329218,
+              10960.11960938105,
+              10089.51588631403
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1096",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1096",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999406,
+            "point_ue_cm": [
+              64635.4532170984,
+              12623.407044313573,
+              10425.73796894633
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1097",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1098",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.36053409016115556,
+            "point_ue_cm": [
+              65801.27087309984,
+              13508.283918831929,
+              11206.757415494589
+            ]
+          },
+          {
+            "actor": "BP_Segment_Rot_C_1097",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999935,
+            "point_ue_cm": [
+              65795.2486373963,
+              13503.531478891304,
+              11179.939947455476
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1098",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1098",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000091,
+            "point_ue_cm": [
+              67366.700203948,
+              14095.703343769632,
+              12106.516704678103
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1099",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1099",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000125,
+            "point_ue_cm": [
+              68830.68723217955,
+              13598.977197076272,
+              12844.00226437753
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1119",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1120",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.3910751284951247,
+            "point_ue_cm": [
+              63991.73910518845,
+              10920.062358610227,
+              13261.158953801834
+            ]
+          },
+          {
+            "actor": "BP_Segment_Rot_C_1119",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999994,
+            "point_ue_cm": [
+              63994.32402819783,
+              10912.946333686983,
+              13240.731876976663
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1120",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1121",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4013378300436875,
+            "point_ue_cm": [
+              64125.58169047826,
+              12733.160029447847,
+              13707.126280206758
+            ]
+          },
+          {
+            "actor": "BP_Segment_Rot_C_1120",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999953,
+            "point_ue_cm": [
+              64125.916774002246,
+              12737.084224826482,
+              13687.790888799245
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1121",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1121",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000028,
+            "point_ue_cm": [
+              64857.667807167316,
+              14506.141919040236,
+              13853.209824673171
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1162",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1162",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000039,
+            "point_ue_cm": [
+              65426.40350777265,
+              1087.4618081732383,
+              10661.03420503762
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1163",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1163",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999867,
+            "point_ue_cm": [
+              66450.94468091674,
+              -587.0451597495672,
+              11658.224138927844
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1164",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1164",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000043,
+            "point_ue_cm": [
+              68570.49316070379,
+              -737.0425401696704,
+              12649.767201381605
+            ]
+          },
+          {
+            "actor": "BP_Segment_Rot_C_1165",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.6499477949570266,
+            "point_ue_cm": [
+              68565.80206603908,
+              -737.6347056399552,
+              12620.152734994354
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1165",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1165",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000165,
+            "point_ue_cm": [
+              70192.58505212735,
+              -1226.8287333655471,
+              13477.740153808942
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1174",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1174",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999974,
+            "point_ue_cm": [
+              26427.219194562393,
+              37480.429837632204,
+              770.2461066308894
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1175",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1175",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999994,
+            "point_ue_cm": [
+              26895.16026541356,
+              35391.29214509972,
+              963.2028993125452
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1176",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1176",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000028,
+            "point_ue_cm": [
+              27360.02789683649,
+              33300.37702594647,
+              1151.1037326731318
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1177",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1177",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000017,
+            "point_ue_cm": [
+              27826.598571998402,
+              31210.05663213723,
+              1341.688742308856
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1178",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1178",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999998,
+            "point_ue_cm": [
+              28299.55938790178,
+              29122.048924787985,
+              1542.8025329566447
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1179",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1179",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000007,
+            "point_ue_cm": [
+              28783.96642240392,
+              27038.41922797268,
+              1762.4599065393502
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1180",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1180",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000016,
+            "point_ue_cm": [
+              29284.585470503003,
+              24962.305502182742,
+              2008.9266579593202
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1181",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1181",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000022,
+            "point_ue_cm": [
+              29799.464052599655,
+              22895.239341876306,
+              2289.266156011388
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1182",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1182",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000022,
+            "point_ue_cm": [
+              30268.059221598964,
+              20843.70000160955,
+              2590.224772470465
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1183",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1183",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000008,
+            "point_ue_cm": [
+              30708.756933943805,
+              18769.333356346393,
+              2909.520225300068
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1184",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1184",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999867,
+            "point_ue_cm": [
+              31150.133872244038,
+              16690.858868345138,
+              3246.4262820494696
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1185",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1185",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999985,
+            "point_ue_cm": [
+              31626.041204953708,
+              14615.387544403216,
+              3604.635569954681
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1186",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1186",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.49999999999999933,
+            "point_ue_cm": [
+              32178.166327856085,
+              12552.936754787153,
+              3989.9843061007537
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1187",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1187",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000001,
+            "point_ue_cm": [
+              32868.29153405468,
+              10531.494873696198,
+              4410.54067565942
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1188",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1188",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999968,
+            "point_ue_cm": [
+              33818.43178050835,
+              8584.823577217348,
+              4885.426126887843
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1189",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1189",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000151,
+            "point_ue_cm": [
+              35150.603423490706,
+              6857.95873748385,
+              5430.510298709044
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1190",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1190",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.500000000000005,
+            "point_ue_cm": [
+              36738.80542517882,
+              5428.363257611429,
+              6048.7964057520385
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1191",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1191",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999988,
+            "point_ue_cm": [
+              38555.49832292967,
+              4311.981037214285,
+              6702.527875314598
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1192",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1192",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999953,
+            "point_ue_cm": [
+              40578.197674143594,
+              3577.0216878379483,
+              7352.104426532011
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1193",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1193",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.5000000000000059,
+            "point_ue_cm": [
+              42800.91348272704,
+              3431.325324418564,
+              7920.3248614688855
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Segment_Rot_C_1194",
+        "component": null,
+        "mesh": "Segment",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_1194",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.4999999999999993,
+            "point_ue_cm": [
+              44904.610441553195,
+              3605.4660668436372,
+              8481.865915097422
+            ]
+          }
+        ]
+      }
+    ],
+    "road_matched": 64,
+    "wall_surface_self_hits": [
+      {
+        "actor": "1_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000044,
+            "point_ue_cm": [
+              51537.224194550596,
+              -15032.671819488829,
+              9689.773614883423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000044,
+            "point_ue_cm": [
+              51537.192944550596,
+              -15032.585881988829,
+              12093.398614883423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999875,
+            "point_ue_cm": [
+              55910.30146850588,
+              -1334.7820932230657,
+              7091.241876602173
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999875,
+            "point_ue_cm": [
+              55910.34834350588,
+              -1334.7078744730657,
+              9494.859552383423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999647,
+            "point_ue_cm": [
+              67568.04096753546,
+              4506.046160426261,
+              8795.595880508423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999647,
+            "point_ue_cm": [
+              67568.12299878546,
+              4506.074480738761,
+              11199.211114883423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000006,
+            "point_ue_cm": [
+              81751.7823337269,
+              -1360.144431042016,
+              9522.238458633423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000006,
+            "point_ue_cm": [
+              81751.8213962269,
+              -1360.222556042016,
+              11925.859552383423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999767,
+            "point_ue_cm": [
+              83793.05724638193,
+              -23261.791219740793,
+              7486.391290664673
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999767,
+            "point_ue_cm": [
+              83793.11974638193,
+              -23261.722860365793,
+              9890.009943008423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000182,
+            "point_ue_cm": [
+              57381.512029491445,
+              -25827.360398622783,
+              8390.794610977173
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000182,
+            "point_ue_cm": [
+              57381.422185741445,
+              -25827.338914247783,
+              10794.420099258423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_Junction_7",
+        "component": "Building_Junction_2_Building_Junction_2",
+        "mesh": "Building_Junction_2_Building_Junction_2",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_Junction_7",
+            "component": "Building_Junction_2_Building_Junction_2",
+            "mesh": "Building_Junction_2_Building_Junction_2",
+            "fraction": 0.5,
+            "point_ue_cm": [
+              74505.94634649016,
+              -10593.776144155103,
+              12782.002976894379
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000002,
+            "point_ue_cm": [
+              226.9723861811231,
+              -531.0276696185264,
+              -71.21148464056506
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.4999999999999917,
+            "point_ue_cm": [
+              577.7812476855145,
+              -29190.459971486842,
+              327.3637106719339
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.499999999999998,
+            "point_ue_cm": [
+              14542.953143092433,
+              28120.634499911976,
+              768.57171801726
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.500000000000017,
+            "point_ue_cm": [
+              25985.02362086202,
+              39374.73269014073,
+              -41.31498654683219
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000185,
+            "point_ue_cm": [
+              54723.63393154591,
+              51279.34626907171,
+              3000.074661890668
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.4999999999999859,
+            "point_ue_cm": [
+              67144.27003580284,
+              54151.71838434945,
+              4730.490677515664
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000485,
+            "point_ue_cm": [
+              134711.35203753065,
+              -9808.524308910883,
+              705.5648943545241
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.49999999999993894,
+            "point_ue_cm": [
+              132375.7410406317,
+              15813.08681784547,
+              3492.238724390658
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_4222",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.06729497698310126,
+            "point_ue_cm": [
+              117364.40910398611,
+              -41796.94561131118,
+              7653.2281392397745
+            ]
+          },
+          {
+            "actor": "5_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.49999999999998057,
+            "point_ue_cm": [
+              117398.71880869172,
+              -41855.01229040138,
+              7707.454059427559
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.4999999999999876,
+            "point_ue_cm": [
+              103758.11230617546,
+              -48071.05479589258,
+              5705.4853094275595
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000242,
+            "point_ue_cm": [
+              78435.6789695348,
+              -66970.08538603153,
+              253.49310520318795
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000219,
+            "point_ue_cm": [
+              71899.11851626479,
+              -72689.7694038991,
+              1447.7108786406877
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_17",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.4999999999999966,
+            "point_ue_cm": [
+              10784.126599511756,
+              -27994.473062087036,
+              -992.3676350911463
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_17",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000014,
+            "point_ue_cm": [
+              13547.203588015951,
+              -27233.561426671407,
+              -992.3676350911463
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_17",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000013,
+            "point_ue_cm": [
+              16283.48085275146,
+              -26480.03004947022,
+              -992.3676350911463
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_17",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999998773,
+            "point_ue_cm": [
+              19036.549077232994,
+              -25721.874683616636,
+              -992.3676350911463
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_17",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.4999999999999924,
+            "point_ue_cm": [
+              21799.42805172947,
+              -24961.071594317942,
+              -992.4197184244796
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_2",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_2",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999567,
+            "point_ue_cm": [
+              8307.844002164516,
+              1843.9319247151034,
+              -1058.5570882161462
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_2",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_2",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000003,
+            "point_ue_cm": [
+              5443.117600184464,
+              1760.723733347145,
+              -1058.5570882161462
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_2",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_2",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.499999999999998,
+            "point_ue_cm": [
+              2606.176843181139,
+              1678.322597502153,
+              -1058.5570882161462
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_2",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_2",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.4999999999999994,
+            "point_ue_cm": [
+              -248.1725875215279,
+              1595.4158132812343,
+              -1058.5570882161462
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_2",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_2",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.5000000000000008,
+            "point_ue_cm": [
+              -3112.680867554942,
+              1512.2660566901584,
+              -1058.6091715494797
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_21",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_21",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999933,
+            "point_ue_cm": [
+              21099.255082611886,
+              -23919.063105125926,
+              2384.880411783854
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_21",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_21",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000122,
+            "point_ue_cm": [
+              23111.692499300378,
+              -21878.554196734578,
+              2384.880411783854
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_21",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_21",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999998657,
+            "point_ue_cm": [
+              25104.610819310263,
+              -19857.836656922515,
+              2384.880411783854
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_21",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_21",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999933,
+            "point_ue_cm": [
+              27109.758532780997,
+              -17824.719135827,
+              2384.880411783854
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_21",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_21",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.4999999999999955,
+            "point_ue_cm": [
+              29122.07873752117,
+              -15784.403238227904,
+              2384.828328450521
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_22",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_22",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.4999999999999966,
+            "point_ue_cm": [
+              10788.982068261756,
+              -27993.100015212036,
+              2357.3218180338536
+            ]
+          },
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5252287708597375,
+            "point_ue_cm": [
+              10784.117404781096,
+              -27994.43967352059,
+              2357.3218180338536
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_22",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 3,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.44121715892126784,
+            "point_ue_cm": [
+              13563.393685070869,
+              -27229.066986293365,
+              2357.3218180338536
+            ]
+          },
+          {
+            "actor": "BP_Building_1_22",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000014,
+            "point_ue_cm": [
+              13552.059056765951,
+              -27232.188379796407,
+              2357.3218180338536
+            ]
+          },
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5252287708597425,
+            "point_ue_cm": [
+              13547.194393285292,
+              -27233.52803810496,
+              2357.3218180338536
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_22",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 3,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.30223034251502273,
+            "point_ue_cm": [
+              16326.470673575066,
+              -26468.155350877743,
+              2357.321818033854
+            ]
+          },
+          {
+            "actor": "BP_Building_1_22",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.499999999999997,
+            "point_ue_cm": [
+              16288.33632150146,
+              -26478.65700259522,
+              2357.3218180338536
+            ]
+          },
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.525228770859738,
+            "point_ue_cm": [
+              16283.4716580208,
+              -26479.996660903773,
+              2357.3218180338536
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_22",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 3,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.38931042063999777,
+            "point_ue_cm": [
+              19062.747938310575,
+              -25714.623973676556,
+              2357.3218180338536
+            ]
+          },
+          {
+            "actor": "BP_Building_1_22",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999998773,
+            "point_ue_cm": [
+              19041.404545982994,
+              -25720.501636741636,
+              2357.3218180338536
+            ]
+          },
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5252287708597276,
+            "point_ue_cm": [
+              19036.539882502333,
+              -25721.841295050184,
+              2357.3218180338536
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_22",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 3,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.4401185261087689,
+            "point_ue_cm": [
+              21815.829989422655,
+              -24956.51881607701,
+              2357.26973470052
+            ]
+          },
+          {
+            "actor": "BP_Building_1_22",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.4999999999999924,
+            "point_ue_cm": [
+              21804.28352047947,
+              -24959.698547442942,
+              2357.26973470052
+            ]
+          },
+          {
+            "actor": "BP_Building_1_17",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.525228770859733,
+            "point_ue_cm": [
+              21799.41885699881,
+              -24961.03820575149,
+              2357.26973470052
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_24",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_24",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              4518.041163808005,
+              -18983.022962353236,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_24",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_24",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              4177.012225953561,
+              -16137.450924105362,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_24",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_24",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999767,
+            "point_ue_cm": [
+              3839.291006765537,
+              -13319.478748223331,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_24",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_24",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999845,
+            "point_ue_cm": [
+              3499.4973867028457,
+              -10484.214297914123,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_24",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_24",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.49999999999999456,
+            "point_ue_cm": [
+              3158.546302267819,
+              -7638.854228182399,
+              -1492.7556559244797
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_25",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_25",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              7477.912257558005,
+              -18628.298352978236,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_25",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_25",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              7136.883319703561,
+              -15782.726314730362,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_25",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_25",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999856,
+            "point_ue_cm": [
+              6799.162100515537,
+              -12964.754138848331,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_25",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_25",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999856,
+            "point_ue_cm": [
+              6459.368480452846,
+              -10129.489688539123,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_25",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_25",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.4999999999999948,
+            "point_ue_cm": [
+              6118.417396017819,
+              -7284.129618807399,
+              -1492.7556559244797
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_29",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_29",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              -4181.966648691995,
+              -20025.677259228236,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_29",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_29",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              -4522.995586546439,
+              -17180.10522098036,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_29",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_29",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999856,
+            "point_ue_cm": [
+              -4860.716805734463,
+              -14362.133045098331,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_29",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_29",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000074,
+            "point_ue_cm": [
+              -5200.510425797154,
+              -11526.868594789123,
+              -1492.7035725911464
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_29",
+        "component": "Building_1_Cap",
+        "mesh": "unverified_simple:Building_1_Cap",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_29",
+            "component": "Building_1_Cap",
+            "mesh": "unverified_simple:Building_1_Cap",
+            "fraction": 0.4999999999999994,
+            "point_ue_cm": [
+              -5541.461510232181,
+              -8681.5085250574,
+              -1492.7556559244797
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_3",
+        "component": "Building_1_Block",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_3",
+            "component": "Building_1_Block",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999606,
+            "point_ue_cm": [
+              31095.33719865439,
+              -4505.2739884658795,
+              148.60306803385416
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_3",
+        "component": "Building_1_Block1",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_3",
+            "component": "Building_1_Block1",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.49999999999999734,
+            "point_ue_cm": [
+              28720.203195807582,
+              -2901.428787134656,
+              148.60306803385416
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_3",
+        "component": "Building_1_Block2",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_3",
+            "component": "Building_1_Block2",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000118,
+            "point_ue_cm": [
+              26368.106167845926,
+              -1313.1396519363168,
+              148.60306803385416
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_1_3",
+        "component": "Building_1_Block3",
+        "mesh": "unverified_simple:Building_1_Block",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_1_3",
+            "component": "Building_1_Block3",
+            "mesh": "unverified_simple:Building_1_Block",
+            "fraction": 0.5000000000000121,
+            "point_ue_cm": [
+              24001.575673281946,
+              284.8959001466991,
+              148.60306803385416
+            ]
+          }
+        ]
+      }
+    ],
+    "wall_matched": 64,
+    "complex_as_simple_surfaces": [
+      {
+        "actor": "1_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000044,
+            "point_ue_cm": [
+              51537.224194550596,
+              -15032.671819488829,
+              9689.773614883423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000044,
+            "point_ue_cm": [
+              51537.192944550596,
+              -15032.585881988829,
+              12093.398614883423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999875,
+            "point_ue_cm": [
+              55910.30146850588,
+              -1334.7820932230657,
+              7091.241876602173
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999875,
+            "point_ue_cm": [
+              55910.34834350588,
+              -1334.7078744730657,
+              9494.859552383423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999647,
+            "point_ue_cm": [
+              67568.04096753546,
+              4506.046160426261,
+              8795.595880508423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999647,
+            "point_ue_cm": [
+              67568.12299878546,
+              4506.074480738761,
+              11199.211114883423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000006,
+            "point_ue_cm": [
+              81751.7823337269,
+              -1360.144431042016,
+              9522.238458633423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000006,
+            "point_ue_cm": [
+              81751.8213962269,
+              -1360.222556042016,
+              11925.859552383423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999767,
+            "point_ue_cm": [
+              83793.05724638193,
+              -23261.791219740793,
+              7486.391290664673
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.4999999999999767,
+            "point_ue_cm": [
+              83793.11974638193,
+              -23261.722860365793,
+              9890.009943008423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_1_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_1_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000182,
+            "point_ue_cm": [
+              57381.512029491445,
+              -25827.360398622783,
+              8390.794610977173
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_2_Factory",
+        "component": "Building_Factory_Factory",
+        "mesh": "Building_Factory_Factory",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_2_Factory",
+            "component": "Building_Factory_Factory",
+            "mesh": "Building_Factory_Factory",
+            "fraction": 0.5000000000000182,
+            "point_ue_cm": [
+              57381.422185741445,
+              -25827.338914247783,
+              10794.420099258423
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "BP_Building_Junction_7",
+        "component": "Building_Junction_2_Building_Junction_2",
+        "mesh": "Building_Junction_2_Building_Junction_2",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "BP_Building_Junction_7",
+            "component": "Building_Junction_2_Building_Junction_2",
+            "mesh": "Building_Junction_2_Building_Junction_2",
+            "fraction": 0.5,
+            "point_ue_cm": [
+              74505.94634649016,
+              -10593.776144155103,
+              12782.002976894379
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000002,
+            "point_ue_cm": [
+              226.9723861811231,
+              -531.0276696185264,
+              -71.21148464056506
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "1_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "1_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.4999999999999917,
+            "point_ue_cm": [
+              577.7812476855145,
+              -29190.459971486842,
+              327.3637106719339
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.499999999999998,
+            "point_ue_cm": [
+              14542.953143092433,
+              28120.634499911976,
+              768.57171801726
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "2_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "2_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.500000000000017,
+            "point_ue_cm": [
+              25985.02362086202,
+              39374.73269014073,
+              -41.31498654683219
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000185,
+            "point_ue_cm": [
+              54723.63393154591,
+              51279.34626907171,
+              3000.074661890668
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "3_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "3_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.4999999999999859,
+            "point_ue_cm": [
+              67144.27003580284,
+              54151.71838434945,
+              4730.490677515664
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000485,
+            "point_ue_cm": [
+              134711.35203753065,
+              -9808.524308910883,
+              705.5648943545241
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "4_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "4_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.49999999999993894,
+            "point_ue_cm": [
+              132375.7410406317,
+              15813.08681784547,
+              3492.238724390658
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 2,
+        "first_hits": [
+          {
+            "actor": "BP_Segment_Rot_C_4222",
+            "component": null,
+            "mesh": "Segment",
+            "fraction": 0.06729497698310126,
+            "point_ue_cm": [
+              117364.40910398611,
+              -41796.94561131118,
+              7653.2281392397745
+            ]
+          },
+          {
+            "actor": "5_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.49999999999998057,
+            "point_ue_cm": [
+              117398.71880869172,
+              -41855.01229040138,
+              7707.454059427559
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "5_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "5_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.4999999999999876,
+            "point_ue_cm": [
+              103758.11230617546,
+              -48071.05479589258,
+              5705.4853094275595
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_1_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_1_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000242,
+            "point_ue_cm": [
+              78435.6789695348,
+              -66970.08538603153,
+              253.49310520318795
+            ]
+          }
+        ]
+      },
+      {
+        "actor": "6_2_Port",
+        "component": "Building_Port",
+        "mesh": "Building_Port",
+        "matched": true,
+        "hit_count": 1,
+        "first_hits": [
+          {
+            "actor": "6_2_Port",
+            "component": "Building_Port",
+            "mesh": "Building_Port",
+            "fraction": 0.5000000000000219,
+            "point_ue_cm": [
+              71899.11851626479,
+              -72689.7694038991,
+              1447.7108786406877
+            ]
+          }
+        ]
+      }
+    ],
+    "complex_as_simple_matched": 25
+  },
+  "official_contact_evidence": {
+    "contact_surface_seed123.json": {
+      "source_sha256": "d57730356f8e22d53c178b05369c1156f697ccc33c7c83b8fc536a2a16466ed7",
+      "event_count": 4,
+      "max_candidate_surface_distance_cm": 1.4901161193847656e-08,
+      "actors": [
+        "1_1_Port"
+      ],
+      "components": [
+        "R_logo_Sprite1"
+      ]
+    },
+    "contact_surface_seed456.json": {
+      "source_sha256": "797597f6474437a90e16e0ebaec81973009119d208d9b29519f77301a37cf146",
+      "event_count": 4,
+      "max_candidate_surface_distance_cm": 1.4901161193847656e-08,
+      "actors": [
+        "1_1_Port"
+      ],
+      "components": [
+        "R_logo_Sprite1"
+      ]
+    }
+  },
+  "analysis_sha256": "2abff94a5846d44589e6f9410bf9895fdaf1bdbda1d74c2ff13663ecab7a8174",
+  "limitations": [
+    "gate events use a candidate center plane and explicit local axis, not an official aperture or trigger",
+    "road and wall rays are self-hits against the same extracted triangles",
+    "official contact evidence covers one startup sprite component and uses all-stop GDB",
+    "factory entrance and representative wall clearance are not covered by official contacts",
+    "candidate transforms, collision channels and omitted categories remain unverified"
+  ]
+}
