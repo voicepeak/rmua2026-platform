@@ -1,0 +1,31 @@
+{
+  "mode": "meter_report_service_probe",
+  "seed": 123,
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "service": "/airsim_node/meter_report",
+  "service_type": "airsim_ros/MeterReport",
+  "service_md5_reference": "40e1aa17dd96ff6a8c88396581d6a491",
+  "service_definition_reference": "int64 index\nint64 value\n---\nbool success",
+  "calls": [
+    {"index": 0, "value": 0, "success": true},
+    {"index": 1, "value": 0, "success": true},
+    {"index": 0, "value": 25, "success": true},
+    {"index": 1, "value": 25, "success": true}
+  ],
+  "client_source": "generated airsim_ros Python package from /home/tianbot/RUMA-by-helinjun/main/.runtime_ws/devel/lib/python3/dist-packages; copied into the disposable container",
+  "observed_log_lines": {
+    "OnMeterReport": 0,
+    "FactoryA": 0,
+    "FactoryB": 0,
+    "EnterPort": 0,
+    "LeftPort": 0
+  },
+  "capture_state": "service calls accepted; no game-thread report log appeared before container stop",
+  "limitations": [
+    "Service success=true is not a factory-entry or report-value validation",
+    "The calls were made at the ground start without a race-state trigger",
+    "No OnMeterReport game log was observed; event queue or state gating is unresolved",
+    "Do not use this probe as a competition report or factory-entry acceptance"
+  ]
+}
