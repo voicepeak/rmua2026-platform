@@ -1,6 +1,8 @@
 # PWM 基础模拟器 V2：执行与验收状态
 
-> 最新状态：见文末 2026-11-09 05:20 官方隔离容器运行记录及 [总体验收](foundation_acceptance.md)。
+> 最新状态：见文末 2026-11-09 22:30 G2 stage-1 road1 完整 score 序列及 [总体验收](foundation_acceptance.md)。
+>
+> 2026-11-09 目标更新：完成完整 V2；优先推进未完成关口；每个阻塞点允许少量尝试，若没有可收敛结果或策略则停止并明确报告，不用近似证据填充。
 
 执行依据：[V2.0 方案全文](implementation_plan_v2_zh.md)。本页是迁移时的初始状态，不将以往候选数据自动升级为通过证据；每项状态应随证据更新。
 
@@ -204,9 +206,9 @@ OL2–OL12 各自新增 108 个 sprite 碰撞候选及来源核对；全部可�
 
 - **总体验收**：[foundation_acceptance.md](foundation_acceptance.md) 已更新为 2026-11-09 证据矩阵：G0 PARTIAL；G1 PARTIAL，参数辨识 BLOCKED；G2 PARTIAL；G3 PARTIAL/UNVERIFIED；G4 PARTIAL；总体 PARTIAL。无模块 PASS。
 - **交付**：PWM 单/批量接口、OL1 与 OL2–OL12 候选地图及缺口清单、风/力场分层证据、随机障碍、批量基准、`run_smoke_test.py`。
-- **可复核**：`python -m pytest -q foundation\tests` 156 项通过；`python run_smoke_test.py` 通过（合成集成）。
-- **未完成/禁止宣称**：G1 的物理时钟、电机状态、独立初速度、接触/风仍未辨识；G2 仅有单一起点 sprite 官方接触；G3 自然风区和 F01/F02 未验证；G4 无同机官方吞吐对照。不得宣称官方等价、完整碰撞覆盖或官方吞吐比。
-- **剩余独立工作**：需要新的官方测量或明确允许启动隔离官方容器；本地参数网格、保留集读取和更多自洽审计不能替代这些证据。
+- **可复核**：`python -m pytest -q foundation\tests` 159 项通过；`python run_smoke_test.py` 通过（合成集成）。
+- **未完成/禁止宣称**：G1 的物理时钟、电机状态、独立初速度、接触/风仍未辨识；G2 已取得道路侧栏、港口内墙和枢纽墙的官方接触，但检测门洞和工厂入口仍未验证；G3 自然风区和 F01/F02 未验证；G4 已有官方实时因子，但没有同操作官方 batch 吞吐。不得宣称官方等价、完整碰撞覆盖或官方吞吐比。
+- **剩余独立工作**：继续在隔离官方容器中寻找检测门洞/工厂入口接触、独立电机状态/指令生效时刻和自然风/力场数据；本地参数网格、保留集读取和更多自洽审计不能替代这些证据。
 
 ## 2026-11-09 04:40 自由落体时钟一致性（探索性）
 
@@ -233,3 +235,43 @@ OL2–OL12 各自新增 108 个 sprite 碰撞候选及来源核对；全部可�
 - **meter_report 直接服务探测**：新 seed 123 进程调用 `meter_report` 的 index 0/1、value 0/25 全部返回 `success=true`，但模拟器日志没有出现 `OnMeterReport`、`FactoryA/B`、`EnterPort/LeftPort`；只能说明服务接受请求，不能作为工厂入口或仪表值验收。原始 pool 清单和日志保留在 [g2_meter_report_probe_seed123_20261109](../datasets/g2_meter_report_probe_seed123_20261109/)。
 - **报告**：[g2_gate_collision_re20261109.md](g2_gate_collision_re20261109.md)。
 - **状态**：G2 仍为 **PARTIAL**；门碰撞语义已澄清，检测门洞和工厂入口仍未验证。
+
+## 2026-11-09 21:10 G2 检测门候选层
+
+- **新增**：`data/audits/ol1_seed123` 的 33+30 个评分组件 root 变换整理为 [detection_gate_candidates.json](../maps/OL1/detection_gate_candidates.json)（SHA-256 `fca37435…b30d`）和查询类 `foundation.detection_gates.DetectionGateCandidates`。它们不是 12 个 `BlockAll` 实体路线门，也不是已验证 trigger volume。
+- **路线偏差**：候选 `static_spline1` 与 road1 门中心的最近距离中位 2.443 m、最大 7.055 m，仅 7/33 在 1 m 内、13/33 在 2 m 内；road3 为 5/30、10/30，最大 6.080 m。详见 [v2_detection_gates.md](v2_detection_gates.md) 和 [v2_detection_gate_alignment.json](v2_detection_gate_alignment.json)（SHA-256 `c7bb9dc0…0fd2`）。
+- **限制**：最近点距离不是门穿越或自由空间；检测门 trigger plane、aperture、官方计分语义和工厂入口仍未验证。
+- **状态**：G2 仍为 **PARTIAL**；新增的是可追溯候选层和路线偏差量化，不是 PASS。
+
+## 2026-11-09 21:35 G2 候选检测门 32 净空探测
+
+- **运行**：隔离官方容器 seed 123，二进制/设置哈希同前；容器停止。诊断航点从 `x=1.35 m` 经中心 `x=2.504 m` 到 `x=3.65 m`，NED 高度 `z=-2.1557 m`。
+- **结果**：player completed；轨迹在候选门中心平面的穿越点距门中心约 **0.0307 m（3.07 cm）**；命令开始后 `MAP_CONTACT` 为 **0**。全日志仅 2 次启动阶段 `1_1_Port/R_logo_Sprite1` 接触，发生在命令开始前。
+- **记录**：[g2_detection_gate32_20261109.md](g2_detection_gate32_20261109.md)、[g2_detection_gate32_seed123_20261109.json](g2_detection_gate32_seed123_20261109.json)（SHA-256 `2a0fd51a…0da5`）；原始数据在 `foundation/datasets/g2_detection_gate32_seed123_20261109/`。
+- **限制**：诊断航点使用真值；GDB all-stop；2 m 半尺寸是探测假设；无接触穿越不证明官方门触发、计分或完整门洞。
+- **状态**：G2 仍为 **PARTIAL**；新增一个候选检测门中心的无接触穿越，其余 62 门和工厂入口仍未验证。
+
+## 2026-11-09 21:50 G2 早期候选检测门序列
+
+- **运行**：隔离官方容器 seed 123，诊断航点依次穿过 road1 index 32→31→30→29；player completed，容器停止。
+- **结果**：四个门中心平面均被穿越；最近距离 0.1762/0.0179/0.0137/0.0195 m；命令开始后 `MAP_CONTACT` 为 **0**。全日志仅 2 次启动阶段 `1_1_Port/R_logo_Sprite1` 接触。
+- **记录**：[g2_detection_gate_sequence_20261109.md](g2_detection_gate_sequence_20261109.md)、[g2_detection_gate_sequence_seed123_20261109.json](g2_detection_gate_sequence_seed123_20261109.json)（SHA-256 `0652d51b…af06`）；原始数据在 `foundation/datasets/g2_detection_gate_sequence_seed123_20261109/`。
+- **限制**：诊断航点使用真值；GDB all-stop；2 m 半尺寸是假设；中心平面穿越不证明官方 trigger/计分；只覆盖 road1 的 4/33 门。
+- **状态**：G2 仍为 **PARTIAL**；其余 59 个候选门、road3、工厂入口和官方 aperture 语义仍未验证。
+
+## 2026-11-09 22:05 G2 候选检测门 score 触发
+
+- **运行**：同一早期门序列航点，使用 `score_readonly2.gdb` 在隔离官方容器中记录评分回调；player exit 0，容器停止。本地 `commands.jsonl` 因 wrapper 超时缺失，`capture.jsonl`、GDB log 和 `run.json` 完整。
+- **结果**：SEG 事件出现候选索引 29/30/31/32；score 从 0→3，增量对应 `idx31 enter=1`、`idx30 enter=1`、`idx31 enter=0`；`idx32` 和 `idx29` 未增加 score。不能把每个候选门当作一次 score。
+- **意义**：33+30 运行时组件与官方 score 事件存在直接关联，候选检测门从纯静态层推进到可触发评分的证据层；但队列顺序、起点/终点门和重复事件语义仍未解码。
+- **记录**：[g2_detection_gate_score_20261109.md](g2_detection_gate_score_20261109.md)、[g2_detection_gate_score_seed123_20261109.json](g2_detection_gate_score_seed123_20261109.json)（SHA-256 `012ec557…e39b`）。
+- **状态**：G2 仍为 **PARTIAL**；完整 trigger/aperture、其余门、road3 和工厂入口仍未完成。
+
+## 2026-11-09 22:30 G2 stage-1 road1 完整 score 序列
+
+- **运行**：候选 stage-1 航点 + score 探针，隔离官方容器 seed 123；player 因 `maximum flight duration exceeded` 退出（exit 1），容器停止。
+- **结果**：score **0→33**，33 次增量；`SEG` 观察到 road1 候选索引 **0–32 全部 33 个**；状态回调出现 `old=1 new=12`（score=32），随后 score 到 33。
+- **意义**：候选 stage-1 路线实际触发全部 33 个 road1 评分组件，score 达到 33；这是目前最强的 road1 检测门触发证据。
+- **限制**：GDB all-stop；player 超时；本地 `commands.jsonl` 缺失、`capture.jsonl` 可能截断，score 结论只依赖完整 GDB log；score 增量与门索引不是简单一一对应；road3 的 30 个、工厂入口和完整门洞语义仍未验证。
+- **记录**：[g2_score_route_20261109.md](g2_score_route_20261109.md)、[g2_score_route_seed123_20261109.json](g2_score_route_seed123_20261109.json)（SHA-256 `7f493930…7a59`）。
+- **状态**：G2 仍为 **PARTIAL**；road1 评分组件已覆盖，但 G2 PASS 仍未达到。

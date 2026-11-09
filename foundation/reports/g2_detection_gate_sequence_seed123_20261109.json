@@ -1,0 +1,150 @@
+{
+  "status": "diagnostic candidate detection-gate sequence clearance; trigger and official scoring unverified",
+  "group": "road1",
+  "indices": [
+    32,
+    31,
+    30,
+    29
+  ],
+  "player_status": "completed",
+  "pose_samples": 2880,
+  "start_pose": [
+    -7.797241474690959e-05,
+    -1.0070796533909049e-05,
+    0.30909034609794617
+  ],
+  "end_pose": [
+    66.9941466863629,
+    1.852826359620015,
+    -5.2088823318481445
+  ],
+  "gates": [
+    {
+      "index": 32,
+      "gate_actor": "0x7c862ea57900",
+      "gate_root": "0x7c862ecff400",
+      "gate_center_ned_m": [
+        2.504098205566406,
+        -0.02888300657272339,
+        -2.1557080078125
+      ],
+      "closest_approach_m": 0.17617159419050915,
+      "crossing": {
+        "group": "road1",
+        "index": 32,
+        "actor": "0x7c862ea57900",
+        "root": "0x7c862ecff400",
+        "fraction": 0.25253855958212,
+        "direction": 1,
+        "point_ue_cm": [
+          251.297657707875,
+          -2.9115142035209023,
+          197.9499313211646
+        ],
+        "evidence": "candidate detection-gate center plane; trigger volume and official scoring unverified"
+      }
+    },
+    {
+      "index": 31,
+      "gate_actor": "0x7c862ea57600",
+      "gate_root": "0x7c862ecff200",
+      "gate_center_ned_m": [
+        23.44442138671875,
+        -0.05101915836334228,
+        -3.2108251953125
+      ],
+      "closest_approach_m": 0.017930470744909464,
+      "crossing": {
+        "group": "road1",
+        "index": 31,
+        "actor": "0x7c862ea57600",
+        "root": "0x7c862ecff200",
+        "fraction": 0.5981371643141047,
+        "direction": 1,
+        "point_ue_cm": [
+          2344.3940136146052,
+          -5.107527371996087,
+          322.24276572281923
+        ],
+        "evidence": "candidate detection-gate center plane; trigger volume and official scoring unverified"
+      }
+    },
+    {
+      "index": 30,
+      "gate_actor": "0x7c862ea57300",
+      "gate_root": "0x7c862ecff000",
+      "gate_center_ned_m": [
+        44.403037109375,
+        0.6457789611816406,
+        -4.083525390625
+      ],
+      "closest_approach_m": 0.01367588551703648,
+      "crossing": {
+        "group": "road1",
+        "index": 30,
+        "actor": "0x7c862ea57300",
+        "root": "0x7c862ecff000",
+        "fraction": 0.773509339053783,
+        "direction": 1,
+        "point_ue_cm": [
+          4440.245911862303,
+          64.84894975972631,
+          409.5396121848179
+        ],
+        "evidence": "candidate detection-gate center plane; trigger volume and official scoring unverified"
+      }
+    },
+    {
+      "index": 29,
+      "gate_actor": "0x7c862ea57000",
+      "gate_root": "0x7c862ecfee00",
+      "gate_center_ned_m": [
+        65.3745703125,
+        1.7679380798339843,
+        -4.848408203125
+      ],
+      "closest_approach_m": 0.019477402213838646,
+      "crossing": {
+        "group": "road1",
+        "index": 29,
+        "actor": "0x7c862ea57000",
+        "root": "0x7c862ecfee00",
+        "fraction": 0.5188792816786726,
+        "direction": 1,
+        "point_ue_cm": [
+          6537.379879690748,
+          177.1944637108367,
+          486.3656419442275
+        ],
+        "evidence": "candidate detection-gate center plane; trigger volume and official scoring unverified"
+      }
+    }
+  ],
+  "contact_count": 2,
+  "contacts_after_command_start": 0,
+  "contacts": [
+    {
+      "monotonic_s": 566850.149217994,
+      "line": "MAP_CONTACT mono=566850.149217994 drone=0x760a7f83c100 drone_component=0x7608885b10f0 drone_xyz=0,0,-37.9090347 source_actor=0x760a771c7000 source_component=0x7608a2612070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x7608a1edd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x760"
+    },
+    {
+      "monotonic_s": 566850.194306882,
+      "line": "MAP_CONTACT mono=566850.194306882 drone=0x760a7f83c100 drone_component=0x7608885b10f0 drone_xyz=0,0,-37.9090347 source_actor=0x760a771c7000 source_component=0x7608a2612070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x7608a1edd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x760"
+    }
+  ],
+  "source_sha256": {
+    "run.json": "0a902ad34b8ce0acbdec039db6de030c885fb63cd5a81041d05f54e0f252040c",
+    "commands.jsonl": "fae12a3c3277e767e4e51ba6dc262f64e81e9b346a575199f9751385296112b4",
+    "capture.jsonl": "42bb7d530d5767b4a41214e422240036ea1d3e518024c161242e7600b608eefe",
+    "simulator_log": "2dc8f0b37335063ffad9fe8aca14489280d7634c8ed6d5b46ab8b07bd5eafd63"
+  },
+  "gate_manifest_sha256": "fca3743516708f26bb269a081a143ee2c2f0642bf683607f1b1361e34a20b30d",
+  "limitations": [
+    "velocity waypoint control uses debug pose truth and is diagnostic only",
+    "GDB all-stop contact breakpoint changes timing and may change collision response",
+    "2 m gate half extents are an explicit probe assumption, not an official trigger volume",
+    "crossing a candidate center plane does not prove official gate trigger, aperture or scoring",
+    "only early road1 gates were probed"
+  ]
+}

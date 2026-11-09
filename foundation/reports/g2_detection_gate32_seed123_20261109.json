@@ -1,0 +1,60 @@
+{
+  "status": "diagnostic candidate detection-gate clearance; trigger and official scoring unverified",
+  "group": "road1",
+  "index": 32,
+  "gate_actor": "0x7c862ea57900",
+  "gate_root": "0x7c862ecff400",
+  "gate_center_ned_m": [
+    2.504098205566406,
+    -0.02888300657272339,
+    -2.1557080078125
+  ],
+  "player_status": "completed",
+  "pose_samples": 1252,
+  "closest_approach_m": 0.030656065969947167,
+  "closest_pose": [
+    2.507831562194617,
+    -0.029409365674172395,
+    -2.1252846717834473
+  ],
+  "crossing": {
+    "group": "road1",
+    "index": 32,
+    "actor": "0x7c862ea57900",
+    "root": "0x7c862ecff400",
+    "fraction": 0.17510003172495808,
+    "direction": 1,
+    "point_ue_cm": [
+      250.5639855239744,
+      -2.9414142509365764,
+      212.51005872797236
+    ],
+    "evidence": "candidate detection-gate center plane; trigger volume and official scoring unverified"
+  },
+  "contact_count": 2,
+  "contacts_after_command_start": 0,
+  "contacts": [
+    {
+      "monotonic_s": 566495.303855573,
+      "line": "MAP_CONTACT mono=566495.303855573 drone=0x72277badc100 drone_component=0x7225805210f0 drone_xyz=0,0,-37.9081421 source_actor=0x722772d07600 source_component=0x7225a1ce2070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x7225a14cd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x722"
+    },
+    {
+      "monotonic_s": 566495.348083474,
+      "line": "MAP_CONTACT mono=566495.348083474 drone=0x72277badc100 drone_component=0x7225805210f0 drone_xyz=0,0,-37.9081421 source_actor=0x722772d07600 source_component=0x7225a1ce2070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x7225a14cd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x722"
+    }
+  ],
+  "source_sha256": {
+    "run.json": "b35237085e6545e998b2c9e4f024c5076e230368beabcd39d93740fe94693eb9",
+    "commands.jsonl": "16be4526d258cc694cdf354a3848485682bbceec1b1d2ee3d700bb328d531662",
+    "capture.jsonl": "c0b66ee733e33174cf8e3347bd68358e7086a3426474b66086efc7176634237c",
+    "simulator_log": "6202de2a0cf06ba20468b942248fe5efee0d59ab8ab1d2e715f10b87206e435a"
+  },
+  "gate_manifest_sha256": "fca3743516708f26bb269a081a143ee2c2f0642bf683607f1b1361e34a20b30d",
+  "limitations": [
+    "velocity waypoint control uses debug pose truth and is diagnostic only",
+    "GDB all-stop contact breakpoint changes timing and may change collision response",
+    "gate half extents 2 m are an explicit probe assumption, not an official trigger volume",
+    "a no-contact center crossing does not prove official gate trigger, aperture or scoring",
+    "only one candidate gate was probed"
+  ]
+}

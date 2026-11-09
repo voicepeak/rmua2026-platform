@@ -1,0 +1,47 @@
+{
+  "name": "g2_detection_gate32_20261109",
+  "purpose": "Fly a short horizontal path through the first candidate detection-gate center (road1 index 32) to test clearance; diagnostic velocity control with debug pose truth.",
+  "frame": "NED metres, z down; gate center derived from detection_gate_candidates.json road1 index 32, UE z 2.155708 m -> NED -2.155708 m",
+  "targets": {
+    "detection_gate_road1_32": {
+      "candidate_group": "road1",
+      "candidate_index": 32,
+      "candidate_actor": "0x7c8816b2df00",
+      "center_ned_m": [2.50409821, -0.02888301, -2.15570801],
+      "source": "foundation/maps/OL1/detection_gate_candidates.json; runtime scoring component root from data/audits/ol1_seed123"
+    }
+  },
+  "safety": {
+    "max_speed": 1.5,
+    "max_duration_s": 30.0,
+    "max_xy_m": 20.0,
+    "min_z_m": -5.0,
+    "max_z_m": 1.0,
+    "stale_pose_s": 0.3,
+    "position_gain": 0.8,
+    "log_period_s": 0.1
+  },
+  "waypoints": [
+    {
+      "name": "pre_gate_32",
+      "position": [1.35, -0.02888301, -2.15570801],
+      "speed": 1.0,
+      "arrive_radius_m": 0.25,
+      "hold_s": 0.5
+    },
+    {
+      "name": "gate_32_center",
+      "position": [2.50409821, -0.02888301, -2.15570801],
+      "speed": 0.6,
+      "arrive_radius_m": 0.12,
+      "hold_s": 0.0
+    },
+    {
+      "name": "post_gate_32",
+      "position": [3.65, -0.02888301, -2.15570801],
+      "speed": 0.6,
+      "arrive_radius_m": 0.2,
+      "hold_s": 0.0
+    }
+  ]
+}

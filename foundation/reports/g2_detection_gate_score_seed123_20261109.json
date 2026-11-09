@@ -1,0 +1,176 @@
+{
+  "status": "official score/SEG trace during diagnostic candidate-detection-gate path; not complete G2",
+  "player_status": "completed",
+  "player_exit_status": 0,
+  "commands_file_present": false,
+  "score_start": 0,
+  "score_end": 3,
+  "score_increment_count": 3,
+  "score_increments": [
+    {
+      "from": 0,
+      "to": 1,
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 31,
+      "enter": 1,
+      "event": 0,
+      "components": 33,
+      "score": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 30,
+      "enter": 1,
+      "event": 0,
+      "components": 33,
+      "score": 2
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 31,
+      "enter": 0,
+      "event": 0,
+      "components": 33,
+      "score": 3
+    }
+  ],
+  "seg_events": [
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 32,
+      "enter": 1,
+      "event": 0,
+      "components": 33,
+      "score": 0
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 32,
+      "enter": 0,
+      "event": 1,
+      "components": 33,
+      "score": 0
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 31,
+      "enter": 1,
+      "event": 0,
+      "components": 33,
+      "score": 1
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 32,
+      "enter": 0,
+      "event": 0,
+      "components": 33,
+      "score": 1
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 31,
+      "enter": 0,
+      "event": 1,
+      "components": 33,
+      "score": 1
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 30,
+      "enter": 1,
+      "event": 0,
+      "components": 33,
+      "score": 2
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 30,
+      "enter": 0,
+      "event": 1,
+      "components": 33,
+      "score": 2
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 31,
+      "enter": 0,
+      "event": 0,
+      "components": 33,
+      "score": 3
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 29,
+      "enter": 1,
+      "event": 0,
+      "components": 33,
+      "score": 3
+    },
+    {
+      "actor": "0x7ffe09140700",
+      "name": "387258,2",
+      "index": 29,
+      "enter": 0,
+      "event": 1,
+      "components": 33,
+      "score": 3
+    }
+  ],
+  "state_events": [
+    {
+      "old": 0,
+      "new": 0,
+      "flag": 0,
+      "score": 0
+    },
+    {
+      "old": 0,
+      "new": 1,
+      "flag": 0,
+      "score": 0
+    }
+  ],
+  "observed_gate_indices": [
+    29,
+    30,
+    31,
+    32
+  ],
+  "observed_indices_in_candidate_manifest": [
+    29,
+    30,
+    31,
+    32
+  ],
+  "source_sha256": {
+    "run.json": "bd9d972d16c84110dcd77410d04b4cd6f6280bf684035ebf48412a803ab08952",
+    "capture.jsonl": "efd7b6f343bc782503f133021d4d2156dae5b213dc4b114174d0d6ed309514d7",
+    "simulator_log": "4d00646db35fa5e27c2b499b1e9624a2c29108539e707c3a7d38d9c038734501"
+  },
+  "gate_manifest_sha256": "fca3743516708f26bb269a081a143ee2c2f0642bf683607f1b1361e34a20b30d",
+  "analysis_sha256": "b95a0f4d9718f36ff5c6afea79773cbb16e4edcea95aff027d0e0fb6b4ca4e73",
+  "limitations": [
+    "GDB all-stop score probe changes timing; score events are not a policy or race result",
+    "score increments are not one-to-one with candidate gate indices",
+    "the candidate gate index mapping comes from the runtime score audit, not decoded names",
+    "one seed and one diagnostic path; other gates and road3 are not covered",
+    "score semantics, stage transitions and factory logic remain unverified"
+  ]
+}

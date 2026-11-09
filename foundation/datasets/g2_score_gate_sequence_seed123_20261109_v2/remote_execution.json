@@ -1,0 +1,15 @@
+{
+  "remote_directory": "/tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1",
+  "command": "timeout --signal=TERM --kill-after=10s 240s python3 /tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/run_contact_waypoints_local.py /tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/waypoints.json /tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/output --seed 123 --port 11844 --gdb /tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/probes/score_readonly2.gdb",
+  "exit_status": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/run_contact_waypoints_local.py\", line 236, in <module>\n    main()\n  File \"/tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/run_contact_waypoints_local.py\", line 153, in main\n    started = run([sys.executable, str(pool_script), 'start', '--simulator', str(args.simulator),\n  File \"/tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/run_contact_waypoints_local.py\", line 35, in run\n    return subprocess.run(args, text=True, check=True, **kwargs)\n  File \"/usr/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/usr/bin/python3', '/tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/output/scripts/headless_pool.py', 'start', '--simulator', '/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5', '--settings', '/home/tianbot/RUMA-by-helinjun/main/configs/simulator_settings.json', '--seeds', '123', '--port', '11844', '--output', '/tmp/foundation-contact-411eda70b59f4e28b4fec159bd5bd3b1/output/pool', '--timeout', '90', '--gdb-crash', '--image', 'rmua/re-probe:20261104']' returned non-zero exit status 1.\n",
+  "source_sha256": {
+    "foundation/run_contact_waypoints_local.py": "3613240ca7dfb988cda0b03e68a4dba46714a4899031422ce9c36ef6e179712c",
+    "foundation/probes/contact_readonly.gdb": "7ce38c43d0b762bc1b9a7f70bb19de6524c9e404f47b6dd2c069abe2f6d2c618",
+    "foundation/probes/contact_waypoints.py": "d9d11e9cd6cbb3807a0f3f0505fd4e9488bfeadbeb44d2aea65df9a04a2cebcf",
+    "foundation/probes/collect_ros.py": "615ae58cb482bb29523fa50505e7f1c7d96788f5f4107baf32a92033e767c90c",
+    "foundation\\probes\\score_readonly2.gdb": "6797a83f4b14e0b8743e82f80228d3b7c22fbe323517d064b06b2ad5a0c7d218"
+  },
+  "config_sha256": "59a39bc6e6b2e39ee5cf3785dd3ebf2f582d8669176c54d2aff18d071a1bf1ed"
+}

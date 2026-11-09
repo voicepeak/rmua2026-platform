@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-contact-0220ca224b744e419bb838e1547e30b4",
+  "command": "timeout --signal=TERM --kill-after=10s 240s python3 /tmp/foundation-contact-0220ca224b744e419bb838e1547e30b4/run_contact_waypoints_local.py /tmp/foundation-contact-0220ca224b744e419bb838e1547e30b4/waypoints.json /tmp/foundation-contact-0220ca224b744e419bb838e1547e30b4/output --seed 123 --port 11842",
+  "exit_status": 0,
+  "stdout": "exit_status: 0\n",
+  "stderr": "",
+  "source_sha256": {
+    "foundation/run_contact_waypoints_local.py": "3613240ca7dfb988cda0b03e68a4dba46714a4899031422ce9c36ef6e179712c",
+    "foundation/probes/contact_readonly.gdb": "7ce38c43d0b762bc1b9a7f70bb19de6524c9e404f47b6dd2c069abe2f6d2c618",
+    "foundation/probes/contact_waypoints.py": "d9d11e9cd6cbb3807a0f3f0505fd4e9488bfeadbeb44d2aea65df9a04a2cebcf",
+    "foundation/probes/collect_ros.py": "615ae58cb482bb29523fa50505e7f1c7d96788f5f4107baf32a92033e767c90c"
+  },
+  "config_sha256": "59a39bc6e6b2e39ee5cf3785dd3ebf2f582d8669176c54d2aff18d071a1bf1ed"
+}
