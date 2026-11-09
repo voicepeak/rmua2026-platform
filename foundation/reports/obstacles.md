@@ -34,6 +34,25 @@ feasibility callback, stop/turn, path boundaries and simulator integration.
 The existing vehicle approximation expands an oriented box by the drone radius
 and remains conservative at edges; no official collision parity is implied.
 
+## Candidate-map vehicle sphere cover (2026-11-09)
+
+`CandidateMapObstacleFilter` no longer uses only one circumscribed sphere per
+vehicle. The vehicle box is partitioned into N×N×N sub-boxes, each covered by
+its own circumscribed sphere; the default is N=2 and callers may increase it.
+This union still covers the complete box and remains conservative, but it
+removes much of the single-sphere margin that rejected vehicles near a road.
+Instantaneous yaw changes still use the full circumscribed sphere at the
+waypoint because intermediate orientations are unspecified.
+
+The reproducible audit `foundation.audit_vehicle_map_clearance` samples 64
+top-facing OL1 road triangles at four vertical gaps with an explicitly chosen
+probe vehicle half-extent of (0.8, 0.4, 0.3) m. At gaps 0/0.1/0.3/0.5 m, the
+single-sphere filter accepted 0/0/0/0 samples; N=2 accepted 0/0/1/45; N=4
+accepted 0/0/45/46; N=10 accepted 0/29/45/46. The report and source hashes are
+in `v2_vehicle_map_clearance_audit.json`. Exact road contact still rejects, the
+probe dimensions are not an official vehicle asset, and accepted routes are
+not proof of official passability.
+
 `generate_vehicle_paths` assigns reproducible speeds and intermediate stops to
 caller-supplied horizontal routes. It conservatively checks the complete route
 against scene bounds and launch exclusion using the vehicle's circumscribed

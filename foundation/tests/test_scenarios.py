@@ -41,6 +41,12 @@ def test_scenario_profiles_seed_and_metadata():
     assert hard['geometry_sha256'] == hard_repeat['geometry_sha256']
     assert hard['episode_timeout_s'] == hard['vehicle_motion_horizon_s'] == 2
     assert hard['obstacle_separation_m'] == 0
+    assert hard['vehicle_subdivisions'] == 2
+    with pytest.raises(ValueError, match='vehicle_subdivisions'):
+        ScenarioFactory(bounds_min=[-20]*3, bounds_max=[20]*3, launch=[0, 0, 0],
+                        exclusion_m=2, protected_paths=[[[-15, 0, 0], [15, 0, 0]]],
+                        corridor_radius_m=1, horizon_s=2, profiles=f.profiles,
+                        fixed_seed=42, vehicle_subdivisions=0)
     with pytest.raises(ValueError, match='unknown scenario'):
         f.build(params(), 'other', 1)
     with pytest.raises(ValueError, match='owns lines'):
@@ -137,6 +143,31 @@ def test_separately_seeded_wind_and_obstacles_replay_without_shared_state():
     assert not np.allclose(a.truth_state()['velocity'], c.truth_state()['velocity'], atol=1e-6)
 
 
+def test_vehicle_ground_clearance_uses_subbox_spheres():
+    import numpy as np
+    from foundation.map_scene import CandidateMap
+    from foundation.obstacles import CandidateMapObstacleFilter, Vehicle, VehiclePath
+
+    vertices = np.array([[-1000, -1000, 0], [1000, -1000, 0],
+                         [1000, 1000, 0], [-1000, 1000, 0]], float)
+    obj = {'actor': 'ground', 'component': 'plane', 'mesh': 'ground',
+           'translation_ue_cm': [0, 0, 0], 'quaternion_xyzw': [0, 0, 0, 1],
+           'scale': [1, 1, 1]}
+    scene = CandidateMap([obj], {'ground': (vertices, np.array([[0, 1, 2], [0, 2, 3]]))},
+                         assume_closed_meshes_solid=True)
+    vehicle = Vehicle((0, 0, -.3), (1., .5, .2), (0, 0, 0), 0)
+    coarse = CandidateMapObstacleFilter(scene, origin_ue_cm=[0, 0, 0], horizon_s=1,
+                                        vehicle_subdivisions=1)
+    fine = CandidateMapObstacleFilter(scene, origin_ue_cm=[0, 0, 0], horizon_s=1,
+                                      vehicle_subdivisions=10)
+    assert not coarse(vehicle) and fine(vehicle)
+    path = VehiclePath((0., 1.), ((0, 0, -.3), (0, 0, -.3)), (1., .5, .2), (0.,))
+    assert not coarse(path) and fine(path)
+    with pytest.raises(ValueError, match='vehicle_subdivisions'):
+        CandidateMapObstacleFilter(scene, origin_ue_cm=[0, 0, 0], horizon_s=1,
+                                   vehicle_subdivisions=0)
+
+
 def test_candidate_map_filter_checks_full_obstacle_paths_and_unknown_containment():
     import itertools
     from scipy.spatial import ConvexHull
@@ -178,6 +209,7 @@ def test_scenario_factory_optional_map_filter_uses_runtime_map():
     sim, manifest = factory().build(params(), 'difficult', 42, **kwargs)
     check = CandidateMapObstacleFilter(scene, origin_ue_cm=[0, 0, 0], horizon_s=2, clearance_m=.2)
     assert manifest['candidate_map_clearance_m'] == .2
+    assert manifest['vehicle_subdivisions'] == 2
     assert all(check(obj) for obj in (*sim.sim.lines, *sim.sim.initial_vehicles))
     _, repeat = factory().build(params(), 'difficult', 42, **kwargs)
     assert manifest['geometry_sha256'] == repeat['geometry_sha256']

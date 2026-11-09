@@ -66,9 +66,11 @@ class ObstacleProfile:
 class ScenarioFactory:
     def __init__(self, *, bounds_min, bounds_max, launch, exclusion_m, protected_paths,
                  corridor_radius_m, horizon_s, profiles, fixed_seed, feasible=None,
-                 obstacle_separation_m=0.):
+                 obstacle_separation_m=0., vehicle_subdivisions=2):
         if type(fixed_seed) is not int or not 0 <= fixed_seed <= 0x7fffffff:
             raise ValueError('fixed_seed must be a nonnegative 32-bit integer')
+        if type(vehicle_subdivisions) is not int or vehicle_subdivisions < 1:
+            raise ValueError('vehicle_subdivisions must be a positive integer')
         if set(profiles) != {'fixed', 'random', 'difficult'} or any(not isinstance(x, ObstacleProfile) for x in profiles.values()):
             raise ValueError('provide explicit fixed, random and difficult profiles')
         if feasible is not None and not callable(feasible):
@@ -81,6 +83,7 @@ class ScenarioFactory:
         self.corridor_radius = float(corridor_radius_m)
         self.horizon = float(horizon_s)
         self.obstacle_separation = float(obstacle_separation_m)
+        self.vehicle_subdivisions = vehicle_subdivisions
         if (not all(math.isfinite(x) for x in (self.exclusion, self.corridor_radius, self.horizon, self.obstacle_separation))
                 or self.horizon <= 0 or self.obstacle_separation < 0):
             raise ValueError('scene constraints must be finite and horizon must be positive')
@@ -100,7 +103,7 @@ class ScenarioFactory:
         if map_clearance_m is not None:
             map_filter = CandidateMapObstacleFilter(options.get('candidate_map'),
                 origin_ue_cm=options.get('map_origin_ue_cm'), horizon_s=self.horizon,
-                clearance_m=map_clearance_m)
+                clearance_m=map_clearance_m, vehicle_subdivisions=self.vehicle_subdivisions)
         def feasible(obj):
             return ((map_filter is None or map_filter(obj)) and
                     (self.feasible is None or self.feasible(obj)))
@@ -141,6 +144,7 @@ class ScenarioFactory:
                     'corridor_radius_m': self.corridor_radius, 'vehicle_motion_horizon_s': self.horizon,
                     'drone_radius_m': drone_radius, 'episode_timeout_s': timeout,
                     'obstacle_separation_m': self.obstacle_separation,
+                    'vehicle_subdivisions': self.vehicle_subdivisions,
                     'external_feasibility_callback_used': self.feasible is not None,
                     'candidate_map_clearance_m': None if map_filter is None else map_filter.clearance_m,
                     'candidate_map_source_sha256': (None if map_filter is None else

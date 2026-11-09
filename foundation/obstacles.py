@@ -213,13 +213,66 @@ def _obstacle_envelope(obstacle, horizon_s):
     raise ValueError('unsupported obstacle type for clearance')
 
 
+def _subbox_spheres(half_extents, subdivisions):
+    """Cover a box by a union of conservative sub-box circumscribed spheres."""
+    ext = vec(half_extents)
+    if type(subdivisions) is not int or subdivisions < 1:
+        raise ValueError('subdivisions must be a positive integer')
+    step = 2 * ext / subdivisions
+    axes = [[-ext[i] + (index + .5) * step[i] for index in range(subdivisions)]
+            for i in range(3)]
+    # Build the Cartesian product without importing itertools at module scope.
+    offsets = []
+    for x in axes[0]:
+        for y in axes[1]:
+            for z in axes[2]:
+                offsets.append(np.array([x, y, z]))
+    radius = float(np.linalg.norm(ext / subdivisions))
+    return offsets, radius
+
+
+def _obstacle_spheres(obstacle, horizon_s, *, vehicle_subdivisions=2):
+    """Return conservative sphere sweeps for a partial-map clearance check."""
+    if isinstance(obstacle, Line):
+        return [(vec(obstacle.start), vec(obstacle.end), float(obstacle.radius_m))]
+    if isinstance(obstacle, (Vehicle, VehiclePath)):
+        ext = vec(obstacle.half_extents_m)
+        offsets, radius = _subbox_spheres(ext, vehicle_subdivisions)
+        if isinstance(obstacle, Vehicle):
+            center, velocity = vec(obstacle.center), vec(obstacle.velocity_m_s)
+            c, s = math.cos(obstacle.yaw_rad), math.sin(obstacle.yaw_rad)
+            result = []
+            for offset in offsets:
+                world = np.array([c*offset[0] - s*offset[1], s*offset[0] + c*offset[1], offset[2]])
+                start = center + world
+                result.append((start, start + velocity * horizon_s, radius))
+            return result
+        points, yaw = [vec(p) for p in obstacle.positions_m], np.asarray(obstacle.yaw_rad, float)
+        result = []
+        for index, (start, end) in enumerate(zip(points[:-1], points[1:])):
+            c, s = math.cos(yaw[index]), math.sin(yaw[index])
+            for offset in offsets:
+                world = np.array([c*offset[0] - s*offset[1], s*offset[0] + c*offset[1], offset[2]])
+                result.append((start + world, end + world, radius))
+        # Instantaneous yaw changes have unspecified intermediate orientations.
+        # The circumscribed sphere at each changed waypoint remains conservative.
+        full_radius = float(np.linalg.norm(ext))
+        for index in range(1, len(points)-1):
+            if yaw[index-1] != yaw[index]:
+                result.append((points[index], points[index], full_radius))
+        return result
+    raise ValueError('unsupported obstacle type for clearance')
+
+
 class CandidateMapObstacleFilter:
     """Conservative path-envelope check against an explicitly partial map.
 
-    A miss is not official free-space evidence. Bounding spheres for vehicles
-    can overlap the road even when their true wheels would rest on it.
+    A miss is not official free-space evidence. Vehicles are covered by a union
+    of conservative sub-box spheres; increasing ``vehicle_subdivisions`` reduces
+    the false-rejection margin at the cost of more map queries. Exact wheel/road
+    contact still remains outside this candidate check.
     """
-    def __init__(self, scene, *, origin_ue_cm, horizon_s, clearance_m=0.):
+    def __init__(self, scene, *, origin_ue_cm, horizon_s, clearance_m=0., vehicle_subdivisions=2):
         from foundation.map_scene import CandidateMap
         if not isinstance(scene, CandidateMap) or not scene.assume_closed_meshes_solid:
             raise ValueError('candidate map must explicitly enable closed-mesh solid assumption')
@@ -227,12 +280,16 @@ class CandidateMapObstacleFilter:
         self.origin = vec(origin_ue_cm).copy()
         if not math.isfinite(horizon_s) or horizon_s <= 0 or not math.isfinite(clearance_m) or clearance_m < 0:
             raise ValueError('invalid map clearance or horizon')
+        if type(vehicle_subdivisions) is not int or vehicle_subdivisions < 1:
+            raise ValueError('vehicle_subdivisions must be a positive integer')
         self.horizon_s = float(horizon_s)
         self.clearance_m = float(clearance_m)
+        self.vehicle_subdivisions = vehicle_subdivisions
 
     def __call__(self, obstacle):
-        segments, radius = _obstacle_envelope(obstacle, self.horizon_s)
-        for start, end in segments:
+        spheres = _obstacle_spheres(obstacle, self.horizon_s,
+                                    vehicle_subdivisions=self.vehicle_subdivisions)
+        for start, end, radius in spheres:
             result = self.scene.sweep_sphere_ned(start, end, radius + self.clearance_m,
                                                  origin_ue_cm=self.origin)
             if result['hits'] or result['containment_unknown']:
