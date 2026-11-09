@@ -1,0 +1,106 @@
+{
+  "status": "official contact sources grouped and compared to candidate geometry; not a complete G2 pass",
+  "run": "foundation/datasets/g2_contact_road_seed123_20261109",
+  "seed": 123,
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "player_exit_status": 1,
+  "event_count": 941,
+  "source_group_count": 2,
+  "groups": [
+    {
+      "candidate_actor": "BP_Segment_Rot_C_242",
+      "candidate_component": null,
+      "candidate_mesh": "Segment",
+      "runtime_component_ptr": "0x764e7e643620",
+      "event_count": 939,
+      "first_monotonic_s": 558906.577318688,
+      "last_monotonic_s": 558953.879415859,
+      "min_surface_distance_cm": 1.6790928453985348e-07,
+      "max_surface_distance_cm": 0.0003546507067085517,
+      "max_source_transform_error_cm": 0.00022066377876409332,
+      "min_source_transform_error_cm": 0.00022066377876409332,
+      "max_rotation_error_deg": 6.964338128537376e-06,
+      "second_nearest_transform_distance_cm": 1040.6052694337482,
+      "sample_hit_point_cm": [
+        1066.0213623046875,
+        533.5704345703125,
+        266.22186279296875
+      ],
+      "sample_hit_sha256": "1fa71c22571655cdb1668d32590bc896d405fde3db9bbefc1aaf64b7238c7bda",
+      "drone_xyz_cm": {
+        "min": [
+          1056.62976,
+          519.825012,
+          266.336792
+        ],
+        "max": [
+          1057.81189,
+          522.432678,
+          268.353729
+        ],
+        "count": 939
+      },
+      "matched_target": "road"
+    },
+    {
+      "candidate_actor": "1_1_Port",
+      "candidate_component": "R_logo_Sprite1",
+      "candidate_mesh": "unverified_sprite:Rlogo_Sprite",
+      "runtime_component_ptr": "0x764e7da02070",
+      "event_count": 2,
+      "first_monotonic_s": 558891.231382679,
+      "last_monotonic_s": 558891.276640468,
+      "min_surface_distance_cm": 1.4901161193847656e-08,
+      "max_surface_distance_cm": 1.4901161193847656e-08,
+      "max_source_transform_error_cm": 1.2232339126064355e-06,
+      "min_source_transform_error_cm": 1.2232339126064355e-06,
+      "max_rotation_error_deg": 3.4768912770948763e-06,
+      "second_nearest_transform_distance_cm": 237.953203578583,
+      "sample_hit_point_cm": [
+        -4.7850341796875,
+        0.2733917236328125,
+        -39.00003433227539
+      ],
+      "sample_hit_sha256": "fa7cc42dde634667019f23a296f3eb9cbb79d737fdd02fe4eed4e934a5bc613d",
+      "drone_xyz_cm": {
+        "min": [
+          0.0,
+          0.0,
+          -37.9081421
+        ],
+        "max": [
+          0.0,
+          0.0,
+          -37.9081421
+        ],
+        "count": 2
+      },
+      "matched_target": null
+    }
+  ],
+  "source_sha256": {
+    "run": "58b21eecd688352cedbe61f0e5f6268a42ae9fd0c1fb92622e136eee4bf81fa3",
+    "log": "1516a67ebdb4f59cb8d29631040285ba7c372171af54ef34a7213ccbf34fe344",
+    "waypoints": "27a6ae2ad3539b24ba36e7a2dff7e57eb40453f72e3732a96a16325bba1cab79",
+    "map": {
+      "OL1_road_placements_candidate.json": "5e2e8a1a97efda23d8afdcb351300bd9a71315ec251cc7553d9c4f63bef315d6",
+      "OL1_building_placements_candidate.json": "41ba0f3c72f6fe9bc91fa2121255a9622e52dfbbec53e8128d247d7b0a71d8fa",
+      "mesh_collision/Building_Factory_Factory.npz": "36a56b196288cdf1192496bb9e96e2cb019c1ff07aa4bca4f3540b5351e99518",
+      "mesh_collision/Building_Junction_2_Building_Junction_2.npz": "aeb66b5bc6d785bb441d13d1b840892f359b13d4d74c50230e4ec2c12a71fece",
+      "mesh_collision/Building_Port.npz": "364bd0d721aa95feed6627ea660025e9bcdb2efd2e06d86b55b97dd41495895d",
+      "mesh_collision/Segment.npz": "000ae8a02a2d6e70480be1523bbe897fc6beecc311cb9dd42847406a809b4eb8",
+      "mesh_collision/Segment_Half.npz": "083c85763f16cfc5a562798535395ad37cde1ad1e17d0e15e96a4b5f5e4ea39a",
+      "OL1_simple_convex_candidates.json": "888ce5198eb282705600d5eef8a725dd261b27813cb028dfcb23ee089189c7e0",
+      "OL1_sprite_placements_candidate.json": "4fde396102af08b89cb569786d4f8eab16eca928670554bdecb38f4af0a6415e",
+      "sprite_collision_candidates.json": "54a30a3ca061081f40967acd64e13da271e1de1418bad425d7abfd0509a2a7c9"
+    }
+  },
+  "limitations": [
+    "GDB all-stop changes timing and may change collision response",
+    "velocity pilot uses debug ground truth and is diagnostic only",
+    "repeated callbacks during sustained contact are grouped, not independent contacts",
+    "candidate hit point at byte offset 0x18 is not independently typed",
+    "candidate maps and transforms remain candidate geometry"
+  ]
+}

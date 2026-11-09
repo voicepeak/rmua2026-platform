@@ -215,3 +215,21 @@ OL2–OL12 各自新增 108 个 sprite 碰撞候选及来源核对；全部可�
 - **结果**：四组满足干净自由落体准则：`heldout_mix` seed 27182/31415、新官方进程 seed260004/260006。源时间加速度 9.7832/9.7898/9.7897/9.7908 m/s²（相对 g 偏差约 -0.24% 到 -0.16%），二次拟合 RMSE 0.012–0.021 mm；到达时间加速度 9.7059/9.7011/9.7972/9.8790 m/s²，RMSE 约 1.1–1.3 mm。seed260004/260006 的 player 均因 motion guard 中止，原始失败记录保留。
 - **解释**：这些短窗口支持 ROS Header 源时间作为均匀物理时间基；但拟合略低于 g 可能含残余推力/阻力，且均为同波形/相近初态，不能作为完整时钟校准。
 - **状态**：`clock_mapping` 的部分证据已补入 `unknowns.yaml`；G1 参数辨识仍 **BLOCKED**，G1 整体仍 **PARTIAL**。
+
+## 2026-11-09 19:30 G2 官方接触：道路侧栏与港口内墙
+
+- **新增工具**：`foundation/run_contact_waypoints_local.py`（本地隔离容器 + 只读接触断点）、`foundation/probes/contact_waypoints.py`（速度航点诊断，使用 `debug/pose_gt`）、`foundation/analyze_contact_waypoints.py`（按源分组并对候选几何比较）。
+- **道路**：[g2_contact_road_seed123_20261109.json](g2_contact_road_seed123_20261109.json)。seed 123、二进制/设置哈希同前；939 次持续接触回调匹配 `BP_Segment_Rot_C_242`（`Segment`），源变换误差 2.2e-4 cm，候选命中点距离 1.7e-7–3.6e-4 cm，次近候选 1040.6 cm。航点保持接触直到总时长保护触发，数据有效但 player 以 1 退出。
+- **港口内墙**：[g2_contact_portwall_seed123_20261109.json](g2_contact_portwall_seed123_20261109.json)。115 次回调匹配 `1_1_Port/Building_Port`，源变换误差 1.5e-5 cm，命中点距离 3.5e-6–2.1e-4 cm，次近候选 102.7 cm；player 正常完成。
+- **路线/枢纽**：[g2_contact_gate1_seed123_20261109_v2.json](g2_contact_gate1_seed123_20261109_v2.json)。航点沿候选 stage-1 路线到达约 `(589.5,-98.4,134.7) m`，随后在 `(617.0,-81.7,138.7) m` 被 `BP_Building_Junction_7` 挡住；距 `1_1_Gate` 中心约 9.6 m，未取得门洞接触/净空证据。最近/次近候选变换重复，组件归属仍有歧义。
+- **失败记录**：z 轴符号、港口屋顶、断点脚本、外部爬升/外墙坠落和首次路线出口等失败运行均保留在 `foundation/datasets/`，不作为验收证据。
+- **限制**：GDB all-stop 改变时序；速度航点为诊断控制并使用真值；持续接触回调重复计数；命中点偏移 `0x18` 未独立定型；门洞和工厂入口仍未验证。
+- **状态**：G2 仍为 **PARTIAL**；新增道路和建筑墙官方接触，但不得宣称完整碰撞覆盖或自由空间。
+
+## 2026-11-09 20:25 G2 直接函数：路线门碰撞配置与 meter_report
+
+- **静态直接函数**：上游 RE 的 `followup_state.c` 已反编译 `0x2fc13d0`。未激活分支使用 `.rodata` `0x820f7c` 的 `NoCollision`，激活分支使用 `0x74213e` 的 `BlockAll`，随后调用 `0x52bb600(component, active, 1)` 修改组件碰撞使能标志（偏移 `0x14c`）。二进制字符串表同时存在 `SetActorEnableCollision`、`SetCollisionEnabled`、`SetCollisionProfileName`。
+- **结论**：12 个命名 `*_Gate` actor 在激活时是 **BlockAll 实体碰撞**，不是 trigger/overlap 门洞；这解释了为什么路线在 `1_1_Gate` 上方通过而没有门接触，但**不能**证明检测门洞或自由空间。
+- **meter_report 直接服务探测**：新 seed 123 进程调用 `meter_report` 的 index 0/1、value 0/25 全部返回 `success=true`，但模拟器日志没有出现 `OnMeterReport`、`FactoryA/B`、`EnterPort/LeftPort`；只能说明服务接受请求，不能作为工厂入口或仪表值验收。原始 pool 清单和日志保留在 [g2_meter_report_probe_seed123_20261109](../datasets/g2_meter_report_probe_seed123_20261109/)。
+- **报告**：[g2_gate_collision_re20261109.md](g2_gate_collision_re20261109.md)。
+- **状态**：G2 仍为 **PARTIAL**；门碰撞语义已澄清，检测门洞和工厂入口仍未验证。
