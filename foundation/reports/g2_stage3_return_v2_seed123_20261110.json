@@ -1,0 +1,21 @@
+{
+ "status": "runtime detection-component roots; trigger aperture and official scoring unverified",
+ "source_log": "foundation/datasets/g2_stage3_return_v2_seed123_20261110/run/simulator.log",
+ "source_sha256": "07ab059558423b35fba5f7bf18de7960e8913aa68cb5880603fbbf3db6c39d55",
+ "actors": {},
+ "actor_count": 0,
+ "declared_component_count": 0,
+ "component_count": 0,
+ "score_start": 0,
+ "score_end": 0,
+ "score_increment_count": 0,
+ "score_increments": [],
+ "seg_events": [],
+ "observed_indices": [],
+ "limitations": [
+  "GDB all-stop changes timing; this is a diagnostic trace, not a race result",
+  "component roots do not establish trigger plane, aperture or extent",
+  "the 12 named *_Gate actors are solid route gates, not these components"
+ ],
+ "map": "RMUA2024OL1"
+}
