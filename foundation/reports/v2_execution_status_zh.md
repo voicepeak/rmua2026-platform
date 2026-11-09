@@ -1,5 +1,7 @@
 # PWM 基础模拟器 V2：执行与验收状态
 
+> 最新状态：见文末 2026-11-09 05:20 官方隔离容器运行记录及 [总体验收](foundation_acceptance.md)。
+
 执行依据：[V2.0 方案全文](implementation_plan_v2_zh.md)。本页是迁移时的初始状态，不将以往候选数据自动升级为通过证据；每项状态应随证据更新。
 
 **目标：**交付以四路 PWM 为唯一动作、无需 UE/ROS 步进、可校准并可批量运行的基础模拟器；保留可追溯静态地图、风和力度衰减模型、随机车辆和细线，以及最小训练事件。各模块按证据分别标记 PASS、PARTIAL 或 BLOCKED；PARTIAL/BLOCKED 不可冒称官方一致。正式策略不可默认读取仿真真值。
@@ -102,3 +104,114 @@ OL2–OL12 各自新增 108 个 sprite 碰撞候选及来源核对；全部可�
 对第二轮拟合记录的起点做了[初始速度估计敏感性审计](v2_initial_velocity_audit.md)：只用过去样本与前后样本的二次拟合相差约 0.018–0.022 m/s；两者都不是独立速度测量。没有回放或再次拟合模型、没有读取封存集；G1 参数辨识阻塞与停止规则不变。
 
 补充同版本 ROS 库和[历史无断点传输证据](v2_ros_transport_evidence.md)：PWM 回显值与 Header 来自分别请求的 PWM 和 IMU 数据，回显 Header 不能代表电机采样时间。六场历史探针只界定 ROS 传输和数值匹配观察，未测物理执行；已修正回显报告的时钟解释，G0/G1 状态不变。
+
+## 2026-11-09 02:00 会话中断交接
+
+> 本段用于续接，不升级任何关口状态。中断时会话记录 145 项自动测试通过；最后两次审计（PWM 回显、ROS 传输证据）完成后未重跑全量测试。
+
+- **仓库状态**：`main` @ `49fb7c0`，工作区干净；V2 实现与证据位于 `foundation/`。
+- **本轮新增证据**：风调试消息审计（四场各 25 条零值，非连续观测）；初始速度估计敏感性（0.018–0.022 m/s，非独立测量）；64/256 候选地图实际接触基准（默认 645/637，全启用 570/576 env-cmd/s）；场景工厂地图包络过滤；OL2–OL12 各 108 个 sprite 候选（全启用每图 12,105 实例）；ROS 传输证据修正 PWM 回显 Header 来自 `GET_IMU_DATA`。
+- **当前阻塞（按优先级）**：
+  1. **G1/G0**：物理时钟与指令实际生效时刻不可辨识；回显 Header 非电机采样时间；初始速度无独立测量；接触与风未排除。两轮校准已用完，最优仍在搜索边界且第二轮仅改善 8.05%（低于 10% 门槛），按规则停止参数网格扩展。
+  2. **G2**：各图仍缺 12 个建筑组件、480 个货架纸张/指针及部分实例级 sprite 资源；门洞、道路净空、代表性墙体和工厂入口未对官方接触结果验证。
+  3. **G3**：自然风区生成/触发与 W01、F01–F02 边界未验证；以 G1 通过为前提。
+  4. **G4**：密集地图负载、同机官方吞吐对照、车辆包围球贴地误拒未解决。
+- **下一步**：只在无运行时断点条件下寻找独立的时钟、电机状态或接触证据；若不可得，保存参数区间/模型族与不可辨识范围并标 `BLOCKED`，转 G2 独立推进。G1 阈值须在官方重复性与任务误差预算齐备后冻结；封存保留集在此之前不得读取。G3/G4 按依赖顺序推进，不得用 `PARTIAL/BLOCKED` 宣称官方等价。
+- **续推入口**：[方案](implementation_plan_v2_zh.md)、[验收阈值](../config/acceptance.yaml)、[ROS 传输证据](v2_ros_transport_evidence.md)、[初始速度审计](v2_initial_velocity_audit.md)、[G1 采集清点](v2_g1_capture_audit.md)、[第二轮校准](v2_calibration_round2_protocol.md)、[跨地图说明](../maps/OTHER_MAPS.md)、[OL1 碰撞清单](../maps/OL1/collision_manifest.json)。测试：`.\.venv\Scripts\python.exe -m pytest -q foundation\tests`；冒烟：`run_smoke_test.py`。
+
+## 2026-11-09 03:38 G2 缺口：12 个建筑与 480 个货架 cooked 网格
+
+- **改动**：`CandidateMap.load_serialized_candidates` 新增显式 `building_mesh_fallback`、`rack_mesh_fallback` 和 `rack_mesh_directory`；`CandidateMap.load` 新增 `include_unverified_building_meshes`、`include_unverified_rack_meshes`。两者都要求先启用对应 simple/rack 组，默认场景不变。
+- **纳入内容**：每图 12 个 `AirSimROS_SM_plane` 建筑组件和 480 个 `Rack_Paper`/`Rack_Pointer` 货架组件，使用已解码的 PhysX cooked 三角网格前缀；`.npz` 与提取 `.json` 的 SHA-256 都进入 `source_sha256`。
+- **计数**：OL1 默认 508；六个可选组全开 12,609。OL2–OL12 默认 508；六个可选组全开 12,597。每图新增 492 个候选；`excluded_building_components=0`、`excluded_rack_components=0`（仅指这两类缺口，其他 actor 类别仍未纳入）。
+- **审计**：[v2_map_cooked_mesh_audit.json](v2_map_cooked_mesh_audit.json)（SHA-256 `7293e1019b6d4ad93d76a23cae41f983e280ab127936b13f5e724fe024708018`）记录 12 图共 5,904 个新增实例的变换查询，全部命中预期 actor/component；这是加载与查询自洽检查，不是官方接触。
+- **清单**：[OL1 碰撞清单](../maps/OL1/collision_manifest.json) 已更新为 12,609 全可选实例，SHA-256 `982e2b14f6dbfd2819c71026f2747190811a741c7b25391c9c416a26b4e480fc`；`known_gaps` 明确 cooked 网格的运行时碰撞通道、箭头/环境视觉体/电缆/特效等未纳入项仍未验证。
+- **复查**：`python -m pytest -q foundation\tests` 共 **148 项通过**；`python run_smoke_test.py` 通过（合成集成，非官方对齐）。
+- **状态**：G2 仍为 **PARTIAL**。门洞、道路净空、代表性墙体和工厂入口的官方接触结果仍未取得；不能把候选实例数或本审计当作官方碰撞覆盖率。
+
+## 2026-11-09 03:45 G4 密集候选地图负载
+
+- **新增**：`foundation/benchmark_batch_dense_map.py` 加载 OL1 六个可选组共 12,609 个候选实例，64/256 个环境分别从不同候选表面采样初态，各执行一个 0.01 秒高速接近指令。
+- **结果**：[v2_batch_dense_map_benchmark.json](v2_batch_dense_map_benchmark.json)（SHA-256 `b27188f9114b7b4405931701cb4cb1745ed3c736616615939a9451d16d37f259`）两次短测中位批处理吞吐约 777.2/710.9 环境命令每秒，独立单例约 777.0/716.5；64/256 个环境全部报告候选地图接触，批量与单例事件及末态一致，状态最大差为 0。
+- **限制**：顺序参考路径，不是向量化加速结论；单次局部查询中位候选筛选数约 2，不是官方密集赛道分布；没有同机官方吞吐对照；候选变换、碰撞通道和接触响应仍未验证。
+- **状态**：G4 仍为 **PARTIAL**。这补齐了“密集地图负载”的本地基准，但官方同机对照和车辆贴地保守误拒仍未解决。
+
+## 2026-11-09 03:55 G4 车辆贴地保守误拒
+
+- **改动**：`CandidateMapObstacleFilter` 从单个整车外接球改为 N×N×N 子盒球并集，默认 N=2；`ScenarioFactory(vehicle_subdivisions=N)` 可显式增大，清单记录该值。瞬时转向处仍用整车外接球覆盖中间朝向，保持保守。
+- **审计**：[v2_vehicle_map_clearance_audit.json](v2_vehicle_map_clearance_audit.json)（SHA-256 `b119ab5a04ebad8937c6e1d58c4daf5d6ebc82da1ba3ac916dd5218a6a11c022`）在 64 个 OL1 顶面道路三角、显式探针车辆半尺寸 `(0.8, 0.4, 0.3) m` 上测试。间隙 0/0.1/0.3/0.5 m 时，单球接受 0/0/0/0；N=2 接受 0/0/1/45；N=4 接受 0/0/45/46；N=10 接受 0/29/45/46。
+- **限制**：探针尺寸不是官方车辆资产；顶面采样可能与其他候选几何重叠；球并集仍比盒体大，精确贴地接触仍会拒绝；转向处仍用外接球；接受的路线不是官方可通行证明。
+- **状态**：G4 仍为 **PARTIAL**。贴地误拒已量化并显著缓解，但官方同机吞吐和官方车辆/道路接触仍未获得。
+
+## 2026-11-09 04:55 G4 实际候选地图高速扫掠漏检
+
+- **新增**：`foundation/benchmark_map_sweep_miss.py` 和 [v2_map_sweep_miss_benchmark.json](v2_map_sweep_miss_benchmark.json)（SHA-256 `8c4b8ac6e67475cf68ac82ee5dba9d1eb81ac18164b6e78ba2f399b573cc86fd`）。
+- **方法**：从 OL1 候选地图取 16 个道路顶面和 16 个非道路表面，各构造沿法向穿越的 2 m 路径；速度 10/50/100/150 m/s，最大子步 0.001–0.1 s；用直接连续球扫作为参考，再让 `PhysicsSim` 实际步进，统计候选碰撞是否发生。
+- **结果**：32 个案例 × 4 速度 × 6 子步 = 768 次仿真，**0 漏检**；每个速度/子步组合的漏检率均为 0。该结果是候选地图在同一条扫掠实现下的自洽检查，不是官方漏检概率，也没有冻结的验收阈值。
+- **限制**：只覆盖直线法向穿越，不含擦边、转向或运动障碍；候选变换、通道和接触响应未验证；不能把 0/768 当作官方碰撞漏检率。
+- **状态**：G4 仍为 **PARTIAL**。
+
+## 2026-11-09 05:05 G1 四电机差动脉冲方向
+
+- **新增**：[v2_motor_direction_audit.md](v2_motor_direction_audit.md) 与 [v2_motor_direction_audit.json](v2_motor_direction_audit.json)（SHA-256 `bcf5a515f6f76a845d591ab3c442ea810987ca3d14762f828b01df4687fffb4f`）。
+- **结果**：`d03_differential_retry_20261107`、`d03_differential_seed456_20261107` 和新官方进程 `v2_official_differential_seed260007_20261109` 三次独立进程，四个单电机 +0.004 脉冲的 x/y 角速度符号与候选 FRD 单电机符号 **12/12 一致**，三次采集完全相同。
+- **限制**：四个 yaw/z 斜率都低于 0.1 rad/s²，z 符号未解析；公开电机顺序和候选机体系仍是假设；不独立解码运行时通道、不证明真实旋向或完整包线。
+- **状态**：G1 的方向子证据增强，但 G1 仍为 **PARTIAL**，参数辨识仍 **BLOCKED**；PWM 范围/裁剪/保持/超时和保留集误差仍未完成。
+
+## 2026-11-09 05:15 G3 受控 W02/F01/F02 接口
+
+- **新增**：[v2_g3_controlled_benchmark.md](v2_g3_controlled_benchmark.md) 与 [v2_g3_controlled_benchmark.json](v2_g3_controlled_benchmark.json)（SHA-256 `66ca647c124328f8b88a86f5e8eb25f05f829e788b9e8601b78c4d005aff713a`）。
+- **W02**：3 m/s 常值风、区域 `x∈[-1,1] m`，80 个物理子步中 25 个非零、55 个零；进入/离开区域采样正确，离开后归零。
+- **F01**：常值 flag 0/1 下 PWM 0.20 的滤波信号为 0.0500000003/0.2，验证 0.25 倍目标缩放链。
+- **F02**：flag 日程 `[1,0,1,0,1,1]`、阈值 0.15 s 时，仅在 flag=0 区间累计；0.36 s 时约 0.16 s 超阈值，最终约 0.20 s；flag=1 不清零。
+- **限制**：全部为合成风帧/区域/flag，不是自然风区、W01/F01/F02 验收；G3 仍为 **PARTIAL/UNVERIFIED**。
+
+## 2026-11-09 05:20 官方隔离容器运行
+
+- **运行**：passive smoke（seed 123）exit 0；`heldout_mix` seed260004/260006 因 `motion guard exceeded` 中止但保留记录；`heldout_mix_small` seed260005 完成，8/8 命令边缘有回显匹配；`differential` seed260007 完成，四电机 x/y 方向与前两次一致。
+- **官方哈希**：有 PWM 运行的 `pool.json` 二进制为 `5231addf…b97800`，设置为 `0d72886f…6c6c17`；容器均停止。
+- **新时钟点**：seed260004/260006 的自由落体尾段源时间加速度 9.7897/9.7908 m/s²（-0.173%/-0.162% vs g），二次拟合 RMSE 0.0143/0.0141 mm；到达时间 9.7972/9.8790 m/s²、RMSE 1.322/1.083 mm。
+- **回显**：seed260005 八个边缘的主机到达延迟约 16.2–66.0 ms，Header 差 -5.4 到 +44.4 ms；Header 仍来自 IMU 请求，不是电机采样时间。
+- **实时因子**：passive 源/到达跨度比 1.0000036，heldout_mix_small 为 1.0004301；官方接近实时推进，不能换算成官方 64/256 环境吞吐。机器可读结果 [v2_official_realtime_factor.json](v2_official_realtime_factor.json)（SHA-256 `1b8151f6…4de2`）。
+- **记录**：[v2_official_run_20261109.md](v2_official_run_20261109.md)；回声审计 [v2_official_heldout_mix_small_seed260005_echo.json](v2_official_heldout_mix_small_seed260005_echo.json)（SHA-256 `a138d034…e85c`）。
+- **状态**：G1 参数辨识仍 **BLOCKED**，G2/G3/G4 状态不变；这些运行确认了隔离官方采集链路，但没有解除官方接触/吞吐缺口。
+
+
+## 2026-11-09 04:05 G1 两轮校准的可辨识性归档
+
+- **新增**：[v2_identifiability.md](v2_identifiability.md) 与 [v2_identifiability.json](v2_identifiability.json)（SHA-256 `ea8adb0108371bf686b24b782895b6923f9ef256f94918b04414c865032ef65d`），只汇总既有两轮网格，不重新拟合、不读取封存保留集。
+- **结果**：第一轮最优 `tau=2 ms, delay=0`，在边界；第二轮最优 `tau=0.5 ms, delay=0`，仍在边界；5% 近优集合只有 `tau=0.5/1.0 ms, delay=0`。`delay=0` 是下边界，正延迟在第二轮使目标变差约 12%/33%/71%（2/5/10 ms）；这不能证明物理延迟为零。
+- **指标**：第二轮最优的四条角速度 RMSE 比值为 0.814/1.007/0.885/0.971，其中一条基本不变；位置 RMSE 6.50–7.15 mm、姿态 RMSE 0.048–0.499°，变化很小。
+- **结论**：只可给出“`tau` 不高于约 1 ms、Header 基准下延迟接近零”的候选区间；参数辨识子问题保持 **BLOCKED**，恢复条件是新的独立时钟/电机状态/初速度/接触测量，而不是扩大网格。G1 整体仍为 **PARTIAL**。
+
+## 2026-11-09 04:12 G3 分层证据矩阵
+
+- **新增**：[v2_g3_evidence_matrix.md](v2_g3_evidence_matrix.md)，把风生成、空间/时间触发、风施力、力度衰减边界与 2 秒规则分层列出，并标明受控事实与 UNVERIFIED 范围。
+- **风生成**：注入阶段 4–6、seed 123/456/2026 的 18/18 关键帧字节精确匹配；自然赛程随机流、自然风区和官方边界未验证。
+- **风施力**：注入/强制样本中相对速度、二次项、旋转项和六面合力与原生计算吻合到约 1e-7 量级；自然风到达与 W01 轨迹未验证。强制 stage-4 短窗口位置 RMSE 0.094–0.320 mm（有风）对 0.913–1.747 mm（零风）只是同记录探索。
+- **力度衰减**：受控 flag 支持 0.25/1.0 目标比例、电机目标/滤波前作用点和 2 秒累计分支；自然区域成员、边界延迟、恢复与官方状态机未验证；2 cm 球/6 cm 偏移/3.8 cm 内缩只是候选假设。
+- **状态**：G3 仍为 **PARTIAL/UNVERIFIED**，以 G1 通过为前提；不把 0.25、2 cm、6 cm、3.8 cm 写成官方参数。
+
+## 2026-11-09 04:20 G2 代表性候选几何探针
+
+- **新增**：`foundation/audit_map_geometry.py` 和 [v2_map_geometry_probe.json](v2_map_geometry_probe.json)（SHA-256 `47c0025ec105b51ae0e7b37afe774e3a458fb6a28d3e73c46ccfc8e8054524a7`）。
+- **结果**：OL1 12/12 个门候选中心平面穿越匹配；64/64 个顶面道路三角自命中；64/64 个非道路候选表面自命中；25/25 个 complex-as-simple 建筑组件（12 工厂、12 港口、1 枢纽）自命中。官方接触证据仍只有两次启动过程的 `1_1_Port/R_logo_Sprite1`（各 4 次、候选表面最大距离 1.49e-8 cm）。
+- **限制**：门探针是候选中心平面和显式局部轴，不是门洞/官方触发；道路/墙体是同一几何的自命中，不是官方净空或接触；工厂入口和代表性墙体没有官方接触对照。
+- **剩余类别**：每图剩余 39 个静态网格组件已归类为 12 门、24 指示箭头和 3 个环境/天空视觉体；另有 5 Niagara、3 电缆 SplineMesh 和 2 个实例化网格未作为碰撞候选。该归类不证明它们的运行时碰撞通道。
+- **状态**：G2 仍为 **PARTIAL**。这补齐了代表性几何的可复现自检，但不能替代官方接触验证。
+
+## 2026-11-09 04:30 总体验收收口（PARTIAL）
+
+- **总体验收**：[foundation_acceptance.md](foundation_acceptance.md) 已更新为 2026-11-09 证据矩阵：G0 PARTIAL；G1 PARTIAL，参数辨识 BLOCKED；G2 PARTIAL；G3 PARTIAL/UNVERIFIED；G4 PARTIAL；总体 PARTIAL。无模块 PASS。
+- **交付**：PWM 单/批量接口、OL1 与 OL2–OL12 候选地图及缺口清单、风/力场分层证据、随机障碍、批量基准、`run_smoke_test.py`。
+- **可复核**：`python -m pytest -q foundation\tests` 156 项通过；`python run_smoke_test.py` 通过（合成集成）。
+- **未完成/禁止宣称**：G1 的物理时钟、电机状态、独立初速度、接触/风仍未辨识；G2 仅有单一起点 sprite 官方接触；G3 自然风区和 F01/F02 未验证；G4 无同机官方吞吐对照。不得宣称官方等价、完整碰撞覆盖或官方吞吐比。
+- **剩余独立工作**：需要新的官方测量或明确允许启动隔离官方容器；本地参数网格、保留集读取和更多自洽审计不能替代这些证据。
+
+## 2026-11-09 04:40 自由落体时钟一致性（探索性）
+
+- **新增**：[v2_ballistic_clock_audit.md](v2_ballistic_clock_audit.md) 与 [v2_ballistic_clock_audit.json](v2_ballistic_clock_audit.json)（SHA-256 `1c3348c08962fe37b014a000f76153a6f12e2f3d41b88cb25edb32f563e0ebf7`）。
+- **方法**：在最后一条非零 PWM 后寻找低 IMU 比力、平滑竖直下落的自由落体尾段；只使用已有无断点采集，不用 GDB、不跑参数网格、不读封存保留集。窗口准则是查看数据后确定的，属探索性。
+- **结果**：四组满足干净自由落体准则：`heldout_mix` seed 27182/31415、新官方进程 seed260004/260006。源时间加速度 9.7832/9.7898/9.7897/9.7908 m/s²（相对 g 偏差约 -0.24% 到 -0.16%），二次拟合 RMSE 0.012–0.021 mm；到达时间加速度 9.7059/9.7011/9.7972/9.8790 m/s²，RMSE 约 1.1–1.3 mm。seed260004/260006 的 player 均因 motion guard 中止，原始失败记录保留。
+- **解释**：这些短窗口支持 ROS Header 源时间作为均匀物理时间基；但拟合略低于 g 可能含残余推力/阻力，且均为同波形/相近初态，不能作为完整时钟校准。
+- **状态**：`clock_mapping` 的部分证据已补入 `unknowns.yaml`；G1 参数辨识仍 **BLOCKED**，G1 整体仍 **PARTIAL**。

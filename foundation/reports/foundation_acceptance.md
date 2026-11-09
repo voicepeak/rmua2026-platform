@@ -2,9 +2,42 @@
 
 ## Current V2 status
 
-The governing plan is [V2.0](implementation_plan_v2_zh.md); the current module-by-module record is [V2 execution status](v2_execution_status_zh.md). G0, G1, G2, G3, G4 and overall acceptance are **PARTIAL**. No module currently has the complete independent evidence and frozen test thresholds needed for a V2 PASS.
+The governing plan is [V2.0](implementation_plan_v2_zh.md); the current module-by-module record is [V2 execution status](v2_execution_status_zh.md). The status below is the 2026-11-09 evidence-based closeout; the historical sections after it are retained as provenance, not as current PASS evidence.
 
-The runnable single-vehicle PWM interface is available for research and prototype work, but its 6DOF parameters, map collision coverage, wind and force-zone effects are not proven equivalent to the official simulator. It must not be represented as an aligned high-frequency PWM training environment or a complete 1:1 replica. The default observation excludes simulator truth; the separate truth accessor is research-only. Candidate gate events are not official scoring. The current acceptance thresholds and held-out sets remain [PROVISIONAL](../config/acceptance.yaml).
+**Decision: overall PARTIAL. No module currently has the complete independent evidence and frozen test thresholds needed for a V2 PASS. G1 parameter identification is BLOCKED.**
+
+| Gate | Status | Current evidence | Remaining limitation / allowed use |
+|---|---|---|---|
+| G0 baseline, frame, PWM contract | PARTIAL | 12.0.0.5 binary hash, settings-semantic comparison, frame/attitude round-trip tests, PWM message snapshot; four clean free-fall tails (two from aborted guard runs) support the pose source time base to about 0.2% | Runtime settings were not read back; accepted PWM range/clipping/hold/timeout and the shipped AirSim revision remain unknown. Use only as a candidate contract. |
+| G1 wind-free collision-free PWM physics | PARTIAL; parameter identification **BLOCKED** | P01–P06 captures with repeats, fixed-window repeatability, two calibration rounds, sealed three-run holdout; exploratory free-fall clock check; four-motor differential x/y signs 12/12 over three processes | Physical command time, motor state, initial velocity, contact and wind remain unexcluded; yaw/z motor signs unresolved. The two rounds stop on grid boundaries; no further parameter grid is allowed. Do not claim calibrated high-frequency PWM training. |
+| G2 map and collision | PARTIAL | OL1 and OL2–OL12 serialized candidates; default 508 instances; all optional OL1 12,609 and OL2–OL12 12,597; 12 gates; 12 building + 480 rack cooked meshes; 12/12 gate, 64/64 road, 64/64 wall and 25/25 complex-as-simple self-probes | Only one startup sprite contact (`1_1_Port/R_logo_Sprite1`) is compared to official contact; door aperture, road clearance, representative walls and factory entrance lack official contact validation. No free-space guarantee. |
+| G3 wind and degradation | PARTIAL / **UNVERIFIED** | 18/18 injected-stage keyframes; controlled drag-face and six-face force agreement; forced 0.25/1.0 target scale; controlled W02/F01/F02 interface benchmark; candidate 2 s counter | Natural wind generation/delivery, W01, natural force-zone boundary and F02 remain unverified; G3 depends on G1. Treat only as an explicitly labelled approximation. |
+| G4 obstacles and batch | PARTIAL | Seeded line/vehicle generation; 90 synthetic high-speed sweeps; 768 actual-map high-speed crossings with zero candidate misses; single/batch consistency; vectorized free flight; dense-map benchmark; sub-box vehicle clearance audit; official real-time factor about 1.0000–1.0004 | No same-operation official throughput comparison was obtained. Official runs advance near real time, so local environment-command rates cannot be converted to an official 64/256 throughput ratio. Vehicle sphere cover remains conservative; official vehicle/road contact is unverified. |
+| Overall | **PARTIAL** | [run_smoke_test.py](../../run_smoke_test.py) and the gate reports above | Do not combine PARTIAL/BLOCKED modules into a claim of a complete 1:1 simulator. |
+
+### Prohibited claims at this status
+
+- Do not claim official PWM dynamics equivalence, calibrated motor time constants, or reliable high-frequency PWM policy training.
+- Do not claim complete OL1/OL2–OL12 collision coverage or free-space guarantees from a candidate miss.
+- Do not claim official natural wind, force-zone boundaries, 0.25 scaling, 2 cm sphere, 6 cm offset or 3.8 cm margin as official parameters.
+- Do not claim an official throughput ratio or official same-machine comparison from the local benchmarks.
+
+### Verified deliverables
+
+- PWM-only single and batch API: `foundation.runtime.RmuaPhysics`, `foundation.batch.BatchRmuaPhysics`.
+- Candidate maps, collision manifests and gaps: `foundation/maps/OL1/collision_manifest.json`, `foundation/maps/OTHER_MAPS.md`; cooked-mesh audit `v2_map_cooked_mesh_audit.json`; geometry probe `v2_map_geometry_probe.json`.
+- Wind/force-field layering and UNVERIFIED intervals: `v2_g3_evidence_matrix.md`; controlled W02/F01/F02 interface benchmark: `v2_g3_controlled_benchmark.md` / `.json`.
+- Calibration identifiability record: `v2_identifiability.md` / `.json`; exploratory free-fall clock consistency: `v2_ballistic_clock_audit.md` / `.json`; motor direction audit: `v2_motor_direction_audit.md` / `.json`; official isolated run record: `v2_official_run_20261109.md`; official real-time factor: `v2_official_realtime_factor.json`.
+- Batch benchmarks: `v2_batch_reference_benchmark.json`, `v2_batch_vectorized_benchmark.json`, `v2_batch_scenario_benchmark.json`, `v2_batch_map_contact_benchmark.json`, `v2_batch_dense_map_benchmark.json`, `v2_map_sweep_miss_benchmark.json`; vehicle clearance audit `v2_vehicle_map_clearance_audit.json`.
+- Smoke test: `.\.venv\Scripts\python.exe run_smoke_test.py` passes as a synthetic integration check only.
+- Test command: `.\.venv\Scripts\python.exe -m pytest -q foundation\tests` — 156 tests passed at the recorded closeout.
+
+### Conditions to reopen a gate
+
+1. G0/G1: new independent, low-perturbation measurement of physical command time and motor state, with an independently measured initial velocity and contact/wind exclusion. The sealed `v2_holdout_axis` data remain unread until thresholds are frozen.
+2. G2: official contact/clearance observations for representative door, road, wall and factory-entry locations, with collision channels and transforms resolved.
+3. G3: natural-course continuous wind/force-zone and trajectory data, or an explicit decision to close G3 as approximate/UNVERIFIED.
+4. G4: explicit consent to start isolated official simulator containers for a same-machine throughput method, or an explicit decision to close G4 without that comparison.
 
 The rest of this document retains the original historical evidence; its earlier table and “next” actions are not the V2 current status.
 
