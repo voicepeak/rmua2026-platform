@@ -7,6 +7,7 @@ reported yaw and clipped to the explicit safety envelope.
 """
 import json
 import math
+import subprocess
 import sys
 import time
 
@@ -99,6 +100,30 @@ def main():
         q = p.orientation
         event('start', pose=initial, quaternion_xyzw=[q.x, q.y, q.z, q.w],
               plan=plan, max_speed=max_speed, max_duration_s=max_duration)
+        if plan.get('takeoff'):
+            try:
+                result = subprocess.run(
+                    ['bash', '-lc',
+                     'source /opt/ros/noetic/setup.bash; source /workspace/rmua_ws/devel/setup.bash 2>/dev/null; '
+                     'rosservice call /airsim_node/drone_1/takeoff "waitOnLastTask: false"'],
+                    capture_output=True, text=True, timeout=15)
+                event('takeoff', returncode=result.returncode,
+                      stdout=result.stdout[-800:], stderr=result.stderr[-800:])
+                time.sleep(6.0)
+            except Exception as exc:
+                event('takeoff_error', error=str(exc))
+        if plan.get('reset'):
+            try:
+                result = subprocess.run(
+                    ['bash', '-lc',
+                     'source /opt/ros/noetic/setup.bash; source /workspace/rmua_ws/devel/setup.bash 2>/dev/null; '
+                     'rosservice call /airsim_node/reset'],
+                    capture_output=True, text=True, timeout=20)
+                event('reset', returncode=result.returncode,
+                      stdout=result.stdout[-800:], stderr=result.stderr[-800:])
+                time.sleep(3.0)
+            except Exception as exc:
+                event('reset_error', error=str(exc))
         status = 'aborted'
         last_log = 0.0
         start = time.monotonic()

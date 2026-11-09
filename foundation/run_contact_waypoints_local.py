@@ -65,10 +65,10 @@ def main():
     parser.add_argument('--image', default=PROBE_IMAGE)
     parser.add_argument('--gdb', type=Path, default=Path(__file__).parent / 'probes' / 'contact_readonly.gdb')
     args = parser.parse_args()
-    if not 1 <= args.player_timeout <= 300:
-        parser.error('player timeout must be 1-300 s')
-    if not 5 <= args.collector_seconds <= 180:
-        parser.error('collector duration must be 5-180 s')
+    if not 1 <= args.player_timeout <= 1200:
+        parser.error('player timeout must be 1-1200 s')
+    if not 5 <= args.collector_seconds <= 1200:
+        parser.error('collector duration must be 5-1200 s')
     binary = args.simulator / 'Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping'
     if not binary.is_file():
         parser.error('simulator binary not found')
@@ -98,6 +98,19 @@ def main():
             parser.error('missing probe source: ' + str(source))
     shutil.copy2(probe, scripts / 'crash_capture.gdb')
     shutil.copy2(args.pool, scripts / 'headless_pool.py')
+    workspace = Path('/home/tianbot/RUMA-by-helinjun/beta/rmua_ws')
+    if workspace.is_dir():
+        pool_text = (scripts / 'headless_pool.py').read_text(encoding='utf-8')
+        marker = "'-v',str(sim)+':/sim:ro',"
+        if marker in pool_text and str(workspace) + ':/workspace/rmua_ws:ro' not in pool_text:
+            pool_text = pool_text.replace(
+                marker, marker + "'-v','" + str(workspace) + ":/workspace/rmua_ws:ro',")
+            (scripts / 'headless_pool.py').write_text(pool_text, encoding='utf-8')
+            manifest_workspace = str(workspace)
+        else:
+            manifest_workspace = None
+    else:
+        manifest_workspace = None
     shutil.copy2(player_source, scripts / 'contact_waypoints.py')
     shutil.copy2(args.waypoints, args.output / 'waypoints.json')
     collector_text = collector_source.read_text(encoding='utf-8')
@@ -127,6 +140,7 @@ def main():
         },
         'capture_state': 'started; result not yet received',
         'exit_status': None,
+        'workspace_mount': manifest_workspace,
         'limitations': [
             'velocity control with debug pose truth; diagnostic only, not a policy result',
             'GDB all-stop contact breakpoint changes timing and may change collision response',
@@ -182,6 +196,15 @@ def main():
             text=True, capture_output=True, timeout=args.player_timeout + 20)
         (args.output / 'player.log').write_text(player.stdout + player.stderr, encoding='utf-8')
         manifest['player_exit_status'] = player.returncode
+        save()
+        try:
+            with (args.output / 'simulator.log').open('w', encoding='utf-8', errors='replace') as log_stream:
+                subprocess.run(['docker', 'logs', container], stdout=log_stream,
+                               stderr=subprocess.STDOUT, text=True, check=False)
+            manifest['simulator_log_saved'] = True
+        except OSError as exc:
+            manifest['simulator_log_saved'] = False
+            manifest['simulator_log_error'] = repr(exc)
         save()
         stop = run(['docker', 'stop', '--time', '1', container], capture_output=True)
         (args.output / 'stop.log').write_text(stop.stdout + stop.stderr, encoding='utf-8')

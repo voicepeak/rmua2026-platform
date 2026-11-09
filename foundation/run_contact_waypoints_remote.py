@@ -8,6 +8,8 @@ import argparse
 import hashlib
 import json
 import posixpath
+import tarfile
+import time
 import uuid
 from pathlib import Path
 
@@ -67,7 +69,19 @@ def main():
     if not all(Path(source).is_file() for source in sources):
         parser.error('missing local probe source')
     remote = '/tmp/foundation-contact-' + uuid.uuid4().hex
-    client = connect(args.connection_script)
+    client = None
+    last_error = None
+    for attempt in range(4):
+        try:
+            client = connect(args.connection_script)
+            break
+        except Exception as exc:
+            last_error = exc
+            if attempt == 3:
+                raise
+            time.sleep(5 * (attempt + 1))
+    if client is None:
+        raise last_error
     try:
         sftp = client.open_sftp()
         sftp.mkdir(remote, mode=0o700)
@@ -114,7 +128,31 @@ def main():
             'source_sha256': {source: digest(source) for source in sources},
             'config_sha256': digest(args.config),
         }, indent=2) + '\n', encoding='utf-8')
-        download_dir(sftp, output_remote, args.output / 'run')
+        archive_remote = posixpath.join(remote, 'output.tar.gz')
+        archive_local = args.output / 'run.tar.gz'
+        made_archive = False
+        try:
+            _, tar_out, tar_err = client.exec_command(
+                'tar -czf %s -C %s output' % (archive_remote, remote), timeout=60)
+            tar_out.channel.recv_exit_status()
+            sftp.get(archive_remote, str(archive_local))
+            made_archive = archive_local.stat().st_size > 0
+        except Exception as exc:
+            (args.output / 'archive_error.txt').write_text(repr(exc) + chr(10), encoding='utf-8')
+        if made_archive:
+            tmp = args.output / 'tar_extract'
+            tmp.mkdir()
+            with tarfile.open(archive_local, 'r:gz') as archive:
+                archive.extractall(tmp, filter='data')
+            destination = args.output / 'run'
+            if destination.exists():
+                destination.rename(args.output / 'run_perfile')
+            (tmp / 'output').rename(destination)
+            tmp.rmdir()
+            (args.output / 'artifact_mode.txt').write_text('tar' + chr(10), encoding='utf-8')
+        else:
+            download_dir(sftp, output_remote, args.output / 'run')
+            (args.output / 'artifact_mode.txt').write_text('per-file' + chr(10), encoding='utf-8')
         sftp.close()
         print('exit_status:', status)
         print(out, err)
