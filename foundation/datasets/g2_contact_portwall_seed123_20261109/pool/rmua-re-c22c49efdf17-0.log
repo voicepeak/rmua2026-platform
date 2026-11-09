@@ -1,0 +1,738 @@
+Breakpoint 1 at 0x2630780
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 189]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 123 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.09-11.18.29:653][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.09-11.18.29:653][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.09-11.18.29:653][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.09-11.18.29:653][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.09-11.18.29:653][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.09-11.18.29:653][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.09-11.18.29:654][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.09-11.18.29:654][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.09-11.18.29:654][  0]LogInit: Unix hardware info:
+[2026.11.09-11.18.29:654][  0]LogInit:  - we are the first instance of this executable
+[2026.11.09-11.18.29:654][  0]LogInit:  - this process' id (pid) is 110, parent process' id (ppid) is 108
+[2026.11.09-11.18.29:654][  0]LogInit:  - we are not running under debugger
+[2026.11.09-11.18.29:654][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.09-11.18.29:654][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.09-11.18.29:654][  0]LogInit:  - we're logged in locally
+[2026.11.09-11.18.29:654][  0]LogInit:  - we're running without rendering
+[2026.11.09-11.18.29:654][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.09-11.18.29:654][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.09-11.18.29:654][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.09-11.18.29:654][  0]LogInit:  - Cache line size: 64
+[2026.11.09-11.18.29:654][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.09-11.18.29:654][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.09-11.18.29:654][  0]LogInit:  - This is an internal build.
+[2026.11.09-11.18.29:654][  0]LogCore: Benchmarking clocks:
+[2026.11.09-11.18.29:654][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 80789973 (80790K, 81M) calls per second without zero deltas.
+[2026.11.09-11.18.29:654][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 70949716 (70950K, 71M) calls per second without zero deltas.
+[2026.11.09-11.18.29:654][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 210386146 (210386K, 210M) calls per second with 99.999520% zero deltas.
+[2026.11.09-11.18.29:654][  0]LogCore: Selected clock_id 1 (CLOCK_MONOTONIC) since it is the fastest support clock without zero deltas.
+[2026.11.09-11.18.29:654][  0]LogInit: Unix-specific commandline switches:
+[2026.11.09-11.18.29:654][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.09-11.18.29:654][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.09-11.18.29:654][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.09-11.18.29:654][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.09-11.18.29:654][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.09-11.18.29:654][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.09-11.18.29:654][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.09-11.18.29:654][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.09-11.18.29:654][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.09-11.18.29:654][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.09-11.18.29:654][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.09-11.18.29:654][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.09-11.18.29:654][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.09-11.18.29:654][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.09-11.18.29:693][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.09-11.18.29:693][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.09-11.18.29:693][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.09-11.18.29:693][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.09-11.18.29:704][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.09-11.18.29:705][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.09-11.18.29:705][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.09-11.18.29:706][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.09-11.18.29:706][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.09-11.18.29:706][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.09-11.18.29:708][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.09-11.18.29:708][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.09-11.18.29:708][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.09-11.18.29:708][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.09-11.18.29:708][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.09-11.18.29:709][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.09-11.18.29:737][  0]LogTextLocalizationManager: Compacting localization data took   1.27ms
+[2026.11.09-11.18.29:737][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.09-11.18.29:737][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000024 seconds
+[2026.11.09-11.18.29:737][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.09-11.18.29:741][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.09-11.18.29:741][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.09-11.18.29:741][  0]LogInit: Active device profile: [0x7e71379191c0][0x7e7136ce9250 49] LinuxNoEditor
+[2026.11.09-11.18.29:741][  0]LogInit: Profiles: [0x7e7137918ec0][0x7e713ef30010 49] Linux, [0x7e71379191c0][0x7e7136ce9250 49] LinuxNoEditor, 
+[2026.11.09-11.18.29:744][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.09-11.18.29:768][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.09-11.18.29:768][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.09-11.18.29:769][  0]LogTemp: Circle 构造函数调用
+[2026.11.09-11.18.29:769][  0]LogTemp: Circle 构造函数调用
+[2026.11.09-11.18.29:769][  0]LogTemp: Circle 构造函数调用
+[2026.11.09-11.18.29:774][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.09-11.18.29:804][  0]LogTemp: AirSimROS Loaded.
+[2026.11.09-11.18.29:804][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.09-11.18.29:806][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.09-11.18.29:806][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.09-11.18.29:806][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.09-11.18.29:806][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.09-11.18.29:808][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.09-11.18.29:808][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.09-11.18.29:839][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.09-11.18.29:839][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.09-11.18.29:839][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.09-11.18.29:864][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.09-11.18.29:864][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.09-11.18.29:864][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.09-11.18.29:864][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.09-11.18.29:864][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.09-11.18.29:967][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.09-11.18.29:967][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.09-11.18.29:967][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.09-11.18.29:967][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.09-11.18.29:967][  0]LogInit: Texture streaming: Disabled
+[2026.11.09-11.18.29:976][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.09-11.18.29:976][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.09-11.18.29:976][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.09-11.18.29:976][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.09-11.18.29:976][  0]LogTemp: Warning: App Init End !!! 2026-11-09 11:18:29 127.0.0.2
+[2026.11.09-11.18.29:976][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.09-11.18.29:976][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.09-11.18.29:976][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.09-11.18.29:976][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.09-11.18.29:977][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.09-11.18.29:977][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.09-11.18.29:977][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.09-11.18.29:985][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.09-11.18.29:986][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.09-11.18.29:986][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.09-11.18.29:986][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.09-11.18.29:986][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.09-11.18.30:088][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.09-11.18.30:088][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.09-11.18.30:088][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.09-11.18.30:089][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.09-11.18.30:089][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.09-11.18.30:089][  0]LogInit: Display: Starting Game.
+[2026.11.09-11.18.30:089][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.09-11.18.30:089][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.09-11.18.30:089][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.09-11.18.30:089][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.09-11.18.30:089][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.09-11.18.30:090][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2026.11.09-11.18.30:093][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.09-11.18.30:093][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.09-11.18.30:094][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.09-11.18.30
+[2026.11.09-11.18.30:094][  0]LogWorld: Bringing up level for play took: 0.000102
+[2026.11.09-11.18.30:094][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.09-11.18.30:094][  0]r.SetRes = "1280x720 w"
+[2026.11.09-11.18.30:094][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.09-11.18.30:094][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.09-11.18.30:094][  0]LogLoad: Took 0.005116 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.09-11.18.30:101][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.09-11.18.30:101][  0]LogLoad: (Engine Initialization) Total time: 0.52 seconds
+[2026.11.09-11.18.35:101][133]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.09-11.18.35:101][133]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.09-11.18.35:101][133]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.09-11.18.35:101][133]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.09-11.18.35:101][133]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.09-11.18.35:102][133]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2026.11.09-11.18.35:102][133]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.09-11.18.35:393][133]LogPakFile: Precache HighWater 16MB
+
+[2026.11.09-11.18.35:393][133]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.09-11.18.35:393][133]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.09-11.18.35:421][133]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.09-11.18.35
+[2026.11.09-11.18.35:422][133]LogWorld: Bringing up level for play took: 0.028042
+[2026.11.09-11.18.35:437][133]LogPackageName: SearchForPackageOnDisk took   0.013s, but failed to resolve .
+[2026.11.09-11.18.35:437][133]r.CustomDepth = "3"
+[2026.11.09-11.18.35:438][133]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.09-11.18.35:453][133]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.09-11.18.35:454][133]LogTemp: Warning: No Drone API
+[2026.11.09-11.18.35:454][133]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 421]
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0xf8 component=0x7e7137932f40 fname=765551,0 class=0x7e713ec0d580 world_xyz=-6.85020691e-18,0,1.40898753e-35 world_quat=-1,1,0,1 vtable=0x10b9840
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x130 component=0x7e6f408910f0 fname=776463,0 class=0x7e713eb73300 world_xyz=0,0,-37.9090347 world_quat=0,0,0,1 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x340 component=0x7e6f56ad1be0 fname=776478,0 class=0x7e713ebf0600 world_xyz=0,0,-31.4643269 world_quat=0,0,0,1 vtable=0x10b47d8
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x348 component=0x7e6f5666cdd0 fname=776445,0 class=0x7e713ec00380 world_xyz=0,0,-31.9090347 world_quat=0,0,0,1 vtable=0x10c66b8
+DRONE_CANDIDATE_BYTES component=0x7e6f5666cdd0 bytes=b8660c010000000000002000928b00008003c03e717e0000fdd80b0000000000909d7d3e717e0000886f0c010000000030660b010000000002000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000d064a050100000000000000000000000000000000000000909d7d3e717e0000b0a8212f717e0000005bb42f717e0000ffffffff00000000f01089406f7e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b445ffc10000004000000040000000400000004000000000000000000000c0400000000000000000000000000000803f0000803f0000803f000000000000000000000000614400020000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f0000000000000000b445ffc1000000000000803f0000803f0000803f000000000000000000000000d06f0c01000000000000000000000000000000000000010040a11f6205183b0001000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000000000000000000000000000000000000000001263900000000803f00000000000000000000803f0000000000007ac400007ac4000000000000000000000000000000000000000000000000000000000000000000000000004c8e2f717e00000300000004000000d883bc0000000000938b0000723d00001c000000ffffffffffff00000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030000200000000803f0000803f0000803f17f30a0000000000080100000101010101010101000202020202000202020202020202020202020202020202e01ab02f717e00000800000008000000000000000000c842ffffffff000000000ad7233c000000000000000000000000000000000000000000000000000000000000803f0000803f0000803f0000803f000000000000000000000000000000000000000000000000000000000000803f0000000000000000000061450000803f0000803f00000000d0cf3d406f7e0000928b0000733d00000000000000000000010000000000000098d066566f7e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c07e96556f7e000000ddc63e717e00000000ffff0800000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000090a50b010000000000000000578a000000c9c13e717e0000bc6105009afbff7fa042093f717e000068ae0b010000000030660b010000000002000e010000000000000000000000000000000000000000807a1137717e000060d266566f7e00000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffff018e430400000000000000000000000000000000000000000000000000000000b0a8212f717e00000000000000000000ffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080490000804900008049d7b3dd490000000000000000000000000000000000000000000000000000803f0000803f0000803f000000000000000000000000214000020000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000803f0000803f0000803f000000000000000000000000b0ae0b01000000000000000000000000000000000000010040a01fe205103b0000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000000000000000000000000000000000000000001123900000000803f00000000000000000000803f0000000000007ac400007ac400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d883bc0000000000ffffffff0000000014000000ffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030000200000000803f0000803f0000803f496402000000000008010000020202000002020200020202020200020202020202020202020202020202020200190730717e00000200000020000000000000000000c842
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x350 component=0x7e712f2f8b20 fname=776496,0 class=0x7e713eb73300 world_xyz=9.26588535,14.084403,-33.1175499 world_quat=-0.0500634722,-0.0323030874,-0.344433129,0.936918378 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x358 component=0x7e712f2fb050 fname=776524,0 class=0x7e713eb73300 world_xyz=9.33069801,-14.1561899,-33.0993385 world_quat=0.0310120247,-0.0719053894,0.639876068,0.764477849 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x360 component=0x7e712f2fab00 fname=776538,0 class=0x7e713eb73300 world_xyz=-11.9102316,11.1353655,-35.4609413 world_quat=-0.0421390645,0.0152128572,0.831925213,0.553076208 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x368 component=0x7e712f2f7b30 fname=776510,0 class=0x7e713eb73300 world_xyz=-11.8896084,-11.0765839,-35.4374657 world_quat=0.074167192,0.0213778242,-0.533950686,0.841985106 vtable=0x1353248
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x370 component=0x7e712f8edc00 fname=776396,0 class=0x7e713ebf6a00 world_xyz=22.1357765,-12.5,-37.9090347 world_quat=0,0,8.94069316e-08,1 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x378 component=0x7e712f8e52c0 fname=776259,0 class=0x7e713ebf6a00 world_xyz=-22.6780586,-1.66811642e-05,-37.9090347 world_quat=0,0,0.99999994,3.57627869e-07 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x380 component=0x7e712f8ede40 fname=776370,0 class=0x7e713ebf6a00 world_xyz=22.1357765,-4.26725001e-06,-37.9090347 world_quat=0,0,8.94069316e-08,1 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x388 component=0x7e712f8ec340 fname=776420,0 class=0x7e713ebf6a00 world_xyz=22.1357765,12.5,-37.9090347 world_quat=0,0,8.94069316e-08,1 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x390 component=0x7e712f8e5500 fname=776284,0 class=0x7e713ebf6a00 world_xyz=0,0,-37.9090347 world_quat=1.1920929e-07,0.707106769,-8.94069672e-08,0.707106709 vtable=0x11dd690
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x3a0 component=0x7e6f55e40520 fname=776614,0 class=0x7e713ec52180 world_xyz=0,0,0 world_quat=0,0,0,0 vtable=0x10c3180
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x3a8 component=0x7e6f55e40f40 fname=776596,0 class=0x7e713ec52180 world_xyz=0,0,0 world_quat=0,0,0,0 vtable=0x10c3180
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x3b0 component=0x7e6f55e4acc0 fname=776578,0 class=0x7e713ec52180 world_xyz=3.73755646,4.53558274e-41,1.821688e-44 world_quat=3.22298647e-44,3.36311631e-44,5.62454579e-40,0 vtable=0x10c3180
+DRONE_OWNED_PTR actor=0x7e713e7d9d90 actor_offset=0x3b8 component=0x7e6f55e49d00 fname=776560,0 class=0x7e713ec52180 world_xyz=3.73777771,4.53558274e-41,1.68155816e-44 world_quat=3.36311631e-44,3.36311631e-44,5.62454579e-40,0 vtable=0x10c3180
+MAP_CONTACT mono=559261.440798658 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=0,0,-37.9090347 source_actor=0x7e712f5b7c00 source_component=0x7e6f56622070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffffda114a3d17dbd53f000000000000000080b01bc2001f99c000fa8b3e09001cc211f66033149d93270000803f11f66033149d93270000803f0000000000000000a70115c20000000000000000954f4ac200000000ffffffff00010000ffffffff00000000e1440000763d0000944e0000bc26000000000000000000000000000000000000
+MAP_CONTACT mono=559261.488510674 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=0,0,-37.9090347 source_actor=0x7e712f5b7c00 source_component=0x7e6f56622070 source_xyz=-29.9921875,0.00100708008,-40.0000343 source_quat=0.49999994,0.5,0.49999997,0.499999911 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=773535,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000b8b4813f000000000000000080b01bc2001f99c000fa8b3e09001cc211f66033149d93270000803f11f66033149d93270000803f0000000000000000daa217c20000000000000000548f85c200000000ffffffff00010000ffffffff00000000e1440000763d0000944e0000bc26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.189815434 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.3072586,461.836945,225.118866 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000008e32cc3d443711c2e2f7e643b61e6143190b37c27783ee43faad634383ffa034000080bf6263983283ffa034000080bf62639832a23a11c221ebe6436e1e61433ea610c22e1de943e62a614300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.238524267 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.3072586,461.836945,225.118866 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000f79bd83dfa3611c2a9f8e643c11e6143400b37c27583ee43cab6634382a60934000080bf84cb763382a60934000080bf84cb7633a23a11c221ebe6436e1e6143310e10c20b43eb433239614300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.289281480 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.3051643,461.850159,225.119278 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff9490853c18e5e93d562811c28ff9e643521f614313fd36c27483ee4363c16343be9ecf34000080bfdf498332be9ecf34000080bfdf498332a23a11c221ebe6436e1e61431eb710c2df52e743d724614300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.338997039 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.3051643,461.850159,225.119278 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000c6b3913da10111c2c5f2e643131d6143a66cd3c17483ee4395766343ff43b533000080bfcff12434ff43b533000080bfcff124347d3811c2d2ece643891e6143cbb410c219fbe643081b614300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.438971050 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.1797333,461.836243,225.110077 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000000cb810c20aebe6432e1c61432743d3c17283ee43ce686543c00ac3b3000080bf20268033c00ac3b3000080bf202680330cb810c20aebe6432e1c6143f33c10c2feebe643c01b614390b6783dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.488496077 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.1797333,461.836243,225.110077 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000000cb810c20aebe6432e1c61437166d3c17283ee438d3d6543fe843534000080bf7f98eab2fe843534000080bf7f98eab20cb810c20aebe6432e1c6143c6b70fc2c4f3e64350216143e259f23dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.639744481 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.0775337,461.755615,225.17041 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000654f10c2b8e0e643a02b614342cbd2c16f83ee438d0265437d64ad34000080bffd2690b27d64ad34000080bffd2690b2654f10c2b8e0e643a02b6143c7dd0fc291f2e643403e61438226053effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.688660907 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-36.0775337,461.755615,225.17041 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000654f10c2b8e0e643a02b614399d2d2c17283ee4349f76443fe9cc333000080bfdfde07b4fe9cc333000080bfdfde07b4654f10c2b8e0e643a02b614373690fc27e12e743fd516143818c123effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.838938665 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9848785,461.696289,225.244247 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000084f00fc220d9e643873e6143e215d2c16f83ee43eff86443fe8f8cb3000080bffddb7d33fe8f8cb3000080bffddb7d3384f00fc220d9e643873e61437d8e0fc24cf3e643085461434328ce3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.888794429 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9848785,461.696289,225.244247 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000084f00fc220d9e643873e6143a212d2c16e83ee4332f76443fe622fb4000080bfbd3de533fe622fb4000080bfbd3de53384f00fc220d9e643873e61431e2f0fc23a1ae743746861432370cf3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559270.938672602 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9848785,461.696289,225.244247 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000084f00fc220d9e643873e61438e10d2c17383ee43e5f8644300ef0534000080bf0064c3b200ef0534000080bf0064c3b284f00fc220d9e643873e614357920fc27fdde6439c5161434089ca3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.089659972 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161438660d1c16d83ee4353036543fabf4eb2000080bf7bcc4833fabf4eb2000080bf7bcc48334ba40fc2a4d6e643a8516143774f0fc21ef1e6434a686143c500a53dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.138561226 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161439e59d1c17083ee43fd036543fe5da433000080bffeddc1b3fe5da433000080bffeddc1b34ba40fc2a4d6e643a85161437cf60ec2ba1be743837e6143023e9f3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.188450534 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143c454d1c17183ee43b6076543fe093d34000080bf003ca8b1fe093d34000080bf003ca8b14ba40fc2a4d6e643a851614309550fc2c3dce643ad63614301f8943dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.238484219 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143f44bd1c17283ee43dc056543fe476a34000080bf7fc23333fe476a34000080bf7fc233334ba40fc2a4d6e643a851614352550fc21ed9e643dc646143c1da923dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.289010851 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161435442d1c17183ee439203654300a8fdb3000080bf9f58093400a8fdb3000080bf9f5809344ba40fc2a4d6e643a8516143d5590fc2cad8e6431f6661430148913dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.338711079 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143fc38d1c17283ee4374016543ff9fccb1000080bffecbd4b3ff9fccb1000080bffecbd4b34ba40fc2a4d6e643a851614392610fc2b2d7e6439e65614341578f3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.389067505 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161439430d1c17083ee43e4ff64437d359e34000080bf3eff80b37d359e34000080bf3eff80b34ba40fc2a4d6e643a851614352600fc2b3d8e6436b676143421b8d3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.441076242 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143fc27d1c17183ee4385fe6443fe317c34000080bffeddefb3fe317c34000080bffeddefb34ba40fc2a4d6e643a851614351620fc222d9e643bc676143e13a8a3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.488941839 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143a91fd1c16f83ee437bfd6443fda99d33000080bffc1f3bb2fda99d33000080bffc1f3bb24ba40fc2a4d6e643a8516143ba670fc248d8e6438d6661438315873dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.540070855 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143ee17d1c17083ee43c4fc6443fc057934000080bfbe4b91b3fc057934000080bfbe4b91b34ba40fc2a4d6e643a851614349650fc266d9e64318686143427c833dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.588800346 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143dd0fd1c17283ee4334fc64437edbb534000080bfff5e35b37edbb534000080bfff5e35b34ba40fc2a4d6e643a85161431b660fc2dad9e6434868614342787e3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.638679218 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143dc07d1c17183ee43c1fb6443ffa700b3000080bf5e252534ffa700b3000080bf5e2525344ba40fc2a4d6e643a85161436f6a0fc207d9e643596761434244763dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.688516786 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161434400d1c17483ee4367fb644300a60534000080bf0068593300a60534000080bf006859334ba40fc2a4d6e643a85161435d670fc238dae6432069614340896d3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.738579177 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161434bf8d0c17183ee431ffb6443fe8feab2000080bf7fbe11b3fe8feab2000080bf7fbe11b34ba40fc2a4d6e643a851614385670fc2b3dae6434c69614382de643dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.788626096 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614368f0d0c17083ee43ecfa6443fd497734000080bf3e762434fd497734000080bf3e7624344ba40fc2a4d6e643a8516143486b0fc2e8d9e643e467614303d35b3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.838445557 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143fee8d0c16e83ee43d0fa6443fe6d81b3000080bfbe4609b4fe6d81b3000080bfbe4609b44ba40fc2a4d6e643a8516143e5670fc216dbe6437e6961438310533dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.890661109 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614327e1d0c17383ee43b9fa644301c076b3000080bf00e30d3401c076b3000080bf00e30d344ba40fc2a4d6e643a8516143ca670fc299dbe6438a696143c0c6483dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.938564113 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614360d9d0c17083ee43abfa6443fc2b4433000080bf7da4b532fc2b4433000080bf7da4b5324ba40fc2a4d6e643a85161435b6b0fc2c8dae6431368614383713f3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559271.989569932 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614306d2d0c17083ee43a8fa6443fd7c6c34000080bf0d1b25b4fd7c6c34000080bf0d1b25b44ba40fc2a4d6e643a8516143db670fc206dce6439f6961430315363dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.038793575 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614340cad0c17383ee43a7fa6443fc2f51b2000080bf9dbc8333fc2f51b2000080bf9dbc83334ba40fc2a4d6e643a8516143a9670fc28adce643ad69614383d32b3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.088663785 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614383c2d0c17483ee43a8fa6443014c0333000080bff1b361b4014c0333000080bff1b361b44ba40fc2a4d6e643a8516143326b0fc2bddbe643366861437fb5213dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.138483487 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614332bbd0c17383ee43b0fa644300c076b1000080bf203ae23300c076b1000080bf203ae2334ba40fc2a4d6e643a8516143a6670fc2f7dce643c6696143c07d183dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.188497629 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161436eb3d0c17683ee43b6fa644301201b32000080bf019f3bb301201b32000080bf019f3bb34ba40fc2a4d6e643a851614370670fc27fdde643ce6961433f2c0e3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.238506332 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143b4abd0c17083ee43bffa6443fe3fb631000080bf9ef0d133fe3fb631000080bf9ef0d1334ba40fc2a4d6e643a8516143fb6a0fc2b4dce64350686143c1dc043dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.289538954 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a851614364a4d0c17483ee43cbfa644380bedf34000080bf202a21b480bedf34000080bf202a21b44ba40fc2a4d6e643a85161436f670fc2efdde643dc6961430090f53cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.341032051 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143a19cd0c16d83ee43d5fa6443fb4fca33000080bf4d418ab3fb4fca33000080bf4d418ab34ba40fc2a4d6e643a85161433e670fc273dee643e26961438533e33cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.389026908 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143e694d0c17083ee43dffa6443fd4533b4000080bffe540a33fd4533b4000080bffe540a334ba40fc2a4d6e643a8516143d06a0fc2acdde6436868614303a2ce3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.440281597 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143948dd0c17083ee43edfa64437f1496b4000080bf7f86f1b17f1496b4000080bf7f86f1b14ba40fc2a4d6e643a851614344670fc2dedee643f06961430169bb3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.489080521 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143d185d0c17683ee43f8fa64430468fcb2000080bf32c4d0330468fcb2000080bf32c4d0334ba40fc2a4d6e643a851614317670fc268dfe643fc696143fe76a53cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.539285082 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143127ed0c17283ee4303fb6443fe1777b3000080bf1ee74db2fe1777b3000080bf1ee74db24ba40fc2a4d6e643a8516143af6a0fc29edee64376686143016a923cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.589149439 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143bd76d0c17483ee4311fb644301428a33000080bf944b00b301428a33000080bf944b00b34ba40fc2a4d6e643a851614327670fc2dfdfe643066a6143ff747d3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.638517728 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143017935c27483ee433f0665430102ecb3000080bfc4ba86330102ecb3000080bfc4ba86334ba40fc2a4d6e643a8516143fc660fc265e0e6430e6a614300538e3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.688611721 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143217535c27583ee433806654301324a34000080bf01e935b201324a34000080bf01e935b24ba40fc2a4d6e643a85161439a6a0fc298dfe64385686143ff29a13cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.738643963 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143737135c27383ee43350665437fd4f134000080bff0cb61337fd4f134000080bff0cb61334ba40fc2a4d6e643a851614379660fc249dfe6434a6a614380abb33cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.791027489 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143387035c27183ee4303066543ff8f33b4000080bfdfa32b33ff8f33b4000080bfdfa32b334ba40fc2a4d6e643a851614397650fc222dfe643726a61438101bc3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.838585280 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143da7035c27283ee43d70565437f901035000080bfef7136337f901035000080bfef7136334ba40fc2a4d6e643a851614390680fc2e0dde643f16861430101ba3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.889965867 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161439b7235c27183ee43c0056543017d5534000080bf08b18733017d5534000080bf08b187334ba40fc2a4d6e643a851614317640fc2b3dee6438b6a61438037b23cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.938903500 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143467535c27083ee43b10565437f52beb4000080bf45ca0e347f52beb4000080bf45ca0e344ba40fc2a4d6e643a851614335630fc201dfe6438e6a614381aca53cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559272.988864991 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143827835c27383ee43a3056543009ea733000080bf40c3e0b1009ea733000080bf40c3e0b14ba40fc2a4d6e643a851614369660fc21ddee643fe6861430063953cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.038527410 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143f47b35c27483ee43a005654340650eb5000080bf1cc4cc3340650eb5000080bf1cc4cc334ba40fc2a4d6e643a8516143f8610fc23bdfe643a76a61438090843cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.088572151 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161434e7cd0c17183ee4331f96443ffbf9233000080bf1f5844b2ffbf9233000080bf1f5844b24ba40fc2a4d6e643a851614378640fc258dee643c572614381f39b3cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.138253974 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143bc7ed0c17483ee4337ce6443fe06b034000080bf077600b4fe06b034000080bf077600b44ba40fc2a4d6e643a85161437b660fc298dee6430e7e61430255703dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.188671768 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a85161431984d0c17583ee4382b16443021c7eb4000080bf41c70334021c7eb4000080bf41c703344ba40fc2a4d6e643a8516143be5f0fc2bee0e643b28a6143ff99ae3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.240768787 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143d084d0c16f83ee439a9b6443fe8a0535000080bffc7a7b32fe8a0535000080bffc7a7b324ba40fc2a4d6e643a8516143a65b0fc28edde643c39061430341d53dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.295983674 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.9104424,461.67688,225.31897 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000000000004ba40fc2a4d6e643a8516143f481d0c17383ee43cb8b644300bc8534000080bfc09ba2b300bc8534000080bfc09ba2b34ba40fc2a4d6e643a8516143155c0fc2dfd9e6438f906143c0d1ed3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.390545661 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a6143f9f2cfc17283ee438ab36443ff4f3733000080bf3fe042b3ff4f3733000080bf3fe042b386620fc2d7d4e6438f8a61430b510fc2f1d7e643a1996143420de63dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.438581693 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a614351eacfc17083ee43e8ac6443fe1b0934000080bfa540abb3fe1b0934000080bfa540abb386620fc2d7d4e6438f8a61439cf80ec26500e743a8e161430481eb3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.489422945 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a6143793335c27483ee43acc1644300207a34000080bf31b58e3100207a34000080bf31b58e3186620fc2d7d4e6438f8a614374010fc2fddce643d3d06143c085ec3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.538566145 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a6143f42d35c27783ee4377bd644303a044b4000080bf2348633303a044b4000080bf2348633386620fc2d7d4e6438f8a6143abfe0ec252d9e643cecf61433d02fa3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.588732333 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a6143e02735c27283ee43f2b964430008c634000080bf08a303b40008c634000080bf08a303b486620fc2d7d4e6438f8a614342020fc245d5e643e2cc614300d2033effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.638404269 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a6143812635c27383ee4337b76443003d1335000080bfd0809db3003d1335000080bfd0809db386620fc2d7d4e6438f8a6143e0f90ec2ccd5e6436fd2614380d6063effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.688508256 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.8462143,461.662811,225.541245 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000000000000086620fc2d7d4e6438f8a6143e42735c27683ee430db5644302501b33000080bfe3b017b402501b33000080bfe3b017b486620fc2d7d4e6438f8a61435bf70ec270d5e64341d36143beaf073effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.788685185 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61430ec934c27383ee43f8f66443ffffe1b2000080bf9077e233ffffe1b2000080bf9077e233c6fb0ec28fd3e64336cf61438df30ec221d5e6430ad4614340d9f53dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.840365351 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143b4ce34c27583ee4323f6644300408732000080bf1dc07db300408732000080bf1dc07db3c6fb0ec28fd3e64336cf6143e77a0ec22f03e743b02062437f2ef03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.888499692 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143ee23cfc17183ee43ede86443ffcfbc34000080bf42902db4ffcfbc34000080bf42902db4c6fb0ec28fd3e64336cf6143bd890ec21bd8e643261062430258e93dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.939421049 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61437032cfc17283ee43f8e76443fed1b734000080bf7ea756b3fed1b734000080bf7ea756b3c6fb0ec28fd3e64336cf614345820ec2a3d6e643ea126243c218f43dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559273.988690953 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61434c42cfc17383ee43cfe66443ffffd6b1000080bf5fd2e433ffffd6b1000080bf5fd2e433c6fb0ec28fd3e64336cf61434a820ec2c8d6e6434013624342eeff3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.038592633 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143b448cfc17183ee43d5e56443fe7bae34000080bf7e2674b3fe7bae34000080bf7e2674b3c6fb0ec28fd3e64336cf6143288a0ec281d4e6436c0f6243a1d5023effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.088537953 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143af48cfc17083ee4333e56443fec3e634000080bfbe3077b3fec3e634000080bfbe3077b3c6fb0ec28fd3e64336cf61431a840ec27ed5e643ec136243015f033effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.138914137 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61438c44cfc17683ee43b4e4644302808732000080bf0351d13302808732000080bf0351d133c6fb0ec28fd3e64336cf6143fc840ec2a5d5e64328146243be3f023effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.188560735 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61436b3dcfc17783ee4357e4644302e40934000080bf43bd9e3202e40934000080bf43bd9e32c6fb0ec28fd3e64336cf6143138d0ec2e3d3e6430a1062433e43003effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.238694434 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143b634cfc16e83ee4322e46443fc5f75b4000080bf3e533933fc5f75b4000080bf3e533933c6fb0ec28fd3e64336cf614353870ec2b4d5e6436514624344e1fb3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.290902747 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61432d2acfc17083ee4302e464430060e2b3000080bf50c594330060e2b3000080bf50c59433c6fb0ec28fd3e64336cf614323880ec253d6e64391146243003af53dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.338627011 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143ced034c27583ee4337f4644302c86d34000080bf3bed123402c86d34000080bf3bed1234c6fb0ec28fd3e64336cf6143dd8f0ec2d9d4e6435b106243beb9f03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.389501432 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf61430ccb34c27483ee431bf4644300401734000080bf81cae73300401734000080bf81cae733c6fb0ec28fd3e64336cf6143088a0ec2e3d6e643b51462437f03f83dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.439014915 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.7458725,461.652802,225.809418 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000c6fb0ec28fd3e64336cf6143bcc434c26f83ee4309f46443fd574934000080bf7ed33632fd574934000080bf7ed33632c6fb0ec28fd3e64336cf6143298a0ec2bbd5e6431e1562436211003effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.538921697 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b116243625934c27383ee434f35654301107e34000080bfd09eda3301107e34000080bfd09eda33dd900ec284d3e6431b116243058a0ec2aad4e643a31562430062003effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.588591481 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b1162439b5c34c27583ee433535654302f88eb4000080bfc30ece3202f88eb4000080bfc30ece32dd900ec284d3e6431b116243930f0ec2c002e743045f62437ddefc3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.638603124 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b116243575f34c27583ee437f3a654302c05832000080bf517e853302c05832000080bf517e8533dd900ec284d3e6431b116243201e0ec244d7e643794f6243fed9f03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.688509843 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b116243696534c27283ee437b396543ffdf8cb2000080bf4318c831ffdf8cb2000080bf4318c831dd900ec284d3e6431b1162437a170ec2b0d5e643b8516243804eeb3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.740446413 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b116243f755cec16f83ee43b7286543fe6b06b5000080bfd90c3c34fe6b06b5000080bfd90c3c34dd900ec284d3e6431b116243cf170ec240d6e64301526243442cf13dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.788982432 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b1162437264cec17183ee43d8276543fedb14b4000080bf6f808333fedb14b4000080bf6f808333dd900ec284d3e6431b116243871f0ec2cfd4e643564e624382a4fb3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.839719294 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b1162435872cec17383ee4335276543ff4710b4000080bf6e2b0334ff4710b4000080bf6e2b0334dd900ec284d3e6431b11624384190ec2f2d5e6436c526243c1ab023effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.888848075 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b1162433c78cec17483ee43a526654301d682b4000080bf8172c83301d682b4000080bf8172c833dd900ec284d3e6431b116243981a0ec2dcd5e64388526243bff6043effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.938564325 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b116243da77cec17283ee433e26654300f4bc34000080bf0028503200f4bc34000080bf00285032dd900ec284d3e6431b116243e5220ec2b0d3e643904e6243a039053effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559274.988547084 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b1162437673cec17283ee4306266543000908b5000080bf60d54434000908b5000080bf60d54434dd900ec284d3e6431b1162437f1d0ec214d5e643485262432001043effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.038875114 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.641468,461.652466,226.066818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000dd900ec284d3e6431b1162431e6ccec17483ee43e9256543012cb434000080bf51a1adb3012cb434000080bf51a1adb3dd900ec284d3e6431b116243ac1e0ec27bd5e64301526243bfb4013effffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.138623808 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f04962437792cdc17083ee43c45e6543ffe32234000080bfe7db84b3ffe32234000080bfe7db84b3802d0ec216d2e643f0496243c4210ec272d5e6430852624302afe03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.188612662 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243e286cdc17383ee43b95e654300328734000080bf2236163400328734000080bf22361634802d0ec216d2e643f0496243a9b10dc2f500e743f89162430038d93dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.238731702 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f04962439a0034c27583ee434f7365430342d734000080bf02305f300342d734000080bf02305f30802d0ec216d2e643f049624300b80dc2a7dbe64340876243fe5ed43dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.290548050 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243f2f933c27483ee435f72654302508533000080bf627e88b302508533000080bf627e88b3802d0ec216d2e643f0496243b5b90dc24cd8e6431e856243bd1dde3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.338498782 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243eef233c26e83ee432a716543fe678ab3000080bffc5869b3fe678ab3000080bffc5869b3802d0ec216d2e643f0496243d6c10dc23bd4e6432c8262438412e93dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.389632639 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243f0f033c27083ee4306706543fd6b1db4000080bffde40cb3fd6b1db4000080bffde40cb3802d0ec216d2e643f049624320bc0dc2f0d4e643c48662434438ed3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.438511127 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243ccf133c26f83ee43256f6543feffedb3000080bf1eefd633feffedb3000080bf1eefd633802d0ec216d2e643f04962439bbc0dc2b2d4e6432b87624302a0ed3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.488640805 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243ccf433c27183ee437b6e6543fff73a34000080bf0feab533fff73a34000080bf0feab533802d0ec216d2e643f0496243c0c30dc2e3d2e6438e83624342fbea3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.538542530 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243fef833c27483ee43146e6543010ca034000080bfd971e233010ca034000080bfd971e233802d0ec216d2e643f049624390bd0dc283d4e64392876243bf42e63dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.588787719 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f049624358fe33c27483ee43d76d654300680534000080bf109df33200680534000080bf109df332802d0ec216d2e643f0496243a2bd0dc20ed5e643a68762438022e03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.638931426 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243630434c27383ee43aa6d654300f30135000080bfc0097fb200f30135000080bfc0097fb2802d0ec216d2e643f049624376c40dc2a8d3e643dc8362438017d93dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.688646200 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f04962431a92cdc17283ee439c5e6543fed5e8b4000080bfb639ad33fed5e8b4000080bfb639ad33802d0ec216d2e643f049624317be0dc2a4d5e643ca87624382a3e03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.740747116 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243b69fcdc17183ee43715e6543fea58134000080bfad17ce33fea58134000080bfad17ce33802d0ec216d2e643f049624307be0dc26ad6e643c7876243849fe93dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.788559250 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243c8adcdc17283ee43445e6543ff97cb34000080bf9f8282b3ff97cb34000080bf9f8282b3802d0ec216d2e643f04962430ec50dc22ed4e643c3836243c2aff23dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.839744866 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f04962439ab2cdc17683ee432c5e6543010086b2000080bfc31fb833010086b2000080bfc31fb833802d0ec216d2e643f049624355bf0dc259d5e6439a876243bdb8f53dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.888641630 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243d6b1cdc17283ee43275e65430170d533000080bf40d804330170d533000080bf40d80433802d0ec216d2e643f0496243febf0dc246d5e643908762430078f53dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.939022018 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243faaccdc17483ee432c5e654301242b34000080bf819e883301242b34000080bf819e8833802d0ec216d2e643f049624358c70dc26ed3e643ae8362437e51f23dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559275.989255421 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243aaa5cdc17583ee433b5e6543038c32b4000080bfc2a41133038c32b4000080bfc2a41133802d0ec216d2e643f0496243eac10dc21ad5e6438a8762437d69ed3dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.038870955 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243169ccdc17083ee43525e6543fcafc433000080bf5c075f33fcafc433000080bf5c075f33802d0ec216d2e643f04962438dc20dc2add5e6437f876243c494e73dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.088959971 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f04962434091cdc17283ee43655e654300d29434000080bf3092423300d29434000080bf30924233802d0ec216d2e643f0496243b4c90dc22bd4e643ed836243406ae03dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.138877652 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243d88fcdc17383ee43807a6543fe63c933000080bf66da7e33fe63c933000080bf66da7e33802d0ec216d2e643f049624388c50dc2d1d6e6431375624381f5b13dffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.190950790 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000000000000802d0ec216d2e643f0496243810834c27283ee4386c76543c106b634000080bf00352632c106b634000080bf00352632802d0ec216d2e643f04962436eca0dc280d7e64387546243007ce73cffffffff00030000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.238974313 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.5444336,461.641296,226.288818 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000e77aaf3db7da0dc2b0d5e643f848624317b433c27383ee43d60c664398652d34000080bf6e4178b398652d34000080bf6e4178b3802d0ec216d2e643f0496243d8d60dc2dbd5e643ec48624300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.389269788 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.4701653,461.71637,226.283417 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000050ad9b3d68b90dc209e4e6431d496243e29033c27883ee432b7c664304267133000080bfe39a2c3304267133000080bfe39a2c3373e10dc2b2dbe6438e486243769c0dc210eae6438549624300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.438923959 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.4701653,461.71637,226.283417 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff0000000094d7c93df2b20dc2e2e6e64376496243d28a33c27583ee43d490664350f44635000080bf40b4afb250f44635000080bf40b4afb273e10dc2b2dbe6438e4862434e560dc22bfde643444b624300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.689059897 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.3291855,461.828705,226.300064 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff00000000d05bf83cfa3c0dc201ede6439c4d6243951833c27583ee43a8bd664330ee4734000080bf6007d93330ee4734000080bf6007d93316510dc213eae643d14c6243bd280dc2f4efe643694e624300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000
+MAP_CONTACT mono=559276.740225712 drone=0x7e713e7d9d90 drone_component=0x7e6f408910f0 drone_xyz=-35.3291855,461.828705,226.300064 source_actor=0x7e712f5b7c00 source_component=0x7e6f56097b30 source_xyz=-267.735168,0.000667572021,-50.0005035 source_quat=0,0,0.707106829,0.707106709 source_root=0x7e6f55ecd200 root_xyz=-249.992188,0.0009765625,-50 actor_fname=765806,0 component_fname=412436,0 source_class=0x7e713000af80 hit_ptr=0x7ffee3b56d30 hit_bytes=ffffffff000000008cf40a3d473b0dc26dede643ab4d62432c1733c27483ee4375c066432db41c34000080bf6a936fb32db41c34000080bf6a936fb316510dc213eae643d14c6243b3000dc26ff6e643f34f624300000000ffffffff00010000ffffffff00000000e1440000763d00008a560000bd26000000000000000000000000000000000000

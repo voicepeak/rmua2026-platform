@@ -1,0 +1,30 @@
+{
+  "name": "g2_contact_portwall_seed123_20261109",
+  "purpose": "Controlled official contact probe for the interior wall of the 1_1_Port building at the OL1 start; diagnostic velocity control with debug pose truth.",
+  "frame": "NED metres, z down; targets derived from candidate map UE centimetres divided by 100 with x,y,z_up mapped to NED x,y,-z_up",
+  "targets": {
+    "port_wall": {
+      "candidate_actor": "1_1_Port",
+      "candidate_component": "Building_Port",
+      "candidate_mesh": "Building_Port",
+      "surface_point_ue_cm": [-32.0, 477.0, 232.0],
+      "surface_normal_ue": [0.0, -1.0, 0.0],
+      "source": "foundation/asset_analysis/OL1_building_placements_candidate.json; interior vertical face of Building_Port"
+    }
+  },
+  "safety": {
+    "max_speed": 3.0,
+    "max_duration_s": 30.0,
+    "max_xy_m": 10.0,
+    "min_z_m": -4.0,
+    "max_z_m": 1.0,
+    "stale_pose_s": 0.3,
+    "position_gain": 0.8,
+    "log_period_s": 0.1
+  },
+  "waypoints": [
+    {"name": "climb", "position": [0.0, 0.0, -2.32], "speed": 1.5, "arrive_radius_m": 0.4, "hold_s": 0.2},
+    {"name": "port_wall_approach", "position": [-0.32, 2.77, -2.32], "speed": 1.5, "arrive_radius_m": 0.4, "hold_s": 0.2},
+    {"name": "port_wall_push", "position": [-0.32, 5.2, -2.32], "speed": 1.0, "arrive_radius_m": 0.4, "max_approach_s": 5.0, "push_s": 3.0, "push_speed": 0.8}
+  ]
+}
