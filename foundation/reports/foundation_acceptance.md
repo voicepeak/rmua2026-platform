@@ -43,6 +43,16 @@ The governing plan is [V2.0](implementation_plan_v2_zh.md); the current module-b
 3. G3: natural-course continuous wind/force-zone and trajectory data, or an explicit decision to close G3 as approximate/UNVERIFIED.
 4. G4: explicit consent to start isolated official simulator containers for a same-machine throughput method, or an explicit decision to close G4 without that comparison.
 
+### 2026-11-10 coverage round
+
+- A machine-readable coverage matrix now exists: `foundation/reports/v2_coverage_matrix_20261110.md` / `.json`.  It records OL1 stage1 road1 33/33, road3 30/30 under injected stage 2 (30/30 component triggers under stage 1), and OL1 stage3–6 plus OL2–OL12 runtime detection/score/contact/factory as UNVERIFIED/PARTIAL.
+- Six OL1 stage route manifests and diagnostic waypoint files were generated from `data/tables/routes.csv` (`foundation/maps/OL1/stageN_route_manifest.json`).  These are reconstructions, not official trajectories.
+- Road3 reached 30/30 under a controlled stage-2 injection: v7 routexy baseline + gate-normal corridor gates 11-7 at +1 m and 6-0 at +3 m. This is not official stage progression and stage1 direct remains 0/30.  Details: `foundation/reports/g2_road3_attempt_20261110.md` and `g2_stage2_inject_probe_20261110.md`.
+- G1 remains BLOCKED after two bounded non-stopping attempts; `perf` is absent from the probe image and `process_vm_readv` did not yield decoded official rotor state.  Details: `foundation/reports/v2_g1_native_attempt_20261110.md`.
+- `foundation/training_env.py` adds `RmuaPhysicsVecEnv` as an explicitly approximate PWM/6DOF batch sandbox with truth-research observations and an `observable_state` placeholder.
+- Stage 3 injection declared 31 components but produced `nan` transforms and score 0; OL2 map redirect worked but produced no flyable state or SEG/DUMP.  Both are recorded gaps.
+- No gate status is upgraded by these items.  Overall remains PARTIAL.
+
 The rest of this document retains the original historical evidence; its earlier table and “next” actions are not the V2 current status.
 
 ## Initial evidence snapshot

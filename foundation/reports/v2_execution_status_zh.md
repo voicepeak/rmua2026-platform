@@ -275,3 +275,49 @@ OL2–OL12 各自新增 108 个 sprite 碰撞候选及来源核对；全部可�
 - **限制**：GDB all-stop；player 超时；本地 `commands.jsonl` 缺失、`capture.jsonl` 可能截断，score 结论只依赖完整 GDB log；score 增量与门索引不是简单一一对应；road3 的 30 个、工厂入口和完整门洞语义仍未验证。
 - **记录**：[g2_score_route_20261109.md](g2_score_route_20261109.md)、[g2_score_route_seed123_20261109.json](g2_score_route_seed123_20261109.json)（SHA-256 `7f493930…7a59`）。
 - **状态**：G2 仍为 **PARTIAL**；road1 评分组件已覆盖，但 G2 PASS 仍未达到。
+
+## 2026-11-10 V2 快速覆盖轮
+
+- **覆盖矩阵**：新增 `foundation/build_v2_coverage_matrix.py`，生成 [v2_coverage_matrix_20261110.md](v2_coverage_matrix_20261110.md) / `.json`。OL1 stage1 road1 保持 33/33；road3 仍 0/30；OL1 stage2–6 与 OL2–OL12 的运行时组件/score/接触/工厂均显式标为 UNVERIFIED。静态候选不计入运行时覆盖。
+- **OL1 路线清单**：新增 `foundation/build_stage_manifests.py`，由 `data/tables/routes.csv` 重建六个 stage 的路线和 waypoint，生成 `foundation/maps/OL1/stageN_route_manifest.json` 与 `stageN_waypoints.json`。stage1 重建长度 1478.85 m，与官方 `route_1_3` 的 1479.47 m 接近；其余 stage 为诊断重建，不是官方轨迹。
+- **road3 尝试**：三次受限尝试均未取得 score，记录在 [g2_road3_attempt_20261110.md](g2_road3_attempt_20261110.md)：官方 route 高度导致高度包线中止；stage1 候选路线在枢纽墙被挡（距 `1_1_Gate` 9.6 m）；GDB 诊断传送到 road3 后观察到 idx 9–13 的 SEG 事件但 score 为 0，因为进程仍在 stage1，活动评分队列不是 road3。road3 仍为 **0/30**。
+- **G1**：按限次完成两次非停止式尝试，记录在 [v2_g1_native_attempt_20261110.md](v2_g1_native_attempt_20261110.md)。probe 镜像没有 `perf`，无法启动 uprobe；`process_vm_readv` 父子原型可读 8 字节，但未取得官方 rotor 状态。G1 参数辨识保持 **BLOCKED**，未重开网格、未读封存集。
+- **工厂入口**：新增 `foundation/maps/OL1/factory_entrance_candidates.json`，记录 12 个 `BP_Building_Factory_1_C` 的 Extent 体积和来源哈希；入口 trigger/事件仍未验证，`meter_report` success 仍不算证据。
+- **训练环境**：新增 `foundation/training_env.py` 的 `RmuaPhysicsVecEnv`：四路 PWM、6DOF、批量、独立 seed、显式 truth 研究观测和 `observable_state` 占位；标注为近似沙盒。新增 `foundation/tests/test_training_env.py`。
+- **可复核**：`python -m pytest -q foundation/tests` 通过；`python run_smoke_test.py` 通过（合成集成）。这些测试不升级 G0–G4。
+
+## 2026-11-10 第二阶段：stage2 注入与 road3 score
+
+- **road3 组件触发**：stage1 诊断传送运行 `g2_score_road3_teleport_seed123_20261110` 观测到 road3 **30/30** 组件索引 0–29 的 SEG enter/exit 事件；因活动队列仍是 stage1，score 为 0。解析：`foundation/reports/g2_road3_teleport_seed123_20261110.json`。
+- **stage2 注入**：`foundation/probes/stage2_teleport.gdb` 在原生 stage-init 注入 `(3,5,2)` 并诊断传送到 road3 末端，短探针确认 score 0→1→2；road3 反向队列有效。
+- **road3 score 30/30**：v7 routexy 基线 + gate11→7 走廊（+1 m）+ gate6→0 走廊（+3 m），注入 stage2 后 **score 30/30**，索引 0–29 全出现，player exit 0。这是受控 stage injection，不是官方 stage 进程。证据：`foundation/reports/g2_stage2_routexy_gate11_0_corridor_v12_seed123_20261110.json`。
+- **stage3 失败记录**：注入 `(5,8,3)`、传送到 route5 末端后，`DUMP_BEGIN count=31`，但组件变换为 `nan`，SEG 索引 16–30、score 0。记录：`foundation/reports/g2_stage3_return_20261110.md`。
+- **工具修正**：`run_contact_waypoints_local.py` 在停止容器前保存 `simulator.log`；`run_contact_waypoints_remote.py` 增加 SSH 重试和 tar 归档下载，避免 GDB 日志丢失。
+- **覆盖状态**：OL1 评分组件已验证 **63/63**：road1 33/33，road3 30/30（注入 stage2）；stage1 直飞 road3 仍 0/30。OL1 stage3–6 与 OL2–OL12 仍未取得运行时 score。
+- **测试**：`pytest -q foundation/tests` **166 项通过**；smoke 通过（合成集成）。
+
+## 2026-11-10 OL2 尝试
+
+- `foundation/probes/map_ol2_teleport.gdb` 成功将默认 Lobby→OL1 的 URL 重定向到 `RMUA2024OL2`，并在首次接触回调把无人机组件写到 OL2 route1 起点；日志见 `foundation/datasets/g2_ol2_route1_seed123_20261110/run/simulator.log`。
+- 但无人机报告位姿保持 `(0,0,0)`、四元数 `(0.5,0,0,0)`，速度命令未产生运动；没有 `DUMP_BEGIN` 或 `SEG` 事件，player wrapper 超时（124）。
+- OL2 运行时检测组件/score/接触仍为 **UNVERIFIED**；记录见 [g2_ol2_attempt_20261110.md](g2_ol2_attempt_20261110.md)。OL3–OL12 未运行。
+
+## 2026-11-10 晚：road3 30/30 与 stage4/OL3 缺口
+
+- **road3 30/30（受控注入）**：v12 使用 v7 routexy 基线 + gate11→7 走廊（+1 m）+ gate6→0 走廊（+3 m），注入 stage2 后 score **30/30**，索引 0–29 全出现，player exit 0。证据：`foundation/reports/g2_stage2_routexy_gate11_0_corridor_v12_seed123_20261110.json`。这是受控 stage injection/GDB 传送，不是官方 stage 进程。
+- **OL1 有效评分覆盖**：road1 33/33 + road3 30/30 = **63/63**（road3 需注入 stage2；stage1 直飞仍 0/30）。
+- **stage4 尝试**：注入 `(8,12,4)`、传送到 route8 末端前 12 m，无 SEG/DUMP；无人机停在 `(1358.72,-102.74,-8.87) m`。记录：`g2_stage4_return_20261110.md`。
+- **OL3 尝试**：map redirect 成功、teleport 已写入，但无 SEG/DUMP，位姿停在 `(0,0,0)`。记录：`g2_ol3_attempt_20261110.md`。
+- 测试：`pytest -q foundation/tests` **166 项通过**；smoke 通过。
+
+## 2026-11-10 stage4 ground-lock 诊断
+
+- stage4 传送后组件位姿写入目标，但速度指令完全无效：climb 探针目标上方 21 m、期望垂直速度 -6 m/s，位置仍保持 `(1358.72,-102.74,-8.87) m`。
+- `/airsim_node/drone_1/takeoff` 服务调用失败：probe 容器中没有 `airsim_ros/Takeoff` 消息类型（`Unable to load type [airsim_ros/Takeoff]`），`/workspace/rmua_ws` 为空。
+- 结论：当前注入路径下传送载具被冻结/保持，stage4 不能靠再加航点解决；需要不同的注入/reset 路径。stage4 仍 UNVERIFIED。记录：`g2_stage4_return_20261110.md`。
+
+## 2026-11-10 stage4 冻结诊断与 OL4
+
+- 已把远端 ROS workspace 只读挂载到 probe 容器 `/workspace/rmua_ws`；`/airsim_node/drone_1/takeoff` 的 `airsim_ros/Takeoff` 类型可加载。
+- `waitOnLastTask: true/false` 两次调用均 15 s 超时，传送后的载具位置仍不变；说明不是消息类型问题，而是 component 写入后物理体被冻结。需要 physics-body state 写入或不同 reset/injection 路径。
+- OL4 map redirect 与 teleport 已观测，但无 SEG/DUMP；记录：`g2_ol4_attempt_20261110.md`。

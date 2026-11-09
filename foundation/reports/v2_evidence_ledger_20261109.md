@@ -31,6 +31,7 @@
 | G1.初速度 | 独立初速度 | **BLOCKED** | `v2_initial_velocity_audit.md`：两种估计差 0.018–0.022 m/s | 两者都不是独立测量 |
 | G1.校准 | 电机时间常数/延迟 | **BLOCKED** | `v2_calibration_round1/2`：最优在边界，第二轮仅改善 8.05% | 两轮已用完，不得再扩网格 |
 | G1.保留集 | 封存 `v2_holdout_axis` | **UNVERIFIED** | `v2_blind_holdout_protocol.md`、`v2_blind_holdout_inventory.json` | 未读取、未评价，阈值未冻结 |
+| G1.非停止原生测量 | rotor state / command time | **BLOCKED** | `v2_g1_native_attempt_20261110.md`：perf 不可用；process_vm_readv 原型可读但未解码官方 rotor | 两次限次尝试均未取得独立状态 |
 | G1.阈值 | acceptance 数值 | **PROVISIONAL** | `config/acceptance.yaml` 全为 null | 官方重复性和任务误差预算未齐备 |
 
 ## G2 地图与碰撞
@@ -47,11 +48,14 @@
 | G2.路线门语义 | 12 个 `*_Gate` | PASS（静态） | `g2_gate_collision_re20261109.md`：激活 `BlockAll`，未激活 `NoCollision` | 是实体碰撞开关，不是门洞/trigger |
 | G2.检测门候选 | 33+30 运行时评分组件 | PARTIAL | `maps/OL1/detection_gate_candidates.json`、`v2_detection_gates.md` | root 变换不等于 trigger plane |
 | G2.road1 score | 33 个评分组件 | **PASS（受控）** | `g2_score_route_20261109.md`：score 0→33，索引 0–32 全出现 | 单路线/单 seed；player 超时；commands 缺失 |
-| G2.road3 score | 30 个评分组件 | **UNVERIFIED** | 无 stage-2 候选路线 | 未跑 |
+| G2.road3 score | 30 个评分组件 | **PASS（受控 30/30）** | `g2_stage2_routexy_gate11_0_corridor_v12_seed123_20261110.json`：注入 stage2，score 30，索引 0–29，player exit 0 | 受控 stage injection/GDB 传送；不是官方 stage 进程；stage1 直飞仍 0/30 |
 | G2.早门净空 | 32→31→30→29 | PARTIAL | `g2_detection_gate_sequence_20261109.md`：无命令后接触，最近 0.176/0.018/0.014/0.020 m | 中心平面穿越≠官方 aperture |
 | G2.单门 32 | 中心净空 | PARTIAL | `g2_detection_gate32_20261109.md`：3.07 cm，无命令后接触 | 同上 |
 | G2.几何探针 | 门/道路/墙/复杂体 | PARTIAL | `v2_map_geometry_probe.json`：12/12、64/64、64/64、25/25 | 同一几何自命中 |
-| G2.工厂入口 | 官方入口/事件 | **UNVERIFIED** | `g2_gate_collision_re20261109.md` 的 `meter_report` 探针 | 服务 success 无入口日志 |
+| G2.工厂入口 | 官方入口/事件 | **UNVERIFIED** | `maps/OL1/factory_entrance_candidates.json`：12 个 Extent 体积；`g2_gate_collision_re20261109.md` 的 `meter_report` 探针 | 入口 trigger/事件未定位；服务 success 无入口日志 |
+| G2.OL1 stage2-6 路线 | 六 stage 重建 | PARTIAL（诊断） | `build_stage_manifests.py`、`maps/OL1/stageN_route_manifest.json` | 非官方轨迹；stage2–6 运行时组件/score 未审计 |
+| G2.OL1 stage2-6 组件/score | 运行时 | **UNVERIFIED** | `score_dump.gdb`、`stage2_teleport.gdb` | stage2 注入探针待完成 |
+| G2.OL2-12 运行时 | 每图组件/score | **UNVERIFIED** | `map_score_dump_OL*.gdb` | 尚未取得每图运行时组件或 score |
 | G2.原点/尺度 | 全图坐标 | **UNVERIFIED** | `frame_spec.md`、`OTHER_MAPS.md` | 未逐图官方对齐 |
 
 ## G3 风与力度衰减
@@ -59,7 +63,7 @@
 | ID | 子项 | 状态 | 证据 | 限制 |
 |---|---|---|---|---|
 | G3.生成 | 注入阶段关键帧 | PASS（受控） | `wind_generator_validation.json`：18/18 字节精确 | 自然随机流未验证 |
-| G3.自然生成 | 自然赛程风区 | UNVERIFIED | 无自然路线连续数据 | 随机数消费顺序未知 |
+| G3.自然生成 | 自然赛程风区 | UNVERIFIED | 无自然路线连续数据；`v2_g3_g4_20261110.md` 明确本轮未取得 | 随机数消费顺序未知 |
 | G3.施力 | 六面阻力候选 | PASS（受控） | `aero_paired_*`、`aero_net_tilt_*`：误差约 1e-7 | 注入/强制条件，不是自然风 |
 | G3.W01 | 有风/无风轨迹 | PARTIAL | `wind_stage4_replay_*`：短窗口 RMSE 0.094–0.320 mm 对 0.913–1.747 mm | 同记录探索，初态/时钟未独立 |
 | G3.W02 | 空间触发 | PARTIAL | `v2_g3_controlled_benchmark.json`：80 子步，25 非零/55 零 | 合成区域 |
@@ -78,7 +82,7 @@
 | G4.单例/批量 | 同 seed 末态 | PASS（自建） | `v2_batch_scenario_benchmark.json`、`test_batch_*`：最大差 0 | 不是官方对齐 |
 | G4.本机吞吐 | 64/256 自由飞行 | PASS（本机） | `v2_batch_vectorized_benchmark.json`：约 4.80/5.91 万 env-cmd/s | 无同机官方对照 |
 | G4.密集地图 | 12,609 候选、64/256 表面 | PASS（本机） | `v2_batch_dense_map_benchmark.json`：777.2/710.9 env-cmd/s | 顺序参考路径，非密集赛道分布 |
-| G4.官方吞吐 | 同操作官方 batch | **UNVERIFIED/不可得** | `v2_official_realtime_factor.json`：官方约 1.0000–1.0004 实时因子 | 不同度量，不能换算 |
+| G4.官方吞吐 | 同操作官方 batch | **UNVERIFIED/不可得** | `v2_official_realtime_factor.json`：官方约 1.0000–1.0004 实时因子；`v2_g3_g4_20261110.md` 明确不可得 | 不同度量，不能换算 |
 | G4.贴地误拒 | 子盒球覆盖 | PARTIAL | `v2_vehicle_map_clearance_audit.json`：N=10 在 0.1 m 间隙接受 29/64 | 探测尺寸非官方；仍保守 |
 
 ## 复现命令
