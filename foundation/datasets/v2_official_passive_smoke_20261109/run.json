@@ -1,0 +1,14 @@
+{
+  "remote_directory": "/tmp/foundation-3e94101c8b0b47759cbde8a73fb43481",
+  "exit_status": 0,
+  "mode": "passive",
+  "seed_requested": 123,
+  "capture_state": "file transfer complete",
+  "source_sha256": {
+    "collect_ros.py": "615ae58cb482bb29523fa50505e7f1c7d96788f5f4107baf32a92033e767c90c",
+    "passive_remote.sh": "a1bdd0956fa5bfc56699e931c97a6780f97801b6a98b18c9e5ce48826068bf01"
+  },
+  "command_exit_status": 0,
+  "stdout": "completed\n",
+  "stderr": ""
+}

@@ -1,0 +1,15 @@
+{
+  "remote_directory": "/tmp/foundation-ca021cee134549d18a90da4a05043bdc",
+  "exit_status": 1,
+  "mode": "heldout_mix",
+  "seed_requested": 260006,
+  "capture_state": "file transfer complete",
+  "source_sha256": {
+    "collect_ros.py": "615ae58cb482bb29523fa50505e7f1c7d96788f5f4107baf32a92033e767c90c",
+    "collective_remote.sh": "0712f6e83ad9e8c2a777b3af854a2a0a1d273524ee7a47662aa4780bb646de49",
+    "pwm_collective.py": "7354854124da2645db13a534c72a2cba4c2d9e1a2e991e4a4ad4492066b18906"
+  },
+  "command_exit_status": 1,
+  "stdout": "player=2 stop=0 collector=137 (collector may be interrupted by stop)\n",
+  "stderr": ""
+}

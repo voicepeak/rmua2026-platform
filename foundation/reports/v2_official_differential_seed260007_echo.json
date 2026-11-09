@@ -1,0 +1,181 @@
+{
+  "status": "debug message audit; not motor or physics latency",
+  "mode": "differential",
+  "edges": [
+    {
+      "edge_index": 0,
+      "command_pwm": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "command_source_stamp_ns": 1794192235996509790,
+      "command_recorded_monotonic_ns": 528381641513948,
+      "interval_sample_count": 27,
+      "prior_debug_pwm": [
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 50.050376,
+      "first_match_source_minus_command_header_ms": 29.434443,
+      "first_match_debug_stamp_ns": 1794192236025944233,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 1,
+      "command_pwm": [
+        0.189,
+        0.185,
+        0.185,
+        0.185
+      ],
+      "command_source_stamp_ns": 1794192236259184598,
+      "command_recorded_monotonic_ns": 528381904183069,
+      "interval_sample_count": 12,
+      "prior_debug_pwm": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 37.323569,
+      "first_match_source_minus_command_header_ms": 15.764953,
+      "first_match_debug_stamp_ns": 1794192236274949551,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 2,
+      "command_pwm": [
+        0.185,
+        0.189,
+        0.185,
+        0.185
+      ],
+      "command_source_stamp_ns": 1794192236380694627,
+      "command_recorded_monotonic_ns": 528382025691970,
+      "interval_sample_count": 14,
+      "prior_debug_pwm": [
+        0.1889999955892563,
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1850000023841858
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 15.936654,
+      "first_match_source_minus_command_header_ms": -3.742933,
+      "first_match_debug_stamp_ns": 1794192236376951694,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 3,
+      "command_pwm": [
+        0.185,
+        0.185,
+        0.189,
+        0.185
+      ],
+      "command_source_stamp_ns": 1794192236522400856,
+      "command_recorded_monotonic_ns": 528382167407009,
+      "interval_sample_count": 12,
+      "prior_debug_pwm": [
+        0.1850000023841858,
+        0.1889999955892563,
+        0.1850000023841858,
+        0.1850000023841858
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 24.554231,
+      "first_match_source_minus_command_header_ms": 4.554033,
+      "first_match_debug_stamp_ns": 1794192236526954889,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 4,
+      "command_pwm": [
+        0.185,
+        0.185,
+        0.185,
+        0.189
+      ],
+      "command_source_stamp_ns": 1794192236644284725,
+      "command_recorded_monotonic_ns": 528382289294303,
+      "interval_sample_count": 14,
+      "prior_debug_pwm": [
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1889999955892563,
+        0.1850000023841858
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 52.293206,
+      "first_match_source_minus_command_header_ms": 32.673598,
+      "first_match_debug_stamp_ns": 1794192236676958323,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 5,
+      "command_pwm": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "command_source_stamp_ns": 1794192236786195278,
+      "command_recorded_monotonic_ns": 528382431192736,
+      "interval_sample_count": 25,
+      "prior_debug_pwm": [
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1850000023841858,
+        0.1889999955892563
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 20.584458,
+      "first_match_source_minus_command_header_ms": -1.23477,
+      "first_match_debug_stamp_ns": 1794192236784960508,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    },
+    {
+      "edge_index": 6,
+      "command_pwm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_source_stamp_ns": 1794192237028563976,
+      "command_recorded_monotonic_ns": 528382673566998,
+      "interval_sample_count": 24,
+      "prior_debug_pwm": [
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213,
+        0.1599999964237213
+      ],
+      "prior_already_matches": false,
+      "first_match_arrival_minus_record_ms": 17.993766,
+      "first_match_source_minus_command_header_ms": -3.598451,
+      "first_match_debug_stamp_ns": 1794192237024965525,
+      "interpretation": "matching debug observation after nonmatching prior sample; physical application still unverified"
+    }
+  ],
+  "debug_samples": 270,
+  "debug_header_semantics": "in analyzed 12.0.0.5 ROS library, header comes from separate GET_IMU_DATA; not an independently timestamped rotor PWM sample",
+  "source_sha256": {
+    "run.json": "4a1a10be4107a1758511de913034ea8338324482439c1d199bf6899984595d50",
+    "commands.jsonl": "042d69df35cd11511d457a049b0c46a4ebad457b8ac79c61c867da26c48eb530",
+    "capture.jsonl": "8ccf95fc63bcf16f95c9345751846634d47f39208a7a5d9da5890dddfa870e05"
+  },
+  "analysis_sha256": "91a819dc5c036b3bef99e1edee202a6c8b7d20f8629fff8ff25267cfb13ae825",
+  "limitations": [
+    "command record is after publish; debug arrival includes ROS transport and scheduling",
+    "debug header uses a separately requested IMU timestamp in analyzed library; it is not a rotor sample or application timestamp",
+    "matching values can recur; matching does not prove command causality",
+    "physical response onset and latency remain unidentified"
+  ]
+}
