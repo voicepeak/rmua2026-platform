@@ -1,0 +1,32 @@
+{
+  "mode": "contact_waypoints",
+  "seed": 123,
+  "waypoints": "foundation/config/g2_contact_near_20261109.json",
+  "waypoints_sha256": "7e353b904da55e863c256dbadc3b9f4d070a87d3051f390ba03333ac23f63cea",
+  "simulator": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5",
+  "settings": "/home/tianbot/RUMA-by-helinjun/main/configs/simulator_settings.json",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "pool_sha256": "32dd5702e68cca72d48b6be24ff4d1d3342abdb2c9c89f77414d45b46b34cdbc",
+  "image": "rmua/re-probe:20261104",
+  "player_timeout_s": 90,
+  "collector_seconds": 60,
+  "source_sha256": {
+    "crash_capture.gdb": "7ce38c43d0b762bc1b9a7f70bb19de6524c9e404f47b6dd2c069abe2f6d2c618",
+    "contact_waypoints.py": "309abf38833d5c413de0555735637d17479773f1d240b58478e660a761c5cfc2",
+    "collect_ros.py": "615ae58cb482bb29523fa50505e7f1c7d96788f5f4107baf32a92033e767c90c",
+    "collect_ros_long.py": "d1b9f0d3510af71d3c1dde434400c4e775d3191a9edd6de9e19eaaa7379ede63"
+  },
+  "capture_state": "player and collector finished; files copied",
+  "exit_status": 1,
+  "limitations": [
+    "velocity control with debug pose truth; diagnostic only, not a policy result",
+    "GDB all-stop contact breakpoint changes timing and may change collision response",
+    "container is stopped immediately after the bounded pilot"
+  ],
+  "container": "rmua-re-9af383d644d4-0",
+  "container_id": "bc654e36d385debcdb690526a1af87b53f53f6ea46961d2632f90bbec8587a82",
+  "player_exit_status": 1,
+  "container_stop_status": 0,
+  "collector_exit_status": 0
+}

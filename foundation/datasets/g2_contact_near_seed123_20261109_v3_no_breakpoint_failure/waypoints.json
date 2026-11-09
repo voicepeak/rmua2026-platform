@@ -1,0 +1,161 @@
+{
+  "name": "g2_contact_near_seed123_20261109",
+  "purpose": "Controlled official contact probes near the OL1 start: exit the port opening, touch one road rail, then touch one building wall; diagnostic velocity control with debug pose truth.",
+  "frame": "NED metres, z down; targets derived from candidate map UE centimetres divided by 100 with x,y,z_up mapped to NED x,y,-z_up",
+  "targets": {
+    "road": {
+      "candidate_actor": "BP_Segment_Rot_C_242",
+      "candidate_component": null,
+      "candidate_mesh": "Segment",
+      "surface_point_ue_cm": [
+        1073.9,
+        542.2,
+        271.4
+      ],
+      "surface_normal_ue": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source": "foundation/asset_analysis/OL1_road_placements_candidate.json instance 175; top-rail triangle nearest the start"
+    },
+    "wall": {
+      "candidate_actor": "BP_Building_1_15",
+      "candidate_component": "Building_1_Block",
+      "candidate_mesh": "unverified_simple:Building_1_Block",
+      "surface_point_ue_cm": [
+        3483.9,
+        -3500.6,
+        1312.4
+      ],
+      "surface_normal_ue": [
+        -0.73,
+        0.68,
+        0.0
+      ],
+      "source": "foundation/asset_analysis/OL1_building_placements_candidate.json; vertical triangle facing the origin"
+    },
+    "route_exit": {
+      "source": "foundation/datasets/route_candidate_lift6_20261108/route.json first points; port candidate bbox x max 2.32 m",
+      "first_route_point_ue_m": [
+        2.504,
+        -0.0289,
+        2.1557
+      ],
+      "port_bbox_ue_m": [
+        [
+          -6.125,
+          -5.734,
+          -1.054
+        ],
+        [
+          2.323,
+          5.717,
+          5.048
+        ]
+      ]
+    }
+  },
+  "safety": {
+    "max_speed": 6.0,
+    "max_duration_s": 60.0,
+    "max_xy_m": 80.0,
+    "min_z_m": -30.0,
+    "max_z_m": 1.0,
+    "stale_pose_s": 0.3,
+    "position_gain": 0.8,
+    "log_period_s": 0.1
+  },
+  "waypoints": [
+    {
+      "name": "port_exit",
+      "position": [
+        2.504,
+        -0.029,
+        -2.156
+      ],
+      "speed": 2.0,
+      "arrive_radius_m": 0.5,
+      "hold_s": 0.3
+    },
+    {
+      "name": "road_entry",
+      "position": [
+        10.74,
+        -0.15,
+        -2.62
+      ],
+      "speed": 3.0,
+      "arrive_radius_m": 0.5,
+      "hold_s": 0.3
+    },
+    {
+      "name": "road_align",
+      "position": [
+        10.74,
+        0.0,
+        -2.62
+      ],
+      "speed": 2.0,
+      "arrive_radius_m": 0.3,
+      "hold_s": 0.2
+    },
+    {
+      "name": "road_push",
+      "position": [
+        10.74,
+        6.5,
+        -2.71
+      ],
+      "speed": 1.2,
+      "arrive_radius_m": 0.5,
+      "push_s": 2.5,
+      "push_speed": 1.0
+    },
+    {
+      "name": "safe_climb",
+      "position": [
+        10.74,
+        6.5,
+        -20.0
+      ],
+      "speed": 4.0,
+      "arrive_radius_m": 0.8,
+      "hold_s": 0.3
+    },
+    {
+      "name": "wall_high",
+      "position": [
+        32.65,
+        -32.97,
+        -20.0
+      ],
+      "speed": 5.0,
+      "arrive_radius_m": 0.8,
+      "hold_s": 0.3
+    },
+    {
+      "name": "wall_approach",
+      "position": [
+        32.65,
+        -32.97,
+        -13.12
+      ],
+      "speed": 2.0,
+      "arrive_radius_m": 0.4,
+      "hold_s": 0.3
+    },
+    {
+      "name": "wall_push",
+      "position": [
+        35.28,
+        -35.42,
+        -13.12
+      ],
+      "speed": 1.5,
+      "arrive_radius_m": 0.4,
+      "push_s": 3.0,
+      "push_speed": 1.2
+    }
+  ]
+}

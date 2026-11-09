@@ -1,0 +1,15 @@
+{
+  "manifest": "/home/tianbot/rmua2026-platform/foundation/datasets/g2_contact_wall_seed123_20261109_v2/pool/pool.json",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 11831,
+      "container": "rmua-re-2520fe0ff3b5-0",
+      "id": "61d4f0c10772d21caca459d19d4d9bad3daaebc7aae692d63243ad8d1397ce4c",
+      "docker_start_wall": 1794223062.9693217,
+      "docker_created_wall": 1794223063.4061573,
+      "imu_ready_observed_wall": 1794223071.71266,
+      "startup_observed_s": 8.743338346481323
+    }
+  ]
+}
