@@ -1,0 +1,1810 @@
+{
+ "name": "g2_score_road3_20261110",
+ "purpose": "Stage-1 candidate route to hub then road3 30 detection-component centres from the runtime audit; score_readonly2 observes road1 and road3 scoring components.",
+ "frame": "NED metres, z down; road3 centres from data/audits/ol1_seed123/road3_components.json (UE cm -> NED x,y,-z); connector x/y from official route_1_3, z lifted to gate height",
+ "safety": {
+  "max_speed": 8.0,
+  "max_duration_s": 600.0,
+  "max_xy_m": 1000.0,
+  "min_z_m": -170.0,
+  "max_z_m": 1.0,
+  "stale_pose_s": 0.3,
+  "position_gain": 0.8,
+  "log_period_s": 0.5
+ },
+ "waypoints": [
+  {
+   "name": "route_000",
+   "position": [
+    2.5040944890488324,
+    -0.028882905122927696,
+    -2.1557080078125
+   ],
+   "speed": 1.5,
+   "arrive_radius_m": 0.3,
+   "hold_s": 0.5
+  },
+  {
+   "name": "route_001",
+   "position": [
+    12.716055309028052,
+    -0.15071152553039796,
+    -2.6985663819314594
+   ],
+   "speed": 2.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_002",
+   "position": [
+    22.870918449700056,
+    -0.06147408031303712,
+    -3.184742565883771
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_003",
+   "position": [
+    32.9325041707118,
+    0.19444296390147997,
+    -3.623741632131096
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_004",
+   "position": [
+    43.10594862884996,
+    0.5875918968477908,
+    -4.0333533840561
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_005",
+   "position": [
+    53.12790364318644,
+    1.0760040493018495,
+    -4.411081370362217
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_006",
+   "position": [
+    63.211521007217556,
+    1.6400655513697018,
+    -4.772609541625879
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_007",
+   "position": [
+    73.33453866919109,
+    2.2524646034773115,
+    -5.123786541673335
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_008",
+   "position": [
+    83.47469457735478,
+    2.885889406050649,
+    -5.470461014330758
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_009",
+   "position": [
+    93.60972667995651,
+    3.513028159515674,
+    -5.818481603424379
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_010",
+   "position": [
+    103.71737292524396,
+    4.106569064298359,
+    -6.173696952780401
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_011",
+   "position": [
+    113.77537126146498,
+    4.639200320824663,
+    -6.5419557062250355
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_012",
+   "position": [
+    123.76145963686739,
+    5.083610129520556,
+    -6.929106507584493
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_013",
+   "position": [
+    133.8875669865904,
+    5.418684378613055,
+    -7.351154574453148
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_014",
+   "position": [
+    143.8910741972776,
+    5.603348842373687,
+    -7.805411916290968
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_015",
+   "position": [
+    153.9753891579665,
+    5.606035516195002,
+    -8.310122383691251
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_016",
+   "position": [
+    164.10356530026067,
+    5.381417164195025,
+    -8.874992508718343
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_017",
+   "position": [
+    174.23480779293052,
+    4.879445378140722,
+    -9.510739831717038
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_018",
+   "position": [
+    184.3242707170978,
+    4.045101745454799,
+    -10.229146187061724
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_019",
+   "position": [
+    194.32284973420153,
+    2.818143487622667,
+    -11.043112173033323
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_020",
+   "position": [
+    204.17697024674675,
+    1.1328435689995195,
+    -11.966712805823908
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_021",
+   "position": [
+    214.01698304585975,
+    -1.131994807454039,
+    -13.037385357613166
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_022",
+   "position": [
+    223.57195219914354,
+    -4.027649207987833,
+    -14.254626816715536
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_023",
+   "position": [
+    232.82556057335663,
+    -7.76220752266599,
+    -15.616106558656984
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_024",
+   "position": [
+    241.41623456797373,
+    -12.688230860829162,
+    -16.97533123018311
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_025",
+   "position": [
+    249.28668107305012,
+    -18.86088247508746,
+    -18.33462406280518
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_026",
+   "position": [
+    256.26694713286133,
+    -26.031403440427137,
+    -19.68360218564193
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_027",
+   "position": [
+    262.4352537197385,
+    -33.956739697918536,
+    -21.0428181001975
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_028",
+   "position": [
+    267.92284684012304,
+    -42.34454395670695,
+    -22.432155728726404
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_029",
+   "position": [
+    272.96172115968375,
+    -51.027746547576555,
+    -23.88958592460819
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_030",
+   "position": [
+    277.7630668927557,
+    -59.85353686928058,
+    -25.44906591066924
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_031",
+   "position": [
+    282.5181238127724,
+    -68.68278483861778,
+    -27.140709738829674
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_032",
+   "position": [
+    287.3990207879446,
+    -77.38947214644017,
+    -28.990955860603652
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_033",
+   "position": [
+    292.55960084218674,
+    -85.86013331959099,
+    -31.022731808453244
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_034",
+   "position": [
+    298.13623174128986,
+    -93.99330658877429,
+    -33.2556159879956
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_035",
+   "position": [
+    304.248602104341,
+    -101.69899456235478,
+    -35.70599658106358
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_036",
+   "position": [
+    310.86275487179455,
+    -108.763641048609,
+    -38.33290701129913
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_037",
+   "position": [
+    318.1696589403666,
+    -115.27154353202259,
+    -41.18939002605438
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_038",
+   "position": [
+    325.8891428576206,
+    -120.93789778806769,
+    -44.14989585826001
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_039",
+   "position": [
+    334.14746971250656,
+    -125.88946063563318,
+    -47.25339439281042
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_040",
+   "position": [
+    342.6995043158177,
+    -130.03950588943493,
+    -50.40310787628254
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_041",
+   "position": [
+    351.6691443069818,
+    -133.52338118228457,
+    -53.643414896489666
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_042",
+   "position": [
+    360.83113051993035,
+    -136.42087247265033,
+    -56.95300215942325
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_043",
+   "position": [
+    369.94634934823256,
+    -138.81089316563018,
+    -60.30946276470188
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_044",
+   "position": [
+    379.22892013764334,
+    -140.76752894468515,
+    -63.78844103217356
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_045",
+   "position": [
+    388.65510114494845,
+    -142.28795484557858,
+    -67.37969181566153
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_046",
+   "position": [
+    397.9724888089766,
+    -143.35302566067006,
+    -70.9831588925285
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_047",
+   "position": [
+    407.38403955754364,
+    -144.00961062147496,
+    -74.67306650188459
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_048",
+   "position": [
+    416.8585216770519,
+    -144.26645377268554,
+    -78.4342710915828
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_049",
+   "position": [
+    426.1477426692556,
+    -144.1443035798832,
+    -82.16326566033787
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_050",
+   "position": [
+    435.43786608846574,
+    -143.67038259153324,
+    -85.92938804125397
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_051",
+   "position": [
+    444.6892478775477,
+    -142.86671755742367,
+    -89.71195440080001
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_052",
+   "position": [
+    454.0544229144621,
+    -141.7342246102741,
+    -93.56877381294312
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_053",
+   "position": [
+    463.27528960859877,
+    -140.32418746042043,
+    -97.38782212037165
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_054",
+   "position": [
+    472.47783406151706,
+    -138.64499717239607,
+    -101.21402988078303
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_055",
+   "position": [
+    481.5754333437483,
+    -136.74025417863942,
+    -105.00280815003178
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_056",
+   "position": [
+    490.62967278485047,
+    -134.63044114503842,
+    -108.7686552122328
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_057",
+   "position": [
+    499.6405855796721,
+    -132.35574698771464,
+    -112.49589335927344
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_058",
+   "position": [
+    508.6591491922784,
+    -129.9618032317276,
+    -116.18059326615001
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_059",
+   "position": [
+    517.783325197744,
+    -127.52773591039556,
+    -119.81473258785594
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_060",
+   "position": [
+    526.9327184353847,
+    -125.33290970619704,
+    -123.5601402851703
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_061",
+   "position": [
+    536.386399163248,
+    -123.59192799727178,
+    -127.25784450457229
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_062",
+   "position": [
+    545.8681446965685,
+    -121.05052694776082,
+    -130.16082101172802
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_063",
+   "position": [
+    555.224204236632,
+    -117.72957458937768,
+    -132.34238342379663
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_064",
+   "position": [
+    564.4083063620683,
+    -113.87066538712278,
+    -133.98371174684763
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_065",
+   "position": [
+    573.5232529279301,
+    -109.69361632241686,
+    -135.32384754783558
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_066",
+   "position": [
+    582.6109601055306,
+    -105.45832239335238,
+    -136.60123251049373
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_067",
+   "position": [
+    591.78064736511,
+    -101.39832310413614,
+    -138.0675668727849
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_068",
+   "position": [
+    597.8129875765386,
+    -98.97296478566209,
+    -139.236708984375
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_069",
+   "position": [
+    601.4290771710777,
+    -95.64050802597076,
+    -139.27025878906252
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_070",
+   "position": [
+    605.0451667656168,
+    -92.30805126627942,
+    -139.30380859375
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_071",
+   "position": [
+    608.6612563601559,
+    -88.9755945065881,
+    -139.33735839843752
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_072",
+   "position": [
+    612.2773459546951,
+    -85.64313774689677,
+    -139.37090820312503
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "route_073",
+   "position": [
+    615.8934355492341,
+    -82.31068098720543,
+    -139.4044580078125
+   ],
+   "speed": 8.0,
+   "arrive_radius_m": 2.0,
+   "hold_s": 0.0
+  },
+  {
+   "name": "gate_center",
+   "position": [
+    623.495859375,
+    -87.76669921875,
+    -135.0750390625
+   ],
+   "speed": 3.0,
+   "arrive_radius_m": 0.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_000",
+   "position": [
+    634.2941,
+    -86.9006,
+    -135.1
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_001",
+   "position": [
+    636.8617,
+    -85.9854,
+    -135.08392857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_002",
+   "position": [
+    639.4483,
+    -85.087,
+    -135.06785714285715
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_003",
+   "position": [
+    642.0502,
+    -84.2029,
+    -135.0517857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_004",
+   "position": [
+    644.6638,
+    -83.3308,
+    -135.03571428571428
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_005",
+   "position": [
+    647.2853,
+    -82.4683,
+    -135.01964285714286
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_006",
+   "position": [
+    649.9111,
+    -81.6131,
+    -135.00357142857143
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_007",
+   "position": [
+    652.5375,
+    -80.7629,
+    -134.98749999999998
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_008",
+   "position": [
+    655.1609,
+    -79.9153,
+    -134.97142857142856
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_009",
+   "position": [
+    657.7775,
+    -79.0679,
+    -134.95535714285714
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_010",
+   "position": [
+    660.3839,
+    -78.2183,
+    -134.93928571428572
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_011",
+   "position": [
+    662.9761,
+    -77.3643,
+    -134.92321428571427
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_012",
+   "position": [
+    665.5507,
+    -76.5034,
+    -134.90714285714284
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_013",
+   "position": [
+    668.1038,
+    -75.6334,
+    -134.89107142857142
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_014",
+   "position": [
+    670.6319,
+    -74.7518,
+    -134.875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_015",
+   "position": [
+    673.1313,
+    -73.8563,
+    -134.85892857142858
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_016",
+   "position": [
+    675.5983,
+    -72.9446,
+    -134.84285714285713
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_017",
+   "position": [
+    678.0293,
+    -72.0142,
+    -134.8267857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_018",
+   "position": [
+    680.4205,
+    -71.0629,
+    -134.81071428571428
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_019",
+   "position": [
+    682.7683,
+    -70.0883,
+    -134.79464285714286
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_020",
+   "position": [
+    685.0691,
+    -69.088,
+    -134.7785714285714
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_021",
+   "position": [
+    687.3191,
+    -68.0596,
+    -134.7625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_022",
+   "position": [
+    689.5147,
+    -67.0009,
+    -134.74642857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_023",
+   "position": [
+    691.6523,
+    -65.9094,
+    -134.73035714285714
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_024",
+   "position": [
+    693.7281,
+    -64.7829,
+    -134.7142857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_025",
+   "position": [
+    695.7385,
+    -63.6189,
+    -134.69821428571427
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_026",
+   "position": [
+    697.6798,
+    -62.4151,
+    -134.68214285714285
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_027",
+   "position": [
+    699.5484,
+    -61.1691,
+    -134.66607142857143
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_028",
+   "position": [
+    701.3406,
+    -59.8787,
+    -134.64999999999998
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_029",
+   "position": [
+    703.0527,
+    -58.5413,
+    -134.63392857142856
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_030",
+   "position": [
+    704.6811,
+    -57.1548,
+    -134.61785714285713
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_031",
+   "position": [
+    706.222,
+    -55.7166,
+    -134.6017857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_032",
+   "position": [
+    707.6719,
+    -54.2246,
+    -134.5857142857143
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_033",
+   "position": [
+    709.0269,
+    -52.6762,
+    -134.56964285714284
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_034",
+   "position": [
+    710.2836,
+    -51.0692,
+    -134.55357142857142
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_035",
+   "position": [
+    711.4382,
+    -49.4013,
+    -134.5375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_036",
+   "position": [
+    712.487,
+    -47.6699,
+    -134.52142857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_037",
+   "position": [
+    713.4264,
+    -45.8729,
+    -134.50535714285712
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_038",
+   "position": [
+    714.2527,
+    -44.0078,
+    -134.4892857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_039",
+   "position": [
+    714.9622,
+    -42.0723,
+    -134.47321428571428
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_040",
+   "position": [
+    715.5512,
+    -40.064,
+    -134.45714285714286
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_041",
+   "position": [
+    716.0162,
+    -37.9806,
+    -134.4410714285714
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_042",
+   "position": [
+    716.3534,
+    -35.8197,
+    -134.42499999999998
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_043",
+   "position": [
+    716.5592,
+    -33.579,
+    -134.40892857142856
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_044",
+   "position": [
+    716.6298,
+    -31.2561,
+    -134.39285714285714
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_045",
+   "position": [
+    716.5617,
+    -28.8486,
+    -134.37678571428572
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_046",
+   "position": [
+    716.3511,
+    -26.3543,
+    -134.36071428571427
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_047",
+   "position": [
+    715.9944,
+    -23.7707,
+    -134.34464285714284
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_048",
+   "position": [
+    715.545,
+    -21.0295,
+    -134.32857142857142
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_049",
+   "position": [
+    715.0956,
+    -18.2883,
+    -134.3125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_050",
+   "position": [
+    714.6463,
+    -15.5471,
+    -134.29642857142855
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_051",
+   "position": [
+    714.1969,
+    -12.8059,
+    -134.28035714285713
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_052",
+   "position": [
+    713.7475,
+    -10.0648,
+    -134.2642857142857
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_053",
+   "position": [
+    713.2981,
+    -7.3236,
+    -134.24821428571428
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_054",
+   "position": [
+    712.8488,
+    -4.5824,
+    -134.23214285714283
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_055",
+   "position": [
+    712.3994,
+    -1.8412,
+    -134.2160714285714
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "connect_056",
+   "position": [
+    711.95,
+    0.9,
+    -134.2
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_00",
+   "position": [
+    706.183125,
+    1.91666015625,
+    -134.2335546875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_01",
+   "position": [
+    701.16890625,
+    22.78900390625,
+    -134.45896484375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_02",
+   "position": [
+    694.96734375,
+    43.429453125,
+    -134.7628125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_03",
+   "position": [
+    689.86921875,
+    64.315234375,
+    -134.5883203125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_04",
+   "position": [
+    687.399375,
+    85.6219921875,
+    -133.536796875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_05",
+   "position": [
+    688.9740625,
+    106.833203125,
+    -131.46662109375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_06",
+   "position": [
+    693.4590625,
+    127.742431640625,
+    -129.48501953125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_07",
+   "position": [
+    699.16515625,
+    148.459697265625,
+    -127.36791015625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_08",
+   "position": [
+    705.335,
+    168.92296875,
+    -124.80228515625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_09",
+   "position": [
+    711.53375,
+    189.269765625,
+    -121.45107421875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_10",
+   "position": [
+    717.28703125,
+    209.4987890625,
+    -116.8337890625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_11",
+   "position": [
+    721.79390625,
+    229.3714453125,
+    -110.08083984375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_12",
+   "position": [
+    724.85875,
+    248.425859375,
+    -101.12150390625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_13",
+   "position": [
+    727.4521875,
+    267.631484375,
+    -91.5207421875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_14",
+   "position": [
+    729.20609375,
+    286.7852734375,
+    -82.00119140625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_15",
+   "position": [
+    729.89171875,
+    306.20626953125,
+    -72.7781884765625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_16",
+   "position": [
+    729.23921875,
+    325.9132421875,
+    -64.1498193359375
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_17",
+   "position": [
+    726.95421875,
+    345.85421875,
+    -56.4347900390625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_18",
+   "position": [
+    722.725546875,
+    365.8998828125,
+    -49.9883056640625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_19",
+   "position": [
+    716.04734375,
+    385.543671875,
+    -45.2188623046875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_20",
+   "position": [
+    705.102578125,
+    403.7012109375,
+    -42.0331298828125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_21",
+   "position": [
+    691.298515625,
+    420.0616015625,
+    -39.9506494140625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_22",
+   "position": [
+    675.8190625,
+    434.964921875,
+    -38.5708447265625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_23",
+   "position": [
+    659.266171875,
+    448.74015625,
+    -37.6321337890625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_24",
+   "position": [
+    641.9824609375,
+    461.62296875,
+    -36.9578759765625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_25",
+   "position": [
+    624.186640625,
+    473.77296875,
+    -36.4144384765625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_26",
+   "position": [
+    606.03875,
+    485.3040234375,
+    -35.8842138671875
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_27",
+   "position": [
+    587.6284375,
+    496.3190625,
+    -35.2431103515625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_28",
+   "position": [
+    568.922109375,
+    506.9547265625,
+    -34.3256298828125
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_gate_29",
+   "position": [
+    550.1283984375,
+    517.20171875,
+    -32.8757666015625
+   ],
+   "speed": 6.0,
+   "arrive_radius_m": 1.5,
+   "hold_s": 0.0
+  },
+  {
+   "name": "road3_exit",
+   "position": [
+    544.8725815212365,
+    520.0673749825017,
+    -32.47030032695582
+   ],
+   "speed": 4.0,
+   "arrive_radius_m": 1.0,
+   "hold_s": 0.0
+  }
+ ]
+}
