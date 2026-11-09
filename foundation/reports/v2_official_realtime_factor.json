@@ -1,0 +1,30 @@
+{
+  "status": "official pose source-vs-arrival real-time factor; not environment throughput",
+  "runs": [
+    {
+      "run": "v2_official_passive_smoke_20261109",
+      "pose_samples": 499,
+      "host_duration_s": 4.9800882490000005,
+      "source_duration_s": 4.9801062400000005,
+      "source_to_host_ratio": 1.000003612586585,
+      "capture_sha256": "86accaa331754424a03b6c63e507792dbfe7e49dfd9e909b3aa26b1d73103470",
+      "run_sha256": "fb1171a841520b5395accd899a89c4dcf0410c17130745cd7a65669ed45053a3"
+    },
+    {
+      "run": "v2_official_heldout_mix_small_seed260005_20261109",
+      "pose_samples": 291,
+      "host_duration_s": 2.8998146670000002,
+      "source_duration_s": 2.901061888,
+      "source_to_host_ratio": 1.0004301036939338,
+      "capture_sha256": "a77759c8193b813f2f1412da9e39f698ba06e65103028e153e761ec6f277b692",
+      "run_sha256": "85c128c672b5b1750368956d2f4e90683e24e627d141bba2818dda7d14a1d9a8"
+    }
+  ],
+  "analysis_sha256": "dae1610e04e0d7fc63aa59cf71987af8228cdd3a27cbc8e81b3aae849b5d4936",
+  "limitations": [
+    "source Header is not an independently decoded physics tick",
+    "arrival time includes transport and scheduling",
+    "official runs are real-time; this cannot be converted to 64/256 env-command throughput",
+    "no same-operation official batch benchmark was obtained"
+  ]
+}
